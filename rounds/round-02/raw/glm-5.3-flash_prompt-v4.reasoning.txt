@@ -1,0 +1,170 @@
+Here's a thinking process to arrive at the solution:
+
+1.  **Event Selection & Interpretation (The Joke):**
+    *   *Requirement:* Specific, recent tech/AI event. Must be recognized instantly. The joke must be visible in the transformation A $\leftrightarrow$ B.
+    *   *Idea Generation (Focusing on recent high-profile AI/Tech events):* LLM capabilities (GPT-4o, Sora, Gemini, etc.), AI market bubble/hype, large company failures/restructuring.
+    *   *Selected Event:* The rapid, highly publicized initial promise of large, multimodal AI models (like OpenAI's early announcements/hype) transitioning into specific, real-world limitations or sudden, dramatic shifts (e.g., the realization of needed guardrails, or specific performance failures).
+    *   *Refinement for the joke:* Let's use the "AI Model as a Transformer" motif. Initial praise for "revolutionary capabilities" (A) vs. the sudden realization of limitations/errors/safety concerns (B).
+    *   *Specific Marker:* The "Chatbot" archetype.
+    *   *Contrast:*
+        *   Face A: Overconfidence, brilliance, and limitless potential. (The "Great Promise").
+        *   Face B: Confusion, self-correction, or severe limitation/error. (The "Unintended Consequence").
+    *   *Physical Contrast:*
+        *   A: A meticulously maintained, high-end, sleek digital facade (High brow, confident smile, elegant antenna).
+        *   B: A messy, glitchy, or overloaded state (Low brow, vacant/confused expression, fragmented elements).
+
+2.  **Character & Archetype Design:**
+    *   Need two silhouettes that interconvert.
+    *   *Face A (The CEO/Innovator):* Top-heavy. A sophisticated hat (representing a proprietary LLM structure or a venture capital structure). Calm, confident.
+    *   *Face B (The Reality/The Regulators):* Bottom-heavy. A bulky collar or complex, tangled beard/circuitry (representing the complexity/limitations/hardware constraints).
+    *   *Central Prop:*
+        *   A has a perfect, glowing crystal sphere/orb (representing the "singular, perfect answer" or "GPT-4o capability").
+        *   B has a fragmented, glitching, or tangled data strand coming out of that same spot/area (representing the "hallucination" or "data overload").
+
+3.  **Sketch & Reversibility Mapping (Mental Check):**
+    *   *A (Upright):* Tall hat brim (Top). Confident smile. Sphere prop (Center).
+    *   *B (Rotated):* The hat brim becomes the heavy collar/chin mass (Bottom). The confident smile becomes a downturned/surprised mouth (Center). The sphere (rotated 180) becomes a tangled mess/cluster (The glitch) spilling from the chest (Bottom center).
+    *   *Prop check:* The sphere/glitch must be readable both ways. If we draw the sphere as a perfect circle, it's useless. It must be stylized: A sleek orb that, when upside down, looks like a dense, messyEvent: Apple Vision Pro launch hype (June 2023 WWDC / Feb 2024 sales flop)? Better: the AI glasses demo — Meta's Orion? Or Humane AI Pin launch (Nov 2023) then recall/exit (Feb 2024 HP acquisition). Humane AI Pin: hyped laser-projected wearable, then flopped and shut down. Good specific event. A = ecstatic presenter with the Humane Pin (projector) beaming; B = same person, device dead, projector dot on hand, downtrodden.
+
+Alternatively ChatGPT launch vs. later courtroom? Keep simple: Humane AI Pin — the launch (person on stage wearing pin, hand projected glowing interface, wide grin) ↔ the shutdown (dead pin, slumped, empty hand, cable unplugged).
+
+Design: shared eyes. A: wide open delighted eyes, raised brows, big grin (cup at y680 → dome in B at 320 = hat band / cap). B: heavy lids (brows become under-eye bags), frown (dome at A's 680 → cup). Wait — mouth strokes: A's smile cup at 680 becomes dome at 320 in B = hat brim/dome. So the mouth shape also serves as hat. Central prop: the pin — a small square badge on the chest that in A projects a glowing beam onto the palm (hand raised); in B the beam is a dead dim dot. But props must make sense in both readings. Hand raised in A... in B becomes something at top? Hard.
+
+Simpler: the pin/collar area. A: collar with a glowing square pin + projection beam lines going up (toward the face = "palm" gesture?). Actually the famous Humane demo: laser projects UI onto your palm. So: A — raised open palm near chest with a projected glow; that same shapes rotated become... a dangling thing above? Hmm.
+
+Alternative event: Apple Vision Pro: A = person wearing the goggles (visor) euphoric "spatial computing wow"; B = goggles off, dizzy/nauseated, refund. The visor is technological, unmistakable. In A: a big visor band across the upper face... but visor would cover eyes which are shared. Bad.
+
+Better: Humane-style pin on the collar: collar at y890 in A. Rotated to y110 = top of hat (plume position). So a badge/pin at collar in A becomes a pompom/tassel atop hat in B. And the beam: A's beam lines from pin going outward; rotated they become antenna rays from hat top — still fine (dead antenna). Prop pair: glowing pin ↔ dead battery cap.
+
+Let's structure:
+- A (upright): enthusiastic younger face, wide grin, raised brows, open eyes. Hair mass on top (page 200–380). Chin at 800. Collar/bow at 890 with the AI pin (small rounded square, accent color glow, radiating dashes onto the chest? The chest is below chin—page 800–950, only ~150px. Radiating short dashes around pin.
+- B (rotated): same strokes read: hair mass (200–380) becomes chin/beard mass (620–800) — a big stubble beard! Grin cup at 680 → dome at 320 = the crown band of a flat cap. Raised brows (452) → heavy bags in B... wait brows in A at 452 become at page 548 = under-eye bags in B. Good: raised arcs in A become sagging bags. Wide-open eyes in A stay eyes in B but bags + heavy B-only lids make them weary. B-only strokes: heavy upper lids drawn in rotated group (thin, inside eye region? must be inert in A — tricky near eyes). Use small lid lines just above the eyes in B's frame = just below eyes in A, reading as lower-lid creases — acceptable.
+
+Mouth: A grin cup at 680 wide (M 420..580, Q down to 720). In B it's a dome at 320 — top of a flat cap. Good. Add in B-frame a downturned frown at B's y=680 → page y=320? No wait B-only strokes drawn in rotated group in B's own coordinates: B frown at y680 maps to page 320 — collides with the dome/hat. B frown cup opens downward in B's frame → on page it's a dome... hmm, a cup in B frame rotated becomes dome on page at 320. But 320 already has hat. Actually the A-grin IS B's hat. Then B's mouth must come from A strokes: A's hat/hair dome (200–380 band) becomes B's mouth zone. So A's hairline fringe strokes become B's nose bridge/mouth. Design: A's hair: a swoop of hair with fringe curls; bottom edge of hair mass is a wavy line ~y370 — in B that's a wavy line at y630 = nose bridge/mouth area → could read as mustache or a wavy disappointed mouth. Let's make the hair's lower edge a downturned wave: in A it's hair fringe, in B it's a frowning mustache/mouth. And nose: A's nose at 620–650; in B nose comes from hat brim at 350: put a B-only nose tip in rotated group at B's y650 → page 350: small cup under the hair mass = nose tip for B, and in A it's a hat brim line / collar of the hair. Fine.
+
+Chin in B at B's 800 → page 200: top of head contour shared. A's hair crown = B's chin/jaw bottom. So head outline: the big oval works both. Silhouette: single contour.
+
+Ears at eye level both — fine, shared.
+
+Expression contrast: A wide grin + high brows + open eyes; B heavy lids (B-only thin lines), bags (from A's brows), frown mustache (from hair fringe), plus B-only furrow lines above B's eyes → below A's eyes at page ~530–560, reading as cheek/under-eye lines in A — okay if light.
+
+Also add A-only: tiny crow's feet at eye corners (at eye level, symmetric-ish, inert in B as wrinkles).
+
+Prop detail: pin at collar (page ~880–920): rounded square with accent fill (orange), small ring. Radiating dashes below it (page 930–960) reading in A as projection glow onto chest; rotated → dashes above hat pompom at 40–70... page 1000−930=70 etc, above crown — as antenna sparks. Crown of head at 200 → B chin at 800 fine.
+
+Hmm wait, collar at 890 and chin at 800; pin at ~870–920 overlaps collar area. OK.
+
+B's "dead" tell: the pin in B is the hat pompom — make it a flat dead battery-looking square atop the cap? In A it's a glowing pin; in B it's a button on cap. Accent color used in both. In B frame, add a small "power-off" line? Simple: in B's frame add a short diagonal slash across the square (page: slash in square at bottom, inert in A? It'd show in A as a slash through pin — actually a slash through a pin could read as "off" in A too, breaking A's glow). Keep glow dashes in A-frame (unrotated) and a dead-dot in B-frame? The glow dashes around pin in A: rotated they'd be at top — I could draw them only in A group (unrotated), so they vanish in B. That's allowed: A-only strokes inert-ish in B? They'd appear in B as marks above hat — visible. Hmm, A-only strokes drawn in unrotated group DO appear in B's reading (everything on page appears). Rule: A-only strokes must be inert in B (hidden in hat/collar masses). Glow dashes at page 930–960 in B reading = at page 40–70 above the hat = antenna sparks for the cap — actually that's fine and even funny: dead antenna? Or make them in B reading as wind lines. Acceptable.
+
+Conversely B-only strokes (rotated group) must be inert in A: heavy lids (page just below eyes — read as lower lids, fine), B frown crease lines? Let's add B-only: two small vertical worry lines between B's brows (B frame ~455) → page ~545: under A's eyes = eye bags... A already has bags from A's brows there. Could be fine.
+
+Nose: A nose: bridge line from 590 to 650 with bulb tip, nostrils at 650. Shared stroke? In B, A's nose at 620-650 → B's y 350-380: hat brim zone / brow. Hmm, A's nose strokes would appear in B between the cap and eyes = forehead crease lines! Good: nose bridge line becomes a forehead wrinkle. Bulb becomes part of cap band. Acceptable.
+
+B's nose: B-only cup at B-y 650 → page 350, sitting under hair fringe line. Draw small nostril cup in rotated group; in A it reads as the hat band/brim. OK.
+
+Beard in B: B-only? A's hair mass covers 200–380; in B that's chin/beard 620–800. To make beard read as beard, add hatch/texture lines inside the hair mass that in B read as beard stubble. Good — texture strokes do double duty.
+
+A's collar: bow tie at 890. In B that's at 110 = above crown = pompom/antenna nub. So draw bow tie (two triangles + knot) at page 880–920; in B it reads as a small pompom/bow atop the cap. Fun.
+
+Let me also add A raised brows: arcs at 445, thick. In B → 555: bags. Good.
+
+Chin/jaw: head outline: ellipse-ish from 200 to 800 with jaw width. One contour works for both if symmetric-ish; add asymmetric jowl bump on one side (A's left jaw at ~770) → B's bump on right at crown — reads as a cowlick/tilt of cap. Nice.
+
+Background: warm paper #f6f1e6, ink #1e1a16, accents: orange #e8641c (pin glow / cap button) and blue #3a6ea5? Max 2 accents. Use orange for pin/glow and maybe teal for... keep just one accent + ink + paper. Fine.
+
+Colors: paper #f7f2e7, ink #221c14, accent orange #e2621f, accent2 slate #4a6d8c maybe for beam glow? Keep two accents: orange (pin, glow, cap button) and blue-gray? I'll use orange only + maybe soft blue for projected beam glow. Beam: dashes in orange.
+
+Palette: paper, ink, orange, and a pale warm tone #e8dcc4 for skin/hat fill? Fills: hat fill dark ink? Let's give A's hair dark ink mass (solid), which in B is a dark beard — great rhythm. Cap: in B the hat = A's chin/mouth area strokes + B-only band. Hat fill in B: white with band? The dome at 320 is the A-grin stroke; the cap crown above it (page 200–320 in B = A's 680–800 chin area). Fill? Can't fill differently per reading. Keep region white; add B-only cap seam lines (light) at page 230–300 reading in A as chin creases — fine, light double-chin creases.
+
+Let me now define geometry concretely (rounded):
+
+Head contour: path roughly: start top (500,195), curve out to (730,340) cheek, jaw to (700,720), chin (500,805), (300,720), (270,340), back to top. Ears: at (255,480)-(270,560) and mirrored (730,480). Actually ears at eye level 500, half-width ±0.36H=216 → x=284/716. Put ear bumps at x≈270 and 730, y 460–570.
+
+A strokes (unrotated group):
+1. Brows: thick arcs: left brow path M 415 455 Q 460 425 505 450 (raised); right M 530 452 Q 575 428 615 458. Weight 9. Hmm eyes at ±84: 416 & 584. Center brows above: left brow spans 400–470, right 530–600.
+2. Eyes: A wide open: upper lid arcs at y=488, circles r=13 pupils at (425,505),(575,505) with white highlight dot. Lower lid line at 530 (thin).
+3. Nose: bridge line M 495 585 Q 505 620 490 645; bulb: M 470 650 Q 500 672 530 648; nostrils dots.
+4. Grin: big cup M 415 675 Q 500 730 585 675, plus lip line above? Add teeth line: M 430 690 Q 500 715 570 690 thin. Corner dimples.
+5. Cheek lines (A-only): short curves at cheeks x≈380,620 y 600–640, light — in B these are at page 360–400 = forehead, fine.
+6. Collar + bow tie at 870–930: shirt collar lines M 400 870 L 460 930 etc; bow: two triangles meeting at (500,900): left (430,875)-(500,900)-(430,925); right mirrored. Fill ink.
+7. Pin: rounded square 30×30 at (560? ) place pin offset right: rect x=560 y=875 w=34 h=34 rx=6, fill orange, plus small circle center. Glow dashes (A-only? they'd show in B as hat sparks — acceptable, keep them): short lines radiating downward-ish from pin at (545–640, 915–955). Hmm pin at 560–594; dashes below 930–960. In B these are at 40–70, above crown — floating sparks. OK.
+
+Wait chin at 805, collar 870 — only 65px neck. Bow tie triangles 875–925, page bottom 960 fine within frame at 940? Frame inset 50 → frame at 50..950. Keep below 945. OK adjust: bow smaller.
+
+8. Hair: big mass top: fill ink shape from (500,190) sweeping to sides down to fringe wavy line ~y370: path M 270 400 Q 300 240 500 195 Q 700 240 735 400 L 720 360 Q 690 330 660 372 Q 620 340 585 380 Q 540 345 500 378 Q 455 345 420 380 Q 380 342 340 375 Q 310 335 285 370 Z — a scalloped fringe. In B: 195→805 top = beard bottom edge; 370→630 = wavy mustache/mouth. The scallops become beard tufts.
+
+9. B-only group (rotate 180): drawn in B frame:
+- Heavy lids: arcs above B's eyes at B-y 488 → in B frame path M 400 490 Q 440 470 470 492 etc. On page these land at y 508–512: just below A's lower lid — reads as slight lower-lid fold. Fine, thin (4px).
+- B nose: cup M 470 655 Q 500 640 530 655? B nose tip cup opening up? Nose tip: small curve M 472 660 Q 500 640 528 660 with nostril dots at (478,655),(522,655). On page: y=340-360 under hair — reads as hat band/brim detail in A. Good.
+- B frown mouth? The A hair fringe at 370 is B's mustache; B mouth line: from A's hat? A has no hat dome stroke... A's hair mass bottom edge at 370–380 serves as B's mouth. To make B's mouth read as downturned frown, the fringe scallops should read as a frown in B. The wavy line I described: rotated, its shape at 620–630 in B. Hmm, a scalloped fringe reads as mustache more than mouth. Add B-only mouth line in B frame: M 425 690 Q 500 668 575 690 (dome = frown when combined with corners down? A frown is a dome ∩ with corners down: corners at 690, center 668 → dome = frown. On page: corners at 310, center 332 — right in the fringe zone! It'll blend into the fringe scallops, reading as mouth within mustache. Actually could be confusing in A. Make it thin (4px) so in A it's just a hair strand.
+- Cap: B's cap dome = A's grin (M 415 675 Q 500 730 585 675). In B: dome at 270–325. Add B-only cap brim: line under dome at B-y 330: M 390 335 Q 500 360 610 335 → page 665: a line under A's grin = chin crease. Good, thin-medium.
+- Cap top: B cap crown from dome up to chin-contour... the head contour serves. Add B-only vertical seam: M 500 320 L 500 230? page 680–770: a line down A's chin — reads as chin crease. OK light.
+- B-only eyebrow-furrows: two short verticals between brows in B frame at (470,440),(485,440),(455,445) → page ~555–560: under-eye area in A. Light 3px, ok.
+- Beard stubble hatch inside hair mass: draw in either group; strokes at 45° hatch within page region 210–360 x 320–680. In A they're hair texture; in B beard texture. Draw in A group with 45° lines, 2px, ~20 lines.
+- B-only collar: B's collar comes from A's hair top region? B collar at B-y 890 → page 110. A has crown at 195. Gap 110–195: B collar/bow tie? A's bow tie at 875–925 → B page 75–125: that IS B's collar bow! Great: bow tie at top of B's head? No wait — page 110 is above B's head contour (B chin at 200... B's head top is page 200? B's head occupies page 200–800 same region; B collar at 890 maps to page 110, above B's crown — like a hat topper/bow on the cap. Hmm, that's how the dictionary works: plume↔collar. A bow tie at A's collar becomes a bow perched atop B's cap — cute. Good.
+
+Ears: at page 460–570, both readings same — fine.
+
+Also A's forehead: add two A-only wrinkles? A's forehead 380–450: in B that's 550–620 = cheek/nose area. Light wrinkles in A forehead would read as B cheek smile lines — fine, draw them as gentle arcs.
+
+Let me finalize the SVG, being careful but not over-verifying. Add frame: rect 55,55 890x890, stroke ink 3px.
+
+Also pupils: circles r=14 at (425,505),(578,505), fill ink, white glint circles r=4 at (430,500)/(583,500). White glint on rotated — fine, symmetric.
+
+Upper lids: arcs above eyes: M 395 500 Q 425 478 458 498, mirrored. Lower lid: thin M 400 528 Q 430 536 462 530.
+
+A eyebrows thick: crescents: path left: M 392 460 Q 432 418 480 448 Q 436 432 392 460 Z fill ink. Right mirrored: M 620 462 Q 578 420 530 450 Q 574 434 620 462 Z. These rotated → bags at 538–582. Good.
+
+Grin: strong 8px: M 410 672 Q 500 735 590 672. Teeth line 4px: M 428 690 Q 500 716 572 690. Corners: small dimple dots.
+
+Nose A: bridge M 492 580 Q 506 615 492 642 (5px); bulb M 468 655 Q 500 678 532 652 (6px); nostril dots at (474,660),(526,658) r=3.
+
+Hair mass fill ink: big path with scalloped bottom at ~365–385.
+
+Collar: shirt lines: M 430 860 L 470 920, M 570 860 L 530 920 (medium). Bow: path M 500 892 L 440 868 L 444 920 Z and mirror, fill ink, knot circle r=10 at (500,893). Pin: place left-of-center chest? Put pin at (500,935)? Too low. Place pin ON the knot? Put pin just right of knot: rect x=540 y=878 w=36 h=36 rx=8 fill orange stroke ink 3. Small dot circle r=4 at (558,896) ink. Glow dashes (A-only-ish, orange 4px): lines from pin pointing up-left toward face: M 540 870 L 520 850; M 575 868 L 572 842; M 600 880 L 618 862. These read as projection rays in A; rotated: at y 120–150 near bow → sparks. Fine. Hmm, pin on collar at x 540–576, y 878–914 — overlaps collar line L 530 920. Fine.
+
+Head contour path (heavy 11px): M 500 192 C 640 200 720 270 738 380 C 752 470 740 560 722 640 C 700 730 620 800 500 806 C 380 800 300 730 278 640 C 260 560 248 470 262 380 C 280 270 360 200 500 192 Z. Asymmetric jowl: modify left lower: at chin-left add bump: ... C 700 730 640 780 590 792 ... keep simple, add slight bump via extra point on right side only: after 722 640: C 710 700 668 760 610 790 C 575 805 540 808 500 806. Left side: C 300 730 340 775 400 795 C 440 806 470 808 500 806. Slight asymmetry okay.
+
+Ears: left: M 262 450 Q 238 470 244 510 Q 250 548 270 560; right mirrored M 738 450 Q 762 470 756 510 Q 750 548 730 560.
+
+Hatch: 45° lines group inside hair region — but hair mass is solid ink; hatch invisible. Instead hatch the hat/beard region? Put hatch inside face region near cheeks for A? Whistler hatch: add hatch on A's cheeks/jaw (page 560–760, x 300–420 and 580–700) — in B that's forehead/temple 240–440 — hatch there reads as cap shading. Good. Draw ~12 short 45° lines each side, 2px ink, clipped-ish manually.
+
+Also B-only beard shading: hatch inside hair mass won't show (mass solid). Instead make hair mass not fully solid — fill #2a241c solid is fine; beard reads as dark beard. Good.
+
+B-only strokes summary (rotated group):
+- nose cup + nostrils (page ~340–360)
+- frown line (page ~310–332, thin 4px)
+- heavy lids (page ~505–515, 4px)
+- worry furrows (page ~555, 3px, 3 short lines)
+- cap brim (page 665–670, 5px)
+- cap seam vertical (page 680–765, 3px)
+- maybe cap top button? skip.
+- Also B-only small "battery low" on... skip.
+
+B's cap: dome = A's grin stroke (page 672–735 center 500 dips to 735? wait grin dips down to 730 at center; rotated it's a dome peaking at 270). In B the cap dome spans x 410–590, top at 270. Cap brim at 665 (page) → B-y 335: brim line M 385 338 Q 500 362 615 338 in B frame. In B reading: brim under dome — the dome is the crown of the cap and brim below it. Good. Cap crown above dome (page 200–270 in B): white with seam line. Fill? Add B-only: a small cap band? fine.
+
+Also add B-only: sad eyes tweak — B heavy lids drawn. Plus in B, brows? A's brows are arcs (raised) → in B they're bags. B needs brows: B-only thin arcs at B-y 455 below B's heavy bags? page ~545: overlapping A's brow-bag strokes. Skip; bags + lids suffice.
+
+A's mouth in B: A's grin at 675–735 becomes B's cap — good, B has no other mouth except frown line at 332 + mustache fringe. Might be subtle; add B-only stronger frown: 5px M 420 688 Q 500 660 580 688 in B frame → page corners 312, center 340. And also lower-lip line? skip.
+
+Cheek lines A: M 380 610 Q 372 645 386 668 and mirrored (4px) — in B these are at 332–390: forehead lines. Fine.
+
+A forehead wrinkles: M 430 415 Q 470 400 510 412; M 445 392 Q 480 380 515 390 (3px) — in B: page 585–620: cheek/nose lines. OK.
+
+A-only: happy eye crinkles at outer corners: M 355 500 Q 345 512 352 524 and M 648 500 Q 658 512 651 524 (3px). In B: page 476–488: above eyes — fine as lid crease-ish.
+
+Frame, paper bg, done. Also maybe a couple of stipple dots.
+
+Let me also double check: B's nose: A's nose strokes (page 580–678) become B's 322–420 = forehead/brow region of B — reads as forehead lines. OK acceptable.
+
+B's eyes: shared pupils. B's heavy lids on page 505–515 just below pupils' center (505) — that would cut through pupil! Pupils at cy=505 r=14 → span 491–519. Lid line at 505–515 overlaps pupil. Move B lids lower: in B frame at y 470 → page 530: just below A's lower lid (530). Hmm A's lower lid at 528–536. Conflict. In B frame, heavy lid should be ABOVE B's eye = B-y 470–480 → page 520–530. Overlaps A's lower lid line. That's actually fine — they can coincide/merge. Draw B lids in B frame at y 475: M 395 478 Q 428 460 460 478; M 540 478 Q 572 460 605 478 → page ~522–540: doubles as A's lower lid thickening. Then B's upper lid region (page 460–522) stays open — B's eyes look droopy because brow-bags at 540–580 weigh them down? Actually B's eyes would look open, with bags above (A's brows at 418–460 → page 540–582 = below eyes). Hmm wait: B's brow line in B should be at B-y ~452 → page 548. A's brows ARE at page 418–462. In B reading, page 540–580 is where A's brows appear? No — A's brows are drawn at page 418–462 (above eyes). In B reading, those strokes are at distance 538–582 below B's eyes = under-eye bags. Yes as planned. So B's eyes: bags below (page 538–582), lids at 522–540, pupils 491–519. B reads as: droopy heavy-lidded eyes with bags — actually the bags are BELOW the eyes (correct position for bags) and there's heavy lid line just below pupil. Good enough. B's upper area (page 460–490) has nothing = high bare forehead under cap. Fine; B is balding-ish under cap. Add B-only worry lines page 555.
+
+Hmm, but A's brows at 418–462 as B's bags: bags at 538–582 are below eyes (eyes at 500, lower lid 528). Correct.
+
+A's raised brows: I want them clearly raised in A: arcs at y 418–460, above eyes 500 — good, 40–80px above.
+
+Write it. Also add thin inner-frame? Just one frame rect. Add paper rect full.
+
+Stipple dots few on cheeks.
+
+Write the SVG now.

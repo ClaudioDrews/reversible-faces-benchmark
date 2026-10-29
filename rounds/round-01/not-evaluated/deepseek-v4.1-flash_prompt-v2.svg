@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- head silhouette (shared) -->
+    <path d="M 372 285 A 205 275 0 0 0 372 715 A 205 275 0 0 0 628 715 A 205 275 0 0 0 628 285"/>
+
+    <!-- A: tall crown  /  B: square jaw -->
+    <path d="M 370 290 L 370 168 Q 370 150 390 150 L 610 150 Q 630 150 630 168 L 630 290"/>
+    <!-- A: hat band  /  B: jaw line -->
+    <path d="M 370 232 L 630 232"/>
+    <!-- A: brim (sweeps down)  /  B: wide frown -->
+    <path d="M 300 296 Q 500 352 700 296"/>
+
+    <!-- shared eyes -->
+    <circle cx="430" cy="500" r="28" fill="#fff"/>
+    <circle cx="570" cy="500" r="28" fill="#fff"/>
+    <circle cx="433" cy="496" r="12" fill="#111" stroke="none"/>
+    <circle cx="567" cy="496" r="12" fill="#111" stroke="none"/>
+
+    <!-- A: raised brows  /  B: heavy bags -->
+    <path d="M 383 452 Q 428 412 472 448"/>
+    <path d="M 528 448 Q 572 412 617 452"/>
+    <!-- A: eye bags  /  B: heavy domed brows -->
+    <path d="M 390 550 Q 428 588 466 550"/>
+    <path d="M 534 550 Q 572 588 610 550"/>
+
+    <!-- A: nose -->
+    <path d="M 500 574 L 500 630"/>
+    <path d="M 470 634 Q 500 664 530 634"/>
+
+    <!-- A: wide grin  /  B: cap edge -->
+    <path d="M 425 676 Q 500 732 575 676"/>
+
+    <!-- A: hair curls  /  B: beard tufts -->
+    <path d="M 296 380 Q 262 422 296 464"/>
+    <path d="M 704 380 Q 738 422 704 464"/>
+
+    <!-- A: neck  /  B: hat sides -->
+    <path d="M 440 748 L 440 852"/>
+    <path d="M 560 748 L 560 852"/>
+
+    <!-- A: bow tie  /  B: pompom -->
+    <path d="M 486 858 L 442 834 L 442 882 Z" fill="#111"/>
+    <path d="M 514 858 L 558 834 L 558 882 Z" fill="#111"/>
+    <circle cx="500" cy="858" r="15" fill="#111" stroke="none"/>
+  </g>
+
+  <!-- B-only strokes, drawn in B's own upright frame -->
+  <g transform="rotate(180 500 500)" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- B: nose (reads as a fringe line in A) -->
+    <path d="M 466 626 Q 500 656 534 626"/>
+    <!-- B: beard hatching (reads as hat texture in A) -->
+    <path d="M 402 722 Q 440 772 478 722"/>
+    <path d="M 522 722 Q 560 772 598 722"/>
+    <path d="M 462 764 Q 500 822 538 764"/>
+    <path d="M 418 792 Q 448 832 478 792"/>
+    <path d="M 522 792 Q 552 832 582 792"/>
+    <path d="M 500 812 Q 520 846 500 866"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+# Prompt evolution (v1 → v5)
+
+All prompts are in [`../prompts/`](../prompts/) exactly as they were sent. Sizes: v1 16 KB, v2 18 KB, v3 19 KB, v4 24 KB, v5 18 KB.
+
+| Version | Used in | What it is | Key changes |
+|---|---|---|---|
+| **v1** | Round 0 (pilot) | Prompt distilled from the v0.4 design spec: contract, geometry kit (rotation, canon, dual-function dictionary, sum rule), workflow, art notes, self-check, failure catalog, a minimal neutral example. | Baseline. |
+| **v2** | Round 1 (MiniMax) | v1 plus fixes from a critique by a second agent after the pilot (see `reviews/`). | **Effort budget** ("think briefly, use the table values, round to multiples of 5, deliver even if imperfect") because the pilot runs burned tokens on coordinate arithmetic. **Joke as a physical difference** ("A has X / B has Y"). **A and B must differ in expression**, not only accessories (at least two of eye opening, brow angle, mouth curve, jaw width, age). **At least three different dictionary pairs.** A cheap symbolic check (curve concavity → what it becomes after rotation) instead of heavy arithmetic. Expression toolkit; every prop must make sense in both readings. No caption allowed. Neutral example eyes changed to plain circles. |
+| **v3** | Round 1 (DeepSeek, GLM) | v2 plus a second critique pass. | **At least one unmistakably technological accessory** with a human counterpart. **Silhouette first, not oval first.** **Bold line weight** (contours 8–12 px, features 5–7 px, detail 3 px). |
+| **v4** | Round 2 | v3 rebuilt after the human's round-1 feedback ("none uses current events in an impactful way", "no artistic quality"). | A new section making **one specific recent tech/AI event central** (impact test, props that make it recognizable without text) and a large **art section** (exaggeration at 150–200%, characterful features, varied line weight with tapered shapes, solid masses, Whistler-like hatching, composition, limited palette, "would it look good framed?"). Delivery: `EVENT:`/`TITLE:` lines plus `<title>`/`<desc>` in the SVG. **Result: all three lost the 180° face.** |
+| **v5** | Round 3 | Rebuilt **from v3**, not v4. | **Absolute priority order**: reversibility first, then contrast, then light touches ("if any later touch endangers a reading, delete the touch"). **Staged workflow**: (1) geometry only, (2) verify by rotating coordinates with `R(p) = (1000−x, 1000−y)`, (3) style only afterwards. The self-check starts with a **reversibility gate** in which the model names B's hat, eyes, nose, mouth and beard. Event reduced to **one simple prop per face**, droppable. Art reduced to **three short cues** (varied line weight, caricature exaggeration, asymmetric silhouette), explicitly subordinate. No `<title>`/`<desc>` in the SVG. Shorter than v4. |
+| *v5b (discarded)* | Round 3, DeepSeek only | v5 plus "Stage 2 is one short pass; keep planning under about 3000 words". | Did **not** stop DeepSeek's verification loop (hit the 24000-token cap without an answer). Kept in `prompts/discarded/` for the record. DeepSeek only delivered when reasoning was disabled and the original v5 text was used. |
+
+## Why the second agent's critiques mattered
+
+Between rounds, a prompt-critique pass was done by a second agent (see `reviews/`). Its most useful points were: make the joke a drawn difference; force expression contrast; stop the model from spending its budget on arithmetic; require a technological accessory; ask for bold line weight and a non-oval silhouette; and (for v5) warn about constraint overload and the lack of any visual feedback loop for the models.
+
+## A note on the "Whistler examples" section
+
+Every prompt from v1 to v5 contains the same placeholder section (6b) with short text descriptions of two real Whistler drawings, written from public images and flagged inside the prompt as **unverified**. They are kept verbatim for reproducibility; they have not been checked against the originals and may contain mistakes.

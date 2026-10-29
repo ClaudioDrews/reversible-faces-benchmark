@@ -1,0 +1,1453 @@
+Let me work through the design.
+
+**Event:** OpenAI's "Stargate" announcement / or better - the January 2025 DeepSeek moment. Actually let me pick something specific and visual.
+
+Best candidate: **DeepSeek R1 release (Jan 2025)** — the Chinese lab released a model matching OpenAI at a fraction of the cost, wiping ~$600B off Nvidia's market cap in a single day ("DeepSeek day"). A = the triumphant, cheap, open-source chatbot winking (free, efficient, no giant data-center); B = the Silicon Valley AI capex giant / Nvidia investor with a shattered valuation, crumpled hat, drooping.
+
+Hmm, but reversing with shared eyes.
+
+Alternative: **the "Stargate" $500B announcement (Jan 2025)** — A = the grand announcement (tall tower hat = the data center tower, chin up, confident grin); B = the aftermath.
+
+Let me pick DeepSeek. Actually the specific visual joke: A = a lean, cheap, open-source model glowing with pride, whistle-clean, wearing a small "no-GPU" leaf/circuit; B = the giant AI capex colossus, staggering, pockets emptied, a cracked GPU-chip crown.
+
+Hmm, complexity. Let me simplify to a single strong prop: a **GPU chip / data-center tower**.
+
+Better: **A = a giant data-center tower worn as a towering top hat on a proud CEO** (Stargate, Jan 2025, $500B). **B = the same towers sagging into a collar / the capex cape collapsing, face aged and worried.**
+
+Hmm, but the "same-day crash" is DeepSeek specifically. Let me use:
+
+**EVENT: DeepSeek R1's release (Jan 2025) and Nvidia's ~$600B single-day drop.**
+
+A: the lean open-source challenger — a small, cocky, cheap model. Prop: a **circuit-chip halo** or **a cheap price tag with no numbers**. Expression: wide grin, one eyebrow arched, winking.
+
+B: the giant capex colossus — heavy jaw, dollar-signs gone, a sagging empty money bag as a collar. Prop: **a cracked/drained GPU chip** drooping as the hat brim.
+
+Complication: The requirement says at least one accessory must be unmistakably technological with a clear human counterpart. And use at least three different pairs from the dictionary.
+
+Let me design the skeleton concretely.
+
+Page coordinates. Eyes at y=500, centers at x=430 and x=570 (that's ±70 from center 500... canon says ±84, fine let's use 425 and 575).
+
+Head: crown at 200 (hat/chin line) to chin at 800. Actually let's have the shared eye line at y=500.
+
+Key heights (page y):
+- y=110: plume/pompom in A / collar-bow in B
+- y=200: crown of hat = chin of B
+- y=320: hat dome = B's mouth
+- y=350: hat brim = B's nose tip
+- y=380: hairline = B's nose bridge
+- y=452: brow = B's under-eye bag
+- y=476: upper lid crease
+- y=500: EYES
+- y=524: lower lid
+- y=548: under-eye bag = B's brow
+- y=620: nose bridge = B's hairline
+- y=650: nose tip = B's hat brim
+- y=680: mouth = B's hat dome
+- y=800: chin = B's crown of hat
+- y=890: collar = B's pompom
+
+OK. So in A (upright), the face occupies from about y=380 (hairline) down to y=800 (chin). Above is hat: 200–380. Below is collar around 850–900.
+
+In B (rotated), the face occupies from y=620 (hairline in B, which is at page y = 1000-380=620) down to y=200 (chin in B at page y=1000-800=200). Wait, B's chin is at page y=1000-800=200? B's chin in B's own frame is +0.5H = 800 in B's frame; on the page that's 1000-800=200. Yes. And B's crown of hat at B-frame -0.5H=200 → page 800.
+
+So B's face spans page y = 620 (hairline) up to page y = 200 (chin); B's hat spans page y 800 (crown) down to 620 (brim... wait).
+
+Let me redo: In B's own upright frame, features are at their canonical heights. When we rotate the page 180°, a point at page y_p goes to 1000-y_p. So a feature drawn AT page y_p appears, in the rotated view, at 1000-y_p.
+
+So if I want B's mouth to appear at B-frame height 680 (in the rotated view the mouth should be below the eyes at 500... in the rotated view, "below the eyes" = page-above the eyes). Hmm, careful.
+
+Simplest: think in terms of the rotated view. In the rotated view, everything looks canonical. Eyes at page 500 (invariant, 1000-500=500 ✓). B's mouth at page y such that 1000-y = 680 → y = 320. Good: so B's mouth stroke on the page sits at y=320, which in A's reading is the hat dome. ✓ Matches the dictionary.
+
+Great, so the table above is exactly right.
+
+So: strokes at page y=320 read as A's hat dome and as B's mouth. 
+
+Now design.
+
+**A (upright reading):**
+- Tall cylindrical/domed hat from y≈200 (crown) to y≈350 (brim). The hat dome top at ~200.
+- Under the brim, the face: brow at 452, eyes at 500, nose at 620–650, mouth at 680, chin at 800.
+- Collar/neck at 850–900.
+
+**B (rotated reading):**
+- B's hat: from B-frame crown (page 800) up to B-frame brim (page 650). So B's hat occupies page y 650–800. That's A's nose/mouth/chin area. So A's nose+mouth+chin forms B's hat. 
+- B's face: B's brow at page 548, eyes 500, nose 380–350, mouth 320, chin 200.
+- B's face spans page 200–620 → A's hat region.
+
+So: A's hat = B's face. A's nose-mouth-chin = B's hat. A's collar = B's pompom/plume.
+
+That's the classic structure. 
+
+Now the joke. DeepSeek vs. the capex colossus.
+
+Hmm, the direction: A is what you see first (upright), B is the punchline. So A should be the "moment of triumph" and B the "moment of consequence".
+
+A = the triumphant challenge... Actually, thinking about impact: the viewer who knows the event. Upright A: Face A. The hat region (which in B is a face).
+
+Let me make:
+- **A** = the huge, over-funded AI colossus: towering top hat (the $500B data-center tower), smug, chin-up, wide confident grin, monocle-ish eye, huge waxed mustache? No—mustache would be in the collar zone... hmm.
+
+Actually let's flip: A = the overconfident giant (Stargate/capex), B = the cheap challenger that wrecked it. Hmm, but B is the punchline = the consequence.
+
+Let me settle:
+
+**A (upright): the AI capex colossus** — a beaming, top-hatted tycoon, chin up, huge confident grin, tiny eyes squinting with delight, a towering hat with a GPU-chip band and a money-bag pompom on top. This is the "we're spending $500 billion" announcement face.
+
+**B (rotated): the same figure read upside down = the same colossus after the DeepSeek shock** — the towering hat (A's hat, which is B's face... no wait).
+
+Hmm, the problem: A's hat becomes B's FACE. So if A's hat is the colossus's tower, then B's face is derived from the tower. And A's face (the beaming tycoon) becomes B's hat. Hmm.
+
+OK so the structure forces: whoever's hat it is in A is whoever's face it is in B.
+
+So: In A, the tall tower/hat sits on top of the beaming tycoon. In B, that tower becomes B's... no. In A, the region page 200–380 is the hat. Rotated, that region becomes the lower part of B's face — B's nose/mouth/chin. And the region 650–800 (A's nose/mouth/chin) becomes B's face's upper part: brows and forehead. And the region 380–620 (A's eyes/cheeks) stays the middle: B's eyes/cheeks.
+
+So the crown of A's hat (y=200) is B's chin, and A's chin (y=800) is B's hat crown. And A's collar (y=890) is B's plume.
+
+Therefore: **A's tall hat shape determines B's jaw/chin/nose/mouth.** A big tall domed hat = B has a big domed chin+jaw. And **A's chin/jaw region determines B's hat.** If A has a huge heavy jaw and beard, B gets a huge heavy hat.
+
+Nice. So: A = top-heavy (tall hat), B = bottom-heavy (huge jaw, thick beard) — that's the natural pairing. And B's hat comes from A's big jaw/beard mass.
+
+Great. Now the joke: 
+
+A = the tall tower/hat. B = ...? 
+
+Let's do: **A = the DeepSeek moment's loser? No.**
+
+Think again about what reads better. In A: a tall hat on top. In B: a huge jaw/beard.
+
+Joke idea: **A = the giant AI data-center tower (Stargate, $500B, Jan 2025): a proud, monumental, hard-hatted colossus with a wide confident grin, chin up.** In B: **the same strokes = the lean open-source model that undercut it — a small sharp face with a scrappy grin?** Hmm, the jaw mass would need to be huge in A to become a big hat in B.
+
+Alternative joke framing that's cleaner and funnier:
+
+**A = a proud engineer/CEO standing next to (wearing) a giant GPU-chip data-center tower hat, grinning, "we'll spend $500B".** 
+**B = the investor/analyst face after the crash: hollow eyes... ** no, eyes are shared.
+
+Hmm, the eyes are shared, so expression changes must come from lids/brows/mouth-as-hat-band.
+
+OK here's a thought: since A's eyes are B's eyes, the eye region carries both. Brow at 452 = B's under-eye bag. Under-eye bag at 548 = B's brow.
+
+For A: heavy low brow at 452, and bags at 548 → A looks... hmm, brow at 452 (above eyes) heavy and low = glowering/serious. And at 548, a bag under the eye.
+
+Since the strokes are shared, A's brow (452) is B's under-eye bag, and B's brow is drawn at 548 which is A's under-eye bag. So: a stroke at 452 and a stroke at 548. In A, 452 reads as brow, 548 reads as eye-bag. In B (rotated), 548 reads as brow, 452 reads as eye-bag.
+
+So if the 452 stroke is a heavy angled-down-toward-center brow, A looks angry; rotated it becomes, at B-position (1000-452=548 → B's brow at B-height +0.08... wait. Let me redo.
+
+In the rotated view, a stroke on the page at y=452 appears at 1000-452 = 548 in the viewer's new coordinate... no! Rotation of the page by 180° maps a point at page y=452 to page y=548. If the viewer just rotates the paper, they see the content at page position 548 now at their top... 
+
+Ugh. Let's be concrete. The viewer holds the paper. Content at page y=452 is 48 above the eye line. Content at page y=548 is 48 below the eye line. When they rotate the paper 180°, the content at page y=452 (which was ABOVE the eyes) now appears BELOW the eyes (of the rotated view). Since in the rotated view, the eyes are still at the center of their visual field and the content at page y=548 now appears above the eyes.
+
+Yes: after rotation, content originally at y=452 is now visually below the eyes; content at y=548 is now visually above the eyes.
+
+So: a stroke at page y=452 = brow in A = under-eye bag in B. ✓ (matches the dictionary: brow(−0.08) ↔ under-eye bag(+0.08); the B-frame position is +0.08 = 548 page, and indeed 1000-452=548 ✓).
+
+So the stroke at 452 must serve as a heavy brow for A and an eye-bag for B. A heavy drooping brow = a puffy eye bag. Fine, both are "heavy dark arcs above/below the eye."
+
+And the stroke at 548 serves as A's under-eye bag and B's brow. In B's frame B's brow is at −0.08 → page 1000−452... no: B's brow at B-frame −0.08H means 48 above B's eyes in B's frame. On the page, that's 48 below the eyes = page y=548. ✓. So the stroke at 548 is B's brow.
+
+So if the 548 stroke is an angry angled brow in B, it's an eye-bag in A. An angled brow reads as a bag too if drawn thick enough. Good — angle it.
+
+OK. Let's just design it.
+
+**Chosen event:** DeepSeek-R1 release (Jan 2025) → Nvidia's record one-day market-cap loss (~$600B, 27 Jan 2025).
+
+**A:** the giant AI capex colossus — a monumental, over-funded "compute tower": a top-hat that IS a data-center/GPU rack tower, with a smug, chin-up, delighted grin (the "we will spend $500B on Stargate" face). Wearing a hard hat brim + GPU-chip monocle? Hmm.
+
+**B:** rotated — the same strokes read as a heavy-jowled, weary face: the tower becomes his own huge jaw/beard; his confident grin becomes a sagging hat-band; the GPU chip becomes a drooping money-bag / a chip with a crack. B = the morning after DeepSeek: hollow pockets, a drained chip.
+
+Hmm, I worry about it being too abstract. Let me simplify and make the props bold:
+
+**Central prop A:** a GPU-chip-shaped tower as the hat, with a row of vertical fins (the chip's heatsink fins / the data-center racks). And the "pompom" on top = a coin/money bag. Actually a plume of dollar signs is text-ish. Let's do a stack of coins as the pompom — circles/ellipses, no letters.
+
+**Central prop B:** the same fins (A's hat racks) become the teeth/grin line... no, at page 320-350 the fins would be around the mouth line of B.
+
+Hmm. Let's map: A's hat spans page 200–380. The fins run vertically there. In B, page 200–380 = B's chin (200) to B's nose bridge (380). Vertical fins would become vertical... no, rotation turns vertical strokes into vertical strokes. So vertical fins stay vertical in B — they'd be at B's chin/nose area, reading as... chin creases / a beard? Or a "hollow" chin with vertical hatching. Hmm, they'd read as a chin cleft / wrinkles. Could be ok but let's be careful.
+
+Better: put the fins as the hat BRIM region and the hat band.
+
+Let's re-think. Rotation: horizontal lines stay horizontal, vertical stays vertical, diagonals stay diagonal. A ∪ becomes ∩. Left-right swap. That's all.
+
+So a striped hat band (horizontal stripes) in A becomes horizontal stripes at B's mouth level. Could read as teeth! A big toothy grin with vertical tooth separators — vertical lines. So: A's hat has a band with vertical hatching → becomes B's toothy grin at page 320. But teeth between lips... a horizontal band with vertical separators reads as a row of teeth. Yes! That's a great double-duty: **A's hat band with its rack-fins = B's bared grin.**
+
+Hmm but I wanted B to be the weary loser. Teeth-grin could be the gritted-teeth grimace, or a "grinning through it" nervous smile. Actually a row of teeth can read as a clenched grimace.
+
+Alternatively B = the winner (DeepSeek's lean upstart) and A = the bloated giant. Since A is what you see first, and A's tall hat = B's face, then: A's tall data-center tower hat → B's face is tall/long? No — A's hat is 200–380, which in B is chin-to-nose-bridge, i.e., B's lower face. A tall hat → B has a long lower face. A tall hat + narrow = B has a long chin. Hmm.
+
+Honestly, let me just make it a solid caricature with the dual readings, and pick the framing:
+
+**A = "THE $500B COLOSSUS"**: a pompous tycoon with a towering GPU-rack hat, chin up, wide smug grin, tiny downturned... no, happy.
+
+**B = "THE MORNING AFTER DEEPSEEK"**: heavy-jowled, sagging, hollow-eyed, mouth turned down, his tower-of-compute now a sagging drooping collar/beard.
+
+For B to have a downturned mouth (frown = ∩ on the page at B's mouth level = page y=320), that ∩ must be A's hat dome. A hat dome is ∩. ✓ Perfect: a domed cap in A = a frowning mouth in B. And a smile (∪) in A at 680 = B's hat (=∩ after rotation at page 680 → in B-frame that's 1000-680=320... wait, page 680 rotated → page 320. And 320 in B's frame is B's mouth. Hmm no.
+
+Careful again: The mouth stroke I draw at page 680. In A it's A's mouth. Rotated, it appears at page 320 visually, which is B's hat-dome zone. ✓ (A's mouth = B's hat band/dome.) Right.
+
+And a stroke drawn at page 320: in A it's the hat dome; rotated it's at page 680 = B's mouth.
+
+So: to give B a frown (∩ as seen in B's view), the stroke at page 320 must, after rotation, look like ∩. A stroke that is ∩ on the page becomes ∪ after rotation. So I need the page-stroke at 320 to be ∪ (a cup/smile) so that in B's rotated view it reads as ∩ (a frown). 
+
+And that ∪ stroke at page 320 is, in A, the hat dome. Hmm, a hat with a ∪-shaped dome? That would be a hat with a dip in the middle — like a bowler is ∩. A ∪ dome means the top of the hat dips in the center — a bicorne-ish or a hat with a crease. Actually a soft cap with a central dent — plausible! Or better, this stroke doesn't have to be the top of the hat; it can be the hat's **band line** or the brim's upper edge.
+
+Actually, the brim of the hat: a brim seen edge-on is roughly a line that curves. If the brim curves ∪ (drooping at the sides, dipping in the middle)? Hmm.
+
+Let's simplify: the hat's lower edge / band is at page ~340. If that band is a ∪ curve (dipping in the middle), it looks like a hat brim curving down at the center — a bit odd but readable as a brim of a floppy hat or the band of a beanie.
+
+Actually, you know what reads naturally: **the hat brim line** drawn as a shallow ∪ (the underside of the brim, seen from below, which naturally curves upward... no).
+
+Hmm — realistically, a hat brim seen from front-below curves ∩ (down at the sides). Seen from above it curves ∪.
+
+Alternatively, use the **hat band** (the ribbon around the hat) drawn as ∪, which is natural if the hat bulges.
+
+I think a slightly ∪ hat-brim is fine and will read as a floppy/straw hat. Actually! Better idea: make A's hat a **soft "beanie"/beret with a wide floppy brim** — no.
+
+New approach: make the stroke at 320 the **hat's crown crease** — like a bowler has a dented crown? No, a bowler's crown is a dome.
+
+OK: **A wears a tall soft cap that slumps** — the top of the cap dips in the middle (like a nightcap / a stocking cap). That's a ∪ at 320, and it reads as a sagging/tired hat in A, matching "the morning after." Hmm, but then A looks sad too.
+
+Alternatively, accept it and use a different stroke for B's mouth: B's mouth could be formed by A's hat brim at 350 which is B's nose tip. Not the mouth.
+
+Let me instead just make A's hat dome a dome (∩) — so B's mouth is a ∪ = a smile. Then B is the happy one. 
+
+**Revised roles:** A = the glum/heavy colossus (before/after?) ... but A is the first thing seen.
+
+Hmm. Let's reconsider: maybe the joke reads better as:
+
+**A (upright) = "THE HYPE": the giant, over-confident compute colossus** — a monumental figure topped by a towering data-center tower (tall hat), chin up, smug. His mouth at 680 is a wide confident ∪ smile. Rotated, that ∪ at 680 becomes ∩ at page 320 = B's hat: a **dome-crowned hat**. Hmm, B's hat is a dome cap. Fine.
+
+**B (rotated) = "THE BILL": the same colossus after the DeepSeek crash** — hmm, but B's face comes from A's hat.
+
+B's face (page 200–620): A's hat is there. So B's face is the tower itself. That's the joke: **the compute tower has become the face** — i.e., the tower is now the guy? Or the guy's face is now the machine.
+
+Hmm, actually there's a nicer reading: **In A, the human CEO is wearing the tower. In B, the tower wears the human face** — i.e., the machine becomes the face. That's a real AI joke. But maybe too abstract.
+
+Let me just go simpler and clearer. Let's commit:
+
+---
+
+**EVENT:** DeepSeek-R1 (Jan 2025) and Nvidia's $600B one-day wipeout.
+
+**A (upright):** The bloated AI-capex colossus on announcement day: a stocky tycoon, chin up, smug squinting grin, wearing a **towering hat built as a GPU/rack tower** with a stack of coins as the pompom on top. His huge jaw and jowls hang below. He's leaning back, confident, wallet bursting.
+
+**B (rotated):** The same strokes read as the **deflated face of the compute trade**: the tower's fins become a row of clenched teeth/beard stubble under a long nose; the tycoon's great jaw becomes a great sagging **hat** (the "cap" of the market), drooping; the coin stack on top becomes a bow tie/sagging collar; the smug grin becomes... 
+
+Hmm. Honestly maybe I should not over-engineer. Let me just carefully build a proper reversible caricature with:
+- shared eyes
+- A's hat ↔ B's jaw/nose/mouth zone
+- A's nose/mouth/jaw ↔ B's hat/collar
+- a technological prop (a GPU chip / a plug / a cable) that is a chip in A and a beard/chin in B.
+
+Let me define concrete page geometry.
+
+**Silhouette (shared outline):** need one outline containing both. Let's define the head mass:
+- Top of the head mass (A's hat crown): y=200, x from 380 to 620 (a tower).
+- Widening down to y=380: x from 340 to 660 (A's hat brim wide).
+- Then the face: cheeks at y=560: x from 330 to 670.
+- Jaw at y=760: x from 370 to 630.
+- Chin at y=800: x 440 to 560.
+- Neck/collar 850–900.
+
+But in B: the top of the head mass (y=200) is B's chin, so it needs to be a chin-like shape (rounded, narrow). And A's crown of hat at y=200 needs to be a hat crown. A narrow rounded top works as both a hat crown and a chin. Good — make A's hat a rounded dome-ish tower, narrow at top. Actually a chin at 200 should be ~x 440–560, and A's hat crown similar. Fine, a tall narrow-topped hat.
+
+Hmm, but the canon says A's crown at −0.5H = 200 and A's hat dome at −0.3H = 320 and brim at 350. So the hat is 200 (top) to 350 (brim) = 150px tall, and the brim is wide.
+
+And B's chin at 200 (page) and B's mouth at 320 (page). So between page 200 and 320 we have B's mouth-to-chin region = 120px. And A's hat from 200 to 320.
+
+So A's hat: crown at 200, dome at 320 (which is B's mouth), brim at 350 (B's nose tip). So the hat is quite short: 200-350 = 150px. That's a small hat compared to the 600px head. Hmm, "top-heavy tall hat" needs more. But we can extend the plume/pompom up to 110.
+
+So: the hat mass = 200–350 (dome) plus a brim, plus a pompom/plume at ~110–200. That's 110–350 = 240px of hat. OK.
+
+And A's face: hairline 380, chin 800. 420px. Plus collar 800–900.
+
+So A: tall-ish hat 110–350, face 380–800, collar to 900. Total 110–900 = 790. Slightly more than 600 head height, that's fine (the "head" 380–800 = 420... hmm, canon says head crown to chin = 600 px, i.e., −0.5 to +0.5 = 200 to 800. The "head" includes the hat zone. Whatever — we just need it to fill 100–900.)
+
+OK, let's go. I'll design it loosely and draw confidently.
+
+### Design in detail
+
+**Shared outline** (a single blobby contour, roughly):
+
+Let me lay out the page (1000×1000), figure centered at x=500.
+
+Outline points (clockwise from top):
+- (500, 130) top of pompom/plume mass... Actually let's have the pompom at y=110–190 as a distinct blob (coin stack / tassel).
+
+Let me define the main head/hat silhouette:
+
+Top center: (500, 195) — flat-ish top of the hat crown, slightly rounded, width from 400 to 600.
+Sides bulge out: at y=260, x from 375 to 625.
+At y=320 (dome/band), x from 350 to 650.
+At y=355 (brim), x from 315 to 685 — the brim flares out.
+Then in under the brim: at y=380 (hairline/temples), x from 335 to 665.
+Cheeks at y=560: x from 330 to 670 (widest).
+Jowls at y=700: x from 350 to 650.
+Jaw at y=770: x from 385 to 615.
+Chin bottom at y=805: x from 445 to 555.
+Then neck: at y=850, x from 425 to 575.
+Collar at y=880: x from 330 to 670, with the collar flaring out.
+Bottom of collar: y=910.
+
+Hmm, the brim at 355 flaring to 315/685 while the cheeks at 560 are 330/670 — the brim is wider. That's fine and gives an asymmetric-ish silhouette.
+
+For character, let's make it asymmetric: shift the whole thing slightly, make the left jowl bigger. E.g., left cheek at x=320, right at x=680 at y=560; left jowl bulges to 340 at y=720, right jowl 655.
+
+**In B's reading**, this outline rotated: B's chin at page 200 (top of the hat crown, x 400–600 → after rotation, at page 800... no!).
+
+WAIT. I need to be careful. The silhouette I draw is a fixed set of page coordinates. In A's reading it's the outline of hat+head+collar. In B's reading (rotated 180°), the same outline appears as: the region near page y=200 (top) appears at the bottom of the rotated view, and page y=800 (chin) appears at the top.
+
+So in the rotated view: the top of the head is at page y=800 (A's chin) — that region must read as B's hat crown. And the bottom of the rotated view is page y=200 (A's hat crown) — must read as B's chin.
+
+So: A's chin (page 800, narrow: x 445–555) becomes B's hat crown (narrow, 445–555 after left-right swap → still 445–555). Good, a narrow hat crown.
+
+A's jaw at 770 (x 385–615) becomes B's hat at B-position just above the crown... in the rotated view, page 770 is just above page 800? No: rotating, page 770 goes to page 230 in the viewed... 
+
+Hmm, I keep confusing myself. Let me define it clearly:
+
+Rotating the *paper* by 180°: a point at (x,y) moves to (1000−x, 1000−y). The viewer sees it at that new location.
+
+So content at page (500, 800) [A's chin] moves to (500, 200) and is seen at the TOP of the rotated page. Yes. So A's chin → appears at the top = B's hat crown. ✓ (as I said).
+
+Content at page (500, 200) [A's hat crown] moves to (500,800) = bottom = B's chin. ✓.
+
+Content at page y=770 (A's jaw) → y=230 = B's upper hat area, just below the crown... wait, 800 is B's crown (top) and the hat extends downward from 800 to 650 in the rotated view. Page 770 → 230, which is above 200? No: 1000−770 = 230. And 1000−800 = 200. So page 800 → 200 (higher on screen since y is smaller = higher) and page 770 → 230 (lower on screen). So A's jaw (770, just above the chin at 800) becomes B's hat at 230, just below the crown at 200. ✓ Consistent.
+
+Good, so the vertical mapping is: rotated_y = 1000 − y. And a feature at A-page-y is at B-page-(1000−y).
+
+So for the outline to work as B's hat: the region page y ∈ [650, 800] must form a hat shape in the rotated view, i.e., at rotated y ∈ [200, 350]. Which is A's nose/mouth/chin region. So A's nose+mouth+chin must together form B's hat.
+
+A's chin at 800 (narrow x 445–555) → B's hat crown (narrow). ✓
+A's jaw at 770 (x 385–615) → B's hat at 230 (x 385–615 after swap, symmetric). This is the hat's upper body, wider. ✓
+A's mouth at 680 → B's hat brim at 320. So the outline at A's mouth level (x ~ 370–630?) → B's brim. Brims are wide. So A's mouth region should be wide in the outline? Hmm, A's mouth level is in the middle of the cheeks, so the outline there is wide (330–670). After rotation → B's brim at x 330–670, y=320. A brim of width 340 at y=320 while the crown is at 200 and the hat body at 230 is 385–615. So the brim (330-670) is wider than the hat body — that's a normal flared brim. ✓ 
+
+And A's nose at 650 → B's brim at 350; outline width there ~ 355–645. OK.
+
+So B's hat: crown at 200, body widening, brim at 320–350 flaring to 330–670. That's a nice fedora/bowler shape. 
+
+And A's nose+mouth+chin form this. So A has a big long nose and a heavy chin/jaw. To make it work, the outline from 620 to 800 should be a nice rounded jaw. And within, A's nose and mouth lines will, in B, become the hat's brim-edge and band. Good.
+
+Now, in A, is the region 620–800 (his nose/mouth/chin) so wide (330–670) that his face looks like a melon? At y=680 the cheeks are at 330/670 → face width 340 at mouth level, and at eye level (500) 335–665 = 330 wide. That's a very round face — fine for a caricature, plump.
+
+Hmm, but it means there's no visible jaw narrowing until 770. Let's narrow a bit: at y=700, x 355–645; at 760, x 395–605; at 800, chin 450–550.
+
+Then B's hat: at rotated 300 (page 700) width 355–645... and at rotated 240 (page 760) width 395–605... 
+
+Hmm wait, that means in the rotated view the hat gets WIDER as it goes DOWN from the crown: at 200 (page 800) width 450–550; at 240 (page 760) 395–605; at 300 (page 700) 355–645; at 320 (page 680) 340–660; at 350 (page 650) 355–645.
+
+So the hat is a dome shape that flares out then... at 350 it narrows again. That's a brim! Nice: crown small → widens to 320 → then the brim edge. Actually the brim would be widest at its outer edge and the head narrower below. Since below 350 (rotated) is page > 650 which is A's nose... hmm no: rotated 350 = page 650 = A's nose tip. Below that in the rotated view (rotated 380) = page 620 = A's nose bridge, and the outline there... 
+
+Wait, in the rotated view, going down from the hat at rotated_y=350 we'd be at the hat brim's underside and then B's face (forehead at rotated 380? No — B's hairline is at rotated page-y... let's compute. B's hairline in B's frame is −0.2H = 380 above eyes... 
+
+Ugh, let me just use: B's face features in the rotated view appear at rotated_page_y = 1000 − A_page_y where A_page_y is where I draw the stroke. I want B's brow at 1000−548 = 452 (drawn at page 548). B's eyes at 500 (drawn at 500). B's nose tip at 350... 
+
+Hold on, that's wrong. Let me redo: B's nose tip in B's frame is at +0.25H = 650 below the eyes. On the page, it's at 1000 − 650 = 350. So I draw B's nose-tip stroke at page y=350. And at page 350 in A's reading is the hat brim. ✓ consistent with the dictionary (hat brim −0.25 ↔ nose tip +0.25).
+
+I conflated. Let me redo the mapping properly:
+
+A feature of B at B-height h_B (in B's local frame, y grows down) appears, in A's reading, at page y = 1000 − (500 + 600·h_B) = 500 − 600·h_B.
+
+So B's nose tip (h_B = +0.25) → page y = 500 − 150 = 350. ✓
+B's mouth (+0.30) → page 320. ✓
+B's chin (+0.50) → page 200. ✓
+B's hat crown (−0.50) → page 800. ✓
+B's brim (−0.25) → page 650. ✓
+B's hairline (−0.20) → page 620. ✓
+B's brow (−0.08) → page 548. ✓
+B's under-eye bag (+0.08) → page 452. ✓
+
+Great, all consistent with the dictionary table (which lists A-page-y and says "is in B").
+
+So now, the OUTLINE: at page y=650 (A's hat brim region / B's hat brim at −0.25), the width should be the brim width in B. And in A it's the... page 650 is A's nose tip. Hmm, so the outline at page 650 is A's nose level = A's cheek width. And it's B's brim = wide. Consistent: cheeks are wide, brims are wide. ✓
+
+And page 620 (A's nose bridge / B's hairline) → the outline there is A's cheek. And B's hairline — the head's width at the hairline. Fine.
+
+And page 548 (A's eye bag / B's brow) → outline = A's face width at the eye-bag level; B's forehead width. Fine.
+
+And page 452 (A's brow / B's under-eye bag) → outline: A's forehead width; B's cheek width. So if A's forehead is narrow and B's cheeks are wide... but they're the same outline. Compromise: A has a narrow-ish forehead, B has narrow cheeks — meaning the face tapers upward in B. Since B's face is A's hat region... 
+
+Hmm: page 452 in A is just above the brow (forehead). Page 452 in B is at B's under-eye-bag level. The outline width at page 452 is fixed. In A it's the forehead/temple width; in B it's the cheek width at the bag level. Both roughly similar. Fine.
+
+OK. Enough analysis. The outline is basically an egg. Let me add asymmetry so it doesn't look like a perfect oval.
+
+Let me now write the drawing plan concretely.
+
+---
+
+### Concrete SVG plan
+
+**Palette:**
+- paper: #f4efe4 (warm off-white)
+- ink: #1a1a1a
+- accent 1: #c8452f (vermilion) — for the tech chip
+- accent 2: #2f6d8f (slate blue) — for a secondary mass? Or for the money/coins gold #b8860b.
+
+Let's do: paper #f5f0e6, ink #17181a, accent A = #c94b32 (red-orange, the chip), accent B = #d8a13a (gold, the coins). Max 4 colors. Good.
+
+**Groups:**
+
+1. `<g id="shared">` — everything drawn once, unrotated: eyes, nose, mouth, hat, outline, cheeks, etc. But wait — "shared" strokes must be shared. Some strokes are A-only (must be light/inert in B), some B-only (drawn inside `rotate(180 500 500)`).
+
+Let me keep it simple and mostly shared with a handful of A-only and B-only accents.
+
+**Element list:**
+
+*Outline of head+hat+collar* — one big path.
+
+*Hat (A) / lower face (B):*
+- Hat crown arc (top of hat) — this is B's chin. Shared.
+- Hat band: a horizontal-ish band around page y=310–340 — in B this is the mouth/lip region. Let's make the hat band a ∪ curve (dips in the middle) so that in B it reads as a ∩ = frown? Wait: a ∪ on the page becomes, after rotation, a ∩ in view. Yes. So a ∪ band → B sees ∩ = frown. Hmm, actually a frown mouth is ∩ (corners down). Yes ∩ = corners down. So a ∪ page-curve → ∩ in B's view = frown. ✓
+
+  But wait — the hat band being ∪ means the band dips in the middle. In A that's the hat's ribbon sagging. That's fine, hats' bands follow the crown. But it's at page 320 which is the hat DOME per the dictionary (mouth ↔ hat dome). Right: A's hat dome = B's mouth. So the stroke at ~320 IS the mouth in B. Let's make it the prominent one.
+
+  Actually I want A's hat to look like a real hat. Let me make the hat: a tall rounded crown from 195 to ~330, with a distinct band (a ribbon) around 300–340, and a brim at 345–375 flaring out.
+
+  Then in B: the crown top (195) = B's chin (near 200 ✓). The band (300–340) = B's mouth region (320 ✓). The brim (345–375) = B's nose (350 ✓) and B's nose bridge/hairline (380 ✓).
+
+  Hmm, the brim spans 345–375 which in B is B's nose bridge (380) to nose tip (350). So the brim becomes the nose! A wide flaring brim → a wide flat nose. That works if the brim is drawn as a shape whose lower edge is a nice nose-like curve.
+
+  Nice: **A's hat brim = B's nose.** The brim's underside curve = the nose's outline.
+
+  And the hat band with vertical rack-fins = B's teeth/grin. Hmm, but I decided B's mouth should be a frown... 
+
+  Let me decide B's expression: after the $600B wipeout → a stunned/dismayed face. So: heavy sagging brows (from A's eye bags), wide-open or dead eyes, and a downturned mouth (∩ in B = ∪ on the page at 320). And a big sagging jowl.
+
+  But then A's hat dome needs to be ∪-shaped (dipping). A hat whose top dips... like a **deflated/soft cap**. Ooh — that's thematically perfect: A's over-inflated tower hat vs B's sagging face. But no — a deflated hat in A undercuts A's smugness.
+
+  Alternative: put B's frown at the same place but use a smaller ∪ for the mouth, and let the hat's dome be the ∩ crown higher up. The mouth of B is a stroke at page 320 that reads in A as part of the hat's surface — e.g., a decorative band curving ∪ (the hat's ribbon dipping). That's fine! The hat band can dip ∪ while the peak of the hat is a separate ∩-ish dome at 200–300.
+
+  Yes. So:
+  - Hat crown outline: from 195 down, ∩-ish/dome.
+  - Hat band: a ∪ curve at y≈300–340 (ribbon dipping at center = B's frowning mouth).
+  
+  Hmm, but a ribbon that dips in the middle on a domed hat... ribbons follow the hat's circumference, and seen from below they'd curve ∩ (down at the sides). Seen from above/slightly above, ∪. It's ambiguous enough. I'll draw it as a broad band with a ∪ lower edge and fill it dark — it'll read as the hat band in A and the mouth/lips in B. Actually, better: make it a ∪ CURVE (a thick stroke) at y=320 spanning x 400–600, with the corners at (400,300) and (600,300) and the middle at (500,345). In B that becomes: corners at (600,700)&(400,700), middle at (500,655) → a ∩ = frown, mouth half-width 100. Good, that's a frowning mouth with heavy corners.
+
+  In A it reads as the hat's band/sweatband, dipping. Combined with a brim just below it. Should be OK.
+
+*Nose (A) / eyebrows+forehead (B):*
+A's nose: big, bulbous, from bridge at 620 down to tip at 650... wait, A's nose bridge at page 620 and tip at 650. That's a very short nose (30px). Hmm, the canon says nose bridge +0.20 = 620 and tip +0.25 = 650. So the nose is only 30px tall?! That seems off, but it's the convention. Actually the "nose bridge" is where the nose begins, and the nose extends from there down. In a caricature, a big nose could run from 560 to 700.
+
+But careful: whatever A's nose occupies (say 560–700) becomes B's forehead/hairline... no. Page 560–700 → B at 440–300. Page 560 → B-rotated 440 (B's brow/bag area); page 700 → rotated 300 (B's mouth area). Hmm, so A's nose region overlaps B's eye and mouth region. That's bad — the nose lines would sit on B's eyes/mouth.
+
+Constraint: A's nose must live in page 620–650ish, which rotated is B at 380–350 = B's nose bridge to tip. So A's nose = B's nose! They're at the same place (as the dictionary says brim(−0.25) ↔ nose tip(+0.25)). 
+
+So the nose region is shared: A's nose and B's nose are the same strokes at nearly the same place. Actually A's nose tip at 650 maps to B at 350, which is B's nose tip at 350 (page). ✓ Same place! So A's nose and B's nose are literally the same strokes. 
+
+Similarly, A's mouth at 680 → B at 320 = B's mouth position (page 320). But A's mouth is at 680 and B's mouth is at 320 — different page positions. So they're NOT literally the same. Right, so mouth and hat-dome share.
+
+OK so: nose is shared (nearly), eyes shared, cheeks shared. Mouth ↔ hat. Chin ↔ hat crown. Brow ↔ eye bag. Hairline ↔ nose bridge.
+
+Good. So A's nose and B's nose are basically co-located. That means the nose must read well in both — a big bulbous nose works for both. And in A, a big nose sits under a hat brim; in B, the same big nose sits under... the brim of B's hat which is A's mouth region. Hmm, whatever, it works.
+
+Hmm, but wait: A's hat brim at 350 and A's nose tip at 650 — same x,y? No! Different y. The brim is at page 350 and the nose at page 650. Different strokes. But after rotation, the brim at page 350 → appears at 650 = B's nose region. And B's actual nose drawn at page 650 → appears at 350 = B's brim region. So in the rotated view, B's nose is formed by... both? The strokes visible at rotated-position 650: those drawn at page 650 (which I intended as A's nose) — no wait.
+
+Ugh. Let's be very careful.
+
+The viewer rotates the paper. They see the drawing. A stroke drawn at page y=350 now appears at screen position y=650 (if they rotate in place, the paper's point at y=350 goes to y=650). So content that I drew at page 350 is SEEN at 650 in the rotated view. And content drawn at page 650 is seen at 350.
+
+So: the strokes I draw at page 350 must, in the rotated view, be at screen 650 = below the eyes = B's nose/upper-lip zone. And the strokes I draw at page 650 are seen at screen 350 = above the eyes = B's forehead/hat-brim zone.
+
+Hmm! So B's nose (screen 650) is formed by strokes drawn at page 350 (A's hat brim). And strokes drawn at page 650 (A's nose) are seen at screen 350 = B's forehead/hat brim region.
+
+I had it backwards. Let me redo the dictionary interpretation:
+
+"In A (page) | is in B": a feature at page y_p in A, when the page is rotated, appears at screen 1000−y_p. And the viewer sees it as the B-feature whose canonical screen position is 1000−y_p. B's canonical positions on screen: B's eyes at screen 500, B's nose tip at screen 650 (since in the rotated view the face is upright and canonical), B's mouth at 680, B's chin at 800.
+
+So a page-y_p = 350 feature → screen 650 → B's nose. ✓ So the hat brim at page 350 = B's nose. Yes! That's what the dictionary says: "hat brim (−0.25) | nose tip (+0.25)". And it works because 1000−350 = 650. ✓
+
+And a page-y_p = 650 feature (A's nose tip) → screen 350 → which is above B's eyes at −0.25 in B's frame = B's hat brim. ✓ "hat brim(−0.25) | nose tip(+0.25)" — the pair.
+
+So: A's hat brim (page 350) and A's nose tip (page 650) are two different strokes, and they swap roles in B: A's hat brim becomes B's nose, A's nose becomes B's hat brim.
+
+OK! So I need:
+- Stroke at page ~350: reads as A's hat brim AND as B's nose.
+- Stroke at page ~650: reads as A's nose AND as B's hat brim.
+
+Excellent, that's clean and it's the classic Whistler swap (hat↔nose). 
+
+And similarly:
+- Stroke at page ~320: A's hat dome/band AND B's mouth.
+- Stroke at page ~680: A's mouth AND B's hat dome/band.
+- Stroke at page ~200: A's hat crown AND B's chin.
+- Stroke at page ~800: A's chin AND B's hat crown.
+
+Great. Now everything is consistent.
+
+So the design:
+- A's hat at top: crown 195, dome/band 320, brim 350.
+- A's face: brow 452, eyes 500, nose 650, mouth 680, chin 800.
+- A's collar 880.
+
+And B's: hat crown at 800, band at 680, brim at 650; face: brow... B's brow is at −0.08 → screen 452 → page 548. B's under-eye bag +0.08 → screen 548 → page 452. B's nose at screen 650 → page 350. B's mouth screen 680 → page 320. B's chin screen 800 → page 200. B's collar screen 880 → page 120.
+
+So B's collar is at page 120, where A has the pompom/plume. ✓
+
+Now: A's hat crown at page 195 must read as B's chin (screen 805). ✓ narrow rounded.
+A's hat band at 320 = B's mouth at screen 680. ✓
+A's hat brim at 350 = B's nose at 650. ✓
+A's hairline at 380 = B's nose bridge at 620. ✓
+A's forehead 380–452 = B's nose bridge to bag at 620–548.
+A's brow at 452 = B's eye bag at 548. ✓
+A's eye bag at 548 = B's brow at 452. ✓
+A's nose at 650 = B's hat brim at 350. ✓
+A's mouth at 680 = B's hat band at 320. ✓
+A's chin at 800 = B's hat crown at 200. ✓
+A's collar at 880 = B's plume at 120. ✓
+
+PERFECT. All consistent.
+
+Now: **A's nose at 650 becomes B's hat brim.** So A's nose must be shaped like a hat brim in B — a wide flaring horizontal shape. A big bulbous nose with wide nostrils — the nostril wings spread wide — reads as a brim. Good.
+
+**A's mouth at 680 becomes B's hat band.** A's mouth curve: if it's a ∪ (smile), then in B (screen) it's ∩ = a domed band? Hmm, the hat band should be... whatever. A ∪ smile at 680 → at screen 320 it's seen as ∩. A hat's brim/lower band curving ∩ is normal. Hmm, but the band is it. Whatever, a ∩ curve at screen 320 will read as the underside of the hat's brim area or the hat's crown dome. Fine.
+
+Actually here's a nicer idea: **A's mouth = B's hat's brim/crown edge.** So A's mouth should be a wide, generous, slightly wavy line. And A's mouth corners with a mustache? No mustache (it'd be at 700ish → B's hat at 300ish).
+
+Hmm. Let's simplify: A's mouth is a big wide ∪ smile (a confident grin) at 680. In B: a ∩ at screen 320 → reads as the top edge of the hat's crown, i.e., the hat is a rounded dome. Fine.
+
+And A's hat band at 320: make it a ∪ dip that in B (screen 680) is ∩ = a downturned mouth → B's mouth is a frown! But B already has a "mouth" from... no, B's mouth is at screen 680 = page 320. Right. So the page-320 stroke is B's mouth and it should look, at screen 680, like B's mouth. Screen 680 mouth = a ∩ (frown) if I want B sad. A ∩ at screen 680 is drawn... the stroke drawn at page 320 appears at screen 680 as a ∩ if the stroke itself is a ∪ on the page? 
+
+Hmm: rotating a ∪ shape by 180° gives ∩. Yes. So a ∪ stroke on the page (drawn at 320) appears as ∩ at screen 680. ✓ So B gets a ∩ = frown. 
+
+So: page 320 stroke = ∪ (dip) → B sees ∩ frown. And in A it's the hat's band dipping low in the middle. Hmm, alternatively make it a straight band with a ∪ lower edge. Let's just draw the hat's band/lower-crown edge as a broad ∪ arc. In A: the hat's crown is a dome, and its base (where it meets the brim) naturally... hmm, a dome's base is ∩ seen from the front? No — a dome sitting on a brim: the dome's outline comes down on both sides. The line where the dome meets the brim is roughly horizontal or ∩.
+
+I'll just draw a dark hat band (a filled shape) whose bottom edge is a ∪. Looks like a ribbon sagging. Fine. And A gets character.
+
+Hmm, actually maybe simpler and stronger: make the page-320 stroke the **hat's brim top edge** — no.
+
+Let me instead make the hat like a **top hat with a wide band**, and the band's lower edge dips ∪. Or: the hat is a **soft bowler with a dented crown**? A bowler with a dent! The dent in the crown is a ∪ shape at the top. But that's at page ~220, which is B's chin. Hmm, a dented chin? No.
+
+OK, going with the dipping band. Fine.
+
+Now, let's also handle the **tech prop**. Requirement: at least one accessory must be unmistakably technological, with a clear human counterpart in the other reading.
+
+Idea: **A's hat is a GPU/data-center rack tower**: vertical fins on the hat's crown, plus a chip. In B, those vertical fins at page 200–320 appear at screen 800–680 = B's chin and mouth region. Vertical lines at B's chin = a chin cleft / stubble / a beard! 
+
+So: vertical fins on A's hat → become B's **stubble/beard/chin-lines**. Hmm, that's a nice double: tech rack fins ↔ beard stubble. But vertical lines above B's mouth (between mouth and chin) = a mustache/goatee? 
+
+Actually, if the fins span page 210–310, in B they're at screen 690–790 = below B's mouth (680) down to B's chin (800). That's the chin/jaw region → reads as **stubble hatching on the chin**. Perfect. And it's a beard!
+
+But careful: A's hat at 210–310 is the crown. Vertical rack fins on the crown, running from the top down. That reads as a **layered tower / rack / heatsink**. 
+
+And on top of the hat, a **pompom = a stack of coins** (A) → B's collar/bow tie (screen 880). A stack of coins at page 120–180 → in B at screen 820–880 = the collar area. Circles stacked → a collar? Hmm, a coin stack read as a bow tie... Maybe make the top ornament a **fan of blades / a turbine** → B's collar/ruff. Or a **bow tie** shape which in A reads as a propeller/pompom.
+
+Let's do: on top of the hat, a **propeller/turbine fan** (4 blades) in the accent color = the "compute turbine." Rotated, at screen 880, it reads as a **bow tie / cravat knot**. A 4-blade propeller rotated 180° looks the same... it's rotationally symmetric — bad. Make it 2-blade: a horizontal bow-tie shape (two triangles meeting at center). In A: a "propeller/bowtie" on top of the hat (like a pinwheel). In B: a bow tie at the collar. Both are bow-tie shaped — that's the point! Same shape, different context. 
+
+But is a bow-tie-shaped thing on top of a hat convincing as tech? A pinwheel/propeller on a hat is silly. Hmm. Maybe better: the thing on top of A's hat is a **cooling fan** — but a fan is a circle with blades. Rotated, at B's collar it'd be a circular brooch/medallion. A medallion on the collar is fine but not a bow tie.
+
+Let's do: top ornament = a **horizontal two-blade turbine / a wide flat "turbine disc" seen edge-on**, i.e., a horizontal lens shape with a hub. In B at the collar it's a **sagging bow tie**. Yes! A horizontal flattened shape with a knot in the middle = bow tie. And in A it's a turbine/fan blade on the hat = the "compute" bit. Add a couple of small fins.
+
+Hmm, honestly maybe the strongest, most legible tech prop is a **GPU chip** — a square with pins/contacts and a die. Where? It could be A's **hat badge** (like a hat pin), sitting at the hat band, page ~320. In B that's the mouth region → a mouth with a square thing in it? Bad.
+
+Put the chip at page 350-ish (the brim)... that's B's nose. Bad.
+
+Put it as the whole hat's shape? "The hat is a GPU chip": a flat-topped square hat with contact pins along the bottom. In B, that square becomes... the chin/jaw at screen 700–800. A square chin! Yes — a big square jaw/chin. Hmm, that's good: **A's chip-hat = B's square jaw.** But then the chin at 800 = B's hat crown, needs to be rounded.
+
+Alternatively the chip could be **A's collar/brooch** at page 850–900 → B's plume/pompom at 100–150. A chip on the collar in A; in B it's an ornament on top of the hat. Hmm, a chip as a hat ornament — fine, and a chip as a collar pin — fine. But it's small.
+
+You know what — let's make the biggest prop: **A's hat IS a server rack / GPU tower**: a rectangular tower with horizontal slot lines and small LED dots, with heatsink fins. In B: the rectangle + horizontal lines at screen 700–800 = a big blocky jaw with... horizontal lines on the jaw = a beard? Horizontal lines across the chin? Strange. Vertical slot lines would be better for B.
+
+Let's do: **vertical fins** (as decided) → B's beard stubble. And **horizontal LED dots** on the hat → in B, dots on the jaw = stubble dots. Fine.
+
+And add: a **cable** curling from the hat down to the collar? In A: a cable/wire from the tower hat to a plug. In B: it'd be a curl somewhere. Cables are rotation-friendly (curves stay curves). A cable that in A goes from the hat down the side to the collar; in B it goes from the hat (screen 800) up to... hmm, it'd go from B's chin down to B's collar-ish. Fine, reads as a wire hanging — but it must be inert.
+
+I think I'll include: **a GPU chip as A's hat's front panel** with pin-legs, and in B that panel is B's **mouth/chin area** where the pins read as a **beard/teeth**. Hmm.
+
+OK, let me stop optimizing and start drawing. Decision:
+
+**A (upright, "THE COLOSSUS"):**
+- A tall, square-ish tower hat (the "compute stack"): page 195–330, x 385–615. Vertical heatsink fins on it (dark)
+- A chip badge on the hat's front: a small square at (470–530, 240–280) in the accent red, with pin legs.  — hmm, this is at page 240-280 → B at screen 720-760 = B's chin/beard region. A red square on B's chin = bad.
+  
+  Move the chip to the hat band area, page 300–330 → B at 670–700 = B's mouth. Bad.
+  
+  Put the chip at the hat's TOP: page 195–235 → B at screen 765–805 = B's chin. A red square as a chin? No.
+
+  Put the chip on the SIDE of the hat, off-center, at page 230–270, x 560–620 → rotated to screen 730–770, x 380–440. That's on B's jaw/cheek at the left side (after swap, x 380–440 is on the left). A chip on B's cheek = a **beard patch / sideburn**? Or a **wart**? Hmm. In B it'd be an odd red square on the cheek.
+
+  Hmm. Maybe the accent-colored element should be B-only or symmetric.
+
+Let's put the tech prop where it works: **A's hat fins = tech (rack/GPU)**. That's already technological and it becomes B's beard. Good — that satisfies "one accessory unmistakably technological."
+
+But the brief says the tech element must be "visible and recognizable in its reading... with a clearly human counterpart in the other reading." The rack-fins on the hat: in A they read as a server rack / GPU heatsink = tech ✓. In B they read as beard stubble = human ✓. 
+
+Also add **a plug/cable**: A's hat has a **power cable with a plug** hanging off the brim... In B, that's at B's nose region. Bad.
+
+Add instead: **A's collar = a plug/cable collar**? A's collar at 850–900 → B's plume at 100–150. A cable looping as a collar in A; in B a plume/tassel. Eh.
+
+Simpler: at the very bottom, A has a **collar** (a shirt collar) and a **bow tie**, and B has a **pompom/plume** on his hat. Let's make the bottom element a **tassel/plume** shape that in A reads as a bow tie / collar knot. Tassels and bow ties are both made of loops and dangling strands. 
+
+I'll draw: a bow-tie-ish knot at (500, 870) with a horizontal spread from 340 to 660 (the collar), plus a hanging tassel. In B, at screen 100–160, it reads as a plume on the hat's crown (screen 200). Wait, screen 100–160 is above the hat crown at 200 — so it's a plume sticking up from the hat. ✓ 
+
+And the "plume" standing up from B's hat at screen 200 — that's a hat ornament.
+
+OK good.
+
+Now the expression contrast:
+
+**A:** smug, chin-up, delighted. 
+- Eyes: wide-ish, with heavy confident lids half down? Or bright wide open with arched brows? For a smug colossus: heavy half-lidded eyes with a slight upward brow = smug. Hmm, but B needs to be dismayed with heavy brows.
+- A's brow at 452, B's eye bag at 548(=452). One stroke.
+- A's eye bag at 548, B's brow at 452(=548). One stroke.
+
+If I draw a heavy thick arc at 452 that in A is a low, heavy, straight brow and in B is a puffy bag. And at 548 a thick arc that in A is an eye bag and in B is a heavy brow. Both work if both are thick dark arcs.
+
+Expression is then mostly carried by:
+- The mouth (A: ∪ smile at 680; B: ∩ frown at 320 — different strokes, both fine).
+- The eye openings and pupils.
+
+But the eyes are shared: the eye aperture is the same in both! Hmm. Unless I use asymmetry... Actually, the eye's aperture (the white shape / iris position) is shared. So both faces have the same eye shape. The brows/bags around them differ slightly but are shared too.
+
+Hmm. So really the mood difference comes from: the brow/bag arcs (their angle), and the hat/mouth, and the extras (A-only/B-only light strokes).
+
+To differ: the eye aperture can be identical, but the *reading* differs due to surrounding. If A has a heavy straight brow low over the eye → A looks stern/smug. Rotated, that same stroke at 548 is under the eye → looks like a bag (weary). And the stroke at 548 (which is B's brow, above B's eyes at screen) — in B's view, a heavy brow over the eyes → B looks stern too. Hmm, both would look similar.
+
+To differentiate: make the eye aperture shape asymmetric/oval, and rely on the mouth + accessories + the overall silhouette.
+
+Alternatively: use a **B-only stroke** for an extra eyelid that darkens the eye in B but sits inertly in A. E.g., a heavy lid line drawn at page ~470 in B's frame (i.e., in the rotated group at B-frame y=470-500... hmm). A B-only stroke: draw in the rotated group at B's coordinate 1000-470 = 530? 
+
+Let's think: I want, in B's view, a heavy upper lid. In B's canonical frame, the upper lid is at y_B = 476 → page 1000-476 = 524. So drawing a stroke at page 524 in the B-only group (well, any stroke at page 524) appears in B's view at screen 476 = the upper lid ✓. And in A's view, that stroke at page 524 is at A's lower lid position (524) — just under the eyes. So it can be drawn as a light "lower lid / eye bag" line in A. It's shared-ish but I'll draw it heavier in a way that works both ways. Actually it's inherently shared by position, so let's just treat it as shared: a stroke at 524 = A's lower lid AND B's upper lid.
+
+Similarly a stroke at 476 = A's upper lid AND B's lower lid.
+
+So: if I make the stroke at 524 (A's lower lid = B's upper lid) heavy and drooping, then A sees a heavy lower lid (weary) and B sees a heavy upper lid (weary). Both weary. Hmm.
+
+If I make it a clean thin line: both look alert.
+
+OK, the eyes will be similar in both. That's the genre's nature. The contrast must come from the mouth, the hat, and the props. That's fine — Whistler's faces also share eyes.
+
+Actually, one trick: **the pupils/irises**. If I draw the iris offset upward in the eye, in B's view (rotated 180°) it appears offset downward. So: iris drawn at page y=490 (10 above center) → in B's view it's at screen 510 = 10 below the eye center = looking down. Hmm, that gives A looking up (dreamy/optimistic) and B looking down (dejected). But actually the iris offset in x also flips: drawn at x=420 (left of center 430... hmm).
+
+Let's do: iris drawn slightly high and to the outer side in A → in B it's low and inner. A: eyes looking up and out = visionary/optimistic. B: eyes looking down and in = dejected/shifty. That's a nice mood flip from one stroke set! Good, use it.
+
+Hmm, but "high and outer" in A: left eye at cx=430, iris at (418, 488). Right eye cx=570, iris at (582, 488). After rotation: left iris at (582,512) and right at (418,512). In B's view, the "left eye" is at x=430 (screen) which comes from page 570. So the iris drawn at (582,488) appears at (418,512) — that's the screen-left eye, iris at 418 = inner side (eye center 430, so 12 toward center) and 12 below center. ✓ So B's left eye looks down-inward. Similarly the other. So B looks down and cross-eyed-inward = shifty/dejected. 
+
+Now let's finalize and write the SVG.
+
+---
+
+### Final drawing spec
+
+**Colors:**
+- bg: `#f2ece0`
+- ink: `#181614`
+- accent1: `#c0392b` (deep red) — the chip / tech
+- accent2: `#2e5f7a` (steel blue) — the "human"/cloth element
+
+**Ink strokes:** heavy 12, medium 6, fine 2.5.
+
+**Layers:**
+1. bg rect
+2. frame rect (inset 45), stroke ink 3
+3. G_SILHOUETTE: filled paper-white shapes + heavy outline
+4. G_SHARED: features
+5. G_A: A-only accents
+6. G_B (rotate 180 500 500): B-only accents
+
+Let's write coordinates.
+
+**Head+hat outline path** (A reading):
+Start top center of hat crown, go clockwise.
+The hat crown top: from (410, 205) to (590, 205), slightly domed, y at 195 in the middle.
+Right side of the hat: down to (615, 300) — slight outward
+Band region: (620, 330)
+Brim: flare out to (685, 345), then brim underside back in to (620, 365), then to the temple (655, 390)
+
+Hmm, I need the brim to be a distinct shape. Let me handle the brim as a separate filled shape overlapping.
+
+Simplify: silhouette = hat + head + collar as one blob, then the brim drawn as a separate flared shape on top of it, then features.
+
+Actually, since the brim at page 350 is B's nose, it should look like a nose in B: a wide bulbous nose. So the brim shape: a wide horizontal mass with rounded ends, from x 320 to 680, y 330 to 375. In B, at screen 625–670, x 320–680 → a huge wide nose spanning nearly the whole face width. That's a caricature nose — good, and it'll look like a big bulbous nose. Maybe make it slightly narrower: x 355–645.
+
+Hmm, but the brim is also the hat's brim, which should be wide. x 355–645 = 290 wide. Fine.
+
+And the brim's underside edge should have the nostril curves: in B, two nostril wings. Add two small curves at the brim's bottom → in B they're at screen ~690 = mouth region. Hmm no. B's nostrils are around screen 660–670, which is page 330–340. So a nostril curve at page 335 → screen 665 ✓ under the nose tip at 350→650. Wait, B's nose tip at screen 650, nostrils at 665-670. Page for screen 665 = 335. But page 335 is inside the brim (330–375). OK so I can draw nostrils at page y=335 within the brim's mass, and they'll be at B's nostril position. 
+
+And in A, at page 335 those curves are inside the hat's brim — read as brim shading lines. 
+
+Now A's nose (page 650) = B's hat brim (screen 350). So A's nose shape must read as a hat brim in B. A's nose: a big bulbous nose from bridge (620) to tip (650) — only 30px tall. Hmm, that's small for a big nose. But its width can be large: x 430–570 with the bulb at 630–660.
+
+Hmm, but B's hat brim at screen 350 should be a wide flaring brim. So A's nose should be wide. Let's make A's nose span x 400–600 (200 wide) with the tip at 650 and the wings at 640–670. So the "nose" is a broad mass. In A, a broad flat nose. In B, a hat brim of width 200. OK.
+
+Hmm, a 200-wide nose on a 340-wide face is big. Good, caricature.
+
+Then B's hat: crown at screen 200 (from A's chin at 800), width ~110; brim at screen 350, width 200; and the hat body between. Plus the A-only/B-only additions.
+
+The hat's brim in B should be wider than the crown and flare. A's nose is 200 wide, A's chin is 110 wide → B's hat crown 110 wide at screen 200, brim 200 wide at screen 350. A nice taper. ✓
+
+Also B's hat needs a band: A's mouth at 680 → B's hat band at screen 320. So A's mouth stroke becomes a band around B's hat. So A's mouth should be a wide curve spanning maybe x 400–600 at y 660–700. In B, at screen 300–340, spanning x 400–600, that's the hat's band region. ✓ 
+
+So: **A's mouth = the hat's ribbon in B.** And **A's hat ribbon = B's mouth.**
+
+So if A's mouth is a big ∪ smile, B's hat band is a ∩-curving ribbon (looks like the hat's band sweeping down at the sides... wait, ∪ → ∩, so it dips at the sides and peaks in the middle → a ribbon that arcs up in the middle? That's odd for a hat band.
+
+Hmm. Alternatively A's mouth = a straight-ish line with slightly upturned corners (a smirk) → in B, a straight band with slightly down-turned corners. Fine.
+
+Let's make A's mouth a broad ∪ smile: path M 400 672 Q 500 720 600 672. Rotated → at screen: M 600 328 Q 500 280 400 328 — i.e., a curve peaking at (500,280) and dipping to (400,328),(600,328). In B's hat that's a band that arches up in the middle — like the hat's crown edge / a seam. Plausible? The hat's dome would be higher... hmm, at screen 280 the hat's body is there. So this arc inside the hat reads as a seam or a band arcing up. Acceptable, though a bit odd.
+
+Alternatively make A's smile flatter: M 400 680 Q 500 706 600 680. Rotated → M 600 320 Q 500 294 400 320. A shallow arc. In B's hat that's fine.
+
+OK good, a shallow confident smile.
+
+And A's hat band (page 320) = B's mouth (screen 680): make it a ∪ arc: M 395 300 Q 500 350 605 300. In B's view: M 605 700 Q 500 650 395 700 → a ∩ arc = corners at y=700, middle at 650 → a frown! ✓ 
+
+And this ∪ arc at page 300–350 in A: it passes right at the brim (330–375). Hmm, overlapping. Let me put A's hat band arc higher: M 400 290 Q 500 336 600 290. The lowest point is 336, at the brim top (330). Slight overlap; fine, I'll draw it as the brim's upper edge line. Hmm.
+
+Actually — even better: make this ∪ arc be the **brim's top edge** itself. The brim's top edge curves ∪ (dips in the middle where the crown meets). Hmm, a brim's top edge dips in the middle if the crown is set into it. Yes! Like a hat where the crown sits in a flared brim: the line where the crown meets the brim around the front dips down. That's exactly right for a wide-brimmed hat.
+
+So: the brim's upper edge = M 345 315 Q 500 355 655 315 and the brim's lower edge = M 355 375 Q 500 395 645 375. And the brim mass between. Then in B: the upper edge at screen 685, x 345–655, arcing to a peak at (500, 645) → that's the ∩ mouth (upper lip line, corners at 685, middle at 645). Great, a frowning mouth. And the brim's lower edge at screen 625 → the top of B's nose. Fine.
+
+So B's mouth = the brim's upper edge (a ∩ frown) ✓ and B's nose = the brim's mass ✓.
+
+Wait, but then in A the "brim" is a filled dark mass with the top edge dipping. In B that mass is the nose. Good, a solid dark nose mass in B. Nice for a caricature — a big dark bulbous nose.
+
+Hmm, but the brim in A extends x 345–655, which is 310 wide, while A's face is ~340 wide. A brim nearly as wide as the face. OK for a caricature hat.
+
+Hmm, then in B the "nose" is 310 wide — a monstrous nose. Maybe a bit much but it's a caricature. Let's narrow to x 370–630 (260 wide).
+
+And the brim's mass should have A's hat-brim shading lines (radial hatching) which in B become the nose's shading. Fine — short lines.
+
+Now, the vertical rack fins on the hat: page y 210–300, x from 420 to 580, say 7 vertical lines. Rotated: at screen 700–790, x 420–580 → that's B's chin/jaw region below the mouth (680) down to the chin (800). Vertical lines there = **stubble/beard**. 
+
+Hmm, but they need to look like a beard in B — vertical strokes over the chin. Yes, that reads as an unshaven chin/beard. And I'll color them ink at fine width 3, plus maybe some dots.
+
+In A they read as the hat's ribs/fins = a server rack / heatsink. ✓ Tech.
+
+I'll also add horizontal LED dots on the hat: small circles at page 215–230 → B at screen 770–785: dots on the chin. Fine, stubble dots.
+
+**A-only stroke:** a power cable. Let's add a cable from the hat's right side looping down. In A it's a cable; rotated it'd be at B's left, looping from the hat's (B's) crown up... Actually page (620, 250) → screen (380, 750) = B's left jaw. A curve from page (620,250) to (660, 400): rotated to (380,750) to (340,600) = from B's jaw up the left side of the face. Hmm, that would be a line over B's cheek. Bad. Skip the cable, or place it as B-only? No.
+
+Let's skip cables.
+
+**Bottom (collar in A / plume in B):**
+A's collar: page 830–910. A bow tie + wing collar. In B, at screen 90–170, that's a plume/tassel above the hat crown (screen 200). ✓
+
+Draw: a collar shape: two wings spreading from (420,840) to (360,900) and (580,840) to (640,900), and a bow tie knot at (500,860) with loops to (440,845) and (560,845). Plus a small chip-like pin? 
+
+In B: the wings become a plume/tassel spreading upward from the hat crown — like feathers or a fan. ✓ Nice.
+
+Let's add accent2 (blue) to the collar/bow tie — in B, a blue plume. Fine.
+
+And add the tech touch at the collar: hmm, a small plug? Let's put a **small chip-pin brooch** at the bow tie's center in red — in B it's a red brooch at the hat's crown. Fine and small.
+
+Hmm, the brief wants a bold central prop. I'll make the hat-fins the bold prop (tech: server/GPU rack) and the brim-nose the big human feature.
+
+Hmm, let me add one more clear tech signal in A: **antennae / a signal arc** above the hat? That'd be at page 140–180 → B at screen 820–860 = B's collar. A signal arc as a collar — eh.
+
+Better: make the hat's top ornament a **two-blade turbine / fan** in accent red: a horizontal lens shape with a hub at (500,175), spanning x 400–600, height ~40. In A: a whirling turbine/blade on top of the compute tower ✓ tech. In B: at screen 800–840, x 400–600 → sitting right on B's hat crown (screen 800) = an ornament, or a **bow tie**! At screen 810-840 it's just below the crown... hmm, B's hat crown at screen 200 (from A's chin at 800). Wait I need to recompute: page 175 → screen 825. B's hat crown is at screen 200 (page 800). So page 175 → screen 825, which is BELOW screen 800. So in B's view, this ornament at screen 825 is below the hat's crown, i.e., between the hat's crown (800) and the collar/plume (880). That's the **neck/collar** region in B! 
+
+So a horizontal lens-shaped turbine at page 175 → in B it's at screen 825, the collar region → reads as a **bow tie**. ✓✓ 
+
+So: the thing at the TOP of A's hat = the thing at the BOTTOM of B's collar. But wait, in A the collar is at page 830-910 and the turbine at 175. Both exist. In B, the turbine appears at screen 825 and A's collar appears at screen 90-170. So B has both a bow tie (from A's turbine) at 825 and a plume at 90-170. Hmm, two things. That's fine — B has a collar with a bow tie (from A's turbine) and a plume on the hat (from A's collar).
+
+In A: a turbine on top of the hat ✓ and a collar at the bottom ✓. Both work. In B: a bow tie at the neck ✓ and a plume on the hat ✓. Both work! Excellent. That's a proper double.
+
+Let's make the turbine a 2-blade: a horizontal shape spanning x 415–585, with a hub circle at (500,175) and blades as flattened triangles. In B it's a bow tie. ✓
+
+And A's collar at 830-910: makes B's plume. Let's make it a **stiff shirt collar + a big knot** that in B looks like a plume/tassel of feathers. Or make it a **plume of vertical strands** (like a feather duster / a tassel of wires?) — a **bundle of wires/cables** at A's collar = in B a tassel/plume on the hat! And it's technological (a bundle of cables). ✓ 
+
+So: A's collar = a bundle of cables fanning out (tech!) → B's plume/tassel on the hat. And A's turbine on the hat = B's bow tie.
+
+Now A has two tech elements: the rack-fins hat and the cable-bundle collar. Good.
+
+But careful: A's collar-cables at page 830–920 → in B at screen 80–170. And in A they're at the bottom, a collar of cables under the chin. That's a bit odd for a human face but it's a tech colossus.
+
+Hmm — better: A's collar = a normal wing collar with a bow tie, and the cables emanate from the hat's brim down the sides. Hmm, no.
+
+Let's do: A's bottom = a **wing collar** (white with blue hatching) plus a **bow tie** in accent red at page 845–870, and beneath/behind it a few **cable strands** hanging (page 880–930). In B: the bow tie at screen 130–155 becomes... a small ornament on the plume. And the cables become the plume's strands. OK.
+
+Simplify: bottom element = a **tassel of cables** shaped like a bow tie + collar. 
+
+I'll draw: two collar wings (white/paper with a heavy outline) from the neck spreading down-outward to (350, 900) and (650, 900); a red bow-tie knot at (500, 860); and 3-4 cable strands curling below. In B: a wide plume/feather fan on the hat. Good.
+
+Hmm — but the collar wings spread DOWN-outward in A. In B they spread UP-outward from the hat crown. Yes, a nice plume. ✓
+
+**Also**: the tech/human pairing requirement is met: rack-fins (tech) ↔ beard stubble (human); turbine (tech) ↔ bow tie (human); cable-tassel (tech) ↔ plume (human).
+
+**A's eyes:** Let's draw them as the classic Whistler: heavy-lidded almond eyes with solid dark irises and a highlight.
+
+Eye centers at (425, 500) and (575, 500). Radius ~34 x, 26 y.
+
+Upper lid: an arc from the outer corner to the inner corner, heavy.
+Lower lid at 524: a fine line.
+The pupil: a filled circle r=13 at (415, 490) and (585, 490) — offset up and outward. Plus a small white highlight dot. Hmm, highlights are lighting... it's fine, it's a drawing convention. Actually to avoid lighting issues, keep the highlight subtle or omit. I'll omit highlights to be safe. Actually a highlight is a spot — symmetric under rotation issues? A highlight at the upper-left of the pupil becomes lower-right in B. That's fine/normal. I'll add tiny ones.
+
+Hmm, actually let me reconsider the pupil offset. Offset up + outward in A → in B, offset down + inward. A: looking up and out = visionary. B: looking down and in = dejected. 
+
+But careful: for the LEFT eye in A (x=425), "outward" = -x = 410. In B's view, the point (410,490) appears at (590,510). Which eye is that in B's view? In B's view the eye positions are still at x=425 and x=575 (since rotation maps 425↔575). The eye at screen x=590 is near the screen-right eye (575). So the iris of the "right eye" in B is at 590 = outward-right of the eye center 575 → offset outward. Hmm.
+
+Let me redo. Page eye centers: 425 and 575. Iris positions page: (410, 488) and (590, 488).
+After rotation: (590, 512) and (410, 512).
+In B's view, the eye centers are at page 575 and 425 (which appear at screen 425 and 575 — the same). So: screen eye center 575 has an iris at screen (590, 512) → offset (+15, +12) = outward (right) and down.
+And screen eye center 425 has an iris at (410, 512) → offset (−15, +12) = outward (left) and down.
+
+So in B, both eyes look down and outward. That's a "glazed/downcast" look. Hmm, that's OK — looking down and away = evasive/dejected. 
+
+In A: eye center 425, iris at (410,488) → offset (−15,−12) = outward and up. Eye 575, iris at 590,488 → (+15,−12) = outward and up. So both look up and out. Visionary/dreamy. 
+
+Actually for A's smugness I'd prefer "looking down the nose." But up-and-out = visionary works for a hype face. Let's keep it.
+
+**A's brow at 452** (= B's eye bag at 548): draw as a thick tapered crescent. For A: a heavy brow angling down toward the nose (a stern/focused brow). Left brow from (355, 460) to (475, 440) — i.e., the outer end lower, inner end higher? For a stern look, the inner end is LOWER (angled down toward the nose). Let's do: left brow outer at (350, 448), rising... hmm.
+
+Let me do "quizzical/pleased": brows arched high. Arch = the outer and inner ends low, the middle high. In B (rotated), that becomes an eye bag that curves... a ∩ shape (middle high) rotated → ∪ (middle low) — a bag under the eye curving downward in the middle. That's a normal eye bag! ✓ Great.
+
+So: brows arched (∩-ish) in A, and in B they read as eye bags (∪-ish, hanging). ✓ 
+
+Left brow: M 348 462 Q 415 428 482 452 — an arch peaking around x=415. Hmm, that's more of a wave. Let's do M 350 458 Q 412 424 478 448.
+Right brow: M 522 448 Q 588 424 650 458.
+
+In B: rotated, left brow → M 650 542 Q 588 576 522 552. That's under the screen-right eye, sloping. Fine, a bag.
+
+**A's eye bag at 548** (= B's brow at 452): draw as a heavy tapered arc. In A, a soft bag under the eye. In B, a heavy brow. For B's dismay, the brow should angle down at the outer side or be heavy. A bag under the eye is a downward-bulging arc (∪). Rotated it's ∩ = an arch = a brow. A ∩ brow = raised brows = surprised/worried. That works for B's dismay ✓.
+
+Left bag: M 358 552 Q 425 580 488 556.
+Right bag: M 512 556 Q 575 580 642 552.
+
+Rotated → left: M 642 448 Q 575 420 512 444 ; a ∩ arc = an arched brow over the right eye at screen. ✓
+
+Hmm, both brows in B are arched (∩) → surprised/worried. Good for "the morning after."
+
+Wait, but there's a subtlety: the "brows" in A (452) become "bags" in B, and the "bags" in A (548) become "brows" in B. So in B, the brows are the A-bags' shapes, which are ∪ in the page-frame → rotated to ∩ = arched. ✓ Surprised brows. And A's brows (∩ arches at 452) → in B they're ∪ bags under the eyes. ✓
+
+**A's nose (650) = B's hat brim (350)**: I said A's nose is the wide mass. Let's draw the nose as part of the brim shape? No — separate. A's nose at page 620–680: a broad nose with a bulbous tip and wide nostrils. Shape: from the bridge at (500, 600) widening to the wings at (395, 655) and (605, 655), with the tip at (500, 672). Hmm, that's below the mouth line at 680. Let me keep the nose tip at 655 and the wings at 645.
+
+Hmm, but A's mouth is at 680. Nose tip 655, mouth 680 — only 25px apart. Tight. Let's push the mouth to 690 and use a subtle smile.
+
+Actually the canon mouth is at 680. Fine: nose bottom at 655, mouth at 685.
+
+Wait, but I decided A's mouth = the ∩-yielding stroke. Let me just define:
+- Nose: solid mass from about y=600 (bridge) to y=660 (base), x 400–600 at the widest (wings), with the tip bulb at (500, 655) r~45.
+
+In B, that mass appears at screen 340–400, x 400–600 → that's B's hat brim region (screen 350). A horizontal mass = a brim ✓. And its lower edge (page 660 → screen 340)... hmm, in B's view, the mass occupies screen 340–400. B's hat brim is at screen 350. Good. And the top of B's hat body... fine.
+
+- Mouth: page 685, a shallow ∪ from (415, 685) Q (500, 710) (585, 685). In B: at screen 315, curving ∩ from (585,315) to (415,315) with the peak at (500,290). This is B's hat band. ✓
+
+Hmm, and A's mouth is a big smile? 415–585 = 170 wide, with a sag of 25. That's a gentle smile. For a caricature, make it wider and more curved: M 400 675 Q 500 725 600 675. In B: M 600 325 Q 500 275 400 325. A hat band arcing up to 275 at the center — inside B's hat body. Reads as a band/ribbon with a peak. A bit odd, but combined with the hat's outline it'll read as the hat's band.
+
+Hmm, I worry. Let's compromise: M 405 678 Q 500 714 595 678. Sag 36. In B, an arc peaking at 286 spanning x 405–595. OK.
+
+Let me also add A's mouth corners: small curves and a hint of teeth? No teeth (text-free okay, teeth are fine as shapes, but keep it simple).
+
+**A's chin (800) = B's hat crown (200)**: A's chin: a rounded, slightly cleft chin. The outline bottom at y=800, x 445–555. Add a chin crease line at 775: M 470 778 Q 500 790 530 778 → in B at screen 210–222, a small arc = a dent in the hat's crown. Fine, or reads as the hat's crown crease. ✓
+
+**A's hat crown (195–330)**: a rounded tower. Let's give it a slightly stepped/shouldered silhouette: from (400,200) up to a flat top (430,180)-(570,180), then down to (600,200), then the sides go down to (625, 290), then into the brim.
+
+So the hat is a flat-topped tower = a server rack. ✓ In B: at screen 800 (page 200) the "crown" is B's chin — it will be flat-topped = a square chin! Nice, a square jaw.
+
+Hmm, a flat chin. That's characterful. Let's soften: top at y=185–200, x 415–585, with slightly rounded corners.
+
+**Vertical rack fins**: on the hat, from y=210 to y=300, x = 440, 465, 490, 515, 540, 565 (6 lines). Plus the outline edges. In B: screen 700–790 → stubble. ✓
+
+Hmm, actually I want them a bit shorter and denser, like a heatsink: 8 lines from x=430 to x=570 step 20, y 215–295. In B they'd be vertical stubble strands 80px long. Good.
+
+Wait — in A, vertical lines on the hat crown read as... a striped hat? Maybe more like a "ribbed" tower. Add horizontal lines too? Horizontal lines on the hat → in B, horizontal lines on the chin = a chin crease. Hmm, one horizontal line at page 260 → B at screen 740, a horizontal line across the jaw = a mouth-like line! Bad, it'd read as a second mouth. Avoid horizontal lines in the 200–330 zone. Only verticals.
+
+OK.
+
+**Hat brim**: a filled shape. Path:
+M 340 325 Q 370 305 420 315 Q 500 350 580 315 Q 630 305 660 325 Q 670 350 640 372 Q 570 400 500 400 Q 430 400 360 372 Q 330 350 340 325 Z
+
+Hmm, that's a lens shape with a ∪ top. Let me simplify:
+Outer brim: an ellipse-ish shape. Top edge: M 345 330 Q 500 372 655 330 (a ∪ dipping to 372 at the center). Hmm, that's the "dip." Bottom edge: M 355 372 Q 500 408 645 372.
+
+So the brim mass spans y 330–408 at the center (78 tall) and is 310 wide. That's a wide brim, and in B it's a wide nose (screen 592–670). Good.
+
+Hmm, the brim's center-bottom at 408 → in B at screen 592 = B's forehead/nose bridge. And B's hairline is at screen 380 (page 620). So there'd be a mass at screen 592–670 = a nose spanning 78px. ✓ Good.
+
+And B's mouth from the brim's top edge: screen 628–670 → a ∩ arc from (655,670) to (345,670) peaking at (500,628). ✓ A frown spanning 310 px — that's a very wide mouth. Hmm. A bit wide but fine for a caricature.
+
+Hmm, maybe narrow the brim: x 370–630, so the mouth is 260 wide. Still wide. Let's keep 370–630.
+
+Revised brim:
+Top edge: M 375 320 Q 500 362 625 320
+Bottom edge: M 385 365 Q 500 400 615 365
+Closed shape with rounded ends.
+
+In B: top edge → M 625 680 Q 500 638 375 680 : mouth from x=375 to 625, corners at y=680, middle at 638. Frown ✓.
+Bottom edge → M 615 635 Q 500 600 385 635 : at screen 600–635, spanning 385–615 → the top of B's nose. Fine.
+
+**A's nose** (page 600–660) in B is the hat brim (screen 340–400). A's nose shape: 
+M 460 595 Q 500 585 540 595 (bridge top)
+then down the sides: Q 570 620 585 645 (right wing) ... 
+
+Let me define A's nose as a filled dark mass:
+M 455 592 Q 500 578 545 592
+C 575 610 590 632 578 650
+Q 540 668 500 668
+Q 460 668 422 650
+C 410 632 425 610 455 592 Z
+
+Hmm, that's a nose 156 wide and 76 tall, solid dark. In B it becomes a solid dark mass at screen 332–408, x 422–578 → a dark hat brim. OK ✓. Though I already have a brim shape at page 320–400. They overlap. Two overlapping dark masses = messy.
+
+Hmm. Let me merge: make A's nose and the brim ONE shape? A's brim is at 320–400 and A's nose at 590–670. They're 200px apart on the page. They can't be one shape.
+
+But in B, the brim appears at screen 600–680 and the nose at screen 330–410. So they don't overlap in B either. Good, I confused myself. They're separate on the page and separate in B. Fine.
+
+Right: page 320–400 (brim) → screen 600–680 (B's nose). Page 600–670 (A's nose) → screen 330–400 (B's brim). They swap. ✓ No overlap.
+
+Great.
+
+So:
+- A's hat brim (page ~320–400) = B's nose (screen ~600–680).
+- A's nose (page ~595–670) = B's hat brim (screen ~330–405).
+
+But wait: A's mouth is at page 678–714, and A's hat brim bottom is at 400. And B's mouth at screen 680 = page 320. OK.
+
+Hmm, but hold on: A's hat brim spans page 320–400, and A's mouth is at 678. But B's mouth needs to be at screen 680 = page 320. And the brim's top edge at 320 = B's mouth ✓ (computed above: the brim's top edge arcs from (375,320) to (625,320) dipping to 362 at center → screen: (625,680) to (375,680) peaking at 638. ✓ frown.)
+
+Good. So the brim's top edge IS B's mouth. 
+
+And the brim's bottom edge (365–400 center) → screen 600–635 = B's nose top. Fine.
+
+Now **A's mouth** (page ~678) = B's hat band (screen ~322). A's mouth arc: M 415 674 Q 500 712 585 674. In B: M 585 326 Q 500 288 415 326. So B's hat band arcs from (415,326) to (585,326) with a peak at (500,288). That's a band across B's hat ✓.
+
+**A's chin outline at 800** = B's hat crown at 200.
+
+**A's neck/collar** at 830–920 = B's plume at 80–170.
+
+Now, B's hat: crown at screen 200 (flat-ish, x 415–585), body down to the band at 288–326, then the brim at 330–405 (x 385–615). And the crown at screen 200 = A's chin at page 800 (x 445–555). Hmm, A's chin is narrower (445–555) than I want B's crown (415–585). Let's make A's chin wider: 425–575. Fine.
+
+And B's hat brim at screen 330–405 comes from A's nose at page 595–670 (x 410–590). So B's brim is 180 wide, and B's crown is 150 wide. A modest taper. Let's widen A's nose: x 390–610 (220 wide). Then B's brim is 220 wide. OK.
+
+Let's set A's nose: 
+M 445 588 Q 500 572 555 588
+C 590 610 608 638 592 656
+Q 545 678 500 678
+Q 455 678 408 656
+C 392 638 410 610 445 588 Z
+
+Widest at ~608/392 → 216 wide. Good.
+
+In B, this becomes (rotate each point): 
+(555,412) (500,428) (445,412) ... etc. → a mass at screen 322–428, x 392–608. That's B's hat's body/brim. Good, a bit tall (106). Fine.
+
+Hmm, but it might collide with B's hat band from A's mouth (screen 288–326). The nose-mass top at screen 322 vs the band at 288–326. Slight overlap. Fine.
+
+OK. Now let's also give B a good hat shape: B's hat = A's nose mass (screen 322–428) + B's crown from A's chin. There's a gap between screen 200 (crown) and 322 (brim mass) — what fills it? Page 680–800 = A's mouth-to-chin region. In A that's the chin/jaw. In B it's the hat's body. So I should fill A's mouth-chin region with... A's chin and jowls, which are light (paper) with hatching. In B, that's the hat's body, which would then be light with hatching = a light hat. Hmm, and the crown at 200 (A's chin) is also light.
+
+That's fine: B's hat is a light-colored hat (paper) with the band arcing through it and a dark brim. And A's chin/jaw is light with stubble hatching. Good.
+
+Hmm, but the hat's outline in B — where does it come from? From A's jaw/chin outline at page 680–800. So I need A's outline at 680–800 to taper like a hat. A's jaw: at page 700, x 400–600; at 750, x 425–575; at 790, x 445–555; chin at 805, x 470–530.
+
+Rotated: B's hat: at screen 300, x 400–600; at screen 250, x 425–575; at 210, x 445–555; at 195, x 470–530. So B's hat is a dome tapering upward. ✓ 
+
+And B's brim at screen 322–428 from A's nose (x 392–608). Consistent widths ✓.
+
+Great, it works.
+
+**A's outline overall** (one closed path):
+Starting at the top of the hat and going clockwise:
+
+(430, 195) → (500, 178) → (570, 195)   [hat top, slightly domed]
+→ (600, 215)
+→ (618, 280)
+→ (625, 320)   [meets the brim]
+— but the brim flares beyond. The silhouette should include the brim: at y=340, x 370–630. So the outline bulges.
+
+Let me just draw the hat+head silhouette separately from the brim (brim drawn as an overlapping shape with a heavy outline). Simpler.
+
+**Head+hat silhouette path** (excluding brim flare):
+M 430 195
+Q 500 172 570 195
+Q 610 210 618 270
+Q 624 300 622 330
+L 622 380          (down past the brim into the temple)
+Q 640 430 648 470   (temple to cheek top)
+Q 665 540 660 600   (cheek bulge)
+Q 655 660 630 700   (jowl)
+Q 600 750 560 780   (jaw)
+Q 530 800 500 802
+Q 470 800 440 780
+Q 400 750 370 700
+Q 345 660 340 600
+Q 335 540 352 470
+Q 360 430 378 380
+L 378 330
+Q 376 300 382 270
+Q 390 210 430 195
+Z
+
+Hmm, that's both sides. Let me just check widths:
+- y=500 (eyes): interpolating around 470–540, x ≈ 350 to 650 → width 300. Eye centers at 425 and 575, so there's 75px of cheek outside each eye. OK.
+- y=600: x 340–660.
+- y=700: x ~370–630? Let me set the jowl: at 700, x 360–640.
+- y=780: x 440–560... 
+
+Let me redo cleanly with a simpler left/right set:
+
+Left edge going down from the top:
+(430,195) top-left of hat
+(388,225)
+(378,290)
+(376,330)  -- top of brim region
+(360,400)  -- temple
+(346,470)  -- cheek top
+(338,540)  -- cheek
+(340,610)
+(352,670)  -- jowl
+(378,720)
+(420,770)
+(455,795)
+(500,806)  -- chin
+Right edge mirrored but shifted: 
+(545,795)
+(580,770)
+(622,720)
+(648,670)
+(660,610)
+(662,540)
+(654,470)
+(640,400)
+(624,330)
+(622,290)
+(612,225)
+(570,195)
+
+Good, and slightly asymmetric: let's shift the right side out by 8 and the left in by 8... or just make the left jowl heavier. I'll do a modest asymmetry: left cheek at 336, right at 664; left jowl at 368, right at 652.
+
+Then the neck: from the chin (500,806), no — the jaw goes to the neck. Let's have the neck: (455,795) → (440,830) and (545,795) → (560,830), merged into the collar at 840.
+
+Actually the chin at 806 then the neck underneath: the head's outline should continue down to the collar. Let's just have the head outline close at the chin and the collar be separate, overlapping.
+
+Simplify: close the head outline at the bottom with a slight neck:
+... (455,795) → (448,820) → (455,850) → then the collar covers it.
+
+Fine. I'll close the path along the bottom around y=840 and let the collar overlap.
+
+**Collar** (page 820–930): two wings + a knot + cable strands.
+Wing left: M 455 830 L 360 905 Q 400 925 455 880 Z (roughly)
+Hmm, let's do:
+Left wing: M 470 840 Q 420 850 355 895 Q 340 915 370 920 Q 430 905 480 875 Z
+Right wing: M 530 840 Q 580 850 645 895 Q 660 915 630 920 Q 570 905 520 875 Z
+Bow/knot: a rounded rectangle-ish blob at (500, 860) r ~ 40x30.
+Cables: 3 wavy strands hanging from 880 to 940: e.g., M 440 880 Q 430 920 450 945; M 500 885 Q 495 925 505 950; M 560 880 Q 570 920 550 945.
+
+In B these become a plume at screen 55–180. ✓
+
+Fill the wings with paper/white and a heavy outline, the knot with accent2 (blue). Hmm, or the collar with light blue hatching.
+
+Actually let's make the collar blue-accented: fill #2e5f7a at low opacity? Opacity is allowed (not a gradient). Let's use a light tint... but max 4 colors. Flat fills only. I'll fill the collar wings with paper and add blue hatching lines. Hmm, hatching with a blue stroke = still only 4 colors. Fine.
+
+Simpler: fill the bow tie knot solid blue, and leave the wings paper with ink hatching.
+
+**The turbine** at the top (page 150–200): a 2-blade fan.
+Blades: left blade M 415 175 Q 460 155 495 178 Q 460 200 415 175 Z; right mirrored. Hub: circle at (500,178) r=22. All solid ink or accent red.
+In B: at screen 800–845, x 415–585 → a bow tie at B's collar. ✓ 
+
+Hmm, but A's collar (page 820–930) → B's plume at screen 70–180, above B's hat crown (200). And the turbine → B's bow tie at screen 800–845 = below B's hat crown. So B has a plume on top and a bow tie at the neck. ✓ 
+
+**A-only strokes** and **B-only strokes**: a few light lines placed inside masses.
+
+A-only: a small blue-ink detail? Let's add a couple of light hatch lines on the hat that in B land inside the beard/jaw mass — fine, they're shared really.
+
+B-only (drawn in the rotated group): 
+- an extra forehead wrinkle in B at screen 430 → page 570. Draw at (430–570, 570) region: a wrinkle arc across B's forehead. In A, page 570 is at A's cheek level → a cheek crease. Fine, harmless.
+- a B-only frown line: at screen 690 → page 310. But that's the brim region. Hmm, the brim's top edge is already B's mouth. Skip.
+- B-only: a couple of stubble dots on the chin at screen 770 → page 230. In A, page 230 is on the hat → dots on the hat = LED indicators. ✓ Nice.
+
+Good, minimal B-only strokes.
+
+Alright, let me also handle: **A's hairline** (page 380) = B's nose bridge (screen 620). Under the brim (which ends at 400), A's forehead starts around 400. Draw a hairline/fringe? A is wearing a hat, so no hair needed, but a bit of hair at the temples would be nice. Let's add two dark hair tufts at the temples (page 390–450, x 350–400 and 600–650) → in B at screen 550–610, x 350–400 (i.e., left side) — that's beside B's nose/cheeks → reads as sideburns. ✓ 
+
+Let's add them.
+
+**Hatching:** add fine hatch lines on the cheeks (A: page 560–640) → in B at screen 360–440 = B's hat body. Hmm, hatching inside the hat. That's fine — texture on the hat.
+
+Also hatch on A's jowls (page 700–770) → B's hat at screen 230–300 → texture on the hat. Fine.
+
+Alright. Also the "under-brow" hatching at page 460–480 → B at screen 520–540 = below B's eyes (bags). Fine.
+
+I think we're good. Let me write the SVG.
+
+Let me be careful with path syntax and keep it tidy.
+
+Colors:
+- paper: #f4eee1
+- ink: #191714
+- accent red: #c0402e
+- accent blue: #2f6180
+
+Let me write it.
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<title>The Tower and the Morning After</title>
+<desc>...</desc>
+<rect width="1000" height="1000" fill="#f4eee1"/>
+<rect x="45" y="45" width="910" height="910" fill="none" stroke="#191714" stroke-width="3"/>
+```
+
+Then the body.
+
+Group: stroke defaults: fill="none" stroke="#191714" stroke-linecap="round" stroke-linejoin="round".
+
+Let me write out the elements.
+
+1. Head+hat silhouette: filled with paper (#f4eee1) — same as bg, so it's just the outline. Actually the head should be plain paper too. Then features on top. OK, fill with paper, heavy outline.
+
+Path (head+hat):
+```
+M 430 195
+Q 500 170 570 195
+Q 612 212 620 272
+Q 626 300 624 332
+L 624 384
+Q 644 430 654 476
+Q 668 548 662 612
+Q 656 676 628 718
+Q 600 758 560 786
+Q 532 806 500 808
+Q 468 806 440 786
+Q 400 758 372 718
+Q 344 676 338 612
+Q 332 548 346 476
+Q 356 430 376 384
+L 376 332
+Q 374 300 380 272
+Q 388 212 430 195
+Z
+```
+Wait — the left side: from 376,332 up to 380,272 to 388,212 to 430,195. And the right from 570,195 down 612,212, 620,272, 624,332. Good.
+
+Hmm, the left edge at y=612 is x=338 and the right at 662. That's a 324-wide face. And at y=476 (brow) 346–654 = 308. OK.
+
+Stroke-width 12.
+
+2. The hat brim (drawn over the head, but the head's outline passes through at y 332–384 on the sides). Hmm — the head silhouette's left edge at 376–384 would show through the brim. The brim spans x 370–630. So the head outline at x=376 would be inside the brim. Slightly messy but the brim will cover it if I fill it with ink or a solid.
+
+Let me make the brim a solid ink mass — it reads as a dark hat brim in A and, in B, a big dark bulbous nose. 
+
+Brim path:
+```
+M 372 322
+Q 500 364 628 322
+Q 664 342 646 372
+Q 592 408 500 408
+Q 408 408 354 372
+Q 336 342 372 322
+Z
+```
+Filled with ink. Then in B at screen 592–678, x 354–646: a big dark nose. ✓ And its top edge (which is B's mouth frown) — I need it visible. Since it's solid ink, the "mouth" would be the silhouette edge. That's fine — a frown as the shadow line.
+
+Hmm, but a solid black nose mass is heavy. Alternative: fill dark but add lighter hatching. Actually, a big dark bulbous nose on a paper face is very Whistler. Keep it.
+
+Hmm, but in A a solid dark hat brim is also good (dark mass). ✓
+
+But: the brim's top edge may be hidden against the hat's silhouette which is paper-filled. It'll show as a boundary. Good.
+
+Actually — the mouth in B is the brim's top edge, which is the boundary between the paper hat-body and the dark brim. That reads as a mouth line ✓.
+
+Add nostril curves in the brim: small paper-colored or fine-line arcs at page 380–395, near x 420 and 580 → in B at screen 605–620, near the nostrils. Hmm, at screen 605–620 that's just under B's nose tip (B's nose tip from A's nose at page ~656 → screen 344... no wait).
+
+Hold on. B's nose is formed by A's brim mass at page 322–408 → screen 592–678. B's nose tip is at screen 650ish. Nostrils at screen 660–670 → page 330–340. So nostril arcs at page 330–340, x ~440 and ~560. But that's also where the brim's top edge is (the mouth line). Conflict: at page 330-340 the brim's top edge passes through. Hmm.
+
+The brim's top edge at x=440: Q from (372,322) to (628,322) through (500,364). At x=440, y ≈ 348. So a nostril arc at (440, 335) would be above the top edge at x=440 (348) — i.e., outside the brim. Bad.
+
+Skip the nostrils. Or put them slightly differently. Skip.
+
+3. The hat body details: vertical fins.
+Lines at x = 430, 455, 480, 505, 530, 555, 580(?), from y=215 to y=300, but the hat is narrower at the top. The hat's left edge at y=215 is x≈390, at y=300 x≈380... wait, my path: at y=272 the left is 380 and the right 620; at y=212 the left is 388 and the right 612; at 300, 374/624. So the hat's interior at y=215 spans 390–610, at y=300 spans 375–625.
+
+Fins: x = 420, 448, 476, 504, 532, 560. Wait, I want them to become stubble on B's chin, centered. x from 420 to 580, 6 lines. y from 220 to 305. Stroke fine (3px). Actually for stubble, thin lines are right.
+
+Let me use 7 lines: 418, 445, 472, 500, 528, 555, 582. Hmm, they should not touch the edges. At y=220 the hat spans ~390–610, at y=300 ~375–625. So 418–582 is safe. ✓
+
+Stroke-width 3.
+
+Add small LED dots: circles r=4 at (440, 250), (500, 240), (560, 250) in accent red. In B: screen 750, 760, 750 → red dots on B's chin/jaw = ... hmm, red dots on the chin. Could read as stubble spots or a rash. Maybe make them ink instead. Let's use ink small dots. Or blue. I'll use ink for the fins and a couple of blue dots.
+
+Hmm, "at most 2 accent colors." I'll use red for the turbine+bow tie and blue for the collar/cables.
+
+Actually, let me put the red accent on the turbine (A) / bow tie (B) — one strong red element. And blue for the collar/cables (A) / plume (B).
+
+4. Turbine/bow tie at the top:
+```
+<g fill="#c0402e" stroke="#191714" stroke-width="6">
+  <path d="M 498 178 Q 455 150 410 168 Q 440 196 498 190 Z"/>
+  <path d="M 502 178 Q 545 150 590 168 Q 560 196 502 190 Z"/>
+  <circle cx="500" cy="178" r="20"/>
+</g>
+```
+Hmm, this looks like a bow tie/propeller. In A it's above the hat, at page 150–200. But the hat's crown is at 195 and the head outline starts at 430,195. The turbine at x 410–590, y 150–196 sits right on top of the hat ✓.
+
+In B, at screen 804–850, x 410–590 → a bow tie just under B's "chin" (= A's hat crown at page 200→screen 800). Wait, screen 800 is B's chin. So this is at screen 804–850, just below B's chin — i.e., at B's neck/collar. ✓ A bow tie at the neck. 
+
+But there's a gap between B's chin (800) and the bow tie (804–850) — that's the neck. Fine, and A's collar (page 820–930 → screen 70–180) is the plume. So between screen 800 (chin) and 70... no. Screen 870 = page 130. So the region screen 850–930 = page 70–150 = A's cable strands. Those would be B's collar/plume just below the bow tie. ✓ Good, continuous.
+
+So B: chin at 800, bow tie at 805–850, then the plume/tassel at 850–930. All at the neck. But then B has no body below — fine, the image ends around 930. Hmm, but B's head spans screen 200–800, and the neck/collar 800–930. And the plume (from A's collar) at screen 70–180 above the hat. Good composition.
+
+5. A's face features.
+
+**Eyes:** 
+Left eye at (425, 500), right at (575, 500). 
+Eye shape: an almond. Let me draw:
+Left: `M 388 502 Q 425 468 462 500 Q 425 534 388 502 Z` — filled with paper, heavy stroke 6.
+Right: `M 538 500 Q 575 468 612 502 Q 575 534 538 500 Z`
+
+Hmm, these are simple almonds. For character, add the upper lid and the lower lid separately.
+
+Upper lid (heavy, 9px): `M 384 506 Q 425 464 466 502`
+Lower lid (fine, 4px): `M 388 506 Q 425 534 462 506`
+
+Iris (solid ink circle r=16): centers at (413, 489) and (587, 489).
+Hmm, r=16 in an eye that's ~60 tall. OK.
+
+Actually, let me make the iris a bit bigger: r=17.
+
+And a small paper highlight at (408,483) r=4 and (582,483) r=4. Rotated these become lower-right highlights. Fine.
+
+**Brows** (page 452):
+Left: a thick tapered crescent: `M 344 458 Q 404 420 470 444 Q 410 436 352 466 Z` — filled ink.
+Let me simplify: filled path:
+`M 346 462 Q 406 418 472 440 Q 408 434 352 470 Z`
+Right: `M 528 440 Q 594 418 654 462 Q 648 470 592 434 Z`
+
+Hmm, these are thin crescents. Let's just use thick strokes (10px) with round caps:
+Left brow: `M 350 462 Q 408 424 472 442` stroke-width 11
+Right brow: `M 528 442 Q 592 424 650 462` stroke-width 11
+Good, simple.
+
+**Eye bags** (page 548):
+Left: `M 356 546 Q 424 580 486 552` stroke-width 8
+Right: `M 514 552 Q 576 580 644 546` stroke-width 8
+
+These become B's brows. Good.
+
+**Cheek/nose lines:** A's nose is the big mass at page 588–678. Draw it filled ink:
+```
+M 448 590 Q 500 574 552 590
+C 588 612 606 636 590 654
+Q 546 678 500 678
+Q 454 678 410 654
+C 394 636 412 612 448 590
+Z
+```
+Fill #191714.
+
+Hmm, a solid black nose 216 wide and 104 tall. That's a big dark blob in the middle of the face. Combined with the dark brim above, the face has a lot of black. Let's make the nose not fully black — instead, outline it heavily and hatch it, with a dark shadow under it. Hmm.
+
+Actually, for B, this mass is the hat's brim — which should be dark. OK, keep it dark but maybe not pure black — use ink with hatching lines in paper color to break it up. Let me add 2-3 paper-colored fine arcs inside the nose to suggest form. In B those become brim highlights. Fine.
+
+Alternatively, make the nose a mid-tone by heavy hatching rather than solid. I'll do: fill ink, then 3 paper-colored thin arcs.
+
+Hmm, actually simpler: fill ink and add a paper-colored arc near the top-left to suggest the bridge. Fine.
+
+**Mouth** (page 678):
+`M 415 674 Q 500 716 585 674` stroke-width 9
+Plus lip shadow: `M 430 692 Q 500 722 570 692` stroke-width 3 — hmm, careful, in B these become parts of the hat band. Fine, but let's keep the mouth simple: one thick line + tiny corner ticks.
+
+Add corner ticks: `M 415 674 Q 405 668 402 660` and mirrored. Hmm, in B these become small hooks at the hat band corners. Fine, skip or keep minimal.
+
+**Chin crease** at page 775: `M 468 776 Q 500 790 532 776` stroke-width 5. In B: screen 210–224, a small arc under the hat crown. Fine.
+
+**Cheek hatching / jowl lines:**
+Left jowl: arcs from (350,640) to (390,700): e.g.
+`M 348 636 Q 372 668 366 704`
+`M 362 626 Q 388 660 384 700`
+Right mirror.
+These are A-only-ish; in B they land at screen 330–380, x 620–650 → in B's hat brim area. Fine, texture.
+
+Hmm, page 626–704 → screen 296–374, x 348–390 → that's B's hat left side. Fine.
+
+**Sideburn/hair tufts** at the temples: page 384–450, x 340–390.
+`M 376 388 Q 356 420 362 460 Q 380 430 392 400 Z` filled ink.
+Right: `M 624 388 Q 644 420 638 460 Q 620 430 608 400 Z` filled ink.
+In B: screen 540–612, x 340–390 and 610–660 → sideburns beside B's nose/cheeks ✓.
+
+Hmm, at page 388–460 that overlaps the brim (322–408) bottom. Fine, it'll be below it.
+
+Actually the brim bottom is at ~400 in the center and 372 at x=354. At x=376 the brim bottom is around y=395. So the tuft starting at 388 is right at the brim's edge. Good — hair peeking out from under the brim. ✓
+
+**Hatching on the cheeks:** a few short parallel lines at 45°:
+On the left cheek (page 560–640, x 350–400): 
+`M 352 560 L 372 540`, `M 356 584 L 380 560`, `M 350 606 L 372 584`.
+Hmm, these need to be inside the face. Face left edge at y=560 is x≈338, at 640 x≈344. So x 352 is inside. Let me place them from x=350 to x=400.
+
+These become, in B, hatch lines on the hat's side. Fine.
+
+OK also **A's ear**? Skip ears — the hat covers. Actually ears at eye level ±0.36H = ±216 → x=284 and 716. That's outside my face width (338–662). Skip ears; the hair/sideburns cover.
+
+6. **Collar / plume:**
+Wings (paper fill, heavy outline 8):
+Left: `M 468 836 Q 412 848 352 892 Q 336 912 366 918 Q 424 904 486 872 Z`
+Right: `M 532 836 Q 588 848 648 892 Q 664 912 634 918 Q 576 904 514 872 Z`
+Hmm, but the head's bottom is at y=808 (chin) with the outline going to... my head path ends at 500,808 and the sides at 440,786 / 560,786. So there's no neck below 808. The collar at 836 would float.
+
+Let me add a neck: extend the head outline down: from (440,786) → (432,830) → (452,856) → and (560,786) → (568,830) → (548,856). Hmm, that changes the chin outline.
+
+Simpler: draw a separate neck shape: a trapezoid from (450,790) to (550,790) down to (445,860) and (555,860), filled paper with a heavy outline. Then the collar overlaps.
+
+OK:
+Neck path: `M 452 786 L 548 786 L 566 862 L 434 862 Z` — fill paper, stroke ink 8. Then the collar on top.
+
+In B this neck becomes at screen 138–214, x 434–566 = B's hat crown area. It's a light rectangle there. Fine — or it adds a "collar" of the hat (the hat's crown band). OK.
+
+Cables: 3-4 strands from y 870 to 950:
+`M 430 880 Q 414 920 436 950`
+`M 470 890 Q 462 930 476 958`
+`M 530 890 Q 538 930 524 958`
+`M 570 880 Q 586 920 564 950`
+Stroke 5. In A these hang below the collar. In B they rise above the hat as plume strands at screen 50–130. ✓
+
+Bow tie knot at (500,860): a small shape:
+`M 470 842 Q 500 828 530 842 Q 540 862 530 880 Q 500 894 470 880 Q 460 862 470 842 Z` filled accent blue with ink stroke 6.
+
+And a red pin at (500,858) r=8? Maybe skip. Let's add a small red square = a chip pin: `<rect x="488" y="848" width="24" height="20" rx="3" fill="#c0402e" stroke="#191714" stroke-width="4"/>`. In B it's a brooch on the plume at screen 132–152. Fine.
+
+7. **B-only group** (rotate 180 500 500):
+- Forehead wrinkles in B at screen 430–445 → page 555–570: arcs across the face. In A, page 555–570 is A's cheek/under-eye area → horizontal-ish arcs across the cheeks. Hmm, could look like cheek folds. OK, keep them short and light.
+
+
+
+Let me add:
+```
+<g transform="rotate(180 500 500)">
+  <path d="M 396 556 Q 500 588 604 556" stroke-width="4"/>  <!-- B: forehead crease at 430ish? -->
+```
+Hmm, let me compute: I want a crease in B at screen y=430. Page = 1000-430 = 570. So draw at page 570. The path above is at y 556–588 which after rotation gives screen 412–444. Good, that's a forehead crease in B spanning x 396–604 → screen x 396–604. ✓
+
+In A that's at page 556–588, x 396–604 — that's right across A's cheeks/nose bridge. It would look like a cheek line. Hmm, it might clutter. Let's make it two shorter arcs on each side instead of one long one.
+
+Actually, an arc at page 570 passing through A's face at cheek level... it would cross A's nose (which starts at 588). At y=570 the nose isn't there yet (nose top at 574). So it's at the nose bridge level. A horizontal arc across A's bridge = a wrinkle. Fine.
+
+Let's do: `M 410 558 Q 500 586 590 558` stroke-width 4 in the B group. It's shared-ish (drawn in a rotated group but geometrically it's just a stroke at page 558–586). Mentioning rotation doesn't matter for geometry. Right — the rotate group only matters for shape orientation (a ∪ drawn in the rotated group appears as ∩ after rotation... no).
+
+Hmm, important: a path drawn inside `<g transform="rotate(180 500 500)">` with coordinates (x,y) will be rendered at page position (1000-x, 1000-y). So if I write `M 410 558 Q 500 586 590 558` inside the rotated group, it renders on the page at M 590 442 Q 500 414 410 442 — an arc at page y 414–442, which in A is at the brow level!
+
+So I must think: whatever I write inside the rotated group gets mirrored through the center. So to place a stroke at page (x,y), I write (1000-x, 1000-y) in the rotated group. Equivalently, I write it in B's frame.
+
+For a B-only feature at B-screen position (X, Y): the page position is (1000-X, 1000-Y). And inside the rotated group I write (X, Y) — which renders at (1000-X, 1000-Y) ✓.
+
+So writing `M 410 570 Q 500 598 590 570` in the rotated group renders on the page at (590,430)–(410,430) with control (500,402). In B's view, that's at screen 570 with the control at 402... 
+
+Hmm, I'm overcomplicating. Let me just say: inside the rotated group, I write coordinates in B's upright frame. B's frame: eyes at (425,500) and (575,500) — page positions. In B's frame, "above the eyes" (B-frame y < 500) renders on the page at y > 500. OK.
+
+So a B-frame forehead crease at B-frame y=430, x 410–590: write `M 410 430 Q 500 402 590 430` inside the rotated group. Rendered on the page at M 590 570 Q 500 598 410 570. ✓ In A's view, that's on the cheeks/nose bridge. Fine.
+
+OK. Let's keep B-only elements minimal:
+- forehead crease in B: `M 408 428 Q 500 400 592 428` (B-frame) stroke 4.
+- a stubble dash cluster on B's chin (B-frame y 760–790): a few short vertical dashes at B-frame x 440–560, y 755–790. Rendered on the page at y 210–245, x 440–560 → on A's hat. They'd look like extra hat texture. Since the hat already has fins there, it's fine. Actually, might conflict. Let me skip.
+- B-only: a small worry-line beside B's mouth? Skip.
+
+I'll just add the forehead crease and maybe one more.
+
+Also, A-only strokes: 
+- the hat band's underline? Already have.
+- A couple of stray pen dots.
+
+Good enough.
+
+Let me now also double-check: is B visible in A? The B-only crease at page 570 will be visible in A as a line across the cheeks. It should be light. OK.
+
+Let me write the final SVG now.
+
+One more check on the hat silhouette in A: the head path top is at y=170–195, and the turbine blades go from 150 to 200. The hat's crown top at 195. So the turbine sits on the crown. ✓
+
+Let me finalize the head path and make sure the hat portion looks like a tower.
+
+Also I should add a hat band or seam for A? The brim is the band. Fine.
+
+Let me write it.
+
+Also add the frame? Allowed. I'll add a simple thin double frame.
+
+Let me write out the SVG carefully.
+
+For the head silhouette, fill = paper color, so it doesn't obscure the background... it's the same color. I'll fill with "#f4eee1".
+
+Actually, to give the face a slight tone difference, maybe fill the head with a very light warm tone. But limited palette: paper + ink + 2 accents. Using a slightly different paper tone counts as a 5th color. Better to keep the same paper fill.
+
+OK, writing.
+
+One more: the hat brim path — I want its top edge (B's mouth) to be visible as a boundary. Since the brim is solid ink and the hat above is paper, the boundary shows. ✓
+
+And the brim in A should look like a hat brim: a wide dark band. With the crown above and the face below. Yes.
+
+Let me write the final code.
+
+Also, let me reconsider the brim's vertical placement: the brim spans 322–408 at x=372/628 sides, dipping to 364 at the center top and 408 at the center bottom. Hmm, my path:
+
+M 372 322 Q 500 364 628 322  → the top edge dips to ~343 at the center (quadratic midpoint = (322+364*2+322)/4... the midpoint of a quadratic with the control at y=364 and ends at 322 is (322 + 2*364 + 322)/4 = 343). So the top edge dips to 343.
+Q 664 342 646 372 → the right end goes out and down.
+Q 592 408 500 408 → the bottom edge from (646,372) to (500,408) with the control at (592,408): the midpoint y = (372 + 2*408 + 408)/4 = 399.
+Q 408 408 354 372
+Q 336 342 372 322 Z
+
+So the brim is a lens from y≈322 (ends) to 408 (center bottom), i.e., 86 tall at the center. And 372–646 wide at the widest... actually the widest is at x=336-664 around y=342-372. Hmm, my path has a point at (664,342) and (336,342). So the brim is 328 wide. That's wider than the face (338–662). OK, roughly the same. Let me pull it in: use 356 and 644.
+
+Revised brim:
+M 380 322 Q 500 366 620 322 Q 652 342 640 372 Q 590 410 500 410 Q 410 410 360 372 Q 348 342 380 322 Z
+
+Widest at ~348–652 = 304 wide. Face is 338–662 = 324. OK the brim is slightly narrower than the cheeks. Fine.
+
+In B: the brim → screen 590–678, x 348–652. A wide nose. ✓ Its top edge at screen 634–678 → B's mouth (a ∩ arc peaking at 634). Corners at (620,678) and (380,678). ✓
+
+Good.
+
+Now let me write everything out.
+
+Actually one thing: in A, the top edge of the brim dips DOWN in the middle (to 343). Hmm, for a hat brim, the top edge where the crown meets the brim would typically arc UP in the middle (the crown is set into the brim from behind, so the visible line dips down at the sides)... Whatever. It reads as a brim.
+
+Hmm, actually with the crown behind and the brim in front, the line where they meet on the brim's top surface curves downward at the center if we see the brim from slightly above. Since we see the brim's underside (dips to 410 at the center = bottom of the brim), we're looking from slightly below. Then the crown-brim junction would appear to arc UP in the middle. Ugh.
+
+It doesn't matter much. It reads as a hat. Move on.
+
+Writing now.
+
+Final check on stroke widths and the overall look. Let's go.
+
+For the desc: "DeepSeek-R1's January 2025 shock and Nvidia's record $600B one-day drop: upright, an over-funded compute colossus in a server-rack hat beams; rotated, the same strokes become the heavy, hollow-eyed face of the morning after, his rack a stubbled jaw."
+
+Let me write the file.
+
+I'll include the turbine in red, the collar knot in blue.
+
+Writing the code now:
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <title>Rack Tower, Morning After</title>
+  <desc>...</desc>
+  <rect width="1000" height="1000" fill="#f4eee1"/>
+  <rect x="42" y="42" width="916" height="916" fill="none" stroke="#191714" stroke-width="2.5"/>
+  <rect x="52" y="52" width="896" height="896" fill="none" stroke="#191714" stroke-width="1"/>
+
+  <g fill="none" stroke="#191714" stroke-linecap="round" stroke-linejoin="round">
+    <!-- head + hat silhouette -->
+    <path d="M 430 195 Q 500 170 570 195 Q 612 212 620 272 Q 626 300 624 332 L 624 384 Q 644 430 654 476 Q 668 548 662 612 Q 656 676 628 718 Q 600 758 560 786 Q 532 806 500 808 Q 468 806 440 786 Q 400 758 372 718 Q 344 676 338 612 Q 332 548 346 476 Q 356 430 376 384 L 376 332 Q 374 300 380 272 Q 388 212 430 195 Z" fill="#f4eee1" stroke-width="12"/>
+    ...
+```
+
+Careful: I set fill="none" on the group and override per-path. Fine.
+
+Let me write it all out properly now.
+
+Order of drawing (paint order):
+1. neck
+2. head silhouette
+3. hat fins (inside the hat)
+4. turbine (top)
+5. brim (dark)
+6. sideburn tufts
+7. eyes
+8. brows
+9. eye bags
+10. nose (dark)
+11. mouth
+12. chin crease
+13. cheek hatching
+14. collar wings, knot, cables
+15. B-only group
+
+Wait, the sideburn tufts should be under the brim? No, they hang below it. Draw after the brim.
+
+The hat fins should be on the hat, drawn after the head silhouette and before the brim.
+
+OK.
+
+Also the eyes should be drawn after the brim (they're at 500, below the brim at 410). Fine either way.
+
+Writing now for real.
+
+def the B-only forehead crease: inside `<g transform="rotate(180 500 500)">`, path `M 408 428 Q 500 400 592 428` with stroke-width 4.
+
+Also add a B-only pair of "worry" ticks near the outer eye corners? Skip.
+
+Let me write.

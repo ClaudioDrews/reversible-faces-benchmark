@@ -1,0 +1,71 @@
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g stroke="#111" fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- neck (A) = finial stem (B) -->
+    <path d="M 456 754 C 458 796 464 820 474 846" stroke-width="5"/>
+    <path d="M 544 754 C 542 796 536 820 526 846" stroke-width="5"/>
+
+    <!-- bow tie (A) = hat ribbon (B) -->
+    <g fill="#111" stroke-width="5">
+      <path d="M 500 862 L 418 830 L 418 894 Z"/>
+      <path d="M 500 862 L 582 830 L 582 894 Z"/>
+      <rect x="488" y="848" width="24" height="28" rx="6"/>
+    </g>
+
+    <!-- face interior -->
+    <path d="M 385 345 C 360 430 340 520 325 595 C 312 665 355 730 425 762 C 470 782 530 782 575 762 C 645 730 688 665 675 595 C 662 520 640 430 615 345 Z" fill="#fff" stroke="none"/>
+    <!-- face perimeter -->
+    <path d="M 385 345 C 360 430 340 520 325 595 C 312 665 355 730 425 762 C 470 782 530 782 575 762 C 645 730 688 665 675 595 C 662 520 640 430 615 345" stroke-width="6"/>
+
+    <!-- hair mass (A) = beard (B) -->
+    <path d="M 385 345 C 352 332 328 306 320 262 C 310 212 330 170 366 142 C 392 122 420 108 452 112 L 470 94 C 486 116 500 122 512 116 L 528 90 C 546 114 570 126 590 132 C 626 142 648 176 652 216 C 656 258 648 310 615 345 C 588 352 560 354 528 356 C 514 357 507 360 503 368 L 500 378 L 497 368 C 493 360 486 357 472 356 C 440 354 410 350 385 345 Z" fill="#111" stroke-width="6"/>
+
+    <!-- shine strands in hair (A) = beard strands (B) -->
+    <g stroke="#fff">
+      <path d="M 348 246 C 354 196 380 158 420 140" stroke-width="5"/>
+      <path d="M 372 266 C 380 216 402 186 434 168" stroke-width="4"/>
+      <path d="M 596 268 C 598 224 586 186 560 160" stroke-width="4"/>
+    </g>
+
+    <!-- grimace / grin crescent: hair shine (A) = downturned mouth (B) -->
+    <g transform="rotate(-5 500 295)">
+      <path d="M 430 300 Q 500 236 570 300 Q 500 296 430 300 Z" fill="#fff" stroke-width="5"/>
+    </g>
+
+    <!-- eyes -->
+    <g stroke-width="5" fill="#fff">
+      <ellipse cx="414" cy="500" rx="36" ry="19"/>
+      <ellipse cx="586" cy="500" rx="36" ry="19"/>
+    </g>
+    <g fill="#111" stroke="none">
+      <circle cx="416" cy="499" r="12"/>
+      <circle cx="584" cy="501" r="12"/>
+    </g>
+
+    <!-- upper lid creases (A) = lower lids (B) -->
+    <path d="M 382 480 Q 414 466 446 480" stroke-width="4"/>
+    <path d="M 554 480 Q 586 466 618 480" stroke-width="4"/>
+
+    <!-- brows (A) = tired eye-bags (B) -->
+    <path d="M 374 460 Q 410 436 450 452" stroke-width="8"/>
+    <path d="M 550 454 Q 590 434 626 456" stroke-width="8"/>
+
+    <!-- under-eye lines (A) = heavy angry brows (B) -->
+    <path d="M 380 538 Q 412 548 448 560" stroke-width="5"/>
+    <path d="M 552 560 Q 588 548 620 538" stroke-width="5"/>
+
+    <!-- forehead crease (A) = nose bridge (B) -->
+    <path d="M 500 384 C 495 400 495 418 500 432" stroke-width="4"/>
+
+    <!-- nose (A) = hat brim edge (B) -->
+    <path d="M 448 640 Q 500 666 552 640" stroke-width="6"/>
+
+    <!-- grin (A) = hat band (B) -->
+    <path d="M 414 670 Q 500 734 586 670" stroke-width="7"/>
+  </g>
+</svg>
+```
+
+A = the grinning, bow‑tied showman of the AI launch demo; B = the same strokes upside down = the tired, bearded night‑shift gnome who actually keeps it running at 3 a.m.

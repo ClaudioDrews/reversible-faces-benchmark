@@ -1,0 +1,2 @@
+deepseek-v4.1-flash {'model': 'deepseek/deepseek-v4.1-flash', 'id': 'deepseek/deepseek-v4.1-flash', 'prompt_tokens': 5034, 'completion_tokens': 24000, 'cost': 0.0225053235, 'finish': 'length', 'event': None, 'title': None}
+TOTAL cost 0.0225053235

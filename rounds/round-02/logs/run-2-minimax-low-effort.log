@@ -1,0 +1,3 @@
+minimax-m3.1-flash {'model': 'minimax/minimax-m3.1-flash', 'id': 'minimax/minimax-m3.1-flash', 'prompt_tokens': 6252, 'completion_tokens': 54808, 'cost': 0.0334672668, 'finish': 'stop', 'event': "DeepSeek R1's January 2025 launch and the AI-bubble wobble that erased ~$600B of market value", 'title': 'Triumph and the Morning After'}
+   valid XML minimax-m3.1-flash__deepseek-r1-s-january-2025-launch-and-the-ai-bubble-wobble-t.svg 8922
+TOTAL cost 0.0334672668

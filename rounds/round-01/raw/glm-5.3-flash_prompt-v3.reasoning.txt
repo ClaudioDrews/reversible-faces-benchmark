@@ -1,0 +1,137 @@
+Idea: A = wide-eyed cheerful AI chatbot with headset/antenna, big grin; B = weary human engineer, heavy lids, sagging headphones→collar, stubble beard. Tech accessory: headset/antenna ↔ chin/jaw; cable. Let's just build.
+
+Skeleton plan (page coordinates, shared eyes at (415,500) and (585,500), round eyes with big pupils for A — but eyes shared, pupils shared... pupils wide in A and droopy in B conflict. Use circles with pupils; B gets heavy upper lids via B-only strokes rotated (they sit below eyes on page, reading as under-eye bags in A? No—B-only strokes drawn in B's frame rotated 180: a heavy lid over B's eye at B-frame y=476 → page y=524, which in A reads as lower lid/bag. Fine, adds bag to A — acceptable, cheerful with slight bag or just keep light).
+
+Key shared strokes:
+- Big grin in A: cup from (400,680) Q(500,750)(600,680)? That's B's hat dome at y=320 (page 680 → B 320, hat dome page y=320 ✓). So the smile = hat band/dome of B's cap. Good.
+- A's hat brim zone (page y=350) = B's nose tip (650). Draw compromise: a brim line at ~350 that B reads as nose? Brim should be wide curve; nose tip small. Compromise: moderate curve at y=355, width ~±90: A reads as hat brim under dome; B reads as nose tip cup? A nose tip is a small cup ∪ at 650 in B frame → page 350, concave up on page... nose tip drawn as ∪ in B frame; rotated it becomes ∩ on page at y=350 — reads as hat brim dome? A brim is ∩ dome shape when viewed... A hat brim curve arcs downward (∩). ∪ in B-frame at 650 rotated → ∩ at 350. Good: one stroke, ∩ at page 350, serves as A's hat brim and B's nose tip. Make it wide-ish (±100) — big nose for B, big brim. OK.
+- A's hair/fringe at page 380 = B's nose bridge (620). A fringe: some short strokes/lock. Draw a couple of vertical-ish short lines page 355–380; in B they become nose bridge sides at 620–645. Fine.
+- Head outline: one silhouette. Top contour (A's hat dome, page ~200–320) = B's chin/jaw. Bottom (page 680–800 chin) = B's hat top. Draw head outline as big shape: skull top at y=230, sides at x=280/720 down to jaw at y~800, plus hat. Let silhouette: crown curve at top (page), and at bottom A's chin = B's crown. A chin wide rounded at 800; B's cap top also rounded — compatible.
+- Collar/bow at 890 = plume at 110. A: bow tie at 890; B: pompom at 110. Draw a scribbly bow at 890 (A) whose rotated form at 110 is B's pompom. Same stroke works both. Good.
+
+B-only (in rotated group, B-frame coords):
+- B weary: heavy upper lids: lines over eyes at B y=476 → page 524. Draw in B frame: lid arcs over eyes. These land at page 524 as A's lower lids — adds slight bag to A, acceptable.
+- B's downturned mouth? No—A's smile stroke is B's hat dome. B's mouth must come from A's hat band: A's hat dome/hat band at page ~320 = B's mouth at 680. So draw A's hat band as a ∩ curve at page 320 that in B-frame (at 680) is ∪? A ∩ on page rotated → ∪ in B frame at 680: a downturned mouth is ∩ in B frame... wait a frown = ∩ mouth. Rotating ∩ page → ∪ in B frame = smile. Hmm. Let me redo: a stroke drawn on page as ∩ (dome) at y=320. In A it's the hat dome top curve. When page rotated, that ∩ becomes ∪ in B's view at B-y 680 → B sees a ∪ = smile. But I wanted B weary/frowning. Alternatively make A's hat band slightly different. Actually let B be the weary human — a faint resigned flat/slight frown. A ∩ on page = ∪ for B = smile — no good. Draw A's hat band as a gentle ∪ on page at y~330 (band curving down like a smile — that's odd for a hat... a hat band curving downward is actually natural for a brim band seen from front? A band across a tall hat usually curves down slightly (∪? no, bands around cylinder curve downward ∪ at bottom... actually a band on a hat as seen front-on curves ∪ (following brim) or ∩ (following top). A band near the brim can curve ∪ slightly). So: page stroke ∪ at y=315, width ±140: A reads hat band; B reads frown (∩ at 685)? Rotating ∪ gives ∩ in B frame at y=685 = frown ✓.
+
+- B's headset: tech accessory must be unmistakable in both. A: antenna on hat? A's pompom... Let A be the giddy chatbot with an antenna springing from hat top (page ~110–200, but that's B's collar zone). Hmm. Give A a headset: earpiece circles at ears (x=280,720 at y=500) with a band over the head — band over crown at page ~230 = B's jawline. B reading: that same band = jaw/beard line? Headset mic arm: from earpiece curving to mouth (page ~600) = in B a wrinkle/cheek line at 400. Could read as B's eyebrow? Page 600 → B-frame 400 = B's forehead line. OK acceptable (forehead crease).
+
+Actually simpler: make A the robot/AI: A's face has a screen visor? Hard with shared eyes.
+
+Keep it simple: A = enthralled tech optimist wearing VR headset? Let's do: A = excited guy with smart-glasses (visor band across eyes connecting to earpieces at 280/720, y~490): a horizontal band through the eyes — that would obscure shared eyes. Bad.
+
+Alternative tech accessory: A has a headset with mic (call center / video call): earpieces + band + boom mic near mouth. B (rotated) sees: earpieces stay at eye level (same), band becomes jawline, boom mic becomes a curl of hair at forehead? B is the weary human on the other end of the video call. Joke: the eager presenter with headset grinning ("per our last email" energy) vs the exhausted remote worker. Tech accessory unmistakable: headset in A; in B, the earpieces read as headphones too? But B needs "clearly human counterpart". Hmm requirement: at least one accessory unmistakably technological with clearly human counterpart in the other reading. Headset earpieces: in B they read as hair buns/ears? Make earpiece ovals at (270,500) and (730,500) large ellipses; in B they read as big ears. Boom mic curve from left earpiece down to near mouth (page: from (280,520) curving to (430,640)); rotated it goes from (720,480) to (570,360) in B: reads as hair lock / temple line. OK.
+
+B's stubble: dots on chin area (page upper forehead ~300–360)? Stubble in B at B-y 0.35–0.5 → page y 500–650... wait B chin at B-frame 800 → page 200. B's beard occupies B-frame y 650–810 → page 190–350, i.e., A's hat zone. So B's beard strokes drawn in B-frame across page 200–350 region — they'd clutter A's hat interior. Light dashed strokes could read as hat texture. Keep a few light hatch strokes.
+
+Eyes: shared. A: wide-open delighted — big circles r=28 with small pupils looking up? B: weary — need heavy lids. B-only lid strokes at B-frame 476→page 524, plus B-only under-bag at 548→page 452 reading as A's brow. A's brow: raised brows (A-only, drawn in A frame at 452). B's brow from A's under-eye bag: A-only bag at 548 → B brow at 452 ✓ (dictionary). So A-only: raised brow arcs at y~445, under-eye bag curves at y~548. B reads: brow(452)→B bag at 548 ✓ nice; bag(548)→B brow at 452 ✓. So A-only strokes serve B via rotation. But "B-only strokes must be inert in A" — these A-only strokes at 445/548: in A they read as brows and bags (fine, cheerful raised brows), and they're not A-only then — they're shared through rotation by design. Good: draw once.
+
+B weary lids: draw lid lines in page frame at y=520 (just below eye centers, so slightly overlapping lower lid) — in A that's a lower-lid line (fine), in B it's at 480 = upper lid droop ✓. Draw as gentle ∪ over top of each eye? A heavy half-closed lid: a curve over the eye top in B. Let me just draw, in page frame, an arc over each eye at y≈480 AND shallow line at y≈525. Arc at 480 in A = upper lid crease (fine); in B at 520 = lower lid. Hmm droopy: draw thick lid line partially covering eye: path across eye top at y=490 flat-ish. In A: slightly low upper lid — still wide eyes? Could dampen A's delight. Compromise: pupils large, brows raised high (page 440) for A. B reads brow(440)→B bag at 560 heavy bag ✓ weary. And B's heavy lid = A's lower lid arc at 525 (drawn in page frame, gentle ∪ under eye at 525: A = smiling squint lower lid; B = droopy upper lid at 475). Workable.
+
+Nose: A's nose bridge/tip: bridge lines page 620–650 = B hairline 350–380. A nose tip at 650 ∪ = B hair fringe arc ∩ at 350. But B's fringe/hair also comes from A's nose. Draw A nose: two nostril-ish curve at 645, small ∪ width ±40; in B at 355: small ∩ = a hair lock over forehead ✓. Plus bridge verticals from 620? Skip bridge, keep nose minimal: one ∪ at 648 width ±45 plus a small vertical pair 620→648. In B those verticals at 352–380: fringe strokes ✓.
+
+A's hat: dome top at page ~250, band at 315, brim at 350. Head top (skull) — A's hat sits on head; the head outline top at 200 is hat crown. Let silhouette: page outline top dome from (350,260) up to (500,215) to (650,260) — that's A's hat crown; in B it's B's chin contour (B chin 800→page 200). Then A's chin: page bottom curve (380,790)-(500,830)-(620,790); B reads it as hat top dome ✓ (B crown 200). Sides: verticals x=280/720 from y~350 to 720? A jaw width ±0.30 at y+0.40=660: x from 500±180. Face sides: from temples (315,400) down to jaw (330,680) curving to chin. In B, these read as B's face sides too (face outline works both ways roughly symmetric). Fine—use one head outline path symmetric-ish but with slight asymmetry? Keep symmetric outline; asymmetry from hat tilt, bow, hair.
+
+Bow tie at 890 (A) = pompom at 110 (B): draw an asymmetric scribble bow: two loops + knot at page ~880–920 centered 500. Rotated: pompom blob at 80–120. ✓. Also A's collar line at 860 = B's hat brim? B hat brim at B 850 → page 150. Draw a wide ∪ at page 855 (shoulders/collar) → B sees ∩ at 145 = hat brim ✓. And B's collar = A's... page 150 zone = A's hat top. Add A-only: small hat tip? A's hat dome/band already covers. Enough.
+
+Boom mic: page path from (300,530) curving down to (410,655) with small circle at end (mic, r=10). In B: from (700,470) up to (590,345) — reads as hair whisp at temple. OK.
+
+Earpieces: ellipses at (285,500) rx=20 ry=45, and (715,500). Plus band: arc over head? Band over crown would conflict with hat. Skip band; earpieces alone + mic = headset readable. In B, earpieces = big ears ✓, mic = hair tuft.
+
+B's stubble/beard: light 3px short strokes in B frame at chin/upper-lip region → page region y 150–350 (hat area) and around. That's inside hat & above band — could read as hat texture. Add ~6 light strokes in B frame: at B (430–570, 720–790) upper lip/chin → page (430–570, 210–280): inside A's hat dome — light dots read as fabric texture. OK, a few.
+
+B's mouth: hat band stroke ∪ page 315 → B frown at 685 ✓. Give B's mouth width ±100 (page x 400–600).
+
+A's mouth: smile ∪ at page 680, width ±110 (x 390–610, control at 500,735). B reads: dome at 320 = B's hat band ✓ (drawn as hat band of B's cap). Good — B has a cap: band at 320 plus crown curve? B's crown = A's chin curve (bottom) ✓, brim = collar line at 145? Wait B's hat: top = page bottom chin curve (830→B 170) = B crown ✓; B band = A's smile (page 680 → B 320) ✓; B brim = A's collar ∪ (page 855 → B 145) ✓. Consistent stack! And A's hat: brim = B's nose ∩ (page 350) ✓, band = B's mouth ∩ at 315 ✓, crown = B's chin (page 260 top curve) — wait A's hat top vs B's chin: top curve at page 215–260 serves as A's hat crown and B's chin ✓ (B chin at 800→page 200 ✓). Beautiful, everything pairs.
+
+But A's hat dome is at 250 and band at 315 and brim 350, then hairline 380, brow 445, eyes 500. Head sides: hat wider than face. Outline: hat from (330,340) i.e., brim edges wider: brim from x 320 to 680 at y 350. Face below brim narrower: temples x 330 at y 380... let me draw:
+
+Main outline path (page): start left brim end (310,355), arc brim ∩ to (690,355)? Brim curve: M310,350 Q500,320? No—brim should dip? A hat brim viewed front: a wide ∩ or ∪? Typically brim curves ∩ (up in middle? no—front view brim edge is a downward arc ∪? A brim's front edge appears as a curve bulging downward: ∪ shallow, or straight). B's nose tip needs ∪ (rotated from... wait earlier: B nose tip ∪ in B frame → ∩ on page). So page stroke at 350 is ∩: arcs upward in middle. A brim arcing up in middle — like a boater hat brim seen straight on curves slightly down at edges: ∩ works ✓.
+
+Face outline: from brim ends down: left side (310,350) → temple (330,430)? Hmm keep simple: outline path:
+M 330 350 (left hat edge) — actually let hat be wider: hat spans 300–700. Face spans ~320–680 at temples, jaw to 340/660 at 680, chin bottom 790.
+
+Single silhouette path (clockwise):
+M 500 215 (hat top)
+Q 350 225 310 330 (left hat side)
+Q 300 355 320 360 (brim left)
+L/C to face: (330 380) temple
+Q 300 520 330 640 (left cheek/jaw)
+Q 350 790 500 825 (chin left half)
+Q 650 790 670 640
+Q 700 520 670 380
+(680 360)
+Q 700 355 690 330
+Q 650 225 500 215 Z
+
+Ears at eye level x~300/700, y 470–540: small arcs — in B they're also ears ✓. But earpieces (headset) at same spot — draw headset earpiece ellipses over/beside ears; maybe skip ears, earpieces serve as ears in B.
+
+B-only group (rotate 180 500 500), drawn in B frame:
+- lids: none needed (lid lines drawn in page frame).
+- forehead crease for B: B frame (430–570, 410–430) two shallow curves → page (430–570, 570–590): in A reads as under-eye area lines? page 575 is below bags(548) — in A reads as cheek lines. Fine, light.
+- stubble dots: B frame (420–580, 700–770) → page (420–580, 230–300): hat texture, light dots r=2. Also B frame chin stubble (500,795)→page(500,205) skip.
+- B's drooping mustache? B mouth frown at page 315 area (page coords) — corners droop handled by the ∩.
+
+A-only group: nothing much — A's brows already shared. A's wide-open pupils: pupils centered, r=10 in r=28 eyes.
+
+Check A reading: hat (brim ∩ 350, band ∩ 315, dome, top), raised brows at 445, big eyes at 500, grin ∪ 680, bow tie 890, headset with mic, collar line 855. Cheerful call-center AI guy ✓.
+
+B reading (rotated): hat top from page chin curve (dome ∪→B ∩ at 170 = crown ✓), brim at 145 from collar ∪, band at 320 from smile, fringe at 350 from nose, eyes with droopy lids, heavy bags (from A brows), frown ∩ at 685, chin = page hat top curve at 200, big ears (earpieces), stubble, forehead creases. Weary human ✓. Wait B's mouth at B-frame 685 = page 315 stroke — I said page band ∪ at 315 → B ∩ at 685 frown ✓. But earlier I wrote band as ∩? Fix: page hat band stroke is ∪ (curving down in middle, like a band following a rounded hat? bands usually curve downward ∪ following the crown's lower edge — plausible).
+
+Hmm, but A's hat band ∪ at 315 directly above brim ∩ at 350 — visually a band then brim, plausible.
+
+Pupils: to make B look downcast, could offset pupils? Shared, skip.
+
+Line weights: outline 9, features 6, detail 3. Background #f7f3ea. Some flat fills: hat fill dark? Fill hat dome (region between top curve, band) flat #333? Filling creates masses good for hiding B strokes (stubble dots on hat ✓). Fill A's hat shape: path from top curve down to band line, fill #2f2a26. Bow tie fill #2f2a26. Earpieces fill #444.
+
+Careful: hat fill region rotated = B's chin/face area filled dark — bad! Fill in page frame covers page region 215–315; in B that region = B's chin/neck area dark-filled = looks like... dark chin? Hmm. B's chin area filled black = could read as B's beard/shadow under chin? Actually B-frame: page 215–315 → B y 685–785 = chin/jaw region — dark fill there reads as beard shading. Actually could be OK: B has a dark beard-ish jaw shadow? Risky. Instead: no fill on hat; use hatching lines (direction survives rotation ✓) inside hat. Hatch: several diagonal lines page 230–310 within hat — in B: diagonal hatch on chin = stubble shading ✓. Diagonal hatching rotated 180° stays same direction (lines through center... a line rotated 180 keeps its slope ✓). Good: use 5–6 light diagonal strokes in hat area.
+
+Bow tie fill black: page 870–930 → B 70–130: pompom black blob ✓ both good.
+
+Earpiece fills: at y≈500 symmetric — fine both ways.
+
+Mic circle r=9 fill.
+
+Write it. Also add small hat: maybe give A's hat an antenna? Antenna = tech: a springy line from hat top up to page (500,140) with a small circle — but that's B's collar zone below chin... B collar at B-frame 890 → page 110. Antenna at page 140 = B frame 860 — B would see antenna below his chin as his collar? Antenna is A-only, drawn page frame, appears in B as a line dangling from B's chin — weird. Skip antenna; headset is the tech prop. Alternatively give B a prop: B holds coffee? No hands—head-only drawing. Fine.
+
+Also add A's hat a small brim upturn. Enough. Write SVG now.
+
+B-only strokes (in rotated group, B-frame coordinates):
+- forehead creases: two shallow ∩? B weary: creases at B (440–560, 405) and (450–550, 425): gentle curves.
+- stubble: ~8 short strokes B frame around mouth/chin: (430–570, 720–780).
+- droop lines beside mouth (nasolabial): B (390,660)-(410,700) and mirrored (610,660)-(590,700) → page: (610,340)-(590,300) & (390,340)-(410,300): in A these sit at page y 300–340 within hat band area — light, read as hat shading. OK.
+
+Let me finalize coordinates and write.
+
+Page-frame elements:
+1. bg rect #f6f1e7.
+2. Silhouette path (stroke 9, fill none... fill #fff to occlude? White fill helps hide nothing behind; fine fill="#fff"). But hat region interior hatch drawn after.
+3. Hat: band ∪: M 385 318 Q 500 345 615 318 (stroke 6). Wait band below brim? Order top→bottom: crown top 215, band 315, brim 350. Band ∪ mid dips to 345. Brim ∩: M 305 352 Q 500 318 695 352 — hmm brim ∩ mid at 318 above ends 352. But band at 315 with dip to 345 nearly touches brim mid 318. Messy. Adjust: brim: M 300 355 Q 500 322 700 355. Band: M 390 310 Q 500 338 610 310. Band sits above brim mostly (310 vs brim mid 322). Slight interleave ok. Actually simpler: drop band confusion — B's mouth needs page 315. Keep band stroke as described.
+
+Hatch in hat: lines between top curve and band: e.g., diagonal strokes from (380,240)→(430,290), (450,235)→(500,285), (520,235)→(570,285), (590,245)→(630,290) — direction: down-right. In B: same slope, on chin = stubble ✓. stroke 3.
+
+4. Brows (page 445): raised arcs: M 360 458 Q 415 430 465 452 ; M 535 452 Q 585 430 640 458. stroke 7. In B: become heavy bags at 545 ✓ (∩→∪... page Q with control above = ∩ shape; rotated becomes ∪ = bag under eye ✓).
+
+5. Eyes: circles (415,500) r=27, (585,500) r=27 stroke 6; pupils r=9 fill at same centers; plus tiny highlight? skip (no lighting issues, dot fine). Upper lid crease arcs at 476: M 388 478 Q 415 462 442 478? That's ∪ shallow — in B becomes ∩ at 524 = lower lid line. And lower-lid/droop lines at 524: M 390 522 Q 415 534 440 522 (∪) → B at 476 ∩ = droopy upper lid ✓. stroke 4.
+
+6. Nose: bridge pair: M 470 620 L 462 648 ; M 530 620 L 538 648 stroke 5. Tip: M 455 655 Q 500 672 545 655 (∪) stroke 6 → B fringe ∩ at 345 ✓. Plus nostril hints skip.
+
+7. Grin: M 395 675 Q 500 745 605 675 stroke 7. Maybe add small corner ticks: (385,668)-(398,676) skip.
+
+8. Chin crease? none.
+
+9. Headset: earpiece ellipses: ellipse cx=295 cy=505 rx=22 ry=42 fill #2f2a26 stroke 5; same at 705. Mic boom: M 315 540 Q 380 610 435 645 stroke 5; mic circle (443,648) r=10 fill #2f2a26. Rotated: boom from (685,460) to (565,355): temple hair strand; circle at (557,352) r=10 → B: a hair curl at temple ✓.
+
+Also band over head connecting earpieces? Would cross hat; skip.
+
+10. Collar: shoulders: M 300 870 Q 500 820 700 870 stroke 8 (∪) → B brim ∩ at 130 ✓. Bow tie at (500,890): loops: M 500 890 L 445 865 Q 425 890 445 915 Z ; mirror right; knot circle (500,890) r=12 fill. Fill #1d1a17. Stroke 6. B: pompom at (500,110) ✓.
+
+Also neck lines from jaw to collar? page chin 825 to collar 870 sides: M 380 800 Q 400 855 420 868 and mirror — in B: lines from B forehead top to hat — could read as hat seam ✓ stroke 4.
+
+11. B-only group rotate(180 500 500):
+- forehead creases (B): M 440 408 Q 500 400 560 408 stroke 3; M 455 428 Q 500 422 545 428.
+- stubble: short strokes B: (440,730)-(448,742); (470,738)-(476,750); (500,742)-(500,754); (530,738)-(524,750); (560,730)-(552,742); plus chin (470,775)-(476,785),(530,775)-(524,785). stroke 3.
+- nasolabial: M 395 655 Q 388 680 400 705 ; M 605 655 Q 612 680 600 705. stroke 3. → page (605,345)...(400,295): inside hat near band — light, ok.
+
+Head outline asymmetry: give slight tilt? Keep symmetric for safety but add asymmetric bow (left loop bigger) and asymmetric hat hatch. Fine.
+
+Write final SVG.

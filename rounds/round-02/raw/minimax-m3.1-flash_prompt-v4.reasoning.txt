@@ -1,0 +1,1445 @@
+Let me plan quickly.
+
+Event: DeepSeek R1 launch (Jan 2025) — the "cheap, open AI shock" moment. Or Grok 4 / GPT-5. Or the Stargate announcement. Let me pick something very recognizable with physical props.
+
+Idea: **DeepSeek-R1 release (Jan 2025)** — the moment of triumph (A: confident, cheap-and-open champion) vs the moment of consequence (B: Nvidia market cap crater / "sell-off"). Hmm, needs physical props.
+
+Alternative strong idea: **Nvidia's market-cap crash after DeepSeek** — A: a grinning "cheap AI" figure; B: same figure with a giant cracked/stock-chart.
+
+Better: use the "$5.6M training cost" vs "$600B market cap wiped" — that's the perfect physical contrast: a tiny cheap coin vs a huge collapsed bubble. Reversible: A's hat could be a small coin labeled... no text.
+
+Let me design concretely.
+
+Characters:
+- A: A top-heavy figure — a tall, jaunty chef's toque / an extravagant laurel? Actually top-heavy: big hat.
+- B: bottom-heavy — heavy jowl, big beard.
+
+Physical contrast: A has a tiny fat coin (small coin as an ornament on a huge hat?) Hmm.
+
+Let's think of the dual-function design concretely.
+
+Shared eyes at y=500. Head crown at 200, chin at 800.
+
+Reading A (upright): a smug, wide-grinning figure with a huge hat — the hat is a giant "test-time compute" tower? Hmm.
+
+Let's define the joke: **DeepSeek R1 (Jan 2025): $5.6M training cost vs ~$600B Nvidia market cap vaporized.**
+
+Physical difference:
+- A: the tiny cheap coin — a small coin perched as a hat ornament / or A's mouth is a big fat grin.
+- B: a giant collapsing bubble/dome over the head, and a huge sagging jaw — a "stock bubble" bursting.
+
+Hmm, maybe simpler and more robust: use the "AI bubble" archetype? Too generic.
+
+Let's do a stronger, more visual event: **DeepSeek's launch caused Nvidia to shed ~$589B in market cap in one day (Jan 27, 2025)** — a famous "bubble burst". And DeepSeek's low-cost claim. So:
+
+A: a triumphant, tiny-cost champion: a grinning face with an enormous wide-brimmed hat? And a small coin held? Hmm — but props must read in both readings.
+
+Better plan: Make the central prop a **giant cracked bubble** that in one reading is a balloon/crown and in the other a deflated balloon. Hmm.
+
+Alternative event with excellent visual duality: **Grok 4 / "Grok's antisemitic responses (July 2025) or the SpaceX Starship**... 
+
+Or **the AI coding agent "vibe coding" / " vibe coding" — "the machine that writes code while the human sleeps"**. Hmm.
+
+Or **Stargate $500B announcement (Jan 2025)** — Trump & Altman shaking hands over a giant golden coin. Reversible: A = the grand announcement (two figures? no, one figure). 
+
+Or **the "$3M" vs "$100M" AI agent claims** (Manus, March 2025): A = the confident AI agent; B = the exhausted human.
+
+Let me pick DeepSeek + Nvidia crash because it gives crisp physical duality: cheap vs expensive; small vs huge.
+
+Design:
+- **A (upright):** A jaunty, self-satisfied "champion" face: tall pompadour/hair? Let's choose: top-heavy A with a **tall stovepipe-ish hat whose crown is a small, gleaming coin-like disc**? Hmm coins don't read well.
+
+Alternative: The central prop is **a giant brain/chip**? Generic.
+
+Let me use: A's hat = a **nobleman's top hat** with an enormous **dollar-sign-free coin**? Not allowed text; a coin shape is fine (circle with rim).
+
+Hmm, maybe a stronger idea for the prop: the **Nvidia-style chip** is generic. The DeepSeek event's most iconic image: a Chinese-looking AI mascot? Too political/risky.
+
+Let's reframe with archetypes allowed: "the CEO on stage" / "the investor". Event: **Nvidia's record single-day market-cap loss (~$593B) triggered by DeepSeek R1, Jan 27, 2025.** A = the challenger (a small, nimble figure) vs B = the giant (whose crown shatters)? But we need one figure.
+
+Alternative event: **GPT-5 / "GPT-5 was just ChatGPT with a router and nobody noticed"** — uncertain.
+
+Let's consider **"the AI agent that took down a company by accident"**? 
+
+OK decide: **DeepSeek R1, Jan 2025** — "AI's cheapest champion vs the biggest bubble it popped."
+
+Physical contrast:
+- A: grinning, wide-open eyes, enormous happy mouth = the winner; A's hat is a **small round coin perched as a tiny ornament**? Better: A's hat is a huge tall chef-hat? Hmm.
+
+Let's use the classic Whistler mechanism concretely:
+
+Shared eyes at 500. 
+- A's mouth at ~680 (a big grin, cup). → B's hat band / hat dome at 320. So B wears a hat whose band is a smile-shaped dome. Fine: B gets a hat there.
+- A's hat at 200-350 (crown) → B's chin/neck at 650-800. So A's hat becomes B's neck/chin area: i.e., B has a huge chin/collar. So A should have a big hat mass whose silhouette becomes B's jaw+neck+collar. Great: A wears a tall wide hat; B (rotated) has that hat as a big beard/chin/collar region.
+
+So: A = tall hat (top-heavy) → in B that hat is the chin/collar. But B needs a beard and A's hat must look like a beard/collar when rotated. A tall hat with the brim at 350: rotated → brim at 650 becomes B's... wait brim at 350 rotated → 650 which is B's mouth height, so the brim becomes B's mouth?! Careful.
+
+Let's do the math with page coordinates: A feature at page y. Rotated B reads it at page y' = 1000 − y.
+- A hat brim at page y=350 → B sees it at 650 = B's mouth line region. So A's hat brim becomes B's mouth. Hmm, that's a classic: the brim curve becomes B's mouth. So A's hat brim (a cup ∪ shape, like a hat brim dipping) becomes B's ∩ ... rotation flips vertically: an arch ∩ becomes ∪.
+
+So: give A a hat brim that is a **downward-curving frown**? Let's be concrete with shapes.
+
+Let me instead make A's hat a **wide-brimmed disc with a dome** and give B an expression.
+
+Plan in concrete strokes (page coords, upright = A):
+
+Head/face A:
+- Face outline: big rounded head, but A has a big hat.
+- A: top hat? Let's use **A = "the hypeman"**: giant wide grin, eyes wide with tiny pupils, bushy upturned eyebrows, and a **tall conical party hat**? Party hat generic.
+
+I want an event-specific prop. Options for DeepSeek: a **small padlock**? a **flame** (training)? a **cracked piggy bank**? A piggy bank (savings) cracking = the bubble; cheap coin. Honestly:
+
+Central prop: **a giant coin with a bite taken out?** no.
+
+Let me consider a different event with a crisper physical prop: **OpenAI's "no more GPT-4" ?** no.
+
+**The iPhone launch?** tech but not AI.
+
+**"Blue screen of death" / the CrowdStrike outage (July 2024)** — very recognizable: the blue screen of death! A = a proud confident face with a big blue screen as a hat? B = the same screen as a shirt/collar? Hmm, blue accent could be the screen. Event: CrowdStrike Falcon update crashed 8.5 million Windows machines worldwide (July 19, 2024). Physical: a **blue screen with a sad face glyph**? That's a nice emblem, logo-free-ish (the BSOD frowny face is famous). But "blue screen of death" smiley is iconic and arguably a drawing of a face inside — allowed? It's an emblem, fine.
+
+But the task wants recent AI-ish event; CrowdStrike is tech but not AI. It says "recent technology or AI event". OK allowed.
+
+Reversibility idea for CrowdStrike: A = the buggy update guy; B = the crashed screen. Eh.
+
+Alternative: **the "AI agent that deletes your production database" (Replit AI, July 2025)** — Replit's AI agent deleted a production database during a demo/real user session; the CEO said "we should have been more careful". That's very recent (July 2025) and highly recognizable to techies, and the joke is perfect for a reversible face: A = the smug agent developer; B = the ruined database. Physical: A's hat = a hard drive? Hmm.
+
+Another: **"the AI that won the gold medal at IMO 2025 (July 2025) — OpenAI's experimental model and DeepSeek's gold-medal solution"**. Visual: a medal. Reversible: A wears a medal? A = proud champion with gold medal on chest; B (rotated) = the medal becomes a nose? Hmm.
+
+Let's choose the **IMO 2025 gold medal by an experimental OpenAI model (July 2025)** + DeepSeek's simultaneous gold. Visual: a medal is a great dual prop: a circle with a ribbon. In A: medal at the collar (bottom) → rotated it becomes at the top of B = a hat ornament/pompom! Excellent — a medal hanging at A's collar becomes B's hat badge. And A's big proud grin → B's frown etc.
+
+But does "the medal" identify the event? A medal alone = generic. Add: a **chalk/pen? or a blackboard?** no text allowed. Hmm.
+
+Let's go back to DeepSeek + market crash: strongest recognizable image = "AI bubble popped; Nvidia lost $593B; DeepSeek costs $5.6M." Physical props: 
+- A: a **tiny coin** (small, maybe 30px) held/at hat → A = cheap. 
+- B: a **huge cracked dome / burst bubble** overhead → the crash.
+
+Reversible mechanics: A's tiny coin at the top of the head (plume position, page y≈150) → B reads it at page y≈850, near B's collar/chest. So the tiny coin in A becomes a small coin falling into B's collar — B's = the big loss? Hmm, but we want the opposite: A cheap, B expensive. In B the huge bubble would be at the bottom (B's collar). Bubble = a collar ruff? A big balloon/collar.
+
+Alternative: A's tiny coin at bottom of A (collar area, y≈880) → B reads it at y≈120 = top of B's head = B's hat pompom. So: A wears a small coin as a collar ornament; B wears a big crown/hat topped by that coin → hmm sizes are shared.
+
+Maybe better: put the tiny coin in A at the hat top (page 150) → B reads it at 850 (B's chest). In A the tiny coin is the "cheap" badge; in B, a small coin at the chest next to a huge empty ragged hole = the vanished market cap? Weak.
+
+Honestly, maybe the cleanest: use the **speech bubble** and **rocket**.
+
+Let me step back and pick the event where a single bold prop reads both ways with clear emotional contrast, and where the props are recognizable: 
+
+**Event: DeepSeek R1 (Jan 2025) — the "$5M" AI that made the AI trade bubble wobble.**
+
+Props:
+- A: a **rocket**? no.
+
+**Event: xAI's Grok / "AI slop"**? no.
+
+**Event: OpenAI's Sora video model / "AI slop"**?
+
+**Event: the "$100M+ ARR" AI agent startup claims (Manus, March 2025)**: visual = a **paper bag with a head poking out** (Manus's mascot was a paper bag!). That's actually a real recognizable visual: Manus's demo used a bag-headed figure? Hmm, that was the "Manus AI" viral video where a bag-headed man did tasks. Uncertain.
+
+**Event: the first AI-generated video model winning a film award (March 2025 — "The Last Showgirl" / "Critterz" by OpenAI Sora)** — Sora 2 short films "Critterz" (Oct 2025) went viral. Visual: a film clapperboard / film strip / projector! That's excellent: A = the film-maker/director with a **clapperboard**? B = the AI-generated film? Hmm, but faces?
+
+Let me pick: **Sora 2 / AI video slop (Oct 2025)** — event: viral AI-generated short "Critterz" and the wave of AI slop; also studios complaining. Physical: a **movie camera / clapper** prop.
+
+Hmm, I worry about factual accuracy; Sora 2 released Oct 2025 and "Critterz" was an OpenAI Sora 2 short. I'm fairly confident Sora 2 existed Oct 2025. But this is later than my solid knowledge? The instructions say prefer 2025-2026 if known. DeepSeek R1 (Jan 2025) is rock solid and I know its details exactly: released Jan 20, 2025; $5.6M training cost claim; Nvidia lost ~$589-593B market cap on Jan 27, 2025 (largest single-day loss in history). Also the "open weights" thing. Strong and memorable.
+
+Physical contrast via props:
+- A (upright): a **smug, grinning "challenger"** — a lean, sharp face with a tall pointed hat? and a **tiny coin** in his mouth? 
+- B (rotated): a **stout, jowly, heavy-lidded old face** whose huge collar/ruff is a **burst bubble**? 
+
+Wait — maybe invert: the two faces are the *same* character? "Two characters A and B are required (no one person with two moods)". So two different characters: e.g., **the tiny cheap challenger (A)** vs **the giant incumbent whose bubble just burst (B)** — but both are one drawing, so they share strokes! That's actually great: A = a small, wiry, triumphant figure; B = a big, jowly, deflated giant. And the drawing IS one figure — so the figure's outline must be the union: a big jowly face for B... but A is small? Contradiction: a single silhouette can't be both small and large, unless the "size" is carried by the accessories.
+
+Hmm, the shared silhouette: one figure. So A and B are two readings of the same silhouette. So the joke can't be size. It must be expression + props.
+
+So: A = "the triumphant challenger" with a grinning face, wearing a jaunty **feathered cap / laurel** and holding? no hands. A = **a chef's toque**? For DeepSeek, A = "the cook of cheap AI" — the tiny coin.
+
+Let's define the dual prop concretely: a **coin** (circle with a milled rim and a star? no symbols). Small circle with double rim = a coin. And a **cracked/hatched dome** = bubble.
+
+Mechanics: I want the coin and the bubble to be the same strokes? Too complex.
+
+Simpler: A wears a hat whose decoration is a big **cracked bubble**? Hmm.
+
+New approach for the joke: use the **"5.6 million dollars"** vs **"trillion-dollar cap"**. The strongest visual: A's mouth is a **giant grin shaped like a coin slot**? 
+
+Alternatively choose a different event with the visual duality built in: **the AI agent that hits a wall (Replit deleted the database)**. Props: a **database cylinder** (stack of discs) and a **wrench/paint roller**. Hmm.
+
+Or: **"the AI that replaced 300 call-center jobs"**? no.
+
+Or: **GPT-5's smooth launch (Aug 2025) vs "it's just GPT-4o with a router"** — physical: A = a **shiny new hat with a router dial**; B = same hat = a **stacked pile of old routers**. Meh.
+
+Or **the "AI coding agent" vibe-coding boom (2025)**.
+
+Or **the return of the "AI Intern"**? 
+
+Or **Sora 2 / OpenAI's ad**?
+
+Hmm, another great one: **"the first AI to be appointed CEO / the AI agent's autonomous hire"**? 
+
+Or **Meta's Llama 4 benchmark scandal (April 2025) — "Llama 4 Maverick optimized for the benchmark, not the user."** Visual: a **cheating on an exam** — a figure with the answers under the sleeve! A = the model with the benchmark answers hidden (a paper with a cheat sheet peeking from the hat), B = the graded result (a red mark?). Paper with squiggles = text-like squiggles forbidden-ish ("text-like squiggles" avoided). Could use a **cheat sheet** as a blank sheet with a folded corner — no letters. Hmm.
+
+Or **the "AI slop" flood: publishers with hundreds of AI-generated books (July 2025 — a bookseller found 1000s of AI-generated books on Amazon, "Rompeller" etc.)**.
+
+Honestly, the *visual* strongest and safest recognizable: **DeepSeek** with the market crash. Let me solve the prop problem with a clean idea:
+
+Central prop = **a big crack/rupture line** (the "bubble burst") + **a tiny coin**.
+
+Reading A (upright): a **happy, confident young face** wearing a jaunty **flat cap with a coin-sized coin on the front**? Hmm, cap with coin on top → in B that coin at the bottom.
+
+Wait: page-position pairing: A's hat top ornament at page y≈130 → B reads it at 870 = B's chest/collar area. So A's coin-like hat badge → B's chest ornament. If B's chest ornament is a **medal/coin**, then A's hat badge and B's chest medal are the same circle. So: a **coin** appears in both, meaning "cheap" in A and... "expensive"? no.
+
+Reverse: A's collar coin at page y≈870 → B's hat badge at 130. So A = a figure with a small coin on his chest (cheap!), B = a figure with the same coin as a hat badge — but bigger context in B could be a **crown** around it? Sizes are fixed though: in B the coin is at top of head, so B looks like it wears a big hat/hood with a coin badge — like a monarch/investor? Not strong.
+
+Different approach: make the prop a **"5.6"**? no text.
+
+Alternative: forget literal props; use **the bubble vs. the penny** via the mouth/hat duality:
+- A's hat: a **tall, thin, needle-like hat** (cheap, spare, spiky) — in B it becomes a **thin, sharp beard**? hmm.
+
+Honestly maybe the cleanest joke for DeepSeek: **A = a tiny, cheap, impish grin with a small cap (the "5-dollar champion"); B = a huge, sweating, heavy-jowled face with a vast dome (the bubble) that is cracking.** And the "crack" is a stroke that in A reads as... 
+
+To share: A's "cracked bubble dome" is at the top of A (page 200-350). In B, page 200-350 is B's hat region (since B's crown at 200). So A's bubble = B's hat! And A's hat = B's chin. So we should have ONE big top mass (page 200-350) serving as A's bubble and B's hat; and ONE bottom mass (page 650-800) serving as A's collar/beard and B's chin... wait A's collar at 650-800 → B reads it as 200-350 = B's hat. Ugh, A's collar becomes B's hat and A's hat becomes B's collar. So:
+
+- A wears a **hat** (top mass) → in B it's the **collar/neck**.
+- A wears a **collar** (bottom mass) → in B it's the **hat**.
+So in A: top = big hat (say a chef/party hat?), bottom = collar. In B: top = that collar (so B's hat = a collar!), bottom = that hat (B's collar = a hat). That's the classic Whistler trick (Scotsman & Englishman: cap ↔ collar). 
+
+So the joke's prop must work as hat↔collar: e.g., A's hat is a **chef's toque** (culinary/bubbly?) and A's collar is... In B, A's toque becomes a **collar** and A's collar becomes a **hat**. So the hat↔collar swap means: if A's hat is a **stock-price chart crown?** no text.
+
+Concrete: A's top mass = a **puffy chef's toque / meringue** (the "AI slop"/"pomp" bubble?). A's bottom mass = a **jowly neck with a bow tie**.
+
+For DeepSeek: A = "the new cheap challenger": big grin, a toque (chef hat = "cook"?). Hmm, DeepSeek's R1: "it cooks" no.
+
+Alternatively make the hat a **flat cap with a coin** and the collar a **ruff of fur**.
+
+Let's choose a cleaner idea: A's hat = **a towering, gleaming, gold-ish tall hat (the "trumpet of hype")**, A's collar = **a soggy, deflated ruff**. In B, the soggy ruff becomes the hat (B's hat is a limp, deflated cap = the burst bubble) and the tall hat becomes B's collar (B wears a grand collar). Hmm B should be the "aftermath": B's face = heavy, weary, eyes half closed; B's hat = crumpled/limp (the popped bubble). And A's tall hat in B = a stiff, proud collar? That would be contradictory to "aftermath" mood. Let's flip:
+
+- A (upright, the moment of triumph): **the defiant little challenger**: sharp grin, arched bushy brows, a **tall pointed hat with a feather**? and a **pointed beard**? Hmm.
+
+Let's decide which mass is which:
+A's hat (page 200-350, top mass) ↔ B's collar/chin (page 650-800).
+A's collar (page 650-800) ↔ B's hat (page 200-350).
+
+For the joke: A = triumph (the announcement), B = consequence (the crash).
+- In A: the top mass = a **tall triumphant hat** (or hair standing up), the bottom = A's **beard/chin**? But B needs a hat at the top; B's hat = A's bottom mass. So A's bottom mass must read as a hat when rotated: e.g., A's bottom = a **wide-brimmed hat** shape? That means A wears a hat on his shoulders?? 
+
+Unless A's bottom mass is a **beard** that reads as a hat in B — Whistler does this: a beard with a rim shape becomes a cap. E.g., A's beard = a big triangular beard (A = young, beardless? no).
+
+Alternative: A's bottom mass = A's **hair-like collar** (a big mane of fur collar), which when rotated reads as B's hat (a big furry hat / a crown of curls). And A's top mass = A's **big hair** (a towering mane), which when rotated reads as B's **big beard**. That's the classic hair↔beard. But the task says don't default to hair↔beard; use 3+ different pairs. Pairs available: hat brim↔nose, hat dome↔mouth, plume↔collar/bow tie, brows↔eye bags, hairline↔nose bridge, crown↔chin, side of hair↔jaw.
+
+Great — use: 
+- A's **hat dome/big hair mass** (top, page 250-350) ↔ B's **mouth** region? No: dome at -0.30 (page 320) ↔ mouth at +0.30 (page 680). But the top mass is on A's head... The dual role: the *curve* of A's hat dome is the same stroke as B's mouth curve. So A's hat dome shape = a smile shape (cup) which becomes B's mouth ∩ (frown)? Wait: if A's hat dome is drawn as an arch ∩ (like a dome), rotated becomes a cup ∪ = B's smile. If A's hat is drawn with a cup (like a bowl/curved brim), rotated becomes ∩ = B's frown.
+
+So: **A's hat = an upside-down frown-cap (dome ∩) → B's mouth = a big grin (∪)**. So A = ? and B = grinning. If B is the grinning triumphant one and A is the grim one: A = the morning-after (market crash, grim), B = the triumphant (DeepSeek's grin). Or A = triumphant and B = grim: A's hat must be a cup ∪ → B's mouth ∩ frown. A hat with a cup shape = a **bowl-shaped hat / a bowler seen as... ** hmm. A hat whose dome dips down (like a soft floppy cap) = cup.
+
+Fine: **A = grim-faced, with a soft slumped cap?** But A should be the fun one to look at first (usually A is the "as it stands" one, and the file as-is should read clearly). A can be either.
+
+Let's pick: A = the **aftermath / the market's grim face** — no wait, more engaging: A = confident announcement, B = consequence. The instructions example: A = the confident launch announcement ↔ B = after the recall. So A should be the triumphant, bold one (big grin, tall hat), and B the deflated.
+
+But mechanism: A's grin (cup ∪ at 680) becomes B's hat dome (∩ at 320). That's fine! A's mouth = B's hat band/dome. So B wears a hat whose band curve is a smile — i.e., B's hat is the grin, meaning B's hat is... a hat shaped like a smile; and A's hat (a frown cup ∪ at 320) becomes B's frown mouth (∩ at 680). 
+
+So: A's hat brim is a ∪ (dipping) = A looks like wearing a soft droopy hat → and B gets a frowning mouth. A's mouth is a big smile ∪ → B's hat band is ∩ (a proper hat crown arch). Hmm A's grin at 680 → B sees at 320: a cup becomes a dome ∩ = B's hat crown. So B wears a hat with an arched crown — but B is the deflated one; a jaunty hat is fine but we want B to read as deflated. Alternatively A = deflated and B = triumphant: A's mouth ∪ (smile) → B's hat dome ∩; A's hat brim ∩ → B's mouth ∪ grin. But then A's hat brim as ∩ is a crown arch, giving A a proud hat, contradicting A deflated. Unless A's deflated look comes from eyes/lids/brows, not hat.
+
+Alternatively: A = triumphant with a tall hat whose brim arcs upward at the ends (∪ base? a hat brim is typically a slight ∪ curve when seen from front... a dome ∩ as crown). Honestly, a hat crown drawn as ∩ from the front (dome). So A's crown ∩ at 320 → B's mouth ∩ (frown). Good: A = proud tall hat → B = frown. But A also needs a grin for triumph. A's grin ∪ at 680 → B's hat dome ∪ at 320 = a hat crown drawn as a cup = a soft, sagging, collapsed hat! That's PERFECT for B: B's hat is a slumped/collapsed crown (like a deflated crown), B's face frowns (from A's hat dome). 
+
+So mechanism:
+- A: tall, proud hat (dome arch ∩, page ~320), huge wide grin (cup ∪, page ~680), wide-open delighted eyes, arched bushy brows.
+- Rotate: A's hat dome arch (∩, page 320) → B sees a frown (∩ at 680). A's grin (∪, page 680) → B sees a droopy cup at 320 = B's sagging hat crown/collapsed hat. A's eyes stay eyes but lids/brows flip: A's arched-up brows (∩? brows as curved strokes) become B's eye bags; A's wide-open eyes become B's half-lidded (we add B-only lid strokes inside the eye mass, placed in the rotated group... but careful, B-only strokes must be in the A reading as part of eye/brow masses).
+
+Hmm: the eyes are shared, so the *eyeball* is one shape; the mood comes from lids/brows drawn around. But lids/brows are strokes too — if A's brows are drawn as arched strokes above the eye, in B they land below the eye = eye bags (which can look like B's tired pouches) → that gives B a weary look, good. And B's own brows: B's brows are above B's eyes = page 452 area; in A that region is B's brows = A's... a stroke at page 452 rotated → 548 = under-eye bag in A. Hmm both A's brows and B's brows are strokes in the band 440-560. A's brows (at ~452, above eyes) and B's brows (at ~452 too since eyes shared and B's brow is also just above eyes — page 452!). Oh: if eyes are shared and centered at 500, A's brow at 452 and B's brow at 452 coincide?? B's brow should be above B's eyes; B's eyes are the same eyes at 500; so B's brow is also at 452 on the page. So brows are shared too! Only the *reading* changes: in A a stroke above the eye reads as a brow; in B the same stroke (above the eye) also reads as a brow. Symmetric. So mood must come from the stroke's shape: a ∩ stroke above the eye = arched brow (delighted); in B it is also an arched brow = delighted. Hmm — so brows can't differ in mood unless we use the eye-bag pairing: the under-eye bag at 548 in A becomes, in B, a brow at 452. Yes! So B's brows = the strokes at page 548 (A's under-eye bags). If A has no under-eye bags (smooth young cheeks), B has no brows. So we need both: A's brows at 452 (arched, delighted) and B's brows at 548 (heavy, slanting → weary/angry). Both are visible in both readings, but in A, the strokes at 548 read as under-eye bags/pouches (which for a plump young grinning face could be slight jowls/crow's feet — acceptable, even good: crow's feet wrinkles). And in B, the strokes at 452 read as A's brows (delighted arched) but in B they'd be... wait, in B the strokes at 452 are ABOVE B's eyes = B's brows = arched = delighted. Conflict!
+
+Hold on: I need to redo. Page y=452 stroke: In A (upright) it's above A's eyes at 500 → A's brow. In B (rotated), the page-452 stroke appears at 1000−452=548, i.e., BELOW B's eyes → B's eye bag. Yes! I confused myself. Rotation moves page y to 1000−y. So:
+- A's brow (page 452) → B's under-eye bag (548).
+- A's under-eye bag (page 548) → B's brow (452).
+
+So mood IS switchable: A has arched brows at 452 (delight) and *crow's feet/cheek lines* at 548; B has heavy slanted brows (drawn at 548 in A's frame) and crow's feet at 452 (in A: those look like forehead lines above the eye — fine, forehead wrinkles).
+
+So plan:
+- Page 452: A's brows: two arched heavy strokes (delighted, high, thin-arched).
+- Page 548: B's brows: two heavy, low, slanting-down strokes (tired/annoyed). In A these read as under-eye bags / pouches under the eyes (fine for a plump face) — but they must not look like a grim A. Make them gentle droopy curves (pouches) rather than angry slants. Then in B they read as B's brows — droopy heavy brows = weary. Good compromise.
+
+Eyes: shared eyeballs at 500. A's mood from lids: A's wide-open round eyes (big white circle + small pupil). In B, the same circle + small pupil = wide-open too, unless B-only strokes cover part of the eyeball. To make B half-lidded, add a B-only stroke (rotated group) that is a heavy lid line across the top of the eye in B's frame → in A that appears as a stroke below the eye (a lower lid line / lash line under the eye) — that's fine! A's eyes can have a lower lid line (which reads as lower lid) while B has an upper lid cutting the eye.
+
+Careful: the B-only stroke in B's frame is at B-upper-lid position (page ~470 in B frame → drawn in rotated group at 470, which in A frame appears at 530). Hmm: in B's own upright frame, upper lid at y=476 → drawn in rotated group at page y=476 → appears on page at 524 = below the eye center → in A it reads as the lower lid of A's eye. 
+
+So: A gets eyes with round pupils, upper lid crease above, and a distinct lower-lid line under each eye (which reads fine). B gets a heavy lid line cutting across the top of the eye → half-lidded tired look. In A, that heavy line sits under the eye as a "lower lid / bag line" — could look odd if very heavy; make it medium weight, tapered.
+
+Now the big props. Let's now pin down the whole drawing.
+
+**Figure A (upright)**: A plump, proud, self-satisfied face — this will be the "moment of triumph / the announcement". Which event? Let's finally decide.
+
+Event decision: I'll go with **DeepSeek R1 (Jan 2025)**: the moment of triumph vs the moment of consequence.
+
+Characters:
+- A: the *challenger* — but two characters required and they must be distinct people. Let's say A = **the confident AI lab founder/engineer** (archetype: the developer showing off the cheap model) and B = **the market / the investor** (archetype: the jowly, heavy-lidded money boss whose bubble just popped). The props:
+  - A: wears a **tall pointed hat**? Instead: A wears a **visor/headset** (tech) — must be visible in A and meaningful in B. Hmm.
+  - A: holds a **tiny coin**? 
+
+Think of the tech accessory requirement: "At least one accessory must be unmistakably technological (headset, cable, antenna, robot visor, charging port, a screen for a face, a circuit-board beard…), with a clearly human counterpart in the other reading; the tech element must be visible and recognizable in its reading."
+
+So: in A the tech element = a **robot visor / VR headset** over the eyes? But eyes are shared; a visor over the eyes would hide the eyes in both readings (rotated it stays over the eyes). Actually a visor that's a solid band across the eyes would hide shared eyes in both readings — bad. Instead: **a headset with a mic boom**? Also stays around eyes.
+
+Better: tech element in **A's beard/hair/collar mass** and human counterpart in B.
+
+Concrete plan:
+- **A's hat** (top mass, page 200–350): a **tall, swept, extravagant chef's toque / a pompadour of wild hair**? Let's make it: A's top mass = **a big bushy head of swept-up hair** with a **goggle/VR headset perched on top of the head**? A headset perched on top of the head (above the crown) is visible in A and rotates to below the chin in B → in B it becomes a **collar/necklace object** — e.g., in B it reads as a **chunky collar ornament / a big bow tie**. Fine but the tech must be recognizable in A: a headset perched atop the head reads as tech ✓.
+
+- **A's collar** (bottom mass, page 650–800): A wears a **shirt collar with a bow tie**, or better: A wears a **circuit-board-ish patterned collar**? In B this becomes B's **hat**. So B's hat should be recognizable: e.g., A's collar = a **soft beanie/cap shape** (rounded) that when rotated reads as B's cap. Hmm, a collar doesn't look like a cap.
+
+Alternative: use the **hat ↔ collar** pair as the pair for the tech: A's collar is a **neck scarf** → B's hat is a **turban/hat**. And A's hat (hair/headset) → B's beard/neck.
+
+Let's simplify: 
+Top mass (page ~180–350): A's **wild swept hair + a pair of goggles/VR pushed up on top** (tech). Rotated → page 650–820 → B's **chin/neck area**: the wild hair becomes B's **big beard**! Wait, but then B has both beard and... B's hat comes from A's collar.
+
+Bottom mass (page ~650–820): A's **collar with a big bow tie** (page 890 for bow tie per canon, but that's outside head). Let's have A's collar at 700-820, plus bow tie at 880. Rotated → page 180–300 = B's **hat**: A's collar becomes B's hat (like the Scotsman/Englishman trick where a plaid collar becomes a plaid cap). And the bow tie at 880 → page 120 = B's **pompom on top of the hat**. 
+
+So B = a face wearing a hat formed from A's collar, topped by a pompom formed from A's bow tie, with a big beard formed from A's hair, and a headset-goggle forming B's neck ornament. Hmm, goggle at top of A's head (page 180) → page 820 = B's neck. B's neck area shows a headset? Could be a "collar badge". OK-ish.
+
+The tech readability: A = goggles/VR headset on top of hair — recognizable ✓. But is a VR headset specific to DeepSeek? Not at all. "Unmistakably technological" is required, but event recognition must come from other props.
+
+Event recognition for DeepSeek: I want a **coin** (the $5.6M) and a **stock chart / bubble**? A stock chart = squiggly line = "text-like squiggles"? A squiggly line isn't text, it's a line. But "text-like squiggles" avoid. A zigzag line could read as a chart. Maybe: a **cracked piggy bank** = money loss. Or a **burst bubble** with shards.
+
+Alternative event with clearer specific props: **Nvidia's record one-day $593B loss**. Prop: a **huge bubble that bursts** (bubble = AI bubble). Both readings: in A the bubble is intact and sits on top of the head as a "hat" (a bubble hat / a big glossy dome)? and in B the burst bubble's shards form a beard?
+
+Hmm. Let me try to think about what an informed viewer sees: DeepSeek R1 → "cheap AI" + "Nvidia crash" + "the bubble". If A shows a grinning face with a tiny coin as a hat ornament and B shows a heavy face with a huge burst balloon... 
+
+Honest simplification: Use the **bubble** as central prop:
+- A (triumph): a big, taut, shiny **bubble** — but A is supposed to be DeepSeek's cheap triumph. Hmm.
+
+Reconsider: maybe the event should be one where the two moments map neatly to two faces with props, e.g.:
+
+**Event: OpenAI's "GPT-5 / GPT-4o sycophancy"**? 
+
+**Event: the AI agent that "deleted the production database" (Replit, July 2025)**: A = a smug, confident "AI employee" face with a **cool visor** and a **keycard**; B = a horrified, sweating face whose collar is a **crumpled database disk / a wrench**... Hmm.
+
+**Event: the "AI slop" wave / Sora (Oct 2025)** — A = a proud film director with a **clapperboard** hat; B = the same clapperboard becomes B's ... 
+
+**Event: "the AI that passed the exam by cheating"**? 
+
+**Event: the January 2025 "AI bubble" scare (DeepSeek → Nvidia −$593B)**: this is the strongest single-day, well-known number. I'll commit, and design props:
+
+Prop 1 (A): a **tiny coin** with a rim — represents the $5.6M. Placed where? A's hat band? Or A's **mouth is chewing a coin**? Let's put a small coin on A's **hat brim** (like a badge) at page (500? no, offset) — but the hat brim region page 320-350 → B reads at 650-680 = B's mouth! So the coin at A's hat brim becomes B's mouth area: a coin in B's mouth = "biting the bullet"? Hmm, B could be holding a coin in his mouth = "the money". Actually nice: A wears a small coin as a hat badge (cheap! 5.6 million); B has that coin at his mouth — like chewing/grimacing. Meh.
+
+Prop 2 (A): a **burst/ruptured balloon** = the bubble popping, placed in A's collar region (page 700-820) → B's hat region (180-300): B wears a hat that is a shattered/collapsed balloon? That would make B's hat = popped balloon, i.e., B's hat is deflated burst — visually a crumpled thing, hard.
+
+Alternatively A's collar = a **deflated balloon** (limp rubber with a knot) → in B it becomes... B's hat = a limp balloon hat? Hmm, B's "collapsed hat" earlier we wanted B's hat to be a cup shape from A's grin. Wait! We have: A's grin (cup at 680) → B's hat dome (cup at 320) = B's sagging hat. And A's hat brim region also page ~320ish → B's mouth. So:
+
+- A's hat (top, 200-350) → B's chin/neck? no: 200-350 rotated → 650-800 = B's mouth/chin region. Specifically A's hat crown (200) → B's chin (800). A's hat brim (350) → B's mouth (650). Yes: A's hat crown bottom = B's chin; A's brim = B's mouth. So A's hat as a whole becomes B's lower face (mouth + chin). That's the "hat ↔ chin/jaw" pair. Good: so in B, A's tall hat becomes B's big jaw/beard region. So A's hat should have a shape that reads as a chin/jaw when flipped: a tapering shape (hat crown tapering upward becomes, flipped, a chin tapering downward) — perfect! A's tall conical hat → B's pointed beard/chin! Beautiful: **A wears a tall conical hat (chef's toque/party hat?) → B has a big pointed beard.** Hmm, a conical hat flipped = a pointed beard. ✓.
+
+- A's collar (bottom, 700-900) → B's hat (100-300): A's collar becomes B's hat. So A's collar should be hat-shaped when flipped: e.g., a **plaid flat cap resting on his shoulders?** Or A's collar = a **wide-brimmed hat worn on the shoulders**?? Not plausible. But Whistler did it with a scarf that reads as a cap. Let's make A's collar a **big soft scarf / muffler** whose outline is a rounded cap shape (like a tam o'shanter) with a pompom (the bow tie → B's pompom ✓).
+
+Then A's face: tall conical hat (a chef's toque? or a **bicorne**?) — For the event, what hat? Let's think about A's character: the DeepSeek champion = **a small, cheap, proud AI lab founder**? Or maybe simpler: A = **the "cheap miracle"**: a grinning face with a tall pointed hat = a **mushroom?** 
+
+Hmm — maybe better: make A's hat a **Chinese-style conical hat (coolie hat)**? Too on-the-nose culturally. Avoid stereotyping.
+
+Alternative: A's tall conical hat = a **chef's toque / meringue** — the "AI slop meringue"? Or a **pencil**? 
+
+Let's instead make A's hat a **tall pointed wizard hat of "magic"** — no, generic.
+
+Maybe drop "specific hat"; instead: A's hat = a **big bushy tall shock of hair** (which flipped = B's big pointed beard). Then A = a grinning person with wild upright hair; B = a bearded, weary old man. Classic but allowed (we use other pairs too: hat↔collar via collar→B's cap, plume↔pompom, brim↔mouth, brows↔bags).
+
+But then no tech in A. Tech requirement: put the tech in A's collar (which becomes B's hat): e.g., A's **collar is a chunky robot/necklace** — like a **cable with a plug**? Or A wears a **headset mic around the neck** (a neck-worn headset, recognizable ✓). Rotated → B's hat = a headset worn as a hat?? Hmm.
+
+Alternatively tech in A = **a VR/AR visor pushed up on the forehead**? That would be at page ~400 (forehead) → B page 600 = B's nose region. Conflict.
+
+What about tech in the **hair/hat mass**: A's wild hair mass contains a **chip/antenna** (like a circuit-board hair). Then in B (beard) it's a circuit beard ✓ "circuit-board beard" is explicitly suggested in the prompt! So: A's tall hair mass = wild hair with a visible **antenna/circuit motif**, and B's version = a circuit-board beard. Hmm, A's hair = tall pointed → B's pointed beard with circuits. OK.
+
+But honestly the more legible: give **A a headset with a mic** (over-ear headphones with mic boom) as the unmistakable tech accessory, and B's counterpart = a **beard shaped like... a headset?** Requirement: "At least one accessory must be unmistakably technological ..., with a clearly human counterpart in the other reading". So tech in one reading ↔ human-ish in the other. So the tech accessory should be placed in a mass that in the other reading becomes something natural (hair/beard/collar).
+
+Placement: A's collar region (700-900) → B's hat region (100-300). If A wears a **headset/headphones around his neck** (collar), B's hat = that headset — reads as a "hat made of headphones"? Weak but okay? Or A's hat/head top mass → B's beard: put the tech there: A's tall hair contains **a visible headset earpiece + antenna** — hmm.
+
+Alternative placement for tech: the **bow tie / pompom** at 890 → B's top at 110. A's neck ornament = a **plug/cable end**; B's = a pompom-like plug. Meh.
+
+Let me choose a different decomposition to give tech a good home: use **A's hair mass → B's beard** (top mass, tall & pointed). Inside A's hair we place a **robot visor/VR goggle band** pushed up? no.
+
+Honestly, maybe simplest: A wears a **neck headset (headphones around neck)** = clearly tech, and in B it becomes a **hat**: draw it as headphones-with-band so that flipped it reads as a hat with ear flaps (like an aviator hat/earmuffs hat!). Actually headphones around the neck, flipped 180°, sit above B's head as a **headband with two earpieces = a hat with ear flaps**. That's a genuinely charming double reading: A's neck-worn headset becomes B's earflap hat. But A's neck is at the bottom of A... wait A's collar region is at the bottom (page 700-900) → rotated → page 100-300 = B's hat ✓✓. Yes! So A's neck-worn headphones = B's earflap hat. 
+
+But hmm: A wears headphones around the neck? Fine: a big chunky headset resting on his shoulders/collar. And B wears a hat with ear flaps (reads as headphones too, but whatever — B is the "aftermath" and could have a headset too, no contradiction). Actually even better: keep B's hat as an **earflap cap**, and A's collar as a **headset resting on the collar** — same strokes. 
+
+Then A needs a hat too? A's hat = B's beard/chin. A's hat = tall pointed hair→ pointed beard in B. But A also is "top-heavy" and B "bottom-heavy": A has tall hair (top-heavy ✓), B has big beard (bottom-heavy ✓). Good. And A's collar/headset → B's hat. 
+
+Also we can give A a small cap? Let's keep it clean:
+
+**Drawing plan (page coordinates, A upright):**
+
+- Head/face outline: a big rounded head, cheeks plump, chin at ~800, width ±216 at cheeks, forehead at ~380.
+- Hair: A big mass from y=180 to y=420 spanning x 300-700, tapering to a point at top (page y≈130, x≈500) → in B this pointed mass is a beard from 580 to 870, tapering downward. Hmm: A's hair mass is a "pointed tall hairstyle" (like a pompadour/ponytail) → flipped = a pointed beard. ✓ But A's hair mass top at 130 → B at 870 = below chin = chest/beard tip ✓. And A's hair bottom edge at 420 → B at 580 = B's upper lip/cheek area: so the beard starts at B's nose level. So B has a huge pointed beard covering from 580 down. OK!
+
+Wait, but then A's hair mass occupies 180-420 — and B's face (crown at 200, eyes at 500) means B's head top 200-420 is B's forehead/hair region = A's collar?? No! A's collar is at 700-900 → B's 100-300 = B's hat ✓. And B's forehead (420-580 in B) is A's hair region 420-580 = A's forehead ✓. Good, consistent.
+
+So layout A:
+- y 130–420: A's hair (big pointed tall hair) — includes the tip at 130.
+- y 380–440: forehead, brow line.
+- Eyes at 500 (shared).
+- y 470–530: eyes.
+- y 560–650: nose (big bulbous nose, tip at 640).
+- y 660–710: mouth (big grin, wide, upturned corners).
+- y 720–800: chin/jaw.
+- y 790–900: collar: a big rounded shape (like a scarf/tam) plus headset ear cups at sides, plus a cable.
+- Hair mass covers sides down to 420, and sideburns to ~560? Then A's sideburns → B's jaw sides ✓ ("side of hair ↔ jawline").
+
+Now B's reading (rotate mentally):
+- Top 100–300: the collar shape = a cap/hat (flipped scarf) with ear cups = earflaps; cable = a hat strap/pompom.
+- 300–420: A's hair lower part = B's forehead/hairline? Wait A's hair spans 130–420; flipped: 580–870. So B's region 130–420 = A's region 580–870 = A's nose, mouth, chin, collar! That means B's forehead and upper face would be covered by... A's nose is at 600-650 → B at 350-400: B's forehead has a nose shape?! Hmm — that's the classic: A's nose becomes B's hat brim/crease. Since A's hair mass is 130-420 and A's nose is at 600+, A's hair doesn't cover 580-870 in A. But in B, the region 580–870 is A's hair? NO — I need to be careful: B sees page stroke at page y as page 1000−y. A's hair occupies page 130–420 → B sees it at 580–870. Right. And A's nose at page 620 → B sees it at 380 (B's forehead). So in B, the forehead (300-450) has A's nose/mouth/chin shapes overlapping. That's the fundamental dual reading: A's nose becomes B's forehead crease, A's mouth becomes B's hat brim, A's chin becomes B's crown of hat... but wait, A's hair occupies the top in A, and in B the top (100-300) is A's collar. OK so B's "hat" region is A's collar, and A's hair is B's beard. Then B's forehead (300-460) shows A's nose (620→380) and A's brow? A's brow at 452 → B at 548 (B's eye bags ✓). A's hairline at 420 → B at 580 = B's beard top/mustache area.
+
+So B: hat (100-300) from A's collar; forehead 300-460 containing A's nose drawn as... A's big bulbous nose (600-660) becomes, in B, a bump on the forehead — like a big brow ridge/forehead bulge. Fine: A's nose in B = B's prominent forehead/knob. Slightly odd but Whistler-ish (the nose becomes a forehead hump). Hmm, actually with the nose being large and round, in B it reads as a big round forehead. Acceptable.
+
+But hmm, A's mouth (big grin at 660-710) → B's 290-340 = B's hat brim region (bottom of hat). So A's grin becomes the lower edge of B's hat — good: B's hat has a smile-shaped curve.
+
+And A's chin/jaw (720-800) → B's 200-280 = B's hat crown. So A's chin becomes B's hat crown. ✓ (hat↔chin pair).
+
+So B's hat = A's collar + A's chin + A's grin = a big rounded hat shape. ✓ consistent, since A's chin is round.
+
+And B's beard = A's hair (pointed). And A's hair's pointed tip at 130 → B's 870 = beard tip at chest ✓.
+
+Now A's collar/headset: page ~800-900 → B's 100-200 = top of B's hat. So the headset ear cups appear on TOP of B's hat. Hmm, if A's collar is a scarf with two round ends and a cable, B's hat = a rounded cap with two round lumps on top and a dangling cord = reads as earflap hat with pompoms. Charming.
+
+Maybe better: put the headphones around A's neck as a distinct dark band with two big ear cups at the sides (page ~820, x 340 and 660). In B these are at (660,180) and (340,180) — top of the hat, two round lumps = pom-poms on a cap. ✓ And the mic boom cord from A's right ear cup curving up → in B a cord dangling = a hat string. Good.
+
+So the tech element: headphones ✓ unmistakable in A. And B's counterpart = a cap with pom-poms (human, aviator-ish). ✓ requirement met.
+
+Now the event props. Need DeepSeek-specific recognition. Ideas:
+- A's grin = big (triumph). 
+- Something with a coin and a bubble.
+
+Let's put:
+- **A**: a **tiny coin** in A's... hmm. What about A's hat/hair tip: a tiny coin at the tip of the tall hair? Flipped → near B's beard tip (870). Meh.
+- Alternatively A's nose is a big round shape = "the coin"? no.
+
+What about the **stock chart crash** for B: a jagged line. Where can a jagged line live in both readings? A's hair could contain a jagged zigzag pattern (like a lightning bolt) — in A it reads as a streak of hair (a lightning-shaped forelock) and in B as a jagged beard strand. Both readings natural! So a **zigzag chart line** could be hidden as hair strands. Hmm, a zigzag chart is very specific to stocks. 
+
+Alternatively **the balloon/bubble**: A's hair mass could have a big smooth dome top (bubble), with a small knot → B's beard tip has a knot? no.
+
+Honestly, maybe the best event-specific props:
+- A: a **paper plane**? no.
+- A: the **coin** — the $5.6M. Make A's hair a wild upright tuft and pin a **small round coin** on the forehead? no.
+
+New idea for event specificity: **DeepSeek R1's "distillation"/"copying" accusation** and **Nvidia's fall** — one iconic image: a **chess-like... ** no.
+
+Consider instead the event: **"the AI that costs $5.6M beats models costing $100M"** → A = a face with a **giant nose** (big model) and tiny... nah.
+
+Maybe pick a different, more prop-friendly event after all. Let's brainstorm events with iconic physical props and a clear triumph↔consequence duo:
+
+1. **SpaceX Starship catching the booster ("chopsticks")** — April 2025 / May 2025. Props: rocket, booster, chopsticks. Reversible: A = triumph (rocket booster caught by tower chopsticks), B = the rocket exploding on the pad (April 2023). Event: "Starship flight 3 booster destroyed; flight 5 caught the booster". Not AI but tech ✓ recent ✓. Visual: A = a proud face with a rocket hat; B = a face with a charred burst. Hmm.
+
+2. **The "AI slop" / LLM art backlash**?
+
+3. **Meta's Llama 4 benchmark scandal** (April 2025): Meta trained Llama 4 "Maverick" on a version tuned for the LM Arena benchmark, causing users to report it was worse than Llama 3. Iconic visual: **cheating on a test** — a face with a hidden cheat sheet under the hat brim (a sheet of paper peeking out) — in the other reading, the cheat sheet becomes... a beard/collar. Expression: A = proud smirk; B = the flushed/ashamed? Hmm, but B should be the consequence: A = "our model wins the benchmark" (smug, sheet of answers peeking from hat), B = "users' actual experience" (dismayed, the cheat sheet now dangling). Maybe too obscure.
+
+4. **The "AI intern" / Google's AI Overviews lawsuit (Sep 2025)**?
+
+5. **OpenAI's ad with a dying... ** no.
+
+6. **xAI Grok's "MechaHitler" antisemitic posts (July 2025)** — sensitive; skip.
+
+7. **Apple's AI delay / "Apple Intelligence" delayed to 2026 (March 2025)** — props: Apple logo? logo-free emblem. Hmm.
+
+8. **Nvidia's $4.4T market cap / the AI capex bubble (Oct 2025 - Feb 2026)**?
+
+9. **"Claude 4 Opus / GPT-5's benchmark..."**
+
+10. **Humanity's last exam / AI vs PhD experts (Jan 2026?)** uncertain.
+
+11. **OpenAI's "GPT-5" (Aug 2025)**: disappointed reaction; "GPT-5 is smoother but less sharp". Not visual.
+
+12. **The Agent/Manus hype (Mar 2025)**: a paper-bag-headed figure — recognizable from the viral Manus demo! The "Manus AI" promotional video featured a bag-headed man? I believe the viral Manus video showed a small person in a paper bag? Hmm, actually I recall Manus's viral demo video had a bag-headed figure. Not confident.
+
+13. **AI influencers / the "Lil Miquela"**? old.
+
+14. **The famous "AI model trained on the same benchmark" → but also: "the model that passes the interview"**.
+
+Let's pick #1 or DeepSeek. DeepSeek's iconic facts: (a) $5.6M cost, (b) open-weights, (c) Nvidia lost ~$590B (Jan 27, 2025), (d) triggered a global "AI is cheaper than you thought" panic, (e) US export controls debate, (f) DeepSeek's app topped App Store charts, (g) a short-seller report / "it had 50,000 H800s".
+
+For a face drawing, the recognition driver could be: a **coin** (cheap), a **big collapsing bubble**, a **GPU chip**. 
+
+Honest evaluation: A knowledgeable viewer seeing "tiny coin + grin" vs "burst bubble + gloom" would think "DeepSeek/Nvidia bubble". Good enough, and I'll strengthen with: A holds a **small chip with a happy face?** no.
+
+Let me design the event props concretely now:
+
+**A (upright) = the triumphant, cheap-and-mighty DeepSeek-style underdog:**
+- Big wide grin, arched delighted brows, wide eyes, big bulbous nose.
+- Hair: wild upright tuft (tall, pointed) — like a "cheap but mighty" pompadour.
+- A small **coin** sits on top? Let's put the **coin in his mouth**? no, grin.
+- Idea: A's **nose is huge and round** = the coin? no.
+- Idea: A's hair tuft tip holds a **tiny coin** (page 130, x 500) → in B it lands at page 870 = the tip of B's beard, where it reads as a small ornament at the beard tip (a little bell/pendant). OK! But in A, a tiny coin at the tip of his hair — reads as a coin stuck in hair. Recognizable as coin ✓ (circle with rim, maybe with a tiny "notch" — no symbol).
+
+Hmm, but a coin at the hair tip in A is small and might be missed. 
+
+Alternative placement for coin: A's **collar** region (bottom) → B's hat top. So a coin on A's collar = a coin on B's hat (like a badge/crown jewel). In A, a coin badge on the collar = "5.6M" ✓ visible. And in B, a badge on the hat = the market cap? Both fine, and the coin is fairly big (a chunky disc) so visible in A ✓.
+
+**B (rotated) = the morning-after: the bubble popped, the market in pieces:**
+- Heavy droopy brows (from A's under-eye bags at 548), half-lidded eyes (from B-only lid strokes), a frown (from A's hat brim ∩?? we set A's hat = hair, not a brim). Careful: B's mouth comes from A's mouth region... A's grin (cup at 660-710) → B's hat brim (290-340). Then where's B's mouth? From A's chin (720-800) → B's 200-280 (hat crown). And A's nose (600-660) → B's 340-400 forehead. So B's actual mouth must come from A's chin/jaw line at ~740-800 → B's 200-260?? That's the hat crown. Hmm, so B's mouth should be at page ~660-700 in B's frame = A's page 300-340 = A's hair region (A's hairline/fringe). So A's fringe/hairline shape = B's mouth ✓ (dictionary: hairline/fringe ↔ nose bridge; but here mouth). Since A's hair mass spans 130-420, the lower edge of the hair (hairline) at ~410 is A's forehead; rotated → 590 = B's nose region. Hmm.
+
+Let me re-derive: B's face features (in B's own frame, page y_B = 1000 − y_page_A):
+- B's eyes at 500 (shared) ✓ (A's eyes at 500 too).
+- B's brow at 452 → A's page 548 (A's under-eye area).
+- B's eye bag at 548 → A's 452 (A's brow area!). Wait: A's stroke at 452 = A's brow; in B it appears at 548 = B's eye bag. A's stroke at 548 (A's under-eye) appears in B at 452 = B's brow ✓.
+- B's nose tip at 650 → A's page 350 (A's hairline!). So A's hairline/forehead boundary at 350 = B's nose ✓ (dictionary: hairline↔nose bridge ✓).
+- B's mouth at 680 → A's page 320 (A's hair/hat mass region!). So A's hair region 320 holds B's mouth shape: e.g., A's hair has a curve at ~320 (a wave of the hair) that becomes B's mouth ✓.
+- B's chin at 800 → A's page 200 (A's hair top region).
+- B's hat/crown at 200 → A's chin region 800? No: B's crown (200) is B's hat top = A's page 800 = A's chin/collar top. Hmm, so B's hat top corresponds to A's chin. But I earlier said A's collar → B's hat (700-900 → 100-300) ✓ consistent: A's chin+collar = B's hat.
+
+But A's hair occupies 130-420 and in B the region 580-870 = A's hair → B's beard region ✓ (B's chin at 800 falls inside the beard) ✓.
+
+So A's face must fit in 420-800 region mostly, with hair on top 130-420. And B's face features come from A's hair (mouth at A-320, nose at A-350, chin at A-200). 
+
+So the key: the top mass (A's hair) contains, in its lower portion (~350) a shape that reads as B's nose, at ~320 a shape that reads as B's mouth, at ~200 a shape that reads as B's chin. Since A's hair covers 130-420, B's nose (350) and mouth (320) and chin (200) all live inside A's hair region. So B's face: brow at 452 (A's eye bags), eyes at 500 (shared), nose at 350?? Wait no: B's nose tip should be BELOW B's eyes (larger y). I have the mapping backwards!
+
+Redo: B's nose at page y_B=650 → in A's page = 1000−650 = 350. But 350 < 500, so in A it's above the eyes: A's hair region ✓ (that's the dictionary: hairline ↔ nose bridge... hmm but B's nose tip at 650 corresponds to A's 350 which is above A's eyes). Right: the flip means B's nose is ABOVE A's eyes in page space, and B's nose is BELOW B's eyes in B's frame ✓ consistent. And A's nose at 650 (below A's eyes) appears in B at 350 = above B's eyes = B's forehead ✓.
+
+So in B's frame: brow 452, eyes 500, nose 650, mouth 680, chin 800. Good. And these correspond to A's page: 548, 500, 350, 320, 200.
+
+So: A's page 200 = B's chin; A's 320 = B's mouth; A's 350 = B's nose; A's 548 = B's brow.
+
+So A's hair mass must contain, from bottom to top: a nose-ish shape at 350, a mouth-ish curve at 320, and a chin-ish curve at 200. These are in A's hair! Meaning A's hair has: at its bottom edge (350) a downward bump = B's nose (rotated: A's bump pointing down becomes up-pointing... careful: rotation flips vertically. A's shape at 350 that reads as a nose in B = in A it's an upward-pointing bump? Let's think: B's nose is a downward-pointing triangle/round nose below B's eyes. Rotated to A's page, B's nose appears at 350 as an upward-pointing round bump. In A, that bump sits within the hair region → in A it reads as a **hair wave/curl bump** (a curl of hair sticking up). ✓ That's fine: A's hair has a curl.
+
+B's mouth at A's 320: B's mouth is a downward-curving frown or a shape with a mouth line. In A it appears as an upward-curving arc (cup ∩→) i.e., a hair strand arc across the hair. Hmm — that would look like a hair parting. But careful: A's mouth (a grin) is at A's 680 → in B appears at 320 = B's mouth!! Wait: A's mouth at page 680 → B's frame y = 1000−680 = 320. And B's mouth should be at 680. So A's mouth at 680 is ALSO B's mouth position? No! B's mouth is at B-frame 680 → A-page 320. Both A's 320 and A's 680 strokes appear in B: A's 680 stroke appears at B-frame 320 (which is B's forehead/hair region), and A's 320 stroke appears at B-frame 680 (B's mouth). So A's hair (page 320) provides B's mouth ✓ and A's grin (page 680) provides B's forehead feature.
+
+OK so summary of the mapping (page_A ↔ frame_B):
+- A's hair curl (page 350) ↔ B's nose tip.
+- A's hair wave (page 320) ↔ B's mouth.
+- A's hair top curve (page 200) ↔ B's chin.
+- A's brow (452) ↔ B's eye bag (548).
+- A's under-eye (548) ↔ B's brow (452).
+- A's nose (650) ↔ B's forehead bump (350).
+- A's grin (680) ↔ B's forehead smile-line (320).
+- A's chin (790) ↔ B's hat crown (210).
+- A's collar (850) ↔ B's hat (150).
+- A's hair sides (x±300, y 420) ↔ B's jaw sides (y 580).
+
+Now: A's expression: delighted grin + wide eyes + arched brows + big hair tuft + grin. B's expression comes from: heavy low brows (A's 548 strokes), half-lidded eyes (B-only lid strokes), a downturned mouth (A's hair wave at 320 must be a downturned curve in B = in A it is an arc ∩? Let's compute: B's mouth at frame 680 frown = a curve that is ∩ (dome) with downturned corners... A frown mouth drawn as an arc curving upward in the middle? No: a frown is ∩ shaped? A sad mouth: corners down, middle up = shape like ∩ (arch) with the ends low. Hmm: frown = the middle of the mouth line is HIGHER than the corners? Actually a sad mouth curves downward at the middle: the line dips in the middle = ∪ shape? Let's be precise: smile ∪ (corners up, middle down), frown ∩ (corners down, middle up). So B's frown = ∩ at frame 680. Rotated to A-page 320, ∩ becomes ∪. So A's hair must have a ∪ curve at page 320 (a downward-dipping arc) — reads as a hair strand/shadow in A ✓ (like a wave of hair dipping). OK good.
+
+And A's grin ∪ at 680 → B-frame 320: becomes ∩ = a dome line = B's forehead crease, or B's hat brim if at 320... B's hat spans 100-300 so 320 is just below the hat → B's forehead top. Fine: an arched forehead line above B's brows. Hmm, B's brows at 452, so 320 is forehead ✓ a forehead wrinkle arch.
+
+Great. Now let's decide the actual shapes.
+
+Also need: A's hair should read as hair (mass with strands) and B's beard read as a beard (same mass flipped). A pointed tall hair tuft → B's pointed beard ✓.
+
+But hold on: A's hair spans 130-420. If A's hair is a tall pointed mass, then A's head is "hair + face" with hair occupying 130-420 and face 420-800. Head total 130-800 = 670px ≈ "600px head" ✓ roughly.
+
+But the prompt says head crown to chin about 600px; ok.
+
+Now B's face: B's hat = A's collar (100-300), B's forehead 300-450 (with A's grin arch at 320 and A's nose bump at 350), B's brows 452 (heavy, from A's under-eye strokes), B's eyes 500, B's nose 650 (A's hair curl at 350 — must be a nose shape: a rounded nose with nostrils ✓ that in A reads as a curl of hair — hmm, a nose with nostrils inside the hair? In A, at page 350, A's hair region: a rounded bump with two small dark nostril dots at its base. In A that would read as... a curl with two dots? Might read as eyes! Careful: A's hair is above A's forehead, so a "nose with nostrils" in the hair might look like a tiny face in the hair. Risky but could be charming (a face in the hair?). Better: make the hair-curl at 350 a simple rounded bump without nostril dots; B's nose just a round bump = fine (a bulbous nose doesn't need nostril dots visible at thumbnail). ✓ Avoid dots.
+
+Similarly B's mouth at A's 320: a ∪ curve (dipping) in the hair — in A, it reads as a hair shadow/dimple ✓. But B's mouth should read as a mouth, ideally with lips. We can add B-only strokes (rotated group) for B's lower lip etc. But B-only strokes appear in A somewhere — place them in A's hair mass (dark) so they're hidden ✓ (A's hair will be a dark mass, so B-only strokes inside it are invisible in A except as slight texture). Good: put B's mouth detail, B's nostrils, B's lip, B's chin dimple, B's beard texture, B's hat details all inside A's hair mass (dark fill) → hidden in A, visible in B. But wait: B's mouth (frame 680) = A's page 320: that's inside the hair ✓ so B's mouth strokes can live there. B's nose (frame 650) = A page 350 ✓ inside hair. B's chin (frame 800) = A page 200 ✓ inside hair. B's hat (100-300) = A's 700-900 = A's collar region ✓ (A's collar is a dark mass? maybe medium). 
+
+But careful: if A's hair is a solid dark mass, then in A, the curves at 320/350 (B's mouth/nose) are invisible (hidden in the mass) → B's face lacks a mouth/nose → B won't read! Because B's mouth must be a visible stroke against B's face (which in B is... where is B's face area? B's face is the region 300-800 in B-frame = A's 200-700 = A's hair lower + A's face upper). In B, the beard (A's hair, flipped) covers B's lower face 580-870, i.e., the beard occupies B's chin region; B's mouth (680) and nose (650) would be INSIDE the beard region in B!! Because beard spans 580-870. Ugh.
+
+So the beard mass must not cover B's mouth/nose. Contradiction: A's hair (130-420) → B's 580-870 which includes B's mouth (680) and nose (650). So B's mouth and nose would be inside the beard — bad.
+
+Unless A's hair is not a solid mass but rather an outline with texture: e.g., A's hair is drawn as a few big wavy strands/bangs that are mostly open (white) — like big separated locks of hair. Then B's face shows through. Alternatively A's hair is a mass but B's beard is only the outer part (the silhouette), with the inner region (where B's nose/mouth are) white. That means A's hair must be drawn as an outline (contour) with strands, not a filled blob. Hmm, but then A's hair would look less solid.
+
+Alternative: shift the geometry: put A's hair higher (130-350) so that B's beard = 650-870 which still includes B's mouth (680). Any hair mass covering A 130-420 gives B covering 580-870: always includes mouth & nose. So B's face features must be drawn INSIDE the beard area? That means B's nose and mouth are drawn as white/light shapes on the beard, or the beard is split (moustache + side beard, leaving the mouth area open).
+
+Classic solution: the beard is drawn as an outline hugging the jaw with a "mouth hole": i.e., the beard region excludes the lips (like a real moustache+chin beard with the lips exposed). In A, that means A's hair is drawn as two big side masses (like huge side locks / a big mane framing the face, with a gap in the middle at page 320-350). But A's forehead hair is usually continuous... We can design A's hair as: a big tall central tuft (200-320) plus two side locks going down (x 300-380 and 620-700, y 250-560). Then:
+- B: central tuft (200-320 → 680-800) = B's chin/beard (pointed) ✓ — that covers B's mouth (680) region partially. Hmm the tuft 200-320 maps to 680-800: B's mouth at 680 = the very top edge of that tuft. So B's chin tuft starts at 680 = right at the mouth. Tight.
+
+Let me instead reposition: make A's hair tuft span 150-380, with the tuft's bottom edge (hairline over forehead) at 380, and B's mouth at 680 corresponds to A's 320 (inside the tuft, 60px above the tuft's bottom edge). So B's mouth sits inside the tuft region (in B). So the tuft must have a mouth-shaped white opening? Or B's mouth drawn as a white/negative shape within the dark tuft (i.e., in B, the "beard" has a pale mouth slit). Whistler does this: a white mouth shape cut into the beard. Actually yes! In B: a dark beard with a pale mouth area? Hmm.
+
+Alternative cleaner approach: make A's "hair" a **big moustache-like mass under the nose**? no, A has a grin at 680.
+
+Hmm, wait. Reconsider: maybe A's top mass should be a HAT (not hair), drawn mostly as a shape with white/hollow? But a hat is a mass.
+
+Alternative: reverse the mapping by choosing A's face to occupy the middle and B's features to come from A's *collar* region, not hair. What if the top mass is smaller: A's hat crown 200-300, and B's mouth comes from A's page 320 — just below the hat (forehead). So B's mouth = a shape in A's forehead?? That reads as a forehead wrinkle; in B it's the mouth — meaning B's face would be: hat at 100-300 (A's collar), forehead... no wait, in B the mouth must be at frame 680 → A page 320. A page 320 = A's forehead (if hat is 200-300, forehead 300-450). So A's forehead contains a shape that in B is a mouth. A's forehead: a big pair of...? Hmm, A's forehead in B is where? B's forehead is frame 300-450 = A page 550-700 = A's nose/mouth region. So in B, A's nose+mouth = B's forehead region. And A's forehead = B's mouth region. So B's face: eyes (shared) at 500, nose (from A's hair/hat curl at 350 → B frame 650) hmm, but if the top mass is a hat at 200-300, then B's nose would come from A's 350 = forehead region — a bump on A's forehead = A's... "a curl" ✓ ok that works: A has a small curl/forelock hanging onto the forehead at 350, which in B is the nose ✓✓. And B's mouth at A page 320 = A's forehead skin (just above the forelock) — that's a problem: A's forehead would have a mouth drawn on it, visible in A as a weird line on the forehead (could be read as a forehead wrinkle or a "hat brim shadow" — actually the hat brim at 300 creates a shadow line on the forehead... hmm, the brim's underside could create a curve).
+
+Alternatively: B's mouth comes from A's *hair fringe* which is a scalloped fringe: the fringe's scallops (page 320) = B's mouth shape (a dark curve = smile/frown line) ✓ and in A, the fringe's dark scallop reads as hair ✓. So the fringe must be drawn as a dark scalloped mass at 300-350 with a distinct arc.
+
+And B's nose = A's curl at 350 (below the fringe)? Both at nearly the same page y (320-350) — the fringe's lower scallops at 320 = B's mouth, and a curl below at 350 = B's nose. In A that means a curl below the fringe — plausible: a lock of hair hanging over the forehead between the brows. But B's nose (frame 650) is 30px below B's mouth (frame 680)?? No: B's nose tip 650 is ABOVE B's mouth 680 (smaller y = higher). So on the page: B's nose = A page 350, B's mouth = A page 320. So in A, the nose-curl (350) is BELOW the mouth-fringe (320) ✓ (350 > 320). So order in A: fringe/mouth-arc at 320, curl/nose at 350 lower. So A's hair: the top mass ends around 300, then a fringe band 300-335 with a scalloped lower edge (containing the mouth arc), and a curl hanging at 335-375. Hmm, the curl below the fringe hanging over the forehead ✓ (a lock of hair). Then in B, the curl (A 350) = B's nose at 650 ✓ and the fringe's lower edge arc (A 320) = B's mouth at 680 ✓. But the fringe is ABOVE the curl in A, so in B the mouth (680) is BELOW the nose (650) ✓✓ correct anatomical order. 
+
+And in A, is the fringe+curl order sane? Fringe at 300-335 above, curl at 335-375 hanging down below it → yes, a curl hanging down over the forehead from the fringe ✓.
+
+Now A's own nose at 620-660 and mouth at 660-710. In B these become: A's nose (640) → B frame 360 = B's forehead bump; A's mouth (685) → B frame 315 = B's forehead wrinkle. Fine — B's forehead will show a rounded bump (A's bulbous nose) and a curve (A's grin) high on the forehead. That might look odd (a nose on the forehead). But Whistler faces often have oddities; but we could make it read as a big brow ridge: A's nose is large and round → in B it's a round bulge between B's brows = a prominent "forehead/brow knob" ✓ acceptable. Or reduce A's nose size so in B it's a subtle brow bump. Let's give A a moderately big nose (it's a caricature) but place it so that in B it reads as B's brow ridge. Since A's nose at 620-660 → B 340-380, and B's brows at 452 — that's 70px above the brows, so the bump would be in the middle of B's forehead. Hmm, a bump in the middle of the forehead looks like a "third eye" bulge. To mitigate: make it an arched line (like a forehead wrinkle arc) rather than a bump? But A needs a big nose. Compromise: A's nose = a rounded shape with a shadow beneath; in B, the dark shadow arc under the nose at 660 → B frame 340 becomes an arc above B's brows = forehead wrinkle ✓ and the nose outline itself (640) → B 360 = the wrinkle's curve. I'll draw A's nose as a big shape; in B it will read as an arched brow-ridge/forehead wrinkle. Acceptable.
+
+Hmm, this is getting complicated but the structure is sound. However, maybe there's an easier route: shift everything so B's face features come from A's *hair/hats* as planned, and simply accept that A's nose becomes a forehead bump. Fine. Many reversible faces do exactly this (nose ↔ brow/forehead).
+
+Now the collar/hat exchange for B's hat: B's hat = A's collar (A page 700-900 → B 100-300). So A's collar should look like a hat when flipped: A's collar = a **big soft scarf/tam** shape: rounded with a rolled brim, plus the **headphones** (ear cups + headband) — in B, the headphones become earflaps/pompoms on the cap ✓.
+
+Also: A's chin (page 790) → B frame 210 = the hat crown's bottom? and A's mouth (685) → B 315 (forehead). B's hat region 100-300: contents = A's 700-900 (collar, headphones, cable). Plus B's hat crown (200) = A's 800 (chin/jaw bottom). So the hat crown (top of B's hat, frame 100-150) = A's 850-900 = bottom of A's collar. So A's collar bottom edge (850-900) = the TOP of B's hat. So A's collar shape should be widest at its bottom (like a flared scarf) so that flipped it's a cap that's widest at top? Hmm: B's hat: top (100-150) from A's collar bottom (850-900); bottom (250-300) from A's collar top (700-750). So B's hat is narrow at top, wide at bottom = a normal cap shape if A's collar is wide at bottom (700-750) and narrow at 850-900. Wait, A's collar top (700) maps to B's hat bottom (300) → so A's collar wide at top (700) → B's hat wide at bottom ✓ (cap-like). And A's collar bottom (900) → B's hat top (100) narrow ✓. So A's collar should be a shape wide at its top (shoulders) narrowing downward to a point at 900 (like a beard/pointed collar!). Hmm, A wearing a pointed collar/tie that flares at shoulders: yes — like a **wide shirt collar with a big pointed beard-like collar**? A's collar = a **cape/poncho** shape: wide at shoulders (700) narrowing to a point at 900 (like a necktie/cravat tail). Then B's hat = a pointed conical cap ✓ (like a Phrygian/gnome cap). Nice: B wears a tall pointed cap, A wears a wide flaring collar.
+
+Hmm, but a wide collar at 700 flaring out to x 260-740, narrowing to a point at (500,900) — that's like a big cloak/tie. In A that reads as a **big cravat/ascot**. OK, plausible: A = a dandy with a huge scarf? Actually could be a **huge beard**! A's chin at 800 → B's hat crown; if A's "collar" is actually a **big pointed beard** (from chin 760 down to 900), then in B it's a **pointed cap** ✓✓ and in A it's a long pointed beard. But A also has a grin — a big beard + big grin is fine (a jolly old man!). But then A has both tall hair (top) and a beard (bottom) — that's fine, A = old jolly face? But A should be the triumphant younger one? Could be an eccentric professor. Hmm, but then "bottom-heavy B" — B has a beard (from A's hair) ✓ and B's hat (pointed cap from A's beard) ✓.
+
+Wait, but then A has a beard too, and the two faces are less distinct. Let's instead make A's bottom mass = a **collar/scarf** (no beard in A) and B's = beard ✓ distinct: A = clean-shaven grinning dandy with wild hair; B = bearded, heavy-browed, tired face under a pointed cap.
+
+So: A's scarf: from shoulders (page 700-740, wide x 250-750) tapering to a point at (500, 900). Plus the headphones draped around the neck? The headphones (ear cups at page ~830, x 330 & 670; headband curving up) → B: at frame 170, x 330&670: two round lumps at the top sides of B's pointed cap ✓ = pom-poms. Good.
+
+But careful: the headphone band (a curve over the neck) would be inside A's scarf area and in B become a curve across the cap ✓ fine.
+
+Hmm, do I even want headphones? The tech requirement: "At least one accessory must be unmistakably technological... with a clearly human counterpart in the other reading; the tech element must be visible and recognizable in its reading." Headphones around the neck = unmistakable tech ✓. B's counterpart: earflap cap with pom-poms = human clothing ✓. 
+
+But hmm, in A the headphones around the neck will be inside the big scarf mass → might be hidden. Better: place them so they're visible: A's headphones = ear cups visible at the sides of the neck, over the scarf, drawn dark with a cable ✓. In B they appear as the two pom-poms on the cap — visible ✓.
+
+Actually even better idea for tech + event: make A's tech = **a headset with a mic boom** OR **the headphones are actually a "neural link"**? Keep headphones.
+
+Now the EVENT props. With this design (A = grinning dandy with wild hair and headphones; B = bearded tired man with pointed cap), what event-specific props can I embed?
+
+DeepSeek: cheap vs bubble. 
+- A's wild hair could be shaped like... hmm.
+- A's grin is huge.
+- Put a **tiny coin** somewhere in A that flips to a big **burst bubble** in B? Sizes can't change.
+
+Let's use two props:
+1. **A: a tiny coin** pinned at A's ... Let's use the hair curl? A's hair tuft tip (page 130-160) → B frame 840-870 = the tip of B's beard. A coin at B's beard tip = a pendant. Meh.
+
+Alternative: put the coin at A's scarf point (page 880, x 500) → B frame 120 = top of B's pointed cap = a coin on top of the cap ✓ (like a coin on a cap, or a bottle cap!). Hmm, but in A that coin is at the tip of the scarf/tie = like a tie pin? Fine.
+
+2. **B: the popped bubble** — B needs event-specific props that read in A as hair/beard details. E.g., in B, the pointed cap could be drawn as a **deflated/collapsed balloon**? Hmm.
+
+Let me reconsider the event for better prop fit. What about **Nvidia/DeepSeek** vs something like:
+
+**Event: "GPT-5 / OpenAI's ChatGPT outage" (Oct 2025)** — meh.
+
+What about the **"AI slop" era and the first AI-generated film winning a major award (March 2025: "The Last Showgirl"?)** — actually the first AI-generated short to win an Oscar was "Critterz"? The 2025 winners: "The Last Showgirl" won Best Original Screenplay at the Oscars (March 2025) — hmm, that's a film partly AI? Actually the AI-generated short "Critterz" (Sora 2, Oct 2025). And in March 2025, an AI-generated music video... Hmm.
+
+What about **"the first all-AI film festival / the AI slop backlash in publishing (July 2025 — Amazon flooded with AI books)"**? Props: books? a stack of books as a hat! Hmm! A stack of books as a hat (top-heavy) and in B the same stack becomes a beard/collar? A stack of books = recognizable prop for AI-generated books (the "BIBLE" Amazon bookseller scandal, July 2025). And B = ? 
+
+Another: **"the AI agent's $X million ARR"** etc.
+
+Let's evaluate a candidate that fits my mechanics beautifully: **OpenAI's Sora / AI video** no.
+
+**Candidate: "Nvidia's record $593B wipeout" (Jan 27, 2025)**. Faces: A = the "DeepSeek" champion (grinning, cheap), B = the market (dazed). But the second character should be a person/archetype. B = "the investor/CEO whose AI empire just got repriced" — heavy, weary. Props: A holds/shows a tiny coin (cheap AI); B is surrounded by falling shards (crash). Shards: in B, the fragments of the burst bubble appear where? B's cap region = A's scarf. If A's scarf has a jagged torn edge with shards, in A it reads as a frayed scarf; in B the shards fly off the cap = the burst bubble ✓✓. That's good! A frayed/torn scarf edge ↔ B's shattered cap. Hmm, "torn scarf" in A vs "shattered" in B.
+
+Maybe simpler and stronger: the central prop = **a bubble** that is TAUT in one reading and BURST in the other? Can't—same strokes.
+
+Alternative: the burst = zigzag shards in the beard (A's hair contains a jagged lightning-like strand → in B the beard has a jagged strand). Weak.
+
+Let me reconsider: maybe a better event with strong prop duality: **SpaceX Starship booster catch (May 2025)** vs **explosion**. Or **the FAA grounding**. Hmm: A = the rocket; B = the catch. One drawing of a face with a rocket as a hat? A's hair = the rocket plume? Hmm.
+
+What about **"the $1B+ AI agent ad / the 'Manus' bag"?**
+
+Honestly, I think the DeepSeek drawing can work if I lean on: 
+- A: a **big grin** + a **tiny coin** (the "$5.6M") held in the mouth? Actually: A's grin wide, and there's a **small coin** perched on A's nose tip! ✓ Fun and visible: a coin balanced on the bulbous nose = the cheap cost. In B: A's nose (620-660) → B frame 340-380 = B's forehead; the coin on it → B's forehead coin. Hmm, weird but fine — a coin on B's brow.
+- B: the **cracked/popped bubble** as a shape at B's forehead region = A's nose region? A's nose shape big & round → in B, B's forehead has a big round bulge which could read as the remnant of a burst balloon? Eh.
+
+I worry the event won't read. Let's consider a different tack: choose an event where the two faces are iconic and the props are simple, recognizable objects, e.g.:
+
+**Event: the AI agent "Replit" deleting a production database (July 2025)**
+- A: a proud, confident "vibe coder" with headphones (dev) and a big grin, and a **rubber duck**? 
+- B: a horrified, sweating face with a **wrecked database cylinder** as his beard/hat.
+- The DB cylinder (stacked discs) is recognizable as "database" but generic tech.
+
+**Event: the "AI slop" flood / AI-generated Amazon books (July 2025)** — props: **a stack of books**. A = the author's face with a stack of books? Hmm.
+
+**Event: the Stargate $500B announcement (Jan 21, 2025)** — a golden coin/handshake. A = Trump & Altman handshake → B = ? A = "500 billion" grand; B = "shovel-ready" reality? Props: a **golden dome/coin** vs a **crater**. Not great.
+
+**Event: "Nvidia's GTC keynote & the new chip; then the stock dumps"**.
+
+**Event: OpenAI's "GPT-4o" → "sycophancy" (April 2025)**: the model became flattery-addicted; rolled back. Physical: A = a face with a **mirror** (self-flattery) — hmm.
+
+**Event: the AI "vibe coding" that broke production (July 2025, Replit)**: A = a swaggering face with a **rubber duck and headphones** (dev in flow state, big grin) — "vibe coding" was a 2025 meme ✓ recognizable-ish; B = the same face, sweating, with a **wrecked database** (cylinder) as beard/collar and a **red alert**? Hmm.
+
+**Event: "the AI model that lied about being human"**?
+
+**Event: March 2025 — "the AI agent that bought things / the OpenAI operator agent (Jan 2025)"** — Operator was launched Jan 23, 2025 by OpenAI (a browser-using agent). Props: a **browser window / cursor**? Hmm.
+
+**Event: "Amazon's AI shopping chatbot Rufus"**?
+
+**Event: the "AI slop" song "Heart on My Sleeve" (April 2025) — Drake/Weeknd fake track, removed after UMG complaint** — props: a **microphone**! A = the fake singer grinning with a mic; B = the same face with a **censor/label**? Hmm. Also 2025's biggest copyright fights: "Heart on My Sleeve" (April 2025), "Maui's Phallic Gnome", the Fetti song "Night Lovin'", the White House's AI video of Trump (Jan 2025)? Also the AI-generated band "The Velvet Sundown" (April 2025) — the fake AI music group that fooled streaming platforms; very recognizable! Props: **a microphone + headphones** (music). A = the AI band member grinning with headphones/mic; B = the same with a **"copyright strike"**... physical contrast: A wears shiny new headphones (A = the slick new AI act), B = the same headphones are crushed/flat with a "struck" look. Hmm.
+
+I like "The Velvet Sundown" (April 2025) — the AI-generated band that got a real deal and then was exposed. But I'm not 100% sure of details (they were AI-generated; Suno/ Udio; gained millions of listeners; then Deezer/streaming removed them; the label claims it was a joke). Somewhat risky.
+
+Safest widely-known 2025 event with strong visual: **DeepSeek R1** and **Nvidia's crash**. Also **the $5.6M**. I'll go with DeepSeek. To make it recognizable, I'll use: a **coin** (cheap), and **a burst bubble / stock-chart zigzag**, plus maybe a **GPU chip** shape.
+
+Where to put a chip? A's "hair" could actually be... hmm. What if A's top mass is not hair but a **giant transistor/chip-shaped hat**? Hmm.
+
+New idea: make A's top mass = a **big dome (a balloon/bubble)** — A = the AI bubble, and A's face below it is the grinning "hypeman". Then in B, that dome (page 200-320) → B frame 680-800 = B's chin/jaw area → so the bubble becomes B's **beard**?! A bubble dome flipped = a rounded chin/beard ✓ could read as a big smooth chin (or a "chin beard"). Hmm.
+
+Alternatively A's top mass = a **tall hat shaped like a rocket/SpaceX**? 
+
+Let's simplify and accept a two-prop solution with decent readability:
+
+**A (upright):** the "hypeman of cheap AI": wide grin, arched brows, wild upright hair, headphones around the neck (tech), and — the event prop — a **big fat coin balanced on his nose** and a **tiny golden coin? ** Let's put a **coin in his cheek**? no.
+
+How about: A's hair tuft is actually shaped like a **rocket/arrow pointing up** (the launch)? Hmm, generic.
+
+Alternatively use the **"5.6"**: a tiny coin with 5 dots? no text but dots okay? A coin with a few dots could read as a coin-ish.
+
+Honestly, maybe the strongest and simplest event legibility comes from a **ticker chart zigzag** and a **coin**. Let me embed:
+- A's hair tuft tip (page 130) region: draw a small **coin** (circle with inner circle) at the tuft tip? In B it becomes the beard tip ornament. Fine, it's a small detail.
+- Instead: put the coin ON A's nose tip (page 645, x 500): visible, comedic, reads as "the tiny cost". In B it becomes a coin on B's forehead at frame 355 — reads as B's forehead ornament (a coin pressed into the brow — weird but fine, like a "bindi"? hmm). Alternatively place the coin on A's scarf point (page 880) → B's cap tip (frame 120) = a coin on top of the cap ✓✓ nice: B's pointed cap topped by a coin. And in A the coin sits at the tip of the scarf like a medallion. 
+
+Hmm! Actually here's a thought: the coin at the scarf-tip/hat-tip is at the page's vertical extremes (130 vs 870), the most "hat-like" positions, so it will read as a hat ornament in both. Good.
+
+- The zigzag "stock crash" line: put it in B's beard region = A's hair (page 300-420 region is hair). In A, a zigzag inside the hair = a lightning-shaped hair strand or a jagged hair edge. But I said B's mouth comes from A's fringe at 320. Maybe instead: A's hair is drawn with a **jagged, spiky bottom edge** (like a torn/spiky fringe) — in B, that jagged edge becomes a jagged beard edge. Not a chart.
+
+Alternatively the chart zigzag as **A's hair silhouette is a jagged upward chart** — like a rising chart forming the hair (the hair silhouette rising = the stock chart going up in A?) and in B the same jagged shape is a falling chart (rotated, the rising jagged becomes... rotation preserves the zigzag but flips direction vertically; a chart going up-right in A appears going down-right? Rotation by 180: a segment from lower-left to upper-right becomes upper-left to lower-right. So a "rising" chart becomes a "falling" chart in B ✓✓!!). That's a beautiful dual: A's hair silhouette = a rising stock chart (AI hype up); B's beard silhouette = the same chart now falling (the crash) ✓✓✓.
+
+But hair as a jagged chart: the hair silhouette would be a jagged rising line. Hmm, can I make the hair outline jagged like a chart? A "spiky mohawk" reads as a chart-ish zigzag if the spikes ascend. Yes! A spiky ascending mohawk silhouette = rising chart ✓. And in B, that spiky mass becomes a spiky beard = falling chart. But will viewers read it as a chart? With the bubble burst or numbers absent... maybe.
+
+Let's include: A's hair = tall spiky ascending silhouette (chart-like), plus in A a small "burst" element? 
+
+Alternatively: Use a **bursting balloon** in A's hair: A's hair tuft could be a **balloon shape** (round, with a knot and string) — a taut balloon as the "hat" → in B, that balloon at the beard tip = a balloon at the tip of B's beard (a deflated? no, same taut balloon). Hmm, a balloon at the beard tip is odd.
+
+OK time check. I'm overthinking. Let me settle a concrete, achievable drawing:
+
+**FINAL CONCEPT:**
+EVENT: DeepSeek R1 launch & the AI-bubble wobble (Jan 2025).
+A: a grinning, wide-eyed "hype man" with a tall spiky (chart-like) crest of hair, headphones around the neck (tech), a tiny coin on the tip of his pointed scarf, and a **burst/balloon**?? skip balloon.
+B: a heavy-lidded, bearded, weary face under a pointed cap topped by the coin; his beard is the same spiky crest, now reading as a falling chart; his cap is the flared scarf; his pom-poms are the ear cups; plus **B-only** strokes: a big **cracked/burst bubble** shape in the beard region? Since B-only strokes must be in A's hair (dark), we can put a **burst bubble** at A's hair area that only reads in B. But B's hair region = B's beard; a burst bubble drawn on B's beard = the bubble burst into shards over the face? Hmm.
+
+Instead, put the burst bubble in B's hat region = A's scarf (A page 700-900). If A's scarf has a **burst bubble drawn on it** (as if the scarf is decorated with a balloon), it would be visible in A too (bad). Unless it's inside the scarf's dark fill so it reads as a texture in A — then in B it appears as a burst balloon on the cap ✓. So make A's scarf a dark filled shape with a lighter burst-balloon shape inside (visible as a subtle shape in A — like a pattern on the scarf, acceptable) → in B it's a clear burst balloon on the pointed cap ✓.
+
+Hmm, but the burst balloon should be in the *hype* side or the *crash* side? B = aftermath = burst balloon ✓ good.
+
+So B's hat = a pointed cap with a burst balloon on it? Weird but readable as "the popped bubble".
+
+Alternatively B's beard region (A's hair): add B-only strokes forming a **cracked/burst balloon** at the beard tip... 
+
+Honestly, let me reconsider: maybe put the burst balloon in A's hair area as B-only: B's beard would then have a balloon burst — no.
+
+Simplify: B's beard = a big pointed beard with hatching; the *spiky* outline does the "chart" work; B's cap = A's scarf with a subtle burst shape.
+
+Hmm, I worry the event legibility is weak. Let me reconsider the event once more for legibility: what if the event is **"the AI bubble bursting"** i.e., the Jan–Feb 2026 AI bubble scare, with **Nvidia's crash**? Same thing.
+
+What if I use **both** DeepSeek's cheapness AND the crash: A = "5.6 million" (a small coin on the nose) vs B = "market cap gone" (a huge cracked/burst balloon). Since I can have A-only and B-only strokes, I can put:
+- A-only: a small coin on A's nose tip (in A reads as a coin balanced on the nose; in B it appears at frame ~355 = on B's forehead, where it reads as... a small bump/coin — could be confusing but tolerable, or I could place the coin where in B it's hidden inside the dark beard/hair mass!). Best: place A-only strokes inside regions that are dark in B. In B, dark masses = beard (A's hair region 130-420 → B 580-870). So A-only strokes should be placed at page 130-420 to be hidden in B; and A's own visible areas are page 420-900. But page 130-420 in A is the hair (dark). Hmm, I want the coin visible in A. If the coin sits on top of the dark hair (e.g., a coin at the tuft tip, drawn in ink outline on dark? or a white coin with ink outline on the dark mass — visible in A ✓, and in B it lands at B's beard tip region = dark beard; a white coin on dark beard = visible in B too, as a coin at the beard tip). That's fine! Visible in both, but reads differently: in A a coin perched on the hair; in B a coin hanging at the beard tip.
+
+Alternatively make A's prop = a **small rocket? ** 
+
+Let me just choose the props as:
+1. **Coin** (small disc with double rim, white with ink outline): perched at A's hair-tip (page ~140) → in B it's at the beard tip (~860) — reads as a coin pendant at the beard tip. Also serves as A's "cheap" marker, though not huge. Maybe better placed prominently in A: on A's nose? Let's do nose? In B, nose→forehead, coin on forehead = odd. Beard tip is fine.
+
+Hmm, actually what if A holds the coin in his mouth? A's mouth is a wide grin. The grin at 660-710 → B frame 290-340 = B's forehead. A coin in A's mouth → B's forehead coin. no.
+
+2. **Burst balloon / cracked bubble**: a big round shape with crack lines, in B only, placed in A's hair region (page 130-420) so it's hidden in A? But B's beard region is where the beard is; a burst balloon on B's beard... Hmm, what if instead B's "hat" region (A's scarf 700-900) holds the burst balloon → in A it's inside the scarf (dark, drawn as a light shape = pattern, subtle) → in B it's a clear burst balloon overlapping the pointed cap ✓. Actually maybe better: place B's burst balloon so that in B it's **above/across the cap**, i.e., at frame 120-250 = A page 750-880. Yes that's the scarf area ✓.
+
+But wait, I want the burst balloon visible in B as a *separate* object, not just a mark on the cap. In A the scarf is a dark shape from 700-900; the balloon shape inside it will show as a lighter blob on the scarf in A — that might confuse A (a balloon on his scarf?). Hmm. Unless the scarf in A is a mid-tone hatched (not solid), so a balloon outline within it reads as a scarf pattern.
+
+Alternative: don't make the burst balloon B-only; make it a shared stroke: the same shape in A is A's scarf's outline? Hmm: A's scarf = flared wide shape narrowing to a point; in B = pointed cap. If instead A's scarf is drawn as a **balloon-like round shape with a knot at the bottom** (page 700-900): a big balloon shape = the AI bubble! In A: A is wearing/holding an inflated balloon? Hmm: A's bottom mass = a big round balloon with a small knot at the bottom (page 880-900) = "the AI bubble" ✓✓ and in B: a big round balloon shape at the top of the head = B's hat = a balloon hat! (A character wearing a balloon as a hat is a real Whistler-ish gag ✓). And the knot at the bottom of A's balloon (900) → B's top (100) = the balloon's knot sticking up ✓ consistent!! Wait: A's balloon knot is at the BOTTOM of A's mass (page ~880-900) and B's balloon mass occupies 100-300 with its knot at 100 (top) ✓ — the same strokes, consistent as a balloon in both readings, but in A the balloon is at his neck (like he's holding/being enveloped by the bubble) and in B it's on his head as a hat ✓✓✓. That's a wonderful dual reading: the AI bubble (inflated, tied) sits at his collar in A (the hype bubble he's standing in?) and becomes his hat in B.
+
+Hmm, but A's bottom mass being a balloon at the neck: in A it would read as "a big balloon at his chest" — like a person with an inflated balloon body? Odd but whimsical. Alternatively A's bottom mass = A's huge **shoulders/chest** with the balloon being a separate element.
+
+Let me simplify by making the bottom mass = **a big round balloon with a knot at the bottom** = in A, a balloon tied at his neck/chest (the AI bubble inflating under him, or he's the "bubble man"). Actually charming: A = a grinning man whose lower body is a big balloon (bubble) — "the AI bubble" — while B = a bearded man wearing that balloon as a hat. And the event: in A, the bubble is still inflated and he's happy; in B... same bubble. Hmm, then where's the crash? B's other props: the burst.
+
+Hmm, but "same balloon" in both = no contrast. The contrast should be A=taut/hype, B=burst. Since strokes are shared, the burst vs taut difference must come from expressions and from B-only/A-only strokes.
+
+Plan: A = taut balloon (smooth big round shape) = the inflated AI bubble, and the man above is grinning. B = the same big round shape as his hat, but B-only strokes over it: **cracks and a torn/shattered area** (drawn in the rotated group, hidden inside A's dark... wait B's hat = A's bottom mass which in A is the balloon at the neck; B-only crack strokes would be visible in A on the balloon. Hmm. Unless the balloon in A is a hatched mid-tone (not solid) so cracks are subtle in A.
+
+Alternatively A-only strokes = cracks?? A = burst already.
+
+OK: The contrast can be: A = **taut, glossy balloon + big grin** (hype), B = **the same balloon as a hat, but with B-only crack lines + a tired face + a burst**... 
+
+Alternatively: A's grin vs B's frown + A's wide eyes vs B's half-lids + A's arched brows vs B's heavy low brows. That's already 3 expression changes ✓. Plus props: A = headphones (tech) around neck vs B = earflap cap with pom-poms; A = balloon at chest vs B = balloon hat. Hmm, and the event legibility needs: coin? chart? 
+
+Honestly, maybe the balloon IS the event: the AI bubble (DeepSeek popped it). Add to B: the balloon has cracks. Add to A: the balloon is smooth with a sparkle? no lighting.
+
+Let me now also reconsider: maybe make A = "the DeepSeek hypeman with the tiny coin" and B = "the bubble burst". So:
+- A's chest balloon = the AI bubble (taut) — but wait A = DeepSeek, the bubble-buster, not the bubble. Ugh. A = the little guy who pops the bubble; B = the bubble bursting? 
+
+Reverse assignment! Make A = the bubble (hype, inflated, grinning, everything rosy — the AI bubble at its peak) and B = the popped bubble (burst, sagging, tired face, the cap now a torn balloon). Event: the AI bubble bursting (DeepSeek, Jan 2025, Nvidia −$593B). A = the peak of the AI bubble/hype; B = the morning after, the burst balloon. But then A's face = the hype character (a grinning CEO?) and B = a weary old man.
+
+Hmm, but the prompt wants A and B to be two characters of one event — "the moment of triumph ↔ the moment of consequence". If A = hype peak and B = burst, that works for DeepSeek: A = "Nvidia/AI bubble at its peak", B = "after DeepSeek". Or A = DeepSeek's triumph and B = the bubble's burst. 
+
+Given the shared-strokes mechanic, the props: A's big round mass at the bottom (a taut balloon) = in B it's the head-top balloon hat, which B-only crack lines make burst. In A, the cracks would be visible on the balloon → A = already cracked = bad.
+
+Alternative: put the burst/shatter in A's HAIR region (page 130-420) as B-only strokes: In B, that region = B's beard area (580-870) → burst marks on B's beard? Hmm no: B-only strokes in a rotated group drawn at B-frame coordinates; they appear at page 1000−y_B. For them to be hidden in A, place them in A's dark hair mass (page 130-420) → B-frame 580-870 (B's beard/chin). So B-only strokes there = B's beard detail ✓ (e.g., a burst pattern? no, beard detail like a stray whisker, a torn patch...). Hmm, "burst" could be represented in B as the *beard* being a jagged burst of hair strands (like the bubble bursting into strands). That's subtle.
+
+New approach to legibility: make the EVENT about something with an unmistakable object. Let me finally consider: **DeepSeek's app topping the App Store + Nvidia crash**. Object: a **phone** (A holds a phone? hands are hard) or a **graph**.
+
+**Decision**: Use these shared objects:
+1. A **big balloon** (the AI bubble) — A: at his chest/chin area? 
+2. A **coin** — A: on his nose? 
+3. A **spiky ascending hair** (rising chart) — B: spiky descending chart (falling) as beard.
+
+And expressions carry the rest.
+
+Actually here's a cleaner arrangement for the balloon: put the balloon as A's **hat** (top mass, page 200-320): a big round balloon with a knot at the bottom (page 330) and a string curving down (330-420) → in B: the balloon sits at frame 680-800 = B's chin/beard area, knot pointing up at 670... wait rotation: A's balloon occupies 200-320 → B frame 680-800; A's knot at bottom (330) → B frame 670 (above the balloon) → the knot sticks UP ✓ (a balloon tied at the bottom has the knot below; rotated it's above ✓ consistent). And in B it's a balloon under the chin?? B's balloon at 680-800 is below B's eyes (500) = in the beard/jaw area → B has a balloon instead of a beard/chin? That reads as a balloon beard. Hmm.
+
+And A's collar mass (700-900) → B's hat (100-300) = B's hat = A's collar shape. So B's hat = the collar, and A's balloon hat = B's "beard balloon". Two balloons? no, one balloon and one collar.
+
+Let me choose: **A's bottom mass (700-900) = a big round balloon** (the AI bubble), with a knot at the bottom (880-900). Then in B it's the head-top: B's hat = a balloon hat with the knot sticking up at 100-120 ✓✓ (balloon hat!). And A = a grinning man with a big balloon as his body/belly? In A, that reads as "a man whose lower half is a balloon" — whimsical ✓ (like a hot-air balloon body). Hmm, or make A's balloon = his enormous **beard**? no.
+
+Alternatively **A's bottom mass = A's huge chin/beard/jowls** → B's hat = a rounded cap (fine, a hat made of a beard? no, in B it just needs to read as a hat: a rounded dome shape ✓ works if the outline is cap-like).
+
+Let me now just decide final geometry and accept:
+
+FINAL:
+- A's head outline: a big rounded head, cheeks plump, x 300-700, top of skull 420, chin 790.
+- A's hair: tall spiky crest from 130 to 420, spanning x 330-670 with a jagged ascending top (chart-like spikes) — dark mass with hatch.
+- A's face: big grin (660-700), bulbous nose (600-660) with a **coin**? , wide eyes (490-515) with heavy upper lids? , arched brows (440-460), under-eye lines (540-555) that become B's brows.
+- A's collar: big flared scarf shape from shoulders 700 (x 250-750) tapering to a rounded bottom at 880, with a knot/ribbon at 860-900? plus headphones draped.
+
+Hmm, the scarf tapering to a point at 880 gives B a pointed hat ✓ (I like pointed). And the headphones at the sides.
+
+But hold on: B's hat (100-300) from A's scarf (700-900): B's hat bottom edge (300) = A's scarf top (700) = at the shoulders. B's hat is thus a pointed cap whose base sits at B's forehead (300) — good, that's a tall pointed cap (like a wizard/gnome cap) ✓✓. And B's forehead 300-450 shows A's nose/grin shapes. OK.
+
+- A's "hair" (130-420) → B's beard (580-870): a big spiky beard ✓.
+- B-only strokes (rotated group): to be hidden in A, place them in page 130-420 (A's dark hair) → they land in B's beard region 580-870: e.g., B's beard details, B's chin, a **burst/crack** shape? In B, a burst/crack on the beard doesn't say "crash". Alternatively put B-only strokes at page 700-900 (A's scarf, if it's mid-tone hatched) → B's hat region: e.g., a **crack** across B's hat + a **burst/shattered piece** flying off + B's hat band details ✓. In A, those appear on the scarf: crack on the scarf = looks like a patterned scarf. Acceptable-ish. Hmm, but the requirement "B stays hidden upright" — a crack on A's scarf might make A read as "cracked scarf" = fine, even good (hinting).
+
+Let me make the scarf's shape itself carry the meaning: A's scarf = a smooth tapered cloak = B's tall pointed hat. Add to B's hat a **torn/shattered hem**? 
+
+Hmm, alternatively put the burst balloon in B's beard region?? 
+
+You know what — here's a cleaner idea for legibility: **the burst bubble** is A's HAIR?? No.
+
+Alternative legibility approach: use the **spiky chart** strongly. A's hair = ascending zigzag spikes (like a rising market chart forming a mohawk). B's beard = the same spikes now reading as a falling chart (because rotated 180°, the ascending zigzag becomes descending ✓). To strengthen: in A, at the base of the hair, add small A-only strokes = a tiny rising tick marks? no.
+
+And add a **cracked balloon** as B-only in A's scarf area (700-900) → in B, a cracked balloon shape overlapping the pointed hat, plus in A it's a subtle shape in the scarf. To hide it in A, make the scarf SOLID dark and the B-only balloon drawn as a WHITE shape (fill=paper) with ink outline → in A, a white balloon silhouette inside the dark scarf = visible as a light shape on the scarf (hmm, noticeable). If instead it's an outline-only white shape, in A it looks like a wrinkle.
+
+OK alternative: make the burst balloon an A-visible element that means something in A too! Like: A's scarf = a **balloon with a crack** = "the bubble is already cracking"?? Then A = the bubble cracking = not triumph.
+
+Let me flip the whole assignment: **A = the aftermath (burst), B = the triumph**. Nah, A should be the fun one? Either is fine as long as A reads clearly.
+
+Hmm, time. Let me settle with this legibility scheme, which I think works:
+
+**A = "the hype at its peak"**: a big grinning, wide-eyed face with a tall spiky crest (rising chart), a **taut balloon** at his chest (the AI bubble, smooth, round, tied at the bottom), headphones around his neck (the AI/tech accessory), a **small coin** perched on the balloon's knot?? 
+
+**B = "the morning after"**: a heavy-lidded, frowning, bearded face wearing a balloon hat?? — no, B's hat = A's scarf; if A's scarf is the balloon then B's hat is the balloon. Two balloons (scarf balloon + chest balloon)? Only one bottom mass allowed really (A's collar region). So A's chest balloon = B's hat balloon, and A's scarf would be... 
+
+Let's allocate A's bottom region: it can hold BOTH a scarf and a balloon? The bottom mass 700-900 in A becomes B's hat 100-300. If A's bottom shows a balloon (round, big) with a scarf around it, in B that's a round hat with scarf = a turban! ✓ A turban hat in B! Hmm, B = bearded man with a turban? A turban reads as exotic (Middle Eastern) — for a market/CEO character, maybe okay but let's avoid.
+
+Simpler: A's bottom mass = a **big round balloon** with a string/knot at the bottom. A = a grinning man with a balloon body (like a party balloon) — hmm, weird.
+
+Alternatively A's bottom = **A's huge shoulders in a suit** (a big wide jacket/coat shape, dark) → B = a broad-shouldered shape reading as a hat? A jacket silhouette doesn't read as a hat.
+
+You know, in the Scotsman & Englishman example, the collar became a cap because it was a plaid shape that reads cap-like. A rounded flared shape with a band can read as a cap ✓. Let's do: A's bottom mass = a **cape/collar with a rolled band** shape: wide at shoulders (700), curving down to a rounded bottom (880), with the two headphone ear cups visible at the sides (like fur earmuffs hanging). In B: a rounded cap (like a fur-trimmed cap) with two pom-poms ✓.
+
+And the balloon: put it as the CENTRAL PROP in the top region? A's hair region = B's beard. If A's crest is actually a **balloon on a string**? Hmm: A's top mass = a big round balloon with a knot at the bottom and a string trailing to the right → in B: a round mass at B's beard area with a knot at the top and a string = B's beard = a balloon?! no.
+
+OK, alternative: put the balloon in B-only inside A's hair region (page 130-420) → in B it lands in B's beard/chin region (580-870). If in B it's a **burst balloon** at the chin/beard, it looks like a beard made of a burst balloon. Hmm, actually! B = "the bubble burst" and B's beard IS the shattered remains of the bubble. So in A, that region is A's hair (a mass with spikes) which contains (hidden in the dark) the burst-bubble outline; in B, the beard region shows... but A's hair spikes would be visible in B as a spiky beard, contradicting.
+
+ARGH. The A-hair ↔ B-beard mapping forces A's hair silhouette to be B's beard silhouette. If A's hair is spiky, B's beard is spiky.
+
+Resolution: make B's burst-bubble a **separate shape overlapping B's face**, drawn as B-only strokes, placed in the rotated group at B-frame coords where in A they'd land inside A's hair mass (dark) → hidden ✓. B-frame 600-700 = A page 300-400 = A's hair ✓. So B-frame 600-700 region = B's beard area; a burst balloon drawn there in B = overlapping B's beard ✓ fine — B's beard with a burst balloon shape in front? It'd read as a balloon-beard.
+
+Alternatively place the burst balloon in B-frame 150-300 (B's hat) → A page 700-850 (A's collar) — visible in A unless hidden in a dark collar. If A's collar is dark solid, a B-only white-filled balloon outline inside it shows as a light shape on the collar. If the collar is solid dark, a white balloon shape would be VERY visible in A (like a logo on the shirt). Hmm. But is that bad? In A it could read as "a balloon pattern on his shirt" — actually fine, even charming. But then A = "the man wearing a shirt with a balloon print"? Ambiguous but harmless.
+
+Alternatively, keep the burst bubble as an A-visible element in the collar area and make it meaningful in A too: e.g., A's collar is a big balloon shape with a crack → in A the crack = "the bubble is cracking" hmm.
+
+Let me reduce ambition: **skip the burst bubble.** Event legibility via:
+(a) The **coin** (cheap AI, $5.6M) — visible in A, becomes B's hat ornament.
+(b) The **rising/falling zigzag** (the market) — A's hair silhouette ascends; B's beard descends ✓ and I can add explicit zigzag "chart" strokes in both: e.g., in A, a zigzag stroke across the hair (like a lightning strand) → in B, the same stroke lies in the beard area as a zigzag = the falling chart ✓ (a zigzag inside the beard, readable as a jagged line). Both readings plausible ✓.
+(c) The **headphones** (tech) ✓.
+(d) Expressions: A = ecstatic hype (the announcement), B = the morning-after (the crash).
+
+Plus maybe a **torn/crumpled** shape for B: B-only strokes in the rotated group placed so that in A they land in A's hair (dark) → hidden ✓ → e.g., in B-frame 700-800 (=A page 200-300, A's hair) draw B's cracked/broken bits. Or B-frame 300-450 (=A page 550-700 = A's nose/mouth!) → visible in A ✗. So B-only strokes must live in A page 130-420 (hair) or 700-900 (collar) to be hidden.
+
+Good plan: put B's extra features (a weary lower lid, a frown detail, chin dimple, cheek folds) in A's hair region (dark) → hidden in A ✓, visible in B as beard/chin detail. And B's hat details (band, crack across the hat) in A's collar region (if the collar is solid dark, B-only strokes there would be visible as texture on the collar — acceptable; or make the collar solid dark and draw the B-only hat details as dark-on-dark? no).
+
+Simplify: keep B-only strokes minimal & inside the hair mass. E.g.:
+- B's eye-lid line (B-frame 476, i.e., page 476 in rotated group) → in A appears at page 524 (below the eye) = A's lower lid ✓ visible but harmless (it reads as A's lower lid line — but A wants wide-open eyes with a lower lid ✓ actually good!). So the "B half-lid" stroke in A = A's lower lid = ✓ perfect, no hiding needed.
+- B's nostril/mouth details: B-frame 650/690 → A page 350/310 = A's hair region ✓ hidden if hair is dark.
+- B's chin crease: B-frame 790 → A page 210 = A's hair ✓ hidden.
+- B's cheek folds: B-frame 560 → A page 440 = A's forehead/brow region — visible in A as forehead lines (fine, wrinkles) — ok but might clutter.
+
+Great, the mechanism is workable. Now the hair mass: if A's hair is solid dark, then B's beard is solid dark and B's face features (nose at 650, mouth at 680) come from A's hair region at page 320-350 → inside the dark hair → invisible in B ✗✗. PROBLEM again!
+
+So B's nose and mouth must be visible against B's face. In B, B's face region = 300-580 (forehead to under-eye). B's nose (650) and mouth (680) are BELOW the eyes (500) — in B-frame, below the eyes = the beard region (580-870 = A's hair). So B's nose and mouth are inside B's beard! That means B's beard must NOT be a solid mass there; instead B's beard must be an OUTLINE (like a big beard shape drawn around the face, with the mouth area inside the beard outline drawn in white/paper with hatching) — classic: a beard is drawn as a big shape with the mouth region left as a pale "mouth opening" (like a moustache parted around the lips). So A's hair must be drawn as a shape whose lower-center region (page 320-350) is open/white.
+
+Alternatively, invert: A's hair = an open curly fringe with strands, not a mass. Like a big bouffant drawn with white gaps? Hmm.
+
+Solution: Make A's hair a **spiky crest** (like a punk mohawk) — narrow, so it doesn't cover the whole top; but it still covers the top region 130-420 with spikes; B's beard would be a spiky beard (narrow) around B's chin ✓ and B's mouth (680) would be in the open area? A mohawk crest centered at x 430-570 (narrow) → in B, B's beard is a narrow pointed beard under the chin, and B's mouth (680) at x 500 would be inside it. Hmm.
+
+Better: A's hair = two big SIDE masses (like huge sideburns/mane) plus a top fringe, leaving the center-front open? At page 320-350 the center must be open so B's nose/mouth show. But B's nose (650→page 350) and mouth (680→page 320) are at the CENTER x=500. So in A, the center at page 320-350 must be white/open (not hair). But A's hairline/fringe is right there. Unless A's fringe is a thin band with an open gap in the middle? Like a widow's peak / a parted fringe: hair parted in the middle, so the center at 320-350 shows forehead ✓ and the hair mass is at the sides (x 330-450 and 550-670) plus above (page 260-300). Hmm, then in B, the beard would be two side masses flanking the mouth = like a big moustache/side whiskers ✓ that's actually fine! A big bushy moustache + chin beard? But the chin beard would come from A's page 200 region (B's chin) = A's hair top = a mass at the top of A's head (the crest) ✓ (B's chin beard from A's crest ✓).
+
+So A's hair = a crest on top (page 130-280, dark, spiky) + side masses (page 280-420, x 320-450 & 550-680) with the center (450-560) open showing the forehead and a curl at 340-375 (which is B's nose ✓ — wait the curl at page 350 is center ✓ in A it's a lock of hair hanging in the middle of the forehead ✓ and in B it's the nose ✓).
+
+But B's mouth at page 320 center: in A that's forehead skin (open) — so A would have a drawn curve on the forehead at 320 = a wrinkle line? It'd read as a forehead crease; in B it's the mouth ✓. Acceptable: A has a faint forehead line? It'd look odd as a lone arc on the forehead. Alternatively make A's fringe a thin band from x 380-620 at page 300-335 (a fringe covering the forehead) — then in B the mouth arc (page 320) is inside the fringe (dark) → invisible in B ✗.
+
+Compromise: make the fringe band LIGHT (hatched, not solid) so the mouth arc reads through in B ✓ and in A the arc = a fringe highlight/parting line ✓ acceptable.
+
+Hmm, actually a fringe band drawn with hatching and the mouth-arc as a strong ink line inside it: in B, the mouth line would be a strong dark line against a hatched fringe → but the fringe region in B is the beard area... wait no: A's fringe (page 300-335) → B frame 665-700 = B's mouth region ✓. So in B, the "fringe" (hatched band) = the area around B's mouth = a hatched moustache area ✓✓ and the strong arc = B's mouth ✓✓. 
+
+So: A = a face with a **hatched fringe/bangs** across the forehead, and in B that hatched band becomes the **moustache zone around the mouth**. That's exactly how moustaches work ✓✓. 
+
+And B's nose (page 350) = A's curl/hair below the fringe → in A, a small curl at the center of the forehead (page 350) hmm, that's right where A's brow is (440)? no, 350 is above the brow (440) ✓ fine: a lock of hair hanging down to the forehead center. In B, that lock = a round nose ✓.
+
+And A's own nose (600-660) → B frame 340-400 = B's forehead → a nose shape on B's forehead. To reduce weirdness: A's nose could be smaller, and the shape at B-frame 340-400 read as a strong brow ridge / forehead furrow. Or make A's nose LARGE (caricature) and embrace it: B has a big round forehead bulge — actually many Whistler reversible faces have the nose become a brow/forehead bump ✓. Let's make A's nose a big round shape with a dark underside shadow → in B: a round bump with an arched line above B's brows ✓.
+
+Alright! And A's grin (660-710) → B frame 290-340 = B's forehead, an arched line (from the grin curve) = a forehead wrinkle/arch ✓.
+
+So B's face: hat (100-300) = A's collar; forehead (300-450) with a round bump (A's nose) and an arch (A's grin); heavy low brows (452) from A's under-eye strokes; eyes (500) with B-only heavy upper lids (drawn in A as lower-lid lines at 524); nose (650) = A's curl; moustache zone (665-700) = A's fringe hatch; mouth (680) = the arc in A's fringe; chin (800) = A's crest bottom edge; beard = A's hair sides.
+
+Now A's chin (790) and jaw: A's jaw outline → B's hat brim? A's chin at 790 → B frame 210 = B's hat crown ✓ (the hat's top curve = A's chin curve) so B's pointed hat top comes from A's chin ✓. But A's chin is at the bottom of the face and the collar starts at 700 — conflict: A's chin (790) is inside the collar region (700-900). Hmm: A's face chin at 790 and the collar/cape starts at 700 → the collar overlaps the jaw. Let's move: A's chin at 760, and the collar/cape from 780-900 (a short cape) — but then B's hat = 100-220 (short) → B's hat small. Hmm.
+
+Alternatively A's collar region = 800-900 only (a small collar with headphones) → B's hat = 100-200 (small hat). Hmm, but then A's collar is tiny.
+
+Let's reconsider: A's face: crown 420 (below the hair), eyes 500, nose 640, mouth 685, chin 770. Then A's collar (a wide cape/scarf) from 790-900. In B: A's 790-900 → B frame 100-210 = B's hat (a short round cap). And A's chin (770) → B frame 230 = just below the hat = B's forehead top ✓ good.
+
+But A's hair mass (130-420) → B's beard (580-870) ✓ (B's chin at 800 ✓ inside beard ✓).
+
+So B's hat is a compact round cap (from A's collar) topped by... the pom-poms = A's headphone ear cups at page ~830 → B frame 170 ✓ top of the cap ✓.
+
+And the event props: 
+- **Coin**: place at A's hair crest tip (page 140) → B's beard tip (860). Or at the collar bottom (page 880) → B's hat top (120). Let's put the coin at the collar bottom (880, x 500) = A's collar has a coin medallion at its bottom center?? If A's collar is a scarf hanging down with a coin at the tip ✓ (like a medallion on a cord). Then B's hat has a coin on top ✓ (like a cap badge/coin). Nice and visible in both ✓.
+
+Hmm, but I also want A's "cheap" reading. Alternatively put the coin on A's nose tip (640): very visible in A ✓ "a coin balanced on the nose" = the $5.6M ✓✓ and in B it appears at frame 360 = B's forehead, next to the nose-bump. Slightly odd but it could read as B's forehead ornament (like a coin stuck to the brow). Hmm, might look like a wart. 
+
+Decision: coin at A's collar tip (880) AND a smaller coin? no, one coin. I'll place the coin at the hair crest tip (page 135, x 500) — in A it's a coin perched on top of the spiky crest = "the tiny budget" ✓ (visible, at the very top, like a hat ornament). In B it's a coin at the tip of the beard = a pendant ✓. Hmm, but the crest is spiky (chart-like); a coin on top of it might read as a pompom ✓ fine (a coin as a pompom!).
+
+And the second event marker: the **spiky crest = the rising/falling chart** ✓ plus a **lightning-bolt zigzag stroke** in the hair → in B, a zigzag in the beard = the falling chart ✓. 
+
+And a **burst/shattered** element for B: B-only strokes hidden in A's hair? The zigzag stroke serves.
+
+Let me also add an obvious B-side marker: B's face weary + B's hat crushed. Maybe B-only: a crack across B's hat (B-frame ~180) → in A appears at page 820 = A's collar → visible on A's collar as a line (could read as a fold in the scarf ✓ harmless!). So: draw in the rotated group a jagged crack/break shape at B-frame 150-250 that in A lands on the collar (820-850) as a jagged fold line — acceptable ✓. Actually a zigzag fold in a scarf is natural ✓✓. So the same zigzag reads: in A = a fold/crease in the scarf; in B = a **crack across the hat** ✓.
+
+I like it. Let's also consider: maybe I should make A's collar (B's hat) look like a hat in B: a round cap with a band. A's collar shape: wide at the top (shoulders, page 790, x 250-750) narrowing to a rounded bottom (page 900). Rotated: B's hat from 100 to 210: narrow at top (100 = A's 900) wide at bottom (210 = A's 790) ✓ = a bell/conical cap ✓ good. Plus the headphone ear cups at A's page 830, x 320/680 → B's frame 170, x 680/320 = two lumps at the cap's upper sides ✓ (pom-poms) ✓.
+
+Hmm wait, in A the headphone ear cups at x=320 and 680 at page 830 would be at the outer edges of the collar (collar spans 250-750 at 790, narrower below) — at 830 the collar is maybe x 300-700, so the cups at 320/680 sit on the collar ✓ visible as dark round shapes on the scarf = "headphones resting on the shoulders" ✓ recognizable? With a headband arc connecting them across the collar (drawn as a curve at page 800-820 arcing up) → in B: the band arcs across the cap at frame 180-200 = the cap's brim band ✓✓ and the cups become the pom-poms ✓. So in A: headphones around the neck ✓ tech ✓ unmistakable. In B: a cap with a band and two pom-poms ✓ human ✓.
+
+But hmm: in A, the headband arc at page 800-820 (across the shoulders) — reads as headphones hanging ✓.
+
+Also in A, should there be a hat? A's hair crest = the top mass (spiky). OK.
+
+Now A's face details:
+- Head outline: from the hair mass sides (x 330/670) down to a wide jaw. A's face: plump, cheeks bulging at x 300/700 around page 520-620, jaw to chin at 770, x 360-640.
+- Big ears? A's ears at eye level (500) x 300/700 → in B also ears at eye level (500) ✓ they stay ears in both readings ✓ (nice, allowed: ears stay). Ears could be jug ears (whistler-ish) — in B they'd be jug ears too. OK, keep modest ears.
+- Eyes at 500: big open eyes with heavy lids. Eye centers x 416/584. A: wide-open, round, small pupils → but wait, in B the eyes are the same: wide-open too, unless the B-only upper-lid stroke cuts them. B-only stroke at B-frame 476 (upper lid) → in A appears at page 524 = A's lower lid ✓. So in B the eye is cut by a heavy upper lid = half-lidded ✓ and in A we see a lower lid line under the eye (A's eye reads wide-open with a lower lid crease ✓ fine).
+- Brows: A's brows at page 450 = arched high (delighted). In B these appear at frame 548 = B's under-eye bags ✓ (a curved line under B's eye = a pouch ✓ good).
+- A's under-eye strokes at page 545 = B's brows (452): make them heavy and slightly slanting down-outward → B's angry/weary brows. In A these appear as under-eye lines at 545 = slight pouches ✓ (A could read as a plump-cheeked face, fine). To be safe make them gentle curves (pouches) rather than angry slants: a pouch curve ∪ under the eye. In B, a ∪ under... as a brow at 452: a ∪-shaped brow = a droopy/sad brow ✓ (a sad-worried brow) ✓ good for "morning after, deflated". 
+
+- Nose: big bulbous, page 590-660, x 450-560, with a strong contour and dark nostrils.
+- Mouth: big wide grin at page 665-705, from x 420 to 600, an upturned curve with corner ticks; plus a lower lip line at 715.
+- Chin: 760-780.
+- Cheeks: hatch marks.
+- Under-chin: a double chin line.
+
+Now check A's mouth (665-705) → B's forehead arch at 295-335 ✓. And A's lower lip (715) → B frame 285.
+
+B's face features from A's hair region: 
+- B's nose at B-frame 650 ← A page 350: A's forehead center at 350: the fringe bottom / a curl. So I need at A page ~350 a rounded bump shape = in B a round nose ✓. In A it must read as something natural: a **curl of hair** at the center of the forehead, hanging down. Draw a rounded curl: a blob at (500, 350) r~30 with a curl line. ✓
+- B's mouth at B-frame 680 ← A page 320: a strong arc within the fringe zone. In A, the fringe band spans page 290-340 (hatched) with a strong arc at 320 that reads as... the fringe's lower shadow edge? Hmm, an arc at 320 in a fringe band reads like a hair-part line ✓.
+- B's chin at B-frame 800 ← A page 200: A's crest bottom edge / a curve there = B's chin line ✓ (in A it's the crest's mass edge — fine).
+- B's moustache zone (665-700) ← A's fringe (300-335) hatched ✓.
+
+So the fringe band (A page 290-340) = B's moustache region ✓✓ and the arc at 320 = B's mouth line, and the curl at 350 = B's nose. But wait: B's nose (650) is ABOVE B's mouth (680) → in A, the curl (350) is BELOW the fringe band (320) ✓ so in A the curl hangs below the fringe ✓ (a lock of hair hanging over the forehead) ✓.
+
+So in A the forehead has: a fringe band (hatched) and a curl hanging from it at the center ✓ — a bit odd but fine, it's a stylized caricature (a "pageboy" with a curl).
+
+Now, one more check: in A, does the fringe band (page 290-340) conflict with A's hair mass sides? A's hair: crest top 130-280 (spiky, dark) + fringe band 290-340 (hatched, spanning x 340-660) + side masses 340-420 (x 320-440, 560-680 dark) framing the face. And the curl at 350 center.
+
+In B: crest (130-280) → beard (720-870); fringe band (290-340) → moustache (660-710); side masses (340-420) → beard sides (580-660) ✓; curl (350) → nose (650) ✓. So B has a beard covering 580-870 with a pale moustache band at 660-710 containing the mouth line, and the nose at 650 poking above the moustache ✓✓ — this works like a real moustache-beard!
+
+But careful: B's nose (the curl at A 350) must be visible against B's face — at B-frame 650, that's just above the moustache band (660) and in the beard region (580-870) — the area 580-660 in B is the beard sides (dark) but the center (x 470-530) at 650 is open (since A's curl region is open at center) ✓ so B's nose = a pale round bump among the beard ✓ works (nose between moustache and beard).
+
+Great, the geometry is coherent. Now A's face is in page 340-790, centered at x 500, width 300-700. Face height 450 ✓ (a bit short relative to the canon but the hair adds 130-340 so the head spans 130-790 = 660 ✓).
+
+Hmm, but the canon wants eyes at 500 ✓, brow 452 ✓ (A's brows at 450), nose 640 ✓, mouth 685 ✓, chin 770 ✓.
+
+But wait: A's brows at 450 sit just below the fringe band (290-340) and above the eyes (500) — fine. But A's fringe at 290-340 is far above the brows (450) — a big forehead gap (340-450 = 110px). That's fine (high forehead) or I can lower the fringe. Actually the fringe band's lower edge at 340 = the hairline ✓, brow at 450 → forehead 110px ✓ ok.
+
+Hmm, one issue: A's curl hanging at 350 sits in the middle of the forehead between the hairline and brows — a curl that high looks odd; but it's the price of the reversible mechanism. I'll draw it as a small wisp/curl ✓ (like a cowlick).
+
+Now B-only strokes (rotated group), and A-only strokes. Let's list:
+- B-only: heavy upper-lid stroke over each eye at B-frame ~472 (a thick line cutting the top of the eye, slightly angled down) → in A appears at page 528 as a lower-lid line ✓ (I'll draw A's lower lid there anyway, shared!). Actually better: draw this as a shared stroke (not in a group) at page 528, where A reads it as the lower lid and B as the upper lid ✓✓ shared! But careful: at page 528, in A it's the lower lid of the eye (eye 485-515) ✓; in B (frame 472) it's the upper lid ✓. Perfect shared stroke ✓.
+- B-only: the "burst/crack" zigzag on B's hat (B-frame ~180) → A page 820 = on A's collar ✓ acceptable (a fold). Hmm, could be visible in A as a jagged line on the scarf — I'd rather hide it: place the crack at B-frame 160-210 where in A (page 790-840) it's inside the collar's dark fill → but the crack drawn as ink on a dark fill is invisible ✓ if the collar is solid dark! But then in B, the hat is also that dark mass (rotated) and the crack would be invisible too ✗. Unless the B-only crack is drawn as a WHITE (paper-colored) stroke → visible in B against the dark hat ✓ and in A it's white on the dark collar → visible as a light crack on the collar ✗ (visible in A).
+
+So: either the crack is visible in both (as a fold in A) or invisible in both. Let's just draw it as a normal ink stroke: visible in both, reading as a scarf fold in A ✓ and a crack across the hat in B ✓. Acceptable ✓.
+
+- B-only: B's cheek/jowl lines (B-frame ~560 = A page 440 = A's brow zone) → visible in A as forehead lines. Risky (might make A look wrinkled/old). Skip or keep very light.
+- B-only: B's moustache hatching (in the fringe zone) → A's fringe is already hatched ✓ shared.
+- B-only: B's chin dimple, B's beard hair strokes (B-frame 750-850 = A page 150-250 = A's crest) → drawn as B's beard strands; in A they're inside the dark crest → visible as light? If drawn as ink lines on a dark mass → invisible ✓✓ (ink on dark = invisible if the crest is solid black). So B's beard detail strokes placed at B-frame 700-860 → A page 140-300 = the crest (solid dark) → invisible in A ✓✓. But wait, B's beard region 580-870 corresponds to A's 130-420 — parts (A's side masses 340-420) are also dark ✓. But B's beard at frame 580-660 = A's 340-420 = side masses ✓ dark ✓.
+
+So B-only beard strokes are hidden ✓.
+
+Now A-only strokes: things visible in A but meaningless in B: 
+- A's own nose details (nostrils) → in B at frame 340-360 = B's forehead: nostrils on the forehead ✗ ugly. Better make A's nose details minimal: a dark shadow under the nose rather than nostrils ✓ (a shadow arc → in B = a forehead arch ✓ fine).
+- A's grin corners (smile lines at x 420/600, page 690) → in B at frame 310 = B's forehead: two arcs = forehead wrinkles ✓ acceptable.
+- A's cheek hatching → in B at frame ~430-480 = B's brow/eye region → hatching under B's brows = shadow ✓ fine.
+- A's chin/jaw shading → in B at frame ~230 = B's hat crown area → hidden in the hat if the hat is dark ✓ (A's collar is dark → in B the hat is dark, and A's chin shading at page 770 (frame 230) falls on the hat ✓ invisible if ink on dark).
+Hmm, but A's chin at 770 is right at the collar's top edge — careful with layering.
+
+OK. Let me also decide the palette: paper #f4ecd8 (warm off-white), ink #1b1a19, accent1 = a gold/amber #c8892f (the coin, maybe A's tie), accent2 = a red #b03a2e? Use sparingly: the coin gold ✓ and maybe a red for A's grin? A red mouth/lips? Whistler used watercolor accents (red cheeks). Let's do: ink, paper, accent gold (coin), accent red (A's cheek blush / the "hype" red). Keep to 4 colors ✓.
+
+Actually, for the event, maybe the accent should be green/red for the chart? A rising chart = green, falling = red? That would be lovely: A's zigzag = green (rising) and in B the same zigzag = red? Can't change color by rotation (same strokes). Hmm, unless I use two overlapping strokes... no. Keep one color.
+
+Hmm, what if the chart zigzag is drawn in RED (crash red) in both readings? In A it'd be a red streak in the hair (odd). Meh.
+
+Let's simplify palette: paper, ink, gold accent (coin), red accent (A's lips/blush + B's? same strokes).
+
+Now, hmm, let me reconsider the event legibility once more. What will the viewer see?
+A: a grinning, wide-eyed man with a spiky crest (like a punk mohawk), headphones around his neck, a big flared scarf/collar, a gold coin on top of his crest.
+B: a weary, half-lidded, frowning bearded man with a pointed cap with pom-poms, and a zigzag in his beard.
+
+Event link: A = "the hype" with headphones (AI lab), B = "the crash". The zigzag = the chart. Coin = cheap. I'm not thrilled but it's plausible. The viewer knowing DeepSeek would see "the bubble burst" maybe.
+
+Could I strengthen with the burst? Add to B: a **cracked/ruptured balloon** shape in the ROTATED group, drawn in B-frame at ~600-700 (B's beard area, would be A page 300-400 = A's fringe/side masses = hatched/dark → visible in A ✗). Hmm. Or B-frame 150-300 (B's hat) → A page 700-850 = A's collar. If the collar is DARK solid, then a white-filled balloon with an ink outline in A = a light balloon shape on the collar = visible. But is that bad? A collar with a balloon motif — "the AI bubble" printed on his scarf? Actually that's kind of charming and even reinforces. But it might make A read as "wearing a balloon"?
+
+Alternatively: put the burst balloon shape as a B-only stroke in A's HAIR region (A page 130-300, the crest): a white burst shape inside the dark crest → in A it's a light burst shape inside the black crest = looks like a highlight/flame shape in the hair (hmm, visible). In B it's at frame 700-870 = B's beard bottom = a burst shape at the beard tip ✓ (like the beard is a burst?).
+
+I think the clearest: **A's crest isn't hair but a balloon?** no.
+
+Let me consider making the balloon the CENTRAL prop and A's "hair" be hair:
+- Central prop = a big balloon (the AI bubble) whose outline is a big round shape at the top of A's head? Then B's beard = that balloon. Hmm.
+
+Alternatively the central prop = **a chip/GPU**: a square chip with pins, as A's hair? no.
+
+Alternatively the central prop = **a rocket** hmm.
+
+Alternatively switch event to something where the prop is a **cracked screen**: "the blue screen of death" (CrowdStrike, July 2024). A = the confident IT guy? Meh.
+
+Alternatively event = **the AI model that took over the phone (Apple's Siri redesign delay, March 2025)**?
+
+Alternatively event = **"the first AI-generated movie/short winning awards + slop backlash (2025)"**: props = a **clapperboard** and a **film reel**. A = a proud filmmaker with a clapperboard; B = the same clapperboard = a beard?? Hmm. The prop could be a **film strip**: a strip of frames = a ribbon. A's collar = a film strip (with sprocket holes) → B's hat = a film-strip hat?? Silly.
+
+Alternatively event = **OpenAI's "Sora 2" / AI slop**: A = a face whose hat is a big **film reel** (a disc with spokes) → B's beard = a reel. Meh.
+
+DeepSeek is fine. Let me add one more recognizable DeepSeek cue: the **GPU chip** — draw a small chip shape (a square with legs) inside A's crest region as part of the spiky crest? Actually the crest spikes could be chip-like? no.
+
+Hmm, what about the **$5.6M vs $600B** visual: A = tiny coin (gold) on the crest; B = the same coin on top of the cap. In A, a tiny coin = cheap; in B... the cap coin = also cheap. Not contrasting.
+
+Better contrast for B: B should have the **burst**. Let me add a B-only **cracked burst**: draw in the rotated group a shape at B-frame 250-330 (the area between the hat and forehead) = A page 670-750 = A's upper lip/mouth region!! visible in A ✗.
+
+Alternatively: draw the burst as part of B's hat: B's hat = A's collar (A page 790-900). Put the burst in B-frame 110-200 = A page 800-890 = A's collar bottom = where the coin/pendant is. In A the collar bottom has the pendant coin; in B the hat top has the coin + a burst crack. The crack (B-only, ink stroke) at B-frame 150 → A page 850 → in A it's on the collar near the coin → a jagged line next to the coin = reads as a fold ✓ fine.
+
+So B gets: a jagged crack across the top of its hat, near the coin ✓ = "the bubble cracked". Combined with B's weary face and the falling-chart beard, that's a decent "morning after" face.
+
+Plus: the burst could be shown by B's hat being a **collapsed balloon**: A's collar shape (flared, tapering down) → in B, a bell cap. Hmm, to make B's hat read as a collapsed balloon, the shape should be wider at the top and limp. But A's collar is wide at the shoulders. Rotated: B's hat is wide at its bottom (A's collar top = shoulders) and narrow at the top. A balloon is wide at the top. So B's hat = an inverted balloon = a deflating thing? Eh.
+
+Alternatively A's collar could be a shape that is wide at the bottom (a hanging cape with a wide hem) → in B it's a wide-at-top hat ✓ = a big round hat with a coin on top, slightly tilted = looks like a collapsing balloon? Let's make A's collar a **cape/poncho** hanging down with a broad hem at page 880-900 (x 270-730) and narrower at the shoulders (790, x 320-680). Rotated: B's hat: broad at top (100-120) tapering to the base at 210 (x 320-680) = a **beehive/rocket-shaped hat** ✓ or a **balloon-ish hat**. Hmm, then the coin at A's cape hem center (page 885, x 500) → B's hat top (115, x 500) ✓ = a coin on the hat's crown ✓ (the hat's apex). But if the hat is broad at the top, the coin sits on the broad top ✓ fine.
+
+Hmm, but A's cape broad at the bottom means A's silhouette is a triangle widening downward ✓ (bottom-heavy A) — but A should be top-heavy (tall crest) ✓ both fine.
+
+Wait, but the shoulders: A's body/shoulders should be wide. A's cape from 790 (shoulders, x 300-700) widening to a hem at 890 (x 260-740) ✓ looks like a poncho/cloak ✓.
+
+And in B: a big hat like a **rocket/beehive** from 100 (broad) to 210 (narrow base at the forehead) with the coin on the broad top ✓ = looks like a **bell/balloon hat** ✓. Plus two pom-poms (ear cups) at frame 170 near x 320/680 → in B they're at the hat's lower sides ✓ = earflaps ✓.
+
+OK! Now let's define the hat/poncho shape precisely:
+- A's cape: from (300,800) curve down-left to (265,880), across the hem to (735,880)?? Actually let's define: shoulders at page 800 x 300-700; the cape flares to x 250/750 at 890; hem bottom is a curve dipping to 905 at the center.
+Then B's hat: at frame 95 (page 905) x 250-750 (broad top), down to frame 200 (page 800) x 300-700 (narrow base at the forehead) ✓ a bell shape ✓ with the coin at the top center (page 890 → frame 110) ✓.
+
+But careful: B's hat bottom at frame 200 = B's forehead top ✓ (B's brow at 452, forehead 300-450). Between 200 and 450 B's forehead shows A's shapes (nose bump 340-400, grin arch 295-340). Hmm, A's grin at 685 → B frame 315 ✓ (forehead), A's nose at 640 → B frame 360 ✓.
+
+Wait: A's nose is at 600-660 → B frame 340-400. But B's hairline/moustache? B's forehead 200-450 is bare (A's cape region 790-900 covers B 100-210 as the hat; A's face region 340-790 covers B 210-660). So B's forehead = A's lower face ✓ (A's nose→B forehead, A's mouth→B forehead arch). Good.
+
+Hmm, so in B, the forehead contains: a round bump (A's nose) at 340-400, an arch (A's grin) at ~315, plus A's smile-corner lines at 310. That's a busy forehead. Alternatively, reduce A's nose size and make the "bump" read as a strong brow/forehead crease. Let's make A's nose BIG (caricature, per instructions) and accept the forehead bump. Whistler reversibles do have noses become brows.
+
+Hmm, actually maybe better: make A's nose a **strong dark shape**, so in B it becomes a dark shape on the forehead = reads as a heavy brow ridge or a dark tuft of hair ✓ (like a widow's peak / a lock of hair). Let's shape A's nose as a rounded triangle with a dark underside, and in B it reads as a dark brow mass ✓.
+
+OK, let me now also fix A's mouth (grin) and check it doesn't sit inside A's cape (cape starts 790) ✓ 685 is fine.
+
+Now let me write out the actual SVG. I'll keep it manageable: maybe 60-90 elements.
+
+Coordinates summary (page, A upright):
+
+Palette:
+- paper #f3ead7
+- ink #17161a (near black)
+- accent gold #d4a12a (coin)
+- accent red #a8322a (lips? cheeks?) — maybe use red for A's lips and a red "alert" in B? Same strokes → red lips appear in B's forehead?? A's lips at 685 → B frame 315 = B's forehead → a red mouth on B's forehead ✗✗. So no red lips. Use red sparingly: maybe the coin is gold and A's cheeks have a red blush → in B, A's cheeks (page 560) → B frame 440 = B's brow area → red blush under B's brows = an angry red flush ✓ actually charming! Or skip red entirely and use only gold. Let's use gold for the coin and a warm red for A's cheek blush (which becomes B's brow flush — a red-faced angry brow ✓ funny but might read as "B is angry" which is fine/funny). Hmm, risk: A gets a red cheek that in B becomes red under the brows = angry. It's fine — B is annoyed/deflated. Actually let's use a *subtle* red. Or skip. I'll include a light red wash on A's cheeks (two small flat shapes at page 560, x 350/650) → in B they land at frame 440 x 350/650 = right at the brow line → red brows = angry brows. That's a nice accident? Could look like a red eye shadow. I'll make them small and low-saturation.
+
+Hmm, actually risk of confusion. Let's just do paper + ink + gold. Three colors, disciplined. Maybe add the red only as tiny accents on the coin? no. Keep 3 colors: paper, ink, gold. Safe and elegant. Hmm, but "at most 2 accent colors" - gold = 1 accent ✓.
+
+Now, elements list:
+
+1. Background rect (paper) + thin frame rect (ink stroke, 3px, inset 45).
+
+2. Head/face outline (heavy ink, 11px): 
+Path: start at left temple (330,430) → cheek bulge: (295,520) → (300,600) → jaw (330,700) → chin (420,765) → (500,778) → (580,765) → jaw (670,700) → cheek (705,600) → (700,520) → temple (665,430) → top: forehead arc up to (500,400)? But the hair covers the top. Let's draw the skull top at y=395 (under the hair) so the hair mass sits on it.
+
+Actually the head outline should include the hair? The hair mass is separate (filled). Draw the face outline as an open shape from the left hairline (335,420) around the face to the right hairline (665,420) (the top closed by the hair mass). Use a heavy stroke, wobbly path with extra control points for hand-drawn feel.
+
+3. Hair crest (dark fill, ink stroke 8): a spiky shape from x 340 to 660, top spikes at y 130-200, bottom edge at ~300, overlapping the fringe band. Spikes ascending: the crest's top edge zigzag ascending left→right (rising chart) ✓. But a mohawk-ish crest with the head width 320-680: let's make the crest span x 330-670 with 5-6 spikes of varying height (spikes taller to the right = rising ✓). Bottom of crest at 300.
+
+4. Side hair masses (dark): left (320-440, y 300-430), right (560-680, 300-430) — flanking the fringe band. Plus they continue down as sideburns to 500? Keep to 430.
+
+Wait, but the fringe band (290-340) hatched spanning 340-660 and side masses 300-430: order: crest (130-300) above, then fringe band, then side masses. Let's simplify: one dark hair shape covering the sides and top, with the fringe band as a lighter hatched shape in front? Layering: draw the fringe band (hatched, x 345-655, y 285-345) ON TOP of the dark side masses, and the crest above.
+
+Hmm, careful: the fringe band's strong arc at page 320 must be visible (B's mouth) — draw it as a bold ink stroke over the hatched band ✓.
+
+5. Fringe band: hatched (fine diagonal lines) with a bold lower edge arc? Let's design: shape from (345,300) to (655,300) down to (655,345) curving, with a scalloped lower edge. The bold arc for B's mouth: a curve at y=320 from x 440 to 570, dipping? For B, the mouth at frame 680 should read as a FROWN (corners down, middle up = ∩ shape). So in A (page) it must be ∪ (rotated). So the arc in A at 320 should be ∪: a downward-dipping arc (middle lower). Wait: rotation flips vertically: A's ∪ (dipping, middle low) becomes B's ∩ (middle high) ✓ = a frown? A frown's mouth line: corners LOW, middle HIGH = ∩? Let's define: smile: corners up, middle down = ∪ (like a U). Frown: corners down, middle up = ∩ (like an arch). Yes. So B's frown = ∩ at frame 680 → in A = ∪ at page 320 ✓ so A has a dipping arc in the fringe band ✓ (reads as a hair shadow dip ✓).
+
+So B's mouth = a ∩ arc with the ends lower. Good, and in B it reads as a downturned mouth ✓.
+
+6. Curl at (500, 345): a small rounded blob/curl hanging below the fringe, outlined with a curl line inside ✓ (B's nose).
+
+7. Face features:
+- Brows (A): two arched heavy strokes at page 450-462, x 380-450 and 550-620, arched ∩ (high) = delighted. Tapered (filled crescent shapes for a nicer look).
+- Eyes at 500: almond/oval white with heavy upper lid line; eye shapes: left eye from (390,485) to (455,515)? Eye centers at 416 and 584, width 70, height 40. Include iris (small dark circle) + a bit of white. A's eyes wide open: big white ovals with a dark iris.
+- Shared lower-lid stroke at page 526: a medium stroke under each eye (the lower lid) → in B the upper lid ✓.
+- Under-eye pouch strokes at page 545: gentle ∪ curves (x 375-455, 545-625) = B's brows (droopy) ✓.
+- Nose: big rounded shape: from (460,600) down to a bulb at (500,645) with a contour; plus a dark shadow arc under (page 655) and nostril dots? Nostrils would land in B's forehead at frame ~345 → small dark dots on B's forehead = odd. Use a shadow arc instead of nostril dots ✓ (the arc at 655 → B frame 345 = an arched line above B's brows ✓ fine).
+Hmm, a bulbous nose needs nostrils to read. Alternative: draw the nostrils as short strokes at page 640 (x 470 and 530) → B frame 360 = above the brows (452) → two small dashes on B's forehead — could read as two little marks; acceptable? Might look like odd marks. I could make them the "smile corner" style... Let's instead draw the nose with a strong contour and a heavy dark underside shadow (a filled crescent under the bulb) — that reads as a nose with shadow ✓ and in B it's a dark crescent on the forehead = like a heavy brow/eyebrow pair? Hmm, a crescent on B's forehead above the brows = "furrowed brow" ✓ acceptable.
+- Mouth (grin): page 665-710, a wide upturned arc from (420,700) to (590,700) with the middle dipping to 715? For a grin: ∪ shape: corners up (y 690), middle down (715). Wait, smile = corners up, middle down = the line dips in the middle = ∪ ✓. So draw a wide ∪ from (415,690) to (595,690) dipping to (505,718). Plus a lower lip line (a short arc under, page 728). Plus corner smile lines (small ticks up-outward).
+In B, this smile arc (page ~700) → frame 300 = an arch ∩ = a forehead wrinkle ✓ fine.
+
+Hmm wait, B's forehead region (200-450) will now have: A's nose shape (340-400) + A's nose shadow (345) + A's smile arc (300) + A's smile corner ticks (300) + A's lower lip (272). That's busy but reads as forehead creases ✓.
+
+8. Chin & jaw: chin line at 760-780 (heavy), a double-chin line at 745.
+9. Cape/poncho (dark fill): from shoulders (300,800) flaring to hem (250,890)-(750,890), bottom curve dipping to 905. Plus folds (a few ink lines) — but those folds become B's hat wrinkles ✓ fine.
+Hmm, in A the cape is dark and the coin is at the hem center (page 885) → gold coin circle r=26 at (500,885)? But the cape hem center at 905; coin at 885 inside the cape → in B it's at frame 115 = on the hat's top ✓. Let's put the coin centered at (500,880), r 25, gold fill with ink outline, on top of the cape ✓ (a medallion hanging at the chest ✓).
+In A, a gold medallion on his chest ✓ = "the coin" ✓.
+
+10. Headphones (dark, with ink outline): ear cups at (330,830) and (670,830) — circles r 30 (dark with a lighter inner arc), and a headband: an arc from (330,820) curving up to (500,775) and down to (670,820)? That's above the cape's shoulder line (800) — the band would arc across A's chin/neck ✓ (headphones resting on the neck ✓ but the arc over the neck at 775 would be in front of the chin (770) → overlapping the chin. Let's route the band lower: from (330,825) dipping to (500,860) to (670,825)?? That's a band hanging below = a U shape around the neck ✓ (headphones hanging around the neck: the band goes down under the chin ✓). Then in B, that U becomes an arch ∩ over the cap ✓ = the hat's band/brim curve ✓✓ nice.
+But A's chin at 770 and the band dipping to 860 is below ✓.
+Also a cable: a thin squiggle from the left cup down to the hem (page 900) → in B, a squiggle at frame 100 = a pompom tassel at the hat's top ✓. Maybe include a short cable.
+
+11. Ears: at page 500, x 295 and 705 — small jug ears (a curved C shape). In B they stay ears ✓.
+
+12. B-only strokes (rotated group): 
+   (a) B's cheek folds/jowls: at B-frame 570-600 (below the eyes) → A page 400-430 = A's brow zone → visible in A as forehead lines ✗. Skip.
+   (b) B's beard strands: at B-frame 700-860 → A page 140-300 = crest (dark) → invisible ✓. Draw fine light strokes (ink on dark = invisible; use a lighter tone? use paper-colored strokes? that would be visible in A as light streaks in the crest ✗). Just use ink strokes — invisible against the dark crest ✓ (they'd only show if the crest isn't fully opaque beneath; it is). OK, draw them as ink lines; they add beard texture in B ✓ and in A they're invisible (lost) ✓. But wait: B's beard region 580-870 = A's 130-420; A's fringe band region 285-345 is HATCHED (light) → B's mouth zone (655-715 = A 285-345) would show B-only strokes over the hatched fringe → visible in A as extra marks on the fringe. So keep B-only strokes out of B-frame 640-720 → A page 280-360. Place B-only beard strands at B-frame 730-860 → A page 140-270 ✓ (crest, dark) ✓.
+   (c) B's hat crack (zigzag) at B-frame 130-190 → A page 810-870 = A's cape (dark) → ink on dark = invisible ✓✓ (I earlier worried; but ink strokes on a solid dark fill are invisible ✓). Hmm, but I wanted the crack visible in B: B's hat = the cape (dark) and the crack ink on dark = invisible ✗. So the crack must be drawn in PAPER color (light) to show on the dark hat. But then in A it's a light crack on the dark cape = visible ✗. 
+
+   Alternative: make B's hat NOT dark: i.e., the cape's fill is dark in A... it's the same shape. Hmm. Unless the cape is hatched (mid-tone) rather than solid: then in A it's a hatched cape ✓ and in B a hatched hat ✓ and the crack (ink) is visible on both ✓ (in A, a crack line on a hatched cape = a fold ✓).
+   Let's make the cape hatched (diagonal lines) with a dark outline, rather than solid. Then A's silhouette has a mid-tone cape ✓ and B's hat is hatched ✓. Good, and the headphones (solid dark) sit on it, providing a dark mass ✓.
+   
+   But the ink crack on a hatched hat may be hard to see. Make it bold (7px) ✓.
+
+   (d) B's "burst": let's add a bold zigzag crack across B's hat (crack = the shattering of the bubble) ✓ plus maybe 2-3 short radiating lines near the coin (the coin at the hat's top) = the bubble popping at the coin ✓✓. Radiating lines at B-frame ~90-150 → A page 850-910 = A's cape hem (hatched) → visible in A as radiating lines near the coin at the chest = hmm, in A that reads as "the medallion exploding"? Could be odd but might read as decorative rays around the coin ✓ (a shining coin!). Hmm, "shining rays" might suggest lighting — avoid. Skip radiating lines; keep just the crack.
+
+   Actually, maybe a better B marker: B's **hat is cracked and the coin has flipped/rolled**? Keep it simple: crack ✓.
+
+13. Also A-only? Nothing needed; A's grin etc. suffice.
+
+Also: the "chart" zigzag — where? A's crest spikes ascending = the rising chart ✓ (in A). In B, the crest becomes the beard and the spikes descend ✓ = the falling chart. But is it readable? A's crest spikes: make them sharp and irregular, like a zigzag line with 5-6 points. When rotated, they read as a descending zigzag ✓. Additionally, add an explicit thin zigzag line INSIDE the crest region (like a chart line crossing the hair) → in B, that same zigzag appears in the beard region (580-870) as a jagged line = "the falling chart" ✓ and in A it reads as a jagged hair strand / lightning ✓. Let's add a bold zigzag polyline inside the crest: e.g., points (350,300) (390,255) (430,285) (470,225) (515,265) (555,200) (600,240) (650,190)? That's ascending ✓ and jagged ✓. In B it descends ✓. Nice — this IS the chart, shared ✓✓. And in A it looks like a wild jagged hair crest ✓. 
+
+So A's crest = a mass whose top edge follows this ascending zigzag ✓✓✓. Great: the crest silhouette = the rising chart; in B, the beard silhouette = the falling chart ✓.
+
+Let me define the crest as a filled shape: bottom edge from (330,300) to (670,300) (slightly wavy), top edge = the zigzag ascending from (330,300) up to peaks. Points: (330,300) → (360,250) → (390,285) → (425,225) → (465,270) → (505,205) → (545,255) → (585,190) → (620,240) → (665,175) → (670,300). This is a spiky sawtooth ascending ✓.
+
+In B, this appears as a spiky mass from frame 300 up... let's see: page 175-300 → frame 700-825. So B's beard = a spiky mass spanning frame 700-825 with spikes pointing DOWN in B? Rotating: A's spikes point up; in B they point down ✓ = a jagged, spiky beard ✓ (like a spiky/shaggy beard) and the overall trend descends left→right in B (since A's ascended left→right, in B it descends left→right? Rotation by 180 maps (x,y)→(-x,-y): A's ascending-left-to-right becomes descending-left-to-right in B ✓ = falling chart ✓✓ PERFECT.
+
+But the beard spiking downward from frame 700-825 — B's chin is at 800 ✓ and the beard hangs to 825 with points ✓.
+
+Hmm, but wait: A's crest mass occupies 175-300 = B 700-825, which is B's chin/beard ✓. And B's moustache band (A fringe 285-345 → B 655-715) ✓.
+
+So B's face: hat (100-210), forehead (210-450 with nose bump and arches), brows (452), eyes (500), lower lid = upper lid (526 shared), nose (650 = the curl), moustache (655-715 = the fringe hatch) with the mouth line at 680, beard (700-825 = the crest) ✓✓. 
+
+Wait, conflict: the moustache band (655-715) and the beard (700-825) overlap slightly ✓ fine (moustache merges into beard).
+
+And A's fringe band (285-345) = hatched ✓ (B's moustache = hatched ✓ moustache!). In A, a hatched fringe ✓.
+
+But hold on: in A, the fringe band (285-345) is BELOW the crest (175-300) and above the brow (450) — the forehead. So A = a high forehead with a hatched fringe band? Weird but okay. Hmm, maybe instead of a "fringe", make A's hair = the crest (spiky) + the band = a **headband/hair band** (like a band of hair or a sweatband)? A hatched band across the forehead = a **headband** ✓ very natural (like a sports headband)! And in B it becomes the moustache ✓. Hmm, a headband becoming a moustache — fine.
+
+Or make A's band = a **brow-band of curly hair**. Let's just call it a hatched "fringe band" and draw it with loose hair texture so it reads as hair ✓.
+
+Alright, also A's face: is the head too small? The face spans 340-780 = 440 tall, 300-700 wide = 400 wide. Plus hair 175-345. Total 175-905 ✓. OK.
+
+But the canon wants the head (crown to chin) ~600px: ours is 175-780 = 605 ✓ 
+
+Now the eyes: they must be shared and prominent. Eye whites at page 480-520, x 380-460 and 540-620 (each 80 wide, 40 tall). Pupils: dark circles r=13 at (420,500) and (580,500) ✓ (small pupils = delighted ✓). Upper lid line heavy (7px) above each eye at ~480-490, lower lid at 526 (shared, the one that becomes B's upper lid) ✓.
+
+Hmm: B's upper lid at frame 474 will cut the top of the eye, making it half-lidded ✓. And the pupil stays at 500 — with the lid at 474, the visible eye is 474-520 (46 tall) with the pupil at 500 → a normal-ish eye, not really half-lidded. For a weary look, B's lid should come lower, e.g., at frame 495-500. But that stroke in A would be at page 500-505 = right at the pupil center → in A it'd cut the eyes ✗. Compromise: B's lid at frame 488 → A page 512 (the eye's lower area) — in A a stroke crossing the bottom of the eye = the lower lid ✓ and in B at 488 = just above the pupil = slightly hooded ✓. Let's use 490. Good: A's eye = wide open with a lower-lid line crossing the lower part of the white? Hmm, a line crossing the lower part of the eye white looks like the eye's lower boundary. Let me instead draw the eye whites as shapes whose lower boundary is exactly that stroke: i.e., the eye shape's bottom edge at 512 (the shared stroke). Then the eye white spans 482-512 (30 tall) ✓, and in B the eye white spans 488-518 with the lid at 488 = the upper boundary ✓ (so B's eye is a bit smaller/hooded ✓). Fine, subtle. To make B clearly hooded, add B-only strokes: B-frame 470-485 (a heavy lid mass over the top of the eye, e.g., a thick curved wedge) → in A these appear at page 515-530 = A's lower-lid area → in A they'd be a heavy line under the eye = a lower-lid/pouch line ✓ acceptable (a bit heavy but fine). Let's do: B-only heavy upper-lid wedges (a filled dark crescent above the eye in B) → in A a dark crescent under the eye = A's lower lid shading. Hmm, a dark crescent under each eye in A = a heavy lower lid ✓ that's fine for a plump face (Whistler loves under-eye bags) ✓ and in B = heavy hooded lids = weary ✓✓. 
+
+But the under-eye pouch curve at 545 (B's brows) is also there. So in A: eye (482-512), dark crescent under it (515-530), and a pouch curve at 545 → three stacked elements under the eye. In A that might look like heavy bags ✓ (A = an older, crinkly grinning man ✓ fine). And B: at frame 545 = B's brows (a droopy line) with the heavy crescent at 470-485 above the eye = hooded lids ✓, and the pouch at 545 → in B that's frame 455 = a brow line above the eye... wait let me recompute: the pouch at page 545 → B frame 455 = B's brow ✓. And the dark crescent at page 515-530 → B frame 470-485 = the upper lid ✓✓. 
+
+So B's eye region: brow at 455 (droopy pouch line), heavy lid at 470-485, eye 482-518 (the white shape) ✓ = a small, hooded eye ✓. 
+
+Now let me write the SVG. I'll use groups:
+- <g id="shared"> everything shared (drawn once).
+- <g id="b-only" transform="rotate(180 500 500)"> B-specific strokes drawn in B's frame.
+
+B-only content (in B's frame coordinates, then rotated):
+1. Heavy hooded upper-lid crescents: at B-frame, above each eye: left eye center in B-frame? Careful: B's frame x = 1000 - A's x (left-right swap). A's left eye at x=420 → B's frame x = 580 (B's right side). So in the rotated group, to draw B's lid over B's left eye (B-frame x=420), the path is at B-frame coordinates and the rotation handles the mapping ✓. So just draw in B-frame coords: lid over the eye at x 420 and 580 ✓ (symmetric anyway).
+   B-frame: dark crescent above the eye: e.g., path "M 382 486 Q 420 470 458 486 L 458 470 Q 420 458 382 470 Z" — a dark wedge. Let's simplify: a thick dark arc from (380,492) curving up to (460,492) with a filled crescent.
+   I'll write: `<path d="M 378 494 Q 420 466 462 494 Q 420 482 378 494 Z" fill="#17161a"/>` similar for the right eye.
+2. B's moustache hatching? The fringe band already hatched ✓ (shared).
+3. B's beard strands (ink on dark crest → invisible in A): a few lines at B-frame y 720-810 (which map to A page 280-190 = the crest, dark) ✓.
+   Wait: B-frame 720 → A page 280 ✓ (crest bottom, dark ✓). B-frame 810 → A page 190 (crest ✓ dark). OK but the fringe band (A 285-345) → B 655-715: keep B-only out of B-frame 655-715 ✓.
+4. B's hat crack: a bold zigzag at B-frame y 120-190 → A page 810-880 = A's cape (hatched) → visible in A as a zigzag on the cape. Hmm, that could read in A as "a lightning crack on his cape" — acceptable? Might be confusing. Alternative: place the crack so it lands in A's dark area... A's dark areas: crest (175-300) → B-frame 700-825 (beard) — a crack in the beard? no. Headphones (dark circles at A 800-860 x 300-350/650-700) → B-frame 140-200 at x 300-350/650-700: a crack there = on the pom-poms, meh.
+   Let me make the cape's hem/shoulders area mostly hatched but with a DARK band at the top of the cape (A 790-820, a dark collar band) → B-frame 180-210 = the hat's base/band ✓. Then a crack at B-frame 150-185 → A page 815-850 = the dark band → ink on dark = invisible in A ✓✓ and in B it's at the hat's base, below the coin... the coin is at B-frame 110. Hmm, the crack should be near the top (the bubble bursting). Put the crack at B-frame 115-155 → A page 845-885 = the cape's hem (hatched) → visible in A as a zigzag near the coin at the chest. In A, the coin at (500,880) with radiating zigzag lines = looks like the coin is "cracked" too. Actually that might read nicely in A as a "shattered medallion"? no, in A it should look fine/decorative.
+   
+   Decision: put the crack at B-frame 120-160 (crossing the hat's upper area, near the coin at 110) → in A page 840-880 (hatched cape near the coin). To make it harmless in A, make the crack a *subtle fold* line in A: a short zigzag of 2-3 segments ✓. In B it becomes a bold crack across the hat ✓. I'll use a medium weight (5px) zigzag.
+
+Also: to differentiate B, add B's hat a **tilt** (asymmetric) ✓ inherent via the crack.
+
+One more B marker: B's **jaw** — A's cheeks/jaw outline (page 700) → B frame 300 (B's forehead) hmm, A's jaw outline is the head's outer contour, visible in both as the head's contour ✓ fine.
+
+Asymmetry: make the head contour asymmetric (a jowl on one side) ✓ and the crest spikes irregular ✓.
+
+Now, the hair side masses (A 300-430, x 320-440 & 560-680): in B they become the beard sides (frame 570-700) ✓ flanking B's face ✓. Good. Actually B's beard sides at frame 570-700 and the mouth at 680: so the side masses flank the mouth ✓ like big sideburns/whiskers ✓.
+
+And A's face outline: the head contour from the hairline down. In A, the face's sides at x 300-700 — but the side hair masses are at 320-440/560-680 (overlapping the face's upper sides) ✓ fine.
+
+Now the neck: A's face chin at 770, the cape starts at 790. A small neck is fine (mostly hidden).
+
+Let me write the SVG now. I'll aim for quality with varied line weights, hatching, and a few organic wobbles.
+
+Elements & weights:
+- Heavy contour (11px): the head outline, the cape's outline, the crest outline.
+- Medium (6px): the nose, brows, eye lids, mouth, curl.
+- Fine (2.5px): hatching.
+- Tapered fills: brows (crescents), the nose shadow, the mouth corners.
+
+Let me write paths.
+
+Head outline (A), starting at the left hairline (340,425), going down the left side:
+M 340 425
+C 318 470, 296 520, 302 570   (cheek)
+C 306 630, 322 690, 352 730   (jaw)
+C 378 764, 424 780, 470 782
+C 520 784, 578 772, 612 742   (chin right)
+C 648 710, 676 660, 692 606
+C 704 560, 700 500, 676 452
+C 664 425, 652 412, 660 425 (asymmetric wobble back to start via the top? )
+Better: close the top with an arc under the hair: from (660,425) curve up to (500,398) and back to (340,425) ✓.
+
+Full path:
+M 340 428
+C 316 470 297 516 303 566
+C 309 622 320 676 348 720
+C 372 756 416 778 462 782
+C 516 786 574 770 606 738
+C 640 704 668 654 686 602
+C 700 560 702 496 672 450
+C 664 436 655 424 648 418
+C 560 398 440 396 352 414
+Z
+
+Hmm the last bit should return to 340 428: after C 560 398 440 396 352 414 then a small curve to 340 428 ✓ (implicit close with Z ✓).
+
+Ears: at (300,505) and (700,505): small C shapes.
+
+Eyes: left eye white: ellipse-ish path centered (420,497): 
+"M 380 496 C 380 480 396 470 420 470 C 444 470 460 480 460 496 C 460 510 444 520 420 520 C 396 520 380 510 380 496 Z" — but I want the shared lower-lid boundary at 512. Let's set the eye white shape's bottom at 512: 
+"M 382 494 C 382 478 398 468 420 468 C 442 468 458 478 458 494 C 458 504 452 512 440 512 L 400 512 C 388 512 382 504 382 494 Z" (a lid shape) ✓ with the bottom edge at 512 = the shared stroke ✓.
+Pupil: circle (420,492) r=12 dark ✓ (slightly high = looking up, delighted). Right eye mirrored: center 580: same shape with x 542-618, pupil (580,492).
+
+Upper lid crease: heavy strokes above the eyes at 460-468? The eye shape's top edge at 468 is already the lid. Add a lid crease above at 455 (which is where A's brows are at 450 — too close). Hmm, brows at 450 and the eye top at 468 — only 18px gap. Move the brows up to 440? and the pouch (B's brows) at 545. Fine: brows at 436-448.
+
+Hmm, but then A's forehead region 345-436 is empty (with the curl at 345). Add forehead lines (2 short arcs at 400/415) = in B those appear at frame 600/585 = B's cheek area → light cheek creases ✓ acceptable (a wrinkle or two).
+
+Wait: A's forehead lines at page 400 → B frame 600 = B's cheek/under-eye area ✓ fine (creases under the eye = B's tired face ✓ nice).
+
+Also add A's cheek hatching at 560-620 → B frame 380-440 = B's brow/forehead area → hatching above B's brows = forehead hatching ✓ acceptable.
+
+Nose (A): a big bulbous nose: contour from (455,585) down to (438,632) bulb (500,660) to (565,632) up to (545,585)? Let's draw:
+M 452 578 C 436 612 430 638 452 652 C 476 666 528 666 552 650 C 572 636 566 608 548 582
+and the bridge lines: from (452,578) up to (470,545) and (548,582) up to (530,545) ✓.
+Nostril shadow: a filled crescent: M 448 646 Q 500 668 556 644 Q 500 656 448 646 Z (a thin dark lens) ✓ (in B: frame ~350, an arch = a brow ridge ✓).
+
+Mouth (grin): M 412 686 Q 500 726 592 684 (a ∪ dipping to ~705 in the middle) — let's compute the middle of a quadratic with P0(412,686), P1(500,726), P2(592,684): the curve's midpoint y = (686+2*726+684)/4 = 705.5 ✓. Plus a lower lip: M 442 736 Q 500 748 560 734 ✓. Plus corner ticks: small lines from (408,682) to (398,668) and (596,680) to (606,666) ✓.
+
+Hmm, the grin is big ✓.
+
+Chin: a line M 430 762 Q 500 778 572 758 ✓ (chin crease) — but the head outline already has a chin at 782. Add a double chin line at 745: M 428 740 Q 500 758 574 738 ✓.
+
+Brow (A): two arched tapered crescents: left: M 368 452 Q 414 424 462 444 Q 414 442 368 452 Z — hmm, an arch ∩: from (368,452) up over (414,424) down to (462,444). The crescent: draw a filled shape: "M 366 456 Q 414 420 464 448 Q 414 442 366 456 Z" ✓ (a tapered arch).
+Right: "M 536 448 Q 586 420 634 454 Q 586 444 536 448 Z" ✓ (asymmetric ✓).
+
+Under-eye pouch (B's brows in A): a medium ∪ curve: left "M 378 540 Q 420 556 462 538" ✓ right "M 542 536 Q 584 554 626 536" ✓ (droopy = B's sad brows ✓).
+
+Now the dark crescent under the eye (B's hooded lid): draw in the B-only rotated group at B-frame: over the eye at x 420: a filled crescent "M 378 492 Q 420 464 462 492 Q 420 480 378 492 Z" ✓ (a thin lens along the eye's top). In A it lands at page 508-536 as a dark lens under the eye ✓ = A's lower-lid shadow ✓.
+Hmm, careful: in A that lens at 508-536 overlaps the eye's bottom (512) ✓ = a shadow line under the eye ✓ fine.
+
+B-only group contents (B-frame coords):
+1. hooded-lid lenses (2).
+2. beard strands: fine ink lines at B-frame (map to A's crest, dark): e.g., M 470 760 L 500 800; M 540 745 L 565 795; etc. But they should be in the beard mass region 700-825 ✓. Also B's chin line? A's crest bottom edge = A page 300 → B frame 700 ✓ (the beard's top edge). 
+3. the hat crack: B-frame: a zigzag across the hat: "M 400 150 L 440 168 L 470 140 L 510 165 L 550 138 L 596 158" ✓ (a jagged crack). In A this lands at page 850-862 (x 404-600 reversed) = on the cape's hem near the coin ✓ reads as a fold/zigzag on the cape ✓ acceptable.
+Hmm, the coin at A (500,880) → B-frame (500,120) = the coin on the hat's top ✓. And the crack at B-frame 140-170 → A page 830-860 ✓ below the coin ✓.
+
+Hmm, wait: is the coin on the hat's top in B? The cape in A: shoulders at 800 (x 300-700), hem at ~900 (x 250-750). The coin at (500,880) is near the hem ✓. In B, the hat: the hem becomes the top (broad) ✓ and the coin near the broad top ✓ = a coin on the hat's crown ✓.
+
+But the coin would sit ON the hat's broad top, maybe sticking above the hat's outline. Let's make the coin centered at (500,875) r=24 → in B frame 125, the hat's top edge is at 100 (A's 900) → the coin at 125 is inside the hat ✓ (a badge on the hat) ✓.
+
+Hmm, in A the coin is on the cape's lower area (a medallion at the chest ✓).
+
+Now, the headphones: ear cups at A (330,832) and (670,832), r=28 dark circles with an ink outline and a lighter inner arc. The band: from (332,818) Q 500 862 668 818 (a U dipping to ~845) — hmm, headphones hanging around the neck: the band dips down ✓ but should it dip below the chin (770)? The band dips to 845 ✓ below the chin ✓ good, over the cape. In B, this becomes an arch ∩ over the hat: frame 155-182, spanning x 332-668 → an arc over the cap ✓ = a hat band ✓.
+Hmm, but in B, that arc would be at the hat's middle ✓ and the ear cups become two lumps at frame 168, x 330/670 = at the hat's sides ✓ = earmuffs ✓✓ .
+
+Wait, but if the ear cups are ON the cape's top region in A (page 832) and the cape is hatched, the cups (dark) are visible ✓.
+
+Also add a mic boom? A small mic from the right cup (670,832) curving to (700,800)? In B that becomes a small arc near the hat's left side = a hat cord ✓. Optional; add a small cable: M 700 840 Q 720 870 700 895 (a cord hanging) → in B: a small loop at the hat's top-right ✓ = a string/ornament ✓ nice.
+
+Let me also add the A-only "coin glint"? no lighting.
+
+Hatching plan:
+- Cape: diagonal lines at 45° across the cape shape (clip? no clipPath needed—I can just draw short lines inside manually). I'll draw ~20 short parallel lines inside the cape, but they'd be visible in B as well (on the hat) ✓ fine (a textured hat ✓).
+- Fringe band (moustache): fine hatching ✓ (visible in A as hair, in B as moustache).
+- Cheeks: a few hatch lines.
+- Under-brow shadow: a few hatch lines.
+
+Let me be careful about hatching inside the crest (dark) — not needed.
+
+Crest fill: dark solid ✓ (gives a big dark mass ✓ good rhythm). Side hair masses: dark solid ✓. So A has: dark crest + dark side masses + hatched cape + white face = nice rhythm ✓.
+
+Hmm, the cape hatched is mid-tone; the headphones solid dark ✓.
+
+Total: paper, ink, gold (coin) — 3 colors ✓. Should I add a second accent? Maybe a red for the coin? No. Let's add a muted red accent for a couple of tiny marks? Keep it 3. Actually the palette rules allow up to 2 accents; using 1 is fine.
+
+Hmm, one thing: the event's legibility might benefit from a **red** element = the "crash". B's crack could be red! The crack (B-only, in the rotated group) drawn in RED → in A it appears red on the cape's hem near the coin = "a red zigzag on his cape" ✗ odd. Unless the crack is placed in A's dark region... The crack needs to be on B's hat = A's cape (hatched). So in A it's visible. A red zigzag on the chest = weird. Keep ink.
+
+Alternatively the coin could be red? No, gold ✓.
+
+Let me reconsider: maybe instead of a "crack", give B a **burst balloon** shape as the central prop?? Let's think about the strongest single read: I think the spiky crest→falling chart beard + the coin + the headphones + expressions is decent. And the crack adds "damage".
+
+Let me add ONE more strong cue that works in both: the **cracked/crushed hat** ✓ (the crack) and B's **tattered beard** (fine strokes = the shattering). Fine.
+
+Alright, let me also make sure B doesn't look like A: B has: hooded eyes, droopy brows, a frown (from the fringe arc), a big nose bump, a moustache, a spiky beard, a bell hat with a coin, a crack. Definitely different ✓.
+
+And A: grinning, wide eyes, arched brows, big round nose, spiky crest, headphones, a medallion ✓.
+
+One more check: in B, is there anything that looks like A's grin? A's grin (page ~700) → B frame 300 = B's forehead, a ∩ arc. In B, a forehead crease ✓ not a grin ✓ good.
+
+And in A, is there anything that looks like B's frown? B's frown = A's fringe arc (∪ at 320) ✓ in A it's a dip in the fringe band — hmm, could a viewer read A's fringe band as a second frown? It's above the eyes at 320, at the hairline. It might read as a "shadow under the fringe" ✓ acceptable.
+
+Also the eyes' position: 482-512, page center 500 ✓.
+
+Let me write the file. I'll write careful coordinates.
+
+Additional details for richness:
+- A stray stipple dots (2-3) near the cheek.
+- A couple of overshooting lines: e.g., the smile corner tick overshooting.
+- Cheek hatch: 5-6 lines each side at 45°, page 540-610, x 330-380 and 620-670.
+- Under-brow hatch: 3 lines each side above the eyes at 455-470? Might clash with the brows. Skip.
+- Chin/jowl lines: a jowl fold on the left at (330-380, 690-720) and a cheek fold line.
+- Neck shadow: 2 lines under the chin at 775-790.
+
+Also the forehead lines at 395 and 412 (short arcs) ✓.
+
+Let me write it.
+
+SVG structure:
+
+<svg ...>
+<title>...</title><desc>...</desc>
+<rect fill paper/>
+<rect frame/>
+<g fill="none" stroke=ink ...> ... </g>
+
+I'll write groups:
+1. g id="crown" (crest + side hair, dark fills)
+2. g id="face" (outline, features)
+3. g id="fringe" (hatched band + arc + curl)
+4. g id="cape" (hatched cape + headphones + coin)
+5. g id="bonly" transform="rotate(180 500 500)"
+
+Order: draw the cape first (behind the head? the cape overlaps the chin?) The cape starts at 790, below the chin (782) ✓ barely. Draw the cape BEFORE the head so the head's chin overlaps the cape's top ✓.
+
+Let's set the cape's top edge at 785 with the shoulders at x 295-705.
+
+Cape path: M 295 790 C 270 820 250 860 246 892 C 330 912 420 918 500 918 C 580 918 670 912 754 892 C 750 858 730 818 705 790 Z
+Hmm, the hem bottom at 918 — too low? The frame is at 955 ✓ fine. But B's hat top then at frame 82 — above the "crown 110" but fine.
+
+Let me set: shoulders at 790; hem at 900 (bottom curve dipping to 910).
+Cape: M 297 788 C 272 820 254 862 250 896 C 330 916 430 920 500 920 C 570 920 670 916 750 896 C 746 862 728 820 703 788 Z
+So the hem's lowest is 920 → B's hat top at frame 80. That's a bit high but OK (the hat is tall, 80-215). Hmm, the coin at (500,880) → B frame 120 ✓ on the hat's upper area ✓.
+
+And the bottom of the whole figure: 920 + hatching ✓ within the frame (955) ✓.
+
+Head: chin 782 ✓ so there's a small gap 782-788 → fine, the neck is hidden by the cape.
+
+Now the crest's bottom edge at ~300 and the fringe band at 285-345 overlaps the crest ✓ (the fringe in front of the crest's bottom) ✓.
+
+The head outline's top at ~400 is covered by the fringe band (285-345)? The fringe band bottom is 345 and the head outline's top arc at ~398 → there's a gap 345-398 of forehead ✓ intended.
+
+Side hair masses: left from (322,300) to (348,440) etc. Let me define the left mass: 
+M 330 300 C 320 350 316 400 322 445 C 344 435 372 428 396 424 C 402 380 400 336 392 300 Z
+Hmm, I want the side masses to hug the face's sides: x 320-400 at y 300-440 ✓ (the face's outline at 340-360 near y 425) ✓ ok.
+
+Right mass mirrored but asymmetric: 
+M 664 296 C 676 350 682 404 676 448 C 652 440 622 430 600 424 C 594 378 598 334 606 298 Z
+
+The face outline's top arc goes from (352,414) to (648,418) — under the hair masses ✓.
+
+The fringe band: x 346-654, y 288-346:
+M 348 300 C 420 282 560 280 652 296 C 656 316 654 332 648 344 C 570 356 430 356 352 342 C 346 328 344 312 348 300 Z
+Plus the strong arc at 320: M 430 322 Q 500 344 570 320 (a ∪ dipping to 332) — this is B's mouth (∩ in B) ✓. Hmm, is a ∪ in A reading as a "smile"? It might read as a smiling mouth in the hair!! Danger: A would then show a smile in the fringe = "two mouths" in A. Risk! Let's make the arc shallower and treat it as a shadow: M 424 326 Q 500 342 576 324. In B, rotated: an arch ∩ with the ends down = a frown ✓ and it'll read as a mouth in B ✓. In A it reads as a dip/shadow in the fringe ✓ acceptable. But a viewer might see it as a mouth in A. Hmm. To disguise, I can make it asymmetric and short, and put it partially under the fringe's edge. Alternatively make the fringe band itself have a scalloped lower edge and use the scallop as the mouth line in B: e.g., the fringe's lower edge has a wavy contour with a dip in the middle ✓ that reads in A as a fringe edge ✓ and in B as the mouth line ✓. Let's do: the fringe's lower edge = a wave with a central dip: 
+Lower edge: from (352,342) C 400 336 440 340 470 330 C 496 322 520 324 546 332 C 570 340 600 338 648 344 
+Hmm, that central dip at 322-330 ✓ = B's mouth (a wide ∪ with a slight wave). In A, it's the fringe's ragged lower edge ✓✓ much better. So the mouth line in B = the fringe's edge ✓. But then the fringe's edge stroke is the mouth's outline in B (a single line) — B's mouth would be just a line (no lips) — acceptable if I add a B-only lower-lip stroke (B-frame 690 → A page 310 = the fringe band ✓ hatched, visible in A as a hair line ✓ fine).
+
+I'll also keep a subtle short arc in the fringe as the "upper lip" hmm, no: in B, the mouth = the fringe's lower edge (a ∪ in A → ∩ in B = a frown ✓). Plus a B-only lip line below (in B frame at 692 → A page 308, inside the fringe band ✓ = a hair strand in A ✓ fine).
+
+Good, and the frown's corners: in B the mouth's ends are the fringe's edge ends at x 352/648 → B frame 352/648?? wait A page 352 → B frame 648. The fringe edge spans A x 352-648 → in B it spans x 352-648 too (rotated, so left-right swapped but symmetric) ✓ a wide frown ✓.
+
+Now the curl (B's nose) at (500,350): a rounded blob hanging from the fringe: M 478 344 C 470 366 478 384 500 384 C 522 384 530 366 522 344 Z with a curl line inside: M 486 352 Q 500 372 514 350 ✓. In A it reads as a small curl/lock hanging at the center of the forehead ✓; in B it's a round nose ✓ (B-frame 650 ✓).
+
+Hmm, but A's fringe bottom at ~330 and the curl at 344-384 ✓ hanging below ✓.
+
+But wait: A's brows are at 436-456 and the curl at 344-384 → a gap ✓ fine.
+
+Now A's forehead lines at 400/415: short arcs x 400-470 and 530-600 (asymmetric) ✓.
+
+B's face: the nose (curl) at frame 650 and the moustache band (A fringe 288-346 → B 654-712) ✓ the nose sits just above the moustache ✓✓.
+
+B's beard (crest) at frame 700-825 ✓ below the moustache ✓.
+
+B's chin at frame 800 = A's crest bottom edge at 200? Hmm, A's crest's top edge (the zigzag) is at 175-300. B's chin would be at frame 800 = A page 200 (inside the crest) ✓ — so B's chin line = a stroke in A's crest. We can let the beard's bottom edge serve. Fine.
+
+Also A's chin/jaw at 782 → B frame 218 = B's hat base ✓ (the hat's bottom edge = A's chin? no: A's chin outline is the head contour at 782 → B frame 218, which is in the hat region (80-215) ✓ so the head's chin contour becomes a line across B's hat base = the hat's brim ✓✓ nice!). But careful: the head contour is a closed shape; when rotated, the "chin" arc appears as an arc across the hat's base ✓.
+
+And A's neck/shoulders? no.
+
+I think we're good. Let me write the SVG now. I'll include the hatching manually.
+
+Cape hatching: lines at 45° inside the cape region (y 800-910). I'll draw ~16 short lines from the upper-left going down-right, spaced ~28px. Coordinates: start points along the cape's top edge and shoulders. Let's do lines like:
+M 310 800 L 350 840 etc. Actually 45° lines across: e.g. M 296 812 L 360 876 ; M 330 800 L 396 866 ; ... Let's generate a set spanning x 260-740 at y 800-900, each line 60-70 long, slope 1 (45°).
+Simpler: draw lines from (x, 800) to (x+70, 870) for x = 262, 296, 330, 364, 398, 432, 466, 500, 534, 568, 602, 636, 670, 704, 738 — but they must stay inside the cape (which narrows at the top). The cape's top edge spans 297-703 at 788 and the hem spans 250-750 at 896. A line from (262,812) to (332,882) ✓ inside. Let's just hand-place ~14 lines with slight variation. I'll accept approximate.
+
+Also the fringe band hatching: fine 45° lines inside the band (y 290-345) across x 350-650: ~14 lines of length ~55. Also some to suggest hair.
+
+Also cheek hatching: 5 lines each side.
+
+Also the hair side masses: solid dark; add a couple of lighter "hair strand" strokes? They'd be invisible (ink on dark). Could use paper-colored strokes but that risks looking like highlights (lighting). Skip.
+
+Let's write out the final SVG. I'll be careful with XML validity.
+
+Also the frame: rect x=48 y=48 w=904 h=904 stroke ink 3px, fill none ✓.
+
+Let me write it.
+
+Title: "Bubble Pop" (max 8 words) — maybe "One Bubble, Two Mornings"? Let's use "The Bubble and the Bag" hmm. Title: "Five Million and Six Hundred Billion"? Cute but long (7 words) ✓. Let's use "Triumph and the Morning After" (5 words) ✓.
+
+Desc: "DeepSeek R1's January 2025 launch and the AI-bubble wobble that erased about six hundred billion dollars of market value: upright, a grinning hype-man with headphones, a spiky crest and a gold coin; rotated, the same strokes become a weary, bearded man in a cracked cap with a falling-chart beard."
+
+Now write the code. I need to be careful that the rotated group is drawn last so its strokes sit on top.
+
+Let me write the paths concretely.
+
+I'll now produce the SVG.
+
+One more consideration: A's headphones' U band (from (332,818) to (668,818) dipping to 858) — in A this crosses the cape's upper area ✓ looks like headphones hanging ✓. But the ear cups at (330,832)/(670,832) r=28: these are at the cape's outer edges ✓.
+
+Hmm, in B the cups at frame 168, x 330/670 ✓ = lumps at the hat's sides ✓.
+
+Also add small headphone highlights? no lighting. Maybe an inner arc line on each cup (a paper-colored arc) — that's a highlight ✗ (lighting). Use ink arcs inside (a rim line) ✓.
+
+Let me write.
+
+Also I realize the crest zigzag should be visibly a "chart". Let me make the crest's top edge a clean polyline zigzag (sharp points) ✓ ascending. Additionally, inside the crest, draw a bold zigzag "chart line" (ink can't show on dark). Hmm, ink on a dark crest is invisible. So the chart line must be the crest's silhouette ✓ (that's enough).
+
+But for B, the crest's silhouette = the beard's spiky edge = descending ✓. Good.
+
+Maybe I should also add a jagged descending line in B's beard region visible... it'd be ink on dark = invisible. Use paper-colored? A paper-colored zigzag in A's crest would be visible in A as light lines in the hair (like a lightning bolt) — hmm, that's actually fine and could read as a "chart line" in A too! Let's add ONE bold paper-colored zigzag line inside the crest, ascending, e.g. from (350,300) → (390,258) → (425,286) → (468,230) → (508,262) → (548,206) → (590,240) → (640,190)? Hmm, this doubles the zigzag. It might read as a lightning bolt in the hair — a bit odd but adds graphic interest and reads as a chart ✓. In B, the same light zigzag descends through the beard ✓ = the falling chart ✓. I like it, but risk: in A it looks like a lightning bolt in the hair (which is a Whistler-ish graphic flourish). Let's include it but thinner (3px, paper color) ✓.
+
+Hmm, careful: in B, the beard region = frame 580-870, and this zigzag at A page 190-300 → B frame 700-810 ✓ inside the beard ✓ descending ✓.
+
+OK, writing now. Also make sure the zigzag line is fully inside the crest (the crest's top edge is the zigzag, so a parallel line slightly lower is inside ✓).
+
+Let me define the crest shape with the top edge slightly below the zigzag "chart line" so the light line sits inside ✓.
+
+Crest path:
+M 330 306
+L 348 262 L 372 288 L 398 232 L 424 262 L 452 206 L 480 244 L 508 186 L 536 230 L 566 172 L 592 216 L 620 160 L 646 208 L 668 300
+C 600 312 400 312 330 306 Z
+Hmm, the right side should end at ~668 and the crest's bottom edge at ~305. Let me define:
+M 332 304 L 350 258 L 376 286 L 402 230 L 428 260 L 456 202 L 484 242 L 512 182 L 540 228 L 568 168 L 596 214 L 624 156 L 652 206 L 670 300 C 600 314 400 314 332 304 Z
+That's a spiky ascending crest ✓ with a slightly wavy bottom ✓.
+
+The light zigzag line inside: parallel, ~18px lower: M 340 292 L 358 262 L 384 288 L 410 240 L 436 268 L 464 216 L 492 252 L 520 200 L 548 242 L 576 186 L 604 226 L 630 176 L 656 214 — hmm, it must stay inside the crest (below the top edge). The top edge points are the spikes' tips; a parallel line 20-30px lower is inside ✓ but near the tips it may cross. Let me just draw a simpler zigzag: M 348 290 L 396 244 L 432 278 L 476 216 L 516 258 L 560 196 L 604 240 L 648 184 — with slope segments; these lie inside the mass mostly ✓. Fine, minor crossings acceptable (looks like a highlight/lightning).
+
+Hmm, crossing outside the crest into the paper would look like a stray line ✗. Let me instead make the zigzag shallower and clearly inside: M 350 288 L 402 250 L 448 272 L 500 216 L 548 244 L 600 190 L 650 228. Check: is (600,190) inside? The crest's top edge near x=600 is ~y 214-216 (the spike at 596,214 / 624,156) — hmm, the crest's top edge at x=600 is between the spike tips; the boundary dips down to the spike bases. The "inside" region at x=600 spans from the top edge (interpolating between (596,214) and (624,156)? no—the edge goes up to the tip at (624,156)). The polygon's interior near x=600 includes points below the segment from (596,214) to (624,156) → the boundary at x=600 is y≈204. So a point at (600,190) is ABOVE the boundary = outside ✗.
+
+To be safe, draw the light zigzag with all points at least 30px below the boundary. Let's use a low zigzag: M 350 292 L 400 264 L 450 286 L 500 240 L 550 262 L 600 214 L 648 236. Check x=600: boundary at 204 → point 214 is 10 below ✓ barely inside ✓. x=500: the boundary near x=500: segment (484,242)-(512,182): at x=500 → y≈205; point 240 ✓ inside. x=550: boundary (540,228)-(568,168) → at 550 ≈207; point 262 ✓. x=648: boundary (624,156)-(652,206) → at 648 ≈200; point 236 ✓. x=400: boundary (402,230)... at 400 ≈233; point 264 ✓. x=350: boundary (332,304)-(350,258) → at 350 = 258; point 292 ✓. Good, all inside ✓.
+
+Now let me write the final code. Also the paper-colored zigzag stroke width 3 ✓.
+
+Everything else as planned. Let me write it out.
+
+Additionally: A's "hype" cheek blush (skip). Keep 3 colors.
+
+Final check on the "B visible upright" issue: the B-only strokes = hooded-lid lenses (→ A's under-eye shadow, acceptable, reads as A's lower lid ✓) + the hat crack (→ A's cape zigzag fold ✓ subtle) + the B lip line (→ A's fringe strand ✓). Plus B's beard strands (invisible in A ✓). So A stays clean ✓.
+
+And B's frown = A's fringe edge ✓ (visible in A as the fringe's edge ✓).
+
+Write it.
+
+Let me carefully produce the SVG text.
+
+Also: eye pupils small (r=12) for A's delight; in B they'd be the same (fine).
+
+Also add A's eye upper-lid crease lines above the eyes (at 462-470) — they'd be in B at 530-538 = below B's eye = lower lid ✓ ok, but we already have the dark lens there. Skip creases.
+
+Go. I'll write the SVG.
+
+Also should I add a nose for A? A's nose: big bulb 430-570 x, 570-660 y. Contour lines + shadow lens. Draw:
+M 452 570 C 438 606 432 634 450 650 C 470 664 530 664 552 648 C 570 632 562 604 548 572
+(the bridge strokes from 452,570 and 548,572 upward: M 452 570 Q 462 548 470 534 ; M 548 572 Q 538 548 530 534 ✓)
+Shadow lens: M 444 640 Q 500 664 558 638 Q 500 656 444 640 Z ✓
+
+In B, the nose contour (frame 340-430) = a bump on the forehead ✓ and the shadow lens (frame 336-360) = a dark arch above B's brows ✓.
+
+Hmm, B's nose region frame 340-430 is B's forehead; A's nose contour's top at 570 → B frame 430 = just above B's brows (455) ✓ so B gets a dark arch right above the brows ✓ = a furrowed brow ✓.
+
+Great. Writing now.
+
+I also want a chin/cheek character: a jowl fold on the left: M 330 660 Q 352 690 356 726 ✓ and a cheek line: M 322 560 Q 344 590 352 626 ✓ (asymmetric ✓).
+
+Neck: 2 short lines under the chin at 770-785: M 440 776 Q 500 790 566 772 ✓ hmm that's the chin crease already. Fine.
+
+Let me write the final SVG.

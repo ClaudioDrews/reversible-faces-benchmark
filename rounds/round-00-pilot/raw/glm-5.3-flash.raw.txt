@@ -1,0 +1,71 @@
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#f8f4ec"/>
+
+  <!-- A's beanie = B's great beard (shared black mass) -->
+  <path d="M 500 186 C 640 188 724 260 726 336
+           C 648 318 574 326 500 334
+           C 426 326 352 318 274 336
+           C 276 260 360 188 500 186 Z" fill="#141414"/>
+
+  <!-- A's open laughing mouth = B's flat cap (shared black mass) -->
+  <path d="M 330 660 Q 500 645 670 660
+           Q 615 728 500 732
+           Q 385 728 330 660 Z" fill="#141414"/>
+
+  <!-- A's pom-pom = B's bow tie -->
+  <circle cx="500" cy="158" r="38" fill="#141414"/>
+
+  <!-- grey streaks: knit ribs in the beanie / grey in the beard -->
+  <g fill="none" stroke="#f8f4ec" stroke-width="6" stroke-linecap="round">
+    <path d="M 430 202 C 424 242 428 282 432 312"/>
+    <path d="M 500 196 C 497 242 503 284 500 326"/>
+    <path d="M 570 202 C 576 242 572 282 568 312"/>
+  </g>
+
+  <g fill="none" stroke="#141414" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- silhouette: A's head/beanie crown & jaw = B's beard bottom & cap crown -->
+    <path d="M 500 190 C 645 192 728 315 731 470
+             C 734 615 662 738 562 798
+             Q 500 828 438 798
+             C 338 738 266 615 269 470
+             C 272 315 355 192 500 190 Z" stroke-width="6.5"/>
+
+    <!-- ears (ears stay ears) -->
+    <path d="M 272 468 C 244 470 240 505 268 526"/>
+    <path d="M 728 468 C 756 470 760 505 732 526"/>
+
+    <!-- beanie brim wave (A) = wavy grimace mouth (B) -->
+    <path d="M 274 336 C 352 318 426 326 500 334 C 574 326 648 318 726 336" stroke-width="6.5"/>
+
+    <!-- forehead crease (A) = B's nose -->
+    <path d="M 458 350 Q 500 366 542 350" stroke-width="4.5"/>
+
+    <!-- A's nose bridge = B's vertical worry furrow -->
+    <path d="M 497 586 Q 504 604 497 624" stroke-width="4.5"/>
+
+    <!-- A's nose tip = line under B's cap brim -->
+    <path d="M 462 636 Q 500 652 538 636" stroke-width="4.5"/>
+
+    <!-- shared eyes -->
+    <circle cx="416" cy="500" r="26" stroke-width="6"/>
+    <circle cx="584" cy="500" r="26" stroke-width="6"/>
+    <circle cx="416" cy="500" r="10.5" fill="#141414" stroke="none"/>
+    <circle cx="584" cy="500" r="10.5" fill="#141414" stroke="none"/>
+
+    <!-- upper-lid creases (A) = lower lids (B) -->
+    <path d="M 394 478 Q 416 466 438 478" stroke-width="4"/>
+    <path d="M 562 478 Q 584 466 606 478" stroke-width="4"/>
+
+    <!-- A's confident raised brows = B's heavy eye bags -->
+    <path d="M 356 448 Q 412 424 468 440" stroke-width="7"/>
+    <path d="M 532 444 Q 590 434 644 454" stroke-width="7"/>
+
+    <!-- A's laughing cheek creases = B's worried brows -->
+    <path d="M 362 544 Q 416 560 470 544" stroke-width="4.5"/>
+    <path d="M 530 544 Q 584 560 638 544" stroke-width="4.5"/>
+  </g>
+</svg>
+```
+
+A: a startup founder in a beanie, beaming as he launches; B (page rotated): the exhausted on-call engineer — flat cap, grey-streaked beard, eye bags and a grimace — same lines, demo day vs. production.

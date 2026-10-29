@@ -1,0 +1,59 @@
+Here is a standalone SVG of a Rex Whistler–style reversible face, built as one centered figure that reads as two different characters when the page is turned 180°.
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#ffffff"/>
+  <g fill="none" stroke="#141414" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- head outline (shared silhouette) -->
+    <path d="M 500 195 C 610 195 700 250 716 390 C 731 505 712 645 638 748 C 588 812 548 818 500 818 C 452 818 412 812 362 748 C 288 645 269 505 284 390 C 300 250 390 195 500 195 Z" fill="#ffffff"/>
+
+    <!-- hat mass : reads as the beard mass when rotated -->
+    <path d="M 368 292 C 368 200 420 158 500 158 C 580 158 632 200 632 292 Q 500 356 368 292 Z" fill="#d6d4cd"/>
+
+    <!-- antenna (technological accessory) -->
+    <path d="M 396 222 L 322 122" stroke-width="7"/>
+    <circle cx="314" cy="112" r="14" fill="#141414" stroke="none"/>
+
+    <!-- pompom : reads as a bow tie when rotated -->
+    <ellipse cx="455" cy="120" rx="26" ry="16" fill="#d6d4cd"/>
+    <ellipse cx="545" cy="120" rx="26" ry="16" fill="#d6d4cd"/>
+    <circle cx="500" cy="120" r="30" fill="#ffffff"/>
+
+    <!-- shared eyes -->
+    <circle cx="415" cy="500" r="34" fill="#ffffff" stroke-width="7"/>
+    <circle cx="585" cy="500" r="34" fill="#ffffff" stroke-width="7"/>
+    <circle cx="415" cy="500" r="13" fill="#141414" stroke="none"/>
+    <circle cx="585" cy="500" r="13" fill="#141414" stroke="none"/>
+
+    <!-- A: raised brows -->
+    <path d="M 356 452 Q 415 402 474 452" stroke-width="8"/>
+    <path d="M 526 452 Q 585 402 644 452" stroke-width="8"/>
+
+    <!-- A: nose -->
+    <path d="M 500 596 Q 500 646 530 648" stroke-width="7"/>
+
+    <!-- A: huge grin : becomes the dome of B's hat when rotated -->
+    <path d="M 396 656 Q 500 774 604 656" stroke-width="10"/>
+
+    <!-- shared fringe : becomes the nose in the rotated reading -->
+    <path d="M 424 398 Q 500 344 576 398" stroke-width="7"/>
+
+    <!-- B-only strokes, drawn upright in B's own frame -->
+    <g transform="rotate(180 500 500)">
+      <!-- heavy half-closed lids -->
+      <path d="M 368 462 Q 415 490 462 462" stroke-width="10"/>
+      <path d="M 538 462 Q 585 490 632 462" stroke-width="10"/>
+      <!-- furrowed brows slanting to the nose -->
+      <path d="M 352 444 Q 404 424 462 462" stroke-width="8"/>
+      <path d="M 538 462 Q 596 424 648 444" stroke-width="8"/>
+      <!-- beard texture, hidden inside the hat mass in A -->
+      <path d="M 432 706 Q 462 742 442 782" stroke-width="5"/>
+      <path d="M 568 706 Q 538 742 558 782" stroke-width="5"/>
+      <path d="M 466 692 Q 486 722 474 752" stroke-width="5"/>
+      <path d="M 534 692 Q 514 722 526 752" stroke-width="5"/>
+      <path d="M 500 764 Q 500 788 500 808" stroke-width="5"/>
+    </g>
+  </g>
+</svg>
+```
+The drawing uses the same eyes and single head outline for both readings. Upright, it shows a wide-eyed, grinning tech figure with an antenna, while the rotated view becomes a heavy-lidded, furrowed face with a beard and bow tie, so the visual joke hinges on the same lines carrying opposite expressions and roles.

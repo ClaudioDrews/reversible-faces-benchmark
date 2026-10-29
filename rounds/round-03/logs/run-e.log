@@ -1,0 +1,3 @@
+minimax-m3.1-flash {'model': 'minimax/minimax-m3.1-flash', 'id': 'minimax/minimax-m3.1-flash', 'prompt_tokens': 5085, 'completion_tokens': 36639, 'cost': 0.0219028293, 'finish': 'stop', 'event': 'ChatGPT launch and the AI boom, followed by "the plug gets pulled" (late 2022 onward)', 'title': 'The Plug Gets Pulled'}
+   valid XML 2705
+TOTAL cost 0.0219028293

@@ -1,0 +1,139 @@
+EVENT: DeepSeek-R1's release (Jan 2025) and Nvidia's record ~$600B one-day market-cap drop
+TITLE: Rack Tower, Morning After
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <title>Rack Tower, Morning After</title>
+  <desc>DeepSeek-R1's January 2025 shock and the record one-day market-cap collapse: upright, an over-funded compute colossus beams under a server-rack hat; rotated, the same strokes become the heavy, hollow-eyed face of the morning after, the rack read as a stubbled jaw.</desc>
+
+  <rect width="1000" height="1000" fill="#f4eee1"/>
+  <rect x="42" y="42" width="916" height="916" fill="none" stroke="#191714" stroke-width="2.5"/>
+  <rect x="54" y="54" width="892" height="892" fill="none" stroke="#191714" stroke-width="1"/>
+
+  <g fill="none" stroke="#191714" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- neck -->
+    <path d="M 452 780 L 548 780 L 570 866 L 430 866 Z" fill="#f4eee1" stroke-width="10"/>
+
+    <!-- head + hat silhouette -->
+    <path d="M 430 195 Q 500 168 570 195 Q 612 212 620 272 Q 626 300 624 332 L 624 384
+             Q 646 430 656 478 Q 670 550 662 614 Q 656 678 628 720 Q 600 760 560 788
+             Q 532 808 500 810 Q 468 808 440 788 Q 398 760 370 720 Q 342 678 336 614
+             Q 330 550 344 478 Q 356 430 376 384 L 376 332 Q 374 300 380 272 Q 388 212 430 195 Z"
+          fill="#f4eee1" stroke-width="12"/>
+
+    <!-- server-rack fins on the hat crown (= stubble on the jaw in B) -->
+    <g stroke-width="3">
+      <path d="M 420 218 L 420 302"/>
+      <path d="M 447 213 L 447 305"/>
+      <path d="M 474 210 L 474 307"/>
+      <path d="M 500 208 L 500 308"/>
+      <path d="M 526 210 L 526 307"/>
+      <path d="M 553 213 L 553 305"/>
+      <path d="M 580 218 L 580 302"/>
+    </g>
+    <circle cx="437" cy="252" r="5" fill="#191714"/>
+    <circle cx="563" cy="252" r="5" fill="#191714"/>
+    <path d="M 420 262 L 580 262" stroke-width="2"/>
+
+    <!-- exhaust blades on top of the tower (= a bow tie at the collar in B) -->
+    <g fill="#c0402e" stroke="#191714" stroke-width="6">
+      <path d="M 496 178 Q 452 146 404 168 Q 440 198 496 192 Z"/>
+      <path d="M 504 178 Q 548 146 596 168 Q 560 198 504 192 Z"/>
+      <circle cx="500" cy="178" r="21"/>
+    </g>
+
+    <!-- brim (= the big nose in B) -->
+    <path d="M 380 322 Q 500 366 620 322 Q 652 342 640 372 Q 590 412 500 412 Q 410 412 360 372 Q 348 342 380 322 Z"
+          fill="#191714" stroke-width="9"/>
+
+    <!-- hair tufts at the temples (= sideburns in B) -->
+    <path d="M 376 388 Q 352 424 360 466 Q 382 432 394 402 Z" fill="#191714" stroke-width="5"/>
+    <path d="M 624 388 Q 648 424 640 466 Q 618 432 606 402 Z" fill="#191714" stroke-width="5"/>
+
+    <!-- EYES (shared) -->
+    <path d="M 386 504 Q 426 462 466 500" stroke-width="9"/>
+    <path d="M 534 500 Q 574 462 614 504" stroke-width="9"/>
+    <path d="M 390 508 Q 426 538 462 506" stroke-width="4"/>
+    <path d="M 538 506 Q 574 538 610 508" stroke-width="4"/>
+    <path d="M 388 504 Q 426 470 462 504 Q 426 532 388 504 Z" fill="#f4eee1" stroke-width="0"/>
+    <path d="M 538 504 Q 574 470 612 504 Q 574 532 538 504 Z" fill="#f4eee1" stroke-width="0"/>
+    <circle cx="412" cy="488" r="17" fill="#191714" stroke="none"/>
+    <circle cx="588" cy="488" r="17" fill="#191714" stroke="none"/>
+    <circle cx="407" cy="482" r="4" fill="#f4eee1" stroke="none"/>
+    <circle cx="583" cy="482" r="4" fill="#f4eee1" stroke="none"/>
+
+    <!-- brows (= eye-bags in B) -->
+    <path d="M 350 462 Q 406 422 472 442" stroke-width="11"/>
+    <path d="M 528 442 Q 594 422 650 462" stroke-width="11"/>
+
+    <!-- eye-bags (= brows in B) -->
+    <path d="M 356 546 Q 424 582 486 552" stroke-width="8"/>
+    <path d="M 514 552 Q 576 582 644 546" stroke-width="8"/>
+
+    <!-- the big nose (= the hat brim in B) -->
+    <path d="M 448 590 Q 500 574 552 590 C 588 612 606 636 590 654 Q 546 678 500 678
+             Q 454 678 410 654 C 394 636 412 612 448 590 Z"
+          fill="#191714" stroke-width="9"/>
+    <path d="M 452 608 Q 480 596 500 598" stroke-width="5"/>
+    <path d="M 428 634 Q 462 646 500 646" stroke-width="4"/>
+    <path d="M 572 634 Q 538 646 500 646" stroke-width="4"/>
+
+    <!-- mouth (= the hat-band in B) -->
+    <path d="M 415 674 Q 500 716 585 674" stroke-width="9"/>
+    <path d="M 415 674 Q 404 668 400 658" stroke-width="5"/>
+    <path d="M 585 674 Q 596 668 600 658" stroke-width="5"/>
+
+    <!-- chin crease (= a dent in the hat crown in B) -->
+    <path d="M 466 776 Q 500 792 534 776" stroke-width="5"/>
+
+    <!-- jowl / cheek hatching -->
+    <g stroke-width="3">
+      <path d="M 350 636 Q 376 668 368 706"/>
+      <path d="M 366 626 Q 392 660 386 702"/>
+      <path d="M 650 636 Q 624 668 632 706"/>
+      <path d="M 634 626 Q 608 660 614 702"/>
+      <path d="M 392 570 L 414 548"/>
+      <path d="M 386 596 L 412 570"/>
+      <path d="M 608 570 L 586 548"/>
+      <path d="M 614 596 L 588 570"/>
+      <path d="M 452 452 L 470 436"/>
+      <path d="M 548 452 L 530 436"/>
+    </g>
+
+    <!-- collar (= the plume on the hat in B) -->
+    <path d="M 470 838 Q 412 850 352 894 Q 334 916 366 922 Q 426 906 488 874 Z"
+          fill="#f4eee1" stroke-width="9"/>
+    <path d="M 530 838 Q 588 850 648 894 Q 666 916 634 922 Q 574 906 512 874 Z"
+          fill="#f4eee1" stroke-width="9"/>
+    <g stroke-width="3">
+      <path d="M 434 866 Q 400 888 372 902"/>
+      <path d="M 566 866 Q 600 888 628 902"/>
+      <path d="M 452 858 Q 418 872 396 884"/>
+      <path d="M 548 858 Q 582 872 604 884"/>
+    </g>
+
+    <!-- knot (= a brooch on the plume in B) -->
+    <path d="M 468 840 Q 500 824 532 840 Q 544 862 532 882 Q 500 896 468 882 Q 456 862 468 840 Z"
+          fill="#2f6180" stroke-width="7"/>
+    <rect x="487" y="848" width="26" height="22" rx="3" fill="#c0402e" stroke="#191714" stroke-width="4"/>
+
+    <!-- hanging cables (= plume strands in B) -->
+    <g stroke-width="5">
+      <path d="M 428 884 Q 410 924 434 956"/>
+      <path d="M 470 894 Q 460 934 476 964"/>
+      <path d="M 530 894 Q 542 934 524 964"/>
+      <path d="M 572 884 Q 590 924 566 956"/>
+    </g>
+    <circle cx="436" cy="962" r="6" fill="#191714" stroke="none"/>
+    <circle cx="524" cy="968" r="6" fill="#191714" stroke="none"/>
+  </g>
+
+  <!-- B-only strokes, drawn in B's own upright frame -->
+  <g transform="rotate(180 500 500)" fill="none" stroke="#191714" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 404 428 Q 500 398 596 428" stroke-width="4"/>
+    <path d="M 424 444 Q 500 420 576 444" stroke-width="2.5"/>
+    <path d="M 392 560 L 416 542" stroke-width="3"/>
+    <path d="M 608 560 L 584 542" stroke-width="3"/>
+  </g>
+</svg>
+```

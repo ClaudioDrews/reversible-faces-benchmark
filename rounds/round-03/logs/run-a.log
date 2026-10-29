@@ -1,0 +1,4 @@
+deepseek-v4.1-flash {'model': 'deepseek/deepseek-v4.1-flash', 'id': 'deepseek/deepseek-v4.1-flash', 'prompt_tokens': 4981, 'completion_tokens': 64000, 'cost': 0.05813351775, 'finish': 'length', 'event': None, 'title': None}
+glm-5.3-flash {'model': 'z-ai/glm-5.3-flash', 'id': 'z-ai/glm-5.3-flash', 'prompt_tokens': 5042, 'completion_tokens': 8533, 'cost': 0.00349577514, 'finish': 'stop', 'event': 'AI assistant launch demo, 2024 — triumphant unveil vs. the confident wrong answer', 'title': 'Launch Antenna / Dead Battery'}
+   valid XML 3434
+TOTAL cost 0.06162929289

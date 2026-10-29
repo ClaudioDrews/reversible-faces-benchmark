@@ -1,0 +1,48 @@
+EVENT: ChatGPT launch and the AI boom, followed by "the plug gets pulled" (late 2022 onward)
+TITLE: The Plug Gets Pulled
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#f3eee2"/>
+  <g stroke="#26211d" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M495 192 C645 185 726 322 722 505 C718 690 622 818 496 822 C366 820 282 686 286 496 C290 318 372 199 495 192 Z" fill="#f3eee2" stroke-width="10"/>
+    <circle cx="415" cy="500" r="27" fill="#f3eee2" stroke-width="7"/>
+    <circle cx="585" cy="500" r="27" fill="#f3eee2" stroke-width="7"/>
+    <g stroke="none" fill="#26211d">
+      <circle cx="419" cy="497" r="9"/>
+      <circle cx="589" cy="503" r="9"/>
+    </g>
+    <g stroke="none">
+      <path d="M366 206 L382 126 Q492 96 606 124 L622 208 Z" fill="#26211d"/>
+      <path d="M296 206 Q492 244 704 202 L706 240 Q494 280 294 242 Z" fill="#26211d"/>
+      <path d="M520 52 L537 92 Q520 104 503 92 Z" fill="#26211d"/>
+      <path d="M520 104 L530 120 L510 120 Z" fill="#c8452b"/>
+      <path d="M300 236 Q492 268 700 234 L698 268 Q660 302 618 280 Q578 306 538 284 Q496 310 456 284 Q416 306 376 280 Q336 302 302 268 Z" fill="#26211d"/>
+      <path d="M500 620 C452 600 392 616 368 644 C404 668 462 648 500 630 C538 648 596 668 632 644 C608 616 548 600 500 620 Z" fill="#26211d"/>
+      <path d="M400 666 Q500 724 600 666 Q500 694 400 666 Z" fill="#c8452b" stroke="#26211d" stroke-width="6"/>
+      <path d="M462 404 C452 384 456 352 472 344 C488 352 490 384 480 404 Z" fill="#26211d"/>
+      <path d="M344 706 Q500 742 656 706 L646 792 Q606 866 500 872 Q394 866 354 792 Z" fill="#26211d"/>
+      <path d="M330 872 Q500 850 670 872 L700 910 Q500 946 300 910 Z" fill="#26211d"/>
+    </g>
+    <g fill="none">
+      <path d="M372 458 Q412 432 454 454" stroke-width="8"/>
+      <path d="M546 452 Q586 428 626 452" stroke-width="8"/>
+      <path d="M498 545 C496 566 482 574 481 588 C483 598 517 598 519 588 C518 574 503 566 498 545 Z" stroke-width="7"/>
+      <path d="M436 320 C466 302 502 300 530 312 C552 321 566 332 560 344" stroke-width="6"/>
+    </g>
+    <g transform="rotate(180 500 500)">
+      <g fill="none">
+        <path d="M376 436 L452 458" stroke-width="8"/>
+        <path d="M546 458 L624 432" stroke-width="8"/>
+        <path d="M392 480 Q415 468 440 480" stroke-width="7"/>
+        <path d="M560 480 Q585 468 610 480" stroke-width="7"/>
+      </g>
+      <g stroke-width="4">
+        <rect x="488" y="840" width="24" height="26" rx="4" fill="#c8452b" stroke="#26211d"/>
+        <path d="M494 824 L494 838 M506 824 L506 838" fill="none" stroke="#26211d" stroke-width="5"/>
+        <circle cx="500" cy="810" r="7" fill="#c8452b" stroke="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
+```

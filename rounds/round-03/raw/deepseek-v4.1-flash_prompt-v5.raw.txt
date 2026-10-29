@@ -1,0 +1,136 @@
+EVENT: AI model release hype cycle, mid-2020s
+TITLE: The Promise and the Prompt
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#f7f4ec"/>
+
+  <!-- ================= SHARED / A-READING STROKES ================= -->
+  <g fill="none" stroke="#141414" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- HEAD OUTLINE: top is A's crown/hat, bottom is A's chin/jaw -->
+    <!-- A: tall proud hat crown at top (~200); jaw at ~800 -->
+    <path d="M 320 700
+             C 300 560 320 400 380 300
+             C 420 230 460 190 500 188
+             C 540 190 580 230 620 300
+             C 680 400 700 560 680 700
+             C 660 800 600 850 500 852
+             C 400 850 340 800 320 700 Z"
+          fill="#efe9dd" stroke-width="10"/>
+
+    <!-- A's hat brim / hair line: broad arc near y=350 -->
+    <!-- This becomes B's nose tip in the rotated reading -->
+    <path d="M 340 360
+             C 400 330 470 348 500 356
+             C 540 366 610 340 660 352"
+          stroke-width="9"/>
+
+    <!-- A's smile: big cup at y≈680  ->  becomes B's hat band/dome -->
+    <path d="M 410 660
+             C 445 705 555 705 590 660"
+          stroke-width="8"/>
+    <!-- smile corners (the dimples) -->
+    <path d="M 395 645 C 405 660 415 662 420 655" stroke-width="6"/>
+    <path d="M 605 645 C 595 660 585 662 580 655" stroke-width="6"/>
+
+    <!-- ===== SHARED EYES (anchor) ===== -->
+    <!-- A's eyes sit at y≈500. Round, open, delighted. -->
+    <g stroke-width="6">
+      <!-- left eye: big open circle => A delighted ; B: heavy lid reads across -->
+      <path d="M 388 500 C 400 474 432 474 444 500 C 432 526 400 526 388 500 Z" fill="#fff" stroke-width="6"/>
+      <path d="M 556 500 C 568 474 600 474 612 500 C 600 526 568 526 556 500 Z" fill="#fff" stroke-width="6"/>
+      <!-- pupils: placed slightly high in A so they look upward/delight; in B they read as downward/sly -->
+      <circle cx="416" cy="492" r="9" fill="#141414"/>
+      <circle cx="584" cy="492" r="9" fill="#141414"/>
+    </g>
+
+    <!-- A's brows: raised & arched (delight). Become B's under-eye bags. -->
+    <path d="M 380 452 C 405 428 435 430 452 452" stroke-width="8"/>
+    <path d="M 548 452 C 565 430 595 428 620 452" stroke-width="8"/>
+
+    <!-- A's nose (small, button) at ~640.  Becomes B's chin decoration zone. -->
+    <path d="M 485 620 C 490 640 510 640 515 620" stroke-width="6"/>
+
+    <!-- A's chin dimple / base of smile support -->
+    <path d="M 480 720 C 500 738 520 738 540 720" stroke-width="5"/>
+
+    <!-- A's proud tall hat: vertical side lines rising from brim -->
+    <path d="M 375 360 C 360 300 355 250 370 210" stroke-width="9"/>
+    <path d="M 625 360 C 640 300 645 250 630 210" stroke-width="9"/>
+    <!-- hat top band -->
+    <path d="M 370 210 C 430 185 570 185 630 210" stroke-width="9"/>
+    <!-- hat vertical stripes (A's decoration) -> become B's beard striations -->
+    <path d="M 430 200 L 420 340" stroke-width="4" opacity="0.75"/>
+    <path d="M 500 192 L 500 350" stroke-width="4" opacity="0.75"/>
+    <path d="M 570 200 L 580 340" stroke-width="4" opacity="0.75"/>
+
+    <!-- A's ears at eye level -->
+    <path d="M 318 490 C 300 480 296 515 316 528" stroke-width="8"/>
+    <path d="M 682 490 C 700 480 704 515 684 528" stroke-width="8"/>
+
+    <!-- ===== A's COLLAR / bow tie at ~890 => becomes B's pompom / crown top ===== -->
+    <!-- A proud wide collar -->
+    <path d="M 380 872 C 440 900 560 900 620 872" stroke-width="9"/>
+    <path d="M 380 872 C 360 850 360 830 385 818" stroke-width="8"/>
+    <path d="M 620 872 C 640 850 640 830 615 818" stroke-width="8"/>
+    <path d="M 470 878 L 500 918 L 530 878" stroke-width="7"/>
+    <!-- collar button -->
+    <circle cx="500" cy="890" r="7" fill="#141414"/>
+
+    <!-- ===== A's PROP: speech-bubble "promise" crown gem ===== -->
+    <!-- small sparkle above hat = AI promise / launch -->
+    <path d="M 500 150 L 508 168 L 526 176 L 508 184 L 500 202 L 492 184 L 474 176 L 492 168 Z"
+          fill="#c8462f" stroke="#c8462f" stroke-width="3"/>
+
+  </g>
+
+  <!-- ================= B-ONLY STROKES (pre-rotated) ================= -->
+  <g transform="rotate(180 500 500)" fill="none" stroke="#141414" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- B's eyes: narrowed, heavy, sly. These sit inside/slightly above A's eyes so they read as lid lines in A. -->
+    <!-- B's eyes at y≈500; drawn narrow with heavy upper lid. -->
+    <path d="M 386 500 C 400 486 434 486 448 500" stroke-width="7"/>
+    <path d="M 554 500 C 568 486 602 486 616 500" stroke-width="7"/>
+    <!-- B's heavy lower lid/bag (a fine line): in A these read as upper lid crease -->
+    <path d="M 392 512 C 410 522 430 522 446 512" stroke-width="5"/>
+    <path d="M 556 512 C 572 522 592 522 610 512" stroke-width="5"/>
+
+    <!-- B's heavy brows: slanted down toward center (sly / skeptical). -->
+    <!-- In A these become cheek/lower-eye pouches and stay light. -->
+    <path d="M 372 462 C 400 452 436 462 452 478" stroke-width="7"/>
+    <path d="M 548 478 C 564 462 600 452 628 462" stroke-width="7"/>
+
+    <!-- B's nose: long, aquiline at y≈650, drawn in B frame -> sits at y≈350 in A as brim/hair detail -->
+    <path d="M 470 620 C 480 660 520 660 532 620" stroke-width="6"/>
+    <path d="M 480 650 C 495 668 508 668 522 650" stroke-width="4"/>
+
+    <!-- B's mouth: slim, smug, downturned-in-center ∩ at y≈680 -->
+    <!-- sits near A's smile; in A, reads as chin crease -->
+    <path d="M 448 680 C 480 660 520 660 552 680" stroke-width="6"/>
+
+    <!-- B's hat: limp sagging cap collapsing. Drawn in B coords -> in A it reads as hair/beard mass. -->
+    <!-- B cap dome -->
+    <path d="M 388 320 C 440 350 560 350 612 320" stroke-width="8"/>
+    <path d="M 372 356 C 420 392 580 392 628 356" stroke-width="8"/>
+    <!-- B cap brim (floppy) -->
+    <path d="M 368 356 C 430 384 570 384 632 356" stroke-width="7"/>
+    <!-- B cap wrinkle -->
+    <path d="M 430 320 C 470 340 530 340 570 320" stroke-width="4" opacity="0.8"/>
+
+    <!-- B's beard: scraggly mass hanging down in B -> reads as A's hair/jaw shading -->
+    <path d="M 430 700 C 440 760 470 800 500 806 C 530 800 560 760 570 700" stroke-width="7"/>
+    <path d="M 450 720 C 462 770 485 796 500 800" stroke-width="4" opacity="0.8"/>
+    <path d="M 550 720 C 538 770 515 796 500 800" stroke-width="4" opacity="0.8"/>
+
+    <!-- ===== B's PROP: cracked screen / broken tablet resting on the cap ===== -->
+    <!-- in B frame sits high (near B's hat crown) -> in A becomes a limp collar ornament -->
+    <g transform="translate(500 250)">
+      <rect x="-34" y="-22" width="68" height="44" rx="5" fill="#c8462f" stroke="#8f2f1f" stroke-width="3"/>
+      <path d="M -6 -18 L 10 4 L -10 6 L 6 20" stroke="#f7f4ec" stroke-width="3" fill="none"/>
+    </g>
+
+  </g>
+
+</svg>
+```

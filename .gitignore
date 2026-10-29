@@ -1,0 +1,11 @@
+# secrets and local config
+.env
+*.env
+secrets*
+
+# local runs and caches
+runs/
+__pycache__/
+*.pyc
+.DS_Store
+*.tmp

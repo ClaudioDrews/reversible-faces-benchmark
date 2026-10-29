@@ -1,0 +1,87 @@
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#f6f1e7"/>
+  <g fill="none" stroke="#1d1a17" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- silhouette: A's hat top = B's chin; A's chin = B's hat top -->
+    <path d="M 500 215
+             Q 350 228 308 330
+             Q 298 352 322 362
+             Q 315 372 318 395
+             Q 298 520 332 645
+             Q 352 790 500 825
+             Q 648 790 668 645
+             Q 702 520 682 395
+             Q 685 372 678 362
+             Q 702 352 692 330
+             Q 650 228 500 215 Z"
+          fill="#f6f1e7" stroke-width="9"/>
+
+    <!-- hat: brim (∩) = B's nose tip; band (∪) = B's frown; hatch = B's stubble shading -->
+    <path d="M 300 355 Q 500 320 700 355" stroke-width="7"/>
+    <path d="M 390 310 Q 500 338 610 310" stroke-width="6"/>
+    <g stroke-width="3">
+      <path d="M 380 245 L 425 288"/>
+      <path d="M 452 240 L 497 283"/>
+      <path d="M 524 240 L 569 283"/>
+      <path d="M 596 248 L 634 290"/>
+    </g>
+
+    <!-- raised brows of A = heavy eye-bags of B -->
+    <path d="M 360 458 Q 415 428 465 452" stroke-width="7"/>
+    <path d="M 535 452 Q 585 428 640 458" stroke-width="7"/>
+
+    <!-- shared eyes; lid lines double as droopy lids of B -->
+    <circle cx="415" cy="500" r="27" stroke-width="6" fill="#f6f1e7"/>
+    <circle cx="585" cy="500" r="27" stroke-width="6" fill="#f6f1e7"/>
+    <circle cx="415" cy="498" r="9" fill="#1d1a17" stroke="none"/>
+    <circle cx="585" cy="498" r="9" fill="#1d1a17" stroke="none"/>
+    <path d="M 390 524 Q 415 536 440 524" stroke-width="4"/>
+    <path d="M 560 524 Q 585 536 610 524" stroke-width="4"/>
+
+    <!-- nose = B's hair fringe -->
+    <path d="M 470 620 L 461 648" stroke-width="5"/>
+    <path d="M 530 620 L 539 648" stroke-width="5"/>
+    <path d="M 455 655 Q 500 673 545 655" stroke-width="6"/>
+
+    <!-- wide grin of A = band of B's cap -->
+    <path d="M 395 675 Q 500 748 605 675" stroke-width="7"/>
+
+    <!-- headset of A = big ears of B; boom mic = B's temple hair curl -->
+    <ellipse cx="295" cy="505" rx="22" ry="42" fill="#2f2a26" stroke-width="5"/>
+    <ellipse cx="705" cy="505" rx="22" ry="42" fill="#2f2a26" stroke-width="5"/>
+    <path d="M 316 540 Q 382 612 436 646" stroke-width="5"/>
+    <circle cx="444" cy="649" r="10" fill="#2f2a26" stroke-width="4"/>
+
+    <!-- neck seams = B's hat seams -->
+    <path d="M 385 800 Q 405 852 422 866" stroke-width="4"/>
+    <path d="M 615 800 Q 595 852 578 866" stroke-width="4"/>
+
+    <!-- collar (∪) = B's hat brim (∩) -->
+    <path d="M 300 872 Q 500 822 700 872" stroke-width="8"/>
+
+    <!-- bow tie of A = pompom of B -->
+    <path d="M 500 890 L 448 862 Q 424 890 448 918 Z" fill="#1d1a17" stroke-width="6"/>
+    <path d="M 500 890 L 558 868 Q 580 890 558 914 Z" fill="#1d1a17" stroke-width="6"/>
+    <circle cx="500" cy="890" r="13" fill="#1d1a17" stroke-width="5"/>
+
+    <!-- B-only strokes, drawn in B's own frame -->
+    <g transform="rotate(180 500 500)" stroke-width="3">
+      <!-- weary forehead creases -->
+      <path d="M 440 410 Q 500 402 560 410"/>
+      <path d="M 455 430 Q 500 424 545 430"/>
+      <!-- nasolabial folds -->
+      <path d="M 395 655 Q 388 680 400 706"/>
+      <path d="M 605 655 Q 612 680 600 706"/>
+      <!-- stubble on chin and around mouth -->
+      <path d="M 440 728 L 448 742"/>
+      <path d="M 470 736 L 476 750"/>
+      <path d="M 500 740 L 500 754"/>
+      <path d="M 530 736 L 524 750"/>
+      <path d="M 560 728 L 552 742"/>
+      <path d="M 468 774 L 474 786"/>
+      <path d="M 532 774 L 526 786"/>
+    </g>
+  </g>
+</svg>
+```

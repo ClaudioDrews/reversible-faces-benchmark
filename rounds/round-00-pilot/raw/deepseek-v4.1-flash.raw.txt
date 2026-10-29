@@ -1,0 +1,59 @@
+Here's a reversible face SVG in the Rex Whistler style, built as a single drawing that reads as two different technology archetypes when flipped.
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#faf7f0"/>
+  <g fill="none" stroke="#1a1a1a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- shared head outline -->
+    <path d="M 300 400 C 300 280 370 215 500 215 C 630 215 700 280 700 400 L 700 600 C 700 720 630 785 500 785 C 370 785 300 720 300 600 Z"/>
+    <!-- ears (shared) -->
+    <path d="M 302 466 Q 276 500 302 534"/>
+    <path d="M 698 466 Q 724 500 698 534"/>
+    <!-- eyes (shared) -->
+    <ellipse cx="416" cy="500" rx="40" ry="21"/>
+    <ellipse cx="584" cy="500" rx="40" ry="21"/>
+    <!-- brows in A / eye-bags in B -->
+    <path d="M 372 464 Q 416 424 460 464"/>
+    <path d="M 540 470 Q 584 440 628 470"/>
+    <!-- under-eye bags in A / upper-lid creases in B -->
+    <path d="M 388 528 Q 416 548 444 528" stroke-width="4"/>
+    <path d="M 556 528 Q 584 548 612 528" stroke-width="4"/>
+    <!-- A hat  ==  B beard / jaw / chin -->
+    <path d="M 336 326 C 406 342 444 350 462 352 C 478 353 490 376 500 400 C 510 376 522 353 538 352 C 556 350 594 342 664 326 L 634 320 C 628 278 604 240 576 220 Q 500 200 424 220 C 396 240 372 278 366 320 Z"/>
+    <!-- A hat band  ==  B mouth -->
+    <path d="M 392 288 Q 500 316 608 288"/>
+    <!-- hat creases  ==  B beard strands -->
+    <path d="M 432 252 L 430 284" stroke-width="4"/>
+    <path d="M 472 240 L 470 286" stroke-width="4"/>
+    <path d="M 528 240 L 530 286" stroke-width="4"/>
+    <path d="M 568 252 L 570 284" stroke-width="4"/>
+    <!-- A moustache  ==  B hat brim -->
+    <path d="M 396 660 Q 500 648 604 660"/>
+    <path d="M 406 682 Q 500 658 594 682"/>
+    <!-- A nose  ==  B hairline + brow crease -->
+    <path d="M 496 578 Q 492 604 500 628"/>
+    <path d="M 478 628 Q 488 640 500 634 Q 512 640 522 628"/>
+    <!-- A mouth  ==  B hat band -->
+    <path d="M 418 724 Q 500 692 582 724"/>
+    <!-- A jaw lines  ==  B hat crown sides -->
+    <path d="M 406 664 C 420 700 436 742 448 782"/>
+    <path d="M 594 664 C 580 700 564 742 552 782"/>
+    <!-- A neck  ==  B hat sides -->
+    <path d="M 444 782 C 440 818 448 848 456 872"/>
+    <path d="M 556 782 C 560 818 552 848 544 872"/>
+    <!-- cheek / temple lines, rotation pair -->
+    <path d="M 336 566 Q 348 606 340 648" stroke-width="4"/>
+    <path d="M 664 434 Q 652 394 660 352" stroke-width="4"/>
+  </g>
+  <!-- A bow tie  ==  B pom-pom -->
+  <g fill="#b8332a" stroke="#1a1a1a" stroke-width="6" stroke-linejoin="round">
+    <path d="M 500 858 L 448 834 L 440 884 Z"/>
+    <path d="M 500 858 L 552 834 L 560 884 Z"/>
+    <path d="M 484 844 L 516 844 L 516 876 L 484 876 Z"/>
+  </g>
+  <g fill="#1a1a1a">
+    <circle cx="421" cy="497" r="15"/>
+    <circle cx="589" cy="497" r="15"/>
+  </g>
+</svg>
+```
+Upright, the smooth-faced, grinning figure with a neat hat and red bow tie reads as the polished AI pitch; rotated 180°, the same lines become a heavy-jawed, frowning bearded worker with a small cap — a quiet joke about hype versus reality.
