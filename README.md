@@ -277,3 +277,7 @@ Copyright (c) 2026 Cláudio Drews.
 - **Content** (paper, docs, prompts, evaluations, logs, SVGs, raw outputs, previews): CC BY 4.0, see [`LICENSE-CONTENT`](LICENSE-CONTENT).
 
 Details and caveats about AI-generated outputs: [`LICENSING.md`](LICENSING.md).
+
+## To do
+
+See [to-do.md](to-do.md) for the planned next version of the benchmark.
