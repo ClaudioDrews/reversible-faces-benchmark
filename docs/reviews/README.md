@@ -10,3 +10,4 @@ During the project, a second AI agent (a Hermes agent playing a "critic" role) r
 | `review-4-repository-draft.md` | While preparing this repository | Draft of this repository |
 | `review-5-paper-integration.md` | After the paper and docs were integrated | README, paper, new docs, citation file |
 | `review-6-round4-design.md` | Before round 4 was run | Prompt v6 and the tool harness (design review; did not review the outputs) |
+| `review-7-hardening.md` | After round 4, in response to an external pre-publication review | The hardened scripts (SVG sanitizer, sandboxed renderer, exact validator, cost limits, tests): two passes and what was done with each point |

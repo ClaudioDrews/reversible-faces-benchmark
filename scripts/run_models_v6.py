@@ -1,42 +1,73 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2026 Cláudio Drews
-"""Round 4 runner (prompt v6): one prompt, a short tool loop, one SVG per model.
+"""Round 4 runner (prompt v6): a SINGLE-ATTEMPT TOOL-AUGMENTED run per model. Not one-shot.
 
 Usage:
     export OPENROUTER_API_KEY=...            # never commit keys
-    python scripts/run_models_v6.py OUT_DIR prompts/prompt-v6.md deepseek/deepseek-v4.1-flash
+    python scripts/run_models_v6.py [--timestamped|--force] OUT_DIR prompts/prompt-v6.md deepseek/deepseek-v4.1-flash
+    python scripts/run_models_v6.py --mock [--mock-svg hostile] OUT_DIR prompts/prompt-v6.md deepseek/deepseek-v4.1-flash   # offline, free
 
-Requires: Python 3.9+, Pillow, numpy (for the diagnostics), headless Chrome/Chromium on PATH, and
-bubblewrap (`bwrap`) for the code sandbox. Runs ONE model per invocation. Settings used in round 4:
+Protocol (see docs/methodology.md): one initial prompt from the human, then a loop in which the model may call
+two tools and the HARNESS (not a person) sends tool results and, when a budget is used up, a delivery notice.
+One run per model; the first final answer that contains an SVG is the answer.
+
+Requires: Python 3.9+, Pillow, numpy, defusedxml (requirements.txt), headless Chrome/Chromium and bubblewrap
+(`bwrap`). Runs ONE model per invocation. Settings used in round 4:
     NOREASON=1 MAXTOK=20000 ...   deepseek/deepseek-v4.1-flash
     EFFORT=medium MAXTOK=32000 .. z-ai/glm-5.3-flash
     EFFORT=low MAXTOK=32000 ..    minimax/minimax-m3.1-flash   (re-run with MAXTOK=64000, see rounds/round-04/SETUP.md)
-Note: after the first three round-4 runs (and before the MiniMax re-run) the EVENT/TITLE regular
-expressions were widened to accept backticks around the lines (GLM used them). After all runs, only this
-docstring and the import path of validate_svg were changed (made relative so the repository copy runs
-from any directory); the logic is otherwise unchanged.
+
+IMPORTANT: this file is the hardened version (security, budget and logging changes made after round 4). The
+round-4 results were produced by the earlier version, commit 6747499 (see docs/security.md and
+docs/reproduction.md). Model-output handling changed (sanitizing, sandboxed rendering, original SVG saved
+separately). The prompts, the tool set and the numeric limits are the same, but this version can do two things
+the old one could not: LOWER max_tokens for a call when the worst-case estimate would not fit the remaining
+budget, and stop before a call (cost_precheck_stop). To reproduce round 4 exactly, check out commit 6747499.
 
 Tools offered to the model (OpenAI-style function calling via OpenRouter):
-  run_python(code)   sandboxed Python 3 (bubblewrap: no network, private temp dir, 20 s, memory limit)
-  render_svg(path|svg) Chrome renders upright (A) and rotated 180 degrees (B); an image of both plus
-                     text diagnostics are fed back (every model used here accepts image input).
-Limits: MAX_RENDERS=5, MAX_TOOLCALLS=12, MAX_TURNS=16, COST_CAP_USD=0.25 per model.
-Environment: OPENROUTER_API_KEY; EFFORT (low|medium|high) or NOREASON=1; MAXTOK (per turn).
-Everything is saved under OUT_DIR/<model>/: transcript.jsonl, reasoning.txt, render-N.png,
-work/ (the sandbox folder), raw.txt (final answer), <model>.svg, cost-log.json.
+  run_python(code)     sandboxed Python 3 (bubblewrap: no network, private temp dir, 20 s, memory limit)
+  render_svg(path|svg) the SVG is sanitized (allowlist), then rendered by Chrome INSIDE a bubblewrap sandbox,
+                       upright (A) and rotated 180 degrees (B); an image of both plus text diagnostics are fed
+                       back (every model used here accepts image input).
+
+Limits (operational, per model): MAX_RENDERS=5 renders, MAX_TOOLCALLS=12 tool calls, MAX_TURNS=16 turns,
+COST_CAP_USD=0.25, 1800 s wall clock (checked between calls).
+  * MAX_TURNS counts turns in which the model may use tools. The loop allows MAX_TURNS+2 = 18 API calls in
+    total: the 2 extra are RECOVERY turns, namely (1) the forced-delivery turn after a delivery notice (turn,
+    tool or cost cap) and (2) one re-ask when a forced or final reply contains no SVG. There is no third.
+  * COST_CAP_USD is an APPROXIMATE operational limit, not a guarantee. Before each call the harness estimates
+    the worst case (prompt tokens x input price + max_tokens x output price) and lowers max_tokens, or stops,
+    if that would exceed the remaining budget; after each call it adds the provider-reported cost. Failed or
+    timed-out requests are not reported by the provider and can be billed unseen; a wrong price shifts the
+    estimate. If the provider omits usage.cost the cost is derived from the reported tokens and the price (never
+    counted as free). Any overrun of the reported cost is written to cost-log.json (cost_overrun_usd).
+Environment: OPENROUTER_API_KEY; EFFORT (low|medium|high) or NOREASON=1; MAXTOK (per turn); COST_CAP_USD;
+PRICE_IN_PER_MTOK / PRICE_OUT_PER_MTOK (USD per million tokens; otherwise read from OpenRouter's public models
+list, otherwise a pessimistic default).
+Everything is saved under OUT_DIR/<model>/ (refuses to overwrite a non-empty directory): transcript.jsonl,
+api-errors.jsonl (structured log of failed API attempts), reasoning.txt, render-N.png, render-N.svg (what was
+rendered: sanitized) and render-N.original.svg (what the model sent, normalized, never rendered unsandboxed),
+work/ (the sandbox folder), raw.txt (final answer), <model>.original.svg (the model's SVG, verbatim),
+<model>.svg (normalized; the delivered file), <model>.sanitized.svg, cost-log.json (incl. validator report).
 """
-import base64, io, json, os, re, shutil, subprocess, sys, tempfile, time, urllib.request
-import xml.etree.ElementTree as ET
+import argparse, base64, io, json, os, re, shutil, subprocess, sys, tempfile, time
 from pathlib import Path
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from validate_svg import check as contract_check  # noqa: E402
+import perceptual  # noqa: E402
+import rfb_common as C  # noqa: E402
+import safe_render  # noqa: E402
+import svg_safety  # noqa: E402
+import validate_svg  # noqa: E402
 
+HARNESS_VERSION = "2.1.0 (hardened; round 4 itself ran commit 6747499)"
 MAX_RENDERS, MAX_TOOLCALLS, MAX_TURNS = 5, 12, 16
-COST_CAP = float(os.environ.get("COST_CAP_USD", "0.25"))
+RECOVERY_TURNS = 2
+DEFAULT_COST_CAP = 0.25
 PY_TIMEOUT, PY_OUT = 20, 8000
+MAX_FILE_READ = svg_safety.MAX_BYTES      # 300 KB, same as the file contract and the sanitizer
 
 TOOLS = [
     {"type": "function", "function": {
@@ -52,96 +83,19 @@ TOOLS = [
 ]
 
 
-def chrome():
-    for n in ("google-chrome", "chromium", "chromium-browser"):
-        p = shutil.which(n)
-        if p:
-            return p
-    raise SystemExit("no chrome")
-
-
 def normalize_svg(text):
-    """Used for BOTH the rendered copy and the delivered copy: per-attribute fixes, strip title/desc/metadata."""
-    m = re.search(r"<svg\b[^>]*?(/?)>", text, re.S)
-    head = m.group(0)
-    selfclose = head.endswith("/>")
-    inner = head[4:-2] if selfclose else head[4:-1]
-    if "xmlns=" not in inner:
-        inner += ' xmlns="http://www.w3.org/2000/svg"'
-    if not re.search(r"\sviewBox=", " " + inner):
-        inner += ' viewBox="0 0 1000 1000"'
-    if not re.search(r"\swidth=", " " + inner):
-        inner += ' width="1000"'
-    if not re.search(r"\sheight=", " " + inner):
-        inner += ' height="1000"'
-    new = "<svg" + inner + ("/>" if selfclose else ">")
-    text = text.replace(head, new, 1)
+    """Used for BOTH the rendered copy and the delivered copy: per-attribute fixes, strip title/desc/metadata.
+    (Text-level helper only; it is never a security measure. Safety comes from svg_safety.sanitize().)"""
+    text = C.normalize_svg_head(text)
     return re.sub(r"\s*<(title|desc|metadata)\b.*?</\1>", "", text, flags=re.S)
 
 
-def chrome_shot(html_path, png, size, extra=()):
-    prof = tempfile.mkdtemp(prefix="chrome-prof-")
-    try:
-        subprocess.run([chrome(), "--headless", "--no-sandbox", "--disable-gpu", "--hide-scrollbars",
-                        "--force-device-scale-factor=1",
-                        "--virtual-time-budget=3000", "--run-all-compositor-stages-before-draw",
-                        '--host-resolver-rules=MAP * ~NOTFOUND',
-                        f"--screenshot={png}", f"--window-size={size},{size}", *extra, Path(html_path).resolve().as_uri()],
-                       check=True, capture_output=True, timeout=60,
-                       env={**os.environ, 'XDG_CONFIG_HOME': prof, 'XDG_CACHE_HOME': prof})
-    finally:
-        shutil.rmtree(prof, ignore_errors=True)
-
-
-def render_pair(svg_path, size=500):
-    with tempfile.TemporaryDirectory() as tmp:
-        html = Path(tmp) / "p.html"
-        html.write_text(f'<html><body style="margin:0;background:#fff"><img src="{Path(svg_path).resolve().as_uri()}" '
-                        f'width="{size}" height="{size}"></body></html>')
-        png = Path(tmp) / "up.png"
-        chrome_shot(html, png, size)
-        up = Image.open(png).convert("RGB")
-    if up.size != (size, size):
-        up = up.crop((0, 0, size, size)) if min(up.size) >= size else up.resize((size, size))
-    return up, up.rotate(180)
-
-
-BBOX_JS = """<script>
-window.onload=function(){var out=[];var svg=document.querySelector('svg');var sc=1000/svg.getBoundingClientRect().width;
-function add(el,label){var r=el.getBoundingClientRect();if(!r.width&&!r.height)return;
- var b=[r.left*sc,r.top*sc,r.right*sc,r.bottom*sc].map(Math.round);out.push({label:label,box:b,area:(b[2]-b[0])*(b[3]-b[1])});}
-var kids=[].slice.call(svg.children);var i=0;
-kids.forEach(function(k){var t=k.tagName.toLowerCase();i++;
- if(t==='g'){var rot=(k.getAttribute('transform')||'').indexOf('rotate')>=0;var j=0;
-   [].slice.call(k.children).forEach(function(c){j++;add(c,'g'+i+(rot?'(rotated)':'')+'/'+c.tagName.toLowerCase()+j)});}
- else add(k,t+i);});
-document.title='';var pre=document.createElement('pre');pre.id='bboxes';pre.textContent=JSON.stringify(out);document.body.appendChild(pre);};
-</script>"""
-
-
 def element_table(svg_text):
-    """Per-element bounding boxes (page units) and where they land after the half-turn. Measured by Chrome."""
-    clean = re.sub(r"<script\b.*?</script>", "", svg_text, flags=re.S)
-    clean = re.sub(r"\son\w+\s*=\s*(\"[^\"]*\"|'[^']*')", "", clean)
-    clean = re.sub(r"^<\?xml[^>]*\?>", "", clean.strip())
-    clean = clean.replace("<svg", '<svg style="width:500px;height:500px;display:block"', 1)
-    with tempfile.TemporaryDirectory() as tmp:
-        html = Path(tmp) / "b.html"
-        html.write_text(f'<html><body style="margin:0">{clean}{BBOX_JS}</body></html>')
-        prof = tempfile.mkdtemp(prefix="chrome-prof-")
-        try:
-            p = subprocess.run([chrome(), "--headless", "--no-sandbox", "--disable-gpu",
-                                "--virtual-time-budget=3000", '--host-resolver-rules=MAP * ~NOTFOUND',
-                                "--window-size=500,500", "--dump-dom", html.as_uri()],
-                               capture_output=True, text=True, timeout=60,
-                               env={**os.environ, 'XDG_CONFIG_HOME': prof, 'XDG_CACHE_HOME': prof})
-        finally:
-            shutil.rmtree(prof, ignore_errors=True)
-    m = re.search(r'<pre id="bboxes">(.*?)</pre>', p.stdout, re.S)
-    if not m:
+    """Per-element bounding boxes (page units) and where they land after the half-turn, measured by Chrome in
+    the sandbox on the sanitized SVG."""
+    rows = safe_render.element_boxes(svg_text)
+    if rows is None:
         return "(element table unavailable)"
-    import html as H
-    rows = json.loads(H.unescape(m.group(1)))
     rows.sort(key=lambda r: -r["area"])
     lines = ["largest elements: bbox on the page (x0,y0,x1,y1) -> bbox as it appears in B after the half-turn"]
     for r in rows[:12]:
@@ -152,37 +106,31 @@ def element_table(svg_text):
     return "\n".join(lines)
 
 
-def diagnostics(svg_path, up, rot):
-    problems, info = contract_check(svg_path)
-    import numpy as np
-    g = np.asarray(up.convert("L").resize((200, 200)), dtype=float)
-    ink = 255.0 - g
-    r = np.rot90(ink, 2)
-    rho = float(np.linalg.norm(ink - r) / (np.linalg.norm(ink) + 1e-9))
-    nonwhite = g < 200
-    frac = float(nonwhite.mean())
-    ys, xs = np.where(nonwhite)
-    bbox = [int(xs.min() * 5), int(ys.min() * 5), int(xs.max() * 5), int(ys.max() * 5)] if len(xs) else None
-    size_kb = round(Path(svg_path).stat().st_size / 1024, 1)
-    lines = [f"file: {size_kb} KB",
-             "contract problems: " + ("none" if not problems else "; ".join(problems)),
-             f"has <title>/<desc>: {info.get('has_title_or_desc')}",
-             f"rho (rotational symmetry; 0 = looks identical upside down; only a one-sided alarm): {rho:.3f}",
-             f"non-white fraction of the page: {frac:.3f}; bounding box of non-white pixels (x0,y0,x1,y1): {bbox}"]
-    if frac > 0.8:
-        lines.append("note: the page is almost all non-white, so rho is not informative.")
-    elif frac < 0.004:
-        lines.append("WARNING: almost nothing is drawn (blank or tiny figure).")
-    elif rho < 0.15:
-        lines.append("WARNING: very low rho: the figure is nearly rotationally symmetric.")
+def diagnostics(norm_text, up, findings):
+    """Text shown to the model. Structural facts (validator) are kept apart from perceptual hints."""
+    errors, warnings, info = validate_svg.check_bytes(norm_text.encode("utf-8"))
+    plines, rho = perceptual.lines(up)
+    lines = [f"file: {round(len(norm_text.encode('utf-8')) / 1024, 1)} KB",
+             "contract problems: " + ("none" if not errors else "; ".join(errors)),
+             f"has <title>/<desc>: {info.get('has_title_or_desc')}"]
+    other = [w for w in warnings if "<title>" not in w and "<desc>" not in w]
+    if other:
+        lines.append("warnings: " + "; ".join(other))
+    removed = [f for f in findings if f.severity == "error"]
+    if removed:
+        lines.append("NOTE: the safe renderer removed disallowed parts BEFORE drawing; the picture does not show them: "
+                     + "; ".join(f.message for f in removed[:6]))
+    lines += plines
     try:
-        lines.append(element_table(Path(svg_path).read_text()))
+        lines.append(element_table(norm_text))
     except Exception as e:
         lines.append(f"(element table failed: {e})")
     return "\n".join(lines), rho
 
 
 def run_python(code, work):
+    if not shutil.which("bwrap"):
+        return "run_python unavailable: bubblewrap is not installed on the host"
     script = work / "_snippet.py"
     script.write_text(code)
     cmd = ["env", "-i", "PATH=/usr/bin", "HOME=/work", "bwrap", "--unshare-all", "--die-with-parent", "--cap-drop", "ALL",
@@ -202,30 +150,6 @@ def run_python(code, work):
     return out or "(no output)"
 
 
-def api(key, body):
-    for attempt in range(3):
-        b = dict(body)
-        if attempt == 2:
-            b["max_tokens"] = min(b.get("max_tokens", 16000), 16000)
-        try:
-            req = urllib.request.Request("https://openrouter.ai/api/v1/chat/completions", json.dumps(b).encode(),
-                                         {"Authorization": "Bearer " + key, "Content-Type": "application/json"})
-            r = json.load(urllib.request.urlopen(req, timeout=600))
-            if "choices" in r and r["choices"]:
-                return r
-            print("API returned no choices:", str(r)[:300], flush=True)
-        except Exception as e:
-            err = str(e)
-            if hasattr(e, "read"):
-                try:
-                    err += " " + e.read().decode()[:500]
-                except Exception:
-                    pass
-            print("API error", attempt, err, flush=True)
-        time.sleep(5 * (attempt + 1))
-    return None
-
-
 def png_b64(img):
     b = io.BytesIO()
     img.save(b, "PNG", optimize=True)
@@ -237,15 +161,42 @@ DELIVER = ("[harness] Deliver now, without calling a tool, in the final format: 
            "then the complete SVG in one ```xml block.")
 
 
-def main():
-    out_root, prompt_file, model = Path(sys.argv[1]), Path(sys.argv[2]), sys.argv[3]
-    name = re.sub(r"[^A-Za-z0-9._-]", "_", model.split("/", 1)[1])
-    key = os.environ["OPENROUTER_API_KEY"]
-    out = out_root / name
+def parse_args(argv):
+    ap = argparse.ArgumentParser(description="Round 4 tool-augmented runner (one model per invocation).")
+    ap.add_argument("out_dir")
+    ap.add_argument("prompt_file")
+    ap.add_argument("model")
+    ap.add_argument("--timestamped", action="store_true", help="write into OUT_DIR/<model>/<YYYYmmdd-HHMMSS>")
+    ap.add_argument("--force", action="store_true", help="allow writing into a non-empty directory (overwrites)")
+    ap.add_argument("--mock", action="store_true",
+                    help="offline smoke test: scripted fake API, no network, no key, no cost")
+    ap.add_argument("--mock-svg", choices=["benign", "hostile"], default="benign",
+                    help="with --mock: the SVG the fake model writes (hostile = scripts, external refs, animation)")
+    return ap.parse_args(argv)
+
+
+def main(argv=None, transport=None):
+    args = parse_args(sys.argv[1:] if argv is None else argv)
+    out_root, prompt_file, model = Path(args.out_dir), Path(args.prompt_file), args.model
+    name = re.sub(r"[^A-Za-z0-9._-]", "_", model.split("/", 1)[-1])
+    if args.mock:
+        import mock_openrouter as M
+        transport = transport or M.MockTransport(M.harness_script(M.hostile_svg() if args.mock_svg == "hostile" else None))
+        key = "mock"
+    else:
+        key = os.environ.get("OPENROUTER_API_KEY")
+        if not key:
+            sys.exit("Set OPENROUTER_API_KEY in your environment.")
+        transport = transport or C.http_transport
+    out = C.prepare_out_dir(out_root / name, args.timestamped, args.force)
     work = out / "work"
     work.mkdir(parents=True, exist_ok=True)
+    apilog = C.ApiLog(out / "api-errors.jsonl")
     reasoning = {"enabled": False} if os.environ.get("NOREASON") else {"effort": os.environ.get("EFFORT", "medium")}
     maxtok = int(os.environ.get("MAXTOK", "32000"))
+    COST_CAP = float(os.environ.get("COST_CAP_USD", DEFAULT_COST_CAP))
+    pin, pout, psrc = C.price_for(model, offline=bool(args.mock))
+    budget = C.Budget(COST_CAP, pin, pout, psrc, tools=TOOLS)
     msgs = [{"role": "user", "content": prompt_file.read_text()}]
     tlog = (out / "transcript.jsonl").open("w")
     rfile = (out / "reasoning.txt").open("w")
@@ -260,37 +211,41 @@ def main():
             msgs[i] = {"role": "user", "content": HARNESS + "(an older render image was removed to save cost; "
                        "the numbers above remain.)"}
 
-    log("user_prompt", file=str(prompt_file), chars=len(msgs[0]["content"]))
+    log("user_prompt", file=str(prompt_file), chars=len(msgs[0]["content"]), harness=HARNESS_VERSION,
+        chrome=safe_render.chrome_version() if not args.mock else "mock", price_source=psrc)
     cost, ptok, ctok, renders, toolcalls, turns = 0.0, 0, 0, 0, 0, 0
     per_turn, final_text, last_svg_text, finish = [], None, None, None
+    render_rho = []      # advisory symmetry number of each successful render, for the record
     force, forced_once, providers = False, False, set()
     t0 = time.time()
 
-    def call(force_now):
-        body = {"model": model, "messages": msgs, "max_tokens": maxtok, "reasoning": reasoning,
-                "usage": {"include": True}}
-        if not force_now:
-            body["tools"] = TOOLS
-            body["tool_choice"] = "auto"
-        return api(key, body)
-
-    while turns < MAX_TURNS + 2 and time.time() - t0 < 1800:
+    while turns < MAX_TURNS + RECOVERY_TURNS and time.time() - t0 < 1800:
+        mt, est = budget.plan(msgs, maxtok)
+        if mt is None:
+            finish = "cost_precheck_stop"
+            log("harness", note="stopped before the call: even a minimal call could exceed the cost cap",
+                estimate_usd=round(est, 6), spent=round(budget.spent, 6))
+            break
         turns += 1
-        r = call(force)
+        body = {"model": model, "messages": msgs, "max_tokens": mt, "reasoning": reasoning, "usage": {"include": True}}
+        if not force:
+            body["tools"], body["tool_choice"] = TOOLS, "auto"
+        r = C.call_api(key, body, apilog, transport=transport, sleep=0 if args.mock else 5, model=model, turn=turns)
         if not r:
             finish = "api_failure"
             break
         ch = r["choices"][0]
         m = ch["message"]
         u = r.get("usage", {})
-        c = u.get("cost", 0) or 0
+        c = budget.record(turns, est, mt, u)     # reported cost; derived from tokens if the provider omits it
         cost += c
         ptok += u.get("prompt_tokens", 0) or 0
         ctok += u.get("completion_tokens", 0) or 0
         providers.add(str(r.get("provider")))
         det = (u.get("completion_tokens_details") or {})
         per_turn.append({"turn": turns, "prompt_tokens": u.get("prompt_tokens"), "completion_tokens": u.get("completion_tokens"),
-                         "reasoning_tokens": det.get("reasoning_tokens"), "cost": c, "finish": ch.get("finish_reason"),
+                         "reasoning_tokens": det.get("reasoning_tokens"), "cost": c, "estimate_before_call": round(est, 6),
+                         "max_tokens_used": mt, "finish": ch.get("finish_reason"),
                          "tool_calls": len(m.get("tool_calls") or []), "provider": r.get("provider"), "forced": force})
         reas = m.get("reasoning") or ""
         if reas:
@@ -310,7 +265,7 @@ def main():
             if re.search(r"<svg\b.*?</svg>", txt, re.S):
                 final_text, finish = txt, ch.get("finish_reason")
                 break
-            # empty / SVG-less answer: ask once more, forced, with the last rendered SVG available
+            # empty / SVG-less answer: ask once more, forced, with the last rendered SVG available (recovery turn)
             if forced_once:
                 final_text, finish = txt, (ch.get("finish_reason") or "") + "+no_svg"
                 break
@@ -325,42 +280,43 @@ def main():
         for tc in tcs:
             fn = tc["function"]["name"]
             try:
-                args = json.loads(tc["function"].get("arguments") or "{}")
+                targs = json.loads(tc["function"].get("arguments") or "{}")
             except Exception:
-                args = {}
+                targs = {}
             toolcalls += 1
             if toolcalls > MAX_TOOLCALLS:
                 res = "TOOL LIMIT REACHED (12). Deliver now, without calling a tool."
             elif fn == "run_python":
-                res = run_python(str(args.get("code", "")), work)
+                res = run_python(str(targs.get("code", "")), work)
             elif fn == "render_svg":
                 if renders >= MAX_RENDERS:
                     res = "RENDER LIMIT REACHED (5). Deliver now, without calling a tool."
                 else:
                     renders += 1
                     try:
-                        if args.get("svg"):
-                            raw_text = args["svg"]
+                        if targs.get("svg"):
+                            raw_text = targs["svg"]
                         else:
-                            sp = (work / str(args.get("path", ""))).resolve()
+                            sp = (work / str(targs.get("path", ""))).resolve()
                             if work.resolve() not in sp.parents or not sp.is_file():
                                 raise ValueError("path must be a file inside the working folder")
-                            raw_text = sp.read_text()
+                            if sp.stat().st_size > MAX_FILE_READ:
+                                raise ValueError("file is larger than 300 KB")
+                            raw_text = sp.read_text(errors="replace")
                         norm = normalize_svg(raw_text)
-                        rp = work / f"_render_{renders}.svg"
-                        rp.write_text(norm)
-                        up, rot = render_pair(rp)
-                        import numpy as np
-                        if (np.asarray(up.convert("L")) > 250).mean() > 0.9999 and "<rect" not in norm and len(norm) > 300:
-                            pass
-                        txt, rho = diagnostics(rp, up, rot)
+                        # sanitize BEFORE any render; render only inside the sandbox
+                        clean, findings = svg_safety.sanitize(norm)
+                        up, rot, _ = safe_render.render_pair(norm)
+                        txt, rho = diagnostics(norm, up, findings)
+                        render_rho.append({"render": renders, "symmetry_rho": rho})
                         W = 500
                         comp = Image.new("RGB", (W * 2 + 30, W + 10), "white")
                         comp.paste(up, (5, 5)); comp.paste(rot, (W + 25, 5))
                         b64, raw = png_b64(comp)
                         (out / f"render-{renders}.png").write_bytes(raw)
-                        (out / f"render-{renders}.svg").write_text(norm)
-                        last_svg_text = norm
+                        (out / f"render-{renders}.original.svg").write_text(norm)
+                        (out / f"render-{renders}.svg").write_text(clean)
+                        last_svg_text = clean
                         images.append((renders, b64))
                         res = (f"render {renders}/{MAX_RENDERS}. Left image = A (upright), right image = B (rotated 180°). "
                                f"The image follows in the next message.\n{txt}")
@@ -369,7 +325,7 @@ def main():
                         res = f"render failed (not counted): {e}"
             else:
                 res = f"unknown tool {fn}"
-            log("tool", turn=turns, name=fn, args=args if fn != "run_python" else {"code": args.get("code")}, result=res)
+            log("tool", turn=turns, name=fn, args=targs if fn != "run_python" else {"code": targs.get("code")}, result=res)
             msgs.append({"role": "tool", "tool_call_id": tc["id"], "content": res})
         if images:
             parts = []
@@ -396,26 +352,40 @@ def main():
     (out / "raw.txt").write_text(text)
     ev = re.search(r"^`?EVENT:\s*(.+?)`?$", text, re.M)
     ti = re.search(r"^`?TITLE:\s*(.+?)`?$", text, re.M)
-    rec = {"model": model, "reasoning": reasoning, "max_tokens_per_turn": maxtok, "turns": turns,
-           "tool_calls": toolcalls, "renders": renders, "prompt_tokens_total": ptok, "completion_tokens_total": ctok,
-           "cost_usd": round(cost, 6), "cost_cap_usd": COST_CAP, "finish": finish, "providers": sorted(providers),
-           "per_turn": per_turn, "event": ev.group(1).strip() if ev else None, "title": ti.group(1).strip() if ti else None,
+    rec = {"harness_version": HARNESS_VERSION, "model": model, "reasoning": reasoning, "max_tokens_per_turn": maxtok,
+           "turns": turns, "tool_calls": toolcalls, "renders": renders, "prompt_tokens_total": ptok,
+           "completion_tokens_total": ctok, "cost_usd": round(cost, 6), "cost_cap_usd": COST_CAP,
+           "cost_overrun_usd": budget.overrun, "render_symmetry_rho": render_rho, "budget": budget.summary(), "finish": finish,
+           "providers": sorted(providers), "api_failures_logged": apilog.count, "per_turn": per_turn,
+           "event": ev.group(1).strip() if ev else None, "title": ti.group(1).strip() if ti else None,
            "seconds": round(time.time() - t0)}
     m = re.search(r"<svg\b.*?</svg>", text, re.S)
     if m:
-        svg = '<?xml version="1.0" encoding="UTF-8"?>\n' + normalize_svg(m.group(0)) + "\n"
+        original = m.group(0)
+        (out / f"{name}.original.svg").write_text(original)           # verbatim, never rendered unsandboxed
         try:
-            ET.fromstring(svg.split("?>", 1)[1]); rec["xml"] = "valid"
-        except ET.ParseError as e:
-            rec["xml"] = f"INVALID: {e}"
-        (out / f"{name}.svg").write_text(svg)
-        rec["svg"] = f"{name}.svg"
+            norm = normalize_svg(original)
+        except ValueError:
+            norm = original
+        delivered = '<?xml version="1.0" encoding="UTF-8"?>\n' + norm + "\n"
+        (out / f"{name}.svg").write_text(delivered)
+        rec["svg"], rec["svg_original"] = f"{name}.svg", f"{name}.original.svg"
+        errors, warnings, _ = validate_svg.check_bytes(delivered.encode("utf-8"))
+        rec["validator"] = {"errors": errors, "warnings": warnings, "passes_contract": not errors}
+        rec["xml"] = "valid" if not any(e.startswith("invalid XML") for e in errors) else "INVALID"
+        try:
+            clean, findings = svg_safety.sanitize(delivered)
+            (out / f"{name}.sanitized.svg").write_text(clean)
+            rec["sanitizer_removed"] = [f.message for f in findings if f.severity == "error"]
+        except svg_safety.SvgRejected as e:
+            rec["sanitizer_rejected"] = e.message
     else:
         rec["svg"] = None
         if last_svg_text:
             rec["note"] = "no SVG in final answer; last rendered file kept as render-N.svg only (NOT delivered)"
     (out / "cost-log.json").write_text(json.dumps(rec, indent=1, ensure_ascii=False))
-    print(name, {k: v for k, v in rec.items() if k != "per_turn"}, flush=True)
+    print(name, {k: v for k, v in rec.items() if k not in ("per_turn", "budget")}, flush=True)
+    return rec
 
 
 if __name__ == "__main__":

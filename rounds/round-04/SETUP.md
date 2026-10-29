@@ -54,6 +54,9 @@ Before the round, a second agent (Hermes, "critic" role) reviewed the prompt and
 - **Applied:** normalize before rendering and fix a Chrome screenshot race; failed renders are not counted; explicit messages on forced-delivery paths, no `tools` on forced turns, an empty or SVG-less final reply is requested again with the last rendered SVG pasted in; one user message for all images, labelled as harness output; only the last two images are kept; reasoning tokens and provider are logged; ink thresholds unified and a guard on ρ; the element bounding-box table; a stop-notice statement in the prompt; three strokes of written arithmetic restored; the dictionary header and one "three-role stroke" sentence restored; dropped capabilities and more memory in the sandbox.
 - **Not applied:** pinning providers; `ulimit -u` (it would count all of the user's processes); restoring "¡OHO!"; a control run of prompt v5 with tools (left as future work).
 
+## Note added after the round: hardening of the harness
+The runs above were made with the harness of commit `6747499`. The harness in this repository was hardened afterwards (sanitized SVG, Chrome inside bubblewrap, pre-call cost estimate, structured API-failure log, the model's SVG saved verbatim, no silent overwrite; requires `defusedxml` as well). Prompts, tools, limits and settings are unchanged and the round-4 outputs were **not** regenerated. What the earlier version did and did not isolate: [`../../docs/security.md`](../../docs/security.md). The cost cap is an approximate operational limit and the turn bound is `MAX_TURNS + 2 = 18` calls (observed maximum 14; this round used 10 to 12): [`../../docs/reproduction.md`](../../docs/reproduction.md).
+
 ## Sandbox safety
 Model code runs only inside bubblewrap (network off, isolated namespaces, read-only system files except the working folder, clean environment). Chrome opens the model's SVG only through an `<img>` or, for the bounding-box table, inline without `<script>` and `on*` attributes and with DNS disabled. The API key stays in the harness and never enters the sandbox.
 
@@ -64,4 +67,4 @@ NOREASON=1 MAXTOK=20000 python scripts/run_models_v6.py runs/r4 prompts/prompt-v
 EFFORT=medium MAXTOK=32000 python scripts/run_models_v6.py runs/r4 prompts/prompt-v6.md z-ai/glm-5.3-flash
 EFFORT=low MAXTOK=64000 python scripts/run_models_v6.py runs/r4 prompts/prompt-v6.md minimax/minimax-m3.1-flash
 ```
-Requires Pillow, numpy, headless Chrome/Chromium and bubblewrap.
+Requires Pillow, numpy, defusedxml, headless Chrome/Chromium and bubblewrap (versions: `requirements.txt`).

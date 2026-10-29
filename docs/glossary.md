@@ -18,10 +18,14 @@ The README, the docs and the [paper](../paper/reversible-faces-benchmark-paper.m
 | **Page y vs. B-frame y** | The dictionary pairs a feature of A at height y_A on the page with a feature of B at height y_B in **B's own frame**, where y_A = 1000 − y_B (in page units) or y_A = −y_B (in units of H relative to the eyes). |
 | **Sum rule** | Every exaggeration in A must be paid by its partner in B; hats, hair, beards, collars and wrinkles absorb leftovers. |
 | **Free variable** | A feature that has no fixed partner (hair mass, hats, beards, collars, wrinkles). |
-| **One-shot** | One prompt, one attempt, one SVG per model; no feedback. |
-| **Round** | One batch of one-shot runs on the three models, normally of one prompt version (round 1 mixed v2 and v3; see its evaluation). Round 0 is a pilot that was not human-evaluated. |
-| **Tool-enabled condition** | Round 4: the model may call a sandboxed Python tool and a render tool in a loop (at most 5 renders) before delivering. Rounds 0–3 had no tools. |
-| **Harness** | The program that runs a model (`scripts/run_models.py` one-shot; `scripts/run_models_v6.py` for the tool loop), enforces the limits and records everything. |
+| **Single initial prompt** | The only message written by a person is the prompt; nobody answers or corrects. Required by every protocol here, but alone it says nothing about tools or about how many model calls happen. |
+| **One-shot without tools** | Rounds 0–3: a single initial prompt, one request and one response per model, no tools, no harness messages, one SVG. |
+| **Single-attempt tool-augmented run** | Round 4: a single initial prompt, then a loop where the model may call sandboxed Python and a render tool; tool results and delivery notices come from the harness, not a person; one run per model. Not one-shot. A rerun after a failure is a selection. |
+| **Round** | One batch of runs (one-shot without tools in rounds 0–3; single-attempt tool-augmented in round 4) on the three models, normally of one prompt version (round 1 mixed v2 and v3; see its evaluation). Round 0 is a pilot that was not human-evaluated. |
+| **Tool-enabled condition** | The condition of round 4: the model may call a sandboxed Python tool and a render tool in a loop (at most 5 renders) before delivering. Rounds 0–3 had no tools. |
+| **Recovery turn** | One of the 2 extra API calls the round-4 harness allows beyond `MAX_TURNS` (16): the forced-delivery turn after a delivery notice, and one re-ask if a reply has no SVG. |
+| **Sanitized SVG** | A copy of a model's SVG rebuilt from an allowlist (no scripts, event handlers, external references, DTD/entities, animation). Renderers only ever see this copy, and only inside a sandbox. |
+| **Harness** | The program that runs a model (`scripts/run_models.py` one-shot without tools; `scripts/run_models_v6.py` for the tool loop), enforces the limits and records everything. |
 | **Prompt version** | v1 to v6 (plus the discarded v5b); see [`prompt-evolution.md`](prompt-evolution.md). |
 | **Event** | The recent technology/AI event that the joke is about, as declared by the model (`EVENT:` line). It is not fact-checked. |
 | **Verdict words** | The evaluator's informal labels ("OK", "somewhat bad", "low", ...); see [`methodology.md`](methodology.md). |

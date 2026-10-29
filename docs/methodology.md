@@ -4,11 +4,22 @@
 
 Give the evaluated model the best possible instructions so that it has the best possible chance of success. Material goes into the prompt when it helps the model succeed, not only when it can be scored.
 
-## One-shot
+## Protocol wording: three terms that are not interchangeable
 
-- One prompt, one attempt, one SVG per model.
-- Nobody answers questions or gives feedback during the attempt.
-- If a call fails for technical reasons (timeout, token limit with no answer), it is retried; those retries and their costs are logged in each round. A retry changes only a setting such as reasoning effort, never the prompt, except for the discarded variant `prompts/discarded/prompt-v5b.md`.
+| Term | What it means here | Rounds | Runner |
+|---|---|---|---|
+| **Single initial prompt** | The only message written by a person is the prompt. Nobody answers questions, corrects, or gives feedback. This is necessary for the other two protocols but does not say whether tools or further model calls exist. | all | both |
+| **One-shot without tools** | A single initial prompt, **one request and one response** per model, no tools, no harness messages, one SVG. | 0–3 | `scripts/run_models.py` |
+| **Single-attempt tool-augmented run** | A single initial prompt, then a loop in which the model may call two tools (sandboxed Python; a render of its own SVG upright and rotated by 180°). Tool results, and a delivery notice when a budget is used up, come from the **harness, not from a person**. One run per model; the first final answer that contains an SVG is the answer. It is **not one-shot**: there are many API calls (up to 12 tool turns plus 2 recovery turns) and the model sees its own render. | 4 | `scripts/run_models_v6.py` |
+
+"Single attempt" never means "single API call" in round 4, and it does not cover reruns: a run repeated after a failure (MiniMax in round 4) is a **selection**, and is reported as such.
+
+### Rules for one-shot without tools (rounds 0–3)
+
+- One prompt, one request, one SVG per model. Nobody answers questions or gives feedback.
+- If a call fails for technical reasons (timeout, token limit with no answer), it is retried; the retries and their costs are logged in each round (from the hardened runners on, every failed API attempt is also written to a structured `api-errors.jsonl`). A retry changes only a setting such as reasoning effort, never the prompt, except for the discarded variant `prompts/discarded/prompt-v5b.md`.
+- The runners refuse to write into a non-empty output directory, so an earlier result cannot be silently overwritten (`--timestamped` or `--force` are explicit).
+- The model's SVG is saved **verbatim** (`*.original.svg`) separately from the normalized file (`*.svg`: namespace, viewBox, size added if missing; title/desc stripped from round 3 on) and from the sanitized copy that renderers use (`*.sanitized.svg`).
 
 ## Human judgment, no rubric
 
@@ -28,7 +39,7 @@ Only the prompt text (`prompts/`). In rounds 0–3 the models had no tools: they
 
 ## Round 4: the tool-enabled condition
 
-Round 4 (prompt v6, after the paper) is the exception: the model may call two tools in a loop run by [`scripts/run_models_v6.py`](../scripts/run_models_v6.py): `run_python` (Python in a sandbox with no network) and `render_svg` (Chrome renders the SVG upright and rotated by 180°; the image and text diagnostics come back; models that accept images see it). Limits: 5 renders, 12 tool calls, 16 turns, US$0.25 per model. The judging is unchanged (a human, informal, no rubric). Everything about it, including the differences from prompt v5 and the MiniMax re-run, is in [`../rounds/round-04/SETUP.md`](../rounds/round-04/SETUP.md). It is **not** a controlled comparison with round 3.
+Round 4 (prompt v6, after the paper) is the exception, and is a **single-attempt tool-augmented run** (see the table above), not a one-shot run: the model may call two tools in a loop run by [`scripts/run_models_v6.py`](../scripts/run_models_v6.py): `run_python` (Python in a sandbox with no network) and `render_svg` (Chrome renders the SVG upright and rotated by 180°; the image and text diagnostics come back; models that accept images see it). Limits: 5 renders, 12 tool calls, 16 turns, and an approximate operational cost cap of US$0.25 per model. The turn bound is `MAX_TURNS + 2 = 18` API calls: the 2 extra are the **recovery turns** (a forced-delivery turn after a delivery notice, and one re-ask when a reply has no SVG). Because every tool turn uses at least one of the 12 tool calls, the observed maximum is 14 calls (12 tool turns + 2 recovery turns); round 4's runs used 10–12. The cost cap is checked with a defensive estimate before each call and with the provider-reported cost after it; it is **not a guarantee** (details in [`../scripts/run_models_v6.py`](../scripts/run_models_v6.py) and [`reproduction.md`](reproduction.md)). The judging is unchanged (a human, informal, no rubric). Everything about it, including the differences from prompt v5 and the MiniMax re-run, is in [`../rounds/round-04/SETUP.md`](../rounds/round-04/SETUP.md). It is **not** a controlled comparison with round 3.
 
 ## File contract
 

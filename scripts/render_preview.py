@@ -5,35 +5,20 @@
 
 Usage: python scripts/render_preview.py in.svg out.png [--size 500]
 
-Requires Pillow and a headless Chrome/Chromium on PATH (google-chrome, chromium or
-chromium-browser). The preview is for README illustration only; the benchmark's
-judgment is always made by a human looking at the SVG itself.
+The SVG is treated as UNTRUSTED: it is rebuilt by `svg_safety.sanitize()` (allowlist; scripts, event handlers,
+external references, DTD/entities are removed or rejected) and rendered by headless Chrome/Chromium inside a
+bubblewrap sandbox with no network and only a temporary directory writable (see `safe_render.py`).
+Requires Pillow, defusedxml, bubblewrap and Chrome/Chromium. If bubblewrap is missing the script refuses to
+run. The preview is for README illustration only; the benchmark's judgment is made by a human looking at the
+SVG itself. Rendering may differ slightly between Chrome versions and platforms (see docs/reproduction.md).
 """
 import argparse
-import shutil
-import subprocess
-import tempfile
+import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw
-
-
-def chrome():
-    for name in ("google-chrome", "chromium", "chromium-browser"):
-        path = shutil.which(name)
-        if path:
-            return path
-    raise SystemExit("No Chrome/Chromium found on PATH.")
-
-
-def render(svg, png, size):
-    with tempfile.TemporaryDirectory() as tmp:
-        html = Path(tmp) / "p.html"
-        html.write_text(f'<html><body style="margin:0"><img src="{Path(svg).resolve().as_uri()}" '
-                        f'width="{size}" height="{size}"></body></html>')
-        subprocess.run([chrome(), "--headless", "--no-sandbox", "--disable-gpu",
-                        f"--screenshot={png}", f"--window-size={size},{size}", html.as_uri()],
-                       check=True, capture_output=True)
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import safe_render  # noqa: E402
+import svg_safety  # noqa: E402
 
 
 def main():
@@ -42,19 +27,12 @@ def main():
     ap.add_argument("out")
     ap.add_argument("--size", type=int, default=500)
     a = ap.parse_args()
-    with tempfile.TemporaryDirectory() as tmp:
-        up = Path(tmp) / "up.png"
-        render(a.svg, str(up), a.size)
-        im = Image.open(up).convert("RGB")
-        rot = im.rotate(180)
-        pad, label_h = 12, 28
-        canvas = Image.new("RGB", (a.size * 2 + pad * 3, a.size + label_h + pad * 2), "white")
-        d = ImageDraw.Draw(canvas)
-        canvas.paste(im, (pad, label_h + pad))
-        canvas.paste(rot, (a.size + pad * 2, label_h + pad))
-        d.text((pad, pad), "A: as drawn (upright)", fill="black")
-        d.text((a.size + pad * 2, pad), "B: rotated 180 degrees", fill="black")
-        canvas.save(a.out)
+    try:
+        safe_render.side_by_side(Path(a.svg).read_bytes(), a.out, a.size)
+    except svg_safety.SvgRejected as e:
+        sys.exit(f"refusing to render: {e.message}")
+    except safe_render.RenderUnavailable as e:
+        sys.exit(str(e))
 
 
 if __name__ == "__main__":

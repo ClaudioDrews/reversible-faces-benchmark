@@ -4,7 +4,7 @@ Copyright (c) 2026 Cláudio Drews.
 
 | Part | License | File |
 |---|---|---|
-| Code (`scripts/`, including `run_models_v6.py`) | MIT | [`LICENSE`](LICENSE) |
+| Code (`scripts/` and `tests/`, including `run_models_v6.py`) | MIT | [`LICENSE`](LICENSE) |
 | Content: the paper (`paper/`), documentation (including `docs/references.md` and `docs/related-work.md`), prompts, evaluations, logs, SVGs, raw model outputs, previews | CC BY 4.0 | [`LICENSE-CONTENT`](LICENSE-CONTENT) |
 | `CITATION.cff` | Citation metadata; it declares the repository's licenses (MIT for code, CC BY 4.0 for content) | [`CITATION.cff`](CITATION.cff) |
 

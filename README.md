@@ -1,8 +1,8 @@
 # Reversible Faces Benchmark
 
-A small, one-shot benchmark that asks an LLM to draw **one SVG that shows two different faces: one when you look at it upright, and a different one when you turn it upside down.** This is the trick behind Rex Whistler's *reversible faces* in the book *OHO! Certain Two-Faced Individuals* (1946).
+A small benchmark that asks an LLM to draw **one SVG that shows two different faces: one when you look at it upright, and a different one when you turn it upside down.** This is the trick behind Rex Whistler's *reversible faces* in the book *OHO! Certain Two-Faced Individuals* (1946).
 
-The drawing must also carry a **joke about a recent technology / AI event**, told only through the two faces. There is no caption, no text in the image, and no follow-up: the model gets one prompt, makes one attempt, and a human looks at the result (turning the phone in their hand).
+The drawing must also carry a **joke about a recent technology / AI event**, told only through the two faces. There is no caption and no text in the image. In the baseline protocol (rounds 0–3) the model is **one-shot without tools**: one prompt, one response, no follow-up; a human then looks at the result (turning the phone in their hand). Round 4 is a different protocol, a **single-attempt tool-augmented run** (see [Protocol wording](#protocol-wording)). Everyone uses a *single initial prompt*: no person ever answers the model.
 
 <p align="center"><img src="assets/previews/round-03__minimax-m3.1-flash_prompt-v5.png" alt="Round 3 example: MiniMax output, upright and rotated 180 degrees" width="720"></p>
 <p align="center"><em>Round 3 output from one of the tested models (MiniMax, prompt v5). Left: as drawn. Right: the same file rotated 180°. Previews are for illustration only; the benchmark is judged on the SVG itself.</em></p>
@@ -16,6 +16,8 @@ This repository contains the full story so far: the task design, every prompt ve
 ## Abstract
 
 The Reversible Faces Benchmark (RFB) asks a language model to write **one SVG file that shows one face when viewed upright and a different face when rotated by 180°**, in the tradition of Rex Whistler's reversible faces. The drawing must also carry a joke about a recent technology or AI event, told only through the two faces, with no text. The model receives one prompt, makes one attempt, and a human judges the result by turning the page. The task combines three abilities that models usually exercise separately: spatial reasoning under a rotation that cannot be checked by eye while writing code, drawing quality, and humor.
+
+*(The paragraph and the contribution list below summarize the paper, which covers rounds 0–3 only; round 4 is described in the sections that follow.)*
 
 This repository gives a formal description of the geometry (a half-turn acting as an involution, a feasible set defined by two recognition regions, and a closed-form rule for compromise strokes), the one-shot protocol and file contract, and the results of three human-evaluated rounds with three models. The main empirical finding is negative and instructive: **in the single run per model, adding event and art instructions (prompt v4, with several changes at once) coincided with all three models losing the 180° reading**, while a rebuilt prompt with reversibility as the absolute priority and a staged workflow (v5) restored identifiable faces in both orientations for all three (DeepSeek ran with reasoning disabled in that round and is not comparable with the other two). The evidence is weak (single author-evaluator, three models, one run each, no repeats) and is presented as such.
 
@@ -36,6 +38,7 @@ Full text: [`paper/reversible-faces-benchmark-paper.md`](paper/reversible-faces-
 - [Models, settings and costs](#models-settings-and-costs)
 - [Repository layout](#repository-layout)
 - [How to run it](#how-to-run-it)
+- [Security, tests and reproducibility](#security-tests-and-reproducibility)
 - [Limitations and honest notes](#limitations-and-honest-notes)
 - [Future work](#future-work)
 - [References and related work](#references-and-related-work)
@@ -69,7 +72,12 @@ The prompt gives the model what it needs to *understand the task* and to *plan a
 
 ## Design decisions
 
-**One-shot.** The model receives a single prompt, produces a single SVG, and nobody answers questions or gives feedback. The models in the rounds had no tools (they could not run code, render the SVG or search); they could only check their output by reasoning, using the symbolic check the prompt describes.
+<a id="protocol-wording"></a>**Protocol wording: three terms, not interchangeable.**
+- **Single initial prompt**: the only message written by a person is the prompt; nobody answers questions or gives feedback (all rounds).
+- **One-shot without tools** (rounds 0–3): a single initial prompt, one request and one response per model, one SVG. The models could not run code, render the SVG or search; they could only check their output by reasoning, using the symbolic check the prompt describes.
+- **Single-attempt tool-augmented run** (round 4): a single initial prompt, then a loop in which the model may run sandboxed code and render its own SVG upright and rotated by 180°; the **harness, not a person**, returns the tool results. One run per model, many API calls, **not one-shot**. A rerun (MiniMax in round 4) is a selection and is reported as one.
+
+Details and rules: [`docs/methodology.md`](docs/methodology.md).
 
 **The human is the judge, with no rubric.** Anyone looking at the result can instinctively tell whether the two faces work, whether it is well drawn, and whether it is funny. We deliberately dropped the scoring rubric, the scoring gates, the anonymized evaluator sheets and the statistical protocol that appeared in earlier design drafts (see [`docs/design-history/`](docs/design-history/), which is **superseded**: it describes a heavier design than the one run). The only "criteria" that exist are the **self-check list inside the prompt**, which the *model* uses to judge its own work before delivering.
 
@@ -185,6 +193,9 @@ docs/
   references.md           verified bibliography and what was checked
   threats-to-validity.md  what limits the conclusions
   future-work.md          experiments still needed
+  security.md             untrusted SVG: sanitizer, sandbox, what is and is not covered
+  validator-audit.md      the new validator applied to every existing SVG (none fails)
+  reproduction.md         tested versions, rendering variance, reproduction limits, cost/turn bounds
   design-history/         earlier design specs (v0.3, v0.4): SUPERSEDED, kept for context
   reviews/                critiques of the prompt/repo/paper integration/round-4 design by a second agent
 prompts/
@@ -199,22 +210,30 @@ rounds/
       logs/               token and cost logs (round 4: also full transcripts of the tool loop)
       not-evaluated/      (rounds 1 and 4) runs that were not part of the evaluated set
 scripts/
-  run_models.py           one-shot runner (OpenRouter; key from environment)
+  run_models.py           one-shot, no-tools runner (OpenRouter; key from environment)
   run_models_v6.py        round-4 runner: tool loop, sandboxed Python, Chrome render, diagnostics
-  validate_svg.py         checks parts of the file contract (size, XML, viewBox, forbidden elements)
-  render_preview.py       upright + rotated side-by-side PNG (README previews only)
+  validate_svg.py         the file contract, exactly, plus safety (no external refs, animation, scripts, DTD...); structure only
+  render_preview.py       upright + rotated side-by-side PNG (README previews only; sanitized + sandboxed)
+  svg_safety.py           allowlist parser/sanitizer for untrusted SVG (defusedxml)
+  safe_render.py          Chrome inside bubblewrap: the only renderer
+  perceptual.py           advisory diagnostics (rho, bounding box); not validity
+  rfb_common.py           pre-call cost estimate, structured API log, no-overwrite output dirs
+  mock_openrouter.py      scripted fake API for offline tests (no cost)
+tests/                    offline tests and valid/invalid SVG fixtures (see tests/README.md)
+requirements.txt          tested versions (requirements-dev.txt: pytest, cffconvert)
+to-do.md                  the plan for the next benchmark version
 assets/previews/          PNG previews
 ```
 
 ## How to run it
 
-Requirements: Python 3.9+, `Pillow` (previews only), and Chrome/Chromium for previews.
+Requirements: Python 3.9+; `pip install -r requirements.txt` (Pillow, numpy, defusedxml; versions tested are pinned there); for previews and for round 4, Chrome/Chromium and [bubblewrap](https://github.com/containers/bubblewrap) (`bwrap`) on Linux. Rendering **refuses to run without bubblewrap**: model-written SVG is untrusted (see below).
 
 ```bash
 git clone https://github.com/<your-account>/reversible-faces-benchmark.git
 cd reversible-faces-benchmark
 
-# 1. Run a prompt one-shot on one or more models (set your key in the environment, never in files)
+# 1. Run a prompt one-shot (no tools) on one or more models (set your key in the environment, never in files)
 export OPENROUTER_API_KEY=...
 python scripts/run_models.py runs/my-run prompts/prompt-v5.md \
     deepseek/deepseek-v4.1-flash z-ai/glm-5.3-flash minimax/minimax-m3.1-flash
@@ -227,7 +246,12 @@ STRIP_METADATA=1 python scripts/run_models.py ...        # remove <title>/<desc>
 # Round 4 (tool-enabled; needs Pillow, numpy, Chrome and bubblewrap; one model per call):
 NOREASON=1 MAXTOK=20000 python scripts/run_models_v6.py runs/r4 prompts/prompt-v6.md deepseek/deepseek-v4.1-flash
 
-# 2. Check the file contract
+# Both runners refuse to overwrite a non-empty OUT_DIR (use --timestamped or --force), save the model's SVG
+# verbatim as <model>.original.svg, and log every failed API attempt to api-errors.jsonl.
+# Offline smoke test of either runner with a scripted fake API (no key, no network, no cost):
+python scripts/run_models_v6.py --mock /tmp/smoke prompts/prompt-v6.md z-ai/glm-5.3-flash
+
+# 2. Check the file contract (structure and safety only; never judges the drawing)
 python scripts/validate_svg.py runs/my-run/*.svg
 
 # 3. Look at it: open the .svg in a browser, then turn your phone (or the page) 180 degrees.
@@ -235,7 +259,15 @@ python scripts/validate_svg.py runs/my-run/*.svg
 python scripts/render_preview.py runs/my-run/minimax-m3.1-flash.svg preview.png
 ```
 
-The judgment is human: open the SVG, look at it, rotate, and decide. Write your verdict next to the round, as in `rounds/*/EVALUATION.md`.
+The judgment is human: open the SVG, look at it, rotate, and decide. Write your verdict next to the round, as in `rounds/*/EVALUATION.md`. Only open SVGs from a model in a browser if you trust them; the previews and the harness never render them raw.
+
+## Security, tests and reproducibility
+
+- **Untrusted input.** Model-written SVG may contain scripts, external references, animation or entity bombs. Every renderer here first rebuilds the SVG from an allowlist (`scripts/svg_safety.py`) and then renders it **inside a bubblewrap sandbox** with no network and only a temporary directory writable (`scripts/safe_render.py`). `scripts/validate_svg.py` enforces the file contract exactly (viewBox `0 0 1000 1000`, `width`/`height` = `1000`, no external reference of any kind, no animation, scripts, event attributes, `foreignObject`, DTD/entities) and does **not** judge how the drawing looks; perceptual diagnostics are separate and advisory (`scripts/perceptual.py`). Details, including what the round-4 harness did before this hardening: [`docs/security.md`](docs/security.md).
+- **Tests** (no key, no network, no cost): `python -m unittest discover -s tests` (see [`tests/README.md`](tests/README.md)). They include the three cases from the external review: an external `<use href>`, `12x23` dimensions and SVG animation.
+- **Existing SVGs under the new validator:** none of the 18 fails; three round-2 files have `<title>`/`<desc>` warnings ([`docs/validator-audit.md`](docs/validator-audit.md)). No existing file was modified.
+- **Budget limits are approximate.** The round-4 harness estimates the worst-case cost *before* each call and adds the reported cost after it; it is an operational limit, not a guarantee, and overruns are recorded. The turn bound is `MAX_TURNS + 2 = 18` API calls (the 2 extra are recovery turns); at most 14 were possible in practice. See [`docs/reproduction.md`](docs/reproduction.md).
+- **Reproduction limits.** Tested with Chrome 156.0.8078.47, Python 3.13.5, bubblewrap 0.12.0; rendering can differ slightly across browsers; model runs cannot be reproduced exactly (no seeds, unpinned providers, retired model ids). Round 4 was produced by the harness of commit `6747499`; the harness in this repository is the hardened version. See [`docs/reproduction.md`](docs/reproduction.md).
 
 ## Limitations and honest notes
 
@@ -267,13 +299,13 @@ The verified bibliography (with what was checked for each entry) is in [`docs/re
 
 ## How to cite
 
-Cláudio Drews (2026). *Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models* (version 2.0, the version of the repository and of the paper). See [`CITATION.cff`](CITATION.cff); GitHub shows a "Cite this repository" button once the file is published.
+Cláudio Drews (2026). *Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models* (paper version 2.0, rounds 0–3). To cite the repository itself (version 2.1.0, with prompts v1–v6, round 4, the hardened scripts and tests), use the top-level fields of [`CITATION.cff`](CITATION.cff); the paper has its own entry there (`preferred-citation`). The repository version and the paper version are different things; GitHub shows a "Cite this repository" button once the file is published.
 
 ## License
 
 Copyright (c) 2026 Cláudio Drews.
 
-- **Code** (`scripts/`): MIT, see [`LICENSE`](LICENSE).
+- **Code** (`scripts/`, `tests/`): MIT, see [`LICENSE`](LICENSE).
 - **Content** (paper, docs, prompts, evaluations, logs, SVGs, raw outputs, previews): CC BY 4.0, see [`LICENSE-CONTENT`](LICENSE-CONTENT).
 
 Details and caveats about AI-generated outputs: [`LICENSING.md`](LICENSING.md).

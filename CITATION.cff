@@ -1,14 +1,18 @@
 cff-version: 1.2.0
-message: "If you use this benchmark, its prompts or its paper, please cite it as below."
+message: >-
+  If you use this benchmark, its prompts, scripts or results, please cite the repository/dataset (the fields below,
+  version 2.1.0). To cite the accompanying paper (version 2.0, which describes rounds 0-3 only), use the
+  preferred-citation entry. The paper's version and the repository's version are different things.
 title: "Reversible Faces Benchmark"
 type: dataset
-version: "2.0"  # version of the repository and the paper
+version: "2.1.0"  # version of the repository/dataset (prompts v1-v6, scripts, four evaluated rounds, tests)
 date-released: "2026-10-29"
 abstract: >-
-  A one-shot benchmark in which a language model writes a single SVG that shows
-  one face upright and a different face rotated by 180 degrees, carrying a joke
-  about a recent technology or AI event. Includes the prompts, scripts, model
-  outputs, human evaluations from three pilot rounds, and an accompanying paper.
+  A benchmark in which a language model writes a single SVG that shows one face upright and a different face
+  rotated by 180 degrees, carrying a joke about a recent technology or AI event. Includes the prompts (v1-v6), the
+  scripts (runners, validator, sanitizer, sandboxed renderer), model outputs, human evaluations from four rounds
+  (three pilot rounds run one-shot without tools, and a later single-attempt tool-augmented round 4), offline tests,
+  and an accompanying paper that describes rounds 0-3.
 authors:
   - family-names: "Drews"
     given-names: "Cláudio"
@@ -21,6 +25,7 @@ keywords:
   - SVG generation
   - LLM evaluation
   - one-shot benchmark
+  - tool-augmented evaluation
 preferred-citation:
   type: report
   title: "Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models"
@@ -28,5 +33,5 @@ preferred-citation:
     - family-names: "Drews"
       given-names: "Cláudio"
   year: 2026
-  version: "2.0"
-  notes: "Version 2.0, 29 October 2026. Early research; not peer reviewed. File: paper/reversible-faces-benchmark-paper.md"
+  version: "2.0"  # version of the PAPER (rounds 0-3 only); not the repository version
+  notes: "Paper version 2.0, 29 October 2026. Early research; not peer reviewed. File: paper/reversible-faces-benchmark-paper.md. Round 4 and the harness hardening came after the paper and are documented only in the repository."
