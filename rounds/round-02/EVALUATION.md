@@ -12,11 +12,9 @@ Prompt v4 made the current event central and added heavy art guidance (see `../.
 
 MiniMax's first attempt (reasoning effort medium) hit the 64000-token limit without delivering an SVG (cost US$0.0389, raw answer in `raw/*attempt1-truncated*`); the delivered run used low effort. Cost of delivered runs: US$0.0523; including the failed attempt: US$0.0913.
 
-## The evaluation, in the evaluator's words
+## The evaluation
 
-> "Piorou bastante. Agora não tem mais imagem em 180°."
-
-English translation: *It got a lot worse. Now there is no image at 180° anymore.*
+> "It got a lot worse. Now there is no image at 180° anymore."
 
 All three outputs lost the reversible effect.
 

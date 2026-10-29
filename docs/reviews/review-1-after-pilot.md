@@ -1,6 +1,6 @@
 # Review 1: after the pilot (round 0). English summary
 
-The original review was written in Portuguese; this is a faithful English summary of its points.
+This is an English summary of the review's points.
 
 **Blockers and main problems**
 

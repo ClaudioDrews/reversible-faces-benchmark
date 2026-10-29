@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Cláudio Drews
 """Render a side-by-side preview of an SVG: upright (A) and rotated 180 degrees (B).
 
 Usage: python scripts/render_preview.py in.svg out.png [--size 500]

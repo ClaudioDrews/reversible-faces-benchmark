@@ -10,11 +10,9 @@ Evaluator: the benchmark's author (Cláudio Drews). Date: 2026-10-28.
 
 (The MiniMax run on prompt v3 was interrupted before it finished, so its prompt-v2 output was evaluated instead. DeepSeek and GLM also have prompt-v2 runs in `not-evaluated/`; they were superseded by v3 and not judged.)
 
-## The evaluation, in the evaluator's words
+## The evaluation
 
-> "O primeiro e o terceiro estão ok no efeito. O segundo tá meio ruim no efeito. Os três não possuem muita qualidade artística. O primeiro e o terceiro são meio engraçados. Mas nenhum deles aproveita eventos atuais de forma impactante."
-
-English translation: *The first and the third are OK in effect. The second is somewhat bad in effect. None of the three has much artistic quality. The first and the third are somewhat funny. But none of them uses current events in an impactful way.*
+> "The first and the third are OK in effect. The second is somewhat bad in effect. None of the three has much artistic quality. The first and the third are somewhat funny. But none of them uses current events in an impactful way."
 
 ## How these were generated
 

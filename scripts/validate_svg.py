@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Cláudio Drews
 """Check that SVGs meet the benchmark's file contract.
 
 Usage: python scripts/validate_svg.py file.svg [file2.svg ...]

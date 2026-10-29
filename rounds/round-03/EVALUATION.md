@@ -12,11 +12,9 @@ Prompt v5 was rebuilt from v3 with reversibility as the absolute priority, a sta
 
 `<title>`/`<desc>`/`<metadata>` were stripped from the SVGs by the script (`STRIP_METADATA=1`). All three validate with `scripts/validate_svg.py` and open standalone in Chrome.
 
-## The evaluation, in the evaluator's words
+## The evaluation
 
-> "Nesta terceira rodada os três modelos se saíram melhor. Todos conseguiram fazer imagens identificáveis em ambas orientações e a qualidade artística melhorou."
-
-English translation: *In this third round all three models did better. All of them managed to make identifiable images in both orientations, and the artistic quality improved.*
+> "In this third round all three models did better. All of them managed to make identifiable images in both orientations, and the artistic quality improved."
 
 ## Costs (from `logs/COSTS.md`)
 

@@ -16,7 +16,7 @@ A human opens the SVG in a browser and, holding the phone or the page, turns it 
 
 ### How to read the verdict words
 
-The evaluator's words are informal and are translated literally. Roughly: **effect "OK"** means both orientations read as recognizable faces and the second face is clearly different from the first; **effect "somewhat bad"** means the second reading is hard to see or confusing; **artistic quality "low"** means a simple, diagram-like drawing without much character or finish; **"somewhat funny"** means the contrast raises a mild smile; **"not used in an impactful way"** means a specific recent event is not recognizable from the drawing. These are descriptions of one person's reaction, not measurements. The evaluator is also the author of the benchmark.
+The evaluator's words are informal. Roughly: **effect "OK"** means both orientations read as recognizable faces and the second face is clearly different from the first; **effect "somewhat bad"** means the second reading is hard to see or confusing; **artistic quality "low"** means a simple, diagram-like drawing without much character or finish; **"somewhat funny"** means the contrast raises a mild smile; **"not used in an impactful way"** means a specific recent event is not recognizable from the drawing. These are descriptions of one person's reaction, not measurements. The evaluator is also the author of the benchmark.
 
 ## What the model sees
 
@@ -37,4 +37,4 @@ Only the prompt text (`prompts/`). Models had no tools: they could not run code,
 
 ## Rounds and evaluation
 
-Each evaluated round has an `EVALUATION.md` with the human's verdict (translated to English, original wording quoted), the models, prompt, settings, costs, and conclusions that fed the next prompt.
+Each evaluated round has an `EVALUATION.md` with the human's verdict (in English), the models, prompt, settings, costs, and conclusions that fed the next prompt.

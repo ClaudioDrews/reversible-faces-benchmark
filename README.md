@@ -92,7 +92,7 @@ More detail is in [`docs/how-it-works.md`](docs/how-it-works.md), and an annotat
 
 Round 0 was a pilot; the human-evaluated rounds are 1, 2 and 3. Every round used the same three inexpensive models. Image strips below always show, from top to bottom: DeepSeek, GLM, MiniMax.
 
-| Round | Prompt | Human verdict (translated; originals in each round's `EVALUATION.md`) |
+| Round | Prompt | Human verdict (see each round's `EVALUATION.md`) |
 |---|---|---|
 | 0 (pilot, not evaluated) | v1 | — |
 | 1 | v2 (MiniMax), v3 (DeepSeek, GLM) | Effect OK on DeepSeek and MiniMax, weak on GLM; none has much artistic quality; two are mildly funny; none uses current events in an impactful way. |
@@ -142,8 +142,11 @@ The whole project so far cost roughly half a dollar in model calls. Exact per-ru
 ## Repository layout
 
 ```
+reversible-faces-benchmark/
 README.md                 this file
-LICENSING.md              licensing proposal (not final)
+LICENSE                   MIT (code in scripts/)
+LICENSE-CONTENT           CC BY 4.0 (everything else)
+LICENSING.md              what is covered by which license
 docs/
   how-it-works.md         the task, rotation math, dual-function dictionary
   worked-example.md       one real output, stroke by stroke
@@ -172,6 +175,9 @@ assets/previews/          PNG previews
 Requirements: Python 3.9+, `Pillow` (previews only), and Chrome/Chromium for previews.
 
 ```bash
+git clone https://github.com/<your-account>/reversible-faces-benchmark.git
+cd reversible-faces-benchmark
+
 # 1. Run a prompt one-shot on one or more models (set your key in the environment, never in files)
 export OPENROUTER_API_KEY=...
 python scripts/run_models.py runs/my-run prompts/prompt-v5.md \
@@ -208,4 +214,9 @@ The judgment is human: open the SVG, look at it, rotate, and decide. Write your 
 
 ## License
 
-Not decided yet. See [`LICENSING.md`](LICENSING.md) for the proposal (code and content licensed separately).
+Copyright (c) 2026 Cláudio Drews.
+
+- **Code** (`scripts/`): MIT, see [`LICENSE`](LICENSE).
+- **Content** (docs, prompts, evaluations, logs, SVGs, raw outputs, previews): CC BY 4.0, see [`LICENSE-CONTENT`](LICENSE-CONTENT).
+
+Details and caveats about AI-generated outputs: [`LICENSING.md`](LICENSING.md).

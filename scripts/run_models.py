@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Cláudio Drews
 """Run one benchmark prompt, one-shot, on one or more models via OpenRouter.
 
 Usage:
