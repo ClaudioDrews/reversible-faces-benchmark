@@ -1,0 +1,148 @@
+{
+ "model": "deepseek/deepseek-v4.1-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "max_tokens_per_turn": 20000,
+ "turns": 11,
+ "tool_calls": 11,
+ "renders": 5,
+ "prompt_tokens_total": 137666,
+ "completion_tokens_total": 10633,
+ "cost_usd": 0.023231,
+ "cost_cap_usd": 0.25,
+ "finish": "stop",
+ "providers": [
+  "CoreWeave",
+  "Together",
+  "Wafer"
+ ],
+ "per_turn": [
+  {
+   "turn": 1,
+   "prompt_tokens": 5795,
+   "completion_tokens": 999,
+   "reasoning_tokens": 0,
+   "cost": 0.00075267225,
+   "finish": "tool_calls",
+   "tool_calls": 2,
+   "provider": "Wafer",
+   "forced": false
+  },
+  {
+   "turn": 2,
+   "prompt_tokens": 7145,
+   "completion_tokens": 41,
+   "reasoning_tokens": 0,
+   "cost": 0.002170773,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Together",
+   "forced": false
+  },
+  {
+   "turn": 3,
+   "prompt_tokens": 7831,
+   "completion_tokens": 2136,
+   "reasoning_tokens": 0,
+   "cost": 0.0023823657,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "CoreWeave",
+   "forced": false
+  },
+  {
+   "turn": 4,
+   "prompt_tokens": 9983,
+   "completion_tokens": 41,
+   "reasoning_tokens": 0,
+   "cost": 0.00032176584,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "CoreWeave",
+   "forced": false
+  },
+  {
+   "turn": 5,
+   "prompt_tokens": 10893,
+   "completion_tokens": 2104,
+   "reasoning_tokens": 0,
+   "cost": 0.00150690078,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "CoreWeave",
+   "forced": false
+  },
+  {
+   "turn": 6,
+   "prompt_tokens": 13011,
+   "completion_tokens": 41,
+   "reasoning_tokens": 0,
+   "cost": 0.00028974528,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "CoreWeave",
+   "forced": false
+  },
+  {
+   "turn": 7,
+   "prompt_tokens": 13580,
+   "completion_tokens": 2017,
+   "reasoning_tokens": 0,
+   "cost": 0.001603404,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Wafer",
+   "forced": false
+  },
+  {
+   "turn": 8,
+   "prompt_tokens": 15605,
+   "completion_tokens": 41,
+   "reasoning_tokens": 0,
+   "cost": 0.00259707492,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Together",
+   "forced": false
+  },
+  {
+   "turn": 9,
+   "prompt_tokens": 16160,
+   "completion_tokens": 1963,
+   "reasoning_tokens": 0,
+   "cost": 0.00418836528,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Together",
+   "forced": false
+  },
+  {
+   "turn": 10,
+   "prompt_tokens": 18137,
+   "completion_tokens": 41,
+   "reasoning_tokens": 0,
+   "cost": 0.00018234612,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Together",
+   "forced": false
+  },
+  {
+   "turn": 11,
+   "prompt_tokens": 19526,
+   "completion_tokens": 1209,
+   "reasoning_tokens": 0,
+   "cost": 0.007235514,
+   "finish": "stop",
+   "tool_calls": 0,
+   "provider": "Together",
+   "forced": true
+  }
+ ],
+ "event": "the generative-AI hype cycle — launch-day promise to post-launch burnout (approx. 2023–2025)",
+ "title": "Headset Hype, Server Sag",
+ "seconds": 55,
+ "xml": "valid",
+ "svg": "deepseek-v4.1-flash.svg"
+}

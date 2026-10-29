@@ -1,0 +1,39 @@
+EVENT: the generative-AI hype cycle — launch-day promise to post-launch burnout (approx. 2023–2025)
+TITLE: Headset Hype, Server Sag
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<rect width="1000" height="1000" fill="#fbf8f2"/>
+<path d="M 500 150 C 626 150 690 232 690 340 C 690 412 674 452 668 512 C 660 596 686 656 652 728 C 622 792 566 822 500 822 C 434 822 378 792 348 728 C 314 656 340 596 332 512 C 326 452 310 412 310 340 C 310 232 374 150 500 150 Z" fill="none" stroke="#141414" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="rotate(180 500 500)">
+<path d="M 428 656 Q 500 556 572 656 Z" fill="#141414"/>
+<path d="M 420 664 Q 500 634 580 664 Q 576 712 500 716 Q 424 712 420 664 Z" fill="#141414"/>
+<path d="M 344 450 Q 404 490 460 458" fill="none" stroke="#141414" stroke-width="8" stroke-linecap="round"/>
+<path d="M 540 458 Q 596 490 656 450" fill="none" stroke="#141414" stroke-width="8" stroke-linecap="round"/>
+<path d="M 392 794 Q 500 856 608 794" fill="none" stroke="#141414" stroke-width="9" stroke-linecap="round"/>
+<rect x="452" y="846" width="96" height="70" rx="10" fill="#fbf8f2" stroke="#3f6f7a" stroke-width="8"/>
+<path d="M 472 870 L 528 870 M 472 894 L 528 894" fill="none" stroke="#3f6f7a" stroke-width="7" stroke-linecap="round"/>
+</g>
+<g fill="none" stroke="#141414" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="415" cy="500" r="32" stroke-width="9"/>
+<circle cx="585" cy="500" r="32" stroke-width="9"/>
+<path d="M 386 476 Q 415 458 444 476" stroke-width="6"/>
+<path d="M 556 476 Q 585 458 614 476" stroke-width="6"/>
+</g>
+<g>
+<path d="M 344 306 Q 500 286 656 306 Q 660 358 500 368 Q 340 358 344 306 Z" fill="#141414"/>
+<path d="M 434 360 Q 428 404 444 428" fill="none" stroke="#141414" stroke-width="9" stroke-linecap="round"/>
+<path d="M 500 362 Q 504 408 494 432" fill="none" stroke="#141414" stroke-width="9" stroke-linecap="round"/>
+<path d="M 566 360 Q 578 404 566 428" fill="none" stroke="#141414" stroke-width="9" stroke-linecap="round"/>
+<path d="M 344 428 Q 404 396 462 424" fill="none" stroke="#141414" stroke-width="12" stroke-linecap="round"/>
+<path d="M 538 424 Q 596 396 656 428" fill="none" stroke="#141414" stroke-width="12" stroke-linecap="round"/>
+<path d="M 494 452 Q 478 540 470 598 Q 462 634 486 648 Q 516 656 534 638" fill="none" stroke="#3f6f7a" stroke-width="10" stroke-linecap="round"/>
+<path d="M 426 690 Q 500 666 574 690 Q 568 754 500 760 Q 432 754 426 690 Z" fill="#141414"/>
+<path d="M 436 702 Q 500 684 564 702" fill="none" stroke="#fbf8f2" stroke-width="8" stroke-linecap="round"/>
+<path d="M 456 776 Q 500 828 544 774" fill="none" stroke="#141414" stroke-width="10" stroke-linecap="round"/>
+<ellipse cx="286" cy="522" rx="34" ry="48" fill="#3f6f7a" stroke="#141414" stroke-width="5"/>
+<ellipse cx="714" cy="522" rx="34" ry="48" fill="#3f6f7a" stroke="#141414" stroke-width="5"/>
+<path d="M 290 500 Q 356 240 500 226 Q 644 240 710 500" fill="none" stroke="#3f6f7a" stroke-width="12" stroke-linecap="round"/>
+</g>
+</svg>
+```

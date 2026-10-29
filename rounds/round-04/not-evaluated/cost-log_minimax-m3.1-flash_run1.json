@@ -1,0 +1,47 @@
+{
+ "model": "minimax/minimax-m3.1-flash",
+ "reasoning": {
+  "effort": "low"
+ },
+ "max_tokens_per_turn": 32000,
+ "turns": 2,
+ "tool_calls": 0,
+ "renders": 0,
+ "prompt_tokens_total": 43494,
+ "completion_tokens_total": 33415,
+ "cost_usd": 0.026273,
+ "cost_cap_usd": 0.25,
+ "finish": "stop",
+ "providers": [
+  "Parasail"
+ ],
+ "per_turn": [
+  {
+   "turn": 1,
+   "prompt_tokens": 5899,
+   "completion_tokens": 32000,
+   "reasoning_tokens": 32000,
+   "cost": 0.0198668943,
+   "finish": "length",
+   "tool_calls": 0,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 2,
+   "prompt_tokens": 37595,
+   "completion_tokens": 1415,
+   "reasoning_tokens": 11,
+   "cost": 0.0064062603,
+   "finish": "stop",
+   "tool_calls": 0,
+   "provider": "Parasail",
+   "forced": true
+  }
+ ],
+ "event": "The 2023–2025 generative-AI chatbot boom and the \"unplugged\" hangover",
+ "title": "Plug Pulled",
+ "seconds": 131,
+ "xml": "valid",
+ "svg": "minimax-m3.1-flash.svg"
+}

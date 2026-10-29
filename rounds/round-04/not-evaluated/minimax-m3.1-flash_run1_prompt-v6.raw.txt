@@ -1,0 +1,86 @@
+EVENT: The 2023–2025 generative-AI chatbot boom and the "unplugged" hangover
+TITLE: Plug Pulled
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<rect width="1000" height="1000" fill="#f2ecdd"/>
+
+<g stroke="#1a1a1a" fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- ===== SHARED HEAD OUTLINE (A's face  /  B's chin + cheeks) ===== -->
+  <path stroke-width="9" d="M 500 205
+    C 612 205 690 292 700 420
+    C 708 532 658 622 568 680
+    C 540 700 518 710 500 716
+    C 482 710 460 700 432 680
+    C 342 622 292 532 300 420
+    C 310 292 388 205 500 205 Z"/>
+
+  <!-- ===== SHARED EYES ===== -->
+  <circle cx="415" cy="500" r="28" fill="#f2ecdd" stroke-width="7"/>
+  <circle cx="585" cy="500" r="28" fill="#f2ecdd" stroke-width="7"/>
+  <circle cx="415" cy="500" r="11" fill="#1a1a1a" stroke="none"/>
+  <circle cx="585" cy="500" r="11" fill="#1a1a1a" stroke="none"/>
+
+  <!-- A's upper-lid crease  ->  B's lower lid -->
+  <path stroke-width="5" d="M 385 464 Q 415 450 445 464"/>
+  <path stroke-width="5" d="M 555 464 Q 585 450 615 464"/>
+
+  <!-- A's lower lid  ->  B's heavy upper lid (half-closed, weary) -->
+  <path stroke-width="5" d="M 385 534 Q 415 550 445 534"/>
+  <path stroke-width="5" d="M 555 534 Q 585 550 615 534"/>
+
+  <!-- A's raised, arched brows  ->  B's pouches under the eyes -->
+  <path stroke-width="7" d="M 378 448 Q 415 422 452 448"/>
+  <path stroke-width="7" d="M 548 448 Q 585 422 622 448"/>
+
+  <!-- A's nose (bridge + tip)  ->  B's nose bridge -->
+  <path stroke-width="6" d="M 500 576 L 500 610"/>
+  <path stroke-width="6" d="M 462 618 Q 500 660 538 618"/>
+
+  <!-- ===== A's HAT (dark dome)  ->  B's BEARD ===== -->
+  <path fill="#1a1a1a" stroke-width="7" d="M 392 336
+    C 392 232 440 194 500 194
+    C 560 194 608 232 608 336 Z"/>
+
+  <!-- A's hat brim (wide cup)  ->  B's broad flat nose tip -->
+  <path stroke-width="8" d="M 348 340 Q 500 376 652 340"/>
+
+  <!-- A's hat band (light cup on the dome)  ->  B's small frowning mouth -->
+  <path stroke="#f2ecdd" stroke-width="6" d="M 408 312 Q 500 338 592 312"/>
+
+  <!-- ===== A's BEARD (pointed mass)  ->  B's CONE HAT ===== -->
+  <path fill="#1a1a1a" stroke-width="7" d="M 402 652
+    Q 500 692 598 652
+    Q 586 738 500 800
+    Q 414 738 402 652 Z"/>
+
+  <!-- A's wide open grin (light shape on the beard)  ->  B's hat band -->
+  <path fill="#f2ecdd" stroke-width="7" d="M 414 662 Q 500 690 586 662 Q 500 722 414 662 Z"/>
+
+  <!-- A's small moustache curls, sitting just above the beard  ->  B's hat brim ornament -->
+  <path stroke-width="4" d="M 452 648 Q 436 634 424 644"/>
+  <path stroke-width="4" d="M 548 648 Q 564 634 576 644"/>
+
+  <!-- ===== PROPS ===== -->
+  <!-- A's AI chip antenna (promise)  ->  B's dangling dead pendant -->
+  <path stroke-width="5" d="M 500 194 L 500 152"/>
+  <rect x="482" y="118" width="36" height="36" rx="8" fill="#d94f2b" stroke-width="6"/>
+
+  <!-- B's unplugged cord hanging from the hat (consequence)  ->  A's stray beard wire -->
+  <path stroke="#d94f2b" stroke-width="6" d="M 556 686 Q 596 720 588 758"/>
+  <rect x="576" y="752" width="26" height="16" rx="3" fill="#d94f2b" stroke-width="5"/>
+  <path stroke="#d94f2b" stroke-width="5" d="M 589 768 L 589 782 M 601 768 L 601 782"/>
+
+  <!-- ===== B-ONLY STROKES (drawn in B's own upright frame) ===== -->
+  <g transform="rotate(180 500 500)">
+    <!-- B's worried, slanted brows  ->  faint cheek creases in A -->
+    <path stroke-width="5" d="M 380 458 Q 412 436 448 466"/>
+    <path stroke-width="5" d="M 552 466 Q 588 436 620 458"/>
+    <!-- B's chin line under the beard  ->  A's hat-crown seam -->
+    <path stroke-width="4" d="M 452 806 Q 500 828 548 806"/>
+  </g>
+
+</g>
+</svg>
+```

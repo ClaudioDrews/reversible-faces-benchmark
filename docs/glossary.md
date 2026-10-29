@@ -20,7 +20,9 @@ The README, the docs and the [paper](../paper/reversible-faces-benchmark-paper.m
 | **Free variable** | A feature that has no fixed partner (hair mass, hats, beards, collars, wrinkles). |
 | **One-shot** | One prompt, one attempt, one SVG per model; no feedback. |
 | **Round** | One batch of one-shot runs on the three models, normally of one prompt version (round 1 mixed v2 and v3; see its evaluation). Round 0 is a pilot that was not human-evaluated. |
-| **Prompt version** | v1 to v5 (plus the discarded v5b); see [`prompt-evolution.md`](prompt-evolution.md). |
+| **Tool-enabled condition** | Round 4: the model may call a sandboxed Python tool and a render tool in a loop (at most 5 renders) before delivering. Rounds 0–3 had no tools. |
+| **Harness** | The program that runs a model (`scripts/run_models.py` one-shot; `scripts/run_models_v6.py` for the tool loop), enforces the limits and records everything. |
+| **Prompt version** | v1 to v6 (plus the discarded v5b); see [`prompt-evolution.md`](prompt-evolution.md). |
 | **Event** | The recent technology/AI event that the joke is about, as declared by the model (`EVENT:` line). It is not fact-checked. |
 | **Verdict words** | The evaluator's informal labels ("OK", "somewhat bad", "low", ...); see [`methodology.md`](methodology.md). |
 | **A, B vs. a, b** | A and B name the two faces. In the geometry pages, a is the target position of a stroke in A (page frame) and b its target in B's own frame, so R(b) is B's target on the page. |

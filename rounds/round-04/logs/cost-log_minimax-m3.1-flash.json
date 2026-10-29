@@ -1,0 +1,157 @@
+{
+ "model": "minimax/minimax-m3.1-flash",
+ "reasoning": {
+  "effort": "low"
+ },
+ "max_tokens_per_turn": 64000,
+ "turns": 12,
+ "tool_calls": 11,
+ "renders": 5,
+ "prompt_tokens_total": 836616,
+ "completion_tokens_total": 80012,
+ "cost_usd": 0.078051,
+ "cost_cap_usd": 0.25,
+ "finish": "stop",
+ "providers": [
+  "Parasail"
+ ],
+ "per_turn": [
+  {
+   "turn": 1,
+   "prompt_tokens": 5899,
+   "completion_tokens": 51241,
+   "reasoning_tokens": 50783,
+   "cost": 0.0305262243,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 2,
+   "prompt_tokens": 57609,
+   "completion_tokens": 1223,
+   "reasoning_tokens": 7,
+   "cost": 0.0036531297,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 3,
+   "prompt_tokens": 58850,
+   "completion_tokens": 30,
+   "reasoning_tokens": 0,
+   "cost": 0.0009048402,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 4,
+   "prompt_tokens": 60099,
+   "completion_tokens": 13063,
+   "reasoning_tokens": 11706,
+   "cost": 0.0088319187,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 5,
+   "prompt_tokens": 73179,
+   "completion_tokens": 30,
+   "reasoning_tokens": 0,
+   "cost": 0.0011166903,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 6,
+   "prompt_tokens": 74432,
+   "completion_tokens": 3704,
+   "reasoning_tokens": 2560,
+   "cost": 0.0034851168,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 7,
+   "prompt_tokens": 78153,
+   "completion_tokens": 30,
+   "reasoning_tokens": 0,
+   "cost": 0.0011881485,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 8,
+   "prompt_tokens": 78691,
+   "completion_tokens": 6516,
+   "reasoning_tokens": 5371,
+   "cost": 0.0076354839,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 9,
+   "prompt_tokens": 85224,
+   "completion_tokens": 30,
+   "reasoning_tokens": 0,
+   "cost": 0.001297296,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 10,
+   "prompt_tokens": 85762,
+   "completion_tokens": 2875,
+   "reasoning_tokens": 1658,
+   "cost": 0.004692303,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 11,
+   "prompt_tokens": 88654,
+   "completion_tokens": 30,
+   "reasoning_tokens": 0,
+   "cost": 0.0013447566,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "Parasail",
+   "forced": false
+  },
+  {
+   "turn": 12,
+   "prompt_tokens": 90064,
+   "completion_tokens": 1240,
+   "reasoning_tokens": 35,
+   "cost": 0.0133754544,
+   "finish": "stop",
+   "tool_calls": 0,
+   "provider": "Parasail",
+   "forced": true
+  }
+ ],
+ "event": "Humanoid AI robots / AI agents going to work (2024–25)",
+ "title": "The Beard Is a Hat Now",
+ "seconds": 363,
+ "xml": "valid",
+ "svg": "minimax-m3.1-flash.svg"
+}

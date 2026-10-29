@@ -1,6 +1,6 @@
-# Prompt evolution (v1 → v5)
+# Prompt evolution (v1 → v6)
 
-All prompts are in [`../prompts/`](../prompts/) exactly as they were sent. Sizes: v1 16 KB, v2 18 KB, v3 19 KB, v4 24 KB, v5 18 KB.
+All prompts are in [`../prompts/`](../prompts/) exactly as they were sent. Sizes: v1 16 KB, v2 18 KB, v3 19 KB, v4 24 KB, v5 18 KB, v6 20 KB.
 
 | Version | Used in | What it is | Key changes |
 |---|---|---|---|
@@ -9,6 +9,7 @@ All prompts are in [`../prompts/`](../prompts/) exactly as they were sent. Sizes
 | **v3** | Round 1 (DeepSeek, GLM) | v2 plus a second critique pass. | **At least one unmistakably technological accessory** with a human counterpart. **Silhouette first, not oval first.** **Bold line weight** (contours 8–12 px, features 5–7 px, detail 3 px). |
 | **v4** | Round 2 | v3 rebuilt after the human's round-1 feedback ("none uses current events in an impactful way", "no artistic quality"). | A new section making **one specific recent tech/AI event central** (impact test, props that make it recognizable without text) and a large **art section** (exaggeration at 150–200%, characterful features, varied line weight with tapered shapes, solid masses, Whistler-like hatching, composition, limited palette, "would it look good framed?"). Delivery: `EVENT:`/`TITLE:` lines plus `<title>`/`<desc>` in the SVG. **Result: all three lost the 180° face.** |
 | **v5** | Round 3 | Rebuilt **from v3**, not v4. | **Absolute priority order**: reversibility first, then contrast, then light touches ("if any later touch endangers a reading, delete the touch"). **Staged workflow**: (1) geometry only, (2) verify by rotating coordinates with `R(p) = (1000−x, 1000−y)`, (3) style only afterwards. The self-check starts with a **reversibility gate** in which the model names B's hat, eyes, nose, mouth and beard. Event reduced to **one simple prop per face**, droppable. Art reduced to **three short cues** (varied line weight, caricature exaggeration, asymmetric silhouette), explicitly subordinate. No `<title>`/`<desc>` in the SVG. Shorter than v4. |
+| **v6** | Round 4 (after the paper) | v5 with a **tool loop**: a sandboxed Python tool and a render tool that shows the drawing upright and rotated by 180°, with text diagnostics; at most 5 renders. | Same task and priority order. **Removed** the placeholder note, the "public domain" claim and the unverified Whistler descriptions (6b), replacing them with a short principles paragraph. **Dictionary frame** made precise (B's own upright frame, y_B = 1000 − y_A). Title written "OHO!". Stage 2 keeps the written rotation of coordinates and adds a render and a blind reading ("say what you see in A and in B before comparing with your intention"). Section 9 describes the tools and limits. **Result:** all three delivered reversible, well-made drawings; none was judged comic. Several things changed besides the tools, so the effect of the tools is not isolated. |
 | *v5b (discarded)* | Round 3, DeepSeek only | v5 plus "Stage 2 is one short pass; keep planning under about 3000 words". | Did **not** stop DeepSeek's verification loop (hit the 24000-token cap without an answer). Kept in `prompts/discarded/` for the record. DeepSeek only delivered when reasoning was disabled and the original v5 text was used. |
 
 ## Why the second agent's critiques mattered
@@ -17,4 +18,4 @@ Between rounds, a prompt-critique pass was done by a second agent (see `reviews/
 
 ## A note on the "Whistler examples" section
 
-Every prompt from v1 to v5 contains the same placeholder section (6b) with short text descriptions of two real Whistler drawings, written from public images and flagged inside the prompt as **unverified**. They are kept verbatim for reproducibility; they have not been checked against the originals and may contain mistakes.
+Every prompt from v1 to v5 contains the same placeholder section (6b) with short text descriptions of two real Whistler drawings, written from public images and flagged inside the prompt as **unverified**. They are kept verbatim for reproducibility; they have not been checked against the originals and may contain mistakes. Prompt v6 removed this section (and the "public domain" assertion in it).

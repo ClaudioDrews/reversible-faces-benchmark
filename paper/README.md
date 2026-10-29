@@ -4,9 +4,13 @@
 
 ## Status
 
-- **Early research, not peer reviewed.** A benchmark design plus three informal pilot rounds.
+- **Early research, not peer reviewed.** A benchmark design plus three informal pilot rounds (the paper) and a later tool-enabled round 4 (repository only).
 - **One human evaluator, who is also the author.** Three inexpensive models, one run per model per prompt. No statistics are claimed. The results are design notes, not a leaderboard.
 - The paper describes the design that was actually run (one-shot, no tools, human judgment with no rubric). The older v0.3/v0.4 specifications in [`../docs/design-history/`](../docs/design-history/) describe a heavier design (weighted rubric, gates, blind protocol, tool use) that was **not** used and is superseded.
+
+## Round 4 is post-paper
+
+The paper describes rounds 0–3, all one-shot with no tools. **Round 4 (prompt v6, a tool-enabled condition) was run after the paper was written** and is **not covered by it**; the paper has not been rewritten. Round 4 is documented only in the repository: [`../rounds/round-04/`](../rounds/round-04/) (evaluation, setup, outputs, transcripts), [`../prompts/prompt-v6.md`](../prompts/prompt-v6.md), [`../scripts/run_models_v6.py`](../scripts/run_models_v6.py), and the README summary. Where the paper says that the models had no tools, that holds for rounds 0–3 only. In round 4 all three models produced reversible, well-made drawings, but the evaluator found none of them comic; humor became the open problem (see [`../docs/future-work.md`](../docs/future-work.md)).
 
 ## What is in the paper
 
@@ -20,9 +24,9 @@ Abstract and introduction; related work; the task and protocol; the geometry (ha
 | 2 Related work | [`docs/related-work.md`](../docs/related-work.md), [`docs/references.md`](../docs/references.md) |
 | 3 Task and protocol | [`docs/methodology.md`](../docs/methodology.md), [`prompts/`](../prompts/), [`scripts/`](../scripts/) |
 | 4 Geometry | [`docs/geometry.md`](../docs/geometry.md), [`docs/worked-example.md`](../docs/worked-example.md) |
-| 5 Pilot rounds | [`rounds/`](../rounds/), [`docs/prompt-evolution.md`](../docs/prompt-evolution.md) |
-| 6 Threats to validity | [`docs/threats-to-validity.md`](../docs/threats-to-validity.md) |
-| 7 Future work | [`docs/future-work.md`](../docs/future-work.md) |
+| 5 Pilot rounds (0–3) | [`rounds/`](../rounds/) (round 4 is post-paper, see above), [`docs/prompt-evolution.md`](../docs/prompt-evolution.md) |
+| 6 Threats to validity | [`docs/threats-to-validity.md`](../docs/threats-to-validity.md) (extended for round 4) |
+| 7 Future work | [`docs/future-work.md`](../docs/future-work.md) (updated after round 4) |
 
 ## Reference checking
 

@@ -1,0 +1,552 @@
+
+===== turn 1 =====
+Let me design carefully.
+
+Idea: A = triumphant inventor/engineer with big grin and a rocket-launching cap? B = weary engineer with drooping collar. Event: AI hype / "AI agent" boom? Let's pick: the 2024–2025 generative-AI boom ("AI gold rush / chatbots everywhere"). A: eager chatbot trainer wearing a headset with antenna, wide eyes, big grin. B: same person exhausted, headset drooping.
+
+Let me do geometry.
+
+Head outline: shared silhouette covering both. Use one big outline whose top is A's crown and bottom is B's chin. Symmetric-ish ellipse-ish with asymmetry.
+
+Let's place:
+- Shared eyes at (415,500) and (585,500).
+- A's hair mass top: y 200–380 region, A's hat = B's beard mass? Careful: A's hat at top (y 200-350) becomes B's chin/collar area (y 650-800). B's own face: eyes at 500 shared. B's nose at 620 (from A's hairline at 380? A's fringe at 380 -> B's bridge at 620). B's mouth at 680? A's smile at 680 -> B's hat band at 320. Hmm so B's mouth must come from A's hat dome at 320? No: dictionary says A's hat dome (y 320) = B's mouth (y 680). So A's hat dome in A frame (at page y 320) is B's mouth line at page y 680? Wait the mapping: a stroke at page y_A reads in B at y_B = 1000 - y_A. But both are the same page location. Hmm — actually careful: the stroke drawn at page location y_A appears in B's frame at the same page location but B is reading it upside down... The dictionary works: A's hat at page y 200-350 is B's chin/collar at 650-800. So the same strokes: the hat mass occupying page 200-350 becomes in B's rotated frame the region 650-800 which is B's chin/beard/collar. Yes right, the region flips.
+
+So:
+- A's mouth at page y 680 → in B frame at 320 = B's hat band. Good: so A's smile ∪ at y 680 becomes a ∩ dome at B's hat band region (y 320 in B frame = page 680). So B wears a hat whose band is that curve.
+- B's own mouth must be at page y 320 area? No: B's mouth is in B's frame at y 680 = page 320. So B's mouth stroke is a B-only stroke drawn at page 320 (rotated group: draw in B's frame at 680, group rotates to page 320). And it must be light/inert in A, sitting inside A's hat mass. Good.
+
+So:
+Page region y 200-350: A's hat/hair mass; contains B's mouth (page 320) and B's... hmm B's face in B frame: crown 200, hat dome 320, brim 350, eyes 500, nose 650, mouth 680, chin 800.
+
+So B's hat = page 200-350 region (B frame) which is A's hat region (A frame) — shared mass. B's mouth at page 320 (B frame 680) — a stroke inside A's hat mass. B's nose tip at B frame 650 = page 350 — that's A's hat brim area. A's hat brim at page 350 becomes B's nose tip. 
+
+B's chin at B frame 800 = page 200. So A's crown/top at page 200 is B's chin. So head outline: A's crown at 200 and A's chin at 800, and B's crown at page 200?? B frame crown 200 = page 800. So page 800 = B's crown, page 200 = A's crown = B's chin. So the top contour of the shape is A's hat crown and B's chin; the bottom contour is A's chin and B's hat crown. Good, so the silhouette is a big oval from 200 to 800 plus maybe collar.
+
+Wait but A's hat sits on A's head; if A's hat crown at page 200 and A's chin at 800, then A's head is 200-800 with the hat filling top. B's chin at page 200 means B's face occupies page 200-500?? That's only 300 tall. Hmm. B's head: crown 200 (page 800) to chin 800 (page 200). So B's head spans page 200-800 too, with B's hat occupying page 650-800 (B frame 200-350) and B's chin at page 200.
+
+So both readings use the full 200-800 band, but their features swap vertical order entirely. That's the classic.
+
+So plan: the shared silhouette is an oval-ish shape from y=200 to y=800, x 260..740. Plus maybe a hat brim and collar shapes.
+
+A's reading:
+- page 200-350: A's hat (tall hat with band) — in B frame this is B's chin+collar. So the top mass in A must look like a hat in A and like a chin/beard/collar in B.
+- page 350: A's hat brim (wide ellipse band) → B's nose tip. The brim's underside curve = nose cup. Good: brim at 350 wide, in B reads as nose at 650.
+
+Hmm wait: A's brim at page 350, B frame 650 = nose tip. But A's brim is a wide horizontal shape; B's nose would be wide. Could be a big flat nose. Fine-ish; maybe better: A's hair/fringe at 380 = B's nose bridge (620). And B's nose tip at 650 comes from A's hat brim underside at 350.
+
+- A's brows at 452 → B's under-eye bags at 548.
+- Eyes 500 shared.
+- A's nose: A's nose at page ~600-660 → in B frame 340-400 = B's hat brim / hairline. So A's nose becomes B's hat brim. Good, that's fine: B wears a hat whose brim is A's nose.
+- A's mouth at 680 → B's hat band at 320. So A's grin ∪ at 680 = B's hat band ∩ at 320.
+- A's chin/jaw at 800 → B's crown at 200.
+- A's collar at 890 → B's pompom at 110.
+
+So A's grin serves as B's hat band — meaning B's hat (page 650-800 region) has a band curve at page 680 (B frame 320). Hmm, B's hat in B frame occupies 200-350 → page 800-650. Its band at B frame 320 → page 680. So B's hat: crown top at page 800 (B frame 200), dome spanning page 650-800, band curve at page 680? Band should be near the bottom of the dome (brim at 350 → page 650). So B's hat: dome from page 650 to 800, brim line at page 650-680 region, and band at page 680.
+
+But page 800-650 in A reading = A's chin/jaw area, below A's mouth. A's chin is at 800. So a hat mass there in B = A's neck/collar. That's fine: A has a collar? A's collar is at 890 per canon, and the pompom at 110.
+
+Hmm, conflict: page 650-800 in A = A's lower face (mouth 680, chin 800). So A's mouth curve at 680 also acts as B's hat band. But B's hat dome occupies page 650-800 which in A is A's jaw/chin area. A's chin at 800 would be B's hat crown — the outline's bottom. But then A's head: crown at 200, chin at 800, with hat mass 200-350. OK A's head is the oval, hat on top. And B's "hat" is the region 650-800, which in A is the chin — but B's hat must be a shape distinct from A's chin. Compromise: A's chin area includes a wide beard/jaw mass (like a big collar/bow tie) that reads as B's hat.
+
+Simpler classic approach: A wears a tall hat on top; the bottom of the drawing (page 800-900) is A's collar/bow tie which in B is at top = B's pompom/hat plume. And the region 650-800 in A is A's beard/chin mass which in B is B's hat.
+
+Let's just be concrete and design a shape list.
+
+Shared silhouette (one path, drawn once):
+An outline: starting at top center (500,200) curve to right down to (740,500) then to (500,800) then left (260,500) back. Like an ellipse but with a chin point? But both A's crown (top 200) and B's crown (page 800) are ends of the same ellipse. Symmetric ellipse is rotationally symmetric → boring but acceptable; add asymmetry later (crooked hat, jowl).
+
+But A's hat sits on A's head: if the top of the ellipse (page 200) is A's hat crown and B's chin, then A's hat = the top cap region of the ellipse, drawn as a filled dark mass from 200 to 340 with brim at 350? Then in B that mass (page 200-340 = B frame 660-800) is B's beard/chin region. Good: dark mass reads as A's hat top and B's beard/jaw.
+
+And the bottom of the ellipse (page 800) = A's chin and B's hat crown: so the region 650-800 in A should read as A's lower face (chin) and B's hat. If we draw a dark-ish mass there it becomes a beard in A? A's chin at 800 and mass 650-800: that would look like a big collar in A. Hmm, alternatively in A that region is the jaw/neck with a bow tie at 890. B's hat crown at page 800 = a pointy top of a hat. So make A's neck/shoulder region narrow at 800? But then A's head would be just 200-800 and the neck at 800-900.
+
+Let's think of the whole silhouette as: big shape from y=200 to y=900 (including A's collar below). Rotating: B's shape spans 100 to 800.
+
+Practical: Use a big oval head: cx 500 cy 500 rx 235 ry 300 → spans 200..800. That is both A's head (crown 200, chin 800) and B's head (crown 800, chin 200). Good, one ellipse, asymmetric later.
+
+Now features:
+
+A's hat: a tall cap sitting on top of head? But head top is 200 already; A's hat would go above 200 (up to 110 pompom). But that region (page 110-200) is B frame 800-890 = B's collar/bow tie. So A's hat above the ellipse top: a tall cone/cylinder at page 110-200 becomes B's collar area. Hmm. Then A's hat crown at 200 = B's chin.
+
+Alternative simpler: A's hat IS the top part of the head mass, i.e., dark fill from 200 to 350 shaped like a tall hat brimless? But then A's forehead starts at 350, meaning A's face (eyes at 500) is small: 350-800 = 450 tall vs head 600. Acceptable? The hat is part of the head height in the canon? Canon: crown 200, hat dome 320, brim 350, hairline 380, eyes 500, chin 800. So yes A's hat from 200 to 350 is part of that 600.
+
+So A's hat: dark mass filling the top of the ellipse from 200 to ~345, with a brim line at 350 spanning wide (wider than ellipse? no, keep inside). Actually the brim at 350 becomes B's nose tip at 650: so the brim's lower edge curve = a wide nose. B's nose at page 350, B frame 650: that's near B's eyes-ish? B frame: eyes 500, nose 650. Page 350 → B frame 650 ✓. Good, so B's nose is at page 350 which is above A's eyes. Fine.
+
+And A's hairline/fringe at 380 = B's nose bridge at 620. So B's nose = A's fringe curve (page 380) plus A's brim (350). So B's nose is a shape formed by two strokes at 350 and 380 in page coords, i.e., B's nose appears between page 350 and 380 in B frame 620-650. Good: draw A's hat brim as a wide band whose underside arcs down, and A's fringe/hair as a jagged line; in B these form a nose with nostrils.
+
+A's face features:
+- Brows at 452: A has raised, arched brows (delight). In B these become under-eye bags at 548 → curved ∪ lines under B's eyes = weary. Perfect double duty: the brow curve ∩ shape in A at 452 becomes ∪ at 548 in B. So A's brows should be arcs bowing upward (∩) to look like raised brows; after rotation they bow downward (∪) = pouches. Good. Draw each brow as an arc with ends lower? Raised brow = arc bulging up. Yes ∩.
+- Eyes: shared circles at (415,500),(585,500). A: wide-open round eyes with pupils. But lids: A wants wide open (no lids). B wants half-closed heavy lids — B's lids come from... A's lower lid at 524 becomes B's upper lid crease at 476. So A's lower-lid line (524) is B's upper-lid crease (476) — in B it reads as a lid crease over the eye → half-closed. Good: draw a lower-lid curve under A's eyes (A's eyes wide open with slight lower lid). In B that curve sits above the eye = upper lid line → half-closed sleepy eyes. Nice.
+- Also B wants heavy bags: from A's brows at 452. OK.
+- A's nose at 600-660: a nose shape drawn in A. In B frame that's 400-340, which is B's hat brim region / hairline — so A's nose becomes B's hat brim. So B's hat brim = A's nose shape. Fine: A's nose is drawn as a simple nose (bridge line + rounded tip), and in B it reads as the brim edge of a cap. Might be a bit odd but ok.
+
+Alternatively A's nose could be minimal so it doesn't confuse.
+
+- A's mouth: wide ∪ grin at 680, from 420 to 580. In B frame 320 = B's hat band. B's hat band = a ∩ arc. But A's grin ∪ → after rotation ∩: a dome. As a hat band at B frame 320 it sits within B's hat (B hat occupies B frame 200-350 = page 800-650). So the band at page 680 near the bottom of the hat dome, above brim (page 650). OK.
+
+So B's hat is the region page 650-800 in A = A's chin/jaw + collar region. But A's head ellipse bottom is 800 = A's chin. So the region 650-800 in A is A's lower face: mouth at 680, chin at 800. B's hat crown at 800 = A's chin. So the ellipse's bottom is B's hat top — meaning B's hat is the bottom cap of the ellipse, which in A is A's jaw/chin. That's weird: A's chin = B's hat crown means the shape below A's mouth narrows like a hat? Actually hat crown tapers upward; B's hat crown at page 800 = A's chin, and B's hat widens downward? No, hat widens downward from crown → in page terms B's hat spans page 800 (crown, narrow) down to 650 (brim, wide). So the region page 650-800 must be wide at 650 (page) and narrow at 800 (page). But in A that means A's face narrows to a chin at 800 — perfect, that's a jaw tapering to chin! Great: the ellipse naturally does that. So B's hat = A's jaw/chin region, which is a tapering mass — reads as a hat crown but with no brim. A brim at page 650-680 could be A's chin line / jaw shadow. Hmm, A's mouth at 680 and the grin = B's hat band; the brim of B's hat at page 650 = A's chin/lower lip? Let's put A's chin/jaw line at 760 and lower lip at 704. Then B frame: chin at 240 (page 760)? No—B frame coordinate = 1000 - page. A's jaw line at page 760 → B frame 240, which is B's hat crown area (B crown 200). Hmm.
+
+This is getting heavy. Let me simplify by making the shape structure explicitly:
+
+I'll design A's drawing as a full character (head + hat + collar + shoulders) and then rely on the double-duty plus a B-only group. Let's allocate:
+
+Page regions and dual roles:
+- 110-200: A's hat plume/pompom (a big bobble) ↔ B's bow tie/collar region (B frame 800-890). Also B's collar could be a shape there.
+- 200-345: A's tall hat crown (dark) ↔ B's beard/chin dark mass (B frame 655-800).
+- 345-360: A's hat brim (wide band) ↔ B's nose tip cup (B frame 640-655).
+- 360-400: A's fringe/hair tufts ↔ B's nose bridge.
+- 452: A's brows ↔ B's under-eye bags.
+- 476/500/524: eye area: A's lower lid 524 ↔ B's upper lid 476.
+- 548: A's cheek/nasolabial line ↔ B's brow (B frame 452)! Nice: nasolabial folds in A = brows in B. Good for expression: A's cheeks smiling lines become B's worried brows.
+- 600-660: A's nose ↔ B's hat brim (page 650). Hmm conflict with A's brim at 350 also mapping to B's nose.
+
+We need B's nose: two candidate sources. Take A's nose (page 600-660) → B's nose bridge/hat? Let's instead assign:
+- A's nose at 600-660 (bridge line 600, tip 660) ↔ B's hat brim at B frame 340-400 = page 660-600. So B's brim region is page 600-660 — in A that's A's nose region. Then B's brim and A's nose coincide. But then what gives B a nose? A's hat brim at page 345-360 → B frame 640-655 = B's nose tip. ✓. And A's fringe at 380 → B's nose bridge (620) ✓. So B's nose = A's brim + fringe. Good.
+
+So B's hat = region page 600-800: in A that's A's nose bottom + mouth + chin. But a hat in B spans crown 800 (top) to brim 600 (bottom). So B's hat dome = A's mouth+chin region, band = A's grin at 680 (B frame 320) ✓ (band sits at 680, dome 650-800 ✓). B's brim = A's nose bottom / upper lip region at 600-660 (B frame 340-400 = brim zone ✓). So in A, the region around the mouth must look like a face (nose above, grin, chin below) AND in B a hat (dome above band? no). Careful: in B frame, order top→bottom: crown at 200 (page 800), dome 200-350 (page 800-650), band 320 (page 680), brim 350 (page 650). So going up the page in B: page 650 = brim, 680 = band, 800 = crown. So in A reading (page 650 at bottom of face, 680 above it, 800 top of hat region): A's chin at 800?? wait A's chin should be at 800 per canon, but now page 800 = B's crown = top of hat = A's... conflict! A's chin at 800 and B's hat crown at 800 — that means the same contour is A's chin and B's hat top. That's the canon exactly (crown −0.50 = chin +0.50). So A's chin at 800 and B's hat crown at 800 means the outline's bottom point is A's chin and B's hat crown simultaneously. But then B's hat dome occupies B frame 200-350 which is page 800-650 = A's chin→mouth region, and B's brim at page 650 = A's ... between mouth (680) and nose (660) — that's A's upper lip/mustache area. And A's grin at 680 = B's band.
+
+OK so A's lower face: nose tip 660, upper lip ~665, grin 680, lower lip 704, chin 800. And B's hat: crown at 800 (=A's chin), band at 680 (=A's grin), brim at 650 (=A's nose/upper lip). For B to read as a hat, the region 650-800 should be a mass shaped like a hat (roughly triangular/rounded crown) — in A that means A's jaw region is a big shape. Since A's mouth at 680 is inside this region, A's mouth would be inside the "hat dome" which in A must look like... A's chin/jaw area, with a grin drawn on the chin?! That breaks A.
+
+Hmm. The canon constraint: A's mouth at 680 and B's hat band at 320 (page 680). So B's hat band IS A's mouth. So B's hat in page terms: the hat's band curve at page 680, and B's face's mouth... where's B's mouth? B's mouth must be at page 320 area (B frame 680), inside A's hat region (page 200-350). So A's hat contains B's mouth. So in A: A's hat at 200-350 is a hat (fine) and inside it there's a small curve at 320 which in A is hidden/decorative (e.g., a hat band stripe or emblem) and in B is the mouth.
+
+Similarly B's hat at page 650-800 contains A's grin (page 680) as the band. In A the region 650-800 is the lower face: chin area... but the grin at 680 with mouth? A's mouth IS the grin at 680, which in B is the hat band. Fine! So A's mouth at 680 = B's hat band. Then B's hat dome occupies B frame 200-350 = page 650-800, which in A is A's lower lip/chin area. So A's chin region = B's hat crown. That means A's chin is inside B's hat? A's chin at 800 = B's hat top at 800. So the outline bottom point in A = pointy chin, in B = pointy hat crown. That's exactly a cone-like shape. So A's head silhouette must come to a point at 800 (chin) — like a cone/pointed chin. And B's hat crown at 800 is that same point; B's hat widens upward in page? no: B's hat from crown 800 down to brim 650 in page, i.e., page 650 is BELOW 800, and B frame 650 is above B frame 800? B frame = 1000 - page, so page 650 = B frame 350 (lower in B), page 800 = B frame 200 (top of B). So B's hat: crown at page 800 (B frame 200 = top), widening downward in B frame = page 650 (B frame 350). So in page terms the hat widens from page 800 (narrow) to page 650 (wide). So the shape narrows toward page 800. In A that means the head narrows to a chin at 800 ✓ (cone-shaped chin) — so A's head is a cone-ish/egg shape, wide at 650, narrowing to a chin point at 800. But an egg head with wide at 650 (just below the mouth!) hmm, A's face widest around 500 usually. A shape wide at 650-500 and tapering to 800: like a heart/egg pointed at the bottom. That's fine actually — a heavy jowly chin tapering.
+
+But then A's chin at 800 tapering to a point looks like a witch's chin; and B's hat crown pointed = a cone cap. Fine, both work. But wait, B's hat brim at page 650: the width at page 650 must be WIDER than at 800, forming a brim edge. A's widest is around 500; at 650 still wide-ish. So brim = a wide-ish edge. And where's B's face? B's face below the hat: B frame eyes 500 = page 500?? No! B's eyes are the shared eyes at page 500 → B frame 500 ✓. So B's eyes at page 500, and B's hat occupies page 650-800 which is ABOVE B's eyes ✓ (B frame 200-350 above 500 ✓). Good. B's nose at page 350 (B frame 650) ✓, B's mouth at page 320?? wait B's mouth should be at B frame 680 = page 320. But page 320 is far above page 350 (nose). Order in B frame: hat 200-350, brim 350, then... eyes at 500, nose at 650, mouth 680. Page positions: hat page 650-800, brim page 650, nose page 350, mouth page 320?? That's wrong: page 320 → B frame 680, page 350 → B frame 650. So B's mouth (frame 680) is at page 320, above B's nose at page 350. That's inverted — mouth should be below nose in B.
+
+Oops: mapping page→B frame is 1000-page, so higher page = higher in B. B's nose at B frame 650 → page 350; B's mouth at B frame 680 → page 320. So in page coordinates B's mouth (320) is above B's nose (350). That means in page terms, going up, we have mouth then nose; in B frame going down: nose then mouth. Page 320 is above page 350 in page coords → in B frame, 320 maps to 680, 350 maps to 650; so in B, 680 is below 650 ✓ correct (nose 650, mouth 680). I confused myself. Page 320 (higher on page) ↔ B frame 680 (lower in B) ✓. Fine.
+
+So in A, the page region 200-350 is A's hat and contains at page 320 a B-only mouth curve, and at page 350 A's brim. In A, page 320 sits in the hat mass (hidden) ✓, page 350 = brim.
+
+Now, the drawing plan in page coordinates (A reading):
+
+Shared elements:
+1. Head outline: a big shape. Let's define: rounded top at (500,200)?? But A's hat is at 200-350 and A's face below. Actually the head outline includes hair/hat as one silhouette: from page 200 (hat top) down the sides to the chin point at 800. Widths: hat at 200 narrow-ish? A hat crown top narrow (like a bowler/cylinder hat) and brim at 350 wide (say x 250-750), then face narrowing to cheeks, jaw, chin point at 800.
+
+But B's hat: crown at page 800 (point), band at 680, brim at 650 → B's hat widens upward?? In B frame: crown at top (200) narrow, band 320, brim 350 wide. In page: page 800 = B crown = narrow; page 680 = band; page 650 = brim = wide. So page: narrow at 800, wide at 650, and above page 650 (i.e. 500-650) is B's face region (in B frame 350-500: forehead/eyes). So in A, the region page 500-650 must be B's forehead and the region 650-800 is a mass wide at 650 narrowing to 800 = A's lower face (chin) shape.
+
+So A's head: from brim at 350 (wide, 250-750) sides come down to about 650 (fairly wide, say 280-720), then converge to a chin point at (500,800). That's a cone-bottomed face. Hmm, chin point at 800 - like a long pointed chin / beard tip? Actually a beard! A's beard mass: if A has a big pointed beard from jaw to 800, that reads as A's beard and as B's hat crown. But then where's A's mouth? At 680, inside the beard. Beards often are behind the mouth; the mouth drawn on top of the beard region = a mouth in a beard, visible. But then in B the region is B's hat: band at 680 = the grin ✓, dome above the band (page 700-800) = hat crown, brim below band at 650.
+
+Hmm but if the region 650-800 is a beard, then A's mouth at 680 sits on the beard, and A's "hat" at 200-350 contains B's mouth. It's the classic: A's face has a mouth and a beard; B has a hat with a mouth band.
+
+Maybe simpler: don't use a beard; make A's lower face a "chin/jaw" region that is a solid dark mass = a big pointed beard/jaw shadow. Fine.
+
+Let me instead structure the whole drawing as clean layered shapes:
+
+Shape list (page coords):
+- Outline path O: silhouette of the entire figure: hat top (500,150) with a pompom? Let's include pompom: page 110-200 = B's collar zone... A's pompom at 150 → B frame 850 = B's collar/bow tie. Good, so A has a small pompom/ball at top (150) and B has a bow tie at 850 (page: 850 = A's collar!). A's collar at 890 vs B's bow tie at 110... canon says A's collar 890 ↔ B's pompom 110. But here A's pompom at 150 and A's collar at 890: R(890)=110 which is B's pompom. So the shape at page 110-200 is B's pompom and A's pompom?? Both? Hmm, the region 110-200 in A = hat pompom area; in B frame = 800-890 = B's collar/bow tie area. So a shape at page 150 must read as A's pompom AND as B's bow tie. A bow tie in B frame at 850 = page 150: a horizontal bowtie shape. And in A it must look like a pompom on top of a hat. A ball on a hat vs bow tie: a ball could read as the knot of a bow tie if we draw a small bow shape. Draw a bow tie (two triangles + knot) at page 150 → in A it looks like a bow tie on top of the hat?? Weird. Alternative: A's hat is a "bowler with a flower"...
+
+Let's simplify: put A's hat top at 200 with a small brim, and page 110-200 unused (empty) or A's plume. But canon wants collar→pompom pairing: A's collar at 890-900 → B's pompom at 100-110. So B's pompom would be a small shape at page ~110, drawn as B-only stroke group (rotated: draw at B frame 110 → page 890) — that puts it in A's collar region where it's inert ✓. Great: A's collar (a shape at 890, drawn in A frame, big dark collar) becomes in B frame a small pompom at 110? Size: the collar shape at page 890 in A rotated appears at B frame 110, at the top of B's head (B crown 200). B's pompom should be at B frame 110, above B's head top at 200 — floating above? A's collar sits at 890, below A's chin 800; in B it appears at 110, above B's crown 200 ✓ as a pompom above the hat. But B's crown is at page 800 = A's chin (the pointed bottom) — so B's hat is a cone sitting on B's head whose top is at B frame 200? That's weird: the hat occupies the region above B's eyes (page 650-800) and its "crown" is the point at page 800 which is A's chin, i.e. B's hat's apex. So B's hat is a cone with apex at page 800 and brim at page 650 (wide). Then B's head (face) is below page 650? B's eyes at page 500, nose page 350, mouth page 320. So B's face from page 500 (eyes) up to 320 (mouth)?? That's upside down again — no: B frame: mouth 680 (page 320) is the LOWEST feature in B; nose 650 (page 350); eyes 500 (page 500); hat 200-350 (page 650-800). So in B frame order top→bottom: hat(200-350), nose? no. Let me list B frame positions: hat dome 200-320, band 320, brim 350, then eyes 500, then nose 650, mouth 680, chin 800 (page 200). Wait chin of B at B frame 800 → page 200. But B's chin must be below the mouth ✓ (800 > 680) and below the hat? The hat at 200-350 is at the top of B's head ✓ and B's chin at 800 = bottom ✓. But B's head spans 200-800 with the hat occupying 200-350 at top?? And the crown at 200 = the apex of the cone — but the cone is between 200-350?? I conflated.
+
+Redo: B's hat in B frame occupies crown 200, dome 320, brim 350. In page: crown→page 800, dome→page 680, brim→page 650. So the hat in page is a cone shape with apex at page 800 and wide brim at page 650. But that means in B frame, the hat is at the TOP of B's head (frame 200-350) ✓ and B's head's own chin is at frame 800 (page 200). So B's head spans frame 200-800 = 600 ✓ and the hat sits at the very top with apex at frame 200 = top of head, brim at frame 350. So the hat is like a tall cone hat whose apex is at the top of the head silhouette. So B's head outline (page) is: bottom point 800 → cone hat apex; sides widen down to brim at 650; then continue (frame 350 down = page 650 down to 200): B's forehead, eyes at 500 (page 500)... wait page 500 is between 650 and 200 ✓. Then B's nose at page 350, mouth page 320, chin page 200 (frame 800).
+
+But hold on: in B frame, mouth at 680 and chin at 800: page 320 and 200. So B's chin is at page 200, which is A's hat top! So the topmost point of the drawing = B's chin and the bottommost point (A's chin at 800) = B's hat apex. So the drawing is a shape like an hourglass? A's hat top at 200 (B's chin) — B's chin is a point at the top of the drawing in B reading. So the whole figure: A's hat crown at top (pointy? A's hat top should be a roundish crown, in B it becomes a chin → rounded chin ✓) and A's chin at bottom (pointy in A → B's hat apex ✓ pointy hat ✓).
+
+So A's chin should be pointy/narrow and A's hat crown rounded. A's hat crown at 200 rounded = B's chin ✓. So the outline: top rounded at 200, bottom pointed at 800.
+
+But wait: A's hat occupies 200-350 with brim at 350; the region 350-650 is A's face (eyes 500, etc.), and 650-800 is A's chin/jaw region tapering to a point at 800. And that tapering region = B's hat. So in A, the "chin" region 650-800 is a cone tapering downward — that's a long pointed chin or a pointed beard! A pointed beard works great: a beard that comes to a point at 800, which in B is a cone hat apex. And A's mouth at 680 is drawn on the beard.
+
+But then A's face: the beard covers 650-800 including the mouth. Grin drawn over the dark beard (mouth cut out) — fine.
+
+Hmm, alternatively make A's chin a big pointed jowl/ruff. Let's go with a beard (dark mass) from jaw (y 600) tapering to a point at 800, with a wide grin at 680 cut into it (mouth area lighter). In B: a cone hat (apex page 800, widening to 650), with a band curve at page 680 = the grin stroke (which in B is a horizontal band across the hat, maybe the hat's band). Then B's brim = the wide top edge of the hat at page 650 — where in A that's the top of the beard / under-nose region. In A at page 650 we have nose tip / upper lip. Hmm, B's hat brim at page 650 must be a distinct horizontal edge. In A, page 650 area is A's nose tip. Conflict: A's nose tip at 650 = B's brim. But also earlier I said A's brim (350) = B's nose tip. That's fine: two separate strokes.
+
+Wait but in A, page 650 is inside the beard region (beard 600-800). A's nose tip at 650 should be above the beard, i.e. the beard starts lower? Beard from 690 to 800? Then B's hat brim at page 650 is above the hat band at 680? Order in page for B's hat: apex 800, band 680, brim 650. So brim at 650 must be the widest, above the band in page? No: in page, brim at 650 is HIGHER than band 680 (smaller y = higher). And the hat widens from apex 800 up to brim 650. But the band at 680 is between them ✓ (band near lower part of the cone). OK so in page: cone apex 800, band curve at 680, wide brim edge at 650.
+
+In A: 650 is A's nose tip / mustache zone, 680 is A's mouth, 800 is A's chin point. So A's mouth (680) is inside the beard, and A's nose tip (650) is just above the beard's top edge, which serves as B's brim. So A: a big pointed beard whose top edge at 650 crosses under the nose — like a huge beard starting right below the nose ✓. Nice and characterful. And the grin at 680 = inside the beard = B's hat band ✓.
+
+And A's nose: bridge 600, tip 650 — but the beard covers 650+. Hmm then in A, the nose appears to grow out of the beard (mustache). Fine: draw a mustache? A mustache at 655-670 would also be part of beard. Let's draw A's nose as a simple shape: two nostril wings + tip curve at 640-660 overlapping beard top. Simplify: beard top edge at 650 is a scalloped/wavy line (which in B = hat brim, scalloped brim = cute). And A's nose: a small rounded triangle from 590 to 650. But then the nose overlaps the beard region... The beard top edge (650) with nose sitting above it at 590-650 ✓.
+
+But wait, in B the nose is at page 350 which is A's hat brim. A's hat brim at 350: the brim of A's hat, wide horizontal. In B frame 650 that's B's nose tip ✓ — a wide flat nose, ok. And B's nose bridge at frame 620 = page 380 = A's fringe. So between page 350 and 380 (B frame 620-650) we need the nose bridge. If A's hat brim at 350 and fringe at 380, then in B: nose tip at 350 (lower) and bridge at 380 (upper)? In B frame, bridge 620 is ABOVE tip 650 ✓ and page 380 is above 350 ✓ consistent.
+
+So in A: the hat brim at 350 and a fringe of hair at 380 (A's fringe hanging below the brim, over the forehead). In B, that fringe = nose bridge and brim = nose tip. So B's nose is formed by a fringe line and the brim edge. The brim is a broad horizontal band — as B's nose, it'd be a very wide nose. Acceptable if the brim is curved downward in the middle (like a wide nose tip). But in A the brim should look like a brim. A brim curving down in the middle looks like a droopy hat brim ✓ (crooked hat = asymmetry ✓).
+
+Now B's mouth at page 320: inside A's hat dome (200-345). Draw it as B-only (in rotated group, B frame mouth at 680 → page 320). In A it's hidden inside the dark hat mass ✓ — but must be "inert": if the hat is a solid dark fill, a stroke there is invisible in A ✓. Good: A's hat = solid dark mass with a subtle band? If the hat is solid dark, the B-mouth stroke (dark ink) won't show in A. But B's mouth must be visible in B: B's hat region page 650-800 = A's beard (dark mass) and B's mouth at page 320 = A's hat interior. In B, the hat (page 650-800) is A's beard area; B's mouth stroke at page 320 is elsewhere (in A's hat area) — wait no. B's mouth is a stroke in the page at y=320. When the page is rotated, that stroke appears at B frame 680, which is B's mouth location ✓. So the stroke lives physically at page y 320, in A's hat mass. In B reading, the page's y320 region corresponds to B frame 680 region — which is B's chin/mouth area. So the drawing: B's mouth is drawn at page 320 (in A's hat) and B's hat is at page 650-800 (A's beard). Yes! Exactly as designed. Good.
+
+So in A, the hat interior (page 320) has an invisible/hidden stroke (invisible since dark fill) ✓, and in B, the beard region (page 650-800) becomes B's hat with the grin stroke as its band ✓ and the beard's top edge (page 650) as brim ✓, apex 800 ✓.
+
+But careful: the beard is a dark mass; B's hat being a dark mass with a band = fine (like a black top hat? but apex is pointy → cone hat, wizard-ish). Fine.
+
+Now B's eyes: shared at page 500 (B frame 500 ✓). B's expression: half-closed lids, bags, downturned mouth, worried brows. B's brows come from A's cheek/nasolabial lines at page 548 (B frame 452) ✓. So draw A's nasolabial curves (from nose down to mouth corners, at ~540-560) — in B they become brows at 452 (above eyes) — as ∩ or ∪ arcs: worried brows slant inward-down. A's nasolabial curves are ∪-ish arcs (curving down around the mouth). In B they become arcs. Need them to read as brows: arcs that peak near the outer side? Let's just draw two arcs at page ~540-560, centered x 415 and 585, each curving downward like an inverted-U? A's nasolabial fold: from (390,540) curving down-inward to (440,640)? That's a long curve, in B becomes from (610,460) to (560,360)?? That's a diagonal line, not a brow. Hmm — that spans 100px vertically. As a brow it should be a short stroke near y 452 in B frame (page 548). So the A stroke at page 548 must be a compact ~60px arc, whose B-frame position is 452 ✓ and mirrored x. So draw two short arcs at page ~548, x around 395-455 and 545-605: in A these read as cheek creases next to the nose? At page 548, x 395-455 — that's the cheek under the eye, below-left. Could read as crow's feet / cheek lines of a smiling face ✓ (crow's feet at outer eye corner). Put them at outer corners: x 370-430 and 570-630, y 540-560, arcs. In B frame at y ~445-460, they become brows. Their shape in B: an arc; orientation: in A crow's feet are short lines fanning down-outward. As brows in B they'd be short slanted strokes ✓ = worried/skeptical brows.
+
+Hmm, this is quite constrained. Maybe simpler: give B its own brows as B-only strokes in the rotated group? B's brows at B frame 452 = page 548 (same place). Same location as the crow's feet. Then B's brows = B-only strokes, and A's face just doesn't have brows — but A wants raised brows for delight. A's brows could come from B's under-eye bags at B frame 548 = page 452: so A's raised brows at page 452 are actually B's eye bags (heavy pouches under B's eyes). Same trick, reversed. So page 452 = A's brows (drawn in A frame, ∩ raised arcs) and in B frame these are at 548 = under-eye bags (∪ pouches after rotation) ✓. Then page 548 = B's brows (B-only strokes in rotated group) and in A they are invisible/neutral (placed in A's cheeks; could be A's cheek lines — actually they'd be visible in A as cheek creases, which is fine and adds character, but risk "B visible upright"? A couple of cheek lines is fine).
+
+Hmm, but B-only strokes "light and inert in A". Cheek lines are ok.
+
+Similarly eyes: A wide open round eyes (circles with pupils). B half-closed: B's upper lid crease at B frame 476 = page 524 — so a stroke at page 524 (below A's eyes) becomes B's upper-lid line ✓. So A: draw lower-lid lines at 524 → in B these are above the eye = lid lines making eyes half-closed ✓. And B's lower lid / bag at B frame 524 = page 476: draw a stroke at page 476 (above A's eyes) which in B is below the eye = lower lid. In A, a crease at 476 above the eye = A's upper-lid crease ✓ natural!
+
+So eyes: circle radius ~26 at (415,500),(585,500), pupil. A reads as big round eyes ✓. B reads as eyes with a lid line across the upper part (from page 524 stroke? no—the stroke at page 524 appears in B at frame 476, which is ABOVE the eye center 500 by 24px, i.e. crossing the top of the eye circle → makes it half-closed ✓ great).
+
+And A's upper-lid crease at 476 in B frame 524 → just below eye = lower-lid line ✓.
+
+Good, shared eyes work.
+
+Now A's mouth: wide grin ∪ at 680, from x 400 to 600, deep curve (down to 710 at center). In B frame at 320 = ∩ dome = hat band ✓. Also B's mouth (page 320, B-only) must be clearly different: B's mouth should be downturned/frowning, small. In A it's inside the hat's dark fill — but if it's ink-colored on a dark fill it's invisible in A ✓. But in B, the mouth at page 320 appears against... page 320 region in B is A's hat area which in B frame is B's chin/mouth region — background is page color? In B, the region page 320 is the hat mass (dark) — so B's mouth stroke sits on dark hat ✓ visible if the stroke is white/light! So draw B's mouth as a light (paper-colored) stroke inside the dark hat mass ✓ visible in B, invisible-ish in A (light on dark = visible in A as a light mark on the hat!). Hmm. That reveals B in A as a light squiggle on the hat. Could read as a hat emblem/logo. Acceptable? It's "a light detail on the hat" — fine, mild. Or make A's hat not fill but just outlined shape, then B's mouth is ink on paper in both. Then in A, the hat has a small curve inside — could be read as a hat band curve. Fine: A's hat = outlined dome with a band line at 320? But the band line at 320 IS the B mouth stroke — in A it looks like a hat band stripe ✓, in B it's a frowning mouth ✓. That's elegant: the same stroke is A's hat band and B's mouth. But then is it "A-only" or "B-only"? It's shared! Put it in the shared group at page 320 as a band arc... but its shape must be a frown in B and a band in A. A hat band is typically a horizontal line or slight arc; a frown is ∩ (downturned mouth: corners down? downturned mouth = ∩ shape? A frown curve is like ∩ (arch up) meaning corners lower than center... no: frown = ∩? Smile ∪ has corners up (ends high) and center low. Frown: corners low, center high → ∩ shape). So B's mouth should be ∩ at page 320 → in A that's a dome/band arc ✓ plausible hat band (slightly domed band) — or A's hat band as an arc bulging upward = a hat band with a curve, fine.
+
+But careful: A's grin at 680 (∪) in B becomes ∩ = hat band, and B's mouth at 320 (∩) in A becomes ∪ = hat band. Two arcs. Consistent ✓.
+
+Great, so both bands/mouths are ∪ in page→? Let's define:
+- Page 680 arc (A's grin): concave up (∪, smile) → in B concave down (∩) = hat band ✓ (a hat band curving up in the middle, fine).
+- Page 320 arc (B's frown mouth, concave up in B frame = ∩ in page): in B frame frown = ∩ (concave down). Hmm let me be careful: B's mouth frown: in B frame, concave down (∩). In page (rotated 180) concave up (∪). So page 320 stroke should be ∪ (cup) to be a frown in B. And in A, page 320 ∪ cup = a hat band curved like a cup? A hat band is usually flat/slight ∩. A ∪ at page 320 in A's hat = looks like a droopy hat band / the hat's lower edge ✓ fine, or like a "hat ribbon droop".
+
+Hmm, alternatively A's hat could have its lower edge as that cup and the hat looks like a floppy/wilted hat — and B reads it as a sad mouth. Actually that's nice: A = triumphant but with a droopy hat? Eh. Let's just do: A's hat has a horizontal band line that curves slightly (∪ at 320). And B's mouth is a frown ∩ in B frame = ∪ in page. Same thing ✓. So one stroke, page 320, ∪ shape, width ~ x 430..570, depth ~ 20. In A it looks like a hat band curve (a bit droopy but ok, reads as band). In B it's a small frowning mouth.
+
+But hold on: B's mouth should look different from A's grin ✓ (frown vs wide grin) ✓✓.
+
+Now B's nose: page 350 (A's hat brim) + page 380 (A's fringe). In A: the hat brim at 350 spanning x 280..720, curving down in the middle to y 375; and a fringe line at 380. In B: brim = nose tip (wide, flat nose ✓ comedic big flat nose), fringe = nose bridge ✓. But we want the nose to read as a nose: need a vertical bridge line from page 380 down to 350 in page terms = in B frame from 620 down to 650 ✓ short segment. Good: the fringe (a downward-pointing lock) serves as the bridge.
+
+Hmm, A's fringe at 380 is just below the brim — a small hair tuft hanging over the forehead, x 460..540, from 355 to 390. In B frame that's the nose bridge, x mirrored 460..540 ✓ centered ✓.
+
+Now B's hat brim at 350 wide (280-720) as a big flat nose. Might look odd (too wide). Could reduce A's brim to x 300..700 and let B's nose be a wide flat nose — caricatured, fine.
+
+Now A's expression: wide-open eyes (shared circles) ✓, big grin ✓, plus raised brows (page 452 arcs, ∩) ✓ → delight/triumph.
+B's expression: half-closed eyes (lid stroke at 524 in B frame 476 crossing top of eye) ✓, frown ✓, heavy bags (page 452 arcs → B frame 548 pouches) ✓, worried brows (B-only at page 548 → B frame 452) ✓.
+
+Props: event = AI boom / generative AI hype (2023-2025) — maybe "AI chatbot bubble / launch" (e.g., GPT launch March 2023). A: wears a headset with antenna? A's prop should sit inside A's hat/hair/collar mass. Options: A's hat (200-350) has a small antenna/plug? The event: let's use "the 2023–25 generative-AI boom (chatbot launch, GPU rush)". A: a rocket-shaped finial on the hat? B: a drooping plug/antenna.
+
+Better: A has a little rocket/space capsule on top of the hat (as the pompom at page 150!) → in B that becomes something at page 850 = A's collar area = B's... hmm A's collar region. Let's do props:
+- A's prop: a small antenna with a glowing dot? For AI event: a headset earpiece, or a "chat bubble" (speech bubble with no letters) held near the head. A speech bubble near A's cheek at page 560, x 700-820 → in B frame 440, x 180-300 = B's left cheek area. Hmm, a bubble shape in B would read as an ear or a cheek puff. Risky.
+
+Simplest: put the prop inside the hat mass (A) and inside the beard/hat mass (B). A's hat (page 200-350) — but that becomes B's chin/lower face region. A prop inside A's hat = in B it's inside B's chin → e.g. a small antenna drawn on A's hat becomes a chin detail in B. Hmm.
+
+Alternative: the "prop" is the headgear itself, which differs: A = a tall hat with a small antenna (page 150 pompom region = A's hat finial, which in B frame is 850 = B's collar zone → B's collar!).
+
+Let's reconsider the bottom region page 800-900: A's collar/bow tie. In B frame = 100-200: B's hat crown/pompom area. So the shape at page 800-900 (below A's chin point at 800) is A's collar and in B it's B's hat's upper part? But B's hat occupies B frame 200-350 = page 650-800. So page 800-900 = B frame 100-200 = above B's hat = B's pompom/plume region ✓ (canon: plume 110, crown 200).
+
+So: A's chin point at 800 = B's hat apex; A's collar at 850-900 = B's plume/pompom. So the collar mass in A = a pompom on top of B's cone hat ✓. Nice: A wears a scarf/collar with a knot that reads as B's pompom.
+
+Then A's hat (200-350) = B's beard/chin region (B frame 650-800). So in B, the region page 200-350 is B's lower face: chin at B frame 800 (page 200) with a beard? B would have a beard (A's hat = dark mass = B's beard ✓) and B's mouth at page 320 = the frown stroke on the beard?? Hmm, B's mouth at B frame 680 = page 320 which is in the dark beard mass. A frown mouth drawn on a dark beard = visible only if light. Alternatively A's hat is not dark-filled; then B's beard is outlined ✓ and the frown mouth sits on the beard, visible ✓. Let's make A's hat an outlined shape (with hatching? no gradients; flat fill allowed). Let's make A's hat a filled light/grey flat tone so B's mouth is visible on it. But A's hat should read as a hat — filled mid-tone with dark outline is fine.
+
+But then the prop for A: a shape in the hat region (page 200-345) — in B that's B's beard area. A's prop: e.g., a small antenna/plug sticking out of the hat's side, or a tiny chip/circuit. Let's design A's prop: a "chat bubble with no letters"?? Alternatively the A-hat is a rocket-shaped hat? Let's do: A wears a hat shaped like a small rocket/capsule — a cylinder cap with a finial. The pompom at page 150 = a small glowing "chip"? Hmm.
+
+Let's decide the event: "the 2024–25 AI agent / chatbot boom (LLMs everywhere)". Props: A = a headset with antenna sticking from the hat (AI assistant) and B = the same headset collapsed? Since the props must sit inside hat/hair/beard/collar masses, and the collar mass (page 850-900) = B's pompom region: A could wear a bow tie in the collar? A's collar as a "server rack" tiny shape? Hmm.
+
+Alternative event with easy props: "AI chip shortage / GPU rush" — A's hat is a GPU-ish box with a fan? Cute: A's hat = a chip/graphics-card shape with a fan circle → in B frame (B's beard region) it's a beard with a fan circle = weird.
+
+Let's think of the double-duty props more cleverly:
+Prop 1 (A): a small rocket on top of the hat at page 150 → in B frame 850 = B's collar region; A's "pompom" is B's... hmm the region page 850 is A's collar too. Ugh, page 150 (A's pompom) and page 850 (A's collar) are both the same region in B/A pairing? R(150)=850, R(850)=150. So a shape at page 150 is A's hat finial AND B's collar-bowtie area; a shape at page 850 is A's collar AND B's hat finial. So we can have both: A's hat has a finial (pompom) at 150 → in B it's a bow tie at B frame 850 (B's neck!). And A's collar at 850 → B's hat finial at B frame 150 ✓.
+
+So: A = a person with a tall hat topped by a little finial/ball, wearing a big bow tie at the neck. In B: the bow tie becomes a small ball on top of a cone hat (finial), and the finial becomes a bow tie under B's chin. Cute!
+
+Props per face: A = the "promise": A wears a headset? A's hat could be a VR headset? Let's put A's prop INSIDE A's hat mass region (page 200-345) so in B it's on B's beard — a headset earpiece there = in B a jaw detail. Hmm.
+
+Alternatively A's prop in the hair/beard region: A's "beard" region (page 650-800) is B's hat. Put the prop in A's beard: e.g., A has a beard shaped like a little rocket? Or A's beard contains a chip (square with pins). In B, that chip appears on the hat band = a hat badge ✓ nice! So: A's beard region contains a small square chip/circuit badge → in B it's a badge on the hat ✓. And A's hat region (200-345) contains the second prop → in B it sits on B's beard: e.g., a headset mic? A headset worn with the band hidden? Let's do: A wears a headset whose earpiece is on the side of the head near the beard? Hmm.
+
+Simpler props:
+- A's prop: a small "AI chip" square badge in A's beard (page ~700, x 470-530) → in B, a badge on the hat band ✓. Also in A, a chip badge in the beard = A is an "AI engineer with a chip in his beard"? Odd. Alternatively the badge is on A's hat (page 300) → in B on the beard = a beard trinket. Also odd.
+
+Hmm. Consider A's prop as the whole hat: A's hat = a shape that in A reads as a hat but in B (page 200-345 = B's beard region, B frame 655-800) reads as a beard. So A's hat = B's beard! Then A's hat shape should be a fluffy/rounded mass, and in B it becomes the beard ✓ naturally if A's hat is a big fluffy mop/hair (like Einstein hair or a mop of curls) that in A reads as a hat and in B as a beard. But we wanted A to have a hat and B a hat (cone). A's hat at 200-345 and B's hat at 650-800 both are the same shape (page 200-345 = B frame 655-800 = B's lower face/chin region) — so the SAME shape is A's hat AND B's beard/chin. And B's hat is the shape at page 650-800 = A's beard. So the drawing has two mass shapes: top mass (A's hat / B's beard) and bottom mass (A's beard / B's hat). They swap roles! Beautiful and classic.
+
+So: top mass (page 200-350) = A's hat, B's beard. Bottom mass (page 650-800) = A's beard, B's hat (cone hat with band = A's grin).
+
+Thus A = person with a hat AND a beard? A wears a hat on top and has a beard below, with eyes between and a grin on the beard?? Mouth at 680 inside the beard mass. Hmm, that's the crux: A's mouth at 680 sits inside the "beard" region (page 650-800). If the bottom mass is a dark beard, A's mouth at 680 is a grin drawn across the beard (like a mouth in a beard) — unusual but Whistler-ish? Actually, a simpler take: A's lower face has a big chin/jaw shape rather than beard; in B it reads as a cone hat. Let's just make the bottom mass a light-filled shape (like a big chin/ruff) rather than a beard, so A's mouth at 680 sits on the face? But a mouth at 680 with a shape boundary at 650 means the mouth is 30px below the top edge of that shape, and the shape's apex at 800 is below the mouth — so the shape 650-800 is the chin+neck region (a jaw). In B, this jaw shape = a cone hat ✓ plausible.
+
+And the top mass (200-350) in A = hat; in B = beard (a mass under B's chin, B frame 650-800). B's chin at B frame 800 = page 200 = the bottom of the top mass. Hmm B's beard under the chin ✓ (page 200-350 = B frame 650-800 which is B's chin/cheek/jaw region ✓). So the top mass is A's hat (with brim at 350) and B's beard/jaw mass. In B, B's mouth at page 320?? wait B's mouth is at B frame 680 = page 320, which is inside the top mass (B's beard). So B's mouth is inside B's beard region — a frown mouth drawn on the beard, and the beard top edge at page 350 (B frame 650) is above the mouth ✓ (mouth below beard top edge). So the top mass = B's beard mass with a frown mouth in it, and in A = a hat with a frown-like band. OK!
+
+But the geometry: top mass spans 200-350 and in B frame 650-800 = B's jaw+chin area, containing mouth at 680 and chin bottom at 800 (page 200). So B's chin is the bottom of the hat mass — meaning in A the hat's top edge (page 200) = B's chin bottom ✓ (a hat's crown top is B's chin). Hmm, B's chin at the very bottom of B's beard mass? A beard hangs below the chin, so the mass extends below the chin. Then B's chin should be near page 350 (top edge of mass in A) and beard hangs to page 200. Then B's mouth at 680(page 320) is below the chin (800? no). Let's set: B frame: chin at 780 (page 220), mouth 680 (page 320), beard hangs 780-850?? but page 200-220. Eh, fine: the mass page 200-350 in B frame = 650-800: B's mouth 680 ✓, chin 780 ✓, so the mass covers B's lower face from below the nose (650) to the chin (780) — it's B's chin+jaw, not a beard. And in A the same shape = a hat ✓ (hat dome 200-345 in A frame = crown 200, band 320, brim 350). Wait A's hat band at 320 = the stroke we said is B's frown mouth! And A's hat brim at 350 = B's nose tip (650) — the brim is at the BOTTOM of the hat in A ✓ and in B the nose tip ✓.
+
+But then in A, the hat brim at 350 = in B the nose tip, and the hat dome 200-320 = in B the jaw region with the frown mouth at 320. And B's chin = page 220 (bottom of hat dome top edge? confusing).
+
+Let's just be concrete: A's hat = shape spanning y 200-355: crown rounded at 200, sides down to 330, brim flaring at 330-355 spanning x 290-710. In A, reads as hat ✓.
+In B frame this occupies 645-800 = B's nose tip (650) and below: B's mouth at 680 (the band stroke at page 320) ✓, chin at ~790 (page 210) ✓. So B's face: eyes at 500 (page), big flat nose at page 350 (A's brim), mouth at page 320 (A's hat band), chin/jaw at page 200-250. But the brim spans x 290-710 in A; in B that's a nose spanning nearly the full width — a huge flat nose, which is caricature-funny but maybe too wide. Alternative: A's brim narrower, x 350-650, and add separate hat shape? A hat brim narrower than the dome looks odd. Could make A's hat a stovepipe hat (cylinder) with a narrow brim? Actually if A's hat is a cylinder from 200-330 with a small brim line, then the "brim" stroke at 350 can be a separate short curve (not a wide brim). Let's make A's hat = tall cylinder (like a top hat) x 400-600, y 200-330, plus a brim ellipse at 330-350 spanning x 340-660. Then in B, the brim = a wide flat nose (spanning 340-660 = 320px wide). Still wide. Hmm, but B's nose is at page 350 and B's face is the region page 200-500 which is 320 tall. A 320-wide nose on a 300-wide head = the whole face width. Too much.
+
+Fix: make the nose come from something else. Options for B's nose tip: the A-hair at the sides? What if A has no brim, and B's nose = A's fringe tuft at page 380 plus small nostril curve. Then B's nose = a small nose from A's fringe (a downward lock at x 460-540) and A's hat brim edge... Let's define A's hat brim as a SHORT curve under the hat, x 440-560 at y 350, curving down (like the nose tip cup!) — that would look like a small hat brim/visor on a narrow hat. Hmm, a narrow hat (x 400-600) with a small visor.
+
+Alternatively, let A's hat be a cap with a peak/visor pointing to one side (asymmetry!) — but then the peak's curve = B's nose must be centered.
+
+Let's make A's hat a "fez/bowler" with the top mass being the hat crown x 390-610 y 200-330, and the brim line at 340-355 spanning x 360-640, gently curving down in the middle (cup) → in B, a wide nose with a curved underside. Wide but perhaps acceptable as a "flat clown nose" only if we reduce. Alternatively A's hat could be a tall cylinder whose bottom edge (at 350) is a WIDE curve: like a bucket hat. In B, the "nose" = the bottom edge of the bucket hat, wide. Cartoon: B has a wide flat nose, quite acceptable in caricature if the nose is drawn as the underside edge. Actually maybe reduce: make A's hat a cylinder x 420-580 with the bottom edge spanning 420-580 (160 wide) = a medium nose ✓. A narrow cylindrical hat (like a top hat without brim, or a stovepipe) x 420-580, y 205-345, bottom edge a cup curve from (420,335) Q(500,370)(580,335) → in B: nose tip = cup at page 335-370 (B frame 630-665) ✓ spanning 160px wide, moderate. And B's nose bridge = the fringe at page 380? That's below the hat edge (page 380 > 370) — the fringe would be just below the hat. Then in B, the bridge (page 380 = frame 620) is BELOW the nose tip (frame 665)? No: page 380 > 370 so page 380 maps to frame 620 which is above 665 ✓ (bridge above tip) ✓ good, but they're adjacent (370 vs 380) so the nose is tiny. Let's move the hat bottom edge up: hat from 205 to 320, brim edge curve at 320-350. And the fringe at 380. Then B's nose: tip at 320-350 (frame 650-680), bridge at 380 (frame 620) — bridge above tip by 30-60px ✓ reasonable nose.
+
+But then A's hat occupies 205-350 and B's nose tip region 320-350 overlaps A's hat bottom ✓ fine (the hat's bottom edge is the nose). And B's mouth at B frame 680 = page 320 — CONFLICT with the hat bottom edge at 320! B's mouth at page 320, and the nose tip at page 320-350. They're at the same page location! Because B's mouth (frame 680) and B's nose tip (frame 650) are only 30px apart in B frame → in page, 320 and 350, so the mouth is just above the nose tip: page 320 is above page 350 ✓ (B frame 680 is below 650 ✓). But B's mouth should be below the nose tip by ~30px in B frame: nose tip frame 650, mouth frame 680 → page: nose tip 350, mouth 320 — wait page = 1000 - frame: nose tip frame 650 → page 350; mouth frame 680 → page 320. So on the page, the mouth (320) is ABOVE the nose (350). Rotated, the mouth is below ✓. Fine, they're just 30px apart. That means in A, the hat's bottom edge (the cup, at page 320-350) and the frown mouth (page 320) overlap in space — both in the same area! Because A's hat bottom edge is B's nose and A's hat band is B's mouth, and in the hat these are only 30px apart (nose tip and mouth in B frame are 30 apart). So B's mouth stroke at page 320 and A's hat-edge curve at 320-350 would overlap/crowd.
+
+Fix: give B a bigger nose-to-mouth distance by making A's hat taller? B's nose tip comes from A's hat bottom edge — that edge is near the top of A's hat region... Actually the constraint: in A, hat occupies 200-350. B's nose must be at frame 650 (page 350) and B's mouth at frame 680 (page 320). So the hat's bottom edge = page 350 = B's nose tip, and B's mouth = page 320 which is INSIDE the hat (upper part of hat, i.e., B's mouth is at B-frame 680 which is below the nose 650 ✓ but the page position 320 is inside the hat's dome, 30px above the hat's bottom edge).
+
+Hmm so B's mouth would be drawn overlapping the hat's bottom edge region. Since B's mouth is at page 320 and hat bottom edge spans page 320-350, the mouth stroke could BE the hat bottom edge region — conflict indeed: B's mouth and B's nose would be drawn in the same 30px band.
+
+Solution: reduce B's face-feature crowding by making the A-hat smaller vertically and moving B's nose source elsewhere. Alternatively use the canonical pair differently: maybe B's nose = A's hat brim and B's mouth = A's hat band — exactly this crowding. In classic Whistler reversible faces, this works because the hat brim and hat band are close in A but the B nose and mouth... in B, the nose is big and the mouth just below it, they can nearly touch (like a snout). Actually B's nose tip at 650 and mouth at 680 - in real faces that's a normal-ish spacing? Canon says nose tip 0.25H=650, mouth 0.30H=680 → only 30px apart. Hmm, that's a short upper lip but ok. So B's nose and mouth nearly touch → the drawing must show a nose whose tip nearly touches the mouth. So in A: the hat's bottom edge (nose) and the band (mouth) are 30px apart, i.e., the hat band is 30px above the hat's bottom edge — that means the hat band sits just above the brim ✓✓ NATURAL! A hat band right above the brim!
+
+So A's hat: crown 200-300, band (a curve) at 300-320, brim (bottom edge, cup curve) at 320-350. Then B's mouth (page ~305-320 = band) is above B's nose tip (page 320-350) ✓ 15-40px apart ✓ fine: B has a nose whose tip nearly touches the mouth — snout-like, funny ✓.
+
+But wait, then B's mouth stroke at page 305-320 = the hat band curve. B's mouth should be a frown (∩ in B frame) = ∪ in page. So A's hat band is a ∪ (cup) curve — a band that droops in the middle = "sad hat band"? A hat band drawn as a shallow cup curve reads fine (the band's lower edge curving). OK.
+
+Also the hat band in A as ∪ means the brim edge also ∪ (cup) — the hat bottom dips in the middle. Slightly odd hat but fine, or make the brim ∩ and B's nose = a ∩ (rounded up) - a nose tip curving up is less nose-like. Keep ∪.
+
+Now, B's nose: the brim's underside cup = nose ✓, plus B's nose bridge from A's fringe at page 380 (frame 620) ✓ — the fringe hanging down from the hat at page 360-390, centered x 470-530 → in B, a vertical bridge stroke ✓.
+
+But hmm: in B, the brim spans x 420-580 (hat width). If the hat is narrow (x 420-580), the brim is 160 wide; B's nose 160 wide on a head of ~470 width = fine ✓.
+
+But A's hat being narrow (160 wide) and tall (200-350) = a stovepipe/top hat ✓ for a triumphant magician-engineer ✓. And the pompom/finial at 150: a small ball + maybe an antenna. In B frame 850 = B's neck/bow tie region → a bow tie ✓.
+
+A's collar region (page 800-900): A's beard/hat cone = B's hat apex? Earlier: A's chin point at 800 = B's hat apex, and A's collar at 850-900 = B's hat's upper? Let's recompute: B's hat occupies B frame 200-350 (crown 200, band 320, brim 350) → page: crown 800, band 680, brim 650. So in page terms: the shape spanning 650-800 is B's hat, with crown apex at page 800 (pointy top of B's hat) and brim at page 650 (wide edge). In A, the region 650-800 is A's lower face: A's mouth at 680 (=B's hat band ✓) and A's chin at 800 (=B's hat apex). And A's face below the mouth (704-800) is the chin/jaw which must taper to a point at 800 for B's hat apex. So A has a pointed chin? Or a pointed beard! A pointed beard: A's mouth at 680 in the beard? Hmm, if A has a beard, the mouth would be in it. Alternatively A's pointed chin (like a goatee/pointed jaw). A goatee! A's goatee = pointed mass from 690 to 800 ✓, and in B it's the cone hat ✓. But then the hat band (B's mouth, page 680) is the top of A's goatee... A's goatee top edge at 680 = where the mouth is. Hmm, A's mouth would be just above the goatee (mouth at 680 with goatee 690-800). But B's band must be at page 680 exactly (B frame 320). We can put the band stroke at page 690 instead (B frame 310, close enough to band ✓).
+
+So: A: mouth (grin) at ~670-690, then a pointed goatee/chin mass from 700 to 800. B: hat band = the grin stroke at 670-690?? No wait — the grin IS A's mouth at 680, and B's hat band = the SAME stroke (the grin) ✓!! Right: the grin at 680 = B's hat band (page 680). And B's mouth = A's hat band at 320. I had it right.
+
+So in A: the grin at 680 is the top edge of the goatee region — the grin curve itself doubles as B's hat band. So A's face: nose (590-650), grin (680), goatee mass below (690-800). In B: hat = region 650-800: brim at 650 (top edge of the region = A's grin?? no).
+
+Careful: B's brim at page 650 and B's band at page 680: so in page, the brim edge is at 650 and the band at 680 (band below brim in page = above in B frame). In B frame order top→bottom: crown(200) apex, dome, band(320), brim(350). Page: crown apex 800, band 680, brim 650. So going UP the page from 800 to 650: apex(800) → band(680) → brim(650). So the brim is the topmost edge of the hat in page terms, at 650, and the band is just below it at 680, and the apex at 800.
+
+So the shape (page 650-800) = a cone with apex at 800 and wide open top edge at 650, plus a band curve at 680 (inside, near the top). In A, this shape is A's chin/jaw/goatee: apex at 800 = A's chin point; wide top edge at 650 = A's chin's top?? That means A's jaw is widest at 650 and comes to a point at 800 — that's a pointy goatee ✓, and the "brim" edge at 650 = the top edge of the goatee which in A sits just under A's mouth (mouth at 680??). Conflict: the grin at 680 must be inside the goatee (below its top edge 650). Ugh. Unless A's mouth is ABOVE the goatee: A's mouth at 660 (still ~0.27H ok) and goatee from 690-800 with top edge at 690; then B's brim at page 690 → B frame 310, which should be the band zone not brim (350). Meh, approximate is fine: canon allows ±30px.
+
+Let me set concretely:
+- A's mouth: wide grin, arc from (405,668) Q(500,712) (595,668) — center bottom at 712? Let's make it a ∪ with center at 700: M 405 662 Q 500 706 595 662. As B's hat band: a ∩ dome spanning 405-595 at page ~662-706, inside B's hat (650-800) ✓ near its top ✓ good (a hat band near the brim edge).
+- A's goatee/pointed chin mass: from (430,700) curving down to apex (500,800) up to (570,700), filled dark (a beard!). But the grin at 662-706 overlaps the goatee top. Let's make the goatee top at 715 and the grin above it (mouth at 662-690 region) with the mouth's lower edge near 690. Fine: grin: M 410 660 Q 500 700 590 660 (∪ center 680ish). Goatee: starts at y 715, apex 800. Then in B: brim edge at page 715 → B frame 285 (should be 350, brim). Hmm, 65px off. Alternatively A's chin mass should be wide at 650.
+
+Maybe better: A's lower face = a wide chin/jaw (like a heavy jaw) spanning 650-800, with the grin drawn ON the upper part of it at 680, and the jaw narrowing to a chin point at 800. In A, a grin drawn on the chin region (below the nose at 650) means the mouth is at 680, the chin at 800, jaw wide at 650-700. Visually in A: a face where the mouth is at 680 and below it a big tapering chin/jaw. That's fine if we DON'T fill it dark, just outline the jaw: A's face outline from cheek down to a point at 800. Actually let's make the whole head silhouette: the outer outline of the figure.
+
+Let me now define the global silhouette carefully, since it must serve both.
+
+Silhouette (one path, the outer boundary of head+hat+collar? The collar is separate).
+
+Page regions:
+- 200-350: top mass = A's hat (stovepipe, narrow-ish) / B's jaw+chin.
+- 350-650: middle = A's face / B's face upper.
+- 650-800: bottom mass = A's chin/jaw point / B's hat (cone).
+- 800-900: A's collar / B's pompom (small).
+
+Since the top mass (A's hat) is narrow (stovepipe x 420-580) but B's jaw region should be wide-ish... The silhouette doesn't have to be one shape; the hat can sit on the head. So:
+- Head/face outline (shared, one path): an egg from crown at 200 down to chin at 800? But the top 200-350 region would then be A's forehead/hat area AND B's jaw. Let's make the outline: from (500,215) top rounded, sides bulge to x 285/715 at y 500, then narrow to chin point at (500,800). In A: the head shape with the hat drawn on top (hat overlapping 200-350). In B: this outline's top (200-215) = B's chin?? B's chin should be at frame 800 = page 200 ✓ (the top of the outline in page = B's chin, rounded point). And the outline's page-bottom point at 800 = B's hat crown apex ✓ (so A's chin is pointy = B's hat apex ✓ as decided).
+
+So one outline: top rounded-ish at 200, bottom pointed at 800 ✓. Width: max at 500 (eyes) ±215. But in B, the eyes are at 500 too, so the widest at 500 ✓ symmetric-ish.
+
+Then B's hat = the pointed bottom part of the outline (650-800) → reads as a cone hat ✓ (with the band = A's grin). And B's chin = the rounded top (200-215) ✓ plus the top mass (A's hat) = B's jaw/cheek region... but A's hat is a separate shape sitting on the head: in B, that hat shape appears at page 200-350 = B frame 650-800 = B's chin/jaw area — overlapping B's head's chin at 200! Conflict: A's hat sits on top of the head (page 200-350) but in B that region is B's chin region which is where B's head outline top is. So A's hat overlaps the top of B's chin region. Hmm: B's head outline top (page 200 = B's chin) — and A's hat also occupies page 200-350 → in B the hat would be a mass covering B's chin and jaw. That could read as B having a beard covering the chin! Since it's a separate shape overlapping, in B it reads as a big beard under B's face ✓. But it also creates a doubled contour (ghost) risk.
+
+Simplify: make A's hat = the top part of the SAME outline. I.e., the outline's top portion (200-350) is shaped like a hat in A: a tall crown that flares to a brim at 350. Then in B, that same shape (page 200-350) is a shape hanging below B's chin — B's beard/chin. So B's head = outline 350-800 region? Hmm.
+
+Let's define the outline as one continuous closed path that is both "hat on top of face" (A) and "cone hat on face" (B):
+
+Path (page coords):
+Start at (500,200) [top center: A's hat crown top / B's chin top... wait B's chin should be at the bottom of B's face which is frame 800 = page 200. But B's face's bottom is BELOW B's mouth (frame 680 = page 320) ✓ page 200 < 320 in page but in B frame 800 > 680 ✓. So yes, page 200 = B's chin bottom edge. So the top of the drawing = B's chin.]
+
+So the drawing's top is a rounded shape = A's hat crown (rounded ✓) and B's chin (rounded ✓).
+Going down the page sides: at 350 the sides flare wide (A's hat brim, x 285..715 wide) — in B frame 650 = B's nose level; wide flare at B's nose = B's face cheeks/nose area... hmm B's face at frame 650 should be narrower (the nose). The wide brim at 350 in B = a wide nose+cheeks region. Hmm.
+
+OK let's take a different, cleaner approach: TWO masses (top and bottom) + eyes etc., and accept that each mass serves as a feature, not a full anatomical region. This is how Whistler faces work: e.g., "the hat" in one reading is "the hair/fringe" in the other.
+
+New plan with cleaner semantics:
+
+Shared strokes:
+1. Eyes: two circles at (415,500),(585,500), r 28, dark outline, pupils (dark filled circles r 10) — A: wide-open delighted eyes ✓; B: with lid lines crossing the top → half-closed.
+2. A-lid crease above eyes at 476 (short arcs) → B: lower-lid lines ✓.
+3. Lower-lid strokes at 524 (short arcs under eyes) → B: upper-lid lines (half-closed) ✓. Hmm both A's arcs at 476 and 524 would cross B's eye region (476 and 524 → B frame 524 and 476) — B's eye circle spans 472-528, so a stroke at page 524→B frame 476 crosses the top of the eye ✓ (upper lid), and page 476→B frame 524 crosses the bottom ✓ (lower lid). Good, symmetric. But in A, arcs above and below each eye = A's eye has creases both sides → looks like normal lids ✓ fine (A's eyes would then look slightly hooded, but with the crease above the eye at 476 being above the circle top (472) — the circle top is at 472 so 476 is inside. ok make crease at 468 (just above) and lower lid at 532.
+   Actually simpler: A's eyes = ellipse/oval open shape (tall) rather than circle? Keep circles.
+4. Brows (A) at 452: arcs ∩ above eyes → B: under-eye pouches at 548 ✓. A: raised, arched brows ✓.
+5. Cheek/brow (B) at 548: B-only in rotated group (B frame 452) → in A: small lines at 548 near cheeks (inert-ish). Use thin strokes, short, angled → could read as A's cheek creases. Acceptable.
+6. A's nose: at 590-650, a rounded nose shape. In B frame = 350-410 = B's hat brim/hairline region. So A's nose = B's hat brim?? But we also planned A's hat brim = B's nose. Only one thing can be B's nose. Choose: A's nose (590-650) → B's hat brim (B frame 350-410). And A's hat brim (at 350) → B's nose (frame 650) ✓. Wait that means B's hat brim is at page 590-650, i.e., A's nose region, and B's nose is at page 350 = A's hat brim. So B's hat = the mass at page 590-650?? B's hat brim at frame 350 means the hat occupies frame 200-350 = page 650-800 ✓ (the bottom mass, A's chin). Consistent: B's hat = bottom mass (650-800) with brim edge at 650 = A's nose region?! But A's nose is at 590-650 and its tip at 650 touches the brim edge. Hmm: so in A, the nose tip at 650 = the top edge of the bottom mass (A's chin region) and in B that edge = the hat brim ✓, while A's nose shape (590-650) = B's... wait the nose shape spans 590-650 in page → B frame 350-410 = B's hat brim region (brim 350) ✓ so A's nose = B's hat brim, but then the bottom mass's top edge at 650 is also brim-ish. Overlapping roles, fine.
+
+So the bottom mass (650-800) = A's pointed chin + B's cone hat; the hat's brim = the top edge of that mass, which in A is where A's nose tip sits (the chin mass top edge under the nose). OK.
+
+So A's nose shape (590-650) doubles as B's hat brim?? But the hat brim should be at the TOP of the hat (frame 350) while the hat mass spans frame 200-350 (page 650-800). The brim is the bottom edge of the hat in B frame = page 650. A's nose at 590-650 has its bottom at 650 = hat's lower edge ✓ but the nose shape itself is 590-650 which in B is 350-410 = BELOW the hat (below the brim) — that would be B's upper lip/chin area. Not good.
+
+Simplify: In B, what does the shape at page 590-650 (B frame 350-410) represent? It could be B's chin/jaw crease, or a shadow line under the hat brim. Let's just say A's nose shape = in B a "moustache"! A's nose at 590-650 with a moustache-ish shape? Hmm, B frame 350-410 is between B's hat brim (350) and eyes (500): that's B's forehead/upper face region, below the brim. A shape there in B = a brow? Actually B's brow at 452 = page 548 (we assigned B-only brows at page 548). A's nose at 590-650 → B frame 350-410 = B's forehead, could be a "furrowed forehead" line ✓ or B's hat brim shadow.
+
+Fine: A's nose = in B a forehead wrinkle / or better: make A's nose SMALL and simple so it doesn't matter. Let's make A's nose a simple shape: a vertical bridge line from 590 to 630 and a rounded tip curve 630-650 (small). In B it becomes a small shape above B's eyes region (frame 350-410) = could read as B's forehead crease. Acceptable.
+
+Alternatively make A's nose long and prominent: bridge 570-630, tip 630-660, and a wide flat nose tip curve spanning x 450-550 (in B: a shape at frame 340-430 spanning 450-550 = B's forehead/brow region...). Meh.
+
+Alternative assignment: A's nose = B's ear/hat? Let's accept the "forehead wrinkle" reading but maybe better: A's nose tip curve spanning wide x 430-570 at y 640-660 → in B frame 340-360 = just below the hat brim = could read as B's hat brim's underside shadow or B's hat brim itself! Actually B's hat brim is at frame 350 exactly. So A's wide nose tip curve at page 640-660 → B frame 340-360 ≈ B's hat brim ✓✓. But the hat mass is page 650-800 (frame 200-350) — so the brim is at frame 350 = page 650 = the bottom edge of the hat mass. And A's nose tip curve at 640-660 straddles it ✓ roughly. So: A's wide nose (tip at 640-660, spanning 430-570) = B's hat brim edge (page 640-660). But the hat mass top edge in page = 650 (B frame 350) — so the brim IS the hat mass's top edge, and A's nose tip coincides with it. So in A, the nose tip is at the top of the chin mass? That means the nose merges with the chin/hat mass.
+
+I think I'm overengineering. Let's simplify the composition:
+
+A's head: an egg-shaped face (crown 350?? no...). Hmm.
+
+Let me step back and choose a design that's easy:
+
+DESIGN:
+- One big face-head shape (shared): outline from (500,205) top, widening to x 285/715 at y 480, narrowing to a chin at (500,790). Slightly asymmetric (left side has a bulge).
+- Top mass (A's hat / B's beard): a shape overlapping the head top: from (395,330) up to (500,195) to (605,330) — a dome (like a hair/hat dome), plus a brim stroke from (355,338) to (645,338) curving down in the middle to 352 (cup). In A this reads as a rounded hat/hair with a brim band? Actually with the head top at 205, a dome overlapping 195-330 is A's hair/hat; the "brim" line at 338-352 is A's hat brim (or a hair fringe line). In B: the dome (page 195-330 = frame 670-805) = B's chin/beard mass at the bottom of B's face ✓ (B's chin bottom at frame 800 ✓ dome bottom edge at page 195 → frame 805 ✓). And the brim curve (page 338-352 = frame 648-662) = B's nose tip ✓✓ (B's nose at frame 650 ✓). PERFECT. So in B, this dome is B's beard/chin and the brim-line is B's nose. So B's nose = a wide curved line under the beard — hmm, a nose BELOW the beard? In B frame the beard occupies 670-805 and the nose at 650 is above the beard ✓ (frame 650 < 670) ✓ good: nose right above the beard/chin. But then B's mouth at frame 680 = page 320 would be INSIDE the beard (frame 670-805) ✓ i.e., B's mouth is drawn on the beard, framed by the beard. That's odd but maybe ok — like a mouth in a bushy beard (whiskers around the mouth). Alternatively B's mouth should be at frame 680 but the beard starts at 670 → mouth at the very top edge of the beard. Hmm.
+
+Alternative: swap: A's hat brim at page 338-352 → B's nose tip at 648-662 ✓ (keep). Then B's mouth must be at page 320 = A's hat band. So A's hat needs a band line at 320 (30px above the brim at 340). A hat with a band line right above the brim ✓ natural! And that band line = B's mouth (a frown). In A, the band line at 320 is inside the dark hat dome (200-330) — if the dome is a dark fill, the band line is a light/ink line on it ✓ visible ✓ and reads as a hat band ✓✓.
+
+So: A's hat = dark dome (page 195-335) with a hat band (line at ~318, cup shape ∪) and a brim (line at ~340-352, wider, cup). In A: dark hat with band and brim ✓. In B: the dome = B's dark beard/chin (page 195-335 = frame 665-805) ✓ with the band line (frame 680) = B's mouth ✓ (drawn as a light line on the dark beard, looks like a mouth in the beard — acceptable? A mouth as a light line inside a dark mass reads fine, like a mouth in a beard). And the brim (frame 650) = B's nose tip, drawn as an ink line on the face ✓.
+
+But hmm: the beard is the region frame 665-805 (below B's mouth at 680) and the mouth is at 680 which is inside it near the top. And B's chin at frame 800 = bottom of the beard?? The beard's bottom should be below the chin. Since the page-top of the dome (195) = B frame 805 = B's chin bottom ✓ so the dome's page-top edge is B's chin line. Then B's beard would extend ABOVE B's chin in page = BELOW in B frame? Let's be careful: the dome spans page 195-335 = B frame 665-805. B frame 805 is the LOWEST (below chin 800). So the dome covers B's face from frame 665 down to 805 — i.e., from below the nose to below the chin = B's beard ✓ (a beard covering the chin and jaw). But the dome's shape: in A it's a dome (rounded top at page 195, flat bottom at 335). In B frame: rounded at 805 (bottom of B's face = a rounded beard bottom ✓) and flat edge at 665 (top of the beard, a straight cut just under the nose). Hmm, a beard with a straight top edge just under the nose — like a big chin-strap / mask. It would cover B's mouth (680) making the mouth a light line in the beard. And B's cheeks/jaw entirely covered. It'll read as a big beard ✓.
+
+But then B's face = eyes at 500, nose at 650, mouth 680 (on the beard). The face region 350-650 is B's upper face: forehead 350-500, eyes 500, nose 650. And A: hat 195-352, forehead 352-470, eyes 500, nose ~570-650?? A's nose is at 570-640, above the bottom mass... but wait, where's A's chin in this design? The bottom mass (page 650-800) = A's chin/jaw = B's hat ✓. And A's mouth must be at 680 = inside the bottom mass → A's mouth on the chin?! Problem again.
+
+Hmm! A's mouth at 680 (canon) sits inside the region 650-800 which is B's hat. So A's mouth is drawn on top of A's chin mass. To make this work: the bottom mass should be A's BEARD (a big beard below the mouth) rather than a chin, and the mouth at 680 is the top edge of the beard / inside it. Actually if the beard's top edge is at 680, and the mouth is at 680-700 (drawn as the beard's top edge curving = a grin shape!). Like a big bushy beard whose upper boundary is a wide grin? Nah.
+
+Alternatively A's mouth could be a dark open mouth (filled shape) drawn at 660-700 and the beard below it from 700-800, with the beard's top edge being the band's?? but the band must be at 680 exactly (B frame 320).
+
+Compromise: the "band" stroke of B's hat = A's grin at 680 ✓ (we already had: A's grin = B's hat band). And the BOTTOM MASS (650-800) = B's hat crown/dome, which in A is the beard/jaw. So the grin at 680 sits at the top of the beard mass. If the beard mass is drawn as a dark shape whose top edge is at ~700, and the grin (at 680) sits just above the beard on the face ✓✓, then in B: the hat mass = page 650-800 (the beard) and the grin at 680 = the hat band = a curve crossing near the top of the beard mass ✓ (the band's dome shape ∩ = the grin ∪ rotated). Since the grin is at the beard's top edge area, in B it looks like a band across the hat ✓. But wait: the hat mass in page spans 650-800 with crown apex at 800; its band at 680 is at the very top of the mass, so B's hat = cone with band near the top ✓ (like a conical hat with a band). And B's brim at frame 350 = page 650 = the TOP edge of the mass in page = in B frame the bottom edge of the hat (widest) ✓. So the mass's page-top edge (650) = B's brim ✓ and page-bottom apex (800) = B's crown apex ✓. So the mass must be widest at page 650 and narrow at 800: an inverted cone ✓ (like a party hat pointing down in page). And in A, that inverted cone = A's beard?! An inverted-cone beard (pointing down) ✓✓ like a long pointed goatee/beard, wide at top (650) and pointed at bottom (800) ✓ classic!
+
+So: A = a man with a tall dark hat (dome 195-335) and a long pointed beard (650-800), eyes at 500, a big grin at 680 that is the TOP EDGE of the beard? Hmm, the grin at 680 while the beard top is at 650 → the grin is inside the beard region (650-800). Conflict again unless the beard top edge is at ~700 and B's brim is then at frame 300 (not 350) — a 50px error. Acceptable? Canon tolerance 30px. Hmm.
+
+Alternative: shift the whole B-features assignment: make the grin at 680 and the beard top edge exactly at 680, i.e., the beard's top edge IS the grin curve (a ∪ curve = the smile). But a beard's top edge as a wide ∪ (drooping in the middle) is weird.
+
+Alternative: A's mouth = a dark/open mouth shape (filled) spanning 660-700 sitting ON TOP of the beard region, drawn as a light/paper shape with dark outline. Then the beard mass can be behind, and the grin outline at 680 is drawn over the beard. In A: a smiling mouth (dark line/grin) over a beard — fine, a mouth can be at the top of a beard (the beard starts below the mouth, but our beard mass top is at 650 which is above the mouth 660-700...). The beard mass top at 650 is 10px above the mouth top 660. So visually the mouth is just inside the top of the beard ✓ like a mouth peeking above a big beard, with the beard around it. Actually many drawings: a big beard whose upper edge is at the moustache level and the mouth inside it. Acceptable ✓.
+
+Let's go with: A's beard = dark mass, top edge ~655 (slightly wavy, like moustache edges) extending down to a point at 800, width from x 395 to 605 at top. And A's mouth = a light (paper-colored) wide grin shape drawn over the beard at 660-700, outlined dark: e.g., path filled with paper color: M 415 662 Q 500 700 585 662 Q 500 660 415 662? A grin shape = a crescent. Let's draw a mouth shape: upper edge ∪ from (415,660) to (585,660) dipping to (500,690), lower edge curving back up to (500,715)? That's an open smiling mouth (dark inside?). Hmm.
+
+But then in B, this mouth shape at page 660-715 = B frame 285-340 = B's hat band region ✓ (the band = the mouth shape, e.g., a band that is a light crescent with dark outline — reads as a hat band ✓).
+
+And B's mouth = A's hat band at page 318 → a light line on the dark hat, shaped ∪ in page = frown in B ✓. Hmm, a frown = ∩ in B frame; in page (rotated) it's ∪. So the page-318 band should be a ∪ curve. But a hat band ∪ (dipping in the middle) in A... that's a droopy hat band. Alternatively make B's mouth a frown drawn as a curve with corners DOWN in B frame; in page, corners UP?? no: rotation by 180 turns a ∩ into ∪ and also flips left-right. A frown in B frame = corners lower than the center = ∩? Draw a frown: the mouth curve arcs downward in the middle? No! Frown: the mouth curves the other way from a smile: smile = ∪ (ends up), frown = ∩ (ends down). Yes frown = ∩ shape (arch). After 180° rotation, ∩ → ∪. So in page, B's mouth curve must be ∪ (a cup, ends high). As A's hat band: a band whose line dips in the middle... Actually a hat band line as a shallow cup is fine — it looks like the band following the curve of the crown ✓.
+
+Hmm wait, but there's a subtlety: B's mouth should look like a mouth, small, maybe with downturned corners. A shallow ∪ curve with slightly thick ends reads as a frown-ish mouth ✓.
+
+OK. And B's expression needs: half-closed eyes ✓ (lid line), pouches ✓ (A's brows), worried brows ✓ (B-only at page 548), a small frown ✓. And B's nose = A's hat brim (page 340, wide curve) — a wide flat nose ✓.
+
+And A's expression: wide-open eyes ✓, raised brows ✓ (page 452 arcs = B's pouches), big grin ✓ (page 660-715 = B's hat band), A's nose = ?
+
+A's nose: at 570-650. In B, that's frame 350-430 = between B's hat brim (350) and eyes (500) = B's forehead/upper-face region. So A's nose = B's forehead wrinkle or B's... maybe make A's nose small and put it at 600-650, spanning x 460-540: in B frame 350-400 = a small mark in the middle of B's forehead — reads as a forehead crease ✓ harmless. Alternatively, since B's hat brim is the wide curve at 340, in B the region right below it is the nose bridge; A's nose could be at page 590-650 → B frame 350-410 = just below the brim = B's nose bridge/upper nose! Wait B's nose tip is at 650 (page 340) and B's nose bridge would be at frame 620 (page 380) — hmm, the "nose" is formed by the brim curve (tip) and above it in B frame (page 340-380) is the bridge region. So A's nose at page 600-650 → B frame 350-400 = just above the nose tip ✓ = B's nose bridge ✓✓ PERFECT: A's nose shape = B's nose bridge, and A's hat brim = B's nose tip. So B's nose = the brim curve (tip) + A's nose shape (bridge) ✓.
+
+But careful: A's nose shape must be small (like a bridge line) so in B it reads as a bridge, and it must connect toward the brim in A? A's nose: a bridge line from 590 down to 630 and tip. In B frame: 410 down to 370 — that's the bridge above the tip ✓.
+
+Great, and A's own nose reads as a nose ✓ (bridge + tip at 630-650 = A's nose tip = in B frame 350-370 which is the bridge region top). Hmm, in A the nose tip should be at ~650 (canon) — but that region in B is the bridge. Slight shift: A's nose tip at 640 (canon 650 ✓), B's bridge at 640-590 (frame 360-410) ✓.
+
+Wait, but A's nose tip at 640-650 is right above the beard top (655) → A has a moustache merging with the beard ✓ nice.
+
+Now what about A's hat brim (page 340) being in A the hat's brim: the hat dome spans 195-335 and the brim line at 340-352 extending wider than the dome (x 355-645) ✓.
+
+Everything fits. Now the collar region 800-900: A's collar/bow tie ✓ = B's pompom at frame 100 (page 900)? R(890)=110 ✓. So a small shape at page 860-900 = A's collar knot = B's hat pompom at frame 100-140 ✓. But B's hat is the beard/cone mass at page 650-800; its "crown apex" at frame 200 = page 800 — the pompom would be at frame 110 = page 890, above the apex ✓ (a pompom above the cone hat) ✓. So the shape at page 860-900 in A = A's bow tie/collar knot, and in B = a pompom on top of the cone ✓. And A's collar (wider, page 830-900) in B = the pompom region ✓.
+
+But A's collar at page 860-900 is below A's beard point (800) — so A has a beard ending at 800 and a collar at 860-900, floating below the beard tip. Visually: the beard is long and pointed (a wizard beard) reaching 800, then a bow tie at 880 attached to the neck? The neck is missing (head outline ends at 800 as a point). Hmm, the outline's bottom is A's chin point at 800 which is also the beard apex. Then a collar below at 860 floats. Maybe include shoulders: A's shoulders from x 300 to 700 at y 900? In B those shoulders = at frame 100 = B's ... above B's head → a pompom/hat? Hmm.
+
+Alternative: skip the collar entirely, and make B's "hat pompom" = the pointed apex of the beard mass at 800 = B's hat crown tip ✓ (no separate pompom needed). Then A's silhouette: head outline (crown 205 → chin 790), hat dome on top (195-335), beard (655-800), and A's collar? Let's include a simple collar arc at 840-880 that in B reads as a small floating shape = a bow tie/pompom. In B, at frame 120-160, above the cone hat apex (200) — a floating bow tie above the head reads as... a hat pompom/flower ✓ if drawn as a small round shape with a knot? But in A it must read as a collar/bow tie. A bow tie shape (two triangles) in A at 860 and in B at 140 = a bow tie floating above B's hat = reads as a hat bow ✓ actually plausible! A "hat with a bow on top"? Hmm. Let's instead make it a small circle (pom-pom) in A attached to the hat? no, it's at 860 (bottom).
+
+Simpler: skip collar/pompom; A's figure = head + hat + beard only (a floating head, like a caricature). That's acceptable ("fills most of the page"). The head spans 195-800 = 605 ✓ matches canon height 600 ✓.
+
+But the joke props! We need one simple prop per face hinting at the tech event. Props must sit inside hat/hair/beard/collar masses.
+
+Event: Let's choose "the 2023–25 generative-AI boom (chatbot/AI assistants flooding everything)". Props:
+- A (promise/triumph): A's hat could be a "smart hat"? Or A wears a headset: a headset band over the hat? Let's do: A's hat has a small antenna sticking out of the top with a glowing dot (AI assistant) — but the top region 195 = B's beard bottom, so in B the antenna would appear as a spike at B's beard bottom = a chin-spike, odd but fine (like a beard tip ornament).
+- B (consequence): B's hat (the cone = A's beard) could have a drooping plug/cable. In A, the cone is a beard; a drooping cable in A would be a beard strand ✓ plausible (a stray beard hair)!
+
+Nice double-duty props:
+- A's antenna: a thin stalk from the hat crown (page 195) up to 150 with a small circle (a glowing bulb) at 140 — in A: A's hat antenna ✓ (AI headset/robot); in B: at frame 850 = below B's beard (frame 805) → hmm the stalk would appear at page 150 = B frame 850, below B's chin, hanging down = a pendant! ✓ (a pendant/pendulum under B's chin) plausible ✓.
+- B's prop: a drooping cable/plug at B's hat region (page 650-800 region = A's beard) → in A it's a beard strand with a plug ✓? That's odd: a plug in the beard. Alternatively B's prop = a "cracked/crumpled" hat look.
+
+Alternative event: "the AI chip / GPU shortage" — A = a rocket on the hat (space launch promise) hmm.
+
+Let's choose event: the rise of AI chatbots (2023–2025), with the joke: A is the excited user/promoter with a chat-bubble and a headset antenna (the promise of AI doing everything); B is the same person with a dead flat battery / unplugged cable and a weary frown (the consequence: the chatbot hallucinating / the AI not delivering).
+
+Concretely:
+- A's prop: a small speech bubble (no letters) floating beside the hat? Space is limited; a bubble in the corner region might break the single-figure rule. Better inside the hat: a little "chat bubble" shape drawn on the hat? Hmm, could look like a logo on the hat ✓ (a badge). Let's do: A's hat has a badge: a small speech-bubble shape (rounded rect with a tail) on the hat dome, in a light accent color (one accent). In B, that badge sits at B's beard (page ~250) = a light blob on the beard = like a patch/flower ✓ acceptable.
+- B's prop: A's beard region in B is the hat; put a drooping "unplugged cable" in A's beard (a thin curve ending in a small plug rectangle) — in B it becomes a dangling cable from the hat ✓✓ PERFECT: a cable with a plug hanging from B's cone hat = the consequence (unplugged/disconnected) ✓. And in A it reads as a stray wiry beard strand with a blob — hmm, a plug in the beard is weird.
+
+Alternative: B's prop = a crumpled/dented hat. Since B's hat = A's beard mass, we could draw the beard with a dent... asymmetric mass. Meh.
+
+Alternative: put B's prop as a "cracked screen" shape? Hmm.
+
+Simplest legible props:
+- A: a small rocket/capsule shape as the hat finial? The hat top is at 195 and there's room above (150-195): a tiny rocket pointing up = "AI moonshot" (the promise). In B (frame 850 = below the chin) it becomes a small rocket pointing down = a pendant/dart ✓ plausible (a dart under the chin? meh).
+- B: the drooping plug cable in the beard region.
+
+Alternatively, put the props in the "flat-fill accent" style: A's hat dome has an accent-colored rocket silhouette; A's beard... hmm.
+
+Let's think about the actual joke: A = grinning, with a hat antenna glowing and a rocket; B = the same figure frowning with a drooping, unplugged cable and the antenna as a limp dangling wire.
+
+Design the prop as ONE shared object with two readings! E.g., a cable: In A, the cable comes out of the hat (a wire with a glowing tip = a chatbot antenna); in B, the same wire is drooping with a plug (disconnected). But the wire is at page 150-195 (above the hat) → in B frame 805-850, below the chin — a wire under the chin, ok as a pendant.
+
+And B's hat (page 650-800 region, A's beard) can have a "dead battery" or a small dark cloud? Let's give the beard mass an accent-colored crack? Hmm.
+
+Let me reconsider: maybe don't overthink props. The task says a "simple prop that hints at a recent tech/AI event" per face, one each, in hat/hair/beard/collar masses.
+
+Plan:
+- A's prop (page 150-195, above the hat): a small "AI chip / robot antenna": a thin stalk with a small square (chip) at the top, in accent color. In A: A's hat has a chip antenna ✓ (promise of AI power). In B: appears below the chin as a small pendant chip ✓ (harmless).
+- B's prop (in the beard/hat mass, page 700-790): a "plug/cable": a short curved wire from the beard mass ending in a small rectangle (a plug) drawn in accent color. In B: hangs from the hat's cone ✓ ("unplugged") ✓. In A: it reads as a stray wire/thread hanging from the beard — a bit odd but could read as a "cable beard" hmm.
+
+Alternatively, put B's prop in the region of A's beard but positioned to look like a beard feature in A: e.g., a small plug shape hanging below the beard apex? Then in B it's at frame ~150 (above the hat) = a floating plug.
+
+Alternatively swap the assignment: make the props inside the hat dome (page 195-335) and inside the beard mass, but design so both read okay.
+
+What if the props are the same object type in both masses? E.g., A's hat dome has a small rocket (pointing up, page 250?) — but page 250 is in B's beard region (frame 750) → a rocket in B's beard = odd.
+
+The double-life of the region page 195-335 (A's hat / B's beard): put something in the hat that in B reads as a beard feature: e.g., A's hat has a "brim" (page 340) = B's nose ✓ already; a "band" (318) = B's mouth ✓; inside the hat dome (230-300): in B frame 700-770 = B's chin area → could be a "chin cleft" ✓ or a beard tuft. So A's hat could have a decorative emblem (like a chip logo) that in B = a beard detail / chin mark ✓ fine.
+
+Similarly the beard mass (655-800) in A; in B frame 200-345 = B's hat. Put in the beard: in B it's the hat crown — so details there = hat details (band, seam). A's beard could have a "hair strand" = hat seam ✓.
+
+So props: A's prop should read as a prop in A and be innocuous in B. Put A's prop in the hat dome region (200-300): e.g., a small rocket drawn on the hat (like an emblem) → in B it's on the beard (a beard emblem/flower) ✓ acceptable.
+B's prop should read as a prop in B and be innocuous in A: put it in the beard region (655-800) → e.g., a small plug/cable = in A it's a beard strand with a knot ✓ acceptable-ish.
+
+Let's do:
+- A's prop: a small rocket (pointing up) perched on top of the hat? That's page 150-195 = the region above the hat, in B frame 805-850 (below B's chin). A rocket under B's chin = a pendant dart, weird but small. Alternatively the rocket ON the hat dome (emblem) → in B a beard emblem.
+- Choose: A's hat dome gets a small accent-colored rocket emblem? Then A = "moonshot AI" ✓. In B, a rocket shape on the beard = a little beard flourish, ok.
+- B's prop: in the beard mass, a drooping cable with a plug (accent color) — in B it hangs from the cone hat ✓ "the plug is pulled" ✓.
+
+Hmm, but the joke should be about an action/situation: A = triumph/moonshot (rocket on hat, big grin, wide eyes, antenna glowing); B = the aftermath: hat drooping (it's a cone now), the plug pulled, a weary frown, half-lidded eyes. That reads as: "AI moonshot hype → the plug got pulled / it's not working". Fine as a light joke.
+
+Also need A's antenna/glow: the stalk at 150-195 with a dot: in B, a dangling wire below the chin ✓ (drooping antenna = disconnected) — nice double-duty: A's antenna (alive, glowing) = B's dangling dead antenna.
+
+So final composition:
+
+Shared (A-frame, page coords):
+1. Head outline: closed path: M 500 210 (top) C ... widen to (285,470) & (715,470), down to a pointed chin at (500,795). Actually the chin: the beard covers 655-800, so the outline's bottom can be the beard. Let's have the head outline end at the chin ~y 700 and the beard mass below covers down to 800.
+   Outline: M 500 212 C 620 212 700 300 715 430 C 725 540 660 640 560 690 ... hmm chin at 690 covered by beard. Keep: outline from top (500,212) sides to (300,480) then to (390,660) then (460,700) — chin region hidden by the beard mass. Fine.
+2. Eyes: circle (415,500) r 30, (585,500) r 30, ink stroke; pupils dark filled r 11 at centers. Plus lower-lid arc at 528 (a short arc below each eye, curving down = A's lower lid) → B's upper lid ✓. Plus upper-lid crease arc at 468 (short arc above) → B's lower lid ✓.
+   Hmm, A's eyes as circles r30 spanning 470-530: the crease at 468 sits right at the top ✓; lower lid at 534 just below ✓.
+3. Brows at 448: arc ∩ above each eye (from 380,452 to 450,436 to 465,455?) Let's do path M 378 460 Q 415 430 455 452 — an arch ✓ (A: raised brows). In B frame 540-570: a ∪ pouch ✓.
+4. B-only brows (in rotated group): at B frame 452 = page 548, x mirrored: A-frame positions would be x 500±(their B x). Let's define in the rotated group directly in B frame: brows at B frame 452, B frame x = 415 and 585 (B frame coordinates). Since the group rotates about (500,500), a B-frame point (x,y) lands at page (1000-x, 1000-y). So to place page strokes at 548 near x 415 & 585, in B frame use (585,452) and (415,452) — the same set (symmetric) so easy: brows at B frame (415,452) & (585,452) → page (585,548) & (415,548) ✓.
+   Draw them as short slanted strokes (worried, inner ends down): in B frame, at 415 (B's left? whatever) arc from (385,442) to (445,460)? Let's make each brow a shallow arc with the inner end lower: e.g. at x 415: M 380 455 Q 410 438 448 462 — that's a ∩ with ends down?? ∩ arch peaks at 438 middle. For "worried" we want inner end down. Either way it's a brow. Fine.
+   These B-only brows appear in A at page 548 as small arcs near the cheeks under the eyes — they'd look like A's cheek/nasolabial creases ✓ OK, but make them light (2.5px) and short.
+5. A's nose: bridge+tip: M 500 585 L 500 620 ; tip curve M 460 622 Q 500 662 540 622 (a ∪ shape = nose tip). In B: bridge at 415-385 and tip ∪ at 378-440 (frame) — the tip ∪ in page becomes ∩ in B frame — a nose tip curving up? Hmm. Let's make the nose tip a closed-ish shape: a small rounded triangle. Keep simple: two nostril wings and a rounded bottom: path M 468 636 Q 500 656 532 636 (∪). In B frame this is at 364, ∩ shape = the nose bridge continuing? Eh. Alternatively in B, A's nose (585-660) reads as: a small shape in the middle of the forehead/bridge area. Not a big deal. But wait — B's nose is supposed to be the hat brim at 340 (wide). A's nose (585-660) sits BELOW that in page → in B frame 340-415 → that's ABOVE B's nose tip (650)... frame 415 < 650, so A's nose is well above B's nose tip = B's bridge region ✓. But between B's brim (frame 650) and B's eyes (500) there's a big gap 150px where B's bridge should be; A's nose at frame 340-415 is only 85-115px above the tip. So B's nose = wide brim curve (tip) + A's nose shape (upper bridge) at 415-340, gap between 415 and 500 (B's forehead) ✓ fine.
+   Hmm, but actually maybe better: make A's nose tip at 640 and the brim line at 340 → in B, the nose would be split: tip (brim, wide) at 650 and a small shape at 415. The connection (bridge) is missing but that's fine visually? B's nose would be a wide curve (the brim) with a gap to the eyes. Might read as a mustache rather than a nose. Since B's nose is wide and low (near the mouth at 680), B's face: eyes 500, then a wide nose at 650, mouth at 680 (on the beard). That's a compressed lower face ✓ typical of the genre.
+
+   Hmm, but the beard covers frame 665-805 so B's mouth at 680 is on the beard and the nose at 650 just above the beard ✓.
+
+6. A's hat: dome path (dark fill): M 390 335 C 390 230 440 195 500 195 C 560 195 610 230 610 335 Z — a dome/trapezoid. Plus a brim: M 350 338 Q 500 372 650 338 (∪ wide curve, stroke ink). Plus a band: M 405 315 Q 500 340 595 315 (∪ shallow, stroke light on dark).
+   Wait: the brim at 338-372 ∪: in B = nose tip at frame 628-662 — that's a wide curve near B's nose ✓. And the dome (195-335) in B frame 665-805 = B's beard ✓.
+   But the dome's bottom edge (335) in B = frame 665 = the top of B's beard, right below the nose tip ✓ and B's mouth at 680 inside the beard ✓.
+7. A's beard: dark mass: M 400 655 Q 500 700 600 655 Q 585 740 500 800 Q 415 740 400 655 Z — an inverted pointed mass ✓. The top edge is a ∪ (drooping) which is where the grin would be. A's mouth = the grin at 660-700 — conflict with the beard top.
+
+Let me restructure: A's beard top edge at 700 (∪ shape from 400,700 to 600,700 dipping to 730?). A's mouth above it at 655-690. Then B's brim = page 700 (frame 300) instead of 650 (error 50) and B's band = A's grin at ~670 (frame 330 vs canonical 320 ✓). Then in B the hat's brim (frame 300) is above the band (330)?? In B, order: crown 200, dome, band 320, brim 350. Our band at frame 330 and brim at frame 300 → brim above band ✗ (should be below). Hmm, but which is "the brim" of B's hat? The hat mass in page spans 655-800 (A's beard) → B frame 200-345. Within it, the page-top edge (655) = B frame 345 = the hat's lower edge (brim) ✓ and the grin at page 670 = frame 330 ✓ just above the brim ✓ order correct! So if A's beard top edge is at 655 and A's mouth (grin) is at 665-700, the grin is INSIDE the beard (below its top edge) but in B the grin at frame 330 is above the brim (frame 345) ✓ fine. The only problem is in A: the mouth is drawn on top of the dark beard. Solution: draw the mouth as a light shape (paper fill, dark outline) on the beard → in A it reads as a mouth ✓ (light teeth/tongue area) and in B as a light band on the dark hat ✓✓.
+
+So: A's mouth = a wide grin shape filled with paper color, outlined dark, spanning x 415-585, top edge at 660 (∪ dipping to 685), bottom edge at 700 (∪ dipping to 715). In B (rotated): a band shape spanning the hat at frame 315-340, light with dark outline ✓ hat band ✓.
+
+And A's beard (dark) top edge at 655, so the light mouth sits at its top ✓ (like a mouth in a moustache) ✓.
+
+Now B's mouth = A's hat band line at page 315 (light line on dark hat dome) = in B frame 685 a frown ✓ (∪ in page). Hmm the hat band in A: a light curve at 315 on the dark dome — in A it looks like a hat band ✓, in B a frowning mouth ✓✓.
+
+But wait: B's mouth at frame 685 is inside the beard region (665-805) — B's mouth is drawn on the dark dome which in B is the beard. So B's mouth appears as a light line in the dark beard ✓ (like a mouth showing through a beard) — acceptable, and it is a clear small curve ✓. And the "band" reading in A ✓.
+
+So B's face: eyes (half-lidded) at 500, nose = the wide brim curve at 338-372 (frame 628-662), mouth = light frown at 685 (on the beard top), beard below. Actually, the beard top edge at 655 (frame 345) is right at the nose level (650) — so B's nose tip curve (the brim, at frame 628-662) overlaps the beard's top edge (345)? The brim curve spans frame 628-662 (page 338-372) and the beard top edge at frame 345 = page 655 — no overlap in page (338-372 vs 655) ✓. In B frame: brim curve 628-662, beard top 345 ✓ separate ✓.
+
+So B: brow line? B's brows (B-only) at frame 452 = page 548. But in A, page 548 is A's cheek area; those strokes will be visible in A. Make them short light strokes (2.5px) that read as cheek creases. Also A's nose is at 585-660 and B's brows at 548 — in A, a pair of short arcs just below the eyes could read as under-eye lines/crow's feet ✓ fine.
+
+Also we should double-check: in A, will the page-548 arcs (B's brows) conflict with A's mouth/moustache? They're near the eyes ✓ fine.
+
+Now, are there enough B features? B: eyes ✓ (shared), lids ✓, brows ✓ (B-only at 548), pouches ✓ (A's brows at 448 → frame 552), nose ✓ (brim + A's nose), mouth ✓ (A's hat band), beard ✓ (A's hat dome), hat ✓ (A's beard), chin ✓ (page top of dome? the dome's top edge at 195 = frame 805 = B's chin bottom... hmm, B's chin is where? The dome's bottom curve (page top edge, rounded at 195) = frame 805, the lowest of B's face ✓ = B's beard bottom/chin ✓.
+
+Great, B has: hat (cone from A's beard), band (A's mouth), brim?, nose (A's hat brim), mouth (A's hat band), eyes, brows, pouches, beard.
+
+Hmm, does B have a "brim"? The hat mass's page-top edge (655, a ∪ curve) = B's hat brim at frame 345 ✓ — that edge is the beard's top edge, which is a ∪ shape (drooping in the middle) → in B, frame 345 the curve ∪ in page = ∩ in B frame = an upward arch = a hat brim curving up ✓ (like the brim of a conical hat) fine.
+
+Now A's props vs B's props. Let's assign:
+- A's prop: the antenna/chip above the hat (page 150-195): a stalk from the hat dome top (500,195) up to (500,150) with a small square chip at (500,140)? In A: A wears a hat with a chip antenna ✓ (AI!). In B: the stalk+chip appear at frame 805-860 = hanging below B's chin = a dangling pendant ✓ ok.
+  Alternatively make the stalk into a "rocket": a small triangle+squiggle. Let's do a stalk with a small rounded square (accent color) = an AI chip ✓ clear-ish.
+- B's prop: in the beard mass (which is B's hat) put a "plug/cable": a short curve hanging from the hat's apex region? In B frame the hat apex is at frame 200 = page 800 = A's beard point. A hanging cable from the apex in B = from page 800 going... in B the hat apex points up, so a cable drapes from the apex down the sides: in page, the apex is at 800 and the cable drapes toward page 650? that would overlay the beard region. In A, a cable draped over the beard = a wiry strand ✓ plausible-ish.
+  Alternatively B's prop = a "dead battery" symbol? Or B's prop = a cracked/dented hat: make the beard mass asymmetric (dented) ✓ (the mass is A's beard, dented = B's dented hat) — but then A's beard is dented, weird.
+  Alternatively, B's prop: a small flat "disconnected plug" drawn at the beard's top edge (page ~660-690, at the side) = in B frame ~310-340, at the side of the hat band = a plug stuck in the hat band? Hmm. Let's do: a small accent-colored plug (rectangle + two prongs) hanging on a short cord from the hat brim region: in B frame, at frame ~350 (page 650) hanging down from the brim → in page it's above the beard top edge, at page ~630-660, x ~560-620 (B frame x = 1000-590=410 → page x 590 ✓ right side). In A, a small plug shape at (600, 640) floating near the mouth/moustache area — hmm, in A it'd look like something at the corner of the mouth. Maybe acceptable as a "plug" but confusing.
+
+Simplify props: make the AI event = "the launch of a big AI chatbot" with A wearing an AI "chat bubble" badge on the hat and B having a "dead plug". Honestly, a simpler readable pair:
+- A's hat carries a small chat bubble (rounded rect with a tail, accent color) — reads as a badge/logo on the hat ✓, in B it's on the beard ✓ (a little blob, fine).
+- B's hat (A's beard mass) carries a small plug+cord dangling — in A it looks like a wire hanging out of the beard ✓ (like a wire beard strand, funny), in B it's a dangling plug ✓.
+The joke: A proudly wears the chatbot badge (AI is here!), B has the plug pulled / the wire dangling and is exhausted: "AI hype → AI fatigue, plug pulled".
+
+Maybe better event framing: "the 2023–25 AI chatbot boom and the resulting user fatigue / the chatbot that doesn't work". A = the evangelist with the chat badge and antenna; B = the same person with the unplugged wire and a weary frown. Good enough; nobody demeaned.
+
+Let's finalize the drawing list with coordinates and write the SVG.
+
+Colors: paper #f4efe2, ink #1b1b1b, accent #d94f2b (red-orange). Flat.
+
+Elements:
+
+Background: rect 1000x1000 fill paper.
+
+Group stroke ink, fill none, stroke-linecap round, linejoin round.
+
+Shared:
+a) Head outline (A's face): path:
+M 500 205 C 610 205 690 290 700 420 C 708 530 660 620 570 680 C 540 700 520 706 500 712 C 480 706 460 700 430 680 C 340 620 292 530 300 420 C 310 290 390 205 500 205 Z
+Hmm, the chin at 712 hidden by beard (655-800) ✓ fine. But the top of this outline (205) coincides with the hat dome (195-335) → the dome overlaps the head top. In B, the dome = beard and the head outline's top (205) = B's chin. The dome covers page 195-335 and the head outline's top region 205-335 is inside the dome → hidden ✓ good, and in B the head outline's rounded top at 205-260 = B's chin peeking below the beard ✓ (beard bottom = 195 in page = frame 805; chin at frame ~800 = page 200) ✓ overlapping region: the beard's bottom is at page 195 and the chin outline top at 205 → the beard covers down to 195 which is ABOVE 205 in page = the beard is drawn over the chin ✓ good (beard covers chin).
+
+Wait the dome's bottom edge (page top, rounded) at 195-210 and the head outline top at 205: so the dome overlaps the outline's top by ~? The dome spans page 195-335 vertically; the head outline spans 205-712. So in the region 205-335 the outline's sides (at x ~300-700 at 335) are inside/outside the dome (dome x 390-610)? The dome is narrower than the head at 335 → the head's sides stick out below the dome ✓ giving a "hat sitting on the head" look ✓.
+
+In B, the dome = the beard hanging under B's chin: the dome's bottom edge (page 195) is the beard's bottom, and B's chin (head outline top, page 205-260) is right above ✓.
+
+b) Eyes: circle (415,500) r 30 fill paper stroke ink 7; pupil circle r 11 fill ink. Same at 585.
+Hmm, pupils centered → A looks straight ahead, fine. In B, the pupils will be near the top of the eye (since the lid line covers the top) ✓ fine.
+c) Upper lid crease (A): arc above each eye at 462: M 383 468 Q 415 452 447 468 stroke 5.
+d) Lower lid (A): M 383 534 Q 415 550 447 534 stroke 5.
+e) A's brows at 448? But c) is at 452-468. Conflict. Let's put A's brows at 440: M 378 452 Q 415 428 452 452 (∧ arch, peak 440). Then A's crease at 462-468 (below brows, above eye top 470) ✓ tight but ok. Let's shift eye r to 28 (spans 472-528), crease at 464 (arc 456-466), lower lid at 536, brows arch peaking 430 (path 378 448 Q 415 422 452 448).
+Then in B: brows (page 422-448) → frame 552-578 = pouches under the eyes ✓ (eye bottom at 528, pouch at 552-578 ✓ good).
+f) A's nose: M 500 578 L 500 612 (bridge, stroke 6); nose tip: M 462 620 Q 500 664 538 620 (∪, stroke 6) — hmm tip at 620-664, canon tip 650 ✓ ok.
+In B: bridge at frame 422-388, tip curve at frame 380-336 (∪ in page → ∩ in frame): a shape above the nose-tip brim (frame 628-662) with a gap. Hmm B's bridge at 336-422 and B's nose tip at 628-662 — a big gap (200px). So B's nose = brim curve at 628-662 alone, which is wide (x 
+
+===== turn 2 =====
+Deliver now with the design I worked out.

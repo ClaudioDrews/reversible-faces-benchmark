@@ -1,0 +1,135 @@
+{
+ "model": "z-ai/glm-5.3-flash",
+ "reasoning": {
+  "effort": "medium"
+ },
+ "max_tokens_per_turn": 32000,
+ "turns": 10,
+ "tool_calls": 9,
+ "renders": 4,
+ "prompt_tokens_total": 153508,
+ "completion_tokens_total": 11504,
+ "cost_usd": 0.011577,
+ "cost_cap_usd": 0.25,
+ "finish": "stop",
+ "providers": [
+  "InferenceNet"
+ ],
+ "per_turn": [
+  {
+   "turn": 1,
+   "prompt_tokens": 5729,
+   "completion_tokens": 4286,
+   "reasoning_tokens": 3305,
+   "cost": 0.00209764368,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "InferenceNet",
+   "forced": false
+  },
+  {
+   "turn": 2,
+   "prompt_tokens": 10024,
+   "completion_tokens": 17,
+   "reasoning_tokens": 5,
+   "cost": 0.0006539049,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "InferenceNet",
+   "forced": false
+  },
+  {
+   "turn": 3,
+   "prompt_tokens": 11305,
+   "completion_tokens": 2351,
+   "reasoning_tokens": 2067,
+   "cost": 0.00140698602,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "InferenceNet",
+   "forced": false
+  },
+  {
+   "turn": 4,
+   "prompt_tokens": 14042,
+   "completion_tokens": 13,
+   "reasoning_tokens": 1,
+   "cost": 0.00048501882,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "InferenceNet",
+   "forced": false
+  },
+  {
+   "turn": 5,
+   "prompt_tokens": 15324,
+   "completion_tokens": 2458,
+   "reasoning_tokens": 2040,
+   "cost": 0.00145002132,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "InferenceNet",
+   "forced": false
+  },
+  {
+   "turn": 6,
+   "prompt_tokens": 17788,
+   "completion_tokens": 13,
+   "reasoning_tokens": 1,
+   "cost": 0.0005773581,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "InferenceNet",
+   "forced": false
+  },
+  {
+   "turn": 7,
+   "prompt_tokens": 18358,
+   "completion_tokens": 1187,
+   "reasoning_tokens": 705,
+   "cost": 0.00175776678,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "InferenceNet",
+   "forced": false
+  },
+  {
+   "turn": 8,
+   "prompt_tokens": 19551,
+   "completion_tokens": 13,
+   "reasoning_tokens": 1,
+   "cost": 0.00063102798,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "InferenceNet",
+   "forced": false
+  },
+  {
+   "turn": 9,
+   "prompt_tokens": 20117,
+   "completion_tokens": 253,
+   "reasoning_tokens": 192,
+   "cost": 0.0014488551,
+   "finish": "tool_calls",
+   "tool_calls": 1,
+   "provider": "InferenceNet",
+   "forced": false
+  },
+  {
+   "turn": 10,
+   "prompt_tokens": 21270,
+   "completion_tokens": 913,
+   "reasoning_tokens": 1,
+   "cost": 0.00106888914,
+   "finish": "stop",
+   "tool_calls": 0,
+   "provider": "InferenceNet",
+   "forced": false
+  }
+ ],
+ "event": "The big AI chatbot/agent product launch wave of 2024–2025 — launch-day euphoria vs. the tired aftermath",
+ "title": "Launch Day, Six Months Later",
+ "seconds": 122,
+ "xml": "valid",
+ "svg": "glm-5.3-flash.svg"
+}

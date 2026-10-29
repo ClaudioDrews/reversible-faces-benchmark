@@ -1,0 +1,46 @@
+EVENT: Humanoid AI robots / AI agents going to work (2024–25)
+TITLE: The Beard Is a Hat Now
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<rect width="1000" height="1000" fill="#f6f1e3"/>
+<g fill="none" stroke="#1b1b1b" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 500 212 C 600 212 680 340 680 500 C 680 660 600 788 500 788 C 400 788 320 660 320 500 C 320 340 400 212 500 212 Z" fill="#f6f1e3" stroke-width="7"/>
+  <path d="M 305 352 C 305 262 390 200 500 200 C 610 200 695 262 695 352 C 640 372 570 380 500 380 C 430 380 360 372 305 352 Z" fill="#f6f1e3" stroke-width="7"/>
+  <path d="M 432 300 Q 500 332 568 300" stroke-width="4"/>
+  <path d="M 325 555 C 300 660 330 795 460 878 C 600 800 695 655 670 555 C 640 600 580 640 500 646 C 420 640 360 600 325 555 Z" fill="#f6f1e3" stroke-width="7"/>
+  <circle cx="500" cy="156" r="42" fill="#f6f1e3" stroke-width="6"/>
+  <path d="M 488 194 L 512 194 L 512 208 L 488 208 Z" fill="#1b1b1b" stroke-width="3"/>
+  <circle cx="415" cy="500" r="26" fill="#f6f1e3" stroke-width="5"/>
+  <circle cx="585" cy="500" r="26" fill="#f6f1e3" stroke-width="5"/>
+  <circle cx="415" cy="498" r="7" fill="#1b1b1b" stroke="none"/>
+  <circle cx="585" cy="498" r="7" fill="#1b1b1b" stroke="none"/>
+  <path d="M 372 452 Q 415 424 458 452" stroke-width="7"/>
+  <path d="M 542 452 Q 585 424 628 452" stroke-width="7"/>
+  <path d="M 390 476 Q 415 463 440 476" stroke-width="3"/>
+  <path d="M 560 476 Q 585 463 610 476" stroke-width="3"/>
+  <path d="M 388 524 Q 415 541 442 524" stroke-width="6"/>
+  <path d="M 558 524 Q 585 541 612 524" stroke-width="6"/>
+  <path d="M 392 548 Q 415 557 438 548" stroke-width="3"/>
+  <path d="M 562 548 Q 585 557 608 548" stroke-width="3"/>
+  <path d="M 500 508 L 500 566" stroke-width="4"/>
+  <path d="M 466 574 Q 500 610 534 574" stroke-width="5"/>
+  <path d="M 464 588 L 456 594" stroke-width="4"/>
+  <path d="M 536 588 L 544 594" stroke-width="4"/>
+  <path d="M 385 650 Q 500 716 615 650 Q 500 686 385 650 Z" fill="#1b1b1b" stroke-width="4"/>
+  <g stroke="#1b1b1b" stroke-width="4">
+    <rect x="444" y="838" width="32" height="36" rx="6" fill="#b23a2e"/>
+    <rect x="451" y="848" width="18" height="12" rx="2" fill="#1b1b1b" stroke="none"/>
+    <path d="M 444 852 L 434 852" fill="none"/>
+    <path d="M 476 852 L 486 852" fill="none"/>
+    <path d="M 450 874 L 450 882" fill="none"/>
+    <path d="M 470 874 L 470 882" fill="none"/>
+  </g>
+</g>
+<g transform="rotate(180 500 500)" fill="none" stroke="#1b1b1b" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 458 574 L 500 620 L 542 574" stroke-width="6"/>
+  <path d="M 452 846 L 472 834 L 472 862 Z" stroke-width="4" fill="#f6f1e3"/>
+  <path d="M 548 846 L 528 834 L 528 862 Z" stroke-width="4" fill="#f6f1e3"/>
+</g>
+</svg>
+```

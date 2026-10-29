@@ -24,7 +24,11 @@ Prompt v5 requires **two distinct characters**, A and B, who differ in expressio
 
 ## What the model sees
 
-Only the prompt text (`prompts/`). Models had no tools: they could not run code, render the SVG or search the web. The prompts are therefore written for blind drawing, with a cheap symbolic check instead of rendering.
+Only the prompt text (`prompts/`). In rounds 0–3 the models had no tools: they could not run code, render the SVG or search the web. Those prompts are therefore written for blind drawing, with a cheap symbolic check instead of rendering.
+
+## Round 4: the tool-enabled condition
+
+Round 4 (prompt v6, after the paper) is the exception: the model may call two tools in a loop run by [`scripts/run_models_v6.py`](../scripts/run_models_v6.py): `run_python` (Python in a sandbox with no network) and `render_svg` (Chrome renders the SVG upright and rotated by 180°; the image and text diagnostics come back; models that accept images see it). Limits: 5 renders, 12 tool calls, 16 turns, US$0.25 per model. The judging is unchanged (a human, informal, no rubric). Everything about it, including the differences from prompt v5 and the MiniMax re-run, is in [`../rounds/round-04/SETUP.md`](../rounds/round-04/SETUP.md). It is **not** a controlled comparison with round 3.
 
 ## File contract
 
@@ -35,13 +39,13 @@ Only the prompt text (`prompts/`). Models had no tools: they could not run code,
 
 ## Settings and what was recorded
 
-- Provider: OpenRouter, chat completions, `max_tokens` up to 64000 (lower where noted), reasoning effort `medium` unless noted.
+- Provider: OpenRouter, chat completions, `max_tokens` up to 64000 (lower where noted; in round 4 the limit is per turn), reasoning effort `medium` unless noted.
 - Recorded per run: prompt and completion tokens, cost reported by the provider, finish reason, raw answer, reasoning trace (when returned), the extracted SVG, validity of the XML.
 - Costs are the provider's numbers; failed attempts that were billed are counted separately from delivered runs.
 
 ## Limits of the method
 
-See [`threats-to-validity.md`](threats-to-validity.md): one evaluator who is also the author, informal verdicts, three models, one run each, uneven settings in round 3.
+See [`threats-to-validity.md`](threats-to-validity.md): one evaluator who is also the author, informal verdicts, three models, one run each, uneven settings in rounds 3 and 4.
 
 ## Rounds and evaluation
 

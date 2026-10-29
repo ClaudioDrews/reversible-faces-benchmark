@@ -7,11 +7,11 @@ The drawing must also carry a **joke about a recent technology / AI event**, tol
 <p align="center"><img src="assets/previews/round-03__minimax-m3.1-flash_prompt-v5.png" alt="Round 3 example: MiniMax output, upright and rotated 180 degrees" width="720"></p>
 <p align="center"><em>Round 3 output from one of the tested models (MiniMax, prompt v5). Left: as drawn. Right: the same file rotated 180°. Previews are for illustration only; the benchmark is judged on the SVG itself.</em></p>
 
-This repository contains the full story so far: the task design, every prompt version (v1–v5), the scripts, all generated SVGs, raw model responses, costs, and the human evaluations from three rounds (plus an unevaluated pilot, round 0), including a round that **made things worse** and what we learned from it.
+This repository contains the full story so far: the task design, every prompt version (v1–v6), the scripts, all generated SVGs, raw model responses, costs, and the human evaluations from four rounds (plus an unevaluated pilot, round 0), including a round that **made things worse** and a **tool-enabled round** (round 4, after the paper), and what we learned from them.
 
-> **Status:** early research / work in progress. Three rounds, three cheap models, **one human evaluator who is also the author of the benchmark**, one run per model per prompt. There is no scoring scale: verdicts are qualitative. Treat the results as design notes rather than a leaderboard.
+> **Status:** early research / work in progress. Four evaluated rounds (the paper describes rounds 0–3; round 4 came after it), three cheap models, **one human evaluator who is also the author of the benchmark**, one run per model per prompt. There is no scoring scale: verdicts are qualitative. Treat the results as design notes rather than a leaderboard.
 >
-> **Heads-up:** the prompts contain short text descriptions of two Whistler drawings that were drafted from public images and **never verified** (each prompt says so). They are kept verbatim because the models saw them, **including the literal production note "[PLACEHOLDER — Cláudio to add and verify.]" and the assertion that the drawings are "public domain"**, which is itself unverified. The events named in the rounds are whatever each model declared; they were **not fact-checked** by this repository.
+> **Heads-up:** prompts v1–v5 contain short text descriptions of two Whistler drawings that were drafted from public images and **never verified** (each prompt says so; prompt v6 removed them). They are kept verbatim because the models saw them, **including the literal production note "[PLACEHOLDER — Cláudio to add and verify.]" and the assertion that the drawings are "public domain"**, which is itself unverified. The events named in the rounds are whatever each model declared; they were **not fact-checked** by this repository.
 
 ## Abstract
 
@@ -32,7 +32,7 @@ Full text: [`paper/reversible-faces-benchmark-paper.md`](paper/reversible-faces-
 - [What is being tested](#what-is-being-tested)
 - [Design decisions](#design-decisions)
 - [The geometry in one page](#the-geometry-in-one-page)
-- [The three rounds](#the-three-rounds)
+- [The rounds](#the-rounds)
 - [Models, settings and costs](#models-settings-and-costs)
 - [Repository layout](#repository-layout)
 - [How to run it](#how-to-run-it)
@@ -105,9 +105,9 @@ A rotationally symmetric figure (the same face twice) is a **failure mode**, not
 
 More detail is in [`docs/how-it-works.md`](docs/how-it-works.md); the formal statement (involution and C₂, feasible set, even/odd parts, ε-ball condition ‖a − R(b)‖ ≤ 2ε, weighted compromise stroke, silhouette envelope, symmetry diagnostic ρ) is in [`docs/geometry.md`](docs/geometry.md); an annotated real output is in [`docs/worked-example.md`](docs/worked-example.md); the terms are in [`docs/glossary.md`](docs/glossary.md). The canon, the tolerance and the dictionary are design heuristics, and none of the formal quantities was computed in the rounds.
 
-## The three rounds
+## The rounds
 
-Round 0 was a pilot; the human-evaluated rounds are 1, 2 and 3. Every round used the same three inexpensive models. Image strips below always show, from top to bottom: DeepSeek, GLM, MiniMax.
+Round 0 was a pilot; the human-evaluated rounds are 1, 2, 3 and 4. Every round used the same three inexpensive models. Image strips below always show, from top to bottom: DeepSeek, GLM, MiniMax.
 
 | Round | Prompt | Human verdict (see each round's `EVALUATION.md`) |
 |---|---|---|
@@ -115,6 +115,7 @@ Round 0 was a pilot; the human-evaluated rounds are 1, 2 and 3. Every round used
 | 1 | v2 (MiniMax), v3 (DeepSeek, GLM) | Effect OK on DeepSeek and MiniMax, weak on GLM; none has much artistic quality; two are mildly funny; none uses current events in an impactful way. |
 | 2 | v4 | "It got a lot worse. Now there is no image at 180° anymore." |
 | 3 | v5 | "In this third round all three models did better. All of them managed to make identifiable images in both orientations, and the artistic quality improved." |
+| 4 (after the paper) | v6, **tool-enabled** | "The three models managed to create the reversible images. The images are well made, interesting, but they do not convey a comic message." (translated from Portuguese) |
 
 ### Lessons
 
@@ -122,9 +123,10 @@ Round 0 was a pilot; the human-evaluated rounds are 1, 2 and 3. Every round used
 2. **Reversibility has to be the absolute priority.** Round 2 added a lot (a central, impactful event; heavy art direction: exaggeration, varied line weight, palette, composition, hatching, "would it look good framed?"). The models obeyed the art and event instructions and **lost the 180° reading in all three outputs**. More instructions pulled attention away from the hard geometric part.
 3. **Fix: go back, make it smaller, put it in stages.** Round 3's prompt started again from the round-1 prompt, stated an explicit priority order, and split the work into stages: (1) geometry only, (2) verify by rotating coordinates, (3) style only after that, with only three short art cues and a light version of the event requirement. All three models then produced identifiable faces in both orientations, and the evaluator judged the artistic quality *better than before* (a relative statement: in round 1 he had said none had much artistic quality, and the drawings are still simple).
 4. **Event use is still weak.** In round 3 the event is often only hinted at (a vague label, a small prop). Making the event central without destroying the illusion is the open problem.
-5. **Models behave very differently under the same prompt.** DeepSeek went into endless verification loops with reasoning on in round 3 (four runs hit the token limit without delivering any SVG). It delivered only with reasoning turned off, so that result is not comparable with the others. MiniMax needed low effort to avoid token blowouts. GLM was the cheapest and the most consistent.
+5. **Round 4: with tools, reversibility holds for all three, and humor becomes the open problem.** Prompt v6 (v5 plus a tool loop: a sandboxed Python tool and a render tool that shows the drawing upright and rotated by 180°, at most 5 renders) was run on the same three models. All three delivered reversible, well-made drawings. The evaluator found them interesting but **not comic**: none conveys a comic message. Caveats: prompt v6 changed several things besides the tools (the unverified Whistler descriptions and the placeholder were removed, the dictionary's frame wording was made precise, Stage 2 changed), so the tool effect cannot be separated from them; one run per model; DeepSeek ran without reasoning; and **MiniMax was re-run once** because its first run spent its whole first turn reasoning and never used a tool (the re-run, with a larger per-turn token limit, is the result reported; the first run is kept as an extra). See [`rounds/round-04/SETUP.md`](rounds/round-04/SETUP.md).
+6. **Models behave very differently under the same prompt.** DeepSeek went into endless verification loops with reasoning on in round 3 (four runs hit the token limit without delivering any SVG). It delivered only with reasoning turned off, so that result is not comparable with the others. MiniMax needed low effort to avoid token blowouts. GLM was the cheapest and the most consistent.
 
-Per-round details, previews, raw outputs and costs: [`rounds/round-01`](rounds/round-01), [`rounds/round-02`](rounds/round-02), [`rounds/round-03`](rounds/round-03) (and the pilot in [`rounds/round-00-pilot`](rounds/round-00-pilot)). How the prompt evolved: [`docs/prompt-evolution.md`](docs/prompt-evolution.md).
+Per-round details, previews, raw outputs and costs: [`rounds/round-01`](rounds/round-01), [`rounds/round-02`](rounds/round-02), [`rounds/round-03`](rounds/round-03), [`rounds/round-04`](rounds/round-04) (and the pilot in [`rounds/round-00-pilot`](rounds/round-00-pilot)). How the prompt evolved: [`docs/prompt-evolution.md`](docs/prompt-evolution.md).
 
 #### Round 1 (prompts v2/v3)
 <img src="assets/previews/round-01__all-models.png" alt="Round 1 results" width="640">
@@ -135,15 +137,18 @@ Per-round details, previews, raw outputs and costs: [`rounds/round-01`](rounds/r
 #### Round 3 (prompt v5): both faces back
 <img src="assets/previews/round-03__all-models.png" alt="Round 3 results" width="640">
 
+#### Round 4 (prompt v6, with tools): reversible and well made, but not funny
+<img src="assets/previews/round-04__all-models.png" alt="Round 4 results" width="640">
+
 ## Models, settings and costs
 
-All calls went through [OpenRouter](https://openrouter.ai), one-shot, no tools (the models could not run code or search), with the prompt as the only message.
+All calls went through [OpenRouter](https://openrouter.ai). Rounds 0–3 were one-shot with **no tools** (the models could not run code, render or search), with the prompt as the only message. **Round 4 offered a tool loop** (code execution in a sandbox, and a render of the drawing upright and rotated by 180°, with at most 5 renders); the prompt was still the only message from a person.
 
 | Model (OpenRouter id) | Notes |
 |---|---|
-| `deepseek/deepseek-v4.1-flash` | Overthinks with reasoning on; round 3 result produced with reasoning disabled. |
+| `deepseek/deepseek-v4.1-flash` | Overthinks with reasoning on; round 3 and round 4 results produced with reasoning disabled. |
 | `z-ai/glm-5.3-flash` | Cheapest; default reasoning effort (medium). |
-| `minimax/minimax-m3.1-flash` | Heavy reasoning; low effort used in rounds 2 (second attempt) and 3. |
+| `minimax/minimax-m3.1-flash` | Heavy reasoning; low effort used in rounds 2 (second attempt), 3 and 4 (in round 4 the first run, at 32000 tokens per turn, spent its first turn reasoning and never used a tool; the reported result is a re-run at 64000). |
 
 Approximate cost of the delivered runs per round (USD, as reported by OpenRouter):
 
@@ -153,8 +158,9 @@ Approximate cost of the delivered runs per round (USD, as reported by OpenRouter
 | 1 (v2/v3, evaluated outputs) | 0.057 | 0.080 (also v2 runs for DeepSeek/GLM that were not evaluated) |
 | 2 (v4) | 0.052 | 0.091 |
 | 3 (v5) | 0.030 | 0.194 (+ one timed-out request, cost not reported) |
+| 4 (v6, tools) | 0.113 | 0.139 (includes MiniMax's first run, which did not use the tools) |
 
-The whole project so far cost roughly half a dollar in model calls. Exact per-run tokens and costs are in each round's `logs/` and `EVALUATION.md`.
+The whole project so far cost roughly sixty cents in model calls. Exact per-run tokens and costs are in each round's `logs/` and `EVALUATION.md`.
 
 ## Repository layout
 
@@ -174,24 +180,27 @@ docs/
   glossary.md             terms used throughout
   worked-example.md       one real output, stroke by stroke
   methodology.md          one-shot design, human judgment, file contract, run settings
-  prompt-evolution.md     what changed from v1 to v5, and why
+  prompt-evolution.md     what changed from v1 to v6, and why
   related-work.md         literature map and how RFB differs
   references.md           verified bibliography and what was checked
   threats-to-validity.md  what limits the conclusions
   future-work.md          experiments still needed
   design-history/         earlier design specs (v0.3, v0.4): SUPERSEDED, kept for context
-  reviews/                critiques of the prompt/repo/paper integration by a second agent (summaries)
+  reviews/                critiques of the prompt/repo/paper integration/round-4 design by a second agent
 prompts/
-  prompt-v1.md ... prompt-v5.md   the exact prompts sent to the models
+  prompt-v1.md ... prompt-v6.md   the exact prompts sent to the models (v6 = round 4, with tools)
   discarded/prompt-v5b.md         a variant that did not fix the DeepSeek loop
 rounds/
-  round-00-pilot/ round-01/ round-02/ round-03/
+  round-00-pilot/ round-01/ round-02/ round-03/ round-04/
       EVALUATION.md       human evaluation, models, settings, costs, lessons
+      SETUP.md            (round 4 only) the tool-enabled harness, limits, confounds
       svg/                the evaluated SVGs
       raw/                raw model answers (and reasoning traces where available)
-      logs/               token and cost logs
+      logs/               token and cost logs (round 4: also full transcripts of the tool loop)
+      not-evaluated/      (rounds 1 and 4) runs that were not part of the evaluated set
 scripts/
   run_models.py           one-shot runner (OpenRouter; key from environment)
+  run_models_v6.py        round-4 runner: tool loop, sandboxed Python, Chrome render, diagnostics
   validate_svg.py         checks parts of the file contract (size, XML, viewBox, forbidden elements)
   render_preview.py       upright + rotated side-by-side PNG (README previews only)
 assets/previews/          PNG previews
@@ -215,6 +224,9 @@ EFFORT=low python scripts/run_models.py runs/mm prompts/prompt-v5.md minimax/min
 NOREASON=1 MAXTOK=20000 python scripts/run_models.py runs/ds prompts/prompt-v5.md deepseek/deepseek-v4.1-flash
 STRIP_METADATA=1 python scripts/run_models.py ...        # remove <title>/<desc> (used from round 3)
 
+# Round 4 (tool-enabled; needs Pillow, numpy, Chrome and bubblewrap; one model per call):
+NOREASON=1 MAXTOK=20000 python scripts/run_models_v6.py runs/r4 prompts/prompt-v6.md deepseek/deepseek-v4.1-flash
+
 # 2. Check the file contract
 python scripts/validate_svg.py runs/my-run/*.svg
 
@@ -228,21 +240,24 @@ The judgment is human: open the SVG, look at it, rotate, and decide. Write your 
 ## Limitations and honest notes
 
 - One human evaluator, who is also the author of the benchmark, which is a conflict of interest. Three models; one run per model per prompt (apart from retries after technical failures). No statistics are claimed. Verdict words such as "OK", "somewhat bad" or "low" are informal labels, not points on a scale (see `docs/methodology.md`).
-- The prompts include short text descriptions of two Whistler drawings that were **drafted from public images and never verified** (the prompts say so in a placeholder note). They are kept verbatim because they are part of what the models saw.
+- Prompts v1–v5 include short text descriptions of two Whistler drawings that were **drafted from public images and never verified** (the prompts say so in a placeholder note; prompt v6 removed them). They are kept verbatim because they are part of what the models saw.
 - Models did not have search, so the "recent event" is whatever they know; several chose events from 2023–2025.
 - Some SVGs in round 2 contain `<title>`/`<desc>` metadata that names the event. The runner now strips it, because it appears as a tooltip when hovering in a desktop browser and gives the joke away.
 - The original Whistler drawings are **not** bundled here. See [`docs/related-work.md`](docs/related-work.md) and [`docs/references.md`](docs/references.md).
+- Round 4 was added after the paper and is uncontrolled in several ways (prompt v6 changed more than the tools; MiniMax was re-run once; one run per model). See [`rounds/round-04/SETUP.md`](rounds/round-04/SETUP.md).
 - The full list of threats to validity (uneven comparisons, heuristic geometry, untested diffusion claim, and more) is in [`docs/threats-to-validity.md`](docs/threats-to-validity.md).
 - Model names are the OpenRouter ids used at the time; providers may change or retire them.
 
 ## Future work
 
-Nothing below has been done. Details: [`docs/future-work.md`](docs/future-work.md).
+Details: [`docs/future-work.md`](docs/future-work.md). **Humor is now the open problem:** in round 4 all three models produced reversible, well-made drawings, but none was funny. Apart from the tool-enabled round (done once, uncontrolled), nothing below has been done.
 
+- Making the joke work (the A/B contrast and the event) without endangering the 180° reading.
+- A control that separates the tool effect from the other prompt changes (prompt v5 with tools, or prompt v6 without tools).
 - A v3-versus-v5 ablation and a with/without-geometry-kit condition, under identical model settings.
 - Adding event and art instructions in small steps, checking the 180° reading after each.
 - More runs, more models and more judges, with blind presentation and randomized orientation order.
-- A tool-enabled condition (the model can render and rotate its output).
+- A controlled tool-enabled condition (round 4 offered tools but changed other things too).
 - The second mode, "one person with two expressions".
 - An unvalidated stroke-sharing diagnostic (Q_shared).
 
