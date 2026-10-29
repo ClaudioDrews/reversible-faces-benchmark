@@ -2,13 +2,13 @@
 
 ## What a reversible face is
 
-One drawing that shows **Face A** as it stands and **Face B** when the page is turned 180°. B is not a second drawing: it is the same strokes read upside down. The strokes that are B's hat, hair, beard or collar are, in A, the chin, mouth, jaw or neck, and the other way around. The classic example is Rex Whistler's *¡OHO!* (1946).
+One drawing that shows **Face A** as it stands and **Face B** when the page is turned 180°. B is not a second drawing: it is the same strokes read upside down. The strokes that are B's hat, hair, beard or collar are, in A, the chin, mouth, jaw or neck, and the other way around. The classic example is Rex Whistler's *OHO!* (1946).
 
 In this benchmark the two faces also carry a joke: A and B are two sides of one witty idea about technology or AI, shown only through expressions, accessories and props (no text, no caption).
 
-## The rotation
+## The half-turn (180° rotation)
 
-Use a 1000 × 1000 page, center C = (500, 500). A half turn sends
+Use a 1000 × 1000 page, center C = (500, 500). A half-turn sends
 
 ```
 R(p) = 2C − p,   (x, y) → (1000 − x, 1000 − y),   and R(R(p)) = p.
@@ -41,9 +41,9 @@ The prompt calls this "a design tool, not a law": Whistler drew by hand, without
 | chin | +0.50 | 800 |
 | collar / bow tie | +0.65 | 890 |
 
-**Dual-function dictionary.** With shared eyes, a feature of A at height *y* and a feature of B at height *−y* (as seen on the page) are the same strokes:
+**Dual-function dictionary.** With shared eyes, a stroke that is a feature of A at height *y* (on the page, in units of H from the eyes, positive downward) is a feature of B at height *−y* **in B's own upright frame**. In page coordinates this is y_A = 1000 − y_B. For example, A's brow at −0.08 (page y 452) is B's under-eye bag at +0.08 (y 548 in B's own frame; on the page it is the same stroke, at y 452):
 
-| in A | is in B |
+| in A (page) | is in B (B's own frame) |
 |---|---|
 | eyes | eyes (anchor; lids and brows decide the mood) |
 | brow (−0.08) | under-eye bag (+0.08) |
@@ -77,3 +77,9 @@ The prompt calls this "a design tool, not a law": Whistler drew by hand, without
 | Neutral faces | A and B differ only by accessories, with flat expressions |
 | Clip-art look | Oval head, uniform thin lines, no character |
 | Generic joke | "Hype vs. reality" with no identifiable event |
+
+## More
+
+- Formal statement of the geometry (involution, feasible set, even/odd parts, compromise strokes, silhouette envelope, symmetry diagnostic): [`geometry.md`](geometry.md).
+- Terms used in this repository: [`glossary.md`](glossary.md).
+- A symmetric figure (the same face twice) is a failure mode, not a success: reversible does not mean rotationally symmetric.

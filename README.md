@@ -1,22 +1,33 @@
 # Reversible Faces Benchmark
 
-A small, one-shot benchmark that asks an LLM to draw **one SVG that shows two different faces: one when you look at it upright, and a different one when you turn it upside down.** This is the trick behind Rex Whistler's *reversible faces* in the book *¡OHO!* (1946).
+A small, one-shot benchmark that asks an LLM to draw **one SVG that shows two different faces: one when you look at it upright, and a different one when you turn it upside down.** This is the trick behind Rex Whistler's *reversible faces* in the book *OHO! Certain Two-Faced Individuals* (1946).
 
 The drawing must also carry a **joke about a recent technology / AI event**, told only through the two faces. There is no caption, no text in the image, and no follow-up: the model gets one prompt, makes one attempt, and a human looks at the result (turning the phone in their hand).
 
 <p align="center"><img src="assets/previews/round-03__minimax-m3.1-flash_prompt-v5.png" alt="Round 3 example: MiniMax output, upright and rotated 180 degrees" width="720"></p>
 <p align="center"><em>Round 3 output from one of the tested models (MiniMax, prompt v5). Left: as drawn. Right: the same file rotated 180°. Previews are for illustration only; the benchmark is judged on the SVG itself.</em></p>
 
-This repository contains the full story so far: the task design, every prompt version (v1–v5), the scripts, all generated SVGs, raw model responses, costs, and the human evaluations from three rounds, including a round that **made things worse** and what we learned from it.
+This repository contains the full story so far: the task design, every prompt version (v1–v5), the scripts, all generated SVGs, raw model responses, costs, and the human evaluations from three rounds (plus an unevaluated pilot, round 0), including a round that **made things worse** and what we learned from it.
 
 > **Status:** early research / work in progress. Three rounds, three cheap models, **one human evaluator who is also the author of the benchmark**, one run per model per prompt. There is no scoring scale: verdicts are qualitative. Treat the results as design notes rather than a leaderboard.
 >
-> **Heads-up:** the prompts contain short text descriptions of two Whistler drawings that were drafted from public images and **never verified** (each prompt says so). They are kept verbatim because the models saw them. The events named in the rounds are whatever each model declared; they were **not fact-checked** by this repository.
+> **Heads-up:** the prompts contain short text descriptions of two Whistler drawings that were drafted from public images and **never verified** (each prompt says so). They are kept verbatim because the models saw them, **including the literal production note "[PLACEHOLDER — Cláudio to add and verify.]" and the assertion that the drawings are "public domain"**, which is itself unverified. The events named in the rounds are whatever each model declared; they were **not fact-checked** by this repository.
+
+## Abstract
+
+The Reversible Faces Benchmark (RFB) asks a language model to write **one SVG file that shows one face when viewed upright and a different face when rotated by 180°**, in the tradition of Rex Whistler's reversible faces. The drawing must also carry a joke about a recent technology or AI event, told only through the two faces, with no text. The model receives one prompt, makes one attempt, and a human judges the result by turning the page. The task combines three abilities that models usually exercise separately: spatial reasoning under a rotation that cannot be checked by eye while writing code, drawing quality, and humor.
+
+This repository gives a formal description of the geometry (a half-turn acting as an involution, a feasible set defined by two recognition regions, and a closed-form rule for compromise strokes), the one-shot protocol and file contract, and the results of three human-evaluated rounds with three models. The main empirical finding is negative and instructive: **in the single run per model, adding event and art instructions (prompt v4, with several changes at once) coincided with all three models losing the 180° reading**, while a rebuilt prompt with reversibility as the absolute priority and a staged workflow (v5) restored identifiable faces in both orientations for all three (DeepSeek ran with reasoning disabled in that round and is not comparable with the other two). The evidence is weak (single author-evaluator, three models, one run each, no repeats) and is presented as such.
+
+**Contributions.** (i) A formal description of reversibility and of the construction rules used in the prompt; (ii) a one-shot protocol and file contract; (iii) three pilot rounds, including one that made things worse, with the lessons that followed; (iv) an explicit list of threats to validity and of experiments needed before any comparative claim.
+
+Full text: [`paper/reversible-faces-benchmark-paper.md`](paper/reversible-faces-benchmark-paper.md) (version 2.0, 29 October 2026). To cite: see [How to cite](#how-to-cite).
 
 ---
 
 ## Contents
 
+- [Abstract](#abstract)
 - [Why this is hard](#why-this-is-hard)
 - [What is being tested](#what-is-being-tested)
 - [Design decisions](#design-decisions)
@@ -26,7 +37,9 @@ This repository contains the full story so far: the task design, every prompt ve
 - [Repository layout](#repository-layout)
 - [How to run it](#how-to-run-it)
 - [Limitations and honest notes](#limitations-and-honest-notes)
-- [Further reading](#further-reading)
+- [Future work](#future-work)
+- [References and related work](#references-and-related-work)
+- [How to cite](#how-to-cite)
 - [License](#license)
 
 ---
@@ -56,15 +69,17 @@ The prompt gives the model what it needs to *understand the task* and to *plan a
 
 ## Design decisions
 
-**One-shot.** The model receives a single prompt, produces a single SVG, and nobody answers questions or gives feedback. The model may, if it can run code, check its own output before delivering.
+**One-shot.** The model receives a single prompt, produces a single SVG, and nobody answers questions or gives feedback. The models in the rounds had no tools (they could not run code, render the SVG or search); they could only check their output by reasoning, using the symbolic check the prompt describes.
 
-**The human is the judge, with no rubric.** Anyone looking at the result can instinctively tell whether the two faces work, whether it is well drawn, and whether it is funny. We deliberately dropped the scoring rubric, the scoring gates, the anonymized evaluator sheets and the statistical protocol that appeared in earlier design drafts (see [`docs/design-history/`](docs/design-history/)). The only "criteria" that exist are the **self-check list inside the prompt**, which the *model* uses to judge its own work before delivering.
+**The human is the judge, with no rubric.** Anyone looking at the result can instinctively tell whether the two faces work, whether it is well drawn, and whether it is funny. We deliberately dropped the scoring rubric, the scoring gates, the anonymized evaluator sheets and the statistical protocol that appeared in earlier design drafts (see [`docs/design-history/`](docs/design-history/), which is **superseded**: it describes a heavier design than the one run). The only "criteria" that exist are the **self-check list inside the prompt**, which the *model* uses to judge its own work before delivering.
 
 **Why SVG (for v1).** The first version targets LLMs, which can write text but not paint pixels. SVG is plain text, valid in any browser, inspectable, rotatable with one attribute, and cheap to produce and store. It also forces explicit geometry: the model has to reason about coordinates and rotation, which is the heart of the task. (A later version could target image/diffusion models.)
 
+**Task variant.** Prompt v5 requires **two distinct characters** who differ in expression, not only in accessories. The variant "one person with two expressions" was left out of this version; it is probably harder and is listed under future work.
+
 **File contract.** One standalone SVG: `xmlns`, `viewBox="0 0 1000 1000"`, `width`/`height`, valid XML, no text, no external references, no gradients/filters/lighting (a directional light flips with the rotation and breaks the illusion), at most 300 KB.
 
-**Self-check list inside the prompt.** The model is asked to check, in this order: (A) do both faces read, (B) artistic quality, (C) humor. Common failures are listed with fixes (see the prompts).
+**Self-check list inside the prompt.** In prompt v5 the model is asked to pass three gates in this order: **Gate 1** reversibility (both readings are clear faces), **Gate 2** contrast (A and B look different), **Gate 3** light touches (one simple event prop per face, varied line weight, nobody demeaned), and to delete any touch that endangers a reading. Common failures are listed with fixes (see the prompts). Earlier prompt versions used different checklists (see [`docs/prompt-evolution.md`](docs/prompt-evolution.md)).
 
 ## The geometry in one page
 
@@ -76,17 +91,19 @@ R(p) = 2C − p      i.e.      (x, y)  →  (1000 − x, 1000 − y)
 
 In SVG: `transform="rotate(180 500 500)"` (not a mirror: `scale(-1,1)` is a different trick).
 
-What the rotation does: straight lines keep their direction; a cup ∪ becomes a dome ∩; **left and right swap**; the vertical order flips.
+What the half-turn does (a rotation, not a mirror): straight lines keep their direction; a cup ∪ becomes a dome ∩; **left and right swap**; the vertical order flips.
 
 The prompt gives the model a planning scaffold (explicitly "a design tool, not a law"):
 
 - **Shared eyes** near (415, 500) and (585, 500): eyes stay eyes; the lids, brows and eye-bags change meaning and therefore the mood.
 - A **canon** of vertical positions for a head about 600 px tall (hat dome ≈ y 320, brim ≈ 350, brow ≈ 452, eyes 500, nose tip ≈ 650, mouth ≈ 680, chin ≈ 800, collar ≈ 890, ...).
-- A **dual-function dictionary**: a feature of face A at height *y* is the same stroke as a feature of face B at height *1000 − y*. For example: A's smile (∪ at y ≈ 680) = B's hat band (dome at y ≈ 320); A's hat/hair = B's beard; A's brows = B's eye-bags; A's hat brim or fringe = B's nose; A's bow tie = B's pompom.
+- A **dual-function dictionary**: a feature of face A at page height *y_A* is the same stroke as a feature of face B at height *y_B* **in B's own frame**, where *y_A = 1000 − y_B*. (The shipped prompts word this more loosely as "a feature of B at height −y (as seen on the page)"; the docs and the paper use the precise statement. See [`docs/geometry.md`](docs/geometry.md).) For example: A's smile (∪ at y ≈ 680) = B's hat band (dome at y ≈ 320); A's hat/hair = B's beard; A's brows = B's eye-bags; A's hat brim or fringe = B's nose; A's bow tie = B's pompom.
 - A **sum rule** (every exaggeration in A is paid by its partner in B; hats, hair, beards and collars absorb leftovers) and **compromise strokes** (a shared stroke sits at the average of where A wants it and where the rotated B wants it).
 - A tiny, deliberately **neutral mechanism example** (not a face) showing one stroke serving two roles and one B-only stroke in a rotated group.
 
-More detail is in [`docs/how-it-works.md`](docs/how-it-works.md), and an annotated real output is in [`docs/worked-example.md`](docs/worked-example.md).
+A rotationally symmetric figure (the same face twice) is a **failure mode**, not a success.
+
+More detail is in [`docs/how-it-works.md`](docs/how-it-works.md); the formal statement (involution and C₂, feasible set, even/odd parts, ε-ball condition ‖a − R(b)‖ ≤ 2ε, weighted compromise stroke, silhouette envelope, symmetry diagnostic ρ) is in [`docs/geometry.md`](docs/geometry.md); an annotated real output is in [`docs/worked-example.md`](docs/worked-example.md); the terms are in [`docs/glossary.md`](docs/glossary.md). The canon, the tolerance and the dictionary are design heuristics, and none of the formal quantities was computed in the rounds.
 
 ## The three rounds
 
@@ -144,16 +161,26 @@ The whole project so far cost roughly half a dollar in model calls. Exact per-ru
 ```
 reversible-faces-benchmark/
 README.md                 this file
+CITATION.cff              how to cite (CFF 1.2.0)
 LICENSE                   MIT (code in scripts/)
 LICENSE-CONTENT           CC BY 4.0 (everything else)
 LICENSING.md              what is covered by which license
+paper/
+  reversible-faces-benchmark-paper.md   the accompanying paper (v2.0)
+  README.md               status of the paper and how it maps to the repo
 docs/
-  how-it-works.md         the task, rotation math, dual-function dictionary
+  how-it-works.md         the task, half-turn math, dual-function dictionary
+  geometry.md             the geometry stated formally
+  glossary.md             terms used throughout
   worked-example.md       one real output, stroke by stroke
   methodology.md          one-shot design, human judgment, file contract, run settings
   prompt-evolution.md     what changed from v1 to v5, and why
-  design-history/         earlier design specs (v0.3, v0.4) kept for context
-  reviews/                critiques of the prompt/repo by a second agent (summaries)
+  related-work.md         literature map and how RFB differs
+  references.md           verified bibliography and what was checked
+  threats-to-validity.md  what limits the conclusions
+  future-work.md          experiments still needed
+  design-history/         earlier design specs (v0.3, v0.4): SUPERSEDED, kept for context
+  reviews/                critiques of the prompt/repo/paper integration by a second agent (summaries)
 prompts/
   prompt-v1.md ... prompt-v5.md   the exact prompts sent to the models
   discarded/prompt-v5b.md         a variant that did not fix the DeepSeek loop
@@ -165,7 +192,7 @@ rounds/
       logs/               token and cost logs
 scripts/
   run_models.py           one-shot runner (OpenRouter; key from environment)
-  validate_svg.py         checks the file contract
+  validate_svg.py         checks parts of the file contract (size, XML, viewBox, forbidden elements)
   render_preview.py       upright + rotated side-by-side PNG (README previews only)
 assets/previews/          PNG previews
 ```
@@ -204,19 +231,34 @@ The judgment is human: open the SVG, look at it, rotate, and decide. Write your 
 - The prompts include short text descriptions of two Whistler drawings that were **drafted from public images and never verified** (the prompts say so in a placeholder note). They are kept verbatim because they are part of what the models saw.
 - Models did not have search, so the "recent event" is whatever they know; several chose events from 2023–2025.
 - Some SVGs in round 2 contain `<title>`/`<desc>` metadata that names the event. The runner now strips it, because it appears as a tooltip when hovering in a desktop browser and gives the joke away.
-- The original Whistler drawings are **not** bundled here. See the note under Further reading.
+- The original Whistler drawings are **not** bundled here. See [`docs/related-work.md`](docs/related-work.md) and [`docs/references.md`](docs/references.md).
+- The full list of threats to validity (uneven comparisons, heuristic geometry, untested diffusion claim, and more) is in [`docs/threats-to-validity.md`](docs/threats-to-validity.md).
 - Model names are the OpenRouter ids used at the time; providers may change or retire them.
 
-## Further reading
+## Future work
 
-- Rex Whistler, *¡OHO!* (1946), the source of the reversible faces. The original drawings are not included in this repository; you can find them by searching for "Rex Whistler reversible faces".
-- The mathematical and perceptual background gathered while designing the benchmark (not independently verified): N. J. Wade & W. Nekes, "The Two Faces of Rex Whistler (1905–1944)", *Perception* 34(6), 2005; B. Polster, "Mathemagical Ambigrams"; the ambigram-generation literature (e.g. AmbiGen, Visual Anagrams).
+Nothing below has been done. Details: [`docs/future-work.md`](docs/future-work.md).
+
+- A v3-versus-v5 ablation and a with/without-geometry-kit condition, under identical model settings.
+- Adding event and art instructions in small steps, checking the 180° reading after each.
+- More runs, more models and more judges, with blind presentation and randomized orientation order.
+- A tool-enabled condition (the model can render and rotate its output).
+- The second mode, "one person with two expressions".
+- An unvalidated stroke-sharing diagnostic (Q_shared).
+
+## References and related work
+
+The verified bibliography (with what was checked for each entry) is in [`docs/references.md`](docs/references.md); how the benchmark relates to Whistler, face-inversion research, ambigram generation (Loviscach, AmbiGen, Ambifusion, Visual Anagrams, Polster), LLM drawing (Bubeck et al.) and humor/caricature theory (Suls; Kris & Gombrich) is in [`docs/related-work.md`](docs/related-work.md). The original Whistler drawings are not included in this repository.
+
+## How to cite
+
+Cláudio Drews (2026). *Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models* (version 2.0, the version of the repository and of the paper). See [`CITATION.cff`](CITATION.cff); GitHub shows a "Cite this repository" button once the file is published.
 
 ## License
 
 Copyright (c) 2026 Cláudio Drews.
 
 - **Code** (`scripts/`): MIT, see [`LICENSE`](LICENSE).
-- **Content** (docs, prompts, evaluations, logs, SVGs, raw outputs, previews): CC BY 4.0, see [`LICENSE-CONTENT`](LICENSE-CONTENT).
+- **Content** (paper, docs, prompts, evaluations, logs, SVGs, raw outputs, previews): CC BY 4.0, see [`LICENSE-CONTENT`](LICENSE-CONTENT).
 
 Details and caveats about AI-generated outputs: [`LICENSING.md`](LICENSING.md).

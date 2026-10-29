@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, its prompts or its paper, please cite it as below."
+title: "Reversible Faces Benchmark"
+type: dataset
+version: "2.0"  # version of the repository and the paper
+date-released: "2026-10-29"
+abstract: >-
+  A one-shot benchmark in which a language model writes a single SVG that shows
+  one face upright and a different face rotated by 180 degrees, carrying a joke
+  about a recent technology or AI event. Includes the prompts, scripts, model
+  outputs, human evaluations from three pilot rounds, and an accompanying paper.
+authors:
+  - family-names: "Drews"
+    given-names: "Cláudio"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - reversible faces
+  - ambigrams
+  - SVG generation
+  - LLM evaluation
+  - one-shot benchmark
+preferred-citation:
+  type: report
+  title: "Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models"
+  authors:
+    - family-names: "Drews"
+      given-names: "Cláudio"
+  year: 2026
+  version: "2.0"
+  notes: "Version 2.0, 29 October 2026. Early research; not peer reviewed. File: paper/reversible-faces-benchmark-paper.md"

@@ -1,3 +1,5 @@
+> **Superseded.** This specification describes a heavier design (weighted rubric, gates, blind protocol, tool use, 500 KB limit) than the one actually run. See [`README.md`](README.md) in this folder; kept for context only.
+
 # Reversible Faces Benchmark — Consolidated Specification (draft v0.3)
 
 A benchmark that measures whether an LLM can create a **reversible face** (in the tradition of Rex Whistler's *¡OHO!*, 1946): a single SVG drawing that shows one face upright and a different face when the page is rotated 180°, carrying a witty, timeless, non-offensive message inspired by a recent AI/technology event.

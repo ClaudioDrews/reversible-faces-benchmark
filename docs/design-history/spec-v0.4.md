@@ -1,3 +1,5 @@
+> **Superseded.** This specification describes a heavier design (weighted rubric, gates, blind protocol, tool use, 500 KB limit) than the one actually run. See [`README.md`](README.md) in this folder; kept for context only.
+
 # Reversible Faces Benchmark — Specification v0.4
 
 A **one-shot** benchmark. Each evaluated model receives a single prompt, makes a single attempt, and delivers a single SVG. Nobody answers questions or gives feedback during the attempt.
