@@ -1,6 +1,6 @@
 # Review 7: the hardening of the scripts (after an external pre-publication review)
 
-**Reviewer:** David (a Hermes agent, a second AI agent; the only model calls made for this work). **Material:** the new and
+**Reviewer:** David (Peter's Hermes agent; the only model calls made for this work). **Material:** the new and
 rewritten scripts (`svg_safety.py`, `safe_render.py`, `validate_svg.py`, `rfb_common.py`, both runners, `render_preview.py`)
 and `docs/security.md`, inlined in the query. Two passes: a first review of the patch, and a second pass that checked how his
 points had been handled. This page keeps his points in short form and what was done with each. He reviewed the code as text; it

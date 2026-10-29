@@ -1,12 +1,12 @@
 # Judge comparison: Cláudio vs. rubric vs. David (blind, per orientation)
 
 > **Caveats (Cláudio flagged these as important; see also [`README.md`](README.md)).**
-> 1. David is **text-only**: an auxiliary vision model describes each image and he reasons over that text.
+> 1. David (Peter's Hermes agent) is **text-only**: an auxiliary vision model describes each image and he reasons over that text.
 > 2. That describer **sometimes hallucinates the expected second face** (for example an old man in the rotated Nano Banana panel).
 > 3. David mixed up the **orientation** on the Qwen Image output.
 > 4. **Stage 2 is not fully blind** to the rotation (he is told the right panel is the left one turned 180°).
 > 5. **One call per cell**: no repeats, no variance estimate.
-> 6. The 0-2 rubric is **Peter's own operationalisation** of the gates in prompt v5 section 7, and it was **scored non-blind**, so its 15/15 agreement with Cláudio is **not independent**.
+> 6. The 0-2 rubric is the operationalisation, by **Peter Weyland (Cláudio's Grok Bot assistant)**, of the gates in prompt v5 section 7, and it was **scored non-blind**, so its 15/15 agreement with Cláudio is **not independent**.
 > 7. **GLM 5.3 Max iterated about nine renders** (not one-shot). 8. **Manus 2.0 Lite** header translated from Portuguese. 9. **Meta Muse 1.3** was local-only before and is now included.
 > 10. GPT 5.6 Terra (low) and Nemotron 3.5 Lightning were pasted by Cláudio as SVG only; their headers and whether they ran strictly one-shot were not recorded.
 
@@ -15,7 +15,7 @@ Date: 2026-10-29.
 
 ## 1. What was done
 
-15 images from `baselines/` were judged three ways: (a) Cláudio's own verdicts, (b) a rubric applied by the first agent (Peter, Cláudio's assistant), (c) David (a Hermes agent), blind, who saw every image in both orientations (as delivered = 0°, and rotated 180°).
+15 images from `baselines/` were judged three ways: (a) Cláudio's own verdicts, (b) a rubric applied by Peter, (c) David, blind, who saw every image in both orientations (as delivered = 0°, and rotated 180°).
 
 - 11 SVGs from text models (prompt v5, rendered with headless Google Chrome at 1000x1000), 4 raster images from image generators (plain "shared eyes" prompt, no tools).
 - Each raster/SVG render was rotated 180° with PIL to get the second orientation. Rasters were re-saved without metadata and resized so that the longest side is at most 1000 px.
@@ -23,7 +23,7 @@ Date: 2026-10-29.
 
 ## 2. The rubric ("crivo") used
 
-**Where it comes from.** The repository has no scored rubric in force. `docs/methodology.md` and the README state that the human is the judge and that earlier weighted rubrics (`docs/design-history/spec-v0.4.md` §9, superseded) were dropped. The only explicit criteria are the **self-check list in prompt v5, section 7** (Gate 1 reversibility, Gate 2 contrast, Gate 3 light touches), plus the common-failure table below it, and `to-do.md` item 1(e) ("give the evaluation checklist to three models plus one human evaluator"). The first agent (Peter) took these three gates as the "suggested crivo" and turned them into a small 0-2 scale. This operationalisation is Peter's, not Cláudio's; it is meant only to make the gates comparable between judges.
+**Where it comes from.** The repository has no scored rubric in force. `docs/methodology.md` and the README state that the human is the judge and that earlier weighted rubrics (`docs/design-history/spec-v0.4.md` §9, superseded) were dropped. The only explicit criteria are the **self-check list in prompt v5, section 7** (Gate 1 reversibility, Gate 2 contrast, Gate 3 light touches), plus the common-failure table below it, and `to-do.md` item 1(e) ("give the evaluation checklist to three models plus one human evaluator"). Peter took these three gates as the "suggested crivo" and turned them into a small 0-2 scale. This operationalisation is Peter's, not Cláudio's; it is meant only to make the gates comparable between judges.
 
 | Item | Source gate | 0 | 1 | 2 |
 |---|---|---|---|---|
@@ -370,7 +370,7 @@ Cláudio's verdicts: 7 PASS (Claude, Gemini, ChatGPT, Muse, GLM, GPT 5.6 Terra, 
 
 Item-level agreement between David and my rubric scores (exact match of the 0-2 values): face clarity at 0° vs G1a 13/15; at 180° vs G1b 11/15; stage 2 left panel vs G1a 13/15; right panel vs G1b 9/15; CONTRAST vs G2 9/15; INTEGRATION (>0 vs >0) vs G1c 11/15.
 
-**Caveat on the rubric row:** I scored all 15 images knowing Cláudio's verdicts (the assistant had them in context), so the 15/15 is not an independent check; it shows the rubric can be set up to reproduce his verdicts, not that it predicts them. David is the only blind judge here.
+**Caveat on the rubric row:** I scored all 15 images knowing Cláudio's verdicts (Peter had them in context), so the 15/15 is not an independent check; it shows the rubric can be set up to reproduce his verdicts, not that it predicts them. David is the only blind judge here.
 
 ## 7. Notable divergences
 

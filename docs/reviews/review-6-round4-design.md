@@ -1,6 +1,6 @@
 # Review 6: design of round 4 (prompt v6 and the tool harness)
 
-Verbatim review (English) by the second agent (a Hermes agent in a "critic" role) of the draft prompt v6 and the draft harness, before round 4 was run. Line references (p6, h) are to those drafts. It did not review the round's outputs. What was applied is listed after the review and in [`rounds/round-04/SETUP.md`](../../rounds/round-04/SETUP.md).
+Verbatim review (English) by David (Peter's Hermes agent), in a "critic" role, of the draft prompt v6 and the draft harness, before round 4 was run. Line references (p6, h) are to those drafts. It did not review the round's outputs. What was applied is listed after the review and in [`rounds/round-04/SETUP.md`](../../rounds/round-04/SETUP.md).
 
 Operation interrupted: waiting for model response (402.9s elapsed).
 s are ±2 — I read the source without numbering, anchors quoted so you can find them).

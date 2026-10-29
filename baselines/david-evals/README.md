@@ -1,6 +1,6 @@
 # David's evaluations (blind)
 
-David is a second AI agent (a Hermes agent, `deepseek/deepseek-v4.1-flash-1017` through OpenRouter) that reviewed this project's design earlier (see [`../../docs/reviews/`](../../docs/reviews/)). Here he judged the 15 baseline images.
+David (Peter's Hermes agent), running `deepseek/deepseek-v4.1-flash-1017` through OpenRouter, reviewed this project's design earlier (see [`../../docs/reviews/`](../../docs/reviews/)). Here he judged the 15 baseline images, invoked by Peter Weyland (Cláudio's Grok Bot assistant).
 
 ## Method
 

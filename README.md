@@ -152,7 +152,7 @@ Per-round details, previews, raw outputs and costs: [`rounds/round-01`](rounds/r
 <a id="baselines"></a>
 ## Baselines: image generators and more text models
 
-After round 4, Cláudio ran **15 comparison runs** outside the rounds: four raster image generators with a plain prompt (all four failed: two faces placed side by side or stacked, never one drawing read two ways), and eleven text models with prompt v5 (seven passed). Every image was also judged **blind, in both orientations**, by a second AI agent (David), and scored by the first agent (Peter) with a 0-2 version of the prompt's own gates. See [`baselines/`](baselines/README.md) (table of all 15) and [`baselines/JUDGE-COMPARISON.md`](baselines/JUDGE-COMPARISON.md) (the comparison). **Read the caveats first:** David is text-only and works from an auxiliary vision describer that sometimes invents the expected second face; stage 2 is not fully blind to the rotation; one call per cell; the 0-2 rubric is the assistant's own operationalisation and was scored non-blind (its 15/15 agreement is not independent); GLM 5.3 Max iterated about nine renders (not one-shot).
+After round 4, Cláudio ran **15 comparison runs** outside the rounds: four raster image generators with a plain prompt (all four failed: two faces placed side by side or stacked, never one drawing read two ways), and eleven text models with prompt v5 (seven passed). Every image was also judged **blind, in both orientations**, by David (Peter's Hermes agent), and scored by Peter Weyland (Cláudio's Grok Bot assistant) with a 0-2 version of the prompt's own gates. See [`baselines/`](baselines/README.md) (table of all 15) and [`baselines/JUDGE-COMPARISON.md`](baselines/JUDGE-COMPARISON.md) (the comparison). **Read the caveats first:** David is text-only and works from an auxiliary vision describer that sometimes invents the expected second face; stage 2 is not fully blind to the rotation; one call per cell; the 0-2 rubric is the assistant's own operationalisation and was scored non-blind (its 15/15 agreement is not independent); GLM 5.3 Max iterated about nine renders (not one-shot).
 
 ## Models, settings and costs
 
@@ -203,7 +203,7 @@ docs/
   validator-audit.md      the new validator applied to every existing SVG (none fails)
   reproduction.md         tested versions, rendering variance, reproduction limits, cost/turn bounds
   design-history/         earlier design specs (v0.3, v0.4): SUPERSEDED, kept for context
-  reviews/                critiques of the prompt/repo/paper integration/round-4 design by a second agent
+  reviews/                critiques of the prompt/repo/paper integration/round-4 design by David
 prompts/
   prompt-v1.md ... prompt-v6.md   the exact prompts sent to the models (v6 = round 4, with tools)
   discarded/prompt-v5b.md         a variant that did not fix the DeepSeek loop

@@ -5,7 +5,7 @@ This section holds **15 comparison runs** that were *not* part of rounds 0-4 of 
 1. What do ordinary **raster image generators** do with the task when they are given a **plain prompt** (the "shared-eyes" prompt, no benchmark scaffolding)?
 2. What do a wider set of **text models** do with **benchmark prompt v5** (one shot, SVG), beyond the three cheap models of rounds 0-3?
 
-For all 15 images this section records Cláudio's verdict, the verdicts of a second AI agent ("David", a Hermes agent) that judged each image **blind, in both orientations**, and the impressions and rubric scores of the first agent (the assistant that prepared this repository, called "Peter" here). Everything is in English; quotes in the original Portuguese were translated.
+For all 15 images this section records Cláudio's verdict, the verdicts of David (Peter's Hermes agent), who judged each image **blind, in both orientations**, and the impressions and rubric scores of Peter Weyland (Cláudio's Grok Bot assistant), who prepared this repository (called "Peter" below). Everything is in English; quotes in the original Portuguese were translated.
 
 ![All 15 images, as delivered (left) and rotated 180 degrees (right)](previews/overview.jpg)
 
@@ -20,7 +20,7 @@ For all 15 images this section records Cláudio's verdict, the verdicts of a sec
 3. **Orientation mix-ups.** On the Qwen Image output David said the old man is "upside-down relative to the lady" at 0°; in the image both faces are upright at 0° and both inverted at 180°. His notion of which way up a face is can be wrong, which is exactly what this benchmark depends on.
 4. **Stage 2 is not fully blind to the rotation.** In stage 2 the image shows the drawing twice and *tells* David the right panel is the same drawing rotated 180°. Only stage 1 (one orientation per independent session) is blind in that sense.
 5. **One call per cell.** Each image/orientation/stage was asked once: no repeats, no variance estimate, one model with one persona, one prompt wording per stage.
-6. **The 0-2 rubric is the assistant's own operationalisation** of the three self-check gates in prompt v5 section 7. The repository has no official scored rubric (see [`../docs/methodology.md`](../docs/methodology.md)). It was **scored non-blind**: the assistant knew Cláudio's verdicts. Its 15/15 agreement with Cláudio is therefore **not an independent result**.
+6. **The 0-2 rubric is Peter's own operationalisation** of the three self-check gates in prompt v5 section 7. The repository has no official scored rubric (see [`../docs/methodology.md`](../docs/methodology.md)). It was **scored non-blind**: the assistant knew Cláudio's verdicts. Its 15/15 agreement with Cláudio is therefore **not an independent result**.
 7. **GLM 5.3 Max iterated about nine renders**, with vision feedback on both orientations. It was **not one-shot** and is not directly comparable with the other text models.
 8. **Manus 2.0 Lite replied in Portuguese.** Its EVENT/TITLE header (and the code comments, removed on saving) were in Portuguese; the header shown here is a translation.
 9. **Meta Muse 1.3** was previously kept local-only; its result is now included, with Cláudio's agreement.

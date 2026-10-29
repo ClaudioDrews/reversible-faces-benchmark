@@ -49,8 +49,8 @@ Unchanged: the task, the priority order (reversibility, contrast, light touches)
 
 **Consequence:** the effect of the tools cannot be separated from the effect of these prompt changes, and the round cannot be compared with round 3 without caveats (one run per model, one evaluator who is also the author, DeepSeek without reasoning, MiniMax selected between two runs, providers not pinned).
 
-## Design review by the second agent
-Before the round, a second agent (Hermes, "critic" role) reviewed the prompt and the harness: [`../../docs/reviews/review-6-round4-design.md`](../../docs/reviews/review-6-round4-design.md). It did not review the outputs.
+## Design review by David
+Before the round, David (Peter's Hermes agent), in a "critic" role, reviewed the prompt and the harness: [`../../docs/reviews/review-6-round4-design.md`](../../docs/reviews/review-6-round4-design.md). It did not review the outputs.
 - **Applied:** normalize before rendering and fix a Chrome screenshot race; failed renders are not counted; explicit messages on forced-delivery paths, no `tools` on forced turns, an empty or SVG-less final reply is requested again with the last rendered SVG pasted in; one user message for all images, labelled as harness output; only the last two images are kept; reasoning tokens and provider are logged; ink thresholds unified and a guard on ρ; the element bounding-box table; a stop-notice statement in the prompt; three strokes of written arithmetic restored; the dictionary header and one "three-role stroke" sentence restored; dropped capabilities and more memory in the sandbox.
 - **Not applied:** pinning providers; `ulimit -u` (it would count all of the user's processes); restoring "¡OHO!"; a control run of prompt v5 with tools (left as future work).
 
