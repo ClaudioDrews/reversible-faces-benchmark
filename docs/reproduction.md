@@ -30,10 +30,10 @@ Older or newer versions probably work; they have not been tested.
   provider is not pinned (DeepSeek was served by three providers within one round-4 run); model ids can be retired or
   replaced; prices change; reasoning traces are not deterministic. A rerun will give different drawings. That is also why
   each model got a single run per prompt (with a retry only after a technical failure) and why no statistics are claimed.
-- **Round 4 was produced by an earlier version of the harness** (commit `6747499`). The version in this repository is
+- **Round 4 was produced by an earlier version of the harness** (commit `07d7ff8`). The version in this repository is
   hardened (sanitized and sandboxed rendering, a pre-call cost estimate, structured API-failure logs, no silent overwrite). The
   prompts, tools, limits and settings are the same; the round-4 outputs were not regenerated. To inspect the exact code that
-  ran: `git show 6747499:scripts/run_models_v6.py`.
+  ran: `git show 07d7ff8:scripts/run_models_v6.py`.
 - **Costs** in `rounds/*/EVALUATION.md` and `logs/` are the provider-reported figures at the time. A request that failed or timed
   out may have been billed without being reported (noted in round 3), so totals are lower bounds.
 - **The cost cap is approximate.** It is an operational limit, not a guarantee: see the next section.

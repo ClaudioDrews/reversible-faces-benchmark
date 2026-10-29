@@ -19,11 +19,11 @@ Requires: Python 3.9+, Pillow, numpy, defusedxml (requirements.txt), headless Ch
     EFFORT=low MAXTOK=32000 ..    minimax/minimax-m3.1-flash   (re-run with MAXTOK=64000, see rounds/round-04/SETUP.md)
 
 IMPORTANT: this file is the hardened version (security, budget and logging changes made after round 4). The
-round-4 results were produced by the earlier version, commit 6747499 (see docs/security.md and
+round-4 results were produced by the earlier version, commit 07d7ff8 (see docs/security.md and
 docs/reproduction.md). Model-output handling changed (sanitizing, sandboxed rendering, original SVG saved
 separately). The prompts, the tool set and the numeric limits are the same, but this version can do two things
 the old one could not: LOWER max_tokens for a call when the worst-case estimate would not fit the remaining
-budget, and stop before a call (cost_precheck_stop). To reproduce round 4 exactly, check out commit 6747499.
+budget, and stop before a call (cost_precheck_stop). To reproduce round 4 exactly, check out commit 07d7ff8.
 
 Tools offered to the model (OpenAI-style function calling via OpenRouter):
   run_python(code)     sandboxed Python 3 (bubblewrap: no network, private temp dir, 20 s, memory limit)
@@ -62,7 +62,7 @@ import safe_render  # noqa: E402
 import svg_safety  # noqa: E402
 import validate_svg  # noqa: E402
 
-HARNESS_VERSION = "2.1.0 (hardened; round 4 itself ran commit 6747499)"
+HARNESS_VERSION = "2.1.0 (hardened; round 4 itself ran commit 07d7ff8)"
 MAX_RENDERS, MAX_TOOLCALLS, MAX_TURNS = 5, 12, 16
 RECOVERY_TURNS = 2
 DEFAULT_COST_CAP = 0.25

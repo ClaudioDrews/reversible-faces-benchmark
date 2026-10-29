@@ -236,7 +236,7 @@ Derivations, silhouette constraints, recognition regions and the symmetry diagno
 
 ## Implementation
 
-The repository contains the experimental data and the infrastructure to produce and inspect it. The scripts are the current (hardened, version 2.1.0) versions; round 4 itself was produced by an earlier harness (commit `6747499`) with the same prompts, tools and limits, but without the sandboxed renderer, the sanitizer and the pre-call cost estimate. The earlier code is available with `git show 6747499:scripts/run_models_v6.py`.
+The repository contains the experimental data and the infrastructure to produce and inspect it. The scripts are the current (hardened, version 2.1.0) versions; round 4 itself was produced by an earlier harness (commit `07d7ff8`) with the same prompts, tools and limits, but without the sandboxed renderer, the sanitizer and the pre-call cost estimate. The earlier code is available with `git show 07d7ff8:scripts/run_models_v6.py`.
 
 | Component | Purpose |
 |---|---|
@@ -263,7 +263,7 @@ The cost budget in the tool-augmented harness is an **operational limit, not a f
 
 Model-generated SVG and Python code are **untrusted input**. The current implementation uses XML-safe parsing (`defusedxml`), allowlist sanitization, browser isolation through bubblewrap, restricted filesystem access and bounded execution. Rendering refuses to run without bubblewrap.
 
-The current hardened implementation **differs from the harness that produced round 4**: that harness (commit `6747499`) ran Chrome with `--no-sandbox` outside the sandbox and cleaned SVG with regular expressions. The delivered round-4 SVGs contain only plain drawing elements, so there is no sign that the results were affected, but equivalence with the current rendering path was assumed, not re-run; the exposure existed and is closed in the current code. The round-4 runs were not repeated. Details and residual risks: [Security](docs/security.md) and [Validator audit](docs/validator-audit.md).
+The current hardened implementation **differs from the harness that produced round 4**: that harness (commit `07d7ff8`) ran Chrome with `--no-sandbox` outside the sandbox and cleaned SVG with regular expressions. The delivered round-4 SVGs contain only plain drawing elements, so there is no sign that the results were affected, but equivalence with the current rendering path was assumed, not re-run; the exposure existed and is closed in the current code. The round-4 runs were not repeated. Details and residual risks: [Security](docs/security.md) and [Validator audit](docs/validator-audit.md).
 
 ## Running the benchmark
 

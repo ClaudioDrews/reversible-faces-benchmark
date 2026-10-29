@@ -8,7 +8,7 @@ This page describes the current design, what the round-4 harness did before it, 
 
 ## What happened in round 4 (version before hardening)
 
-Round 4 ran with the harness of commit `6747499`. An external pre-publication review pointed out two weaknesses in it:
+Round 4 ran with the harness of commit `07d7ff8`. An external pre-publication review pointed out two weaknesses in it:
 
 1. Headless Chrome was started with `--no-sandbox` **directly on the host**, outside the bubblewrap sandbox that
    isolated the model's *code* (`run_python`). A bug in the renderer would have run with the user's privileges.

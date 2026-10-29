@@ -47,8 +47,8 @@ Task list kept here so that nothing gets lost; updated as the work proceeds.
 | # | Item | Status |
 |---|---|---|
 | D1 | Commit author name and email | resolved: name "Claudio Drews", email = the Proton address Claudio chose (not written in any repository file) |
-| D2 | Rewrite the author of the existing commits (they carry the placeholder `Reversible Faces Bot <noreply@example.invalid>`) to the author above | ready to run, not run; do it as the last step before the push (`git filter-repo --mailmap` or an equivalent history rewrite, then re-check the log) |
-| D2a | After the history rewrite every commit hash changes. The docs cite commit `6747499` (the harness that produced round 4) in 10 files (`README.md`, `docs/{reproduction,methodology,validator-audit,threats-to-validity,security,future-work}.md`, `rounds/round-04/SETUP.md`, `rounds/round-04/logs/COSTS.md`, `scripts/run_models_v6.py`) and `git show 6747499:...` commands; replace them with the new hash (find it with `git log --oneline` or `git filter-repo`'s commit map) and re-run the tests | ready to run after D2 |
-| D3 | Garbage collection of the dangling commit | needs Claudio's decision |
-| D4 | Tagging an immutable release (e.g. `v2.1.0`) | needs Claudio's decision |
-| D5 | The actual push / publication | needs Claudio's decision |
+| D2 | Rewrite author and committer of all commits to "Claudio Drews" with the chosen Proton address | done (`git filter-branch` env-filter; backup bundle `/workspace/rfb-backup-20261029.bundle` made first, outside the repository) |
+| D2a | Update every cited commit hash after the rewrite | done: the only cited hash was the round-4 harness commit, `6747499` before the rewrite and `07d7ff8` now (12 files updated, `git show 07d7ff8:scripts/run_models_v6.py` works) |
+| D3 | Expire the reflog and garbage-collect so no dangling or old commits remain | done (`git reflog expire --expire=now --all`, `git gc --prune=now --aggressive`; `git fsck --lost-found` reports nothing) |
+| D4 | Annotated tag for the release | done: `v2.1.0` (the repository version in `CITATION.cff`) on the final HEAD |
+| D5 | The actual push / publication | pending: Claudio must first create an **empty** GitHub repository (`ClaudioDrews/reversible-faces-benchmark`, no README, licence or .gitignore); then add it as `origin` and push `main` and the tag `v2.1.0`. Not done by the assistant. |

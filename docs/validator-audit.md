@@ -26,7 +26,7 @@ So the review's concern was about the **tool**, not about the data: the evaluate
 
 ## What the old validator missed (the tool, not the data)
 
-Run on the 30 deliberately invalid fixtures in `tests/fixtures/invalid/`, the validator of commit `6747499` **accepted 18**
+Run on the 30 deliberately invalid fixtures in `tests/fixtures/invalid/`, the validator of commit `07d7ff8` **accepted 18**
 of them, among them the three cases from the review: `<use href="https://...">`, `width="12" height="23"` and SVG
 animation (`<animate>`, `<set>`, `<animateTransform>`); also event attributes (`onload`, `onclick`), external `url()` in
 `fill` or in `style`, an `<a>` link, a CSS `@import`, CSS escapes, a DTD with entities (it was rejected only when the

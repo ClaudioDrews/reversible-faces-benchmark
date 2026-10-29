@@ -1,6 +1,6 @@
 # Round 4 (prompt v6, tool loop): costs and settings
 
-Costs are as reported by OpenRouter (`usage.cost`). Harness limits: 5 `render_svg` calls, 12 tool calls, 16 turns (+2 recovery turns), and an approximate operational cost cap of US$0.25 per model (see `docs/reproduction.md`; this round used the harness of commit `6747499`, which checked the cap after each turn). Per-turn details (tokens, reasoning tokens, provider, cost) are in the `cost-log_*.json` files.
+Costs are as reported by OpenRouter (`usage.cost`). Harness limits: 5 `render_svg` calls, 12 tool calls, 16 turns (+2 recovery turns), and an approximate operational cost cap of US$0.25 per model (see `docs/reproduction.md`; this round used the harness of commit `07d7ff8`, which checked the cap after each turn). Per-turn details (tokens, reasoning tokens, provider, cost) are in the `cost-log_*.json` files.
 
 | Run | Model | Settings | Turns | Tool calls | Renders | Tokens in / out | Cost (USD) | Final |
 |---|---|---|---|---|---|---|---|---|

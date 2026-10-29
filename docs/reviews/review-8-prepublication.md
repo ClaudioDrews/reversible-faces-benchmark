@@ -14,11 +14,11 @@ Applied = the text was changed. Partly = a different fix from the one proposed. 
 | 2 | HIGH | Applied | Same edit: GLM used the defaults, MiniMax `EFFORT=low`, DeepSeek `NOREASON=1`. |
 | 3 | HIGH/MED | Applied | The README now says the prompts ask for the contract and that the runners add `xmlns`, `viewBox` and size if a model leaves them out; it states that the current validator enforces the contract exactly, the earlier one was weaker, and that this did not affect the results (link to the new validator section). |
 | 4 | MED | Applied | Tagline changed to "an experimental framework, with reproducible offline tooling and archived artifacts". |
-| 5 | MED | **Applied; a real error found** | Confirmed with `git show 6747499:scripts/run_models_v6.py`: the round-4 harness stopped only when the provider-reported cost reached the cap; the pre-call estimate was added in the hardening. `docs/threats-to-validity.md` and `docs/methodology.md` (existing text, not only the new text) said the opposite for round 4. Both, and the README, now say what the round-4 harness did and what the current one does. |
+| 5 | MED | **Applied; a real error found** | Confirmed with `git show 07d7ff8:scripts/run_models_v6.py`: the round-4 harness stopped only when the provider-reported cost reached the cap; the pre-call estimate was added in the hardening. `docs/threats-to-validity.md` and `docs/methodology.md` (existing text, not only the new text) said the opposite for round 4. Both, and the README, now say what the round-4 harness did and what the current one does. |
 | 6 | MED/HIGH | Applied | The baseline paragraph now states that the judge agent is text-only, worked from descriptions by a vision model that sometimes invented the expected face, was not told the model or verdict, agreed 11/15 and 9/15, and that the assistant's 15/15 rubric was not blind and is not an independent check. |
 | 7 | MED | Applied | Replaced "two faces side by side or stacked" with the author's judgments (for example two stacked faces, or a head with a tiny second head in the collar), which is what the baseline records support. |
 | 8 | MED | Applied | "The results are not affected" became "no sign that the results were affected, but equivalence with the current rendering path was assumed, not re-run" in the README and in `threats-to-validity.md`. |
-| 9 | MED | Applied | The implementation section now says that the scripts are the current hardened versions, that round 4 was produced by the earlier harness (commit `6747499`, with the same prompts, tools and limits), and how to read that code. |
+| 9 | MED | Applied | The implementation section now says that the scripts are the current hardened versions, that round 4 was produced by the earlier harness (commit `07d7ff8`, with the same prompts, tools and limits), and how to read that code. |
 | 10 | MED | Applied | `to-do.md` no longer implies an evaluation checklist exists; it proposes giving the perceptual-protocol questions (not a scoring rubric) to models and humans. |
 | 11 | MED | Applied | The "Running" section now says: validate first, look at the sandboxed preview, and do not open unvalidated model SVG in a personal browser. |
 | 12 | LOW | Rejected as stated, applied as a precision | "The cheapest" is supported by the repository's own numbers: GLM had the lowest delivered-run cost in each of rounds 1–4 (US$0.0034, 0.0008, 0.0035, 0.0116). The claim now says exactly that. |
@@ -61,7 +61,7 @@ Fix: "a framework for reproducible offline tooling and archived, non-reproducibl
 threats: "The prompts, tools, limits and settings are the same; what changed is ... the pre-call cost estimate, logging and overwrite protection."
 README/methodology: the round-4 harness's "cost budget ... estimates the worst case before each call and adds the reported cost after it".
 If the pre-call estimator was added during hardening, the round-4 harness did not have it, and the README's description of the US$0.25 mechanism is anachronistic (or the threats sentence is wrong).
-Fix: state explicitly which components existed in commit 6747499; if unknown, say so and downgrade the claim to "the reported totals are lower bounds".
+Fix: state explicitly which components existed in commit 07d7ff8; if unknown, say so and downgrade the claim to "the reported totals are lower bounds".
 
 6. MED/HIGH — Overclaim about the baseline judge's independence.
 Quote: "A second AI agent judged every image blind in both orientations".
@@ -80,7 +80,7 @@ Fix: "the surviving files are benign and pass the current validator; the renderi
 
 9. MED — Implementation table implies the round-4 production harness is in the repository.
 Quote: "The repository contains the experimental data and the infrastructure used to produce and inspect it" followed by `safe_render.py` ("Chrome inside bubblewrap").
-Fact: round 4 was produced by the harness of commit 6747499, with `--no-sandbox` outside bubblewrap; the current scripts are not the producing code.
+Fact: round 4 was produced by the harness of commit 07d7ff8, with `--no-sandbox` outside bubblewrap; the current scripts are not the producing code.
 Fix: add a column or note per component: "current (2.1.0)" vs "used for round 4".
 
 10. MED — to-do.md invents an instrument that does not exist.
