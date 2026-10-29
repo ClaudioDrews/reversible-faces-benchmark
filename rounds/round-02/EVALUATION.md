@@ -1,6 +1,6 @@
 # Round 2: prompt v4, human-evaluated
 
-Evaluator: the benchmark's author (Cláudio Drews). Date: 2026-10-28.
+Evaluator: the benchmark's author (Claudio Drews). Date: 2026-10-28.
 
 Prompt v4 made the current event central and added heavy art guidance (see `../../docs/prompt-evolution.md`).
 

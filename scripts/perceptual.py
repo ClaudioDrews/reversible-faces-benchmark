@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Perceptual DIAGNOSTICS for a rendered drawing. These are hints for a model or a reader, not validity checks.
 
 Structural validity (does the file meet the contract, is it safe) lives in `validate_svg.py` and never depends

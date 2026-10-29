@@ -1,6 +1,6 @@
 # Comparative baselines: human evaluation
 
-Evaluator: Cláudio Drews, 2026-10-29. Same shared-eyes prompt for both models.
+Evaluator: Claudio Drews, 2026-10-29. Same shared-eyes prompt for both models.
 
 Verdict: both models failed.
 

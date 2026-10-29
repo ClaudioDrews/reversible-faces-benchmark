@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Round 4 runner (prompt v6): a SINGLE-ATTEMPT TOOL-AUGMENTED run per model. Not one-shot.
 
 Usage:

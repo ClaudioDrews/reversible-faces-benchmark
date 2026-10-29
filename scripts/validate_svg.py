@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Validate that an SVG meets the benchmark's FILE CONTRACT and is safe to handle. Structure only.
 
 Usage: python scripts/validate_svg.py [--strict] [--json] file.svg [file2.svg ...]

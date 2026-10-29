@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Render untrusted (model-written) SVG with headless Chrome/Chromium inside a bubblewrap sandbox.
 
 Defence in depth, in this order:

@@ -15,7 +15,7 @@ abstract: >-
   and an accompanying paper that describes rounds 0-3.
 authors:
   - family-names: "Drews"
-    given-names: "Cláudio"
+    given-names: "Claudio"
 license:
   - MIT
   - CC-BY-4.0
@@ -31,7 +31,7 @@ preferred-citation:
   title: "Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models"
   authors:
     - family-names: "Drews"
-      given-names: "Cláudio"
+      given-names: "Claudio"
   year: 2026
   version: "2.0"  # version of the PAPER (rounds 0-3 only); not the repository version
   notes: "Paper version 2.0, 29 October 2026. Early research; not peer reviewed. File: paper/reversible-faces-benchmark-paper.md. Round 4 and the harness hardening came after the paper and are documented only in the repository."

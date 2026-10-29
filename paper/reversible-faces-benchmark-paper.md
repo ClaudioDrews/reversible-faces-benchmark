@@ -1,6 +1,6 @@
 # Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models
 
-**Author:** Cláudio Drews  
+**Author:** Claudio Drews  
 **Version:** 2.0 (29 October 2026). This version describes the design that was actually run (one-shot, no tools, human judgment, no rubric). The earlier v0.3/v0.4 specifications are kept for context in [`docs/design-history/`](../docs/design-history/).  
 **Status:** early research. A benchmark design plus three informal pilot rounds. **One human evaluator, who is also the author. Three inexpensive models. One run per model per prompt. No statistics are claimed.** The results are design notes, not a leaderboard.  
 **Repository:** this paper accompanies the files in this repository ([`README.md`](../README.md), [`docs/`](../docs/), [`prompts/`](../prompts/), [`rounds/`](../rounds/), [`scripts/`](../scripts/)). Bibliography details and how each reference was checked: [`docs/references.md`](../docs/references.md).  

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Pre-call cost estimate, overrun recording, structured API log, no silent overwrite."""
 import json
 import tempfile

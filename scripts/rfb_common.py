@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Shared helpers for the runners: pre-call cost estimate, structured API-failure log, no-silent-overwrite
 output directories, and the HTTP transport (replaceable by a mock for offline tests)."""
 import json

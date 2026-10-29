@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """The baselines section: every baseline SVG meets the file contract, every baseline folder is documented
 and has an evaluation, and the caveats that must travel with the numbers are present."""
 import unittest

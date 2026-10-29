@@ -1,6 +1,6 @@
 # Round 1: prompts v2 and v3, human-evaluated
 
-Evaluator: the benchmark's author (Cláudio Drews). Date: 2026-10-28.
+Evaluator: the benchmark's author (Claudio Drews). Date: 2026-10-28.
 
 | # | File | Model (OpenRouter) | Prompt | Tokens in / out | Cost (USD) | Reversible effect | Artistic quality | Humor | Current event |
 |---|---|---|---|---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Run one benchmark prompt on one or more models via OpenRouter: ONE-SHOT WITHOUT TOOLS (rounds 0-3).
 
 One request per model, the prompt as the only message, no tools, no follow-up, no retries of the content

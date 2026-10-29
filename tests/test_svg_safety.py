@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """The sanitizer: what comes out contains only allowlisted content, whatever goes in."""
 import re
 import unittest

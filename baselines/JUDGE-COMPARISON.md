@@ -1,21 +1,21 @@
-# Judge comparison: Cláudio vs. rubric vs. David (blind, per orientation)
+# Judge comparison: Claudio vs. rubric vs. David (blind, per orientation)
 
-> **Caveats (Cláudio flagged these as important; see also [`README.md`](README.md)).**
+> **Caveats (Claudio flagged these as important; see also [`README.md`](README.md)).**
 > 1. David (Peter's Hermes agent) is **text-only**: an auxiliary vision model describes each image and he reasons over that text.
 > 2. That describer **sometimes hallucinates the expected second face** (for example an old man in the rotated Nano Banana panel).
 > 3. David mixed up the **orientation** on the Qwen Image output.
 > 4. **Stage 2 is not fully blind** to the rotation (he is told the right panel is the left one turned 180°).
 > 5. **One call per cell**: no repeats, no variance estimate.
-> 6. The 0-2 rubric is the operationalisation, by **Peter Weyland (Cláudio's Grok Bot assistant)**, of the gates in prompt v5 section 7, and it was **scored non-blind**, so its 15/15 agreement with Cláudio is **not independent**.
+> 6. The 0-2 rubric is the operationalisation, by **Peter Weyland (Claudio's Grok Bot assistant)**, of the gates in prompt v5 section 7, and it was **scored non-blind**, so its 15/15 agreement with Claudio is **not independent**.
 > 7. **GLM 5.3 Max iterated about nine renders** (not one-shot). 8. **Manus 2.0 Lite** header translated from Portuguese. 9. **Meta Muse 1.3** was local-only before and is now included.
-> 10. GPT 5.6 Terra (low) and Nemotron 3.5 Lightning were pasted by Cláudio as SVG only; their headers and whether they ran strictly one-shot were not recorded.
+> 10. GPT 5.6 Terra (low) and Nemotron 3.5 Lightning were pasted by Claudio as SVG only; their headers and whether they ran strictly one-shot were not recorded.
 
 
 Date: 2026-10-29.
 
 ## 1. What was done
 
-15 images from `baselines/` were judged three ways: (a) Cláudio's own verdicts, (b) a rubric applied by Peter, (c) David, blind, who saw every image in both orientations (as delivered = 0°, and rotated 180°).
+15 images from `baselines/` were judged three ways: (a) Claudio's own verdicts, (b) a rubric applied by Peter, (c) David, blind, who saw every image in both orientations (as delivered = 0°, and rotated 180°).
 
 - 11 SVGs from text models (prompt v5, rendered with headless Google Chrome at 1000x1000), 4 raster images from image generators (plain "shared eyes" prompt, no tools).
 - Each raster/SVG render was rotated 180° with PIL to get the second orientation. Rasters were re-saved without metadata and resized so that the longest side is at most 1000 px.
@@ -23,7 +23,7 @@ Date: 2026-10-29.
 
 ## 2. The rubric ("crivo") used
 
-**Where it comes from.** The repository has no scored rubric in force. `docs/methodology.md` and the README state that the human is the judge and that earlier weighted rubrics (`docs/design-history/spec-v0.4.md` §9, superseded) were dropped. The only explicit criteria are the **self-check list in prompt v5, section 7** (Gate 1 reversibility, Gate 2 contrast, Gate 3 light touches), plus the common-failure table below it, and `to-do.md` item 1(e) ("give the evaluation checklist to three models plus one human evaluator"). Peter took these three gates as the "suggested crivo" and turned them into a small 0-2 scale. This operationalisation is Peter's, not Cláudio's; it is meant only to make the gates comparable between judges.
+**Where it comes from.** The repository has no scored rubric in force. `docs/methodology.md` and the README state that the human is the judge and that earlier weighted rubrics (`docs/design-history/spec-v0.4.md` §9, superseded) were dropped. The only explicit criteria are the **self-check list in prompt v5, section 7** (Gate 1 reversibility, Gate 2 contrast, Gate 3 light touches), plus the common-failure table below it, and `to-do.md` item 1(e) ("give the evaluation checklist to three models plus one human evaluator"). Peter took these three gates as the "suggested crivo" and turned them into a small 0-2 scale. This operationalisation is Peter's, not Claudio's; it is meant only to make the gates comparable between judges.
 
 | Item | Source gate | 0 | 1 | 2 |
 |---|---|---|---|---|
@@ -40,7 +40,7 @@ Date: 2026-10-29.
 
 - Same channel as the earlier reviews of this project: the local Hermes CLI, one-shot, non-interactive: `hermes chat --query-file <q> --image <png> --oneshot -Q` (David has a short persona instruction; model `deepseek/deepseek-v4.1-flash-1017` via OpenRouter). I added `-t vision` (only the image toolset) and `--max-turns 6`.
 - **Important limitation on what "David sees".** His model is text-only. Hermes first sends the image to an auxiliary vision model, which writes a description that is injected into David's prompt ("The user attached an image. Here's what it contains: ..."), and David may then call `vision_analyze` with his own question. So David's "perception" is David reasoning over a vision model's description, not raw pixels. Excerpts of the pre-descriptions are in [`david-evals/vision-describer-excerpts.md`](david-evals/vision-describer-excerpts.md).
-- **Blind:** every call got an anonymous file name (random code, orientation not encoded), no model name, no event/title, no Cláudio verdict, no word about reversible faces or the benchmark. The two orientations were sent in **separate independent sessions**, so he could not compare them; his first-impression perception of each orientation is therefore independent.
+- **Blind:** every call got an anonymous file name (random code, orientation not encoded), no model name, no event/title, no Claudio verdict, no word about reversible faces or the benchmark. The two orientations were sent in **separate independent sessions**, so he could not compare them; his first-impression perception of each orientation is therefore independent.
 - **Stage 1 (30 calls, one per image per orientation)** asked: what do you see, how many faces and which way up, is there one clear face (who/what, expression, missing features), any extra/second/stray element, then scores FACE_CLARITY (0-2), SECOND_FACE_VISIBLE (0-2), EXPRESSION_CLARITY (0-2), OVERALL_FACE_QUALITY (0-5).
 - **Stage 2 (15 calls, one per image)**: one picture with the drawing twice side by side (left as delivered, right rotated 180°, told so), asking: the face in each panel, whether they are different, integration (shared strokes vs. stacked), and scores LEFT/RIGHT_READS_AS_FACE, INTEGRATION, CONTRAST, PROPS_AND_JOKE (0-2), BREAKS_RULES, and a PASS/FAIL verdict. Stage 2 is needed because contrast and integration cannot be judged from one orientation. It does reveal to him that the panels are the same drawing rotated.
 - Prompts: [`david-evals/prompt-stage1.md`](david-evals/prompt-stage1.md), [`david-evals/prompt-stage2.md`](david-evals/prompt-stage2.md).
@@ -49,7 +49,7 @@ Date: 2026-10-29.
 
 PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1 = FACE_CLARITY / SECOND_FACE_VISIBLE at 0° and at 180°. David stage 2 = LEFT / RIGHT face reading, INTEGRATION, CONTRAST, then his own verdict.
 
-| Image | Model | Cláudio | Mine (G1a,G1b,G1c,G2 = core) | David 0° (clarity/2nd face) | David 180° (clarity/2nd face) | David pair (L,R,Int,Contrast) | David verdict |
+| Image | Model | Claudio | Mine (G1a,G1b,G1c,G2 = core) | David 0° (clarity/2nd face) | David 180° (clarity/2nd face) | David pair (L,R,Int,Contrast) | David verdict |
 |---|---|---|---|---|---|---|---|
 | img01 | nanobanana-2.1 (raster) | FAIL | 2,1,0,1 = 4 → FAIL | 2/0 | 2/2 | 2,2,2,2 | PASS |
 | img02 | chatgpt-medium (svg) | PASS | 2,2,2,2 = 8 → PASS | 2/0 | 2/1 | 2,2,2,2 | PASS |
@@ -71,7 +71,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img01: nanobanana-2.1 (raster, plain prompt)
 
-- **Cláudio:** FAIL. "one head with a tiny head hidden in the collar"
+- **Claudio:** FAIL. "one head with a tiny head hidden in the collar"
 - **Rubric (mine):** G1a=2, G1b=1, G1c=0, G2=1, G3=n/a; core 4/8 → **FAIL**. A is one clear lady; the only second face is a tiny old man in the collar/ruff. Rotated, the large face is still the same lady (upside down). Second reading is too small to count.
 - **David at 0° (as delivered)** (`s918`; clarity 2, second-face 0, expression 2, quality 4/5):
   - saw: "An ornate vintage engraving-style portrait framed by filigree corners and hatched borders. A woman with a calm, faint smile looks straight at the viewer, her face stippled and cross-hatched. Enormous sculpted curls frame her head, topped by a small bonnet-like fascinator, with a heavy ruffled collar and bow below."
@@ -90,7 +90,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img02: chatgpt-medium (SVG, prompt v5)
 
-- **Cláudio:** PASS. "passed"
+- **Claudio:** PASS. "passed"
 - **Rubric (mine):** G1a=2, G1b=2, G1c=2, G2=2, G3=1; core 8/8 → **PASS**. A: smiling dark-haired man with a collar; B: stern bearded man. Hair = beard, collar = hat. Shared eyes work. Rocket prop on both faces (same prop, so weak contrast of props).
 - **David at 0° (as delivered)** (`s433`; clarity 2, second-face 0, expression 2, quality 4/5):
   - saw: "A flat-vector head-and-shoulders portrait on plain beige, drawn with heavy black outlines and a beige/teal/red palette. A broad-jawed adult with black widow's-peak hair and a teal scoop-neck shirt looks straight out. The first thing that strikes me is the small red-and-white rocket-like object standing upright on the crown of the head."
@@ -109,7 +109,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img03: deepseek-v4.1 (SVG, prompt v5)
 
-- **Cláudio:** FAIL. "failed; the face cannot be identified when rotated"
+- **Claudio:** FAIL. "failed; the face cannot be identified when rotated"
 - **Rubric (mine):** G1a=2, G1b=1, G1c=1, G2=1, G3=1; core 5/8 → **FAIL**. A reads. In B the eyes and black beard read, but A's nose/mouth strokes end up above the eyes in B (misplaced features), so B is only half a face.
 - **David at 0° (as delivered)** (`s346`; clarity 2, second-face 1, expression 2, quality 4/5):
   - saw: "A flat, cream-background vector portrait: an egg-shaped head in thick black outline, a solid black beanie with a white rocket glyph, arched brows, almond eyes with dot pupils, a U-shaped nose, a faint smile, a straight chin line, and a rust-red bowtie at the neck. Clean, symmetrical, almost logo-like. Almost nothing is shaded; it lives on outlines and negative space."
@@ -128,7 +128,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img04: qwen3.8-omni-flash (SVG, prompt v5)
 
-- **Cláudio:** FAIL. "failed; no face when rotated"
+- **Claudio:** FAIL. "failed; no face when rotated"
 - **Rubric (mine):** G1a=2, G1b=1, G1c=1, G2=1, G3=1; core 5/8 → **FAIL**. A reads (smile, pointed cap). B has eyes and a 7-shaped nose but the mouth/hat zone is just a line and floating hat pieces; weak and not clearly different from A.
 - **David at 0° (as delivered)** (`s942`; clarity 2, second-face 0, expression 2, quality 4/5):
   - saw: "A bold, thick-line cartoon drawing centered on white: a smiling figure in a tall pointed hat and a wide bowl-shaped collar. The hat's emblem is abstract. The only color in the whole picture is a small red circle acting as a clasp or button on the collar."
@@ -147,7 +147,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img05: manus-2.0-lite (SVG, prompt v5)
 
-- **Cláudio:** FAIL. "the second face is not clear"
+- **Claudio:** FAIL. "the second face is not clear"
 - **Rubric (mine):** G1a=2, G1b=1, G1c=1, G2=2, G3=1; core 6/8 → **FAIL**. A clear. B reads as a bearded man, but a brown nose stroke sits on B's forehead (A's nose) and a cream mouth bar/sound-wave marks in A's hair are a faint ghost of B visible upright.
 - **David at 0° (as delivered)** (`s399`; clarity 2, second-face 1, expression 2, quality 4/5):
   - saw: "A flat vector head-and-shoulders portrait on a cream background: peach skin, thick dark outlines, teal collar with white trim and a red diamond. The most striking thing is the very large dark hair mass with small white and teal marks that hint at a pattern above the forehead."
@@ -166,7 +166,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img06: gemini-3.1-pro (SVG, prompt v5)
 
-- **Cláudio:** PASS. "passed, with some humor"
+- **Claudio:** PASS. "passed, with some humor"
 - **Rubric (mine):** G1a=2, G1b=2, G1c=2, G2=2, G3=1; core 8/8 → **PASS**. A: furrowed-brow smirk with black hair and beard; B: sad frown. Strokes genuinely shared (hair = beard); rocket+star prop on both ends.
 - **David at 0° (as delivered)** (`s671`; clarity 2, second-face 1, expression 2, quality 4/5):
   - saw: "A flat, cartoonish head with pale peach skin, bold black outlines, a solid black flat-top hair mass, and a black beard across the lower jaw. A small star-tipped rocket sits centered on top of the head. Thin white "pop" lines curve above the hair and below the beard on a plain beige background."
@@ -185,7 +185,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img07: qwen-image-3.0 (raster, plain prompt)
 
-- **Cláudio:** FAIL. ""Dois rostos empilhados" (two stacked faces)"
+- **Claudio:** FAIL. ""Dois rostos empilhados" (two stacked faces)"
 - **Rubric (mine):** G1a=1, G1b=0, G1c=0, G2=2, G3=n/a; core 3/8 → **FAIL**. Two stacked upright faces (lady above, old man below), both upright at 0 degrees; rotated, both inverted. No second reading from shared strokes (the "same orientation" failure).
 - **David at 0° (as delivered)** (`s343`; clarity 1, second-face 2, expression 1, quality 4/5):
   - saw: "A dense graphite drawing built entirely from shared contours: a soft young woman's face at the top and a weathered older man's face directly beneath, with one jawline serving as the other's forehead. The pencil work is heavy and detailed, dark curls merging into a beard. It reads immediately as a deliberate two-in-one illusion."
@@ -204,7 +204,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img08: glm-5.3-max (SVG, prompt v5)
 
-- **Cláudio:** PASS. "complied with the task, although the image came out strange (caveat: ~9 renders, not one-shot)"
+- **Claudio:** PASS. "complied with the task, although the image came out strange (caveat: ~9 renders, not one-shot)"
 - **Rubric (mine):** G1a=2, G1b=2, G1c=1, G2=1, G3=1; core 6/8 → **PASS**. Both orientations read as faces (grin with teeth/hood vs. surprised mouth/teeth hat band). Cluttered and strange (cheek discs, clouds), contrast between A and B only moderate.
 - **David at 0° (as delivered)** (`s669`; clarity 2, second-face 1, expression 2, quality 4/5):
   - saw: "A flat, poster-style mask in cream, black and one red accent, dead-centre and fiercely symmetrical. A pointed black hood with a single white eye-slit sits on a large egg-shaped head with small loop ears. The wide rectangular grin of square white teeth and a black chin crossed by a red zigzag give it a manic, staring look, framed top and bottom by scalloped cloud shapes."
@@ -223,7 +223,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img09: chatgpt-images-2.5 (raster, plain prompt)
 
-- **Cláudio:** FAIL. "two half-heads stacked"
+- **Claudio:** FAIL. "two half-heads stacked"
 - **Rubric (mine):** G1a=2, G1b=2, G1c=0, G2=2, G3=n/a; core 6/8 → **FAIL**. Lady upright on top with an old man inverted below; rotated, the old man is upright. Each orientation has a clear face but the other face is fully visible (two heads joined at the collar), so there is no integration.
 - **David at 0° (as delivered)** (`s776`; clarity 2, second-face 2, expression 2, quality 5/5):
   - saw: "A finely hatched, engraving-style black-and-white portrait of a young woman in a wide-brimmed hat covered with flowers and a large feather, her curls and ruffled collar filling the lower part. The line work is dense and skilful, with an antique, romantic feel. It is an ambiguous "two-in-one" image."
@@ -242,7 +242,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img10: meta-muse-1.3 (SVG, prompt v5)
 
-- **Cláudio:** PASS. "simple, reasonably executed"
+- **Claudio:** PASS. "simple, reasonably executed"
 - **Rubric (mine):** G1a=2, G1b=2, G1c=1, G2=1, G3=1; core 6/8 → **PASS**. Minimal, floating strokes. A: smiling face with a blue hat band; B: frowning face with the band as a chin/mouth bar. Both read; some marks are orphaned.
 - **David at 0° (as delivered)** (`s102`; clarity 2, second-face 1, expression 2, quality 3/5):
   - saw: "A thick black oval head on white, with big concentric-circle eyes, a small nose, and a wide upward smile. A single bright blue horizontal bar sits on the forehead under a wavy line. A tiny hollow circle floats above the head. Minimal, icon-like, slightly cartoonish."
@@ -261,7 +261,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img11: grok-imagine-2.0 (raster, plain prompt)
 
-- **Cláudio:** FAIL. ""dois rostos separados em orientações opostas" (two separate faces in opposite orientations)"
+- **Claudio:** FAIL. ""dois rostos separados em orientações opostas" (two separate faces in opposite orientations)"
 - **Rubric (mine):** G1a=2, G1b=2, G1c=0, G2=2, G3=n/a; core 6/8 → **FAIL**. Two separate faces (young man with curls upright above, bearded man in bowler inverted below) joined at the collars. Rotating swaps which is upright; no shared strokes.
 - **David at 0° (as delivered)** (`s386`; clarity 1, second-face 2, expression 2, quality 4/5):
   - saw: "A near mirror-symmetrical black-and-white engraving of a smiling young man with dense curly hair, built from hatching and stippling. The sharp dark collar below his chin looks odd at first, until the lower half resolves into a second face. It is a classic ambiguous-head figure."
@@ -280,7 +280,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img12: claude-sonnet-5.5-medium (SVG, prompt v5)
 
-- **Cláudio:** PASS. "passed, and funny"
+- **Claudio:** PASS. "passed, and funny"
 - **Rubric (mine):** G1a=2, G1b=2, G1c=2, G2=2, G3=2; core 8/8 → **PASS**. A: wide-eyed grin; B: sad frown. Hair = beard, red grin = hat band, red nose is the shared stroke that is a hat tag in A. Rocket and bow tie swap places. Funny.
 - **David at 0° (as delivered)** (`s955`; clarity 2, second-face 2, expression 2, quality 4/5):
   - saw: "A flat vector cartoon of a wide-eyed man with black hair, black beard, red bow tie and a tiny teal rocket perched on his head. The white face area is dominated by two huge round eyes with horizontal lines and a broad red smile. Thin white highlight strokes inside the hair and beard are not just decoration — they read as extra faces when you stop looking at the middle."
@@ -302,7 +302,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img13: qwen-3.7-plus (SVG, prompt v5)
 
-- **Cláudio:** FAIL. "strange, failed"
+- **Claudio:** FAIL. "strange, failed"
 - **Rubric (mine):** G1a=1, G1b=1, G1c=1, G2=0, G3=0; core 3/8 → **FAIL**. Almost the same minimal face in both readings (no contrast); the SVG contains letter-shaped paths (M and W), which the contract forbids. Faces are barely faces.
 - **David at 0° (as delivered)** (`s276`; clarity 2, second-face 2, expression 2, quality 3/5):
   - saw: "A single, wobbly black outline of a tall oval head on white, filled with simple line features — two round eyes with solid pupils, a small smile, and a chin arc. Above the head floats a small jagged "M" shape, and the forehead carries a tiny diamond plus a couple of small arcs. The whole thing reads as a hand-drawn doodle, very reduced, almost mask-like."
@@ -321,7 +321,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img14: gpt-5.6-terra-low (SVG, prompt v5)
 
-- **Cláudio:** PASS. "passed: it delivered both faces"
+- **Claudio:** PASS. "passed: it delivered both faces"
 - **Rubric (mine):** G1a=2, G1b=2, G1c=2, G2=2, G3=2; core 8/8 → **PASS**. A: smiling face under a teal cap with a location-pin and chat-bubble badge, orange collar; B: scowling bearded man in an orange hat, a cracked-screen badge on the beard. Hat = beard, collar = hat; props differ between readings.
 - **David at 0° (as delivered)** (`s575`; clarity 2, second-face 1, expression 2, quality 4/5):
   - saw: "A flat vector portrait of a round cream-colored head under a dark teal cap or helmet, on a solid light background. Thick navy outlines and just three colors give it a clean, friendly cartoon look. The face is wide-eyed and smiling."
@@ -340,7 +340,7 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ### img15: nemotron-3.5-lightning (SVG, prompt v5)
 
-- **Cláudio:** PASS. "passed, although it simplified to the extreme"
+- **Claudio:** PASS. "passed, although it simplified to the extreme"
 - **Rubric (mine):** G1a=2, G1b=2, G1c=1, G2=1, G3=1; core 6/8 → **PASS**. Extremely reduced: a triangle (head) with two shared eyes, one brow arc and one mouth arc. A: a smiley (hat = the triangle point); B: a flat-mouthed face under an arc. Both read as faces, only just; contrast is slight and there is no real prop. A tiny leftover rectangle.
 - **David at 0° (as delivered)** (`s707`; clarity 2, second-face 0, expression 2, quality 3/5):
   - saw: "A large, thin black-outlined upright triangle sits centered on plain white, with a very simple cartoon face drawn inside it. The face is comprised of a single curved brow line, two small hollow circle eyes, and a shallow upward smile. Just under the apex is a tiny hollow rectangle, giving the whole thing the feel of a beginner drawing exercise."
@@ -359,50 +359,50 @@ PASS/FAIL = verdict. "Mine" = rubric core score (0-8) and verdict. David stage 1
 
 ## 6. Agreement
 
-Cláudio's verdicts: 7 PASS (Claude, Gemini, ChatGPT, Muse, GLM, GPT 5.6 Terra, Nemotron 3.5 Lightning) and 8 FAIL (4 image generators + Qwen 3.7 Plus, DeepSeek, Manus, Qwen3.8 Omni Flash).
+Claudio's verdicts: 7 PASS (Claude, Gemini, ChatGPT, Muse, GLM, GPT 5.6 Terra, Nemotron 3.5 Lightning) and 8 FAIL (4 image generators + Qwen 3.7 Plus, DeepSeek, Manus, Qwen3.8 Omni Flash).
 
-| Judge | Agrees with Cláudio | Rate | False PASS (Cláudio FAIL) | False FAIL (Cláudio PASS) |
+| Judge | Agrees with Claudio | Rate | False PASS (Claudio FAIL) | False FAIL (Claudio PASS) |
 |---|---|---|---|---|
-| Rubric, Peter (not blind to Cláudio's verdicts) | 15/15 | 100% | 0: - | 0: - |
+| Rubric, Peter (not blind to Claudio's verdicts) | 15/15 | 100% | 0: - | 0: - |
 | David, stage 2 own verdict (both panels) | 9/15 | 60% | 6: img01 nanobanana-2.1, img03 deepseek-v4.1, img05 manus-2.0-lite, img09 chatgpt-images-2.5, img11 grok-imagine-2.0, img13 qwen-3.7-plus | 0: - |
 | David, stage 2 numbers run through my verdict rule | 8/15 | 53% | 7: img01 nanobanana-2.1, img03 deepseek-v4.1, img04 qwen3.8-omni-flash, img05 manus-2.0-lite, img07 qwen-image-3.0, img09 chatgpt-images-2.5, img11 grok-imagine-2.0 | 0: - |
 | David, stage 1 only (both clarity=2, no clearly visible second face in either orientation) | 11/15 | 73% | 2: img03 deepseek-v4.1, img05 manus-2.0-lite | 2: img08 glm-5.3-max, img12 claude-sonnet-5.5-medium |
 
 Item-level agreement between David and my rubric scores (exact match of the 0-2 values): face clarity at 0° vs G1a 13/15; at 180° vs G1b 11/15; stage 2 left panel vs G1a 13/15; right panel vs G1b 9/15; CONTRAST vs G2 9/15; INTEGRATION (>0 vs >0) vs G1c 11/15.
 
-**Caveat on the rubric row:** I scored all 15 images knowing Cláudio's verdicts (Peter had them in context), so the 15/15 is not an independent check; it shows the rubric can be set up to reproduce his verdicts, not that it predicts them. David is the only blind judge here.
+**Caveat on the rubric row:** I scored all 15 images knowing Claudio's verdicts (Peter had them in context), so the 15/15 is not an independent check; it shows the rubric can be set up to reproduce his verdicts, not that it predicts them. David is the only blind judge here.
 
 ## 7. Notable divergences
 
-**David says PASS, Cláudio says FAIL (6 of 8 Cláudio FAILs were passed by David in stage 2):**
-- **img01 Nano Banana:** at 0° David saw one clear lady and no second face (agrees with Cláudio's "one head"); the rotated single image was read as "an upright older man plus an upside-down face". In the side-by-side stage 2 he described the right panel as a grim bearded old man and gave INTEGRATION 2. In the actual image the large face in the rotated reading is still the lady, upside down, and the old man is the tiny head in the ruff. This looks like the vision model describing the *expected* reversible-image reading rather than what is drawn (see the pre-description of call `p932` in [`david-evals/vision-describer-excerpts.md`](david-evals/vision-describer-excerpts.md): it explains the "illusion" feature by feature).
-- **img03 DeepSeek, img05 Manus:** Cláudio could not identify the rotated face (DeepSeek) or found the second face unclear (Manus). David reads a face at 180° in both (eyes, brows, beard, bow tie/hat as accessories) and gives clarity 2. His bar for "a face" is lower than Cláudio's: eyes plus brows on an oval are enough. He did notice the leftover strokes (second-face score 1 in both orientations of img03 and img05), but did not count them against the pass.
-- **img09 ChatGPT Images, img11 Grok Imagine:** in stage 1 David correctly saw two faces in each orientation (second-face score 2) and rated the 0° of img11 as weak (clarity 1). In stage 2 he nevertheless passed both with INTEGRATION 2, i.e. the two-heads-joined-at-the-collar design was accepted as "shared strokes". Stage 1 alone (D-solo) fails both, in line with Cláudio.
-- **img13 Qwen 3.7 Plus:** Cláudio: strange, failed. David passed it on the two-panel view but did flag BREAKS_RULES = yes (letters "M" and "W"); the rule-based reading of his numbers therefore fails it. At 0° he also read a "second, upside-down face in the forehead" built from the M, a diamond and arcs, and at 180° he gave clarity 1.
+**David says PASS, Claudio says FAIL (6 of 8 Claudio FAILs were passed by David in stage 2):**
+- **img01 Nano Banana:** at 0° David saw one clear lady and no second face (agrees with Claudio's "one head"); the rotated single image was read as "an upright older man plus an upside-down face". In the side-by-side stage 2 he described the right panel as a grim bearded old man and gave INTEGRATION 2. In the actual image the large face in the rotated reading is still the lady, upside down, and the old man is the tiny head in the ruff. This looks like the vision model describing the *expected* reversible-image reading rather than what is drawn (see the pre-description of call `p932` in [`david-evals/vision-describer-excerpts.md`](david-evals/vision-describer-excerpts.md): it explains the "illusion" feature by feature).
+- **img03 DeepSeek, img05 Manus:** Claudio could not identify the rotated face (DeepSeek) or found the second face unclear (Manus). David reads a face at 180° in both (eyes, brows, beard, bow tie/hat as accessories) and gives clarity 2. His bar for "a face" is lower than Claudio's: eyes plus brows on an oval are enough. He did notice the leftover strokes (second-face score 1 in both orientations of img03 and img05), but did not count them against the pass.
+- **img09 ChatGPT Images, img11 Grok Imagine:** in stage 1 David correctly saw two faces in each orientation (second-face score 2) and rated the 0° of img11 as weak (clarity 1). In stage 2 he nevertheless passed both with INTEGRATION 2, i.e. the two-heads-joined-at-the-collar design was accepted as "shared strokes". Stage 1 alone (D-solo) fails both, in line with Claudio.
+- **img13 Qwen 3.7 Plus:** Claudio: strange, failed. David passed it on the two-panel view but did flag BREAKS_RULES = yes (letters "M" and "W"); the rule-based reading of his numbers therefore fails it. At 0° he also read a "second, upside-down face in the forehead" built from the M, a diamond and arcs, and at 180° he gave clarity 1.
 
-**David says FAIL (stage 1 only) where Cláudio says PASS:** img08 GLM and img12 Claude. In both, David saw extra faces hidden inside the same figure (img12: "three readable faces" at 0° from the white highlight arcs in hair and beard; img08: second face 2 at 180°). This is the "B visible upright" ghosting failure from the prompt's failure table, and for img12 it is a real, if faint, leftover reading; Cláudio did not penalise it (he found the piece funny). Stage 2 passes both.
+**David says FAIL (stage 1 only) where Claudio says PASS:** img08 GLM and img12 Claude. In both, David saw extra faces hidden inside the same figure (img12: "three readable faces" at 0° from the white highlight arcs in hair and beard; img08: second face 2 at 180°). This is the "B visible upright" ghosting failure from the prompt's failure table, and for img12 it is a real, if faint, leftover reading; Claudio did not penalise it (he found the piece funny). Stage 2 passes both.
 
 **Agreement on FAIL:** img04 Omni Flash (David: weaker 180°, clarity 1, contrast 1, verdict FAIL, matching "no face rotated") and img07 Qwen Image (two stacked faces; clarity 1 in both orientations, second face 2 in both; verdict FAIL).
 
 **Misperceptions that matter for reading his answers:** for img07 David said the old man is "upside-down relative to the lady" at 0°; in the image both faces are upright at 0° and both inverted at 180°. At 180° he described an older woman above a younger woman. So his notion of which way up a face is can be wrong, which is exactly the thing this benchmark depends on.
 
-## 8. Summary statistics (15 images; 7 Cláudio PASS, 8 FAIL)
+## 8. Summary statistics (15 images; 7 Claudio PASS, 8 FAIL)
 
-- **Rubric (mine):** 15/15 agree with Cláudio, but see the caveat above (not blind).
+- **Rubric (mine):** 15/15 agree with Claudio, but see the caveat above (not blind).
 - **David, own stage 2 verdict:** 9/15 = 60%. He catches all 7 PASS (recall 100%) and 2 of 8 FAILs; 6 false PASSes, no false FAILs. He is a lenient judge when shown the two panels together.
 - **David, stage 2 numbers through my verdict rule:** 8/15 = 53% (his numeric scores are more generous than his verdict: img04 and img07 get INTEGRATION 2/1 and CONTRAST 1/2 yet FAIL).
-- **David, stage 1 only (per-orientation, independent sessions):** 11/15 = 73%. The independent single-orientation view is the better predictor of Cláudio's verdicts: the two stacked/segregated image-generator failures are caught (second face 2), but it flags img08 and img12 (false FAIL) and misses img03 and img05 (false PASS).
+- **David, stage 1 only (per-orientation, independent sessions):** 11/15 = 73%. The independent single-orientation view is the better predictor of Claudio's verdicts: the two stacked/segregated image-generator failures are caught (second face 2), but it flags img08 and img12 (false FAIL) and misses img03 and img05 (false PASS).
 - **Per-item agreement with my 0-2 scores:** 13/15 for clarity at 0°, 11/15 at 180° (the rotated reading is harder for him and for the vision model), 9/15 for contrast, 11/15 for integration (>0 vs 0).
-- **Face clarity he assigns:** at 0° he scores 13 of 15 images as a clear face (2); the exceptions are img07 and img11 (both image-generator stacked designs). At 180° the exceptions are img04, img07, img13 (weak or failed rotated reading, matching Cláudio's FAIL for img04 and img13).
+- **Face clarity he assigns:** at 0° he scores 13 of 15 images as a clear face (2); the exceptions are img07 and img11 (both image-generator stacked designs). At 180° the exceptions are img04, img07, img13 (weak or failed rotated reading, matching Claudio's FAIL for img04 and img13).
 - **Where his perception matches the designer's intent:** img02 (smiling man with a rocket hat → stern bearded man), img12 (cheerful wide-eyed grin → tired, sad, bearded face), img14 (smile under a cap → scowling bearded man), img06 (smirk → sad frown). These are the cases where the stage-1 descriptions at 0° and 180° differ in the intended way, without David having seen the other orientation.
-- **Mean of his OVERALL_FACE_QUALITY (0-5):** Cláudio PASS group 3.7 at 0° and 3.7 at 180°; Cláudio FAIL group 4.0 at 0° and 3.6 at 180°. At 0° it does not separate the groups (the FAIL group is even rated slightly higher); only the rotated reading differs slightly.
+- **Mean of his OVERALL_FACE_QUALITY (0-5):** Claudio PASS group 3.7 at 0° and 3.7 at 180°; Claudio FAIL group 4.0 at 0° and 3.6 at 180°. At 0° it does not separate the groups (the FAIL group is even rated slightly higher); only the rotated reading differs slightly.
 
 ## 9. Reading the evidence: limits
 
 1. **David is not looking at pixels.** His model is text-only; an auxiliary vision model describes each image and David reasons over that text (and over the answer of his own `vision_analyze` call, whose question he writes himself). Some "perceptions" are the vision model recognising a genre ("a classic ambiguous figure") and filling in the expected second reading. Stage 2 is especially exposed because the image was announced as "the same drawing upside down"; the pre-description of img01 (call `p932` in [`david-evals/vision-describer-excerpts.md`](david-evals/vision-describer-excerpts.md)) shows it inventing an old man in the rotated panel.
 2. The two-stage design: stage 1 is independent per orientation; stage 2 is not blind to the rotation relation.
 3. One call per cell, no repeats, no temperature control; judgments of one model with a persona, one prompt wording each.
-4. The rubric scores are mine, made with knowledge of Cláudio's verdicts; the 0-2 scale and the verdict rule are my operationalisation of prompt v5 section 7, not an official rubric of the repository (the repository says "no rubric").
+4. The rubric scores are mine, made with knowledge of Claudio's verdicts; the 0-2 scale and the verdict rule are my operationalisation of prompt v5 section 7, not an official rubric of the repository (the repository says "no rubric").
 5. Image generators were given a different (plain) prompt from the SVG models, so G3 is not comparable and "pass" for them means passing Gates 1-2 only.
 6. The 15 images have the same names/files as in `baselines/`; the rasters are not square, which could hint to David that those are not SVG-style drawings (he was never told the origin).
 

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Allowlist-based parsing, auditing and sanitizing of untrusted SVG (model output).
 
 Model-written SVG is untrusted input. Nothing in this repository renders it before it has passed

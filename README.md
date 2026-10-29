@@ -152,7 +152,7 @@ Per-round details, previews, raw outputs and costs: [`rounds/round-01`](rounds/r
 <a id="baselines"></a>
 ## Baselines: image generators and more text models
 
-After round 4, Cláudio ran **15 comparison runs** outside the rounds: four raster image generators with a plain prompt (all four failed: two faces placed side by side or stacked, never one drawing read two ways), and eleven text models with prompt v5 (seven passed). Every image was also judged **blind, in both orientations**, by David (Peter's Hermes agent), and scored by Peter Weyland (Cláudio's Grok Bot assistant) with a 0-2 version of the prompt's own gates. See [`baselines/`](baselines/README.md) (table of all 15) and [`baselines/JUDGE-COMPARISON.md`](baselines/JUDGE-COMPARISON.md) (the comparison). **Read the caveats first:** David is text-only and works from an auxiliary vision describer that sometimes invents the expected second face; stage 2 is not fully blind to the rotation; one call per cell; the 0-2 rubric is the assistant's own operationalisation and was scored non-blind (its 15/15 agreement is not independent); GLM 5.3 Max iterated about nine renders (not one-shot).
+After round 4, Claudio ran **15 comparison runs** outside the rounds: four raster image generators with a plain prompt (all four failed: two faces placed side by side or stacked, never one drawing read two ways), and eleven text models with prompt v5 (seven passed). Every image was also judged **blind, in both orientations**, by David (Peter's Hermes agent), and scored by Peter Weyland (Claudio's Grok Bot assistant) with a 0-2 version of the prompt's own gates. See [`baselines/`](baselines/README.md) (table of all 15) and [`baselines/JUDGE-COMPARISON.md`](baselines/JUDGE-COMPARISON.md) (the comparison). **Read the caveats first:** David is text-only and works from an auxiliary vision describer that sometimes invents the expected second face; stage 2 is not fully blind to the rotation; one call per cell; the 0-2 rubric is the assistant's own operationalisation and was scored non-blind (its 15/15 agreement is not independent); GLM 5.3 Max iterated about nine renders (not one-shot).
 
 ## Models, settings and costs
 
@@ -306,11 +306,11 @@ The verified bibliography (with what was checked for each entry) is in [`docs/re
 
 ## How to cite
 
-Cláudio Drews (2026). *Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models* (paper version 2.0, rounds 0–3). To cite the repository itself (version 2.1.0, with prompts v1–v6, round 4, the hardened scripts and tests), use the top-level fields of [`CITATION.cff`](CITATION.cff); the paper has its own entry there (`preferred-citation`). The repository version and the paper version are different things; GitHub shows a "Cite this repository" button once the file is published.
+Claudio Drews (2026). *Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models* (paper version 2.0, rounds 0–3). To cite the repository itself (version 2.1.0, with prompts v1–v6, round 4, the hardened scripts and tests), use the top-level fields of [`CITATION.cff`](CITATION.cff); the paper has its own entry there (`preferred-citation`). The repository version and the paper version are different things; GitHub shows a "Cite this repository" button once the file is published.
 
 ## License
 
-Copyright (c) 2026 Cláudio Drews.
+Copyright (c) 2026 Claudio Drews.
 
 - **Code** (`scripts/`, `tests/`): MIT, see [`LICENSE`](LICENSE).
 - **Content** (paper, docs, prompts, evaluations, logs, SVGs, raw outputs, previews): CC BY 4.0, see [`LICENSE-CONTENT`](LICENSE-CONTENT).

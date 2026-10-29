@@ -1,6 +1,6 @@
 # Round 3: prompt v5, human-evaluated
 
-Evaluator: the benchmark's author (Cláudio Drews). Date: 2026-10-29.
+Evaluator: the benchmark's author (Claudio Drews). Date: 2026-10-29.
 
 Prompt v5 was rebuilt from v3 with reversibility as the absolute priority, a staged workflow (geometry, rotation check, style), a light event requirement and three short art cues.
 

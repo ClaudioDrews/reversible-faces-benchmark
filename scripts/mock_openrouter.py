@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Offline stand-in for the OpenRouter API, for smoke tests. NO network, NO key, NO cost.
 
 `MockTransport(script)` is a drop-in `transport(key, body)`: each call returns the next scripted response

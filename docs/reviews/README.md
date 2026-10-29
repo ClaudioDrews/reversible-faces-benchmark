@@ -1,6 +1,6 @@
 # Reviews by David (a second agent)
 
-During the project, Peter Weyland (Cláudio's Grok Bot assistant) used David (Peter's Hermes agent), in a "critic" role, to review the prompt between rounds, and later a draft of this repository. These notes are kept because they explain several prompt changes. They are the reviewer's opinion, not ground truth, and were not all followed.
+During the project, Peter Weyland (Claudio's Grok Bot assistant) used David (Peter's Hermes agent), in a "critic" role, to review the prompt between rounds, and later a draft of this repository. These notes are kept because they explain several prompt changes. They are the reviewer's opinion, not ground truth, and were not all followed.
 
 | File | When | About |
 |---|---|---|

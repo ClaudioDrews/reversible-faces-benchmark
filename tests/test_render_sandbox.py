@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Rendering is sandboxed. Skipped when bubblewrap or Chrome is not installed."""
 import os
 import shutil

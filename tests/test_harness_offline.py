@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Offline smoke tests of both runners with a scripted fake API. No network, no key, NO COST."""
 import json
 import os

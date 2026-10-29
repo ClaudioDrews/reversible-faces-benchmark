@@ -1,6 +1,6 @@
 # Paper
 
-**`reversible-faces-benchmark-paper.md`** is the accompanying paper for this repository: *Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models* (Cláudio Drews, version 2.0, 29 October 2026).
+**`reversible-faces-benchmark-paper.md`** is the accompanying paper for this repository: *Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models* (Claudio Drews, version 2.0, 29 October 2026).
 
 ## Status
 

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """Shared test helpers (no third-party test framework needed: `python -m unittest discover -s tests`)."""
 import shutil
 import sys

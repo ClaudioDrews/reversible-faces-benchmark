@@ -1,6 +1,6 @@
 # Round 4: prompt v6, tool-enabled, human-evaluated
 
-Evaluator: the benchmark's author (Cláudio Drews). Date: 2026-10-29.
+Evaluator: the benchmark's author (Claudio Drews). Date: 2026-10-29.
 
 Prompt v6 is prompt v5 with the same task and the same priority order (reversibility first; contrast; light touches), but the models could **run code and look at their own drawing** through a tool loop: a sandboxed Python tool and a render tool that shows the SVG upright (A) and rotated by 180° (B), with text diagnostics. At most 5 renders. See [`SETUP.md`](SETUP.md) for the harness, the limits and the differences from v5 (several things changed besides the tools).
 

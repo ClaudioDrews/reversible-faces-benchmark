@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2026 Cláudio Drews
+# Copyright (c) 2026 Claudio Drews
 """The validator: valid fixtures pass; every invalid fixture fails for the expected reason, including the three
 cases of the external pre-publication review (external <use href>, 12x23 dimensions, SVG animation)."""
 import json
