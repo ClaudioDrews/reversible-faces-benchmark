@@ -2,7 +2,7 @@
 
 This page states the geometry behind the prompt kit in compact mathematical form. The full discussion, with the worked check, is in section 4 of the [paper](../paper/reversible-faces-benchmark-paper.md). Plain-language version: [`how-it-works.md`](how-it-works.md). Terms: [`glossary.md`](glossary.md).
 
-**Status of everything below.** The half-turn facts are exact. The canon, the tolerance (about 30 px) and the dictionary pairs are **design heuristics** for a model that cannot see its drawing: not measured, not claimed as facts about Whistler, not validated against human recognition. None of the quantities in sections 3–6 was computed in the three rounds; [`scripts/validate_svg.py`](../scripts/validate_svg.py) checks the file contract only.
+**Status of everything below.** The half-turn facts are exact. The canon, the tolerance (about 30 px) and the dictionary pairs are **design heuristics** for a model that cannot see its drawing: not measured, not claimed as facts about Whistler, not validated against human recognition. None of the quantities in sections 3–5 was computed in any round. The symmetry number ρ of section 6 was computed only by the round-4 harness, as an advisory number shown to the models (rounds 0–3 did not compute it). [`scripts/validate_svg.py`](../scripts/validate_svg.py) checks the file contract only (structure and safety) and never judges the drawing.
 
 Notation: page 1000 × 1000, center C = (500, 500), R the half-turn, I a drawing.
 
@@ -45,9 +45,9 @@ For equal weights s* = (a + R(b)) / 2, which also minimizes the worst deviation 
 
 One outline must contain both anatomies. For silhouettes that are star-shaped about C, with radial functions r_A(φ) and r_B(φ + π) (B's radius seen through the half-turn), an inclusive envelope is r₀(φ) = max{r_A(φ), r_B(φ + π)}. Smoothing must not cut into either face. r_S = max{K ∗ r₀, r₀} (K an averaging kernel) preserves containment: it fills valleys and keeps peaks, so it guarantees containment, not smoothness at peaks. The prompt says it in words: "the wider of the two at each height ... round it, but never cut it inside either face".
 
-## 6. A symmetry diagnostic (not used)
+## 6. A symmetry diagnostic (round 4 only, advisory)
 
-ρ(I) = ‖I − R·I‖ / ‖I‖, in [0, 2]. ρ = 0 means rotational symmetry. A high ρ does not prove two faces and a low ρ does not prove failure; resolution, anti-aliasing and background would have to be fixed before comparing values. It was not computed in any round.
+ρ(I) = ‖I − R·I‖ / ‖I‖, in [0, 2]. ρ = 0 means rotational symmetry. A high ρ does not prove two faces and a low ρ does not prove failure; resolution, anti-aliasing and background would have to be fixed before comparing values. It was not computed in rounds 0–3. The round-4 harness computes it on a 200 px grayscale render of the model's own SVG and shows it to the model as a one-sided alarm (a warning when ρ is below 0.15), not as a score; see [`../rounds/round-04/SETUP.md`](../rounds/round-04/SETUP.md) and `scripts/perceptual.py`. No result is judged by it.
 
 ## 7. Canon and dictionary in page coordinates
 

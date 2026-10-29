@@ -39,7 +39,7 @@ Only the prompt text (`prompts/`). In rounds 0–3 the models had no tools: they
 
 ## Round 4: the tool-enabled condition
 
-Round 4 (prompt v6, after the paper) is the exception, and is a **single-attempt tool-augmented run** (see the table above), not a one-shot run: the model may call two tools in a loop run by [`scripts/run_models_v6.py`](../scripts/run_models_v6.py): `run_python` (Python in a sandbox with no network) and `render_svg` (Chrome renders the SVG upright and rotated by 180°; the image and text diagnostics come back; models that accept images see it). Limits: 5 renders, 12 tool calls, 16 turns, and an approximate operational cost cap of US$0.25 per model. The turn bound is `MAX_TURNS + 2 = 18` API calls: the 2 extra are the **recovery turns** (a forced-delivery turn after a delivery notice, and one re-ask when a reply has no SVG). Because every tool turn uses at least one of the 12 tool calls, the observed maximum is 14 calls (12 tool turns + 2 recovery turns); round 4's runs used 10–12. The cost cap is checked with a defensive estimate before each call and with the provider-reported cost after it; it is **not a guarantee** (details in [`../scripts/run_models_v6.py`](../scripts/run_models_v6.py) and [`reproduction.md`](reproduction.md)). The judging is unchanged (a human, informal, no rubric). Everything about it, including the differences from prompt v5 and the MiniMax re-run, is in [`../rounds/round-04/SETUP.md`](../rounds/round-04/SETUP.md). It is **not** a controlled comparison with round 3.
+Round 4 (prompt v6, after the paper) is the exception, and is a **single-attempt tool-augmented run** (see the table above), not a one-shot run: the model may call two tools in a loop run by [`scripts/run_models_v6.py`](../scripts/run_models_v6.py): `run_python` (Python in a sandbox with no network) and `render_svg` (Chrome renders the SVG upright and rotated by 180°; the image and text diagnostics come back; models that accept images see it). Limits: 5 renders, 12 tool calls, 16 turns, and an approximate operational cost cap of US$0.25 per model. The turn bound is `MAX_TURNS + 2 = 18` API calls: the 2 extra are the **recovery turns** (a forced-delivery turn after a delivery notice, and one re-ask when a reply has no SVG). Because every tool turn uses at least one of the 12 tool calls, the observed maximum is 14 calls (12 tool turns + 2 recovery turns); round 4's runs used 10–12. The cost cap is an approximate operational limit and **not a guarantee**: the round-4 harness checked the provider-reported cost after each call, and the current (hardened) harness also estimates the worst case before each call (details in [`../scripts/run_models_v6.py`](../scripts/run_models_v6.py) and [`reproduction.md`](reproduction.md)). The judging is unchanged (a human, informal, no rubric). Everything about it, including the differences from prompt v5 and the MiniMax re-run, is in [`../rounds/round-04/SETUP.md`](../rounds/round-04/SETUP.md). It is **not** a controlled comparison with round 3.
 
 ## File contract
 
@@ -54,9 +54,21 @@ Round 4 (prompt v6, after the paper) is the exception, and is a **single-attempt
 - Recorded per run: prompt and completion tokens, cost reported by the provider, finish reason, raw answer, reasoning trace (when returned), the extracted SVG, validity of the XML.
 - Costs are the provider's numbers; failed attempts that were billed are counted separately from delivered runs.
 
+## What a result means: capability, reliability, efficiency
+
+A verdict on one output answers only the first of three different questions; do not read it as a single "ability" score.
+
+| Dimension | Question | Status in this repository |
+|---|---|---|
+| **Capability** | Can the model build a reversible figure? | One delivered output per model and condition can show that it can, under that prompt and setting. |
+| **Reliability** | How often, under equivalent conditions? | Not measured: one run per model per prompt. |
+| **Efficiency** | How many tokens, calls, renders and dollars? | Recorded per run, but settings differ between models and rounds. |
+
+Two consequences. First, a run that exhausts its token budget while verifying (DeepSeek with reasoning on, round 3) is a **task-completion failure under that inference regime**, not evidence of geometric incapacity; the same model delivered an identifiable result once reasoning was disabled. Second, the cost budget in the round-4 harness (US$0.25 per model) is an **operational limit, not a hard financial limit**: billed-but-unreported failed requests and price differences can exceed it, so reported totals are lower bounds. Also note that **round 4 ran before the renderer hardening** (harness of commit `6747499`); see [`security.md`](security.md) and [`reproduction.md`](reproduction.md). More in [`threats-to-validity.md`](threats-to-validity.md).
+
 ## Limits of the method
 
-See [`threats-to-validity.md`](threats-to-validity.md): one evaluator who is also the author, informal verdicts, three models, one run each, uneven settings in rounds 3 and 4.
+See [`threats-to-validity.md`](threats-to-validity.md): one evaluator who is also the author, informal verdicts, three models, one run each, uneven settings in rounds 3 and 4, and (for the baselines) a text-only judge agent working from a vision describer.
 
 ## Rounds and evaluation
 

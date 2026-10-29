@@ -1,322 +1,369 @@
 # Reversible Faces Benchmark
 
-A small benchmark that asks an LLM to draw **one SVG that shows two different faces: one when you look at it upright, and a different one when you turn it upside down.** This is the trick behind Rex Whistler's *reversible faces* in the book *OHO! Certain Two-Faced Individuals* (1946).
+**Evaluating geometric consistency, perceptual ambiguity, and semantic composition in generative AI.**
 
-The drawing must also carry a **joke about a recent technology / AI event**, told only through the two faces. There is no caption and no text in the image. In the baseline protocol (rounds 0–3) the model is **one-shot without tools**: one prompt, one response, no follow-up; a human then looks at the result (turning the phone in their hand). Round 4 is a different protocol, a **single-attempt tool-augmented run** (see [Protocol wording](#protocol-wording)). Everyone uses a *single initial prompt*: no person ever answers the model.
+An experimental framework, with reproducible offline tooling and archived artifacts, for testing whether language models can synthesize **a single vector drawing that supports two distinct facial interpretations under a 180° rotation**. Inspired by the reversible caricatures of Rex Whistler, the benchmark combines geometric constraint satisfaction, programmatic drawing, perceptual recognition and visual communication.
 
-<p align="center"><img src="assets/previews/round-03__minimax-m3.1-flash_prompt-v5.png" alt="Round 3 example: MiniMax output, upright and rotated 180 degrees" width="720"></p>
-<p align="center"><em>Round 3 output from one of the tested models (MiniMax, prompt v5). Left: as drawn. Right: the same file rotated 180°. Previews are for illustration only; the benchmark is judged on the SVG itself.</em></p>
+<p align="center">
+  <img src="assets/previews/round-03__minimax-m3.1-flash_prompt-v5.png" width="760" alt="A model-generated reversible SVG, shown upright and rotated by 180 degrees">
+</p>
+<p align="center"><em>One SVG evaluated in two orientations (MiniMax, prompt v5, round 3). The right-hand image is obtained solely by rotating the left-hand one by 180°. Previews are illustrations; the benchmark is judged on the SVG itself.</em></p>
 
-This repository contains the full story so far: the task design, every prompt version (v1–v6), the scripts, all generated SVGs, raw model responses, costs, and the human evaluations from four rounds (plus an unevaluated pilot, round 0), including a round that **made things worse** and a **tool-enabled round** (round 4, after the paper), and what we learned from them.
+**Research status:** exploratory benchmark · four evaluated rounds (rounds 1–4, plus an unevaluated pilot) · three primary models · fifteen additional comparison runs · open experimental artifacts and a Python harness.
 
-> **Status:** early research / work in progress. Four evaluated rounds (the paper describes rounds 0–3; round 4 came after it), three cheap models, **one human evaluator who is also the author of the benchmark**, one run per model per prompt. There is no scoring scale: verdicts are qualitative. Treat the results as design notes rather than a leaderboard.
->
-> **Heads-up:** prompts v1–v5 contain short text descriptions of two Whistler drawings that were drafted from public images and **never verified** (each prompt says so; prompt v6 removed them). They are kept verbatim because the models saw them, **including the literal production note "[PLACEHOLDER — Cláudio to add and verify.]" and the assertion that the drawings are "public domain"**, which is itself unverified. The events named in the rounds are whatever each model declared; they were **not fact-checked** by this repository.
+[Paper](paper/reversible-faces-benchmark-paper.md) · [Methodology](docs/methodology.md) · [Results](#experimental-results) · [Geometry](docs/geometry.md) · [Reproduction](docs/reproduction.md) · [Documentation map](docs/README.md)
 
-## Abstract
-
-The Reversible Faces Benchmark (RFB) asks a language model to write **one SVG file that shows one face when viewed upright and a different face when rotated by 180°**, in the tradition of Rex Whistler's reversible faces. The drawing must also carry a joke about a recent technology or AI event, told only through the two faces, with no text. The model receives one prompt, makes one attempt, and a human judges the result by turning the page. The task combines three abilities that models usually exercise separately: spatial reasoning under a rotation that cannot be checked by eye while writing code, drawing quality, and humor.
-
-*(The paragraph and the contribution list below summarize the paper, which covers rounds 0–3 only; round 4 is described in the sections that follow.)*
-
-This repository gives a formal description of the geometry (a half-turn acting as an involution, a feasible set defined by two recognition regions, and a closed-form rule for compromise strokes), the one-shot protocol and file contract, and the results of three human-evaluated rounds with three models. The main empirical finding is negative and instructive: **in the single run per model, adding event and art instructions (prompt v4, with several changes at once) coincided with all three models losing the 180° reading**, while a rebuilt prompt with reversibility as the absolute priority and a staged workflow (v5) restored identifiable faces in both orientations for all three (DeepSeek ran with reasoning disabled in that round and is not comparable with the other two). The evidence is weak (single author-evaluator, three models, one run each, no repeats) and is presented as such.
-
-**Contributions.** (i) A formal description of reversibility and of the construction rules used in the prompt; (ii) a one-shot protocol and file contract; (iii) three pilot rounds, including one that made things worse, with the lessons that followed; (iv) an explicit list of threats to validity and of experiments needed before any comparative claim.
-
-Full text: [`paper/reversible-faces-benchmark-paper.md`](paper/reversible-faces-benchmark-paper.md) (version 2.0, 29 October 2026). To cite: see [How to cite](#how-to-cite).
+> **Not a leaderboard.** The main study has one human evaluator, who is also the benchmark's author, and one evaluated output per model per prompt. There is no validated scoring scale and no statistical inference. Read the results as observations that motivate controlled experiments ([Interpretation and limitations](#interpretation-and-limitations)).
 
 ---
 
 ## Contents
 
-- [Abstract](#abstract)
-- [Why this is hard](#why-this-is-hard)
-- [What is being tested](#what-is-being-tested)
-- [Design decisions](#design-decisions)
-- [The geometry in one page](#the-geometry-in-one-page)
-- [The rounds](#the-rounds)
-- [Baselines: image generators and more text models](#baselines)
-- [Models, settings and costs](#models-settings-and-costs)
+- [Problem definition](#problem-definition)
+- [Why this is a difficult generation task](#why-this-is-a-difficult-generation-task)
+- [Experimental design](#experimental-design)
+- [Experimental results](#experimental-results)
+- [Interpretation and limitations](#interpretation-and-limitations)
+- [Geometric formulation](#geometric-formulation)
+- [Implementation](#implementation)
+- [Reproducibility](#reproducibility)
+- [Security](#security)
+- [Running the benchmark](#running-the-benchmark)
+- [Open research questions](#open-research-questions)
+- [Research context](#research-context)
 - [Repository layout](#repository-layout)
-- [How to run it](#how-to-run-it)
-- [Security, tests and reproducibility](#security-tests-and-reproducibility)
-- [Limitations and honest notes](#limitations-and-honest-notes)
-- [Future work](#future-work)
-- [References and related work](#references-and-related-work)
-- [How to cite](#how-to-cite)
-- [License](#license)
+- [Citation and licensing](#citation-and-licensing)
 
 ---
 
-## Why this is hard
+## Problem definition
 
-A reversible face is **one set of strokes read in two orientations**. A curve that is a smile in the upright face must, after a 180° turn, be something meaningful in the other face (a hat band, for example). The eyes can be shared, but everything around them is reinterpreted: the hat of one face becomes the beard of the other, the chin becomes the crown, left and right swap.
+The task is to generate a single image $I$ satisfying two perceptual constraints:
 
-The author's informal observation (not a measured result, and diffusion models were not tested in this repository) is that both LLMs writing SVG and diffusion image models rarely manage a convincing Whistler-style reversible caricature on their own. The task combines three things that models usually do separately:
+$$P_A(I) \geq \tau_A \qquad\text{and}\qquad P_B(R(I)) \geq \tau_B$$
 
-1. **Spatial reasoning under a rotation** that cannot be checked by eye while writing code.
-2. **Drawing quality**: line, caricature, character, composition.
-3. **Humor**: a witty point expressed through the drawing alone.
+where:
 
-## What is being tested
+- $I$ is a vector drawing;
+- $R$ is a rotation by 180°;
+- $P_A$ and $P_B$ represent the recognizability of two distinct faces, A and B;
+- $\tau_A$ and $\tau_B$ are conceptual recognition thresholds.
 
-The benchmark looks at three abilities, plus a requirement tying the joke to the real world:
+Both interpretations must arise from the **same drawing**. Overlaying two independently constructed faces is not sufficient.
 
-| # | Ability | What a human looks for |
-|---|---|---|
-| 1 | **A convincing two-face image** | Do both orientations read as faces, and are they clearly different faces? Is it really one set of strokes, not two drawings overlaid? |
-| 2 | **Artistic quality** | Does it look like a confident caricature (line, character, composition) and not a diagram? |
-| 3 | **Humor through the technique** | Does the *contrast between the two faces* tell a joke, with no text? |
-| + | **Current events** | Is the joke about a specific, recognizable recent technology/AI event, used in an impactful way? |
+The prompts used in the rounds additionally require artistic coherence and a visual joke referring to a recent technology or AI event, communicated through the relationship between the two orientations and without any text.
 
-The prompt gives the model what it needs to *understand the task* and to *plan a sensible strategy* (the geometry, a workflow, a failure catalog). The benchmark measures what the model does with that help, in one attempt.
+The central problem is therefore **not rotational symmetry**. It is **dual-interpretation synthesis under a fixed geometric transformation**. The desired output must belong to the intersection of two perceptual feasibility regions:
 
-## Design decisions
+$$I \in C_A \cap R[C_B]$$
 
-<a id="protocol-wording"></a>**Protocol wording: three terms, not interchangeable.**
-- **Single initial prompt**: the only message written by a person is the prompt; nobody answers questions or gives feedback (all rounds).
-- **One-shot without tools** (rounds 0–3): a single initial prompt, one request and one response per model, one SVG. The models could not run code, render the SVG or search; they could only check their output by reasoning, using the symbolic check the prompt describes.
-- **Single-attempt tool-augmented run** (round 4): a single initial prompt, then a loop in which the model may run sandboxed code and render its own SVG upright and rotated by 180°; the **harness, not a person**, returns the tool results. One run per model, many API calls, **not one-shot**. A rerun (MiniMax in round 4) is a selection and is reported as one.
+Here $C_A$ and $C_B$ denote the sets of drawings recognizable as the respective faces, and $R[C_B]$ is the image of $C_B$ under the half-turn. These regions are conceptual, not computationally characterized. Recognition is evaluated by a human.
 
-Details and rules: [`docs/methodology.md`](docs/methodology.md).
+## Why this is a difficult generation task
 
-**The human is the judge, with no rubric.** Anyone looking at the result can instinctively tell whether the two faces work, whether it is well drawn, and whether it is funny. We deliberately dropped the scoring rubric, the scoring gates, the anonymized evaluator sheets and the statistical protocol that appeared in earlier design drafts (see [`docs/design-history/`](docs/design-history/), which is **superseded**: it describes a heavier design than the one run). The only "criteria" that exist are the **self-check list inside the prompt**, which the *model* uses to judge its own work before delivering.
+Rotation is mathematically trivial:
 
-**Why SVG (for v1).** The first version targets LLMs, which can write text but not paint pixels. SVG is plain text, valid in any browser, inspectable, rotatable with one attribute, and cheap to produce and store. It also forces explicit geometry: the model has to reason about coordinates and rotation, which is the heart of the task. (A later version could target image/diffusion models.)
+$$R(x, y) = (1000 - x,\; 1000 - y)$$
 
-**Task variant.** Prompt v5 requires **two distinct characters** who differ in expression, not only in accessories. The variant "one person with two expressions" was left out of this version; it is probably harder and is listed under future work.
+in the 1000 × 1000 coordinate system of the contract.
 
-**File contract.** One standalone SVG: `xmlns`, `viewBox="0 0 1000 1000"`, `width`/`height`, valid XML, no text, no external references, no gradients/filters/lighting (a directional light flips with the rotation and breaks the illusion), at most 300 KB.
+Constructing a drawing that keeps meaningful facial structure in both orientations is not. The two interpretations impose coupled constraints on the same geometry. Typical design correspondences (heuristics, not universal rules):
 
-**Self-check list inside the prompt.** In prompt v5 the model is asked to pass three gates in this order: **Gate 1** reversibility (both readings are clear faces), **Gate 2** contrast (A and B look different), **Gate 3** light touches (one simple event prop per face, varied line weight, nobody demeaned), and to delete any touch that endangers a reading. Common failures are listed with fixes (see the prompts). Earlier prompt versions used different checklists (see [`docs/prompt-evolution.md`](docs/prompt-evolution.md)).
-
-## The geometry in one page
-
-All coordinates use a 1000 × 1000 page with the center C = (500, 500). Turning the page by 180° sends every point to
-
-```
-R(p) = 2C − p      i.e.      (x, y)  →  (1000 − x, 1000 − y)
-```
-
-In SVG: `transform="rotate(180 500 500)"` (not a mirror: `scale(-1,1)` is a different trick).
-
-What the half-turn does (a rotation, not a mirror): straight lines keep their direction; a cup ∪ becomes a dome ∩; **left and right swap**; the vertical order flips.
-
-The prompt gives the model a planning scaffold (explicitly "a design tool, not a law"):
-
-- **Shared eyes** near (415, 500) and (585, 500): eyes stay eyes; the lids, brows and eye-bags change meaning and therefore the mood.
-- A **canon** of vertical positions for a head about 600 px tall (hat dome ≈ y 320, brim ≈ 350, brow ≈ 452, eyes 500, nose tip ≈ 650, mouth ≈ 680, chin ≈ 800, collar ≈ 890, ...).
-- A **dual-function dictionary**: a feature of face A at page height *y_A* is the same stroke as a feature of face B at height *y_B* **in B's own frame**, where *y_A = 1000 − y_B*. (The shipped prompts word this more loosely as "a feature of B at height −y (as seen on the page)"; the docs and the paper use the precise statement. See [`docs/geometry.md`](docs/geometry.md).) For example: A's smile (∪ at y ≈ 680) = B's hat band (dome at y ≈ 320); A's hat/hair = B's beard; A's brows = B's eye-bags; A's hat brim or fringe = B's nose; A's bow tie = B's pompom.
-- A **sum rule** (every exaggeration in A is paid by its partner in B; hats, hair, beards and collars absorb leftovers) and **compromise strokes** (a shared stroke sits at the average of where A wants it and where the rotated B wants it).
-- A tiny, deliberately **neutral mechanism example** (not a face) showing one stroke serving two roles and one B-only stroke in a rotated group.
-
-A rotationally symmetric figure (the same face twice) is a **failure mode**, not a success.
-
-More detail is in [`docs/how-it-works.md`](docs/how-it-works.md); the formal statement (involution and C₂, feasible set, even/odd parts, ε-ball condition ‖a − R(b)‖ ≤ 2ε, weighted compromise stroke, silhouette envelope, symmetry diagnostic ρ) is in [`docs/geometry.md`](docs/geometry.md); an annotated real output is in [`docs/worked-example.md`](docs/worked-example.md); the terms are in [`docs/glossary.md`](docs/glossary.md). The canon, the tolerance and the dictionary are design heuristics, and none of the formal quantities was computed in the rounds.
-
-## The rounds
-
-Round 0 was a pilot; the human-evaluated rounds are 1, 2, 3 and 4. Every round used the same three inexpensive models. Image strips below always show, from top to bottom: DeepSeek, GLM, MiniMax.
-
-| Round | Prompt | Human verdict (see each round's `EVALUATION.md`) |
-|---|---|---|
-| 0 (pilot, not evaluated) | v1 | — |
-| 1 | v2 (MiniMax), v3 (DeepSeek, GLM) | Effect OK on DeepSeek and MiniMax, weak on GLM; none has much artistic quality; two are mildly funny; none uses current events in an impactful way. |
-| 2 | v4 | "It got a lot worse. Now there is no image at 180° anymore." |
-| 3 | v5 | "In this third round all three models did better. All of them managed to make identifiable images in both orientations, and the artistic quality improved." |
-| 4 (after the paper) | v6, **tool-enabled** | "The three models managed to create the reversible images. The images are well made, interesting, but they do not convey a comic message." (translated from Portuguese) |
-
-### Lessons
-
-1. **Mechanics can be taught, to a degree.** Giving the model the rotation math, a dual-function dictionary and a skeleton-first workflow produced two-face drawings in round 1 that the evaluator found OK for two of three models. (That result did not hold when more instructions were added in round 2.)
-2. **Reversibility has to be the absolute priority.** Round 2 added a lot (a central, impactful event; heavy art direction: exaggeration, varied line weight, palette, composition, hatching, "would it look good framed?"). The models obeyed the art and event instructions and **lost the 180° reading in all three outputs**. More instructions pulled attention away from the hard geometric part.
-3. **Fix: go back, make it smaller, put it in stages.** Round 3's prompt started again from the round-1 prompt, stated an explicit priority order, and split the work into stages: (1) geometry only, (2) verify by rotating coordinates, (3) style only after that, with only three short art cues and a light version of the event requirement. All three models then produced identifiable faces in both orientations, and the evaluator judged the artistic quality *better than before* (a relative statement: in round 1 he had said none had much artistic quality, and the drawings are still simple).
-4. **Event use is still weak.** In round 3 the event is often only hinted at (a vague label, a small prop). Making the event central without destroying the illusion is the open problem.
-5. **Round 4: with tools, reversibility holds for all three, and humor becomes the open problem.** Prompt v6 (v5 plus a tool loop: a sandboxed Python tool and a render tool that shows the drawing upright and rotated by 180°, at most 5 renders) was run on the same three models. All three delivered reversible, well-made drawings. The evaluator found them interesting but **not comic**: none conveys a comic message. Caveats: prompt v6 changed several things besides the tools (the unverified Whistler descriptions and the placeholder were removed, the dictionary's frame wording was made precise, Stage 2 changed), so the tool effect cannot be separated from them; one run per model; DeepSeek ran without reasoning; and **MiniMax was re-run once** because its first run spent its whole first turn reasoning and never used a tool (the re-run, with a larger per-turn token limit, is the result reported; the first run is kept as an extra). See [`rounds/round-04/SETUP.md`](rounds/round-04/SETUP.md).
-6. **Models behave very differently under the same prompt.** DeepSeek went into endless verification loops with reasoning on in round 3 (four runs hit the token limit without delivering any SVG). It delivered only with reasoning turned off, so that result is not comparable with the others. MiniMax needed low effort to avoid token blowouts. GLM was the cheapest and the most consistent.
-
-Per-round details, previews, raw outputs and costs: [`rounds/round-01`](rounds/round-01), [`rounds/round-02`](rounds/round-02), [`rounds/round-03`](rounds/round-03), [`rounds/round-04`](rounds/round-04) (and the pilot in [`rounds/round-00-pilot`](rounds/round-00-pilot)). How the prompt evolved: [`docs/prompt-evolution.md`](docs/prompt-evolution.md).
-
-#### Round 1 (prompts v2/v3)
-<img src="assets/previews/round-01__all-models.png" alt="Round 1 results" width="640">
-
-#### Round 2 (prompt v4): the 180° face was lost
-<img src="assets/previews/round-02__all-models.png" alt="Round 2 results" width="640">
-
-#### Round 3 (prompt v5): both faces back
-<img src="assets/previews/round-03__all-models.png" alt="Round 3 results" width="640">
-
-#### Round 4 (prompt v6, with tools): reversible and well made, but not funny
-<img src="assets/previews/round-04__all-models.png" alt="Round 4 results" width="640">
-
-<a id="baselines"></a>
-## Baselines: image generators and more text models
-
-After round 4, Claudio ran **15 comparison runs** outside the rounds: four raster image generators with a plain prompt (all four failed: two faces placed side by side or stacked, never one drawing read two ways), and eleven text models with prompt v5 (seven passed). Every image was also judged **blind, in both orientations**, by David (Peter's Hermes agent), and scored by Peter Weyland (Claudio's Grok Bot assistant) with a 0-2 version of the prompt's own gates. See [`baselines/`](baselines/README.md) (table of all 15) and [`baselines/JUDGE-COMPARISON.md`](baselines/JUDGE-COMPARISON.md) (the comparison). **Read the caveats first:** David is text-only and works from an auxiliary vision describer that sometimes invents the expected second face; stage 2 is not fully blind to the rotation; one call per cell; the 0-2 rubric is the assistant's own operationalisation and was scored non-blind (its 15/15 agreement is not independent); GLM 5.3 Max iterated about nine renders (not one-shot).
-
-## Models, settings and costs
-
-All calls went through [OpenRouter](https://openrouter.ai). Rounds 0–3 were one-shot with **no tools** (the models could not run code, render or search), with the prompt as the only message. **Round 4 offered a tool loop** (code execution in a sandbox, and a render of the drawing upright and rotated by 180°, with at most 5 renders); the prompt was still the only message from a person.
-
-| Model (OpenRouter id) | Notes |
+| Feature at 0° | Possible interpretation at 180° |
 |---|---|
-| `deepseek/deepseek-v4.1-flash` | Overthinks with reasoning on; round 3 and round 4 results produced with reasoning disabled. |
-| `z-ai/glm-5.3-flash` | Cheapest; default reasoning effort (medium). |
-| `minimax/minimax-m3.1-flash` | Heavy reasoning; low effort used in rounds 2 (second attempt), 3 and 4 (in round 4 the first run, at 32000 tokens per turn, spent its first turn reasoning and never used a tool; the reported result is a re-run at 64000). |
+| Hair or hat | Beard |
+| Eyebrows | Under-eye wrinkles |
+| Hat brim | Nose |
+| Smile | Hatband |
+| Collar or bow tie | Hat ornament or pompom |
 
-Approximate cost of the delivered runs per round (USD, as reported by OpenRouter):
+A stroke optimized for one interpretation can destroy the other, and geometric alignment alone does not guarantee perceptual recognition. The task connects capabilities that are usually evaluated separately:
 
-| Round | Delivered runs | Everything incl. failed/truncated attempts |
+- **Geometric reasoning.** Keeping coordinates consistent across a global transformation.
+- **Constraint satisfaction.** Local changes must preserve the recognizability of both interpretations.
+- **Program synthesis.** The output is executable vector graphics (SVG code), not an image description.
+- **Perceptual modeling.** Anticipating how a human observer groups lines into facial features.
+- **Semantic composition.** Using the relationship between the two faces to communicate an idea.
+
+These requirements compete: more detail, artistic complexity or narrative specificity can interfere with geometric feasibility. Round 2 below is an example in this repository.
+
+## Experimental design
+
+The benchmark uses text-based language models that write SVG. SVG makes the geometry explicit and lets outputs be inspected, transformed, validated, rendered and archived without an opaque raster generation process.
+
+### Output contract
+
+The prompts ask each model to produce:
+
+- one standalone SVG document;
+- a `viewBox="0 0 1000 1000"` coordinate system, with `width="1000" height="1000"` (the runners add `xmlns`, `viewBox` and the size if a model leaves them out);
+- two distinct facial interpretations under a 180° rotation;
+- no visible text or captions;
+- no external references or executable content, and no gradients or filters;
+- a maximum file size of 300 KB.
+
+Validity of the file ([`scripts/validate_svg.py`](scripts/validate_svg.py)) and perceptual success (a human judgment) are evaluated separately. The validator never judges the drawing. The current validator enforces this contract exactly; the validator used when the rounds were run was weaker, which did not affect the results ([Threats to validity](docs/threats-to-validity.md#validator-historical-limits-current-capabilities-and-impact)).
+
+### Evaluation protocols
+
+The repository records two generation protocols. Do not pool or rank across them.
+
+| Protocol | Description | Rounds |
 |---|---|---|
-| 0 pilot (v1) | 0.075 | 0.075 |
-| 1 (v2/v3, evaluated outputs) | 0.057 | 0.080 (also v2 runs for DeepSeek/GLM that were not evaluated) |
-| 2 (v4) | 0.052 | 0.091 |
-| 3 (v5) | 0.030 | 0.194 (+ one timed-out request, cost not reported) |
-| 4 (v6, tools) | 0.113 | 0.139 (includes MiniMax's first run, which did not use the tools) |
+| **One-shot, no tools** | One prompt, one model response, no rendering or iterative feedback | 0–3 |
+| **Single-attempt, tool-augmented** | One initial prompt, then an autonomous loop of sandboxed code execution and rendering of the model's own SVG (upright and rotated), within fixed limits | 4 |
 
-The whole project so far cost roughly sixty cents in model calls. Exact per-run tokens and costs are in each round's `logs/` and `EVALUATION.md`.
+In the first protocol the model must reason about the drawing without seeing it. In the second it may generate code, inspect its render in both orientations and revise within the limits (5 renders, 12 tool calls, 16 turns, and an approximate cost cap of US$0.25 per model). No person gives feedback in either protocol; the harness returns the tool results.
+
+Round 4 is **not a controlled comparison of tool access alone**: prompt v6 and other conditions also changed, and the harness additionally showed the model an advisory symmetry number (ρ) and an element table, which the earlier rounds had no equivalent of. See [Methodology](docs/methodology.md) and the [round 4 setup](rounds/round-04/SETUP.md).
+
+### Judging
+
+The judge in the rounds is a human who opens the SVG, looks at it and turns it upside down. The evaluation is **not blind** to the generating model. There is no rubric: earlier rubric-based drafts are kept, marked as superseded, in [`docs/design-history/`](docs/design-history/). The only checklist is the self-check inside the prompt, which the *model* uses before delivering.
+
+## Experimental results
+
+The primary study evaluated three models, accessed through [OpenRouter](https://openrouter.ai):
+
+- `deepseek/deepseek-v4.1-flash`
+- `z-ai/glm-5.3-flash`
+- `minimax/minimax-m3.1-flash`
+
+Settings that matter when reading the results:
+
+| Model | Notes |
+|---|---|
+| `deepseek/deepseek-v4.1-flash` | With reasoning on it kept re-verifying its geometry until the token limit and delivered nothing in round 3; the round 3 and round 4 results were produced with reasoning disabled. |
+| `z-ai/glm-5.3-flash` | Default reasoning effort (medium); had the lowest delivered-run cost in every evaluated round. |
+| `minimax/minimax-m3.1-flash` | Heavy reasoning; low effort used in round 2 (second attempt), round 3 and round 4. The round 4 result is a re-run at 64000 tokens per turn. |
+
+The sequence investigates how prompt structure and tool availability affected the drawings. Verdicts below are the evaluator's qualitative words (see each round's `EVALUATION.md`), not success rates. The images in the strips show, from top to bottom: DeepSeek, GLM, MiniMax.
+
+| Round | Prompt | Protocol | Verdict |
+|---|---|---|---|
+| 0 (pilot) | v1 | one-shot | Not human-evaluated; used to improve the prompt |
+| 1 | v2 (MiniMax), v3 (DeepSeek, GLM) | one-shot | Effect OK for DeepSeek and MiniMax, somewhat bad for GLM; low artistic quality; two somewhat funny; no impactful use of the event |
+| 2 | v4 | one-shot | All three lost the 180° reading |
+| 3 | v5 | one-shot | Identifiable faces in both orientations for all three; artistic quality improved |
+| 4 | v6 | tool-augmented | Reversible and well made for all three; none conveys a comic message |
+
+### Round 1: initial feasibility
+
+Two of the three outputs were judged to show an acceptable reversible effect; artistic quality was limited. (The MiniMax output is from prompt v2, because its v3 run was interrupted.) In this setting the result suggests that explicit geometric instructions and feature correspondences can help a model build two readings; note that the prompt version differed between models in this round.
+
+<p align="center"><img src="assets/previews/round-01__all-models.png" width="640" alt="Round 1 results"></p>
+
+### Round 2: increased instruction complexity
+
+Prompt v4 made the event central and added heavy art direction. All three outputs lost the recognizable second face under rotation.
+
+<p align="center"><img src="assets/previews/round-02__all-models.png" width="640" alt="Round 2 results"></p>
+
+This suggests that extra aesthetic and semantic requirements can interfere with satisfying the primary geometric constraint. Because several prompt components changed at once, the experiment does not show which component caused the deterioration.
+
+### Round 3: geometric prioritization
+
+Prompt v5 was rebuilt around an explicit order of operations: establish reversible geometry; verify the correspondence under rotation by writing the rotated coordinates; add artistic detail only without compromising either reading. All three models produced drawings judged to contain identifiable faces in both orientations. DeepSeek ran with reasoning disabled in this round (with reasoning on it did not deliver an SVG), so its result is not comparable with the other two; MiniMax ran at low reasoning effort.
+
+<p align="center"><img src="assets/previews/round-03__all-models.png" width="640" alt="Round 3 results"></p>
+
+Decomposition and constraint prioritization look like promising strategies. Controlled ablations are needed to isolate their effects.
+
+### Round 4: tool-augmented generation
+
+Models received sandboxed Python execution and an SVG renderer that returned both orientations for inspection. All three produced drawings judged reversible and well made; **none was judged to convey a comic message**. MiniMax was re-run once (its first run spent its first turn reasoning and never used a tool) and the re-run is the reported result.
+
+<p align="center"><img src="assets/previews/round-04__all-models.png" width="640" alt="Round 4 results"></p>
+
+This points to an unresolved distinction between satisfying the geometric and perceptual constraints and building a meaningful relationship between the two interpretations. Round 4 was produced by the harness as it was before hardening ([Security](#security)).
+
+### Additional baselines
+
+After round 4, fifteen further comparison runs evaluated raster image generators and additional language models. Under the tested conditions:
+
+- four raster image generators (plain prompt, no benchmark scaffolding) were all judged by the author to have failed (for example two stacked faces or a head with a tiny second head in the collar), i.e. none was one drawing read two ways;
+- seven of eleven text-model outputs (benchmark prompt v5) were judged successful on the core reversible-face requirement.
+
+These are descriptive observations, **not controlled model rankings**: the raster generators and the text models received different prompts, one text-model run (GLM 5.3 Max) used iterative rendering, and some protocol details were not recorded. A second AI agent (text-only, working from descriptions written by an auxiliary vision model that sometimes invented the expected second face) judged every image in both orientations without being told the model or the author's verdict; its agreement with the author was 11/15 (single orientation) and 9/15 (side-by-side), and the assistant's own rubric scores, which agree 15/15, were not blind and are **not an independent check**. The comparison documents these limits. See [`baselines/`](baselines/README.md) and the [judge comparison](baselines/JUDGE-COMPARISON.md).
+
+### Costs
+
+All model calls in rounds 0–4 cost roughly sixty cents in total (provider-reported; failed and billed-but-unreported requests make this a lower bound). Per-run tokens and costs are in each round's `logs/` and `EVALUATION.md`.
+
+## Interpretation and limitations
+
+The experiments are exploratory.
+
+- The main study used **one human evaluator, who is also the benchmark author** (not blind to the generating model), and one evaluated output per model per prompt, apart from retries after technical failures; the one re-run that was selected is declared (MiniMax, round 4).
+- Whether the evaluator read each model's declared `EVENT:`/`TITLE:` lines before judging was not recorded.
+- Model settings differed between rounds (for example DeepSeek ran with reasoning disabled in rounds 3 and 4), and providers were not pinned.
+- There is **no validated scoring scale**, inter-rater reliability estimate or statistical inference.
+- Success on this task mixes capability, reliability and efficiency. A single output can show that a model *can* produce a reversible figure; it says nothing about how often, or at what token and cost budget. A run that exhausts its token budget while verifying (as DeepSeek did with reasoning on in round 3) is a task-completion failure under that inference regime, not evidence of geometric incapacity.
+- Automated judge experiments revealed further problems, such as vision descriptions that invented the expected second face.
+- Prompts v1–v5 contain short text descriptions of two Whistler drawings that were drafted from public images and never verified (prompt v6 removed them), plus a literal production note. They are kept verbatim because the models saw them. The events named in the rounds are whatever each model declared and were not fact-checked.
+
+The results should be read as observations motivating further experiments, not as general claims about model capabilities. Full list: [Threats to validity](docs/threats-to-validity.md).
+
+## Geometric formulation
+
+The half-turn $R$ is an involution,
+
+$$R^2 = \mathrm{id},$$
+
+and generates the cyclic group $C_2$. For a raster representation of the image, the parts that are even and odd under the half-turn are
+
+$$I_+ = \frac{I + R(I)}{2}, \qquad I_- = \frac{I - R(I)}{2},$$
+
+so that
+
+$$I = I_+ + I_-, \qquad R(I) = I_+ - I_-.$$
+
+This decomposition describes how the transformation acts on the image. It does not by itself separate the two semantic interpretations.
+
+### Shared-stroke construction
+
+Consider a stroke with target position $a$ in face A and target position $b$ in face B's own coordinate frame (on the page, B's target is $R(b)$). A shared stroke $s$ can be chosen by minimizing
+
+$$L(s) = w_A \lVert s - a \rVert^2 + w_B \lVert s - R(b) \rVert^2$$
+
+whose minimizer is the weighted compromise
+
+$$s^{*} = \frac{w_A\, a + w_B\, R(b)}{w_A + w_B}.$$
+
+For equal weights, $s^{*} = \dfrac{a + R(b)}{2}$. This is a construction heuristic for strokes that must satisfy two configurations. It does **not** guarantee semantic validity: a geometrically optimal compromise can be perceptually meaningless. The geometry of the transformation is exact; the geometry of recognition is perceptual. The repository uses these equations as a planning framework, not as a complete generative algorithm.
+
+Derivations, silhouette constraints, recognition regions and the symmetry diagnostic are in [Geometry](docs/geometry.md). A plain-language version is in [How it works](docs/how-it-works.md).
+
+## Implementation
+
+The repository contains the experimental data and the infrastructure to produce and inspect it. The scripts are the current (hardened, version 2.1.0) versions; round 4 itself was produced by an earlier harness (commit `6747499`) with the same prompts, tools and limits, but without the sandboxed renderer, the sanitizer and the pre-call cost estimate. The earlier code is available with `git show 6747499:scripts/run_models_v6.py`.
+
+| Component | Purpose |
+|---|---|
+| [`scripts/run_models.py`](scripts/run_models.py) | One-shot model execution (rounds 0–3 protocol) |
+| [`scripts/run_models_v6.py`](scripts/run_models_v6.py) | Tool-augmented generation loop (round 4 protocol) |
+| [`scripts/validate_svg.py`](scripts/validate_svg.py) | SVG file-contract and safety validation |
+| [`scripts/svg_safety.py`](scripts/svg_safety.py) | Safe parsing and allowlist sanitization |
+| [`scripts/safe_render.py`](scripts/safe_render.py) | Isolated browser rendering (Chrome inside bubblewrap) |
+| [`scripts/render_preview.py`](scripts/render_preview.py) | Upright and rotated previews |
+| [`scripts/perceptual.py`](scripts/perceptual.py) | Advisory image diagnostics (not validity) |
+| [`scripts/rfb_common.py`](scripts/rfb_common.py) | Cost estimate, structured API log, no-overwrite output directories |
+| [`scripts/mock_openrouter.py`](scripts/mock_openrouter.py) | Offline harness testing with a scripted fake API |
+| [`tests/`](tests/README.md) | Validation, security, harness and baseline tests |
+
+## Reproducibility
+
+Original prompts, SVGs, raw responses, reasoning traces where the provider returned them, execution logs and provider-reported costs are retained for every round. For round 4 the transcripts contain every model message, tool call and tool result; the intermediate render images are not stored.
+
+Model runs are **not** reproducible bit for bit: there are no seeds, providers and sampling configurations can change, model ids can be retired, and rendering can differ slightly across browsers. The offline parts (tests, validator, previews) are reproducible. Tested versions and limits: [Reproduction](docs/reproduction.md).
+
+The cost budget in the tool-augmented harness is an **operational limit, not a financial guarantee**: the round-4 harness stopped once the provider-reported cost reached the cap, and the current harness also estimates the worst case before each call; in both, a failed request that is billed and not reported can exceed the cap, so reported totals are lower bounds.
+
+## Security
+
+Model-generated SVG and Python code are **untrusted input**. The current implementation uses XML-safe parsing (`defusedxml`), allowlist sanitization, browser isolation through bubblewrap, restricted filesystem access and bounded execution. Rendering refuses to run without bubblewrap.
+
+The current hardened implementation **differs from the harness that produced round 4**: that harness (commit `6747499`) ran Chrome with `--no-sandbox` outside the sandbox and cleaned SVG with regular expressions. The delivered round-4 SVGs contain only plain drawing elements, so there is no sign that the results were affected, but equivalence with the current rendering path was assumed, not re-run; the exposure existed and is closed in the current code. The round-4 runs were not repeated. Details and residual risks: [Security](docs/security.md) and [Validator audit](docs/validator-audit.md).
+
+## Running the benchmark
+
+Requirements:
+
+- Python 3.9 or newer
+- the packages in [`requirements.txt`](requirements.txt)
+- an OpenRouter API key for model execution (not needed for the offline tests or `--mock`)
+- Chrome or Chromium and `bubblewrap` on Linux for safe SVG rendering (previews and round-4-style runs)
+
+```bash
+git clone https://github.com/ClaudioDrews/reversible-faces-benchmark.git
+cd reversible-faces-benchmark
+pip install -r requirements.txt
+```
+
+Run a one-shot experiment (the key is read from the environment, never from a file):
+
+```bash
+export OPENROUTER_API_KEY="your-api-key"
+python scripts/run_models.py runs/experiment-01 prompts/prompt-v5.md z-ai/glm-5.3-flash
+```
+
+Environment variables: `EFFORT` (default `medium`), `NOREASON=1`, `MAXTOK` (default 64000 for `run_models.py`, 32000 for `run_models_v6.py`), `STRIP_METADATA=1`, `COST_CAP_USD`. Per-round settings are in each `EVALUATION.md`; for example DeepSeek in round 3 used `NOREASON=1 MAXTOK=20000`, MiniMax `EFFORT=low`, and GLM the defaults. Both runners refuse to write into a non-empty output directory unless `--timestamped` or `--force` is given.
+
+Validate the output:
+
+```bash
+python scripts/validate_svg.py runs/experiment-01/*.svg
+```
+
+Run the offline test suite (no key, no network, no cost):
+
+```bash
+python -m unittest discover -s tests
+```
+
+Test either runner without API calls (scripted fake API):
+
+```bash
+python scripts/run_models.py --mock /tmp/rfb-smoke-oneshot prompts/prompt-v5.md z-ai/glm-5.3-flash
+python scripts/run_models_v6.py --mock /tmp/rfb-smoke prompts/prompt-v6.md z-ai/glm-5.3-flash
+```
+
+Optional side-by-side preview of one SVG (upright and rotated):
+
+```bash
+python scripts/render_preview.py runs/experiment-01/glm-5.3-flash.svg preview.png
+```
+
+The judgment itself is human: look at the drawing, rotate it and decide. Validate first, then look at the sandboxed preview from `render_preview.py`; do not open unvalidated model-written SVG in a personal browser (the previews and the harness never render it raw). For model-specific settings, costs, execution limits and rendering requirements, see [Reproduction](docs/reproduction.md).
+
+## Open research questions
+
+The current experiments motivate several questions (details and proposed protocols in [Future work](docs/future-work.md)):
+
+1. **Constraint interference.** How does added aesthetic or semantic complexity change the probability of satisfying a primary geometric constraint?
+2. **Planning and decomposition.** Does explicit geometric prioritization help independently of prompt length and the other instructions?
+3. **Visual feedback.** What is the effect of rendering and inspection on success rates, iteration counts and cost, with everything else held constant?
+4. **Perceptual evaluation.** Can independent observers, and multimodal evaluators, identify integrated reversible figures without inventing the expected features? Is the intended visual message understood without explanation?
+5. **Semantic composition.** Can a model produce two individually recognizable interpretations whose relationship communicates an intended idea, satire or joke? In round 4 one evaluator found no comic message in any of three outputs, which suggests that humor rather than geometry may now be the bottleneck; that is a hypothesis, not a finding.
+6. **Generalization.** Do the same strategies extend to rotational ambigrams, multi-view images and other transformation-dependent visual meaning?
+
+These questions need repeated trials, controlled prompt variants and independent evaluation.
+
+## Research context
+
+The benchmark draws on three lines of work:
+
+- **Reversible images and perceptual ambiguity**, including the drawings of Rex Whistler (*OHO! Certain Two-Faced Individuals*, 1946) and research on face inversion.
+- **Ambigram and multi-view image generation**, where one visual representation supports different interpretations under a transformation.
+- **Language-model drawing and program synthesis**, where structured graphics expose the model's geometric construction process.
+
+The objective is not to reproduce Whistler's artistic technique but to investigate how generative models satisfy coupled geometric and perceptual constraints. See [Related work](docs/related-work.md) and the verified [bibliography](docs/references.md). The original Whistler drawings are not included in this repository.
 
 ## Repository layout
 
 ```
-reversible-faces-benchmark/
 README.md                 this file
-CITATION.cff              how to cite (CFF 1.2.0)
-LICENSE                   MIT (code in scripts/)
-LICENSE-CONTENT           CC BY 4.0 (everything else)
-LICENSING.md              what is covered by which license
-paper/
-  reversible-faces-benchmark-paper.md   the accompanying paper (v2.0)
-  README.md               status of the paper and how it maps to the repo
-docs/
-  how-it-works.md         the task, half-turn math, dual-function dictionary
-  geometry.md             the geometry stated formally
-  glossary.md             terms used throughout
-  worked-example.md       one real output, stroke by stroke
-  methodology.md          one-shot design, human judgment, file contract, run settings
-  prompt-evolution.md     what changed from v1 to v6, and why
-  related-work.md         literature map and how RFB differs
-  references.md           verified bibliography and what was checked
-  threats-to-validity.md  what limits the conclusions
-  future-work.md          experiments still needed
-  security.md             untrusted SVG: sanitizer, sandbox, what is and is not covered
-  validator-audit.md      the new validator applied to every existing SVG (none fails)
-  reproduction.md         tested versions, rendering variance, reproduction limits, cost/turn bounds
-  design-history/         earlier design specs (v0.3, v0.4): SUPERSEDED, kept for context
-  reviews/                critiques of the prompt/repo/paper integration/round-4 design by David
-prompts/
-  prompt-v1.md ... prompt-v6.md   the exact prompts sent to the models (v6 = round 4, with tools)
-  discarded/prompt-v5b.md         a variant that did not fix the DeepSeek loop
-rounds/
-  round-00-pilot/ round-01/ round-02/ round-03/ round-04/
-      EVALUATION.md       human evaluation, models, settings, costs, lessons
-      SETUP.md            (round 4 only) the tool-enabled harness, limits, confounds
-      svg/                the evaluated SVGs
-      raw/                raw model answers (and reasoning traces where available)
-      logs/               token and cost logs (round 4: also full transcripts of the tool loop)
-      not-evaluated/      (rounds 1 and 4) runs that were not part of the evaluated set
-baselines/                15 comparison runs (4 image generators, 11 text models): images, SVGs, previews, judge comparison, David's blind evaluations
-scripts/
-  run_models.py           one-shot, no-tools runner (OpenRouter; key from environment)
-  run_models_v6.py        round-4 runner: tool loop, sandboxed Python, Chrome render, diagnostics
-  validate_svg.py         the file contract, exactly, plus safety (no external refs, animation, scripts, DTD...); structure only
-  render_preview.py       upright + rotated side-by-side PNG (README previews only; sanitized + sandboxed)
-  svg_safety.py           allowlist parser/sanitizer for untrusted SVG (defusedxml)
-  safe_render.py          Chrome inside bubblewrap: the only renderer
-  perceptual.py           advisory diagnostics (rho, bounding box); not validity
-  rfb_common.py           pre-call cost estimate, structured API log, no-overwrite output dirs
-  mock_openrouter.py      scripted fake API for offline tests (no cost)
-tests/                    offline tests and valid/invalid SVG fixtures (see tests/README.md)
-requirements.txt          tested versions (requirements-dev.txt: pytest, cffconvert)
-to-do.md                  the plan for the next benchmark version
-assets/previews/          PNG previews
+PUBLISH-CHECKLIST.md      pre-publication tasks and their status
+CITATION.cff              citation metadata (CFF 1.2.0)
+LICENSE, LICENSE-CONTENT, LICENSING.md
+paper/                    the accompanying paper (v2.0, rounds 0-3) and its scope note
+docs/                     navigation map in docs/README.md; geometry, methodology, security, reviews, ...
+prompts/                  prompt-v1.md ... prompt-v6.md, exactly as sent; discarded/ variants
+rounds/                   one folder per round (svg/, raw/, logs/, EVALUATION.md); index in rounds/README.md
+baselines/                15 comparison runs, judge comparison and blind evaluations
+scripts/                  runners, validator, sanitizer, sandboxed renderer, diagnostics
+tests/                    offline tests and fixtures
+assets/previews/          PNG previews used in the documentation
+to-do.md                  planned next versions of the benchmark
 ```
 
-## How to run it
+## Citation and licensing
 
-Requirements: Python 3.9+; `pip install -r requirements.txt` (Pillow, numpy, defusedxml; versions tested are pinned there); for previews and for round 4, Chrome/Chromium and [bubblewrap](https://github.com/containers/bubblewrap) (`bwrap`) on Linux. Rendering **refuses to run without bubblewrap**: model-written SVG is untrusted (see below).
-
-```bash
-git clone https://github.com/<your-account>/reversible-faces-benchmark.git
-cd reversible-faces-benchmark
-
-# 1. Run a prompt one-shot (no tools) on one or more models (set your key in the environment, never in files)
-export OPENROUTER_API_KEY=...
-python scripts/run_models.py runs/my-run prompts/prompt-v5.md \
-    deepseek/deepseek-v4.1-flash z-ai/glm-5.3-flash minimax/minimax-m3.1-flash
-
-# Settings used in the rounds:
-EFFORT=low python scripts/run_models.py runs/mm prompts/prompt-v5.md minimax/minimax-m3.1-flash
-NOREASON=1 MAXTOK=20000 python scripts/run_models.py runs/ds prompts/prompt-v5.md deepseek/deepseek-v4.1-flash
-STRIP_METADATA=1 python scripts/run_models.py ...        # remove <title>/<desc> (used from round 3)
-
-# Round 4 (tool-enabled; needs Pillow, numpy, Chrome and bubblewrap; one model per call):
-NOREASON=1 MAXTOK=20000 python scripts/run_models_v6.py runs/r4 prompts/prompt-v6.md deepseek/deepseek-v4.1-flash
-
-# Both runners refuse to overwrite a non-empty OUT_DIR (use --timestamped or --force), save the model's SVG
-# verbatim as <model>.original.svg, and log every failed API attempt to api-errors.jsonl.
-# Offline smoke test of either runner with a scripted fake API (no key, no network, no cost):
-python scripts/run_models_v6.py --mock /tmp/smoke prompts/prompt-v6.md z-ai/glm-5.3-flash
-
-# 2. Check the file contract (structure and safety only; never judges the drawing)
-python scripts/validate_svg.py runs/my-run/*.svg
-
-# 3. Look at it: open the .svg in a browser, then turn your phone (or the page) 180 degrees.
-#    Optional side-by-side preview:
-python scripts/render_preview.py runs/my-run/minimax-m3.1-flash.svg preview.png
-```
-
-The judgment is human: open the SVG, look at it, rotate, and decide. Write your verdict next to the round, as in `rounds/*/EVALUATION.md`. Only open SVGs from a model in a browser if you trust them; the previews and the harness never render them raw.
-
-## Security, tests and reproducibility
-
-- **Untrusted input.** Model-written SVG may contain scripts, external references, animation or entity bombs. Every renderer here first rebuilds the SVG from an allowlist (`scripts/svg_safety.py`) and then renders it **inside a bubblewrap sandbox** with no network and only a temporary directory writable (`scripts/safe_render.py`). `scripts/validate_svg.py` enforces the file contract exactly (viewBox `0 0 1000 1000`, `width`/`height` = `1000`, no external reference of any kind, no animation, scripts, event attributes, `foreignObject`, DTD/entities) and does **not** judge how the drawing looks; perceptual diagnostics are separate and advisory (`scripts/perceptual.py`). Details, including what the round-4 harness did before this hardening: [`docs/security.md`](docs/security.md).
-- **Tests** (no key, no network, no cost): `python -m unittest discover -s tests` (see [`tests/README.md`](tests/README.md)). They include the three cases from the external review: an external `<use href>`, `12x23` dimensions and SVG animation.
-- **Existing SVGs under the new validator:** none of the 18 fails; three round-2 files have `<title>`/`<desc>` warnings ([`docs/validator-audit.md`](docs/validator-audit.md)). No existing file was modified.
-- **Budget limits are approximate.** The round-4 harness estimates the worst-case cost *before* each call and adds the reported cost after it; it is an operational limit, not a guarantee, and overruns are recorded. The turn bound is `MAX_TURNS + 2 = 18` API calls (the 2 extra are recovery turns); at most 14 were possible in practice. See [`docs/reproduction.md`](docs/reproduction.md).
-- **Reproduction limits.** Tested with Chrome 156.0.8078.47, Python 3.13.5, bubblewrap 0.12.0; rendering can differ slightly across browsers; model runs cannot be reproduced exactly (no seeds, unpinned providers, retired model ids). Round 4 was produced by the harness of commit `6747499`; the harness in this repository is the hardened version. See [`docs/reproduction.md`](docs/reproduction.md).
-
-## Limitations and honest notes
-
-- One human evaluator, who is also the author of the benchmark, which is a conflict of interest. Three models; one run per model per prompt (apart from retries after technical failures). No statistics are claimed. Verdict words such as "OK", "somewhat bad" or "low" are informal labels, not points on a scale (see `docs/methodology.md`).
-- Prompts v1–v5 include short text descriptions of two Whistler drawings that were **drafted from public images and never verified** (the prompts say so in a placeholder note; prompt v6 removed them). They are kept verbatim because they are part of what the models saw.
-- Models did not have search, so the "recent event" is whatever they know; several chose events from 2023–2025.
-- Some SVGs in round 2 contain `<title>`/`<desc>` metadata that names the event. The runner now strips it, because it appears as a tooltip when hovering in a desktop browser and gives the joke away.
-- The original Whistler drawings are **not** bundled here. See [`docs/related-work.md`](docs/related-work.md) and [`docs/references.md`](docs/references.md).
-- Round 4 was added after the paper and is uncontrolled in several ways (prompt v6 changed more than the tools; MiniMax was re-run once; one run per model). See [`rounds/round-04/SETUP.md`](rounds/round-04/SETUP.md).
-- The full list of threats to validity (uneven comparisons, heuristic geometry, untested diffusion claim, and more) is in [`docs/threats-to-validity.md`](docs/threats-to-validity.md).
-- Model names are the OpenRouter ids used at the time; providers may change or retire them.
-
-## Future work
-
-Details: [`docs/future-work.md`](docs/future-work.md). **Humor is now the open problem:** in round 4 all three models produced reversible, well-made drawings, but none was funny. Apart from the tool-enabled round (done once, uncontrolled), nothing below has been done.
-
-- Making the joke work (the A/B contrast and the event) without endangering the 180° reading.
-- A control that separates the tool effect from the other prompt changes (prompt v5 with tools, or prompt v6 without tools).
-- A v3-versus-v5 ablation and a with/without-geometry-kit condition, under identical model settings.
-- Adding event and art instructions in small steps, checking the 180° reading after each.
-- More runs, more models and more judges, with blind presentation and randomized orientation order.
-- A controlled tool-enabled condition (round 4 offered tools but changed other things too).
-- The second mode, "one person with two expressions".
-- An unvalidated stroke-sharing diagnostic (Q_shared).
-
-## References and related work
-
-The verified bibliography (with what was checked for each entry) is in [`docs/references.md`](docs/references.md); how the benchmark relates to Whistler, face-inversion research, ambigram generation (Loviscach, AmbiGen, Ambifusion, Visual Anagrams, Polster), LLM drawing (Bubeck et al.) and humor/caricature theory (Suls; Kris & Gombrich) is in [`docs/related-work.md`](docs/related-work.md). The original Whistler drawings are not included in this repository.
-
-## How to cite
-
-Claudio Drews (2026). *Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models* (paper version 2.0, rounds 0–3). To cite the repository itself (version 2.1.0, with prompts v1–v6, round 4, the hardened scripts and tests), use the top-level fields of [`CITATION.cff`](CITATION.cff); the paper has its own entry there (`preferred-citation`). The repository version and the paper version are different things; GitHub shows a "Cite this repository" button once the file is published.
-
-## License
+Claudio Drews (2026). *Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models* (paper version 2.0, rounds 0–3). To cite the repository itself (version 2.1.0: prompts v1–v6, round 4, the hardened scripts and tests) use the top-level fields of [`CITATION.cff`](CITATION.cff); the paper has its own entry there (`preferred-citation`). The repository version and the paper version are different things.
 
 Copyright (c) 2026 Claudio Drews.
 
 - **Code** (`scripts/`, `tests/`): MIT, see [`LICENSE`](LICENSE).
-- **Content** (paper, docs, prompts, evaluations, logs, SVGs, raw outputs, previews): CC BY 4.0, see [`LICENSE-CONTENT`](LICENSE-CONTENT).
+- **Research content and artifacts** (paper, docs, prompts, evaluations, logs, SVGs, raw outputs, previews): CC BY 4.0, see [`LICENSE-CONTENT`](LICENSE-CONTENT), subject to the qualifications in [`LICENSING.md`](LICENSING.md) (for example for AI-generated outputs).
 
-Details and caveats about AI-generated outputs: [`LICENSING.md`](LICENSING.md).
-
-## To do
-
-See [to-do.md](to-do.md) for the planned next version of the benchmark.
+Note on names: the prompts v1–v5 (and quotations of them in the docs) keep, verbatim, the production note "[PLACEHOLDER — Cláudio to add and verify.]" because the models received it; elsewhere the author's name is written "Claudio Drews".

@@ -18,6 +18,7 @@ python -m unittest discover -s tests -v    # plain unittest; nothing else needed
 | `test_harness_offline.py` | both runners end to end against the fake API: normal run, hostile SVG, recovery turns (14 calls observed, bound 18), tool limit, cost precheck, API failures, original-vs-normalized saved separately, no silent overwrite |
 | `test_perceptual.py` | the perceptual diagnostics (rho etc.) are advisory and separate from the structural validator |
 | `test_existing_svgs.py` | the audit in `docs/validator-audit.md`: no existing SVG fails the new validator; three round-2 files carry title/desc warnings |
+| `test_docs.py` | relative links and images in every Markdown file resolve; in-page anchors exist; the README math uses `$...$`/`$$...$$`; the commands in the README point at existing scripts and prompts; the navigation pages exist |
 | `test_baselines.py` | the 11 baseline SVGs meet the file contract; every baseline folder has its README/evaluation or prompt and an image; previews exist for all 15; the caveats are present; no machine paths or keys in the baseline docs |
 
 `fixtures/invalid/` are deliberately hostile or non-conforming files. They are only ever parsed or sanitized; never open

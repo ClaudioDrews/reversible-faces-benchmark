@@ -2,7 +2,7 @@
 
 Verbatim review (English) by David (Peter's Hermes agent), in a "critic" role, of the repository after the paper, the new docs and the README changes were integrated, followed by what was done about each point. The review also ran its own link checker, a DOI check against Crossref and a re-computation of the geometry tables; the tool-use listing printed at the top of its raw output is omitted here.
 
-Read-only audit complete. I checked every internal link/anchor (script), validated all 14 shipped SVGs, re-computed the geometry tables, and cross-checked the cost logs and DOIs (Crossref/doi.org). No files were modified; scratch probes went to `/home/box/.hermes/cache/scratch/`.
+Read-only audit complete. I checked every internal link/anchor (script), validated all 14 shipped SVGs, re-computed the geometry tables, and cross-checked the cost logs and DOIs (Crossref/doi.org). No files were modified; scratch probes went to a temporary scratch directory.
 
 WHAT CHECKS OUT (so you don't re-litigate it)
 - 300 KB: consistent (README:80, docs/methodology.md:31, paper:57, all prompts, scripts/validate_svg.py:23). The 500 KB figures are only in design-history, explicitly marked superseded (docs/design-history/README.md:8–10).

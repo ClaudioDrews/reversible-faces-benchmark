@@ -11,3 +11,4 @@ During the project, Peter Weyland (Claudio's Grok Bot assistant) used David (Pet
 | `review-5-paper-integration.md` | After the paper and docs were integrated | README, paper, new docs, citation file |
 | `review-6-round4-design.md` | Before round 4 was run | Prompt v6 and the tool harness (design review; did not review the outputs) |
 | `review-7-hardening.md` | After round 4, in response to an external pre-publication review | The hardened scripts (SVG sanitizer, sandboxed renderer, exact validator, cost limits, tests): two passes and what was done with each point |
+| `review-8-prepublication.md` | Before publication, after the editorial and consistency pass | The new README and navigation pages, the validator and cost-cap wording, and other historical-versus-current statements: David's findings and what was applied or rejected |

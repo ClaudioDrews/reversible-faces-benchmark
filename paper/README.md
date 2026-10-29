@@ -2,6 +2,13 @@
 
 **`reversible-faces-benchmark-paper.md`** is the accompanying paper for this repository: *Reversible Faces Benchmark: a one-shot test of rotation-consistent line drawing in language models* (Claudio Drews, version 2.0, 29 October 2026).
 
+## Scope and versions
+
+- **Paper version 2.0 (29 October 2026) covers rounds 0–3 only** (the one-shot, no-tools protocol and prompts v1–v5). It is a historical document and is kept intact: it is **not** rewritten to fit later experiments. The only edit since it was written is the author's name spelling in the credit line (now "Claudio Drews", chosen for consistency across the repository).
+- **What it does not cover:** round 4 (prompt v6, tool-augmented), the 15 baseline comparison runs, the hardened scripts and the pre-publication review. These are documented only in the repository (see below and [`../rounds/README.md`](../rounds/README.md), [`../baselines/README.md`](../baselines/README.md)).
+- **Planned:** a **version 3.0** of the paper is planned for later, once the controlled experiments in [`../docs/future-work.md`](../docs/future-work.md) (independent perceptual evaluation, a v3/v4/v5 ablation, tools on versus off) justify it. It would incorporate the later results. One new paper per round is not planned, and the paper will not be left indefinitely behind the repository.
+- **Repository version 2.1.0** (see [`../CITATION.cff`](../CITATION.cff)) is ahead of the paper.
+
 ## Status
 
 - **Early research, not peer reviewed.** A benchmark design plus three informal pilot rounds (the paper) and a later tool-enabled round 4 (repository only).
