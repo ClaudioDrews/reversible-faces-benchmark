@@ -16,3 +16,5 @@
   4. It generates the face(s) that sit in front of the background.
 
 **(d) Open question.** It may be necessary to give brief instructions on humor, satire, caricature and visual narrative. In principle this should not be needed, since these concepts are already in the models' weights.
+
+**(e) Model-as-judge check.** Give the evaluation checklist to three models plus one human evaluator, and test whether the models can assess the images in a way that is consistent with human perception.
