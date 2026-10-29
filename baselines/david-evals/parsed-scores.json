@@ -1,0 +1,587 @@
+{
+ "s918": {
+  "meta": {
+   "image": "img01",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "0",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "s358": {
+  "meta": {
+   "image": "img01",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "2",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "p932": {
+  "meta": {
+   "image": "img01",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ },
+ "s433": {
+  "meta": {
+   "image": "img02",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "0",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "s302": {
+  "meta": {
+   "image": "img02",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "p295": {
+  "meta": {
+   "image": "img02",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ },
+ "s346": {
+  "meta": {
+   "image": "img03",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "s297": {
+  "meta": {
+   "image": "img03",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "1",
+   "OVERALL_FACE_QUALITY": "3"
+  }
+ },
+ "p619": {
+  "meta": {
+   "image": "img03",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ },
+ "s942": {
+  "meta": {
+   "image": "img04",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "0",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "s217": {
+  "meta": {
+   "image": "img04",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "1",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "3"
+  }
+ },
+ "p955": {
+  "meta": {
+   "image": "img04",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "1",
+   "PROPS_AND_JOKE": "1",
+   "BREAKS_RULES": "no",
+   "VERDICT": "FAIL"
+  }
+ },
+ "s399": {
+  "meta": {
+   "image": "img05",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "s587": {
+  "meta": {
+   "image": "img05",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "p497": {
+  "meta": {
+   "image": "img05",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ },
+ "s671": {
+  "meta": {
+   "image": "img06",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "s726": {
+  "meta": {
+   "image": "img06",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "0",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "3"
+  }
+ },
+ "p287": {
+  "meta": {
+   "image": "img06",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ },
+ "s343": {
+  "meta": {
+   "image": "img07",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "1",
+   "SECOND_FACE_VISIBLE": "2",
+   "EXPRESSION_CLARITY": "1",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "s248": {
+  "meta": {
+   "image": "img07",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "1",
+   "SECOND_FACE_VISIBLE": "2",
+   "EXPRESSION_CLARITY": "1",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "p439": {
+  "meta": {
+   "image": "img07",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "1",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "1",
+   "BREAKS_RULES": "no",
+   "VERDICT": "FAIL"
+  }
+ },
+ "s669": {
+  "meta": {
+   "image": "img08",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "s745": {
+  "meta": {
+   "image": "img08",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "2",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "p429": {
+  "meta": {
+   "image": "img08",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ },
+ "s776": {
+  "meta": {
+   "image": "img09",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "2",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "5"
+  }
+ },
+ "s612": {
+  "meta": {
+   "image": "img09",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "p220": {
+  "meta": {
+   "image": "img09",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ },
+ "s102": {
+  "meta": {
+   "image": "img10",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "3"
+  }
+ },
+ "s971": {
+  "meta": {
+   "image": "img10",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "0",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "p189": {
+  "meta": {
+   "image": "img10",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ },
+ "s386": {
+  "meta": {
+   "image": "img11",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "1",
+   "SECOND_FACE_VISIBLE": "2",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "s129": {
+  "meta": {
+   "image": "img11",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "2",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "p664": {
+  "meta": {
+   "image": "img11",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ },
+ "s955": {
+  "meta": {
+   "image": "img12",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "2",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "s609": {
+  "meta": {
+   "image": "img12",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "p897": {
+  "meta": {
+   "image": "img12",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ },
+ "s276": {
+  "meta": {
+   "image": "img13",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "2",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "3"
+  }
+ },
+ "s911": {
+  "meta": {
+   "image": "img13",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "1",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "1",
+   "OVERALL_FACE_QUALITY": "3"
+  }
+ },
+ "p366": {
+  "meta": {
+   "image": "img13",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "yes",
+   "VERDICT": "PASS"
+  }
+ },
+ "s575": {
+  "meta": {
+   "image": "img14",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "1",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "s232": {
+  "meta": {
+   "image": "img14",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "0",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "4"
+  }
+ },
+ "p275": {
+  "meta": {
+   "image": "img14",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "2",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ },
+ "s707": {
+  "meta": {
+   "image": "img15",
+   "orientation": "0deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "0",
+   "EXPRESSION_CLARITY": "2",
+   "OVERALL_FACE_QUALITY": "3"
+  }
+ },
+ "s212": {
+  "meta": {
+   "image": "img15",
+   "orientation": "180deg"
+  },
+  "scores": {
+   "FACE_CLARITY": "2",
+   "SECOND_FACE_VISIBLE": "0",
+   "EXPRESSION_CLARITY": "1",
+   "OVERALL_FACE_QUALITY": "3"
+  }
+ },
+ "p595": {
+  "meta": {
+   "image": "img15",
+   "orientation": "pair"
+  },
+  "scores": {
+   "LEFT_READS_AS_FACE": "2",
+   "RIGHT_READS_AS_FACE": "2",
+   "INTEGRATION": "2",
+   "CONTRAST": "2",
+   "PROPS_AND_JOKE": "1",
+   "BREAKS_RULES": "no",
+   "VERDICT": "PASS"
+  }
+ }
+}

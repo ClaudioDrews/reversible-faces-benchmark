@@ -35,6 +35,7 @@ Full text: [`paper/reversible-faces-benchmark-paper.md`](paper/reversible-faces-
 - [Design decisions](#design-decisions)
 - [The geometry in one page](#the-geometry-in-one-page)
 - [The rounds](#the-rounds)
+- [Baselines: image generators and more text models](#baselines)
 - [Models, settings and costs](#models-settings-and-costs)
 - [Repository layout](#repository-layout)
 - [How to run it](#how-to-run-it)
@@ -148,6 +149,11 @@ Per-round details, previews, raw outputs and costs: [`rounds/round-01`](rounds/r
 #### Round 4 (prompt v6, with tools): reversible and well made, but not funny
 <img src="assets/previews/round-04__all-models.png" alt="Round 4 results" width="640">
 
+<a id="baselines"></a>
+## Baselines: image generators and more text models
+
+After round 4, Cláudio ran **15 comparison runs** outside the rounds: four raster image generators with a plain prompt (all four failed: two faces placed side by side or stacked, never one drawing read two ways), and eleven text models with prompt v5 (seven passed). Every image was also judged **blind, in both orientations**, by a second AI agent (David), and scored by the first agent (Peter) with a 0-2 version of the prompt's own gates. See [`baselines/`](baselines/README.md) (table of all 15) and [`baselines/JUDGE-COMPARISON.md`](baselines/JUDGE-COMPARISON.md) (the comparison). **Read the caveats first:** David is text-only and works from an auxiliary vision describer that sometimes invents the expected second face; stage 2 is not fully blind to the rotation; one call per cell; the 0-2 rubric is the assistant's own operationalisation and was scored non-blind (its 15/15 agreement is not independent); GLM 5.3 Max iterated about nine renders (not one-shot).
+
 ## Models, settings and costs
 
 All calls went through [OpenRouter](https://openrouter.ai). Rounds 0–3 were one-shot with **no tools** (the models could not run code, render or search), with the prompt as the only message. **Round 4 offered a tool loop** (code execution in a sandbox, and a render of the drawing upright and rotated by 180°, with at most 5 renders); the prompt was still the only message from a person.
@@ -209,6 +215,7 @@ rounds/
       raw/                raw model answers (and reasoning traces where available)
       logs/               token and cost logs (round 4: also full transcripts of the tool loop)
       not-evaluated/      (rounds 1 and 4) runs that were not part of the evaluated set
+baselines/                15 comparison runs (4 image generators, 11 text models): images, SVGs, previews, judge comparison, David's blind evaluations
 scripts/
   run_models.py           one-shot, no-tools runner (OpenRouter; key from environment)
   run_models_v6.py        round-4 runner: tool loop, sandboxed Python, Chrome render, diagnostics

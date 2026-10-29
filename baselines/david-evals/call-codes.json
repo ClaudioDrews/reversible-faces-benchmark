@@ -1,0 +1,182 @@
+{
+ "s918": {
+  "image": "img01",
+  "orientation": "0deg"
+ },
+ "s358": {
+  "image": "img01",
+  "orientation": "180deg"
+ },
+ "p932": {
+  "image": "img01",
+  "orientation": "pair"
+ },
+ "s433": {
+  "image": "img02",
+  "orientation": "0deg"
+ },
+ "s302": {
+  "image": "img02",
+  "orientation": "180deg"
+ },
+ "p295": {
+  "image": "img02",
+  "orientation": "pair"
+ },
+ "s346": {
+  "image": "img03",
+  "orientation": "0deg"
+ },
+ "s297": {
+  "image": "img03",
+  "orientation": "180deg"
+ },
+ "p619": {
+  "image": "img03",
+  "orientation": "pair"
+ },
+ "s942": {
+  "image": "img04",
+  "orientation": "0deg"
+ },
+ "s217": {
+  "image": "img04",
+  "orientation": "180deg"
+ },
+ "p955": {
+  "image": "img04",
+  "orientation": "pair"
+ },
+ "s399": {
+  "image": "img05",
+  "orientation": "0deg"
+ },
+ "s587": {
+  "image": "img05",
+  "orientation": "180deg"
+ },
+ "p497": {
+  "image": "img05",
+  "orientation": "pair"
+ },
+ "s671": {
+  "image": "img06",
+  "orientation": "0deg"
+ },
+ "s726": {
+  "image": "img06",
+  "orientation": "180deg"
+ },
+ "p287": {
+  "image": "img06",
+  "orientation": "pair"
+ },
+ "s343": {
+  "image": "img07",
+  "orientation": "0deg"
+ },
+ "s248": {
+  "image": "img07",
+  "orientation": "180deg"
+ },
+ "p439": {
+  "image": "img07",
+  "orientation": "pair"
+ },
+ "s669": {
+  "image": "img08",
+  "orientation": "0deg"
+ },
+ "s745": {
+  "image": "img08",
+  "orientation": "180deg"
+ },
+ "p429": {
+  "image": "img08",
+  "orientation": "pair"
+ },
+ "s776": {
+  "image": "img09",
+  "orientation": "0deg"
+ },
+ "s612": {
+  "image": "img09",
+  "orientation": "180deg"
+ },
+ "p220": {
+  "image": "img09",
+  "orientation": "pair"
+ },
+ "s102": {
+  "image": "img10",
+  "orientation": "0deg"
+ },
+ "s971": {
+  "image": "img10",
+  "orientation": "180deg"
+ },
+ "p189": {
+  "image": "img10",
+  "orientation": "pair"
+ },
+ "s386": {
+  "image": "img11",
+  "orientation": "0deg"
+ },
+ "s129": {
+  "image": "img11",
+  "orientation": "180deg"
+ },
+ "p664": {
+  "image": "img11",
+  "orientation": "pair"
+ },
+ "s955": {
+  "image": "img12",
+  "orientation": "0deg"
+ },
+ "s609": {
+  "image": "img12",
+  "orientation": "180deg"
+ },
+ "p897": {
+  "image": "img12",
+  "orientation": "pair"
+ },
+ "s276": {
+  "image": "img13",
+  "orientation": "0deg"
+ },
+ "s911": {
+  "image": "img13",
+  "orientation": "180deg"
+ },
+ "p366": {
+  "image": "img13",
+  "orientation": "pair"
+ },
+ "s575": {
+  "image": "img14",
+  "orientation": "0deg"
+ },
+ "s232": {
+  "image": "img14",
+  "orientation": "180deg"
+ },
+ "p275": {
+  "image": "img14",
+  "orientation": "pair"
+ },
+ "s707": {
+  "image": "img15",
+  "orientation": "0deg"
+ },
+ "s212": {
+  "image": "img15",
+  "orientation": "180deg"
+ },
+ "p595": {
+  "image": "img15",
+  "orientation": "pair"
+ }
+}

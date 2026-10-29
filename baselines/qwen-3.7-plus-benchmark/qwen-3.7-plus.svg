@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#ffffff"/>
+  <g fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 500 180 Q 400 180 360 260 L 330 360 Q 310 450 320 500 Q 330 650 370 780 Q 420 830 500 840 Q 580 830 630 780 Q 670 650 680 500 Q 690 450 670 360 L 640 260 Q 600 180 500 180" stroke-width="8"/>
+    <circle cx="420" cy="500" r="18" stroke-width="5"/>
+    <circle cx="580" cy="500" r="18" stroke-width="5"/>
+    <circle cx="420" cy="495" r="6" fill="#111111" stroke="none"/>
+    <circle cx="580" cy="495" r="6" fill="#111111" stroke="none"/>
+    <path d="M 400 460 Q 420 430 440 460" stroke-width="5"/>
+    <path d="M 560 460 Q 580 430 600 460" stroke-width="5"/>
+    <path d="M 450 380 Q 500 410 550 380" stroke-width="5"/>
+    <path d="M 440 320 Q 500 360 560 320" stroke-width="5"/>
+    <path d="M 460 350 Q 500 320 540 350" stroke-width="5"/>
+    <path d="M 460 650 Q 500 680 540 650" stroke-width="5"/>
+    <path d="M 430 720 Q 500 760 570 720" stroke-width="6"/>
+    <path d="M 400 800 Q 500 840 600 800" stroke-width="6"/>
+    <path d="M 380 870 Q 500 900 620 870" stroke-width="5"/>
+    <path d="M 480 120 L 490 80 L 500 110 L 510 60 L 520 120" stroke-width="5"/>
+    <path d="M 500 240 L 520 260 L 500 280 L 480 260 Z" stroke-width="4"/>
+  </g>
+  <g transform="rotate(180 500 500)" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 400 460 Q 420 440 440 460" stroke-width="5"/>
+    <path d="M 560 460 Q 580 440 600 460" stroke-width="5"/>
+  </g>
+</svg>

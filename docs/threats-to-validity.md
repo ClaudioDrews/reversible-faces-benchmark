@@ -25,3 +25,8 @@ What limits the conclusions that can be drawn from the three evaluated rounds. M
 - **Heuristic geometry.** The canon, the tolerance and the dictionary are design conventions, not validated perceptual facts. The dictionary is not a partition of strokes.
 - **Scope of the informal claim.** The statement that diffusion image models rarely manage this task is an untested observation: diffusion models were **not** tested here.
 - **Models and providers change.** Model names are OpenRouter ids at the time; providers may change or retire them, and provider-side behavior (reasoning limits that were not enforced, timeouts) affected some runs.
+
+
+## Baselines (added after round 4)
+
+The 15 comparison runs in [`../baselines/`](../baselines/README.md) add their own threats: a judge model (David) that is text-only and works from a vision describer that sometimes invents the expected second face; a second stage that is not fully blind to the rotation; one call per cell; a 0-2 rubric that is the assistant's own operationalisation of the prompt's gates and was scored non-blind; image generators given a different prompt from the text models; GLM 5.3 Max not one-shot. See the caveats at the top of that page.
