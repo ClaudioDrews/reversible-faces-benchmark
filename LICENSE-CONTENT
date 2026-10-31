@@ -2,7 +2,7 @@ Content license: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 Copyright (c) 2026 Claudio Drews
 
-Applies to all content in this repository except the code in `scripts/`
+Applies to all content in this repository except the code in `scripts/` and `tests/`
 (which is under the MIT License, see LICENSE): documentation (`README.md`,
 `docs/`), prompts (`prompts/`), evaluations and logs, model-generated SVGs and
 raw model outputs (`rounds/`), and previews (`assets/`).
