@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Reversible Faces Benchmark | Interactive geometry lab</title>
+<meta content="Explore real reversible-face SVG experiments: rotate drawings, learn 180° geometry, inspect shared-stroke constraints, and decompose rotational symmetry." name="description"/>
+<meta content="light dark" name="color-scheme"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&amp;family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f4efe3'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%231c1a17' stroke-width='6'/%3E%3Ccircle cx='39' cy='50' r='5' fill='%231c1a17'/%3E%3Ccircle cx='61' cy='50' r='5' fill='%231c1a17'/%3E%3C/svg%3E" rel="icon"/>
+</head>
+<body>
+<a class="skip-link" data-i18n="a11y.skip" href="#playground">Skip to the lab</a>
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="#top">
+<span aria-hidden="true" class="brand-mark">
+<svg viewbox="0 0 100 100"><circle cx="50" cy="50" fill="none" r="34" stroke="currentColor" stroke-width="5"></circle><circle cx="41" cy="50" fill="currentColor" r="4.5"></circle><circle cx="59" cy="50" fill="currentColor" r="4.5"></circle><path d="M26 62 Q50 74 74 62" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="5"></path></svg>
+</span>
+<span class="brand-text">
+<strong>Reversible Faces</strong>
+<em data-i18n="nav.benchmark">Benchmark</em>
+</span>
+</a>
+<nav aria-label="Main" class="site-nav" id="site-nav">
+<a data-i18n="nav.playground" href="#playground">Lab</a>
+<a data-i18n="nav.gallery" href="#galeria">Gallery</a>
+<a data-i18n="nav.geometry" href="#geometria">Geometry</a>
+<a data-i18n="nav.symmetry" href="#simetria">Symmetry</a>
+<a data-i18n="nav.rounds" href="#rodadas">Rounds</a>
+<a data-i18n="nav.baselines" href="#baselines">Baselines</a>
+<a data-i18n="nav.method" href="#metodo">Method</a>
+</nav>
+<div class="header-tools">
+
+<button aria-expanded="false" aria-label="Menu" class="nav-toggle" id="nav-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+</header>
+<main id="top">
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<p class="eyebrow" data-i18n="hero.eyebrow">Exploratory research · five rounds · 33 public artifacts</p>
+<h1 data-i18n="hero.title">One figure. Two faces. A single half-turn.</h1>
+<p class="lede" data-i18n="hero.lede">Can a language model produce <em>one vector drawing</em> that reads as <em>two distinct faces</em> under a 180° turn? Rotate real benchmark SVGs, investigate shared strokes, and explore the limits of geometric diagnostics.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" data-i18n="hero.cta1" href="#playground">Turn the drawings</a>
+<a class="btn btn-ghost" data-i18n="hero.cta2" href="#geometria">Understand the geometry</a>
+</div>
+<dl class="hero-stats">
+<div><dt data-i18n="stats.artifacts">Artifacts</dt><dd>33</dd></div>
+<div><dt data-i18n="stats.models">Models</dt><dd>18</dd></div>
+<div><dt data-i18n="stats.rounds">Rounds</dt><dd>5</dd></div>
+<div><dt data-i18n="stats.baselines">Baselines</dt><dd>15</dd></div>
+</dl>
+<p class="hero-credit" data-i18n="hero.credit">Project by Claudio Drews · <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark" rel="noopener" target="_blank">repository on GitHub</a></p>
+</div>
+<div class="hero-demo">
+<div class="hero-stage" id="hero-stage">
+<div aria-label="Drawing rotation" aria-valuemax="180" aria-valuemin="0" aria-valuenow="0" class="rotor" id="hero-rotor" role="slider" tabindex="0">
+<img alt="Model-generated reversible drawing, reading A" id="hero-img" src="data/art/glm-5.3-flash_prompt-v5.svg"/>
+</div>
+<div class="hero-hint" data-i18n="hero.hint" id="hero-hint">drag to turn</div>
+</div>
+<div class="hero-controls">
+<button class="flip-btn" id="hero-flip" type="button">
+<span class="flip-face">A</span>
+<span aria-hidden="true" class="flip-arrow">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg>
+</span>
+<span class="flip-face is-b">B</span>
+</button>
+<p class="hero-caption"><strong>GLM 5.3 Flash</strong> · prompt v5 · round 3 <span data-i18n="hero.captionNote">(reading A upright; reading B turned 180°)</span></p>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="hero-rule"></div>
+</section>
+<!-- ===================== PLAYGROUND ===================== -->
+<section class="section" id="playground">
+<div class="wrap">
+<header class="section-head">
+<p class="section-index">01</p>
+<h2 data-i18n="play.title">The lab</h2>
+<p class="section-sub" data-i18n="play.sub">Pick an artifact and turn it. Drag the image, use the slider, or hit A → B to see both readings side by side.</p>
+</header>
+<div class="play-layout">
+<div class="play-stage-col">
+<div class="play-toolbar">
+<div class="play-picker">
+<button aria-label="Anterior" class="icon-btn" id="pg-prev" type="button">‹</button>
+<select aria-label="Choose drawing" id="pg-select"></select>
+<button aria-label="Próximo" class="icon-btn" id="pg-next" type="button">›</button>
+<button aria-label="Aleatório" class="icon-btn icon-btn-accent" id="pg-random" title="Aleatório" type="button">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M16 3h5v5"></path><path d="M4 20 21 3"></path><path d="M21 16v5h-5"></path><path d="m15 15 6 6"></path><path d="M4 4l5 5"></path></svg>
+</button>
+</div>
+<div class="play-modes">
+<button class="chip is-active" data-i18n="play.modeSingle" id="pg-mode-single" type="button">Turn</button>
+<button class="chip" data-i18n="play.modeSplit" id="pg-mode-split" type="button">A | B</button>
+<button class="chip" data-i18n="play.modeCross" id="pg-mode-cross" type="button">Overlay</button>
+</div>
+</div>
+<div class="play-stage" data-mode="single" id="pg-stage">
+<div class="play-pane" data-pane="a">
+<span class="pane-tag">A</span>
+<div aria-label="Drawing rotation" aria-valuemax="180" aria-valuemin="0" aria-valuenow="0" class="rotor" id="pg-rotor" role="slider" tabindex="0">
+<img alt="Reversible drawing at orientation A" id="pg-img" src="data/art/glm-5.3-flash_prompt-v5.svg"/>
+</div>
+</div>
+<div class="play-pane" data-pane="b" hidden="">
+<span class="pane-tag pane-tag-b">B</span>
+<div class="rotor rotor-static">
+<img alt="The same drawing rotated 180°, reading B" id="pg-img-b" src="data/art/glm-5.3-flash_prompt-v5.svg"/>
+</div>
+</div>
+<div class="play-cross" data-pane="cross" hidden="">
+<div class="rotor"><img alt="" id="pg-img-x1" src=""/></div>
+<div class="rotor rotor-static"><img alt="" id="pg-img-x2" src=""/></div>
+</div>
+</div>
+<div class="play-dial">
+<button aria-label="Animate rotation" class="dial-btn" id="pg-play" type="button">
+<svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M8 5v14l11-7z"></path></svg>
+</button>
+<input aria-label="Rotation angle" id="pg-range" max="180" min="0" step="1" type="range" value="0"/>
+<output id="pg-angle">0°</output>
+<button class="chip chip-sm" id="pg-snap90" type="button">90°</button>
+<button class="chip chip-sm" id="pg-snap180" type="button">180°</button>
+</div>
+</div>
+<aside class="play-meta" id="pg-meta">
+<!-- filled by JS -->
+</aside>
+</div>
+</div>
+</section>
+<!-- ===================== GALLERY ===================== -->
+<section class="section section-alt" id="galeria">
+<div class="wrap">
+<header class="section-head">
+<p class="section-index">02</p>
+<h2 data-i18n="gal.title">Gallery</h2>
+<p class="section-sub" data-i18n="gal.sub">Every public artifact in the benchmark: the 18 outputs from rounds 0–4 and the 15 comparison runs. Hover (or tap) to see reading B.</p>
+</header>
+<div aria-label="Gallery filters" class="filters" id="gal-filters" role="group"></div>
+<div class="gal-grid" id="gal-grid"></div>
+<p class="gal-empty" data-i18n="gal.empty" hidden="" id="gal-empty">No artifact matches this filter.</p>
+</div>
+</section>
+<!-- ===================== GEOMETRY ===================== -->
+<section class="section" id="geometria">
+<div class="wrap">
+<header class="section-head">
+<p class="section-index">03</p>
+<h2 data-i18n="geo.title">The geometry</h2>
+<p class="section-sub" data-i18n="geo.sub">The illusion is not magic: it falls out of a half-turn, a silhouette envelope and compromise strokes. Every tab below is a hands-on lab.</p>
+</header>
+<div class="tabs" id="geo-tabs" role="tablist">
+<button class="tab is-active" data-i18n="geo.tab1" data-tab="halfturn" role="tab">The half-turn</button>
+<button class="tab" data-i18n="geo.tab2" data-tab="dictionary" role="tab">Dual dictionary</button>
+<button class="tab" data-i18n="geo.tab3" data-tab="canon" role="tab">Canonical ladder</button>
+<button class="tab" data-i18n="geo.tab4" data-tab="compromise" role="tab">Compromise stroke</button>
+<button class="tab" data-i18n="geo.tab5" data-tab="failures" role="tab">Failure modes</button>
+</div>
+<!-- --- tab: half-turn --- -->
+<div class="tab-panel is-active" data-panel="halfturn">
+<div class="geo-grid">
+<div class="geo-canvas-wrap">
+<canvas aria-label="Interactive half-turn diagram" height="640" id="ht-canvas" width="720"></canvas>
+</div>
+<div class="geo-text">
+<h3 data-i18n="geo.ht.title">R is an involution</h3>
+<p class="formula">R(p) = 2C − p  →  (x, y) ↦ (1000 − x, 1000 − y)</p>
+<p data-i18n="geo.ht.p1">On the 1000 × 1000 page, with centre C = (500, 500), the half-turn sends each point to the diametrically opposite one. Applying it twice returns the original point: <strong>R∘R = id</strong>. That is what makes it an <em>involution</em>, and it is why the geometry is so cheap to check — the model can verify coordinates without ever seeing the drawing.</p>
+<p data-i18n="geo.ht.p2">R is a proper rotation (determinant +1), not a mirror. Mirroring (<code>scale(-1, 1)</code>) has determinant −1 and produces a different genre of illusion. A half-turn flips vertical order: what sits above A's eyes ends up below B's eyes. Straight lines keep their direction: a cup ∪ becomes a dome ∩.</p>
+<div class="geo-facts" id="ht-facts"></div>
+</div>
+</div>
+</div>
+<!-- --- tab: dictionary --- -->
+<div class="tab-panel" data-panel="dictionary">
+<div class="geo-grid">
+<div class="geo-canvas-wrap">
+<canvas aria-label="Shared feature correspondence map" height="640" id="dict-canvas" width="720"></canvas>
+</div>
+<div class="geo-text">
+<h3 data-i18n="geo.dict.title">One stroke, two readings</h3>
+<p data-i18n="geo.dict.p1">When the eyes are shared — Whistler's anchor — a stroke that is a feature of A at height <em>y<sub>A</sub></em> (on the page) is a feature of B at height <em>−y<sub>B</sub></em> <strong>in B's own upright frame</strong>. In page coordinates: y<sub>A</sub> = 1000 − y<sub>B</sub>.</p>
+<p data-i18n="geo.dict.p2">Nothing below A's eyes can stay below B's eyes. A's mouth (y = 680) has to become B's hat brim (y = 350): 330 px apart, far beyond the 30 px tolerance.</p>
+<div class="dict-legend">
+<span class="legend-a">A — upright</span>
+<span class="legend-b">B — rotated</span>
+</div>
+<table class="dict-table" id="dict-table">
+<thead><tr><th data-i18n="geo.dict.thA">In A (page)</th><th data-i18n="geo.dict.thB">Is, in B (B's own frame)</th><th data-i18n="geo.dict.thNote">Note</th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- --- tab: canon --- -->
+<div class="tab-panel" data-panel="canon">
+<div class="geo-grid">
+<div class="geo-canvas-wrap">
+<canvas aria-label="Escada canônica de heights" height="640" id="canon-canvas" width="720"></canvas>
+</div>
+<div class="geo-text">
+<h3 data-i18n="geo.canon.title">The canonical ladder</h3>
+<p data-i18n="geo.canon.p1">The prompt kit describes a canonical face-height ladder (H = 600 px), with the eye line at normalized y = 0 and page position y = 500 + H·y. These are <strong>construction heuristics</strong>, not laws of perception or measurements of Whistler’s drawings.</p>
+<div class="canon-controls">
+<label><span data-i18n="geo.canon.headHeight">Head height H</span>
+<input id="canon-h" max="800" min="400" step="10" type="range" value="600"/>
+<output id="canon-h-out">600 px</output>
+</label>
+<label><span data-i18n="geo.canon.eps">Tolerance ε</span>
+<input id="canon-eps" max="60" min="5" step="1" type="range" value="30"/>
+<output id="canon-eps-out">30 px</output>
+</label>
+</div>
+<p class="callout" data-i18n="geo.canon.sumrule"><strong>A design tolerance, not a measured perceptual threshold.</strong> The prompt uses ε ≈ 0.05H (30 px when H = 600 px) to guide placement. It has not been calibrated with human observers. Hair, hats, beards, collars and wrinkles are useful degrees of freedom—not guarantees of recognition.</p>
+</div>
+</div>
+</div>
+<!-- --- tab: compromise stroke --- -->
+<div class="tab-panel" data-panel="compromise">
+<div class="geo-grid">
+<div class="geo-canvas-wrap">
+<canvas aria-label="Traço de compromisso entre duas metas" height="640" id="cs-canvas" width="720"></canvas>
+</div>
+<div class="geo-text">
+<h3 data-i18n="geo.cs.title">Compromise strokes</h3>
+<p data-i18n="geo.cs.p1">Imagine a shared stroke with target point <em>a</em> in A’s page coordinates and target point <em>b</em> in B’s own upright frame. B’s page target is R(b). A single point can fall within ε of both targets exactly when ‖a − R(b)‖ ≤ 2ε. The diagram illustrates this point-wise geometric criterion; recognizable strokes require additional perceptual judgment.</p>
+<p class="formula">s* = (w<sub>A</sub>·a + w<sub>B</sub>·R(b)) / (w<sub>A</sub> + w<sub>B</sub>)  →  com pesos iguais: s* = (a + R(b)) / 2</p>
+<p data-i18n="geo.cs.p2">Drag the target points to see the two tolerance disks. The midpoint minimizes equal-weight squared distance, but a mathematically feasible compromise does not necessarily look like a face.</p>
+<div class="cs-readout" id="cs-readout"></div>
+</div>
+</div>
+</div>
+<!-- --- tab: failures --- -->
+<div class="tab-panel" data-panel="failures">
+<div class="failure-grid" id="failure-grid"></div>
+</div>
+</div>
+</section>
+<!-- ===================== SYMMETRY ===================== -->
+<section class="section section-alt" id="simetria">
+<div class="wrap">
+<header class="section-head">
+<p class="section-index">04</p>
+<h2 data-i18n="sym.title">Symmetry decomposition</h2>
+<p class="section-sub" data-i18n="sym.sub">The half-turn splits any rasterized image into an <em>even</em> part and an <em>odd</em> part: I₊ = ½(I + R·I), I₋ = ½(I − R·I). Inspect both components and compare a rotational-asymmetry diagnostic against the reference. <strong>This is algebra, not a face recognizer.</strong></p>
+</header>
+<div class="sym-layout">
+<div class="sym-controls">
+<label class="sym-picker">
+<span data-i18n="sym.pick">Drawing</span>
+<select id="sym-select"></select>
+</label>
+<div class="sym-toggles">
+<label class="chk"><input checked="" id="sym-show-i" type="checkbox"/><span data-i18n="sym.showI">Show I</span></label>
+<label class="chk"><input checked="" id="sym-show-r" type="checkbox"/><span data-i18n="sym.showR">Show R·I</span></label>
+<label class="chk"><input checked="" id="sym-show-p" type="checkbox"/><span data-i18n="sym.showP">Show I₊ (even)</span></label>
+<label class="chk"><input checked="" id="sym-show-m" type="checkbox"/><span data-i18n="sym.showM">Show I₋ (odd)</span></label>
+</div>
+<div class="sym-readout" id="sym-readout"></div>
+<p class="note" data-i18n="sym.note">ρ measures pixelwise difference under a 180° turn. A very low value warns of near-rotational symmetry, which is not enough for two distinct readings. Larger values do not imply better faces; ρ is never the benchmark’s pass/fail criterion.</p>
+</div>
+<div class="sym-panels" id="sym-panels"></div>
+</div>
+</div>
+</section>
+<!-- ===================== ROUNDS ===================== -->
+<section class="section" id="rodadas">
+<div class="wrap">
+<header class="section-head">
+<p class="section-index">05</p>
+<h2 data-i18n="rnd.title">The rounds</h2>
+<p class="section-sub" data-i18n="rnd.sub">Five rounds, six prompt versions. The pattern is the bottleneck moving: first geometry, then art, then humour.</p>
+</header>
+<div class="timeline" id="timeline"></div>
+<header class="sub-head">
+<h3 data-i18n="rnd.promptTitle">Prompt evolution (v1 → v6)</h3>
+<p data-i18n="rnd.promptSub">The prompts go into the repository exactly as they were sent.</p>
+</header>
+<div class="prompt-table-wrap">
+<table class="prompt-table" id="prompt-table">
+<thead><tr>
+<th data-i18n="rnd.thVer">Version</th><th data-i18n="rnd.thUsed">Used in</th>
+<th data-i18n="rnd.thWhat">What it is</th><th data-i18n="rnd.thChanges">Key changes</th>
+<th data-i18n="rnd.thOutcome">Outcome</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- ===================== BASELINES ===================== -->
+<section class="section section-alt" id="baselines">
+<div class="wrap">
+<header class="section-head">
+<p class="section-index">06</p>
+<h2 data-i18n="base.title">Comparison runs</h2>
+<p class="section-sub" data-i18n="base.sub">15 runs that are not part of rounds 0–4: four raster image generators and eleven text models, answering two questions — what image generators do with the plain request, and what a wider set of text models do with prompt v5.</p>
+</header>
+<div class="base-stats" id="base-stats"></div>
+<div class="base-toolbar">
+<div aria-label="Gallery filters" class="filters" id="base-filters" role="group"></div>
+<button class="chip" data-i18n="base.sort" id="base-sort" type="button">Sort</button>
+</div>
+<div class="base-table-wrap">
+<table class="base-table" id="base-table">
+<thead><tr>
+<th data-i18n="base.thId">Id</th>
+<th data-i18n="base.thModel">Model</th>
+<th data-i18n="base.thPrompt">Prompt</th>
+<th data-i18n="base.thVerdict">Verdict</th>
+<th data-i18n="base.thRubric">Rubric /8</th>
+<th data-i18n="base.thD1">Text judge · stage 1</th>
+<th data-i18n="base.thD2">Text judge · stage 2</th>
+<th data-i18n="base.thImpression">Impression</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+<div class="judge-box">
+<h3 data-i18n="base.judgeTitle">Agreement with the human evaluator</h3>
+<div class="judge-chart" id="judge-chart"></div>
+<p class="note" data-i18n="base.judgeNote">The 0–2 rubric is the assistant's own operationalisation, scored <em>non-blind</em> (it knew the verdicts). Its 15/15 agreement is therefore <em>not</em> an independent result.</p>
+</div>
+</div>
+</section>
+<!-- ===================== METHOD ===================== -->
+<section class="section" id="metodo">
+<div class="wrap">
+<header class="section-head">
+<p class="section-index">07</p>
+<h2 data-i18n="met.title">Method, limits and an honest reading</h2>
+<p class="section-sub" data-i18n="met.sub">The benchmark is exploratory. This section exists so nobody reads the numbers above as a leaderboard.</p>
+</header>
+<div class="method-grid">
+<article class="method-card">
+<h3 data-i18n="met.p1Title">Not a leaderboard</h3>
+<p data-i18n="met.p1">One human evaluator, who is also the benchmark's author. One evaluated output per model per prompt. No validated scoring scale and no statistical inference. The results are <strong>observations that motivate controlled experiments</strong>, not measures of capability.</p>
+</article>
+<article class="method-card">
+<h3 data-i18n="met.p2Title">Capability ≠ reliability ≠ efficiency</h3>
+<p data-i18n="met.p2">A verdict on one output answers only one of three questions. <em>Capability</em> appears when the model delivers. <em>Reliability</em> (how often?) is unmeasured: one run per model. <em>Efficiency</em> (tokens, calls, renders, dollars) is recorded, but the conditions differ between rounds.</p>
+</article>
+<article class="method-card">
+<h3 data-i18n="met.p3Title">The token-budget rule</h3>
+<p data-i18n="met.p3">A model that exhausts its token budget verifying its own geometry is a <em>task-completion failure under that inference regime</em>, not evidence of geometric incapacity. The same model delivered an identifiable result once reasoning was disabled.</p>
+</article>
+<article class="method-card">
+<h3 data-i18n="met.p4Title" meta-card="1">The pilot and round 4</h3>
+<p data-i18n="met.p4">The pilot (round 0) was not human-evaluated. Round 4 used tools, but several things changed at once: the effect of the tools is not isolated. MiniMax was run twice and only one run entered the evaluated set — a selection between two runs, described as such.</p>
+</article>
+</div>
+<div class="caveats">
+<h3 data-i18n="met.caveatTitle">The caveats that travel with any number</h3>
+<ol id="caveat-list"></ol>
+</div>
+<div class="method-cols">
+<div>
+<h3 data-i18n="met.fileTitle">The SVG file contract</h3>
+<ul class="spec-list">
+<li data-i18n="met.spec1">Standalone SVG, <code>xmlns</code>, <code>viewBox="0 0 1000 1000"</code>, <code>width</code>/<code>height</code> = 1000, valid XML, at most 300 KB.</li>
+<li data-i18n="met.spec2">Forbidden: text of any kind, <code>&lt;image&gt;</code>, <code>&lt;foreignObject&gt;</code>, <code>&lt;script&gt;</code>, gradients, blur/filters, drop shadows and any directional lighting.</li>
+<li data-i18n="met.spec3">Allowed: line work, hatching, flat fills, a small flat palette, white space.</li>
+<li data-i18n="met.spec4">From round 3 on, <code>&lt;title&gt;</code>, <code>&lt;desc&gt;</code> and <code>&lt;metadata&gt;</code> are removed from the delivered SVG.</li>
+</ul>
+</div>
+<div>
+<h3 data-i18n="met.licTitle">Licences and credits</h3>
+<p data-i18n="met.lic1"><strong>Code</strong> (<code>scripts/</code>, <code>tests/</code>): MIT. <strong>Research content</strong> (paper, docs, prompts, evaluations, logs, SVGs, raw outputs, previews): CC BY 4.0.</p>
+<p data-i18n="met.lic2">The SVGs were generated by language models through OpenRouter and are published under CC BY 4.0 to the extent the author holds rights in them. Check the terms of each provider before commercial reuse.</p>
+<p data-i18n="met.lic3">This interactive educational companion presents artifacts from <strong>Claudio Drews’s Reversible Faces Benchmark</strong>. Explore the <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark" rel="noopener" target="_blank">source repository</a>, <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark/blob/main/paper/reversible-faces-benchmark-paper.md" rel="noopener" target="_blank">research paper</a>, and <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark/blob/main/docs/geometry.md" rel="noopener" target="_blank">geometry notes</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-inner">
+<div>
+<p class="footer-title">Reversible Faces Benchmark</p>
+<p class="footer-note" data-i18n="foot.note">Interactive educational companion to <strong>Claudio Drews’s Reversible Faces Benchmark</strong>. Research materials: CC BY 4.0; code: MIT.</p>
+</div>
+<div class="footer-links">
+<a href="https://github.com/ClaudioDrews/reversible-faces-benchmark" rel="noopener" target="_blank">GitHub</a>
+<a data-i18n="nav.playground" href="#playground">Lab</a>
+<a data-i18n="nav.method" href="#metodo">Method</a>
+</div>
+</div>
+</footer>
+<button aria-label="Back to top" class="to-top" id="to-top" type="button">
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></svg>
+</button>
+<script src="data/manifest.js"></script>
+<script src="data/rho.js"></script>
+<script src="data/art.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/rotator.js"></script>
+<script src="assets/js/geometry.js"></script>
+<script src="assets/js/symmetry.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
