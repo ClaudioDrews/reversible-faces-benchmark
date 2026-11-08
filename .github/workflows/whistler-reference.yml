@@ -25,6 +25,8 @@ jobs:
         run: python -m unittest discover -s lab/masters/tests -p 'test_*.py' -v
       - name: Download original-resolution Commons reproductions and derive corpus
         run: python lab/masters/build_corpus.py --catalog lab/masters/catalog.json --out output/whistler-corpus --limit 4
+      - name: Measure physical ink frequency in every radial band and page quadrant
+        run: python lab/masters/radial_profile.py --root output/whistler-corpus
       - name: Report a concise summary
         if: always()
         shell: bash

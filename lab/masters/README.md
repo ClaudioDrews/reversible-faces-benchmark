@@ -39,6 +39,7 @@ Outputs from the workflow include:
 - preview/<id>-*.png renders obtained from generated SVG, fidelity_report.json and an index.html contact sheet;
 - perturbations/<id>/*.png local controlled perturbations (radial detail, omission, line weight);
 - report.json experimental measurements, reproducible settings, source and derivative hashes, failures.
+- radial_quadrant_profiles.csv: 16 normalized page-location cells per representation (four radial bands × four quadrants), including dark-ink fraction, edge fraction and high-frequency grayscale residuals. **These are measured physical-image properties, not semantic vagueness or face-feature tolerances.**
 
 The outputs are **derived analytical representations**, not faithful hand-drawn replacements for Whistler. Vectorization inevitably changes contours, tone and tiny hatching. See [VALIDATION.md](VALIDATION.md) for quantitative and human-inspection gates.
 
