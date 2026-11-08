@@ -51,6 +51,10 @@ Run unit tests:
 
 The existing benchmark validator/dependencies are described in the root README and requirements.txt.
 
+## Whistler primary-source experiments
+
+[Historical four-work reference corpus](masters/README.md) — original-resolution public-domain Commons sources, reproducible one-source raster→vector tracing, source-vs-vector fidelity, registration of paired reproductions and radial contrast/incompleteness variants. [Full hypothesis coverage H01–H48](masters/HYPOTHESIS-MATRIX.md) preserves original and mutually conflicting theories. Acquired artwork is output as a GitHub Actions artifact rather than added to the main site.
+
 ## Productive incompleteness and pose laboratory
 
 Open **http://localhost:8811/lab/completion.html** to vary stroke omissions, line weight, head pose annotations (roll, pitch, yaw independently for A and B), and geometric target tolerances. The controls are research hypotheses; changing a pose slider does **not** change pixels or infer an actual observer's pose.

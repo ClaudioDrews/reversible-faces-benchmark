@@ -47,3 +47,7 @@ For each test report: protocol hash, source SHA, model/seed/budget, SVG hash, ed
 | H34 | Emotional contrast, narrative surprise and aesthetic resonance can be independently judged | protocol planned; no empirical claim |
 | H35 | Alternate composition grammars may represent different geometric families | open: never auto-exclude hypotheses |
 
+
+## Historical-source extension (H36–H48)
+
+**Do not collapse or prune contradictory hypotheses.** The complete H01–H48 source-based factorial research design and falsifiers are enumerated in [masters/HYPOTHESIS-MATRIX.md](masters/HYPOTHESIS-MATRIX.md). Particularly important additions: constant/increasing/decreasing radial tolerance, face-relative vs page-relative regions, graphic density vs semantic specificity, Bubbles task-conditioned information maps, completion vs amodal completion, spatial frequency and ink wash, reproduction fidelity, and intentional vs random omission.
