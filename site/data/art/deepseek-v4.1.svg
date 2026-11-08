@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#f6f1e6"/>
+  <g fill="none" stroke="#1c1c1c" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 500 194 C 562 194 622 220 650 282 C 676 342 690 420 692 500 C 694 580 686 652 660 714 C 632 778 572 812 500 812 C 428 812 368 778 340 714 C 314 652 306 580 308 500 C 310 420 324 342 350 282 C 378 220 438 194 500 194 Z" fill="#f6f1e6" stroke-width="9"/>
+    <path d="M 500 194 C 562 194 622 220 650 282 C 668 322 678 344 680 364 Q 500 396 320 364 C 322 344 332 322 350 282 C 378 220 438 194 500 194 Z" fill="#2e2e2e" stroke-width="9"/>
+    <g stroke="#f6f1e6" stroke-width="5" fill="none">
+      <path d="M 500 230 C 521 250 525 284 521 306 L 479 306 C 475 284 479 250 500 230 Z"/>
+      <path d="M 479 292 L 461 314 L 480 307"/>
+      <path d="M 521 292 L 539 314 L 520 307"/>
+      <circle cx="500" cy="262" r="9"/>
+      <path d="M 492 292 L 508 292"/>
+    </g>
+    <path d="M 370 458 Q 415 420 460 458" stroke-width="11"/>
+    <path d="M 540 458 Q 585 420 630 458" stroke-width="11"/>
+    <path d="M 376 500 Q 415 467 454 500" stroke-width="4"/>
+    <path d="M 376 500 Q 415 529 454 500" stroke-width="9"/>
+    <path d="M 546 500 Q 585 467 624 500" stroke-width="4"/>
+    <path d="M 546 500 Q 585 529 624 500" stroke-width="9"/>
+    <circle cx="415" cy="500" r="12" fill="#1c1c1c" stroke="none"/>
+    <circle cx="585" cy="500" r="12" fill="#1c1c1c" stroke="none"/>
+    <path d="M 380 550 Q 415 573 450 550" stroke-width="6"/>
+    <path d="M 550 550 Q 585 573 620 550" stroke-width="6"/>
+    <path d="M 318 606 Q 356 625 401 621" stroke-width="9"/>
+    <path d="M 599 621 Q 644 625 682 606" stroke-width="9"/>
+    <path d="M 420 762 Q 500 788 580 762" stroke-width="4"/>
+    <path d="M 452 656 C 438 684 452 716 500 716 C 548 716 562 684 548 656" fill="#f6f1e6" stroke-width="7"/>
+    <path d="M 468 703 Q 480 714 492 703" stroke-width="5"/>
+    <path d="M 508 703 Q 520 714 532 703" stroke-width="5"/>
+    <path d="M 428 738 Q 500 786 572 738" stroke-width="10"/>
+    <path d="M 448 800 L 444 858" stroke-width="8"/>
+    <path d="M 552 800 L 556 858" stroke-width="8"/>
+    <path d="M 484 878 L 396 845 L 396 911 Z" fill="#c05a3e" stroke-width="7"/>
+    <path d="M 516 878 L 604 845 L 604 911 Z" fill="#c05a3e" stroke-width="7"/>
+    <path d="M 484 866 L 516 866 L 516 890 L 484 890 Z" fill="#1c1c1c" stroke-width="6"/>
+  </g>
+  <g transform="rotate(180 500 500)" fill="none" stroke="#f6f1e6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 466 646 Q 500 670 534 646" stroke-width="6"/>
+    <path d="M 480 654 Q 490 664 500 654" stroke-width="4"/>
+    <path d="M 500 654 Q 510 664 520 654" stroke-width="4"/>
+    <path d="M 456 700 Q 500 674 544 700" stroke-width="7"/>
+    <path d="M 430 600 Q 440 616 452 606" stroke-width="4"/>
+    <path d="M 568 600 Q 558 616 546 606" stroke-width="4"/>
+  </g>
+</svg>

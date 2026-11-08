@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reversible Faces Benchmark — Interactive 180° Rotation Lab</title>
+<meta name="description" content="An interactive exploration of reversible faces: rotate real benchmark SVGs, study 180° geometry, and investigate C₂ symmetry and perceptual ambiguity.">
+<meta property="og:title" content="Reversible Faces Benchmark — Interactive Lab">
+<meta property="og:description" content="Rotate real SVGs, explore half-turn geometry, and study perceptual ambiguity and C₂ symmetry.">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%201000%22%20width%3D%2264%22%20height%3D%2264%22%3E%0A%20%20%3Crect%20width%3D%221000%22%20height%3D%221000%22%20fill%3D%22%23F3EFE6%22%2F%3E%0A%20%20%3Cg%20stroke%3D%22%231A1A1A%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20280%20250%20C%20250%20400%20270%20600%20320%20750%20C%20400%20900%20600%20900%20720%20750%20C%20750%20600%20730%20400%20680%20250%20C%20600%20100%20400%20100%20280%20250%20Z%22%20fill%3D%22%23FADFCE%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20280%20250%20C%20400%20100%20600%20100%20680%20250%20L%20690%20320%20Q%20500%20400%20280%20340%20Z%22%20fill%3D%22%2324272B%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20320%20750%20C%20400%20900%20600%20900%20720%20750%20L%20720%20660%20Q%20500%20760%20310%20680%20Z%22%20fill%3D%22%2324272B%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20277%20450%20C%20210%20440%20210%20560%20286%20550%22%20fill%3D%22%23FADFCE%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20255%20470%20C%20240%20480%20240%20520%20265%20530%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20723%20450%20C%20790%20440%20790%20560%20714%20550%22%20fill%3D%22%23FADFCE%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20745%20470%20C%20760%20480%20760%20520%20735%20530%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cg%20stroke-linejoin%3D%22miter%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M%20485%20240%20L%20500%20275%20L%20515%20240%20Z%22%20fill%3D%22%23FF5555%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M%20480%20220%20L%20450%20245%20L%20480%20240%20Z%22%20fill%3D%22%23EAE5D9%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M%20520%20220%20L%20550%20245%20L%20520%20240%20Z%22%20fill%3D%22%23EAE5D9%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22480%22%20y%3D%22160%22%20width%3D%2240%22%20height%3D%2280%22%20fill%3D%22%23FFFFFF%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22480%22%20y1%3D%22185%22%20x2%3D%22520%22%20y2%3D%22185%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22480%22%20y1%3D%22215%22%20x2%3D%22520%22%20y2%3D%22215%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M%20480%20160%20L%20500%20120%20L%20520%20160%20Z%22%20fill%3D%22%23FFFFFF%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M%20500%2080%20L%20508%20100%20L%20530%20100%20L%20513%20115%20L%20520%20135%20L%20500%20120%20L%20480%20135%20L%20487%20115%20L%20470%20100%20L%20492%20100%20Z%22%20fill%3D%22%23FFB020%22%20stroke-width%3D%224%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22500%22%20r%3D%2222%22%20fill%3D%22%23FFFFFF%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22600%22%20cy%3D%22500%22%20r%3D%2222%22%20fill%3D%22%23FFFFFF%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22410%22%20cy%3D%22492%22%20r%3D%229%22%20fill%3D%22%231A1A1A%22%20stroke%3D%22none%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22610%22%20cy%3D%22492%22%20r%3D%229%22%20fill%3D%22%231A1A1A%22%20stroke%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20360%20460%20Q%20400%20410%20440%20450%22%20fill%3D%22none%22%20stroke-width%3D%228%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20560%20450%20Q%20600%20410%20640%20460%22%20fill%3D%22none%22%20stroke-width%3D%228%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20360%20550%20Q%20400%20580%20440%20540%22%20fill%3D%22none%22%20stroke-width%3D%228%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20560%20540%20Q%20600%20580%20640%20550%22%20fill%3D%22none%22%20stroke-width%3D%228%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20460%20610%20Q%20500%20650%20540%20610%22%20fill%3D%22none%22%20stroke-width%3D%227%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20480%20540%20Q%20470%20575%20460%20610%22%20fill%3D%22none%22%20stroke-width%3D%225%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20450%20410%20Q%20500%20450%20550%20410%22%20fill%3D%22none%22%20stroke-width%3D%227%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20280%20340%20Q%20500%20400%20690%20320%22%20fill%3D%22none%22%20stroke-width%3D%229%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20310%20680%20Q%20500%20760%20720%20660%22%20fill%3D%22none%22%20stroke-width%3D%229%22%2F%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M%20330%20690%20Q%20500%20760%20690%20670%20Q%20500%20710%20330%20690%20Z%22%20fill%3D%22%23FFFFFF%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22420%22%20y1%3D%22703%22%20x2%3D%22420%22%20y2%3D%22728%22%20stroke-width%3D%224%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22460%22%20y1%3D%22708%22%20x2%3D%22460%22%20y2%3D%22738%22%20stroke-width%3D%224%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22500%22%20y1%3D%22710%22%20x2%3D%22500%22%20y2%3D%22745%22%20stroke-width%3D%224%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22540%22%20y1%3D%22708%22%20x2%3D%22540%22%20y2%3D%22738%22%20stroke-width%3D%224%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22580%22%20y1%3D%22703%22%20x2%3D%22580%22%20y2%3D%22728%22%20stroke-width%3D%224%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M%20290%20650%20Q%20310%20680%20340%20685%22%20fill%3D%22none%22%20stroke-width%3D%226%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M%20710%20630%20Q%20690%20660%20660%20665%22%20fill%3D%22none%22%20stroke-width%3D%226%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20330%20170%20Q%20380%20130%20430%20150%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%225%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20670%20180%20Q%20620%20140%20570%20160%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%225%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20360%20840%20Q%20410%20880%20460%20860%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%225%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20640%20850%20Q%20590%20890%20540%20870%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%225%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E">
+</head>
+<body>
+    <!-- Shown ONLY when the stylesheet is missing (e.g. the file was opened
+         in a viewer that drops <style>): the CSS hides it in every normal
+         rendering. It tells the reader what to open instead. -->
+    <div class="no-css-banner">
+      <strong>Reversible Faces Benchmark</strong>
+      <span>The stylesheet failed to load. Please open this page in a browser with its neighboring <code>assets/</code> and <code>data/</code> folders intact.</span>
+    </div>
+
+<a class="skip-link" href="#playground" data-i18n="a11y.skip">Skip to the interactive lab</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 1000 1000" width="34" height="34" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#1A1A1A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 280 250 C 250 400 270 600 320 750 C 400 900 600 900 720 750 C 750 600 730 400 680 250 C 600 100 400 100 280 250 Z" fill="#FADFCE"/>
+    <path d="M 280 250 C 400 100 600 100 680 250 L 690 320 Q 500 400 280 340 Z" fill="#24272B"/>
+    <path d="M 320 750 C 400 900 600 900 720 750 L 720 660 Q 500 760 310 680 Z" fill="#24272B"/>
+    <path d="M 277 450 C 210 440 210 560 286 550" fill="#FADFCE"/>
+    <path d="M 255 470 C 240 480 240 520 265 530" fill="none"/>
+    <path d="M 723 450 C 790 440 790 560 714 550" fill="#FADFCE"/>
+    <path d="M 745 470 C 760 480 760 520 735 530" fill="none"/>
+    <g stroke-linejoin="miter">
+      <path d="M 485 240 L 500 275 L 515 240 Z" fill="#FF5555"/>
+      <path d="M 480 220 L 450 245 L 480 240 Z" fill="#EAE5D9"/>
+      <path d="M 520 220 L 550 245 L 520 240 Z" fill="#EAE5D9"/>
+      <rect x="480" y="160" width="40" height="80" fill="#FFFFFF"/>
+      <line x1="480" y1="185" x2="520" y2="185"/>
+      <line x1="480" y1="215" x2="520" y2="215"/>
+      <path d="M 480 160 L 500 120 L 520 160 Z" fill="#FFFFFF"/>
+      <path d="M 500 80 L 508 100 L 530 100 L 513 115 L 520 135 L 500 120 L 480 135 L 487 115 L 470 100 L 492 100 Z" fill="#FFB020" stroke-width="4"/>
+    </g>
+    <circle cx="400" cy="500" r="22" fill="#FFFFFF"/>
+    <circle cx="600" cy="500" r="22" fill="#FFFFFF"/>
+    <circle cx="410" cy="492" r="9" fill="#1A1A1A" stroke="none"/>
+    <circle cx="610" cy="492" r="9" fill="#1A1A1A" stroke="none"/>
+    <path d="M 360 460 Q 400 410 440 450" fill="none" stroke-width="8"/>
+    <path d="M 560 450 Q 600 410 640 460" fill="none" stroke-width="8"/>
+    <path d="M 360 550 Q 400 580 440 540" fill="none" stroke-width="8"/>
+    <path d="M 560 540 Q 600 580 640 550" fill="none" stroke-width="8"/>
+    <path d="M 460 610 Q 500 650 540 610" fill="none" stroke-width="7"/>
+    <path d="M 480 540 Q 470 575 460 610" fill="none" stroke-width="5"/>
+    <path d="M 450 410 Q 500 450 550 410" fill="none" stroke-width="7"/>
+    <path d="M 280 340 Q 500 400 690 320" fill="none" stroke-width="9"/>
+    <path d="M 310 680 Q 500 760 720 660" fill="none" stroke-width="9"/>
+    <g>
+      <path d="M 330 690 Q 500 760 690 670 Q 500 710 330 690 Z" fill="#FFFFFF"/>
+      <line x1="420" y1="703" x2="420" y2="728" stroke-width="4"/>
+      <line x1="460" y1="708" x2="460" y2="738" stroke-width="4"/>
+      <line x1="500" y1="710" x2="500" y2="745" stroke-width="4"/>
+      <line x1="540" y1="708" x2="540" y2="738" stroke-width="4"/>
+      <line x1="580" y1="703" x2="580" y2="728" stroke-width="4"/>
+      <path d="M 290 650 Q 310 680 340 685" fill="none" stroke-width="6"/>
+      <path d="M 710 630 Q 690 660 660 665" fill="none" stroke-width="6"/>
+    </g>
+    <path d="M 330 170 Q 380 130 430 150" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+    <path d="M 670 180 Q 620 140 570 160" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+    <path d="M 360 840 Q 410 880 460 860" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+    <path d="M 640 850 Q 590 890 540 870" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+  </g>
+</svg>
+      </span>
+      <span class="brand-text">
+        <strong>Reversible Faces</strong>
+        <em data-i18n="nav.benchmark">Benchmark</em>
+      </span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="#playground" data-i18n="nav.playground">Laboratório</a>
+      <a href="#galeria" data-i18n="nav.gallery">Galeria</a>
+      <a href="#geometria" data-i18n="nav.geometry">Geometria</a>
+      <a href="#simetria" data-i18n="nav.symmetry">Simetria</a>
+      <a href="#rodadas" data-i18n="nav.rounds">Rodadas</a>
+      <a href="#baselines" data-i18n="nav.baselines">Baselines</a>
+      <a href="#metodo" data-i18n="nav.method">Método</a>
+      <a href="#perguntas" data-i18n="nav.questions">Perguntas</a>
+    </nav>
+
+    <div class="header-tools">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="pt" class="is-active">PT</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Benchmark exploratório · 5 rodadas · 33 artefatos</p>
+        <h1 data-i18n="hero.title">Uma figura. Dois rostos. Uma única meia-volta.</h1>
+        <p class="lede" data-i18n="hero.lede">Um modelo de linguagem consegue desenhar um único SVG que se lê como <em>dois rostos diferentes</em> quando a página é girada em 180°? Este site deixa você girar os artefatos reais do benchmark e ver a geometria que sustenta a ilusão.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#playground" data-i18n="hero.cta1">Girar os desenhos</a>
+          <a class="btn btn-ghost" href="#geometria" data-i18n="hero.cta2">Entender a geometria</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt data-i18n="stats.artifacts">Artefatos</dt><dd>33</dd></div>
+          <div><dt data-i18n="stats.models">Modelos</dt><dd>18</dd></div>
+          <div><dt data-i18n="stats.rounds">Rodadas</dt><dd>5</dd></div>
+          <div><dt data-i18n="stats.baselines">Baselines</dt><dd>15</dd></div>
+        </dl>
+        <p class="hero-credit" data-i18n="hero.credit">Projeto de Claudio Drews · <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark" target="_blank" rel="noopener">repositório no GitHub</a></p>
+      </div>
+
+      <div class="hero-demo">
+        <div class="hero-stage" id="hero-stage">
+          <div class="rotor" id="hero-rotor" tabindex="0" role="slider"
+               aria-valuemin="0" aria-valuemax="180" aria-valuenow="0"
+               aria-label="Rotação do desenho">
+            <img id="hero-img" src="data/art/glm-5.3-flash_prompt-v5.svg" alt="Desenho reversível gerado por modelo, na leitura A">
+          </div>
+          <p class="hero-state" id="hero-state" role="status" aria-live="polite" data-i18n="rot.up">Em pé: leitura A</p>
+          <div class="hero-hint" id="hero-hint" data-i18n="hero.hint">arraste para girar</div>
+        </div>
+        <div class="hero-controls">
+          <button class="flip-btn" id="hero-flip" type="button">
+            <span class="flip-face">A</span>
+            <span class="flip-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+            </span>
+            <span class="flip-face is-b">B</span>
+          </button>
+          <p class="hero-caption"><strong>GLM 5.3 Flash</strong> · prompt v5 · <span data-i18n="hero.captionRound">rodada 3</span> <span data-i18n="hero.captionNote">(leitura A em pé; leitura B girada 180°)</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-rule" aria-hidden="true"></div>
+  </section>
+
+  <!-- ===================== PLAYGROUND ===================== -->
+  <section class="section" id="playground">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-index">01</p>
+        <h2 data-i18n="play.title">O laboratório</h2>
+        <p class="section-sub" data-i18n="play.sub">Escolha um artefato e gire-o. Arraste a imagem, use o controle deslizante, ou bata em A → B para ver as duas leituras lado a lado.</p>
+      </header>
+
+      <div class="play-layout">
+        <div class="play-stage-col">
+          <div class="play-toolbar">
+            <div class="play-picker">
+              <button class="icon-btn" id="pg-prev" type="button" aria-label="Anterior">&#8249;</button>
+              <select id="pg-select" aria-label="Escolher desenho"></select>
+              <button class="icon-btn" id="pg-next" type="button" aria-label="Próximo">&#8250;</button>
+              <button class="icon-btn icon-btn-accent" id="pg-random" type="button" aria-label="Aleatório" title="Aleatório">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="M4 4l5 5"/></svg>
+              </button>
+            </div>
+            <div class="play-modes">
+              <button class="chip is-active" id="pg-mode-single" type="button" data-i18n="play.modeSingle">Giro</button>
+              <button class="chip" id="pg-mode-split" type="button" data-i18n="play.modeSplit">A | B</button>
+              <button class="chip" id="pg-mode-cross" type="button" data-i18n="play.modeCross">Sobrepor</button>
+            </div>
+          </div>
+
+          <div class="play-stage" id="pg-stage" data-mode="single">
+            <div class="play-pane" data-pane="a">
+              <span class="pane-tag">A</span>
+              <div class="rotor" id="pg-rotor" tabindex="0" role="slider"
+                   aria-valuemin="0" aria-valuemax="180" aria-valuenow="0"
+                   aria-label="Rotação do desenho">
+                <img id="pg-img" src="data/art/glm-5.3-flash_prompt-v5.svg" alt="Desenho reversível na leitura A">
+              </div>
+            </div>
+            <div class="play-pane" data-pane="b" hidden>
+              <span class="pane-tag pane-tag-b">B</span>
+              <div class="rotor rotor-static">
+                <img id="pg-img-b" src="data/art/glm-5.3-flash_prompt-v5.svg" alt="O mesmo desenho girado 180°, leitura B">
+              </div>
+            </div>
+            <div class="play-cross" data-pane="cross" hidden>
+              <div class="rotor"><img id="pg-img-x1" src="" alt=""></div>
+              <div class="rotor rotor-static"><img id="pg-img-x2" src="" alt=""></div>
+            </div>
+          </div>
+
+          <div class="play-dial">
+            <button class="dial-btn" id="pg-play" type="button" aria-label="Girar automaticamente">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+            <input type="range" id="pg-range" min="0" max="180" value="0" step="1" aria-label="Ângulo de rotação">
+            <output id="pg-angle">0°</output>
+            <button class="chip chip-sm" id="pg-snap90" type="button">90°</button>
+            <button class="chip chip-sm" id="pg-snap180" type="button">180°</button>
+          </div>
+          <p class="play-state" id="pg-state" role="status" aria-live="polite" data-i18n="rot.up">Em pé: leitura A</p>
+        </div>
+
+        <aside class="play-meta" id="pg-meta">
+          <!-- filled by JS -->
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section section-alt" id="galeria">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-index">02</p>
+        <h2 data-i18n="gal.title">Galeria</h2>
+        <p class="section-sub" data-i18n="gal.sub">Todos os artefatos públicos do benchmark: as 18 saídas das rodadas 0–4 e as 15 execuções de comparação. Passe o mouse (ou toque) para ver a leitura B.</p>
+      </header>
+
+      <div class="filters" id="gal-filters" role="group" aria-label="Filtros"></div>
+      <div class="gal-grid" id="gal-grid"></div>
+      <p class="gal-empty" id="gal-empty" hidden data-i18n="gal.empty">Nenhum artefato corresponde a este filtro.</p>
+    </div>
+  </section>
+
+  <!-- ===================== GEOMETRY ===================== -->
+  <section class="section" id="geometria">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-index">03</p>
+        <h2 data-i18n="geo.title">A geometria</h2>
+        <p class="section-sub" data-i18n="geo.sub">A ilusão não é mágica: ela sai de meia-volta, envelope de silhueta e traços de compromisso. Cada aba abaixo é um laboratório manipulável.</p>
+      </header>
+
+      <div class="tabs" id="geo-tabs" role="tablist">
+        <button class="tab is-active" role="tab" data-tab="halfturn" data-i18n="geo.tab1">A meia-volta</button>
+        <button class="tab" role="tab" data-tab="dictionary" data-i18n="geo.tab2">Dicionário duplo</button>
+        <button class="tab" role="tab" data-tab="canon" data-i18n="geo.tab3">Escada canônica</button>
+        <button class="tab" role="tab" data-tab="compromise" data-i18n="geo.tab4">Traço de compromisso</button>
+        <button class="tab" role="tab" data-tab="failures" data-i18n="geo.tab5">Modos de falha</button>
+      </div>
+
+      <!-- --- tab: half-turn --- -->
+      <div class="tab-panel is-active" data-panel="halfturn">
+        <div class="geo-grid">
+          <div class="geo-canvas-wrap">
+            <canvas id="ht-canvas" width="720" height="640" aria-label="Diagrama interativo da meia-volta"></canvas>
+          </div>
+          <div class="geo-text">
+            <h3 data-i18n="geo.ht.title">R é uma involução</h3>
+            <p class="formula">R(p) = 2C − p &nbsp;→&nbsp; (x, y) ↦ (1000 − x, 1000 − y)</p>
+            <p data-i18n="geo.ht.p1">Na página de 1000 × 1000, com centro C = (500, 500), a meia-volta manda cada ponto para o ponto diametralmente oposto. Aplicá-la duas vezes devolve o ponto original: <strong>R∘R = id</strong>. Isso é o que a define como <em>involução</em>, e é a razão de ela ser tão barata de verificar — o modelo pode conferir a geometria escrevendo coordenadas, sem ver o desenho.</p>
+            <p data-i18n="geo.ht.p2">R é uma rotação de verdade (determinante +1), não um espelho. Espelhar (`scale(-1, 1)`) tem determinante −1 e produz outro tipo de ilusão — o "sorriso de ambiguidade", não o "reverso". Uma meia-volta inverte a ordem vertical: o que estava acima dos olhos de A fica abaixo dos olhos de B. Retas mantêm a direção: um copo ∪ vira uma cúpula ∩.</p>
+            <div class="geo-facts" id="ht-facts"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --- tab: dictionary --- -->
+      <div class="tab-panel" data-panel="dictionary">
+        <div class="geo-grid">
+          <div class="geo-canvas-wrap">
+            <canvas id="dict-canvas" width="720" height="640" aria-label="Mapa das correspondências de dupla função"></canvas>
+          </div>
+          <div class="geo-text">
+            <h3 data-i18n="geo.dict.title">Um traço, duas leituras</h3>
+            <p data-i18n="geo.dict.p1">Quando os olhos são compartilhados — a âncora do modelo de Whistler — um traço que é uma característica de A na altura <em>y<sub>A</sub></em> (na página) é uma característica de B na altura <em>−y<sub>B</sub></em> <strong>no referencial próprio de B</strong>. Em coordenadas de página: y<sub>A</sub> = 1000 − y<sub>B</sub>.</p>
+            <p data-i18n="geo.dict.p2">O que está abaixo dos olhos de A não pode continuar abaixo dos olhos de B. A boca de A (y = 680) tem de virar a aba do chapéu de B (y = 350): são 330 px de distância, muito além da tolerância de 30 px.</p>
+            <div class="dict-legend">
+              <span class="legend-a" data-i18n="geo.dict.legendA">A — leitura em pé</span>
+              <span class="legend-b" data-i18n="geo.dict.legendB">B — leitura girada</span>
+            </div>
+            <table class="dict-table" id="dict-table">
+              <thead><tr><th data-i18n="geo.dict.thA">Em A (página)</th><th data-i18n="geo.dict.thB">É, em B (referencial de B)</th><th data-i18n="geo.dict.thNote">Observação</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- --- tab: canon --- -->
+      <div class="tab-panel" data-panel="canon">
+        <div class="geo-grid">
+          <div class="geo-canvas-wrap">
+            <canvas id="canon-canvas" width="720" height="640" aria-label="Escada canônica de heights"></canvas>
+          </div>
+          <div class="geo-text">
+            <h3 data-i18n="geo.canon.title">A escada canônica</h3>
+            <p data-i18n="geo.canon.p1">O prompt fixa uma escada de alturas para a cabeça (H = 600 px, olhos em y = 0, posição na página = 500 + 600·y). Cada degrau é a âncora geométrica de um par do dicionário. <strong>Ele é uma heurística de projeto, não uma lei</strong> — não foi medida, não é uma afirmação sobre Whistler e nunca foi validada contra reconhecimento humano.</p>
+            <div class="canon-controls">
+              <label><span data-i18n="geo.canon.headHeight">Altura da cabeça H</span>
+                <input type="range" id="canon-h" min="400" max="800" value="600" step="10">
+                <output id="canon-h-out">600 px</output>
+              </label>
+              <label><span data-i18n="geo.canon.eps">Tolerância ε</span>
+                <input type="range" id="canon-eps" min="5" max="60" value="30" step="1">
+                <output id="canon-eps-out">30 px</output>
+              </label>
+            </div>
+            <p class="callout" data-i18n="geo.canon.sumrule"><strong>Regra da soma.</strong> O reconhecimento perdoa desvios de cerca de 0,05·H ≈ 30 px. Toda exager em A precisa ser paga pela parceira em B: um nariz muito longo em A significa uma aba de chapéu mais baixa em B. Chapéus, cabelo, barbas, golas e rugas são as variáveis livres que absorvem o resto.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- --- tab: compromise stroke --- -->
+      <div class="tab-panel" data-panel="compromise">
+        <div class="geo-grid">
+          <div class="geo-canvas-wrap">
+            <canvas id="cs-canvas" width="720" height="640" aria-label="Traço de compromisso entre duas metas"></canvas>
+          </div>
+          <div class="geo-text">
+            <h3 data-i18n="geo.cs.title">Traços de compromisso</h3>
+            <p data-i18n="geo.cs.p1">Um traço compartilhado tem uma posição-alvo <em>a</em> em A e <em>b</em> no referencial de B. Na página, B quer o traço em R(b). Para caber nos dois ao mesmo tempo, o traço deve satisfazer ‖s − a‖ ≤ ε e ‖s − R(b)‖ ≤ ε. Duas bolas de mesmo raio se intersectam <strong>se e somente se</strong> ‖a − R(b)‖ ≤ 2ε.</p>
+            <p class="formula">s* = (w<sub>A</sub>·a + w<sub>B</sub>·R(b)) / (w<sub>A</sub> + w<sub>B</sub>) &nbsp;→&nbsp; com pesos iguais: s* = (a + R(b)) / 2</p>
+            <p data-i18n="geo.cs.p2">É a regra que o prompt traduz como “pegue a média de onde A quer o traço e de onde B quer, já girado”. Arraste os dois alvos abaixo: o ponto de compromisso se move, e o teste ‖a − R(b)‖ ≤ 2ε decide se o traço é possível.</p>
+            <div class="cs-readout" id="cs-readout"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --- tab: failures --- -->
+      <div class="tab-panel" data-panel="failures">
+        <div class="failure-grid" id="failure-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SYMMETRY ===================== -->
+  <section class="section section-alt" id="simetria">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-index">04</p>
+        <h2 data-i18n="sym.title">Decomposição de simetria</h2>
+        <p class="section-sub" data-i18n="sym.sub">Todo desenho I se decompõe em uma parte par e uma ímpar: I = I₊ + I₋, com I₊ = ½(I + R·I) e I₋ = ½(I − R·I). A parte par é o que a meia-volta preserva; a parte ímpar é o que troca de sinal. Aqui isso é <em>computado no seu navegador</em>, sobre o SVG real.</p>
+      </header>
+
+      <div class="sym-layout">
+        <div class="sym-controls">
+          <label class="sym-picker">
+            <span data-i18n="sym.pick">Desenho</span>
+            <select id="sym-select"></select>
+          </label>
+          <div class="sym-toggles">
+            <label class="chk"><input type="checkbox" id="sym-show-i" checked><span data-i18n="sym.showI">Mostrar I</span></label>
+            <label class="chk"><input type="checkbox" id="sym-show-r" checked><span data-i18n="sym.showR">Mostrar R·I</span></label>
+            <label class="chk"><input type="checkbox" id="sym-show-p" checked><span data-i18n="sym.showP">Mostrar I₊ (par)</span></label>
+            <label class="chk"><input type="checkbox" id="sym-show-m" checked><span data-i18n="sym.showM">Mostrar I₋ (ímpar)</span></label>
+          </div>
+          <div class="sym-readout" id="sym-readout"></div>
+          <p class="note" data-i18n="sym.note">ρ é um alarme unilateral, não uma nota: ρ = 0 indica simetria rotacional (um modo de falha, não um sucesso). O benchmark nunca julga um desenho por ρ.</p>
+        </div>
+        <div class="sym-panels" id="sym-panels"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ROUNDS ===================== -->
+  <section class="section" id="rodadas">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-index">05</p>
+        <h2 data-i18n="rnd.title">As rodadas</h2>
+        <p class="section-sub" data-i18n="rnd.sub">Cinco rodadas, seis versões de prompt. O padrão é a história do gargalo se deslocando: primeiro a geometria, depois a arte, depois o humor.</p>
+      </header>
+      <div class="timeline" id="timeline"></div>
+
+      <header class="sub-head">
+        <h3 data-i18n="rnd.promptTitle">Evolução do prompt (v1 → v6)</h3>
+        <p data-i18n="rnd.promptSub">Os prompts vão para o repositório exatamente como foram enviados.</p>
+      </header>
+      <div class="prompt-table-wrap">
+        <table class="prompt-table" id="prompt-table">
+          <thead><tr>
+            <th data-i18n="rnd.thVer">Versão</th><th data-i18n="rnd.thUsed">Usada em</th>
+            <th data-i18n="rnd.thWhat">O que é</th><th data-i18n="rnd.thChanges">Mudanças-chave</th>
+            <th data-i18n="rnd.thOutcome">Resultado</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BASELINES ===================== -->
+  <section class="section section-alt" id="baselines">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-index">06</p>
+        <h2 data-i18n="base.title">Execuções de comparação</h2>
+        <p class="section-sub" data-i18n="base.sub">15 execuções que não fazem parte das rodadas 0–4: quatro geradores de imagem raster e onze modelos de texto, para responder a duas perguntas — o que os geradores de imagem fazem com o pedido, e o que modelos de texto mais amplos fazem com o prompt v5.</p>
+      </header>
+
+      <div class="base-stats" id="base-stats"></div>
+
+      <div class="base-toolbar">
+        <div class="filters" id="base-filters" role="group" aria-label="Filtros"></div>
+        <button class="chip" id="base-sort" type="button" data-i18n="base.sort">Ordenar: veredito</button>
+      </div>
+
+      <div class="base-table-wrap">
+        <table class="base-table" id="base-table">
+          <thead><tr>
+            <th data-i18n="base.thId">Id</th>
+            <th data-i18n="base.thModel">Modelo</th>
+            <th data-i18n="base.thPrompt">Prompt</th>
+            <th data-i18n="base.thVerdict">Veredito</th>
+            <th data-i18n="base.thRubric">Rubrica /8</th>
+            <th data-i18n="base.thD1">David 1</th>
+            <th data-i18n="base.thD2">David 2</th>
+            <th data-i18n="base.thImpression">Impressão</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="judge-box">
+        <h3 data-i18n="base.judgeTitle">Concordância com o avaliador humano</h3>
+        <div class="judge-chart" id="judge-chart"></div>
+        <p class="note" data-i18n="base.judgeNote">A rubrica 0–2 é a operacionalização do próprio assistente, pontuada <em>sem cegueira</em> (ele conhecia os vereditos). Sua concordância de 15/15 não é um resultado independente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== METHOD ===================== -->
+  <section class="section" id="metodo">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-index">07</p>
+        <h2 data-i18n="met.title">Método, limites e leitura honesta</h2>
+        <p class="section-sub" data-i18n="met.sub">O benchmark é exploratório. Esta seção existe para que ninguém leia os números acima como um ranking.</p>
+      </header>
+
+      <div class="skills">
+        <header class="skills-head">
+          <h3 data-i18n="skill.title">O que a tarefa exige</h3>
+          <p data-i18n="skill.sub">A tarefa conecta capacidades que costumam ser avaliadas separadamente.</p>
+        </header>
+        <ul class="skill-list">
+          <li><strong data-i18n="skill.1Title">Raciocínio geométrico</strong><span data-i18n="skill.1">Manter as coordenadas consistentes ao longo de uma transformação global.</span></li>
+          <li><strong data-i18n="skill.2Title">Satisfação de restrições</strong><span data-i18n="skill.2">Mudanças locais precisam preservar a reconhecibilidade das duas interpretações.</span></li>
+          <li><strong data-i18n="skill.3Title">Síntese de programas</strong><span data-i18n="skill.3">A saída é gráficos vetoriais executáveis (código SVG), não uma descrição de imagem.</span></li>
+          <li><strong data-i18n="skill.4Title">Modelagem perceptual</strong><span data-i18n="skill.4">Antecipar como um observador humano agrupa linhas em traços faciais.</span></li>
+          <li><strong data-i18n="skill.5Title">Composição semântica</strong><span data-i18n="skill.5">Usar a relação entre os dois rostos para comunicar uma ideia.</span></li>
+        </ul>
+        <p class="skills-note" data-i18n="skill.note">Esses requisitos competem entre si.</p>
+      </div>
+
+      <div class="method-grid">
+        <article class="method-card">
+          <h3 data-i18n="met.p1Title">Não é um ranking</h3>
+          <p data-i18n="met.p1">Um avaliador humano, que é também o autor do benchmark. Uma saída avaliada por modelo e prompt. Sem escala de pontuação validada e sem inferência estatística. Os resultados são <strong>observações que motivam experimentos controlados</strong>, não medidas de capacidade.</p>
+        </article>
+        <article class="method-card">
+          <h3 data-i18n="met.p2Title">Capacidade ≠ confiabilidade ≠ eficiência</h3>
+          <p data-i18n="met.p2">Um veredito sobre uma saída responde a apenas uma de três perguntas. A <em>capacidade</em> aparece quando o modelo entrega. A <em>confiabilidade</em> (com que frequência?) não foi medida: uma execução por modelo. A <em>eficiência</em> (tokens, chamadas, renders, dólares) está registrada, mas as condições mudam entre rodadas.</p>
+        </article>
+        <article class="method-card">
+          <h3 data-i18n="met.p3Title">Regra do orçamento de tokens</h3>
+          <p data-i18n="met.p3">Um modelo que esgota o orçamento de tokens conferindo a própria geometria é uma <em>falha de conclusão de tarefa sob aquele regime de inferência</em>, não evidência de incapacidade geométrica. O mesmo modelo entregou um resultado identificável com o raciocínio desligado.</p>
+        </article>
+        <article class="method-card">
+          <h3 meta-card="1" data-i18n="met.p4Title">O piloto e a rodada 4</h3>
+          <p data-i18n="met.p4">O piloto (rodada 0) não foi avaliado por humano. A rodada 4 usou ferramentas, mas mudou várias coisas ao mesmo tempo: o efeito das ferramentas não está isolado. O MiniMax foi executado duas vezes e só uma entrou no conjunto avaliado — uma seleção entre duas execuções, descrita como tal.</p>
+        </article>
+      </div>
+
+      <div class="caveats">
+        <h3 data-i18n="met.caveatTitle">As ressalvas que viajam com qualquer número</h3>
+        <ol id="caveat-list"></ol>
+      </div>
+
+      <div class="method-cols">
+        <div>
+          <h3 data-i18n="met.fileTitle">O contrato do arquivo SVG</h3>
+          <ul class="spec-list">
+            <li data-i18n="met.spec1">SVG autônomo, `xmlns`, `viewBox="0 0 1000 1000"`, `width`/`height` = 1000, XML válido, no máximo 300 KB.</li>
+            <li data-i18n="met.spec2">Proibido: texto de qualquer tipo, `<code>&lt;image&gt;</code>`, `<code>&lt;foreignObject&gt;</code>`, `<code>&lt;script&gt;</code>`, gradientes, blur/filtros, sombras e qualquer iluminação direcional.</li>
+            <li data-i18n="met.spec3">Permitido: linha, hachura, preenchimento chapado, paleta pequena e chapada, espaço em branco.</li>
+            <li data-i18n="met.spec4">A partir da rodada 3, `<code>&lt;title&gt;</code>`, `<code>&lt;desc&gt;</code>` e `<code>&lt;metadata&gt;</code>` são removidos do SVG entregue.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="met.licTitle">Licenças e créditos</h3>
+          <p data-i18n="met.lic1"><strong>Código</strong> (`scripts/`, `tests/`): MIT. <strong>Conteúdo de pesquisa</strong> (paper, docs, prompts, avaliações, logs, SVGs, saídas brutas, previews): CC BY 4.0.</p>
+          <p data-i18n="met.lic2">Os SVGs foram gerados por modelos de linguagem via OpenRouter e são publicados sob CC BY 4.0 na medida em que o autor detém direitos sobre eles. Verifique os termos de cada provedor antes do uso comercial.</p>
+          <p data-i18n="met.lic3">Este site é uma visualização não-oficial dos artefatos do benchmark. A obra de referência é de <strong>Claudio Drews</strong> — <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark" target="_blank" rel="noopener">repositório</a>, <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark/blob/main/paper/reversible-faces-benchmark-paper.md" target="_blank" rel="noopener">paper</a>, <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark/blob/main/docs/geometry.md" target="_blank" rel="noopener">geometria</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OPEN QUESTIONS ===================== -->
+  <section class="section section-alt" id="perguntas">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-index">08</p>
+        <h2 data-i18n="oq.title">Perguntas de pesquisa em aberto</h2>
+        <p class="section-sub" data-i18n="oq.sub">Os experimentos atuais motivam várias perguntas.</p>
+      </header>
+
+      <ol class="oq-list">
+        <li>
+          <h3 data-i18n="oq.1Title">Interferência de restrições</h3>
+          <p data-i18n="oq.1">Como a complexidade estética ou semântica adicionada muda a probabilidade de satisfazer uma restrição geométrica primária?</p>
+        </li>
+        <li>
+          <h3 data-i18n="oq.2Title">Planejamento e decomposição</h3>
+          <p data-i18n="oq.2">A priorização geométrica explícita ajuda independentemente do tamanho do prompt e das demais instruções?</p>
+        </li>
+        <li>
+          <h3 data-i18n="oq.3Title">Retorno visual</h3>
+          <p data-i18n="oq.3">Qual é o efeito de renderizar e inspecionar sobre as taxas de sucesso, o número de iterações e o custo, mantendo todo o resto constante?</p>
+        </li>
+        <li>
+          <h3 data-i18n="oq.4Title">Avaliação perceptual</h3>
+          <p data-i18n="oq.4">Observadores independentes, e avaliadores multimodais, conseguem identificar figuras reversíveis integradas sem inventar os traços esperados?</p>
+        </li>
+        <li>
+          <h3 data-i18n="oq.5Title">Composição semântica</h3>
+          <p data-i18n="oq.5">Um modelo consegue produzir duas interpretações individualmente reconhecíveis cuja relação comunique uma ideia, uma sátira ou uma piada?</p>
+        </li>
+        <li>
+          <h3 data-i18n="oq.6Title">Generalização</h3>
+          <p data-i18n="oq.6">As mesmas estratégias se estendem a ambigramas rotacionais, imagens multivista e outros significados visuais dependentes de transformação?</p>
+        </li>
+      </ol>
+      <p class="oq-note" data-i18n="oq.note">Essas perguntas exigem repetições, variantes controladas de prompt e avaliação independente.</p>
+    </div>
+  </section>
+
+  <!-- ===================== RUN IT YOURSELF ===================== -->
+  <section class="section" id="rode">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-index">09</p>
+        <h2 data-i18n="run.title">Rode você mesmo</h2>
+        <p class="section-sub" data-i18n="run.sub">Os testes offline não precisam de chave de API e não custam nada.</p>
+      </header>
+
+      <div class="run-grid">
+        <div class="run-card">
+          <h3 data-i18n="run.offlineTitle">Testes offline</h3>
+          <pre><code>git clone https://github.com/ClaudioDrews/reversible-faces-benchmark.git
+cd reversible-faces-benchmark
+python3 -m venv .venv &amp;&amp; . .venv/bin/activate
+pip install -r requirements.txt
+python -m unittest discover -s tests</code></pre>
+          <h3 data-i18n="run.mockTitle">Execuções simuladas (sem chave)</h3>
+          <pre><code>python scripts/run_models.py --mock /tmp/rfb-smoke-oneshot \
+  prompts/prompt-v5.md z-ai/glm-5.3-flash
+python scripts/run_models_v6.py --mock /tmp/rfb-smoke \
+  prompts/prompt-v6.md z-ai/glm-5.3-flash</code></pre>
+        </div>
+        <div class="run-card">
+          <h3 data-i18n="run.modelTitle">Execuções de modelo</h3>
+          <pre><code>export OPENROUTER_API_KEY="your-api-key"
+python scripts/run_models.py runs/experiment-01 \
+  prompts/prompt-v5.md z-ai/glm-5.3-flash
+python scripts/validate_svg.py runs/experiment-01/*.svg
+python scripts/render_preview.py \
+  runs/experiment-01/glm-5.3-flash.svg preview.png</code></pre>
+          <p class="run-note" data-i18n="run.note">O julgamento final é seu.</p>
+          <p class="run-links">
+            <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark/blob/main/paper/reversible-faces-benchmark-paper.md" target="_blank" rel="noopener" data-i18n="run.linkPaper">Paper</a>
+            <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark/blob/main/docs/methodology.md" target="_blank" rel="noopener" data-i18n="run.linkMethod">Metodologia</a>
+            <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark/blob/main/docs/how-it-works.md" target="_blank" rel="noopener" data-i18n="run.linkGeometry">Geometria em linguagem simples</a>
+            <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark/blob/main/docs/future-work.md" target="_blank" rel="noopener" data-i18n="run.linkFuture">Trabalho futuro</a>
+            <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark/blob/main/docs/reproduction.md" target="_blank" rel="noopener" data-i18n="run.linkRepro">Reprodução</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-title">Reversible Faces Benchmark</p>
+      <p class="footer-note" data-i18n="foot.note">Site educativo não-oficial. Artefatos, avaliação e documentos de <strong>Claudio Drews</strong> — CC BY 4.0 (conteúdo) e MIT (código).</p>
+      <p class="footer-note" data-i18n="foot.whistler">Inspirado nas caricaturas reversíveis de Rex Whistler.</p>
+      <p class="footer-note footer-note-mark" data-i18n="foot.mark">Marca: GLM 5.3 Flash, rodada 4.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark" target="_blank" rel="noopener">GitHub</a>
+      <a href="#playground" data-i18n="nav.playground">Laboratório</a>
+      <a href="#metodo" data-i18n="nav.method">Método</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" type="button" aria-label="Topo">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+</button>
+
+<script src="data/manifest.js"></script>
+<script src="data/rho.js"></script>
+<script src="data/art.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/rotator.js"></script>
+<script src="assets/js/geometry.js"></script>
+<script src="assets/js/symmetry.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

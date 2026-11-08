@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<title>Triumph and the Morning After</title>
+<desc>DeepSeek R1's January 2025 launch and the AI-bubble wobble that erased about six hundred billion dollars: upright, a grinning hype-man with headphones, a spiky crest and a gold coin; rotated, the same strokes become a weary bearded man in a cracked cap whose beard reads as a falling chart.</desc>
+
+<rect width="1000" height="1000" fill="#f2e9d5"/>
+<rect x="48" y="48" width="904" height="904" fill="none" stroke="#191818" stroke-width="3"/>
+
+<!-- ============ CAPE / COLLAR (becomes B's bell hat) ============ -->
+<g stroke="#191818" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 297 788 C 272 820 254 862 250 896 C 330 916 430 921 500 921 C 570 921 670 916 750 896 C 746 862 728 820 703 788 Z"
+        fill="#f2e9d5" stroke-width="11"/>
+  <g fill="none" stroke-width="2.4">
+    <path d="M 276 806 L 342 872"/>
+    <path d="M 312 800 L 378 866"/>
+    <path d="M 348 800 L 414 866"/>
+    <path d="M 384 800 L 450 866"/>
+    <path d="M 420 800 L 486 866"/>
+    <path d="M 456 800 L 522 866"/>
+    <path d="M 492 800 L 558 866"/>
+    <path d="M 528 800 L 594 866"/>
+    <path d="M 564 800 L 630 866"/>
+    <path d="M 600 800 L 666 866"/>
+    <path d="M 636 800 L 702 866"/>
+    <path d="M 672 800 L 738 866"/>
+    <path d="M 268 838 L 312 882"/>
+    <path d="M 340 862 L 392 902"/>
+    <path d="M 452 880 L 500 916"/>
+    <path d="M 560 882 L 608 914"/>
+    <path d="M 668 860 L 722 898"/>
+    <path d="M 726 832 L 762 868"/>
+  </g>
+  <path d="M 262 890 C 340 910 430 915 500 915 C 570 915 662 910 740 890" fill="none" stroke-width="6"/>
+</g>
+
+<!-- ============ HEAD OUTLINE ============ -->
+<g fill="#f2e9d5" stroke="#191818" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 340 428 C 316 470 297 516 303 566 C 309 622 320 676 348 720 C 372 756 416 779 462 782
+           C 516 786 574 770 606 738 C 640 704 668 654 686 602 C 700 560 702 496 672 450
+           C 663 434 654 424 648 418 C 560 398 440 396 352 414 Z" stroke-width="11"/>
+</g>
+
+<!-- ears -->
+<g fill="none" stroke="#191818" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 302 486 C 280 480 272 512 284 536 C 292 550 304 546 306 534"/>
+  <path d="M 694 482 C 716 476 726 506 714 532 C 706 548 694 544 692 532"/>
+</g>
+
+<!-- ============ CREST (becomes B's jagged falling-chart beard) ============ -->
+<g stroke="#191818" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 332 304 L 350 258 L 376 286 L 402 230 L 428 260 L 456 202 L 484 242 L 512 182
+           L 540 228 L 568 168 L 596 214 L 624 156 L 652 206 L 670 300 C 600 314 400 314 332 304 Z"
+        fill="#191818" stroke-width="9"/>
+  <path d="M 350 292 L 400 264 L 450 286 L 500 240 L 550 262 L 600 214 L 648 236"
+        fill="none" stroke="#f2e9d5" stroke-width="3.2"/>
+</g>
+
+<!-- ============ SIDE HAIR MASSES (become B's beard sides) ============ -->
+<g fill="#191818" stroke="#191818" stroke-width="8" stroke-linejoin="round">
+  <path d="M 330 298 C 319 350 316 402 323 446 C 345 437 372 429 396 424 C 403 378 400 334 392 298 Z"/>
+  <path d="M 666 294 C 678 350 684 406 677 450 C 653 441 622 430 599 424 C 593 376 597 332 606 296 Z"/>
+</g>
+
+<!-- ============ FRINGE BAND (becomes B's moustache) ============ -->
+<g stroke="#191818" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 348 300 C 420 282 560 280 652 296 C 656 314 654 330 648 344
+           C 600 338 570 340 546 332 C 520 324 496 322 470 330 C 440 340 400 336 352 342
+           C 346 328 344 312 348 300 Z" fill="#f2e9d5" stroke-width="7"/>
+  <g fill="none" stroke-width="2.2">
+    <path d="M 356 306 L 398 342"/>
+    <path d="M 386 300 L 428 336"/>
+    <path d="M 416 296 L 458 332"/>
+    <path d="M 446 294 L 484 330"/>
+    <path d="M 476 292 L 512 328"/>
+    <path d="M 506 291 L 542 327"/>
+    <path d="M 536 291 L 572 327"/>
+    <path d="M 566 292 L 602 328"/>
+    <path d="M 596 294 L 632 330"/>
+    <path d="M 626 296 L 652 326"/>
+  </g>
+</g>
+
+<!-- ============ CURL (becomes B's round nose) ============ -->
+<g fill="#f2e9d5" stroke="#191818" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 478 342 C 469 366 477 386 500 386 C 523 386 531 366 522 342 Z" stroke-width="7"/>
+  <path d="M 487 352 Q 500 374 513 351" fill="none" stroke-width="4"/>
+</g>
+
+<!-- ============ FOREHEAD WRINKLES ============ -->
+<g fill="none" stroke="#191818" stroke-width="4" stroke-linecap="round">
+  <path d="M 404 404 Q 442 394 478 402"/>
+  <path d="M 534 400 Q 570 392 606 402"/>
+  <path d="M 424 422 Q 452 414 478 420"/>
+</g>
+
+<!-- ============ BROWS (A) ============ -->
+<g fill="#191818">
+  <path d="M 366 456 Q 414 418 466 446 Q 414 442 366 456 Z"/>
+  <path d="M 536 446 Q 588 416 636 454 Q 586 440 536 446 Z"/>
+</g>
+
+<!-- ============ EYES (shared) ============ -->
+<g fill="#f2e9d5" stroke="#191818" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 382 494 C 382 476 398 466 420 466 C 442 466 458 476 458 494 C 458 504 452 512 440 512 L 400 512 C 388 512 382 504 382 494 Z" stroke-width="6"/>
+  <path d="M 542 492 C 542 474 558 464 580 464 C 602 464 618 474 618 492 C 618 503 612 511 600 511 L 560 511 C 548 511 542 503 542 492 Z" stroke-width="6"/>
+</g>
+<g fill="#191818">
+  <circle cx="420" cy="490" r="12"/>
+  <circle cx="580" cy="488" r="12"/>
+</g>
+
+<!-- ============ UNDER-EYE POUCHES (become B's drooping brows) ============ -->
+<g fill="none" stroke="#191818" stroke-width="6" stroke-linecap="round">
+  <path d="M 378 540 Q 420 558 462 536"/>
+  <path d="M 542 534 Q 584 556 626 534"/>
+</g>
+
+<!-- ============ NOSE ============ -->
+<g fill="none" stroke="#191818" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 452 570 C 438 606 432 634 450 650 C 470 664 530 664 552 648 C 570 632 562 604 548 572" stroke-width="7"/>
+  <path d="M 452 570 Q 462 548 471 532" stroke-width="5"/>
+  <path d="M 548 572 Q 538 548 529 532" stroke-width="5"/>
+</g>
+<path d="M 444 640 Q 500 666 558 638 Q 500 656 444 640 Z" fill="#191818"/>
+
+<!-- ============ GRIN ============ -->
+<g fill="none" stroke="#191818" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 412 686 Q 500 728 592 682" stroke-width="8"/>
+  <path d="M 442 736 Q 500 750 560 732" stroke-width="5"/>
+  <path d="M 408 682 L 396 664" stroke-width="5"/>
+  <path d="M 596 680 L 610 660" stroke-width="5"/>
+</g>
+
+<!-- ============ CHEEK / JOWL ============ -->
+<g fill="none" stroke="#191818" stroke-width="2.6" stroke-linecap="round">
+  <path d="M 322 552 Q 344 584 352 620"/>
+  <path d="M 334 540 Q 352 566 358 596"/>
+  <path d="M 664 546 Q 648 578 644 612"/>
+  <path d="M 676 560 Q 660 588 654 618"/>
+  <path d="M 336 664 Q 356 694 358 724"/>
+  <path d="M 660 656 Q 642 688 640 718"/>
+</g>
+<g fill="none" stroke="#191818" stroke-width="4.5" stroke-linecap="round">
+  <path d="M 330 662 Q 354 692 356 728"/>
+  <path d="M 428 740 Q 500 760 574 736"/>
+</g>
+
+<!-- stray stipple -->
+<g fill="#191818">
+  <circle cx="378" cy="602" r="2.6"/>
+  <circle cx="390" cy="612" r="2.1"/>
+  <circle cx="612" cy="596" r="2.4"/>
+</g>
+
+<!-- ============ HEADPHONES (tech) ============ -->
+<g fill="#191818" stroke="#191818" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 336 812 Q 500 856 664 812" fill="none" stroke-width="13"/>
+  <circle cx="330" cy="832" r="29" stroke-width="7"/>
+  <circle cx="670" cy="832" r="29" stroke-width="7"/>
+  <path d="M 700 852 Q 724 878 700 898" fill="none" stroke-width="6"/>
+</g>
+<g fill="none" stroke="#f2e9d5" stroke-width="3" stroke-linecap="round">
+  <path d="M 318 818 Q 306 832 318 846"/>
+  <path d="M 682 818 Q 670 832 682 846"/>
+</g>
+
+<!-- ============ GOLD COIN MEDALLION ============ -->
+<g stroke="#191818" stroke-linecap="round">
+  <circle cx="500" cy="878" r="25" fill="#d8a52c" stroke-width="6"/>
+  <circle cx="500" cy="878" r="14" fill="none" stroke-width="3.5"/>
+</g>
+
+<!-- ============ B-ONLY STROKES (drawn upright in B's frame) ============ -->
+<g transform="rotate(180 500 500)">
+  <g fill="#191818">
+    <!-- hooded upper lids (read as A's lower-lid shadow) -->
+    <path d="M 376 494 Q 420 462 464 494 Q 420 478 376 494 Z"/>
+    <path d="M 536 492 Q 580 460 624 492 Q 580 476 536 492 Z"/>
+  </g>
+  <!-- lip line (reads as a hair strand in A's fringe) -->
+  <g fill="none" stroke="#191818" stroke-linecap="round">
+    <path d="M 444 694 Q 500 682 556 690" stroke-width="4.5"/>
+    <!-- beard strands (hidden inside A's dark crest) -->
+    <path d="M 456 752 L 480 812" stroke-width="2.6"/>
+    <path d="M 508 742 L 524 806" stroke-width="2.6"/>
+    <path d="M 556 756 L 570 814" stroke-width="2.6"/>
+    <path d="M 604 746 L 616 800" stroke-width="2.6"/>
+    <!-- crack across the hat (reads as a fold on A's cape) -->
+    <path d="M 392 156 L 434 176 L 468 144 L 508 172 L 550 140 L 600 162" stroke-width="6"/>
+  </g>
+</g>
+</svg>
