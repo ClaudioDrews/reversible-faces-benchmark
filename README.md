@@ -1,5 +1,8 @@
 # Reversible Faces Benchmark
 
+> **🌐 Live interactive website:** **[Open the 180° Rotation Lab](https://claudiodrews.github.io/reversible-faces-benchmark/)**  
+> Rotate the benchmark drawings, explore dual facial interpretations, and examine 180° geometry and C₂ symmetry.
+
 **Evaluating geometric consistency, perceptual ambiguity, and semantic composition in generative AI.**
 
 An experimental framework, with reproducible offline tooling and archived artifacts, for testing whether language models can synthesize **a single vector drawing that supports two distinct facial interpretations under a 180° rotation**. Inspired by the reversible caricatures of Rex Whistler, the benchmark combines geometric constraint satisfaction, programmatic drawing, perceptual recognition and visual communication.
@@ -8,8 +11,6 @@ An experimental framework, with reproducible offline tooling and archived artifa
   <img src="assets/previews/round-03__minimax-m3.1-flash_prompt-v5.png" width="760" alt="A model-generated reversible SVG, shown upright and rotated by 180 degrees">
 </p>
 <p align="center"><em>One SVG evaluated in two orientations (MiniMax, prompt v5, round 3). The right-hand image is obtained solely by rotating the left-hand one by 180°. Previews are illustrations; the benchmark is judged on the SVG itself.</em></p>
-
-**Interactive website:** [Explore the 180° rotation lab, geometric constraints, and C₂ symmetry](https://claudiodrews.github.io/reversible-faces-benchmark/).
 
 **Research status:** exploratory benchmark · four evaluated rounds (rounds 1–4, plus an unevaluated pilot) · three primary models · fifteen additional comparison runs · open experimental artifacts and a Python harness.
 
