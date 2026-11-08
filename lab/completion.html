@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Productive incompleteness · RFB Lab</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.studio-grid{display:grid;grid-template-columns:minmax(260px,320px) minmax(0,1fr);gap:18px}
+.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.canvas-frame{position:relative;border:1px solid #d4c4b1;background:#fff;aspect-ratio:1;overflow:hidden}
+.canvas-frame img{display:block;width:100%;height:100%;object-fit:contain}
+.canvas-frame.turn img{transform:rotate(180deg)}
+.pose-axis{position:absolute;top:50%;left:50%;width:72%;border-top:3px dashed #b3492d;transform-origin:center;transform:translate(-50%,-50%);pointer-events:none}
+.pose-axis:before{content:'';position:absolute;left:50%;top:-110px;height:220px;border-left:2px dashed #b3492d;opacity:.7}
+.canvas-cap{font-size:12px;color:#6c5e51}
+input[type=number]{margin-top:4px}
+.breakdown{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.breakdown > div{border:1px solid #d3c3b1;padding:12px;background:#f8f2e9}
+.breakdown strong{font:26px Georgia,serif;display:block}
+.compare-box{margin-top:20px;display:grid;grid-template-columns:150px 1fr;gap:15px;align-items:center}
+.compare-box img{width:150px;aspect-ratio:1;border:1px solid #ddd6cb;background:white}
+#feasible-map{width:100%;max-width:480px;background:#fff;border:1px solid #d3c2ab;aspect-ratio:1}
+.status{font-size:13px;padding:12px;border-left:3px solid #c46a43;background:#f5e8d8}
+.link-back{display:inline-block;margin:20px 0;color:#a84d36;font-weight:700}
+@media(max-width:900px){.studio-grid,.preview-grid{grid-template-columns:1fr}.breakdown{grid-template-columns:1fr 1fr}.compare-box{grid-template-columns:115px 1fr}.compare-box img{width:115px}}
+</style>
+</head>
+<body>
+<header class="mast"><div class="wrap mastrow"><a class="wordmark" href="index.html">RFB ↻ RESEARCH</a><span class="chip">EXPERIMENT / NOT VALIDATED</span><nav><a href="AMBIGUITY.md">Research hypothesis</a><a href="index.html">Main workbench</a></nav></div></header>
+<main class="wrap">
+<a class="link-back" href="index.html">← Dual interpretation workbench</a>
+<section class="intro" style="padding-top:18px">
+<p class="eyebrow">05 / COMPLETION FRONTIER</p>
+<h1>Draw less.<br><em>Suggest more.</em></h1>
+<p class="lede">Make a single visible line temporarily incomplete. Change its ink weight. Rotate the identical resulting drawing to inspect how context could reinterpret it. Distinguish geometric changes from human perceptual responses.</p>
+<p class="warning">This is a controlled perturbation of an archived SVG, not a demonstration that the result has improved. The supposed head axes and feature-tolerance radii are manually specified hypotheses; no recognized face, gaze, tilt, or emotion is inferred by this page.</p>
+</section>
+<section class="studio-grid">
+<aside class="panel">
+<h3>Controlled source perturbation</h3>
+<label for="art">Archived vector drawing</label><select id="art"></select>
+<label for="primitive">Primitive index <output id="primitive-label">—</output></label><input id="primitive" type="range" min="0" max="0">
+<label for="gaps">Omitted stroke fraction <output id="gaps-label">0%</output></label><input id="gaps" type="range" min="0" max="75" value="0" step="5">
+<label for="weight">Local relative stroke width <output id="weight-label">1.00×</output></label><input id="weight" type="range" min="40" max="220" value="100" step="5">
+<button id="baseline" type="button">Restore original</button>
+<p class="minor">Gaps are a periodic dash perturbation of one primitive, **not** a semantic gap optimizer. Filled shapes or inherited styles may make the stroke modification ineffective; a zero-pixel result is reported explicitly.</p>
+<h3>Independent apparent head axes</h3>
+<label for="poseA">Hypothetical A roll <output id="poseA-label">-12°</output></label><input id="poseA" type="range" min="-45" max="45" value="-12">
+<label for="poseB">Hypothetical B roll <output id="poseB-label">18°</output></label><input id="poseB" type="range" min="-45" max="45" value="18">
+<p class="minor">These annotated axes are independent in each upright viewing frame. They do not deform the image. Physical page rotation remains exactly 180°.</p>
+</aside>
+<div class="panel">
+<h3>Same ink, two interpretations to inspect</h3>
+<div class="preview-grid">
+<div><div class="canvas-frame"><img id="view-a" alt="Modified SVG at 0 degrees"><div id="axis-a" class="pose-axis"></div></div><p class="canvas-cap">A · 0° · axis: manually estimated</p></div>
+<div><div class="canvas-frame turn"><img id="view-b" alt="The exact same modified SVG turned 180 degrees"><div id="axis-b" class="pose-axis"></div></div><p class="canvas-cap">B · 180° · axis: independently estimated</p></div>
+</div>
+<div class="breakdown">
+<div><span>Changed 240 px pixels</span><strong id="changed">—</strong><small>Source before vs after</small></div>
+<div><span>Relative ρ, original → variant</span><strong id="rho-change">—</strong><small>Geometric only</small></div>
+<div><span>Manual pose-axis separation</span><strong id="tilt-delta">—</strong><small>Not a detected property</small></div>
+</div>
+<p class="status" id="diagnosis">Select a vector primitive to generate a controlled physical perturbation.</p>
+<div class="compare-box"><img id="reference" alt="Untouched archived original"><p class="minor">Original immutable reference, upright. The two larger panes derive from a single temporary altered SVG; no separate B portrait is constructed.</p></div>
+</div>
+</section>
+<section class="two" style="margin-top:30px">
+<div class="panel">
+<h3>Configural tolerance: adjustable geometric model</h3>
+<p>Manipulate the two target points and one radius. The exact intersection of **two Euclidean disks** is shown; this is not a threshold for recognition.</p>
+<div class="twocol">
+<label>A x<input id="ax" type="number" min="0" max="1000" value="450"></label>
+<label>A y<input id="ay" type="number" min="0" max="1000" value="350"></label>
+<label>B upright x<input id="bx" type="number" min="0" max="1000" value="550"></label>
+<label>B upright y<input id="by" type="number" min="0" max="1000" value="650"></label>
+</div>
+<label for="eps">Hypothetical per-target tolerance ε <output id="eps-label">30 px</output></label><input id="eps" type="range" min="0" max="100" value="30">
+<div id="feasible-text" class="small-output"></div>
+</div>
+<div class="panel">
+<h3>Geometric feasibility map</h3>
+<svg id="feasible-map" viewBox="0 0 1000 1000" role="img" aria-label="Two spatial tolerance disks and the shared-point midpoint">
+<rect x="0" y="0" width="1000" height="1000" fill="#fcf8f0"/>
+<path d="M500 0V1000 M0 500H1000" fill="none" stroke="#ded4c6" stroke-width="3"/>
+<circle id="disk-a" r="30" fill="#b14830" fill-opacity=".20" stroke="#a3442c" stroke-width="5"/>
+<circle id="disk-b" r="30" fill="#315b77" fill-opacity=".20" stroke="#315b77" stroke-width="5"/>
+<circle id="point-a" r="12" fill="#9b3d24"/><circle id="point-b" r="12" fill="#214f74"/>
+<line id="connector" stroke="#555" stroke-width="4" stroke-dasharray="10 7"/>
+<circle id="midpoint" r="9" fill="#23221c"/>
+</svg>
+<p class="minor">A target (copper), B mapped into page coordinates exactly once (blue), and the compromise midpoint (black). Overlapping disks mean possible Euclidean shared-point placement under the assumed tolerance — nothing more.</p>
+</div>
+</section>
+<section class="panel" style="margin:30px 0 70px">
+<h3>What would count as success?</h3>
+<p>After collecting geometric perturbations, compare each orientation <strong>blindly and separately</strong> using open descriptions, feature-role assignments, expression and head-angle judgments, before disclosing reversibility. The dependent variable is the weaker face's independent recognition. Only then can a contour-omission frontier or a tolerance envelope be estimated.</p>
+<p>Full rationale: <a href="AMBIGUITY.md">Productive Incompleteness</a> · <a href="EXPERIMENTS.md">Experimental gates</a> · <a href="RESEARCH.md">Literature register</a>.</p>
+</section>
+</main>
+<script src="../site/data/manifest.js"></script><script src="../site/data/art.js"></script>
+<script src="math.js"></script><script src="completion-core.js"></script><script src="completion.js"></script>
+</body>
+</html>
