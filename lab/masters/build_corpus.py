@@ -323,22 +323,13 @@ def source_processor(record:dict,out:Path,download=download_exact, size=SQUARE)-
     return item
 
 def contact_sheet(out:Path,records:list[dict])->None:
-    cells=[]
-    for r in records:
-        ident=r["id"]
-        files=["canonical/"+ident+"-single-source.png",
-              "canonical/"+ident+"-opposite-panel.png",
-              "preview/"+ident+"-binary.png","preview/"+ident+"-tonal.png",
-              "preview/"+ident+"-contours.png"]
-        cells.append("<section><h2>"+html.escape(r["title"])+"</h2><p>Panel rotation correlation: "+
-             str(r["registration"]["rotate_right_180"]["correlation"])+
-             "; preferred orientation: "+html.escape(r["registration"]["higher_correlation_alignment"])+"</p>"+
-             "<div class='grid'>"+''.join("<figure><img src='"+html.escape(path)+"' alt='"+html.escape(path)+"'><figcaption>"+html.escape(path.split("/")[-1])+"</figcaption></figure>" for path in files)+"</div></section>")
-    body="<!doctype html><html lang='en'><meta charset='utf-8'><title>Whistler reference corpus</title>"
-    body+="<style>body{font:16px system-ui;margin:2em;background:#faf8f3;color:#282524}section{margin-bottom:4em}h1,h2{font-family:Georgia,serif}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}figure{margin:0;border:1px solid #ddd;padding:10px;background:white}img{width:100%;height:auto}figcaption{font-size:12px;overflow-wrap:anywhere}</style>"
-    body+="<h1>Whistler · historical single-source vectorization</h1><p>Geometric inspection; no perceptual validation. Art sources: Wikimedia Commons public domain file pages; see report.json for provenance.</p>"
-    body+="".join(cells)+"</html>"
-    (out/"index.html").write_text(body,encoding="utf-8")
+    """Generate standalone interactive inspector; no JS network or hidden face claims."""
+    template=Path(__file__).with_name("viewer.html").read_text(encoding="utf-8")
+    if template.count("__CORPUS_JSON__")!=1:
+        raise ValueError("viewer template requires one corpus payload marker")
+    # Escaping < prevents a crafted remote metadata string from closing the JSON script.
+    payload=json.dumps(records,ensure_ascii=False).replace("<","\\u003c")
+    (out/"index.html").write_text(template.replace("__CORPUS_JSON__",payload),encoding="utf-8")
 
 def main(argv=None)->int:
     ap=argparse.ArgumentParser(description=__doc__)

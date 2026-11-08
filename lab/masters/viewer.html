@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Whistler Reference Research | Dual Interpretation Lab</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#28211d;background:#eee9df}
+*{box-sizing:border-box}body{margin:0}.wrap{max-width:1420px;margin:auto;padding:24px}
+header{background:#27221e;color:#fff;padding:25px 0}
+header h1{font:normal 42px/1.05 Georgia,serif;letter-spacing:-.035em;margin:3px 0 8px}
+header p{color:#d4cac1;margin:0;max-width:930px;font-size:14px}
+.kicker{font-size:11px;letter-spacing:.16em;color:#d5a077}
+section{margin:18px 0}.grid{display:grid;grid-template-columns:minmax(250px,320px) minmax(0,1fr) minmax(260px,380px);gap:16px}
+.panel{background:#fffdf8;border:1px solid #d2c8b7;padding:19px;border-radius:6px;min-width:0}
+h2{font:normal 24px Georgia,serif;margin:0 0 14px}h3{font:normal 19px Georgia,serif;margin:14px 0}
+label{display:block;font-size:12px;font-weight:700;margin:12px 0 7px}
+select,input,button,textarea{font:inherit}select{padding:10px;width:100%;background:#f9f5ee;border:1px solid #c9bcab;border-radius:3px}
+input[type=range]{width:100%;accent-color:#a24332}input[type=checkbox]{accent-color:#a24332}
+button{padding:10px;border:1px solid #927762;background:#f4e8d9;border-radius:3px;cursor:pointer}
+button:hover{background:#ebd4c1}
+.buttons{display:flex;gap:8px;flex-wrap:wrap}.minor{font-size:12px;color:#77685b;line-height:1.55}
+.art{aspect-ratio:1;position:relative;background:#fff;border:1px solid #e3dbd0;overflow:hidden;user-select:none;cursor:crosshair}
+.art img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;transform-origin:center;pointer-events:none}
+.art svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.alt{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:13px}
+.alt img{width:100%;background:#fff;border:1px solid #ddd}
+.alt .turned{transform:rotate(180deg)}
+figcaption{font-size:12px;color:#6c5d52}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.4 ui-monospace,monospace}
+.highlights{background:#f7eadd;border-left:3px solid #a64b35;padding:12px;font-size:12px}
+table{border-collapse:collapse;width:100%;font-size:12px}th,td{text-align:left;border-bottom:1px solid #ece2d8;padding:7px}
+.card{background:#eae1d5;border-top:3px solid #b4553b;padding:16px;margin-top:17px}
+img{max-width:100%}
+@media(max-width:1150px){.grid{grid-template-columns:290px 1fr}.grid>.panel:last-child{grid-column:1/-1}}
+@media(max-width:750px){.grid{grid-template-columns:1fr}.grid>.panel:last-child{grid-column:auto}.wrap{padding:14px}header h1{font-size:34px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <div class="kicker">REVERSIBLE FACES BENCHMARK / PRIMARY-SOURCE ANALYSIS</div>
+ <h1>Whistler · geometry of ambiguity</h1>
+ <p>Four historical artworks, one source panel per drawing, traced into three independent SVG representations. No human recognition or artistic merit is inferred from pixel similarity. Coordinates and rotation shown here are research annotations.</p>
+</div></header>
+<main class="wrap">
+<section class="grid">
+  <div class="panel">
+    <h2>Reference & hypothesis</h2>
+    <label for="work">Historical artwork</label><select id="work"></select>
+    <label for="layer">Representation or perturbation</label><select id="layer">
+      <option value="canonical">Source raster · untouched A</option>
+      <option value="tonal">Derived SVG tonal · preview</option>
+      <option value="binary">Derived SVG binary · preview</option>
+      <option value="contours">Derived SVG contours · preview</option>
+      <option value="centre-blur">Central-region blur</option>
+      <option value="outer-blur">Outer-region blur</option>
+      <option value="centre-gaps">Central fragmented ink</option>
+      <option value="outer-gaps">Outer fragmented ink</option>
+      <option value="centre-dilate-ink">Central darker/thicker ink</option>
+      <option value="outer-dilate-ink">Outer darker/thicker ink</option>
+      <option value="centre-erode-ink">Central thinner ink</option>
+      <option value="outer-erode-ink">Outer thinner ink</option>
+    </select>
+    <label for="angle">Page turn · <output id="angleText">0°</output></label>
+    <input id="angle" type="range" min="0" max="180" value="0" step="1">
+    <div class="buttons"><button id="zero">0° A</button><button id="turn">180° B</button></div>
+    <label><input id="grid" type="checkbox" checked> Page quadrants & radial guides</label>
+    <label><input id="cross" type="checkbox" checked> Click to annotate a feature point</label>
+    <p class="minor">Radial guides are centered on the PAGE, not automatically on either perceived head. For a tilted/side-facing face, annotate the face-relative coordinate system separately.</p>
+    <h3>Reference images</h3>
+    <div class="alt">
+      <figure><img id="rightpanel" alt="Scanned opposite view"><figcaption>Opposite panel, used for source registration only.</figcaption></figure>
+      <figure><img id="original" alt="Untouched source"><figcaption>Canonical single-panel reference, immutable.</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>One drawing, rotated</h2>
+    <div class="art" id="art" aria-label="Click source to annotate point coordinates">
+      <img id="artImage" alt="Chosen source or derived image">
+      <svg id="guide" viewBox="0 0 1000 1000">
+        <g fill="none" stroke="#b84b31" stroke-width="2" stroke-dasharray="13 13" opacity=".6">
+          <path d="M500 0V1000 M0 500H1000"/>
+          <circle cx="500" cy="500" r="230"/>
+          <circle cx="500" cy="500" r="325"/>
+          <circle cx="500" cy="500" r="500"/>
+        </g>
+        <g id="marks"></g>
+      </svg>
+    </div>
+    <p class="minor">The same loaded image is rotated by CSS — not separately drawn. The working raster is a vector preview or a controlled one-source transformation. Rotating the grayscale art does not reveal the artist's mental construction process.</p>
+    <div class="highlights" id="pointtext">Click on a visible landmark to record a point in the canonical page and current viewer frame.</div>
+    <div class="buttons" style="margin-top:10px"><button id="export">Export annotation CSV</button><button id="clear">Clear annotations</button></div>
+    <table><thead><tr><th>Viewer angle</th><th>Page x,y</th><th>180° partner</th></tr></thead><tbody id="points"></tbody></table>
+  </div>
+
+  <div class="panel">
+    <h2>Fidelity & uncertainty</h2>
+    <div id="provenance"></div>
+    <h3>Vectorization fidelity</h3><div id="quality"></div>
+    <h3>Originality & experiment gates</h3>
+    <p class="minor">The origin has one page image; this is a reference for studying dual readings, not a prompt example to trace. All SVGs here were automatically generated from the same canonical panel and re-rendered for fidelity tests.</p>
+    <p class="minor">An observed pixel alteration is not a human-perception effect. “Weaker face” recognition, pose, expression, dual-use semantic roles, productive omission and artistic quality require blinded observers or explicit independent annotations.</p>
+    <div class="card" id="modification">Physical intervention statistics appear here.</div>
+    <p class="minor"><a id="svgLink" href="#" download>Download selected derived SVG</a> · <a id="originalLink" href="#" target="_blank">Original source file in this corpus</a></p>
+  </div>
+</section>
+<section class="panel">
+ <h2>What is preserved, what is still a hypothesis</h2>
+ <p>These images let us examine <strong>geometry and graphic information</strong> across all recorded alternatives: shared landmarks or profile-specific features, down/side face pose, selective incompleteness, spatial tolerance distributions, figure/ground, contrast and hatching, radial central/peripheral detail, C₂, harmonic fields, contour grouping, salience, semantic role reassignment, and a nonverbal story. The visual interface supplies stimuli; it does not automatically validate any of these psychological explanations.</p>
+ <p><strong>Protocol:</strong> <a href="https://github.com/ClaudioDrews/reversible-faces-benchmark/blob/exp/dual-interpretation-research-lab/lab/masters/HYPOTHESIS-MATRIX.md">H01–H48 candidate hypotheses</a>. <strong>Raw results:</strong> <a href="report.json" download>Download immutable acquisition and processing report</a>. <strong>Warning:</strong> the original Commons license and page are recorded for each artwork; attribution and jurisdiction must be considered when redistributing outside this research bundle.</p>
+</section>
+</main>
+<script id="payload" type="application/json">__CORPUS_JSON__</script>
+<script>
+(function(){
+'use strict';
+var records=JSON.parse(document.getElementById('payload').textContent), q=function(id){return document.getElementById(id);};
+var names=['canonical','tonal','binary','contours'], points=[];
+records.forEach(function(r){var o=document.createElement('option');o.value=r.id;o.textContent=r.title;q('work').appendChild(o);});
+function record(){return records.find(function(x){return x.id===q('work').value;});}
+function chosenPath(r,l){
+ if(l==='canonical')return 'canonical/'+r.id+'-single-source.png';
+ if(names.indexOf(l)!==-1)return 'preview/'+r.id+'-'+l+'.png';
+ return 'perturbations/'+r.id+'/'+l+'.png';
+}
+function svgPath(r,l){return names.indexOf(l)>=1?'vector/'+r.id+'-'+l+'.svg':null;}
+function addText(parent,text,label){
+ var p=document.createElement('p');p.className='minor';p.textContent=label+': '+text;parent.appendChild(p);
+}
+function view(){
+ var r=record();if(!r)return;
+ var layer=q('layer').value, angle=+q('angle').value;
+ q('angleText').textContent=angle+'°';
+ var src=chosenPath(r,layer);
+ q('artImage').src=src;q('artImage').style.transform='rotate('+angle+'deg)';
+ q('rightpanel').src='canonical/'+r.id+'-opposite-panel.png';
+ q('original').src='canonical/'+r.id+'-single-source.png';
+ q('guide').hidden=!q('grid').checked;
+ var p=q('provenance');p.textContent='';
+ addText(p,r.title,'Artwork');
+ addText(p,r.provenance.source_sha256.slice(0,20)+'…','Source SHA-256');
+ addText(p,r.provenance.source_bytes.toLocaleString()+' bytes','Original');
+ addText(p,r.registration.rotate_right_180.correlation,'Paired-scan 180° correlation');
+ addText(p,r.registration.no_rotation.correlation,'Paired-scan 0° correlation');
+ var link=document.createElement('a');link.href=r.provenance.source_page;link.textContent='Commons source description / licensing';link.target='_blank';link.rel='noopener';p.appendChild(link);
+ q('originalLink').href='source/'+r.id+'.jpg';
+ var d=q('quality');d.textContent='';
+ ['binary','tonal','contours'].forEach(function(k){
+   var m=r.vectors[k],f=m.raster_fidelity;
+   addText(d,k+': SSIM '+f.SSIM.toFixed(3)+', MAE '+f.MAE.toFixed(2)+', '+m.bytes.toLocaleString()+' B','Raster→SVG');
+ });
+ var derived=svgPath(r,layer),download=q('svgLink');
+ download.style.display=derived?'inline':'none';if(derived)download.href=derived;
+ var modification=q('modification');modification.textContent='';
+ if(r.perturbations[layer]){
+   var n=r.perturbations[layer];
+   modification.textContent='Region: '+n.region+'. Changed pixels: '+n.changed_pixels+'. MAE vs original '+n.MAE_to_canonical+'. Geometric only.';
+ } else modification.textContent='Reference or vector preview; no region-level perturbation selected.';
+}
+function addPoint(ev){
+ if(!q('cross').checked)return;
+ var rect=q('art').getBoundingClientRect(),x=(ev.clientX-rect.left)/rect.width-.5,y=(ev.clientY-rect.top)/rect.height-.5;
+ var angle=(+q('angle').value)*Math.PI/180,c=Math.cos(angle),s=Math.sin(angle);
+ var px=500+1000*(c*x+s*y),py=500+1000*(-s*x+c*y);
+ var bp=[1000-px,1000-py];
+ var v={source:record().id,representation:q('layer').value,angle:+q('angle').value,
+   page_x:+px.toFixed(2),page_y:+py.toFixed(2),rotated_page_x:+bp[0].toFixed(2),rotated_page_y:+bp[1].toFixed(2)};
+ if(px<0||px>1000||py<0||py>1000)return;
+ points.push(v);
+ q('pointtext').textContent='Page ('+v.page_x+', '+v.page_y+'), rotated partner ('+v.rotated_page_x+', '+v.rotated_page_y+'). These are geometric locations, NOT inferred facial roles.';
+ var row=document.createElement('tr');
+ [v.angle+'°',v.page_x+', '+v.page_y,v.rotated_page_x+', '+v.rotated_page_y].forEach(function(t){var td=document.createElement('td');td.textContent=t;row.appendChild(td);});
+ q('points').appendChild(row);
+ var svg=document.createElementNS('http://www.w3.org/2000/svg','circle');
+ svg.setAttribute('cx',((ev.clientX-rect.left)/rect.width*1000).toFixed(1));
+ svg.setAttribute('cy',((ev.clientY-rect.top)/rect.height*1000).toFixed(1));
+ svg.setAttribute('r','10');svg.setAttribute('fill','#bb4627');q('marks').appendChild(svg);
+}
+function exportCSV(){
+ var cols=['source','representation','angle','page_x','page_y','rotated_page_x','rotated_page_y'];
+ var rows=[cols.join(',')].concat(points.map(function(x){return cols.map(function(k){return String(x[k]);}).join(',');}));
+ var blob=new Blob([rows.join('\n')+'\n'],{type:'text/csv;charset=utf-8'});
+ var u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='whistler-geometry-annotations.csv';a.click();
+ setTimeout(function(){URL.revokeObjectURL(u);},1000);
+}
+['work','layer','angle','grid'].forEach(function(k){q(k).addEventListener('input',view);});
+q('zero').onclick=function(){q('angle').value=0;view();};
+q('turn').onclick=function(){q('angle').value=180;view();};
+q('art').onclick=addPoint;
+q('export').onclick=exportCSV;
+q('clear').onclick=function(){points=[];q('points').textContent='';q('marks').textContent='';q('pointtext').textContent='Annotation table cleared.';};
+view();
+})();
+</script>
+</body></html>
