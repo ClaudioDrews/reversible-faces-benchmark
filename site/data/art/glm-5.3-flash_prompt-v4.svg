@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <title>The Pin and the Plug</title>
+  <desc>The launch of the Humane AI Pin: A is the ecstatic presenter on stage, wearing the glowing pin on his collar and grinning as it beams; rotated 180°, the same drawing is the deflated engineer after the shutdown — the pin becomes the button on a sad flat cap, the hair becomes a heavy stubble beard, the grin becomes the cap, and the face is weary.</desc>
+  <rect width="1000" height="1000" fill="#f7f2e7"/>
+  <rect x="55" y="55" width="890" height="890" fill="none" stroke="#221c14" stroke-width="3"/>
+
+  <g fill="none" stroke="#221c14" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- ============ HEAD CONTOUR (shared silhouette) ============ -->
+    <path d="M 500 192 C 640 198 722 268 738 380 C 752 468 742 558 724 640 C 710 702 668 760 610 790 C 575 806 540 809 500 806 C 460 808 432 805 398 795 C 340 775 292 730 276 640 C 258 558 248 468 262 380 C 280 268 360 198 500 192 Z" stroke-width="12" fill="#f7f2e7"/>
+
+    <!-- ears (shared, at eye level) -->
+    <path d="M 262 450 Q 236 470 244 512 Q 251 549 272 561" stroke-width="8"/>
+    <path d="M 738 450 Q 764 470 756 512 Q 749 549 728 561" stroke-width="8"/>
+
+    <!-- ============ HAIR / BEARD MASS (dark, double duty) ============ -->
+    <path d="M 268 396 C 272 300 320 224 410 200 C 460 187 545 187 596 202 C 682 226 728 300 732 396 L 716 362 C 692 328 664 336 654 372 C 636 336 600 340 586 380 C 566 342 532 346 516 380 C 498 344 462 346 446 382 C 428 344 392 340 376 376 C 360 338 322 336 304 372 C 292 340 278 356 268 396 Z" fill="#241d15" stroke="#241d15" stroke-width="6"/>
+
+    <!-- stubble / hair texture hatch (serves both readings) -->
+    <g stroke-width="2.5" opacity="0.9">
+      <path d="M 300 330 L 322 308"/><path d="M 318 352 L 344 324"/><path d="M 342 366 L 372 334"/>
+      <path d="M 372 372 L 404 338"/><path d="M 404 374 L 436 340"/><path d="M 436 376 L 466 344"/>
+      <path d="M 700 330 L 678 308"/><path d="M 682 352 L 656 324"/><path d="M 658 366 L 628 334"/>
+      <path d="M 628 372 L 596 338"/><path d="M 596 374 L 564 340"/><path d="M 564 376 L 534 344"/>
+    </g>
+
+    <!-- ============ EYES (shared) ============ -->
+    <!-- pupils -->
+    <circle cx="424" cy="505" r="14" fill="#241d15" stroke="none"/>
+    <circle cx="578" cy="505" r="14" fill="#241d15" stroke="none"/>
+    <circle cx="429" cy="500" r="4" fill="#f7f2e7" stroke="none"/>
+    <circle cx="583" cy="500" r="4" fill="#f7f2e7" stroke="none"/>
+    <!-- A: wide-open upper lids -->
+    <path d="M 393 502 Q 426 476 460 500" stroke-width="6"/>
+    <path d="M 542 500 Q 576 476 609 502" stroke-width="6"/>
+    <!-- A: lower lid (thin) -->
+    <path d="M 400 530 Q 430 538 462 532" stroke-width="3"/>
+    <path d="M 540 532 Q 572 538 602 530" stroke-width="3"/>
+    <!-- A: happy crow's feet (inert in B as lid creases) -->
+    <path d="M 356 498 Q 344 512 352 526" stroke-width="3"/>
+    <path d="M 646 498 Q 658 512 650 526" stroke-width="3"/>
+
+    <!-- ============ A: RAISED BROWS (become B's eye bags) ============ -->
+    <path d="M 390 462 Q 432 416 482 450 Q 438 434 390 462 Z" fill="#241d15" stroke="none"/>
+    <path d="M 612 462 Q 570 416 520 450 Q 564 434 612 462 Z" fill="#241d15" stroke="none"/>
+
+    <!-- ============ A: NOSE (in B: forehead lines) ============ -->
+    <path d="M 493 580 Q 507 614 492 642" stroke-width="5"/>
+    <path d="M 466 655 Q 500 680 534 652" stroke-width="7"/>
+    <circle cx="474" cy="662" r="3.5" fill="#241d15" stroke="none"/>
+    <circle cx="527" cy="659" r="3.5" fill="#241d15" stroke="none"/>
+
+    <!-- ============ A: BIG GRIN (becomes B's cap dome) ============ -->
+    <path d="M 408 670 Q 500 738 592 670" stroke-width="9"/>
+    <path d="M 428 692 Q 500 718 572 692" stroke-width="4"/>
+    <path d="M 408 670 Q 398 662 390 664" stroke-width="4"/>
+    <path d="M 592 670 Q 602 662 610 664" stroke-width="4"/>
+
+    <!-- A: cheek lines (in B: forehead creases) -->
+    <path d="M 380 612 Q 371 646 386 670" stroke-width="4"/>
+    <path d="M 620 612 Q 629 646 614 670" stroke-width="4"/>
+
+    <!-- A: forehead wrinkles (in B: cheek lines) -->
+    <path d="M 428 416 Q 470 401 512 413" stroke-width="3"/>
+    <path d="M 446 393 Q 482 381 516 391" stroke-width="3"/>
+
+    <!-- cheek hatching (form, no light direction; 45°) -->
+    <g stroke-width="2.2" opacity="0.85">
+      <path d="M 310 600 L 336 574"/><path d="M 308 640 L 340 608"/><path d="M 310 680 L 344 646"/>
+      <path d="M 318 716 L 350 684"/><path d="M 690 600 L 664 574"/><path d="M 692 640 L 660 608"/>
+      <path d="M 690 680 L 656 646"/><path d="M 682 716 L 650 684"/>
+    </g>
+
+    <!-- ============ NECK, COLLAR, BOW TIE (bow becomes B's cap topper) ============ -->
+    <path d="M 424 806 Q 430 850 420 872" stroke-width="7"/>
+    <path d="M 576 806 Q 570 850 580 872" stroke-width="7"/>
+    <path d="M 500 892 L 436 866 L 442 922 Z" fill="#241d15" stroke="#241d15" stroke-width="5"/>
+    <path d="M 500 892 L 564 866 L 558 922 Z" fill="#241d15" stroke="#241d15" stroke-width="5"/>
+    <circle cx="500" cy="893" r="12" fill="#241d15" stroke="none"/>
+
+    <!-- ============ THE PIN (A: glowing AI pin; B: button on the cap) ============ -->
+    <rect x="540" y="876" width="38" height="38" rx="9" fill="#e2621f" stroke="#241d15" stroke-width="4"/>
+    <circle cx="559" cy="895" r="5" fill="#241d15" stroke="none"/>
+    <!-- projection glow beams (A-only intent; in B: sparks above the cap) -->
+    <g stroke="#e2621f" stroke-width="5">
+      <path d="M 536 868 L 516 846"/>
+      <path d="M 574 866 L 572 840"/>
+      <path d="M 596 884 L 618 868"/>
+    </g>
+
+    <!-- stray stipple dots -->
+    <circle cx="342" cy="700" r="2" fill="#241d15" stroke="none"/>
+    <circle cx="662" cy="704" r="2" fill="#241d15" stroke="none"/>
+
+    <!-- ============ B-ONLY STROKES (drawn in B's own upright frame) ============ -->
+    <g transform="rotate(180 500 500)">
+      <!-- B: heavy drooping lids (page: below A's eyes, merges with lower lid) -->
+      <path d="M 396 476 Q 428 458 462 476" stroke-width="5"/>
+      <path d="M 540 476 Q 574 458 606 476" stroke-width="5"/>
+      <!-- B: worry furrows between the brows (page: light under-eye marks in A) -->
+      <path d="M 452 442 L 448 470" stroke-width="3"/>
+      <path d="M 470 438 L 468 468" stroke-width="3"/>
+      <path d="M 488 440 L 490 468" stroke-width="3"/>
+      <!-- B: nose tip cup (page: hat band under the hair fringe) -->
+      <path d="M 470 662 Q 500 642 530 662" stroke-width="6"/>
+      <circle cx="478" cy="655" r="3" fill="#241d15" stroke="none"/>
+      <circle cx="522" cy="655" r="3" fill="#241d15" stroke="none"/>
+      <!-- B: downturned frown (page: a light strand inside the hair mass) -->
+      <path d="M 420 688 Q 500 660 580 688" stroke-width="4"/>
+      <!-- B: cap brim under the dome (page: chin crease in A) -->
+      <path d="M 384 338 Q 500 364 616 338" stroke-width="6"/>
+      <!-- B: cap seam (page: chin crease in A) -->
+      <path d="M 500 322 L 496 240" stroke-width="3"/>
+      <path d="M 470 300 L 464 252" stroke-width="2.5"/>
+      <path d="M 530 300 L 534 254" stroke-width="2.5"/>
+      <!-- B: tired neck lines under the beard (page: crown shading in A) -->
+      <path d="M 452 900 Q 470 908 494 906" stroke-width="3"/>
+      <path d="M 548 900 Q 530 908 508 906" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<rect width="1000" height="1000" fill="#faf7ef"/>
+<g fill="none" stroke="#111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<!-- head outline: top = A hat dome zone / B chin ; bottom = A chin / B hat crown -->
+<path stroke-width="10" d="M 330 350 C 330 250 400 200 500 200 C 600 200 670 250 670 350 C 670 380 670 420 670 450 C 670 620 610 790 500 790 C 390 790 330 620 330 450 C 330 420 330 380 330 350 Z" fill="#faf7ef"/>
+<!-- A hat: tilted dome filled dark, top peak right -->
+<path d="M 330 345 Q 500 378 670 345 C 670 250 610 180 530 185 C 430 190 335 255 330 345 Z" fill="#111"/>
+<!-- A nose (page 650) = B brim -->
+<path d="M 445 618 Q 500 672 555 618"/>
+<!-- A brows (cup-down arcs at 445) = B eye bags -->
+<path d="M 372 450 Q 415 428 452 445"/>
+<path d="M 548 445 Q 585 428 628 450"/>
+<!-- shared eyes -->
+<circle cx="415" cy="500" r="17" fill="#111"/>
+<circle cx="585" cy="500" r="17" fill="#111"/>
+<!-- lower lids -->
+<path d="M 396 524 Q 415 533 434 524" stroke-width="4"/>
+<path d="M 566 524 Q 585 533 604 524" stroke-width="4"/>
+<!-- hair tufts at sides (= B sideburns) -->
+<path d="M 322 420 Q 350 470 330 520" stroke-width="5"/>
+<path d="M 678 420 Q 650 470 670 520" stroke-width="5"/>
+<!-- A smile (cup 680) = B hat band -->
+<path d="M 420 672 Q 500 738 580 672"/>
+<!-- bow tie at 890 = B pompom -->
+<path d="M 500 890 L 440 865 L 440 915 Z M 500 890 L 560 865 L 560 915 Z" fill="#111" stroke-width="5"/>
+<!-- A-only prop: antenna on hat -->
+<path d="M 545 190 L 590 128" stroke-width="5"/>
+<circle cx="596" cy="120" r="10" fill="#111"/>
+<!-- B-only strokes (drawn in B frame) -->
+<g transform="rotate(180 500 500)" stroke-width="5">
+  <circle cx="500" cy="775" r="9" fill="#111"/>
+  <path d="M 400 275 L 425 262 M 445 300 L 470 288 M 545 292 L 570 280 M 585 262 L 608 250" stroke="#faf7ef" stroke-width="3"/>
+  <path d="M 445 692 Q 500 664 555 692" stroke="#faf7ef" stroke-width="7"/>
+</g>
+</g>
+</svg>

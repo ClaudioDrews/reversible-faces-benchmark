@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="415" cy="500" r="18"/>
+    <circle cx="585" cy="500" r="18"/>
+    <path d="M 400 450 Q 500 430 600 450"/>
+    <path d="M 422 680 Q 500 724 578 680"/>
+    <path d="M 200 800 L 800 800 L 500 200 Z"/>
+    <g transform="rotate(180 500 500)">
+      <path d="M 500 750 h -10 v 20 h 10 Z"/>
+    </g>
+  </g>
+</svg>

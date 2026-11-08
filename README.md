@@ -9,6 +9,8 @@ An experimental framework, with reproducible offline tooling and archived artifa
 </p>
 <p align="center"><em>One SVG evaluated in two orientations (MiniMax, prompt v5, round 3). The right-hand image is obtained solely by rotating the left-hand one by 180°. Previews are illustrations; the benchmark is judged on the SVG itself.</em></p>
 
+**Interactive website:** [Explore the 180° rotation lab, geometric constraints, and C₂ symmetry](https://claudiodrews.github.io/reversible-faces-benchmark/).
+
 **Research status:** exploratory benchmark · four evaluated rounds (rounds 1–4, plus an unevaluated pilot) · three primary models · fifteen additional comparison runs · open experimental artifacts and a Python harness.
 
 [Paper](paper/reversible-faces-benchmark-paper.md) · [Methodology](docs/methodology.md) · [Results](#experimental-results) · [Geometry](docs/geometry.md) · [Reproduction](docs/reproduction.md) · [Documentation map](docs/README.md)

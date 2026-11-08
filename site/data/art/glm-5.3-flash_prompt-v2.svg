@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#fdf8ee"/>
+
+  <!-- ===== shared ink ===== -->
+  <g fill="none" stroke="#1a1a1a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- head silhouette: A's face+chin / B's bald dome+jaw (one contour) -->
+    <path fill="#fdf8ee" d="M 500 228 C 640 228 716 340 716 480 C 716 640 660 800 500 800 C 340 800 284 640 284 480 C 284 340 360 228 500 228 Z"/>
+
+    <!-- ears (eye level, both faces) -->
+    <path d="M 284 470 Q 262 500 284 532"/>
+    <path d="M 716 470 Q 738 500 716 532"/>
+
+    <!-- beanie fill (A) / hair-mass zone (B): bottom edge doubles as B's big nose -->
+    <path fill="#4a7c8c" d="M 340 348 Q 352 238 500 224 Q 648 238 660 348 Q 500 380 340 348 Z"/>
+
+    <!-- long cuff line: A beanie cuff / B nose ridge-and-tip -->
+    <path d="M 340 348 Q 500 382 660 348"/>
+    <!-- nostril ticks: A cuff stitches / B nostrils -->
+    <path stroke-width="4.5" d="M 468 354 L 460 342"/>
+    <path stroke-width="4.5" d="M 532 354 L 540 342"/>
+
+    <!-- short upper seam: A beanie seam / B deep frown -->
+    <path stroke-width="5" d="M 424 322 Q 500 344 576 322"/>
+
+    <!-- forehead crease: A worry-free brow line / B mustache -->
+    <path stroke-width="4.5" d="M 412 404 Q 500 380 588 404"/>
+
+    <!-- eyes: wide-open, shared -->
+    <circle cx="416" cy="500" r="21"/>
+    <circle cx="584" cy="500" r="21"/>
+    <circle cx="416" cy="500" r="7" fill="#1a1a1a"/>
+    <circle cx="584" cy="500" r="7" fill="#1a1a1a"/>
+
+    <!-- raised brows: A delight / B heavy eye-bags (slightly asymmetric) -->
+    <path stroke-width="7" d="M 366 462 Q 414 430 464 464"/>
+    <path stroke-width="7" d="M 536 470 Q 584 444 634 472"/>
+
+    <!-- cheek creases: A grin cheeks / B temple lines -->
+    <path stroke-width="4" d="M 344 592 Q 366 622 350 650"/>
+    <path stroke-width="4" d="M 656 592 Q 634 622 650 650"/>
+
+    <!-- lopsided big grin: A joy / B hair-band line -->
+    <path stroke-width="7" d="M 410 664 Q 500 734 590 674"/>
+    <path stroke-width="4.5" d="M 404 656 Q 396 664 402 676"/>
+    <path stroke-width="4.5" d="M 596 666 Q 604 674 598 684"/>
+
+    <!-- beard edge: A beard fringe / B messy hair fringe -->
+    <path stroke-width="5" d="M 352 642 Q 500 786 648 642"/>
+
+    <!-- beard tufts / B hair spikes -->
+    <g stroke-width="4">
+      <path d="M 424 748 Q 428 766 422 780"/>
+      <path d="M 476 756 Q 480 772 474 786"/>
+      <path d="M 528 756 Q 532 772 538 786"/>
+      <path d="M 580 748 Q 584 764 590 780"/>
+      <path d="M 352 652 Q 336 668 340 690"/>
+      <path d="M 360 706 Q 348 720 354 738"/>
+      <path d="M 648 652 Q 664 668 660 690"/>
+      <path d="M 640 706 Q 652 720 646 738"/>
+    </g>
+
+    <!-- pompom / collar bow: symmetric under rotation -->
+    <circle cx="500" cy="148" r="26" fill="#1a1a1a" stroke="none"/>
+    <circle cx="500" cy="148" r="9" fill="#fdf8ee" stroke="none"/>
+    <!-- pompom fluff / collar points -->
+    <path stroke-width="4.5" d="M 466 134 L 446 112"/>
+    <path stroke-width="4.5" d="M 534 134 L 554 112"/>
+  </g>
+</svg>

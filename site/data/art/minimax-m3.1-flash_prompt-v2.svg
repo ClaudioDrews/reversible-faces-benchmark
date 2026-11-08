@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <rect width="1000" height="1000" fill="#ffffff"/>
+  <g fill="none" stroke="#111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- ===== SHARED HEAD OUTLINE =====
+         crown 200 / chin 786.  In B the jaw curve becomes the crown of a big hat. -->
+    <path d="M 500 200
+             C 604 198, 686 272, 700 382
+             C 710 452, 706 528, 692 588
+             C 664 678, 596 758, 500 786
+             C 404 758, 336 678, 308 588
+             C 294 528, 290 452, 300 382
+             C 314 272, 396 198, 500 200 Z"/>
+
+    <!-- ===== HAIR (A) = B's BEARD (B) ===== -->
+    <path d="M 302 396
+             C 292 296, 336 216, 416 202
+             C 474 192, 532 198, 580 212
+             C 648 232, 698 296, 706 392
+             C 704 330, 672 300, 604 296
+             C 566 294, 546 300, 528 316
+             C 512 330, 492 334, 472 324
+             C 448 312, 418 300, 384 300
+             C 338 300, 312 336, 302 396 Z"/>
+    <!-- hair strands: in B these are beard strands -->
+    <path d="M 344 322 C 362 262, 420 234, 470 246" stroke-width="5"/>
+    <path d="M 470 246 C 522 256, 542 292, 516 318" stroke-width="5"/>
+    <path d="M 596 250 C 636 268, 662 302, 662 330" stroke-width="5"/>
+
+    <!-- B's NOSE (B): a small peak, in A a crease under the forelock -->
+    <path d="M 462 375 L 500 346 L 538 375" stroke-width="5"/>
+
+    <!-- ===== BROWS (A) = POUCHES UNDER THE EYES (B) ===== -->
+    <path d="M 370 464 Q 416 428 462 460" stroke-width="7"/>
+    <path d="M 538 460 Q 584 428 630 464" stroke-width="7"/>
+
+    <!-- ===== SHARED EYES ===== -->
+    <circle cx="416" cy="500" r="30" fill="#ffffff"/>
+    <circle cx="584" cy="500" r="30" fill="#ffffff"/>
+    <!-- A's lower lid = B's heavy upper lid -->
+    <path d="M 388 522 Q 416 533 444 522" stroke-width="5"/>
+    <path d="M 556 522 Q 584 533 612 522" stroke-width="5"/>
+    <!-- pupils ride high in A (delighted), low in B (dispirited) -->
+    <circle cx="416" cy="490" r="12" fill="#111" stroke="none"/>
+    <circle cx="584" cy="490" r="12" fill="#111" stroke="none"/>
+    <circle cx="424" cy="482" r="4" fill="#ffffff" stroke="none"/>
+    <circle cx="592" cy="482" r="4" fill="#ffffff" stroke="none"/>
+
+    <!-- ===== A's under-eye creases = B's lowered, inward-slanting brows ===== -->
+    <path d="M 376 556 L 450 538" stroke-width="5"/>
+    <path d="M 550 538 L 624 556" stroke-width="5"/>
+
+    <!-- ===== NOSE (A): its broad base is B's hat brim ===== -->
+    <path d="M 474 546 C 470 578, 470 600, 474 620" stroke-width="5"/>
+    <path d="M 526 546 C 530 578, 530 600, 526 620" stroke-width="5"/>
+    <path d="M 428 634 Q 500 658 572 634" stroke-width="6"/>
+
+    <!-- ===== THE GRIN (A) = the band of B's hat ===== -->
+    <path d="M 410 660 Q 500 690 590 660 Q 500 726 410 660 Z" fill="#ffffff" stroke-width="6"/>
+    <path d="M 448 738 Q 500 752 552 738" stroke-width="5"/>
+
+    <!-- ===== NECK (A) = the stem of B's hat ===== -->
+    <path d="M 456 772 L 462 848" stroke-width="6"/>
+    <path d="M 544 772 L 538 848" stroke-width="6"/>
+
+    <!-- ===== BOW TIE (A) = the pompom on top of B's hat ===== -->
+    <path d="M 492 866 C 470 840, 428 838, 424 866 C 428 894, 470 892, 492 866" fill="#ffffff"/>
+    <path d="M 508 866 C 530 840, 572 838, 576 866 C 572 894, 530 892, 508 866" fill="#ffffff"/>
+    <circle cx="500" cy="866" r="9" fill="#111" stroke="none"/>
+  </g>
+</svg>
