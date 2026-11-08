@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Experimental reversible face geometry, perception and SVG authoring laboratory. Not a human-validated generator.">
+<title>Dual Interpretation Lab · Reversible Faces Benchmark</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#workbench">Skip to workbench</a>
+<header class="mast">
+  <div class="wrap mastrow">
+    <a class="wordmark" href="../README.md">RFB <span class="square">↻</span> RESEARCH</a>
+    <span class="chip">EXPERIMENTAL · NOT VALIDATED</span>
+    <nav><a href="../site/">Educational site</a><a href="../docs/geometry.md">Original geometry</a><a href="README.md">Methods</a></nav>
+  </div>
+</header>
+<main>
+<section class="intro wrap">
+  <p class="eyebrow">THE RESEARCH STUDIO / 180°</p>
+  <h1>One drawing.<br><em>Two perceptual worlds.</em></h1>
+  <p class="lede">Study the point where exact transformation geometry meets facial interpretation. Explore real archived benchmark SVGs, experiment with C₂ projections, local ink balance, feature roles, rotational centres and controlled ablation. Then plan a more disciplined LLM-to-SVG pipeline.</p>
+  <p class="warning">All measures shown here are exploratory geometric diagnostics. They cannot establish that either face is readable, that an illustration is Whistler-quality, or that a proposed mutation improves an observer's interpretation.</p>
+</section>
+
+<section class="wrap laboratory" id="workbench" aria-labelledby="wtitle">
+  <div class="section-head"><div><p class="eyebrow">01 / OBSERVE</p><h2 id="wtitle">Dual-view workbench</h2></div><div class="section-side">Archived artifacts · original pixels preserved</div></div>
+  <div class="lab-grid">
+    <aside class="controls">
+      <label for="artifact">Benchmark artifact</label>
+      <select id="artifact"></select>
+      <label for="angle">View rotation <output id="angle-value">0°</output></label>
+      <input id="angle" type="range" min="0" max="180" step="1" value="0">
+      <div class="twocol"><button type="button" id="upright">A · 0°</button><button type="button" id="inverted">B · 180°</button></div>
+      <h3>Rotation centre <small>(stress test only)</small></h3>
+      <label for="cx">Horizontal offset <output id="cx-value">0 px</output></label>
+      <input id="cx" type="range" min="-80" max="80" value="0">
+      <label for="cy">Vertical offset <output id="cy-value">0 px</output></label>
+      <input id="cy" type="range" min="-80" max="80" value="0">
+      <button type="button" id="reset">Reset official centre (500,500)</button>
+      <label class="check"><input id="guides" type="checkbox" checked> Show illustrative landmarks</label>
+      <label class="check"><input id="checker" type="checkbox"> Invert image polarity (figure/ground probe)</label>
+      <p class="minor">Moving the centre alters this preview only. Official benchmark scoring always uses (500, 500).</p>
+    </aside>
+    <div class="artboard" aria-label="Rotating archived drawing">
+      <div id="art-frame" class="art-frame">
+        <img id="main-art" alt="Selected original SVG being rotated" draggable="false">
+        <svg id="landmarks" viewBox="0 0 1000 1000" aria-label="Illustrative anatomical correspondence overlay">
+          <g fill="none" stroke="#c3432b" stroke-width="5" stroke-dasharray="12 13">
+            <path d="M 500 120 V 880 M 180 500 H 820" opacity=".28"/>
+            <circle cx="500" cy="500" r="100" opacity=".45"/>
+            <path d="M 300 452 H 700 M 300 350 H 700 M 300 320 H 700" opacity=".55"/>
+          </g>
+          <g fill="#c3432b"><circle cx="410" cy="500" r="10"/><circle cx="590" cy="500" r="10"/><circle cx="500" cy="500" r="8"/></g>
+          <g fill="#82250d" font-size="24" font-family="monospace"><text x="690" y="448">brow / bag</text><text x="690" y="345">brim / nose</text><text x="690" y="310">hat / mouth</text></g>
+        </svg>
+        <div id="centre-cross" class="centre-cross" aria-hidden="true">+</div>
+      </div>
+      <p class="art-caption" id="caption">Loading existing benchmark art…</p>
+    </div>
+    <div class="secondview">
+      <h3>Second interpretation · fixed 180°</h3>
+      <div class="side-art"><img id="second-art" alt="Same drawing rotated exactly 180 degrees" draggable="false"></div>
+      <p class="minor">The right-hand view always uses the immutable official centre. It is not a separate face, image or generated overlay.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap metrics-section">
+ <div class="section-head"><div><p class="eyebrow">02 / QUANTIFY</p><h2>Geometric diagnostics</h2></div><div class="section-side">Instrumental signals, not semantic scores</div></div>
+ <div class="metric-grid">
+  <article><span>ρ · relative rotation residual</span><strong id="rho">—</strong><small>2 ||I₋|| / ||I||; measured at 240 px</small></article>
+  <article><span>Ink fraction</span><strong id="ink">—</strong><small>grayscale ink greater than 32/255</small></article>
+  <article><span>Raster C₂ IoU</span><strong id="iou">—</strong><small>ink threshold 16 on the same raster</small></article>
+  <article><span>Geometric primitives</span><strong id="count">—</strong><small>primitive elements, not perceived strokes</small></article>
+ </div>
+ <div class="experiment-grid">
+  <div class="panel">
+   <h3>Parity / negative space / local weight</h3>
+   <label for="viewmode">Diagnostic image</label>
+   <select id="viewmode">
+    <option value="original">Source ink I</option><option value="rotated">Rotated ink R·I</option>
+    <option value="even">C₂ even I₊</option><option value="odd">C₂ odd I₋ (signed)</option>
+    <option value="difference">Absolute asymmetry |I−R·I|</option>
+    <option value="negative">Negative-space polarity</option>
+   </select>
+   <canvas id="analysis" width="240" height="240" aria-label="Computed raster parity or negative space view"></canvas>
+   <p class="minor">I₋ is signed; middle gray means zero. This visualization is an exact pixelwise decomposition of the raster, not a semantic segmentation.</p>
+  </div>
+  <div class="panel">
+   <h3>Opposite-sector ink balance</h3>
+   <div class="sector-grid" id="sectors"></div>
+   <p class="minor" id="sector-note">Three-by-three mass fractions and four opposite-sector residuals. The centre sector maps to itself. Inspired by PRC R-SECT, without claiming weight optimization improves faces.</p>
+   <button type="button" id="sector-details">Show regional balances</button>
+   <div id="balance" class="small-output" aria-live="polite"></div>
+  </div>
+  <div class="panel">
+   <h3>One-primitive ablation</h3>
+   <label for="stroke">Primitive index <output id="stroke-value">—</output></label>
+   <input id="stroke" type="range" min="0" max="0" value="0">
+   <div class="small-preview"><img id="ablated" alt="Ablated drawing, one SVG primitive removed"></div>
+   <div id="ablation-result" class="small-output">Select a vector artifact to compare the change in physical pixels. This does not measure facial recognizability.</div>
+   <p class="minor">Source is immutable. Remove exactly one primitive in a temporary copy. Record if it produces no pixel difference: no-op is a result, not success.</p>
+  </div>
+ </div>
+</section>
+
+<section class="wrap hypothesis-section">
+<div class="section-head"><div><p class="eyebrow">03 / INTERPRET</p><h2>Structural and semiotic hypotheses</h2></div><div class="section-side">Named roles ≠ model-inferred recognition</div></div>
+<div class="two">
+ <div class="panel">
+  <h3>Typed feature-role correspondences</h3>
+  <p>Fixed, illustrative Whistler-like canonical pairs, shown in the common 1000px page; <strong>not measured on the chosen drawing</strong>. Rotated B coordinates are mapped exactly once.</p>
+  <table><thead><tr><th>A role / page y</th><th>B role / upright y</th><th>Page residual</th></tr></thead><tbody id="roles"></tbody></table>
+  <p class="minor">In a future graph parser, nodes may be several SVG paths, or one path may support multiple roles. Lines, joins, faces and border ownership are distinct descriptors.</p>
+ </div>
+ <div class="panel">
+  <h3>Two landmark frames, one centre</h3>
+  <p>Use paired A/B points to fit a hypothetical construction centre, then normalize the drawing back to the official evaluation centre.</p>
+  <div class="twocol"><label>A anchor x<input id="ax" type="number" value="410"></label><label>B anchor x<input id="bx" type="number" value="590"></label></div>
+  <div class="twocol"><label>A anchor y<input id="ay" type="number" value="500"></label><label>B anchor y<input id="by" type="number" value="500"></label></div>
+  <button type="button" id="fit">Compute fitted centre</button>
+  <div class="small-output" id="fit-result">Current anchors imply centre (500,500).</div>
+  <p class="minor">A fitted centre is not automatically a better face. The face anchor must remain meaningful in both orientations.</p>
+ </div>
+</div>
+<div class="cards" id="idea-cards">
+<article><h3>01 · Graph composition</h3><p>Typed semantic roles and many-to-many primitive grouping; structural compatibility before contour fitting.</p><span>HYPOTHESIS</span></article>
+<article><h3>02 · Gestalt continuity</h3><p>Tangents, contour completion, closure and boundary ownership may shift between two rotated facial parses.</p><span>HYPOTHESIS</span></article>
+<article><h3>03 · Negative-space reading</h3><p>Inverted polarity reveals spaces and enclosures, not evidence of human figure-ground reversal.</p><span>PROBE</span></article>
+<article><h3>04 · Salience & ablation</h3><p>Pixel-change count is deterministic; causal role in recognition requires independent judges.</p><span>PROBE</span></article>
+<article><h3>05 · Shape-envelope fitting</h3><p>Radial majorants preserve two idealized silhouettes; star-shaped assumptions and actual recognizability remain.</p><span>EXACT / LIMITED</span></article>
+<article><h3>06 · Weight, taper, ornament</h3><p>Sector and linework experiments can explore expressive style but must protect the weaker face.</p><span>FUTURE TEST</span></article>
+<article><h3>07 · Debiased ranking</h3><p>Complexity-matched null models avoid ranking dense art too highly; no human-validated null yet.</p><span>FUTURE TEST</span></article>
+<article><h3>08 · Artistic narrative</h3><p>Two distinct expressions, a coherent shared drawing and an unprompted visual joke are separate endpoints.</p><span>FUTURE TEST</span></article>
+</div>
+</section>
+
+<section class="wrap synthesis">
+ <div class="section-head"><div><p class="eyebrow">04 / GENERATE</p><h2>Prompt-to-SVG protocol</h2></div><div class="section-side">Explicit model invocation happens in Python, not this page</div></div>
+ <div class="two">
+  <div class="panel">
+   <label for="brief">Creative brief</label>
+   <textarea id="brief" rows="6">A proud inventor becomes a wary critic after a 180° turn. Two distinctive faces with shared eyes, an expressive reversal and a subtle visual joke. Original sophisticated ink engraving, anatomically coherent, detailed but never at the expense of the second reading.</textarea>
+   <button type="button" id="copy-prompt">Copy structured prompt</button>
+   <p class="minor">The draft prompt is generated locally. For a real model run, use the optional CLI in <a href="PROMPT-PROTOCOL.md">PROMPT-PROTOCOL.md</a>; this page never sends a creative brief to an API.</p>
+  </div>
+  <div class="panel">
+   <h3>Quality gates for Whistler-level ambition</h3>
+   <label class="check"><input type="checkbox"> Distinct faces spontaneously recognized in each orientation</label>
+   <label class="check"><input type="checkbox"> Shared contours, not two pasted independent portraits</label>
+   <label class="check"><input type="checkbox"> Confident eye/nose/mouth relational configuration</label>
+   <label class="check"><input type="checkbox"> Rich original contour craft and controlled hatching</label>
+   <label class="check"><input type="checkbox"> Meaningful, unprompted contrast or visual joke</label>
+   <label class="check"><input type="checkbox"> Third-party blinded evaluation with weakest-face endpoint</label>
+   <p class="minor">Manual checklist only: checking a box does not imply a verified scientific result.</p>
+  </div>
+ </div>
+</section>
+<footer class="wrap">
+<p><strong>Research, not a leaderboard.</strong> This lab extends <a href="../site/">RFB</a> with ideas from <a href="https://github.com/ClaudioDrews/sinogram-ambigram">Sinogram Ambigram</a> and research in perception. Documentation: <a href="TRANSFER-MATRIX.md">all transfers</a> · <a href="THEORY.md">theory</a> · <a href="EXPERIMENTS.md">experiments</a> · <a href="RESEARCH.md">literature</a>.</p>
+</footer>
+</main>
+<script src="../site/data/manifest.js"></script>
+<script src="../site/data/art.js"></script>
+<script src="math.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
