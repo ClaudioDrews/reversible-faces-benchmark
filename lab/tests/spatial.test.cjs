@@ -1,0 +1,11 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),M=require('../spatial-core.js');
+const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-7,String(a)+' vs '+b);
+test('B frame is transformed exactly once',()=>assert.deepEqual(M.rot(M.rot([120,320])),[120,320]));
+test('rotations exchange fixed page quadrants',()=>{assert.equal(M.quadrant([250,200],[500,500]),'top-left');assert.equal(M.quadrant(M.rot([250,200]),[500,500]),'bottom-right');});
+test('covariance is positive definite and centered Mahalanobis is zero',()=>{let a=M.cov(30,50,.3);close(M.mahal([500,500],[500,500],a),0);close(M.mahal([530,500],[500,500],M.cov(30,30,0)),1);});
+test('invalid covariance, correlation and scale rejected',()=>{assert.throws(()=>M.cov(0,40,0));assert.throws(()=>M.cov(30,40,1));assert.throws(()=>M.mahal([1,2],[3,4],[[1,3],[3,1]]));});
+test('signed radial trend compares three hypotheses',()=>{close(M.scaleSigma(20,0,.7),20);assert.ok(M.scaleSigma(20,.9,.7)>20);assert.ok(M.scaleSigma(20,-.9,.7)<20);});
+test('different facial centres alter synthetic radius without changing page geometry',()=>{let p=[250,250],a=M.makeFeature(p,30,50,.1,[500,500],1,400),b=M.makeFeature(p,30,50,.1,[250,250],1,400);assert.ok(a.sigma[0]>b.sigma[0]);});
+test('identical intended locations map to same physical path, but meaning is not measured',()=>{let a=M.makeFeature([350,400],20,30,0,[500,500],0,400),b=M.makeFeature([650,600],20,30,0,[500,500],0,400),j=M.joint([350,400],a,b);close(j.compatibility,1);assert.equal(j.withinA,true);assert.equal(j.withinB,true);});
+test('synthetic intersection sampled at quadrant locations',()=>{let a=M.makeFeature([250,250],50,40,0,[500,500],0,400),b=M.makeFeature([750,750],50,40,0,[500,500],0,400),o=M.sampleOverlap(a,b,5.991,10);assert.ok(o.cells>0);assert.equal(o.quadrants[1],0);assert.equal(o.quadrants[2],0);assert.equal(o.quadrants[3],0);});
+test('sigma is not a claimed universal face perceptual threshold',()=>{let a=M.makeFeature([500,500],40,40,0,[500,500],0,400),b=M.makeFeature([500,500],40,40,0,[500,500],0,400);assert.ok(M.sampleOverlap(a,b,5.991,20).areaApprox>0);});
