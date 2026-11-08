@@ -1,0 +1,54 @@
+name: Whistler historical reference corpus
+on:
+  workflow_dispatch:
+  push:
+    branches: ['exp/dual-interpretation-research-lab']
+    paths:
+      - 'lab/masters/**'
+      - '.github/workflows/whistler-reference.yml'
+permissions:
+  contents: read
+jobs:
+  source-corpus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: lab/masters/requirements.txt
+      - name: Install analysis dependencies
+        run: python -m pip install -r lab/masters/requirements.txt
+      - name: Offline synthetic controls
+        run: python -m unittest discover -s lab/masters/tests -p 'test_*.py' -v
+      - name: Download original-resolution Commons reproductions and derive corpus
+        run: python lab/masters/build_corpus.py --catalog lab/masters/catalog.json --out output/whistler-corpus --limit 4
+      - name: Report a concise summary
+        if: always()
+        shell: bash
+        run: |
+          if [ -f output/whistler-corpus/report.json ]; then
+            python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('output/whistler-corpus/report.json').read_text())
+          print('Acquired:',len(d['results']),'Failed:',len(d['failures']))
+          for r in d['results']:
+              print(r['id'],'source',r['provenance']['source_sha256'][:14],
+                    'pair correlation',r['registration']['rotate_right_180']['correlation'],
+                    'tonal raster SSIM',r['vectors']['tonal']['raster_fidelity']['SSIM'])
+          print('Failures:',d['failures'])
+          PY
+          else
+            echo 'No report.json was produced.'
+          fi
+      - name: Upload original references, derived SVGs, fidelity and perturbation artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: whistler-reference-corpus
+          path: output/whistler-corpus/
+          retention-days: 30
+          if-no-files-found: warn
