@@ -1,0 +1,40 @@
+name: Dual-interpretation lab checks
+on:
+  pull_request:
+    paths: ['lab/**','.github/workflows/dual-lab-checks.yml']
+  push:
+    branches: ['exp/dual-interpretation-research-lab']
+    paths: ['lab/**','.github/workflows/dual-lab-checks.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-lab:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install defusedxml
+      - name: JavaScript invariants and syntax
+        run: |
+          node --check lab/math.js
+          node --check lab/app.js
+          node --test lab/tests/math.test.cjs
+      - name: Agent safety and prompt tests
+        run: python -m unittest discover -s lab/tests -p 'test_*.py' -v
+      - name: Static file references and schema
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          json.loads(Path('lab/schemas/design-plan.schema.json').read_text())
+          for f in ('lab/index.html','lab/style.css','lab/math.js','lab/app.js','site/data/art.js','site/data/manifest.js'):
+              assert Path(f).is_file(),f
+          assert '<html lang="en">' in Path('lab/index.html').read_text()
+          print('Lab local references PASS')
+          PY
