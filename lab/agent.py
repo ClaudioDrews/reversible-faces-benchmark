@@ -24,11 +24,11 @@ PLAN_SYSTEM = """Act as a mathematical illustrator, Gestalt researcher, semiotic
 and exacting original pen-and-ink artist. Return ONLY a JSON object, no markdown.
 Plan ONE reversible portrait with two genuinely DISTINCT human facial interpretations
 at 0 and 180 degrees. No separate independently complete faces stacked/overlaid.
-Both characters need different expression and personality, a coherent original
+The two upright interpretations may show DIFFERENT projected head poses (front view, profile, three-quarter, downward tilt, sideways gaze), not just different expression. No hard-coded requirement that both eye centres be visible or coincident. Both characters need different expression and personality, a coherent original
 nonverbal story or joke, meaningful accessory and anatomical contour reuse,
-controlled negative space, and purposeful high-level engraving detail.
+controlled negative space, selectively suggestive and incomplete contours, variable ink weight, and purposeful high-level engraving detail.
 JSON required keys: intent; face_a and face_b (each identity and expression);
-shared_eyes (two objects with x,y in [0,1000]);
+optional shared_eyes (zero to two visible common anchors, each x,y in [0,1000]); pose_a and pose_b (each has yaw_degrees, pitch_degrees, roll_degrees and viewing_direction);
 role_pairs (at least FIVE objects: role_a, role_b, point_a [x,y], point_b [x,y]);
 silhouette (string); failure_risks (array of strings). Optional negative_space
 and detail_budget. For each role pair, point_a is A in PAGE coordinates and
@@ -49,7 +49,7 @@ organic contour nuance, fabric/hair/beard texture, asymmetry with purpose,
 negative-space clarity and ornaments with dual function. Protect the weakest
 reading and the visual joke. Not a collage of two separate faces. Do not copy
 Rex Whistler's artwork; aim instead for historically sophisticated craftsmanship.
-A syntactically valid SVG is not proof of recognizable dual faces."""
+The A/B views may require different apparent yaw, pitch and roll even though the physical drawing turns by exactly 180 degrees. A front-facing symmetrical template is ONE hypothesis, not a constraint. Use selectively omitted contour segments, contextual facial configuration, figure-ground balance and varied ink weight only when they improve BOTH readings. A syntactically valid SVG is not proof of recognizable dual faces."""
 
 def sha(s: str) -> str:
     return hashlib.sha256(s.encode("utf-8")).hexdigest()
@@ -68,15 +68,16 @@ def strip_fences(s: str) -> str:
 def parse_plan(text: str) -> dict:
     plan=json.loads(strip_fences(text))
     if not isinstance(plan,dict): raise ValueError("planning response is not an object")
-    for name in ("intent","face_a","face_b","shared_eyes","role_pairs","silhouette","failure_risks"):
+    for name in ("intent","face_a","face_b","role_pairs","silhouette","failure_risks"):
         if name not in plan: raise ValueError("missing planning field: "+name)
     for name in ("face_a","face_b"):
         f=plan[name]
         if not isinstance(f,dict) or not all(isinstance(f.get(n),str) and f[n].strip() for n in ("identity","expression")):
             raise ValueError("both faces need distinct descriptions")
-    if not isinstance(plan["shared_eyes"],list) or len(plan["shared_eyes"])!=2:
-        raise ValueError("require two shared eye anchors")
-    for eye in plan["shared_eyes"]:
+    if not isinstance(plan.get("shared_eyes",[]),list) or len(plan.get("shared_eyes",[]))>2:
+        raise ValueError("shared_eyes must contain zero to two optional anchors")
+    for eye in plan.get("shared_eyes",[]):
+        # When an eye anchor is absent, no assumption about a frontal face is imposed.
         if not isinstance(eye,dict) or not all(type(eye.get(n)) in (int,float) and 0<=eye[n]<=1000 for n in ("x","y")):
             raise ValueError("invalid eye point")
     if not isinstance(plan["role_pairs"],list) or len(plan["role_pairs"])<5:
@@ -88,6 +89,15 @@ def parse_plan(text: str) -> dict:
             v=p.get(frame)
             if not isinstance(v,list) or len(v)!=2 or not all(type(x) in (float,int) and 0<=x<=1000 for x in v):
                 raise ValueError("invalid coordinates: "+frame)
+    for name in ("pose_a","pose_b"):
+        if name in plan:
+            p=plan[name]
+            if not isinstance(p,dict) or not isinstance(p.get("viewing_direction",""),str):
+                raise ValueError(name+" must be a pose description object")
+            for axis in ("yaw_degrees","pitch_degrees","roll_degrees"):
+                val=p.get(axis,0)
+                if type(val) not in (int,float) or not -180<=val<=180:
+                    raise ValueError("invalid "+name+" "+axis)
     return plan
 
 def residuals(plan: dict) -> list[float]:

@@ -31,7 +31,7 @@ input[type=number]{margin-top:4px}
 <a class="link-back" href="index.html">← Dual interpretation workbench</a>
 <section class="intro" style="padding-top:18px">
 <p class="eyebrow">05 / COMPLETION FRONTIER</p>
-<h1>Draw less.<br><em>Suggest more.</em></h1>
+<h1>Make room for<br><em>two ways to see.</em></h1>
 <p class="lede">Make a single visible line temporarily incomplete. Change its ink weight. Rotate the identical resulting drawing to inspect how context could reinterpret it. Distinguish geometric changes from human perceptual responses.</p>
 <p class="warning">This is a controlled perturbation of an archived SVG, not a demonstration that the result has improved. The supposed head axes and feature-tolerance radii are manually specified hypotheses; no recognized face, gaze, tilt, or emotion is inferred by this page.</p>
 </section>
@@ -44,9 +44,23 @@ input[type=number]{margin-top:4px}
 <label for="weight">Local relative stroke width <output id="weight-label">1.00×</output></label><input id="weight" type="range" min="40" max="220" value="100" step="5">
 <button id="baseline" type="button">Restore original</button>
 <p class="minor">Gaps are a periodic dash perturbation of one primitive, **not** a semantic gap optimizer. Filled shapes or inherited styles may make the stroke modification ineffective; a zero-pixel result is reported explicitly.</p>
-<h3>Independent apparent head axes</h3>
+<h3>Independent apparent head pose (roll / yaw / pitch)</h3>
 <label for="poseA">Hypothetical A roll <output id="poseA-label">-12°</output></label><input id="poseA" type="range" min="-45" max="45" value="-12">
 <label for="poseB">Hypothetical B roll <output id="poseB-label">18°</output></label><input id="poseB" type="range" min="-45" max="45" value="18">
+<label for="pose-preset">Compare pose hypotheses</label>
+<select id="pose-preset">
+<option value="manual">Manual — independent A/B pose</option>
+<option value="down-side">A looking downward / B looking sideways</option>
+<option value="mixed">A three-quarter up / B three-quarter down</option>
+<option value="frontal">Frontal / frontal control</option>
+</select>
+<div class="twocol">
+<label for="yawA">A perceived yaw <output id="yawA-label">0°</output><input id="yawA" type="range" min="-80" max="80" value="0"></label>
+<label for="yawB">B perceived yaw <output id="yawB-label">0°</output><input id="yawB" type="range" min="-80" max="80" value="0"></label>
+<label for="pitchA">A perceived pitch <output id="pitchA-label">0°</output><input id="pitchA" type="range" min="-60" max="60" value="0"></label>
+<label for="pitchB">B perceived pitch <output id="pitchB-label">0°</output><input id="pitchB" type="range" min="-60" max="60" value="0"></label>
+</div>
+<p id="pose-summary" class="status" aria-live="polite">Pose annotations are manual perceptual hypotheses.</p>
 <p class="minor">These annotated axes are independent in each upright viewing frame. They do not deform the image. Physical page rotation remains exactly 180°.</p>
 </aside>
 <div class="panel">

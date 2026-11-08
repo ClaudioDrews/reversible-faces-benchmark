@@ -36,3 +36,7 @@ Use only the repository's sandboxed, sanitizer-backed render pipeline for untrus
 - Report limitations and actual viewing method. Structural-validity PASS is not a face-quality pass.
 
 A provider-neutral harness in \`agent.py\` can obtain a plan and SVG in two model calls and validate them. It does **not** implement the visual stages C–E automatically yet: those remain research goals, explicitly represented in \`TRANSFER-MATRIX.md\` and \`EXPERIMENTS.md\`.
+
+## Pose-divergent and incompleteness hypotheses
+
+Do not hard-code two front-facing portraits. Generate structured candidate plans for alternative A/B pose pairs: frontal/frontal, down/side, three-quarter/profile, mixed yaw/pitch/roll and different inferred gaze directions. A physically shared SVG path need not have the same anatomical label in A and B. Missing contours may be intentional: specify which fragments have a completion hypothesis and which segments would become distracting if fully drawn. Never assume that sparsity alone improves the two readings. Use A/B independently evaluated perceptual outcomes to decide; original prompt contract and expanded open-design condition must be distinguished in reports.

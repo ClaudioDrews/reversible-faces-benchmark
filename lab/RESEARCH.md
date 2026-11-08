@@ -22,3 +22,11 @@ The artist died in 1944. Some reproductions are explicitly marked public domain 
 ## Limits
 
 A C2 eigen-decomposition is algebra, not a semantic parser; dot-product or raster overlap is not a human recognizer. Recognition thresholds such as 30 px in RFB and 8 units in Sinogram PRC are **design choices measured under different domains**. No existing PRC VLM pilot is controlled native-reader evidence, and no stage here claims to solve high-quality dual-face generation. Any art-quality claim needs independent, blinded, consistent evaluation.
+
+## Viewpoint and perceptual-completion counter-hypotheses
+
+- Van der Linde & Watson (2010), *A combinatorial study of pose effects in unfamiliar face recognition*, Vision Research, DOI 10.1016/j.visres.2009.12.012. https://pubmed.ncbi.nlm.nih.gov/20043938/ . Recognition varied continuously with roll/yaw and their combinations, with evidence of view-specific effects; do not reduce pose to a single tilt scalar.
+- Liu & Chaudhuri (2002), *Reassessing the 3/4 view effect in face recognition*. https://pubmed.ncbi.nlm.nih.gov/11814485/ . Challenges an unconditional 3/4-view superiority; avoid defining one ideal viewpoint in advance.
+- Kellman & Shipley (1991), *A theory of visual interpolation in object perception*, Cognitive Psychology, DOI 10.1016/0010-0285(91)90009-D. https://www.sciencedirect.com/science/article/abs/pii/001002859190009D . Spatially incomplete visible contours may support interpolated boundaries.
+- Singh & Hoffman (1999), *Completing visual contours: the relationship between relatability and minimizing inflections*, Perception & Psychophysics, DOI 10.3758/BF03206908. https://pubmed.ncbi.nlm.nih.gov/10499006/ . Model of contour interpolation with necessary assumptions; not a universal face-likeness loss function.
+- Anderson, Singh & Fleming (2002), *The interpolation of object and surface structure*, Cognitive Psychology, DOI 10.1006/cogp.2001.0765. https://pubmed.ncbi.nlm.nih.gov/11863323/ . Modal and amodal completion can have different conditions and outcomes; keep them as alternative hypotheses.

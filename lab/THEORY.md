@@ -50,3 +50,11 @@ Line-width taper and sector-wise adjustment may affect perceptual emphasis. Pres
 ## 8. Study priorities
 
 First explain existing successes/failures without altering their pixels. Then compare geometric-only vs structure-first generation with matched model, budget and multiple attempts. Finally test a professional engraving pass (hatching, cross-hatching, varied contour weights, ornaments, shading) under invariant-preservation gates. More detail is **not** automatically more meaningful: it may obscure the second reading. Subjective artistry must have independent blind raters.
+
+## 9. Face pose is a latent interpretation, not page rotation [HYPOTHESIS]
+
+In each upright viewing frame, an observer can infer a different head orientation `q_A=(yaw_A,pitch_A,roll_A)` and `q_B=(yaw_B,pitch_B,roll_B)`. The physical transform is **always** `R_{(500,500)}`, but there is no general requirement that `q_A=q_B`. A downward-looking A and side-looking B can be compatible if head contour, nose projection, visible/occluded eye configurations, hair, neck, and negative space support each parse.
+
+This introduces perspective-dependent landmarks: the visible eye count and positions need not coincide in two interpretations. In a weak-perspective model, facial landmark projections are `p_i ≈ s·ΠQ(q)X_i+t`, but the inverse problem from one stylized line drawing is underdetermined. Do not call the toy controls a real 3D face reconstruction. The experimental role graph is allowed to map visible eye to non-eye, one eye to an occluded eye or multiple pen strokes into one facial cue.
+
+Test front/front (classic constraint), front/profile, down/side, three-quarter/three-quarter and profile/profile as separate conditions. Distinguish the original RFB rubric, which may impose shared-eye conventions, from a deliberately expanded design domain. A claimed facial percept needs independent judgments.

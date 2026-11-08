@@ -53,3 +53,11 @@ Start with all 29 archived SVGs and four raster stimuli as separate classes. Lab
 - G5: interpretation of the visual joke increases relative to controls and is spontaneous, not prompted by knowing the intended story.
 
 If any gate fails, publish the null result and its mechanism rather than turning exploratory evidence into success claims.
+
+## Pose-divergent open hypotheses (registered before empirical claims)
+
+The fixed canvas transforms by exactly 180°, but the inferred pose of each upright face is latent. Cross **orientation A pose × orientation B pose** with front, three-quarter, profile, looking down/up, roll, and direct vs averted gaze. Do not require two visible eyes for a profile. Introduce 3D projection controls only as *models*: inferred yaw/pitch cannot be recovered uniquely from line art.
+
+Compare intact versus selectively omitted contours, uniform versus varied stroke width, global face pose consistency versus asymmetric face parts, and density-matched detail levels. Predeclare contrast controls, pilot sizes, independent annotation, and held-out prompts.
+
+Measure separately: first spontaneous face detection, head orientation judged in each frame, feature visibility/role and expression, intended distinctness, contours genuinely shared, and artistry. No frontality premium without evidence. Some pose-divergent conditions may violate historical shared-eye wording; score separately as **open-design research**, never misreport as passes under original prompts.

@@ -6,7 +6,7 @@
 
 Build and test a reproducible, prompt-to-SVG method for **one coherent, carefully finished illustration that supports two different recognizable faces when physically rotated 180 degrees**. Rex Whistler's historic reversible drawings are an artistic **quality target**, not a claim of achieved fidelity. No historic images are copied into this laboratory.
 
-The target is deliberately harder than a reversible icon: expression, personality, illustration quality, feature sharing, a coherent visual message, and reliable production under a fixed SVG contract all matter. Treat geometry, perception, and artistry as distinct evaluation endpoints.
+The research portfolio deliberately allows **frontal, three-quarter, downward-looking, side-looking, differently pitched and rolled interpretations**. The same physical 180° turn need not create the same perceived head pose in each upright viewing frame. We test these as alternatives, not mutually exclusive assumptions.\n\nThe target is deliberately harder than a reversible icon: expression, personality, illustration quality, feature sharing, a coherent visual message, and reliable production under a fixed SVG contract all matter. Treat geometry, perception, and artistry as distinct evaluation endpoints.
 
 ## What is implemented now
 
@@ -51,6 +51,14 @@ Run unit tests:
 
 The existing benchmark validator/dependencies are described in the root README and requirements.txt.
 
+## Productive incompleteness and pose laboratory
+
+Open **http://localhost:8811/lab/completion.html** to vary stroke omissions, line weight, head pose annotations (roll, pitch, yaw independently for A and B), and geometric target tolerances. The controls are research hypotheses; changing a pose slider does **not** change pixels or infer an actual observer's pose.
+
+- [AMBIGUITY.md](AMBIGUITY.md) — productive incomplete contours and tolerance hypotheses.
+- [POSE-SPACE.md](POSE-SPACE.md) — viewpoint-independent/pose-divergent model, competing hypotheses, design factors.
+- [HYPOTHESIS-REGISTER.md](HYPOTHESIS-REGISTER.md) — full hypothesis portfolio with controls and gating.
+
 ## Files
 
 - \`THEORY.md\`: mathematics, semiotic graph, Gestalt hypotheses, failure modes, scope.
@@ -66,3 +74,5 @@ The existing benchmark validator/dependencies are described in the root README a
 ## Evidence discipline
 
 Mark statements as **EXACT**, **MEASURED / domain-specific**, **HYPOTHESIS**, or **NOT YET TESTED**. The Sinogram Ambigram's archived PRC geometric improvements are not face-perception improvements. Its VLM pilot and fusion-threshold results exist in separate draft PRs and are not treated as released human evidence. Never train a score on the same selected instances used to validate it.
+
+**Experimental scope:** some pose combinations may violate the original shared-eye prompt used in particular benchmark rounds. Treat those as a separately labelled open-design condition, not as historical RFB benchmark passes.

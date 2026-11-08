@@ -7,7 +7,6 @@
     "intent",
     "face_a",
     "face_b",
-    "shared_eyes",
     "role_pairs",
     "silhouette",
     "failure_risks"
@@ -62,7 +61,7 @@
     },
     "shared_eyes": {
       "type": "array",
-      "minItems": 2,
+      "minItems": 0,
       "maxItems": 2,
       "items": {
         "type": "object",
@@ -154,6 +153,55 @@
         },
         "engraving": {
           "type": "integer"
+        }
+      }
+    },
+    "pose_a": {
+      "$ref": "#/$defs/pose"
+    },
+    "pose_b": {
+      "$ref": "#/$defs/pose"
+    }
+  },
+  "$defs": {
+    "pose": {
+      "type": "object",
+      "required": [
+        "viewing_direction"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "viewing_direction": {
+          "type": "string",
+          "description": "front, three-quarter, side, downward, upward, other"
+        },
+        "yaw_degrees": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "pitch_degrees": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "roll_degrees": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "gaze_direction": {
+          "type": "string"
+        },
+        "occluded_features": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "confidence": {
+          "type": "string",
+          "description": "hypothesis only, never output a calibrated human probability"
         }
       }
     }
