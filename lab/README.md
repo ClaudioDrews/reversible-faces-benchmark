@@ -59,6 +59,15 @@ Open **http://localhost:8811/lab/completion.html** to vary stroke omissions, lin
 - [POSE-SPACE.md](POSE-SPACE.md) — viewpoint-independent/pose-divergent model, competing hypotheses, design factors.
 - [HYPOTHESIS-REGISTER.md](HYPOTHESIS-REGISTER.md) — full hypothesis portfolio with controls and gating.
 
+## Hypothesis-variant runs
+
+The inference harness now supports an explicit `--variant` option. Choices: `open`, `historic-shared-eyes`, `front-front`, `down-side`, `profile-front`, `mixed-pose`, `fragmented`, `weight-salience`, `negative-space`, `narrative`. Examples (no inference request):
+
+    python3 lab/agent.py prepare --variant down-side --brief "A skeptical inventor / a proud scholar" --out output/try-down-side
+    python3 lab/agent.py prepare --variant fragmented --brief "A skeptical inventor / a proud scholar" --out output/try-fragmented
+
+Use `generate --variant ...` with an explicit endpoint/model to create a candidate. Each run stores its variant in `report.json`; experimental results should compare equal sampling/budget/creative brief. Variant names are hypotheses, **not winner selections**. Plan-only mode does not call an LLM.
+
 ## Files
 
 - \`THEORY.md\`: mathematics, semiotic graph, Gestalt hypotheses, failure modes, scope.

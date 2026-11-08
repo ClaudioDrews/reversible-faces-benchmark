@@ -26,3 +26,24 @@
 | H20 | Story/expression can bias perceptual grouping | semantically distinct vs neutral brief, blinded | open |
 
 For each test report: protocol hash, source SHA, model/seed/budget, SVG hash, edit changed pixels, human descriptive A/B results, strongest and weakest hypotheses, negative and null outcomes. The primary optimization endpoint is **the weaker independently recognizable face**, with art quality separately measured. Complex drawing does not automatically imply either.
+
+## Shared mathematical and construction hypotheses preserved
+
+| ID | Hypothesis / operator | Evidence and testing status |
+|---|---|---|
+| H21 | Optimizable construction centre can align a dual role, with benchmark centre fixed at evaluation | geometric transfer; open perceptual |
+| H22 | Bézier target compromise improves dual roles | exact quadratic construction; open perceptual |
+| H23 | C₂ even/odd separation reveals where asymmetry resides | algebra exact; no semantic parser |
+| H24 | Angular Fourier/harmonic controls may constrain region-level modifications | exploratory; not human-validated |
+| H25 | Star-shaped silhouette radial majorants permit consistent containment | exact within assumptions; artistic usefulness open |
+| H26 | Contour tangency/curvature junction rules aid dual parsing | contour completion literature; open |
+| H27 | Recognition-complexity normalization beats unweighted geometric distance | Sinogram result; face transfer open |
+| H28 | Symmetry residual and sector balance are only one-sided diagnostics | exact geometry; not a success metric |
+| H29 | Structural stroke splitting/merging is preferable to mere endpoint tuning | Sinogram geometric signal; face transfer open |
+| H30 | A/B SVG critic/render loop improves legibility under matched budget | open, tool-enabled round not causal |
+| H31 | Hatching and detailed ornament improve expressive dual-role performance | open artistic test |
+| H32 | Incomplete contours, local weight and nonfrontal pose interact | factorial hypothesis; open |
+| H33 | Perceptual parser organization matters more than individual positions | central architecture hypothesis, not established |
+| H34 | Emotional contrast, narrative surprise and aesthetic resonance can be independently judged | protocol planned; no empirical claim |
+| H35 | Alternate composition grammars may represent different geometric families | open: never auto-exclude hypotheses |
+

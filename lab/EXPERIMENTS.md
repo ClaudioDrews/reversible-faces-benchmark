@@ -61,3 +61,7 @@ The fixed canvas transforms by exactly 180°, but the inferred pose of each upri
 Compare intact versus selectively omitted contours, uniform versus varied stroke width, global face pose consistency versus asymmetric face parts, and density-matched detail levels. Predeclare contrast controls, pilot sizes, independent annotation, and held-out prompts.
 
 Measure separately: first spontaneous face detection, head orientation judged in each frame, feature visibility/role and expression, intended distinctness, contours genuinely shared, and artistry. No frontality premium without evidence. Some pose-divergent conditions may violate historical shared-eye wording; score separately as **open-design research**, never misreport as passes under original prompts.
+
+### Hypothesis portfolio, not one optimized doctrine
+
+Available CLI research variants are a **design-of-experiments factor**, not a recommended artistic hierarchy. Freeze one creative brief and compare variants under equal token, drawing, tool and assessment budgets; do not select only the best-looking run or discard the poorer profiles. Keep a full arm named `open` so an LLM can choose its own composition rather than being forced into the current hypotheses. Where a variant violates original shared-eye requirements, label it an expanded-design experiment, not an official benchmark success.

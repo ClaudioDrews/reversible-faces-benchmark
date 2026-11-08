@@ -23,6 +23,20 @@ class TestLabAgent(unittest.TestCase):
         p,s=lab.prep_prompts("A grateful inventor becomes a skeptical critic")
         self.assertIn("Apply R EXACTLY ONCE",p)
         self.assertIn("standalone, original SVG",s)
+    def test_hypothesis_portfolio(self):
+        for variant in lab.VARIANTS:
+            p,s=lab.prep_prompts("An inventor becomes a scholar",variant)
+            self.assertIn(variant,p)
+            self.assertIn(variant,s)
+        with self.assertRaises(ValueError):lab.prep_prompts("A face","unknown")
+    def test_pose_optional_and_profile_without_shared_eyes(self):
+        sample=sample_plan()
+        sample.pop("shared_eyes")
+        sample["pose_a"]={"yaw_degrees":0,"pitch_degrees":-25,"roll_degrees":0,"viewing_direction":"down"}
+        sample["pose_b"]={"yaw_degrees":55,"pitch_degrees":0,"roll_degrees":10,"viewing_direction":"side"}
+        plan=lab.parse_plan(json.dumps(sample))
+        self.assertNotIn("shared_eyes",plan)
+        self.assertEqual(plan["pose_b"]["viewing_direction"],"side")
     def test_plan_frames(self):
         fences=chr(96)*3
         plan=lab.parse_plan(fences+"json\n"+json.dumps(sample_plan())+"\n"+fences)

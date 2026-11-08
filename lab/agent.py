@@ -54,10 +54,25 @@ The A/B views may require different apparent yaw, pitch and roll even though the
 def sha(s: str) -> str:
     return hashlib.sha256(s.encode("utf-8")).hexdigest()
 
-def prep_prompts(brief: str) -> tuple[str,str]:
+VARIANTS = {
+    "open": "Choose any viable facial configurations, including a mixture of yaw, pitch, roll, gaze, contour omission and frontality. Do not prefer frontal poses merely by convention.",
+    "historic-shared-eyes": "Historical shared-eye control. Plan two visibly shared eye anchors, acknowledging that this is a particular benchmark condition rather than a universal requirement.",
+    "front-front": "Both heads may be frontal, with dual-role anatomical and costume features; test as a control, not assumed optimum.",
+    "down-side": "In A's upright frame the head appears bowed downward; in B's upright frame it appears side-facing/profile or three-quarter. Preserve exact page turn, vary only inferred pose.",
+    "profile-front": "One upright view is profile with one visible eye; the other is frontal. Do not invent a second frontal eye in the profile.",
+    "mixed-pose": "Explore nonmatching yaw, pitch, roll and gaze direction in the two interpretations, including silhouette perspective cues.",
+    "fragmented": "Prioritize carefully chosen incomplete lines and perceptual contour completion. Include a plausible fully specified comparison in the design plan.",
+    "weight-salience": "Prioritize local line-weight, taper, contour hierarchy and selective hatching as competing explanatory mechanisms.",
+    "negative-space": "Prioritize figure-ground ownership, silhouette closure and context-dependent negative space.",
+    "narrative": "Prioritize emotional expressiveness and a nonverbal visual reversal, while holding structural readability requirements constant.",
+}
+
+def prep_prompts(brief: str, variant: str = "open") -> tuple[str,str]:
     if not brief.strip(): raise ValueError("empty brief")
-    return (PLAN_SYSTEM + "\n\nUSER BRIEF:\n" + brief.strip(),
-            SVG_SYSTEM + "\n\nDESIGN PLAN:\n{PLAN_JSON}\n")
+    if variant not in VARIANTS: raise ValueError("unknown hypothesis variant: "+variant)
+    framing = "\n\nEXPERIMENTAL HYPOTHESIS VARIANT: "+variant+"\n"+VARIANTS[variant]
+    return (PLAN_SYSTEM + framing + "\n\nUSER BRIEF:\n" + brief.strip(),
+            SVG_SYSTEM + framing + "\n\nDESIGN PLAN:\n{PLAN_JSON}\n")
 
 def strip_fences(s: str) -> str:
     s=s.strip()
@@ -146,9 +161,9 @@ def ask(endpoint: str, model: str, system: str, user: str, max_tokens: int, time
 
 def save(p: Path,s: str) -> None:p.write_text(s,encoding="utf-8")
 
-def prepare(brief: str,out: Path) -> None:
+def prepare(brief: str,out: Path, variant: str = 'open') -> None:
     out.mkdir(parents=True,exist_ok=True)
-    p,s=prep_prompts(brief)
+    p,s=prep_prompts(brief,variant)
     save(out/"brief.txt",brief.strip()+"\n")
     save(out/"prompt-plan.txt",p+"\n")
     save(out/"prompt-svg-template.txt",s+"\n")
@@ -157,14 +172,14 @@ def generate(a: argparse.Namespace) -> int:
     out=Path(a.out)
     if out.exists() and any(out.iterdir()) and not a.overwrite:
         raise ValueError("output exists: choose new directory or --overwrite")
-    prepare(a.brief,out)
-    planraw=ask(a.endpoint,a.model,PLAN_SYSTEM,a.brief,a.max_tokens,a.timeout)
+    prepare(a.brief,out,a.variant)
+    planraw=ask(a.endpoint,a.model,PLAN_SYSTEM+"\n\nVARIANT: "+a.variant+"\n"+VARIANTS[a.variant],a.brief,a.max_tokens,a.timeout)
     save(out/"plan-model-raw.txt",planraw)
     plan=parse_plan(planraw)
     save(out/"plan.json",json.dumps(plan,indent=2,ensure_ascii=False)+"\n")
     errors=["candidate absent"];warnings=[];text=""
     for step in range(a.repair_rounds+1):
-        if step==0:message="BRIEF:\n"+a.brief+"\n\nPLAN:\n"+json.dumps(plan,ensure_ascii=False)
+        if step==0:message="BRIEF:\n"+a.brief+"\n\nHYPOTHESIS: "+a.variant+"\n"+VARIANTS[a.variant]+"\n\nPLAN:\n"+json.dumps(plan,ensure_ascii=False)
         else:message="Repair structural validation only; retain all artistic intentions.\nErrors: "+repr(errors)+"\n\n"+text[:240000]
         raw=ask(a.endpoint,a.model,SVG_SYSTEM,message,a.max_tokens,a.timeout)
         save(out/("svg-model-raw-%02d.txt"%step),raw)
@@ -172,7 +187,7 @@ def generate(a: argparse.Namespace) -> int:
             text=extract_svg(raw);errors,warnings=check_svg(text)
         except ValueError as error:errors=[str(error)];warnings=[]
         if not errors:break
-    report={"state":"structural_validation_only","model":a.model,
+    report={"state":"structural_validation_only","model":a.model,"hypothesis_variant":a.variant,
             "endpoint_host":urllib.parse.urlparse(a.endpoint).hostname,
             "brief_sha256":sha(a.brief),
             "plan_sha256":sha(json.dumps(plan,sort_keys=True,ensure_ascii=False)),
@@ -191,7 +206,9 @@ def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     sub=parser.add_subparsers(dest="command",required=True)
     p=sub.add_parser("prepare");p.add_argument("--brief",required=True);p.add_argument("--out",default="output/dual-face-lab")
+    p.add_argument("--variant",choices=sorted(VARIANTS),default="open")
     p=sub.add_parser("generate");p.add_argument("--brief",required=True);p.add_argument("--out",default="output/dual-face-lab")
+    p.add_argument("--variant",choices=sorted(VARIANTS),default="open")
     p.add_argument("--endpoint",required=True);p.add_argument("--model",required=True)
     p.add_argument("--max-tokens",type=int,default=16000);p.add_argument("--timeout",type=int,default=120)
     p.add_argument("--repair-rounds",type=int,default=1);p.add_argument("--overwrite",action="store_true")
@@ -199,7 +216,7 @@ def main(argv=None):
     a=parser.parse_args(argv)
     try:
         if a.command=="prepare":
-            prepare(a.brief,Path(a.out));print("Prepared offline:",a.out);return 0
+            prepare(a.brief,Path(a.out),a.variant);print("Prepared offline:",a.out,"variant:",a.variant);return 0
         if a.command=="review":
             errors,warnings=check_svg(Path(a.svg).read_text(encoding="utf-8"))
             print(json.dumps({"errors":errors,"warnings":warnings,"valid":not errors,
