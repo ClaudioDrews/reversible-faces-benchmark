@@ -89,6 +89,29 @@ img{max-width:100%}
     </div>
     <p class="minor">The same loaded image is rotated by CSS — not separately drawn. The working raster is a vector preview or a controlled one-source transformation. Rotating the grayscale art does not reveal the artist's mental construction process.</p>
     <div class="highlights" id="pointtext">Click on a visible landmark to record a point in the canonical page and current viewer frame.</div>
+    <div class="alt">
+      <div>
+        <label for="role">Perceived feature (manual)</label>
+        <select id="role">
+          <option value="eye">Eye / visible eye</option><option value="eyebrow">Eyebrow</option>
+          <option value="nose">Nose</option><option value="mouth">Mouth</option>
+          <option value="jaw">Jaw / chin</option><option value="hair">Hair / beard</option>
+          <option value="head-outline">Head outline</option><option value="accessory">Accessory</option>
+          <option value="negative-space">Negative-space region</option><option value="ambiguous">Ambiguous / dual function</option>
+          <option value="unknown">Unknown / decorative</option>
+        </select>
+      </div>
+      <div>
+        <label for="facecx">Estimated face centre in CURRENT view (manual)</label>
+        <div style="display:flex;gap:5px">
+          <input id="facecx" type="number" min="0" max="1000" step="1" value="500" style="width:48%">
+          <input id="facecy" type="number" min="0" max="1000" step="1" value="500" style="width:48%">
+        </div>
+        <p class="minor">These are observer annotations, not detected landmarks or the C₂ centre.</p>
+      </div>
+    </div>
+    <label for="note">Optional observation about incomplete contour, perceived role, pose or ornament</label>
+    <textarea id="note" rows="2" style="width:100%" placeholder="e.g., broken eyebrow becomes a shadow under the eye in B"></textarea>
     <div class="buttons" style="margin-top:10px"><button id="export">Export annotation CSV</button><button id="clear">Clear annotations</button></div>
     <table><thead><tr><th>Viewer angle</th><th>Page x,y</th><th>180° partner</th></tr></thead><tbody id="points"></tbody></table>
   </div>
@@ -163,11 +186,23 @@ function addPoint(ev){
  var angle=(+q('angle').value)*Math.PI/180,c=Math.cos(angle),s=Math.sin(angle);
  var px=500+1000*(c*x+s*y),py=500+1000*(-s*x+c*y);
  var bp=[1000-px,1000-py];
- var v={source:record().id,representation:q('layer').value,angle:+q('angle').value,
-   page_x:+px.toFixed(2),page_y:+py.toFixed(2),rotated_page_x:+bp[0].toFixed(2),rotated_page_y:+bp[1].toFixed(2)};
+ var angleDeg=+q('angle').value,viewerX=1000*(ev.clientX-rect.left)/rect.width,viewerY=1000*(ev.clientY-rect.top)/rect.height;
+ var fcX=+q('facecx').value,fcY=+q('facecy').value;
+ if(!Number.isFinite(fcX)||!Number.isFinite(fcY)||fcX<0||fcX>1000||fcY<0||fcY>1000) {
+   q('pointtext').textContent='Manually estimated face centre must lie within 0..1000.';return;
+ }
+ var v={source:record().id,representation:q('layer').value,angle:angleDeg,
+   orientation:angleDeg===0?'A':angleDeg===180?'B':'transition',
+   role:q('role').value,
+   page_x:+px.toFixed(2),page_y:+py.toFixed(2),rotated_page_x:+bp[0].toFixed(2),rotated_page_y:+bp[1].toFixed(2),
+   face_centre_x:fcX,face_centre_y:fcY,
+   viewer_x:+viewerX.toFixed(2),viewer_y:+viewerY.toFixed(2),
+   face_relative_x:+(viewerX-fcX).toFixed(2),face_relative_y:+(viewerY-fcY).toFixed(2),
+   face_relative_radius:+Math.hypot(viewerX-fcX,viewerY-fcY).toFixed(2),
+   note:q('note').value.trim().slice(0,300)};
  if(px<0||px>1000||py<0||py>1000)return;
  points.push(v);
- q('pointtext').textContent='Page ('+v.page_x+', '+v.page_y+'), rotated partner ('+v.rotated_page_x+', '+v.rotated_page_y+'). These are geometric locations, NOT inferred facial roles.';
+ q('pointtext').textContent=v.orientation+' / '+v.role+': page ('+v.page_x+', '+v.page_y+'), partner ('+v.rotated_page_x+', '+v.rotated_page_y+'), distance '+v.face_relative_radius+' px from your manually estimated face centre. Label and face centre are YOUR annotations, not model recognition.';
  var row=document.createElement('tr');
  [v.angle+'°',v.page_x+', '+v.page_y,v.rotated_page_x+', '+v.rotated_page_y].forEach(function(t){var td=document.createElement('td');td.textContent=t;row.appendChild(td);});
  q('points').appendChild(row);
@@ -177,8 +212,12 @@ function addPoint(ev){
  svg.setAttribute('r','10');svg.setAttribute('fill','#bb4627');q('marks').appendChild(svg);
 }
 function exportCSV(){
- var cols=['source','representation','angle','page_x','page_y','rotated_page_x','rotated_page_y'];
- var rows=[cols.join(',')].concat(points.map(function(x){return cols.map(function(k){return String(x[k]);}).join(',');}));
+ var cols=['source','representation','orientation','angle','role','page_x','page_y','rotated_page_x','rotated_page_y','viewer_x','viewer_y','face_centre_x','face_centre_y','face_relative_x','face_relative_y','face_relative_radius','note'];
+ var rows=[cols.join(',')].concat(points.map(function(x){return cols.map(function(k){
+   var s=String(x[k]);
+   if(k==='note'&&/^[=+@-]/.test(s))s="'"+s;
+   return '"'+s.replace(/"/g,'""')+'"';
+ }).join(',');}));
  var blob=new Blob([rows.join('\n')+'\n'],{type:'text/csv;charset=utf-8'});
  var u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='whistler-geometry-annotations.csv';a.click();
  setTimeout(function(){URL.revokeObjectURL(u);},1000);

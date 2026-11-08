@@ -48,3 +48,7 @@ The outputs are **derived analytical representations**, not faithful hand-drawn 
 This corpus does **not** replace the existing experimental hypothesis register. It gives common images for testing all 35+ pre-existing alternatives, including C₂, landmark tolerance, pose diversity (front/profile/down/side), good continuation, omitted lines, radial central-vs-outer-region specificity, fine detail without unique anatomical role, local thickness/salience, figure-ground, semantic graph roles, and artistic/message perception.
 
 A successful outcome would map which modifications preserve or damage the **weaker** of the two readings; which marks are functionally reassigned; and where measured geometric changes fail to predict changes in perception. This requires fresh blinded human annotations. The corpus is a starting point, not a normative ground truth of role coordinates.
+
+## Inspecting and annotating face-relative geometry
+
+Open the downloaded workflow artifact's `index.html` in a browser. Choose A (0°) or B (180°) and a layer, click a feature, label the **perceived** role (eye, nose, mouth, hair, accessory, contour, negative space, ambiguous), and specify a *manual face centre in that viewing frame*. Export the CSV. The file retains both exact canonical page coordinates and feature-to-annotated-face-centre displacement. **This is not an automatic facial detector.** Compare different observers' annotations and preserve disagreements rather than optimizing to one rater's choices. The raster source is never edited by the annotation UI.
