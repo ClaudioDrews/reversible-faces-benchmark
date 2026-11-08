@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DualFaceDesignPlan-v0.1",
+  "description": "Planning contract; coordinate frame B is upright. Optional attributes are not assumed measurable.",
+  "type": "object",
+  "required": [
+    "intent",
+    "face_a",
+    "face_b",
+    "shared_eyes",
+    "role_pairs",
+    "silhouette",
+    "failure_risks"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "intent": {
+      "type": "string",
+      "minLength": 10
+    },
+    "face_a": {
+      "type": "object",
+      "required": [
+        "identity",
+        "expression"
+      ],
+      "properties": {
+        "identity": {
+          "type": "string"
+        },
+        "expression": {
+          "type": "string"
+        },
+        "ornaments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "face_b": {
+      "type": "object",
+      "required": [
+        "identity",
+        "expression"
+      ],
+      "properties": {
+        "identity": {
+          "type": "string"
+        },
+        "expression": {
+          "type": "string"
+        },
+        "ornaments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "shared_eyes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "x",
+          "y"
+        ],
+        "properties": {
+          "x": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1000
+          },
+          "y": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1000
+          }
+        }
+      }
+    },
+    "role_pairs": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "role_a",
+          "role_b",
+          "point_a",
+          "point_b"
+        ],
+        "properties": {
+          "role_a": {
+            "type": "string"
+          },
+          "role_b": {
+            "type": "string"
+          },
+          "point_a": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "number"
+            }
+          },
+          "point_b": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "number"
+            }
+          },
+          "stroke_family": {
+            "type": "string"
+          },
+          "uncertainty": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "silhouette": {
+      "type": "string"
+    },
+    "negative_space": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "failure_risks": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "detail_budget": {
+      "type": "object",
+      "properties": {
+        "contour": {
+          "type": "integer"
+        },
+        "face_cues": {
+          "type": "integer"
+        },
+        "engraving": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
