@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "project": "Reversible Faces Benchmark - Whistler source corpus",
+  "artist": "Rex Whistler",
+  "provenance": "Wikimedia Commons file pages; preserve licensing and exact source byte hashes",
+  "acquisition": "Fetch original-resolution files in an explicitly triggered GitHub Actions job",
+  "records": [
+    {
+      "id": "scotsman-englishman",
+      "commons_file": "Rex Whistler - Reversible Face - Sscotsman & Englishman.jpg",
+      "description": "Scotsman & Englishman",
+      "year": "1930",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Rex_Whistler_-_Reversible_Face_-_Sscotsman_%26_Englishman.jpg",
+      "expected_layout": "two-up",
+      "license_claim": "PD-Art / Public Domain Mark on Commons file description"
+    },
+    {
+      "id": "mayor-judge",
+      "commons_file": "Rex Whistler - Reversible Face - Mayor & Judge 1930.jpg",
+      "description": "Mayor & Judge",
+      "year": "1930",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Rex_Whistler_-_Reversible_Face_-_Mayor_%26_Judge_1930.jpg",
+      "expected_layout": "two-up",
+      "license_claim": "PD-Art / Public Domain Mark on Commons file description"
+    },
+    {
+      "id": "mad-wife-farmer",
+      "commons_file": "Rex Whistler - Reversible Face - Mad Wife & Farmer 1930.jpg",
+      "description": "Mad Wife & Farmer",
+      "year": "1930",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Rex_Whistler_-_Reversible_Face_-_Mad_Wife_%26_Farmer_1930.jpg",
+      "expected_layout": "two-up",
+      "license_claim": "PD-Art / Public Domain Mark on Commons file description"
+    },
+    {
+      "id": "hair-bald-bearded",
+      "commons_file": "Rex Whistler - Reversible Face - Hair Bald & Bearded.jpg",
+      "description": "Hair, Bald & Bearded",
+      "year": "1930",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Rex_Whistler_-_Reversible_Face_-_Hair_Bald_%26_Bearded.jpg",
+      "expected_layout": "two-up",
+      "license_claim": "PD-Art / Public Domain Mark on Commons file description"
+    }
+  ]
+}
